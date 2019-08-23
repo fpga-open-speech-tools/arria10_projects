@@ -1,0 +1,5 @@
+config soc_system_altera_avalon_st_adapter_180_7g3x3ri_cfg;
+		design soc_system_altera_avalon_st_adapter_180_7g3x3ri;
+		instance soc_system_altera_avalon_st_adapter_180_7g3x3ri.error_adapter_0 use soc_system_error_adapter_180.soc_system_error_adapter_180_ww4pkiq;
+endconfig
+

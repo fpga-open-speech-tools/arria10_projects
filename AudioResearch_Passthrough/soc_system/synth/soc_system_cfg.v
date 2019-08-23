@@ -1,0 +1,13 @@
+config soc_system_cfg;
+		design soc_system;
+		instance soc_system.fe_qsys_ad1939_audio_research_v1_0 use soc_system_FE_Qsys_AD1939_Audio_Research_v1_10.AD1939_hps_audio_research;
+		instance soc_system.pll_using_ad1939_mclk use soc_system_altera_iopll_180.soc_system_altera_iopll_180_mnqgzey;
+		instance soc_system.ddr4 use soc_system_altera_emif_a10_hps_180.soc_system_altera_emif_a10_hps_180_oqueytq;
+		instance soc_system.hps use soc_system_altera_arria10_hps_180.soc_system_altera_arria10_hps_180_4pootmi;
+		instance soc_system.jtag_master use soc_system_altera_jtag_avalon_master_180.soc_system_altera_jtag_avalon_master_180_sb3msya;
+		instance soc_system.sysid_qsys_0 use soc_system_altera_avalon_sysid_qsys_180.soc_system_altera_avalon_sysid_qsys_180_3giudzy;
+		instance soc_system.mm_interconnect_0 use soc_system_altera_mm_interconnect_180.soc_system_altera_mm_interconnect_180_h4iigbi;
+		instance soc_system.rst_controller use soc_system_altera_reset_controller_180.altera_reset_controller;
+		instance soc_system.rst_controller_001 use soc_system_altera_reset_controller_180.altera_reset_controller;
+endconfig
+
