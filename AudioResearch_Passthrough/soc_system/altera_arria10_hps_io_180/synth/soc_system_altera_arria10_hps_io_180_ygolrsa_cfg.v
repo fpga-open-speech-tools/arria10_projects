@@ -1,5 +1,0 @@
-config soc_system_altera_arria10_hps_io_180_ygolrsa_cfg;
-		design soc_system_altera_arria10_hps_io_180_ygolrsa;
-		instance soc_system_altera_arria10_hps_io_180_ygolrsa.border use soc_system_altera_arria10_interface_generator_140.soc_system_altera_arria10_interface_generator_140_y7iucey;
-endconfig
-
