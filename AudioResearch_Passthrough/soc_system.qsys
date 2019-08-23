@@ -31,7 +31,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -70,7 +70,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -83,7 +83,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -96,7 +96,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -109,7 +109,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -1784,12 +1784,12 @@
    kind="avalon_streaming"
    version="18.0"
    start="FE_Qsys_AD1939_Audio_Research_v1_0.Line_In"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.XLR1_Out" />
+   end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out" />
  <connection
    kind="avalon_streaming"
    version="18.0"
    start="FE_Qsys_AD1939_Audio_Research_v1_0.Microphone_In"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out" />
+   end="FE_Qsys_AD1939_Audio_Research_v1_0.Headphone_Out" />
  <connection kind="clock" version="18.0" start="clk_hps.clk" end="jtag_master.clk" />
  <connection
    kind="clock"

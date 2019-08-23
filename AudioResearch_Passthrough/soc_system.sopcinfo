@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="soc_system" kind="soc_system" version="1.0" fabric="QSYS">
  <!-- Format version 18.0 614 (Future versions may contain additional information.) -->
- <!-- 2019.05.22.11:43:46 -->
+ <!-- 2019.08.23.12:55:26 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1558547025</value>
+  <value>1566586525</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -56301,7 +56301,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1558547025</value>
+   <value>1566586525</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -56321,7 +56321,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1558547025</value>
+   <value>1566586525</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -56337,7 +56337,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1558547025</value>
+   <value>1566586525</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -64518,11 +64518,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>control_slave</endConnectionPoint>
  </connection>
  <connection
-   name="FE_Qsys_AD1939_Audio_Research_v1_0.Line_In/FE_Qsys_AD1939_Audio_Research_v1_0.XLR1_Out"
+   name="FE_Qsys_AD1939_Audio_Research_v1_0.Line_In/FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out"
    kind="avalon_streaming"
    version="18.0"
    start="FE_Qsys_AD1939_Audio_Research_v1_0.Line_In"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.XLR1_Out">
+   end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -64542,14 +64542,14 @@ parameters are a RESULT of the module parameters. -->
   <startModule>FE_Qsys_AD1939_Audio_Research_v1_0</startModule>
   <startConnectionPoint>Line_In</startConnectionPoint>
   <endModule>FE_Qsys_AD1939_Audio_Research_v1_0</endModule>
-  <endConnectionPoint>XLR1_Out</endConnectionPoint>
+  <endConnectionPoint>Line_Out</endConnectionPoint>
  </connection>
  <connection
-   name="FE_Qsys_AD1939_Audio_Research_v1_0.Microphone_In/FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out"
+   name="FE_Qsys_AD1939_Audio_Research_v1_0.Microphone_In/FE_Qsys_AD1939_Audio_Research_v1_0.Headphone_Out"
    kind="avalon_streaming"
    version="18.0"
    start="FE_Qsys_AD1939_Audio_Research_v1_0.Microphone_In"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out">
+   end="FE_Qsys_AD1939_Audio_Research_v1_0.Headphone_Out">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -64569,7 +64569,7 @@ parameters are a RESULT of the module parameters. -->
   <startModule>FE_Qsys_AD1939_Audio_Research_v1_0</startModule>
   <startConnectionPoint>Microphone_In</startConnectionPoint>
   <endModule>FE_Qsys_AD1939_Audio_Research_v1_0</endModule>
-  <endConnectionPoint>Line_Out</endConnectionPoint>
+  <endConnectionPoint>Headphone_Out</endConnectionPoint>
  </connection>
  <connection
    name="clk_hps.clk/jtag_master.clk"
