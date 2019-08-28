@@ -6,7 +6,6 @@ set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "descrambl
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "scrambler.vhd"]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "sync_rst.vhd"]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "pulse_resync.vhd"]
-set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "synchronizer.vhd"]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "lfsr.vhd"]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "bus_duplicate.vhd"]
 set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "gb_generic.vhd"]
