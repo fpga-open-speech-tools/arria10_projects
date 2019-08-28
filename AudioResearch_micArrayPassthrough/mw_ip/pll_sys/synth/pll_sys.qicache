@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='us-ascii'?>
 <qsys_generation_info>
-<qsys_file path="D:/NIH3Repo/arria10_projects/AudioResearch_Passthrough/mw_ip/pll_sys.qsys" />
-<gen_dir path="D:/NIH3Repo/arria10_projects/AudioResearch_Passthrough/mw_ip/pll_sys/" />
+<qsys_file path="/mnt/data/NIH/arria10_projects/AudioResearch_micArrayPassthrough/mw_ip/pll_sys.qsys" />
+<gen_dir path="/mnt/data/NIH/arria10_projects/AudioResearch_micArrayPassthrough/mw_ip/pll_sys/" />
 <user_regen_policy value="Never Regenerate Existing IP" />
 <actual_regen_policy value="Never Regenerate Existing IP" />
 <gen_action value="IP Generation Skipped" />

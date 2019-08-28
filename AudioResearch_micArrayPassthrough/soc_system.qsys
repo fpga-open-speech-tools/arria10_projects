@@ -31,7 +31,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -70,8 +70,16 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
+      }
+   }
+   element clock_bridge_0
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
       }
    }
    element ddr4
@@ -85,6 +93,14 @@
       {
          value = "0";
          type = "boolean";
+      }
+   }
+   element dummy_beamformer_ch_sum_0
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
       }
    }
    element hps
@@ -109,8 +125,40 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
+      }
+   }
+   element mic_array_0
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element mono2stereo_adapter_0
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
       }
    }
    element sysid_qsys_0
@@ -148,7 +196,7 @@
  <parameter name="hideFromIPCatalog" value="false" />
  <parameter name="lockedInterfaceDefinition" value="" />
  <parameter name="maxAdditionalLatency" value="1" />
- <parameter name="projectName" value="A10SoM_System.qpf" />
+ <parameter name="projectName">AR_micArrayPassthrough.qpf</parameter>
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="testBenchDutName" value="" />
@@ -248,6 +296,16 @@
    internal="PLL_using_AD1939_MCLK.locked"
    type="conduit"
    dir="end" />
+ <interface
+   name="mic_array_0"
+   internal="mic_array_0.connect_to_mic_array"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array_sck"
+   internal="clock_bridge_0.out_clk"
+   type="clock"
+   dir="start" />
  <interface name="reset" internal="clk_hps.clk_in_reset" type="reset" dir="end" />
  <module
    name="FE_Qsys_AD1939_Audio_Research_v1_0"
@@ -294,7 +352,7 @@
   <parameter name="gui_clk_bad" value="false" />
   <parameter name="gui_clock_name_global" value="false" />
   <parameter name="gui_clock_name_string0" value="outclk0" />
-  <parameter name="gui_clock_name_string1" value="outclk1" />
+  <parameter name="gui_clock_name_string1" value="mic_array_master" />
   <parameter name="gui_clock_name_string10" value="outclk10" />
   <parameter name="gui_clock_name_string11" value="outclk11" />
   <parameter name="gui_clock_name_string12" value="outclk12" />
@@ -303,7 +361,7 @@
   <parameter name="gui_clock_name_string15" value="outclk15" />
   <parameter name="gui_clock_name_string16" value="outclk16" />
   <parameter name="gui_clock_name_string17" value="outclk17" />
-  <parameter name="gui_clock_name_string2" value="outclk2" />
+  <parameter name="gui_clock_name_string2" value="mic_array_rcv" />
   <parameter name="gui_clock_name_string3" value="outclk3" />
   <parameter name="gui_clock_name_string4" value="outclk4" />
   <parameter name="gui_clock_name_string5" value="outclk5" />
@@ -378,10 +436,10 @@
   <parameter name="gui_mif_gen_options">Generate New MIF File</parameter>
   <parameter name="gui_multiply_factor" value="6" />
   <parameter name="gui_new_mif_file_path" value="~/pll.mif" />
-  <parameter name="gui_number_of_clocks" value="1" />
+  <parameter name="gui_number_of_clocks" value="3" />
   <parameter name="gui_operation_mode" value="direct" />
   <parameter name="gui_output_clock_frequency0" value="98.304" />
-  <parameter name="gui_output_clock_frequency1" value="100.0" />
+  <parameter name="gui_output_clock_frequency1" value="24.576" />
   <parameter name="gui_output_clock_frequency10" value="100.0" />
   <parameter name="gui_output_clock_frequency11" value="100.0" />
   <parameter name="gui_output_clock_frequency12" value="100.0" />
@@ -390,7 +448,7 @@
   <parameter name="gui_output_clock_frequency15" value="100.0" />
   <parameter name="gui_output_clock_frequency16" value="100.0" />
   <parameter name="gui_output_clock_frequency17" value="100.0" />
-  <parameter name="gui_output_clock_frequency2" value="100.0" />
+  <parameter name="gui_output_clock_frequency2" value="24.576" />
   <parameter name="gui_output_clock_frequency3" value="100.0" />
   <parameter name="gui_output_clock_frequency4" value="100.0" />
   <parameter name="gui_output_clock_frequency5" value="100.0" />
@@ -409,7 +467,7 @@
   <parameter name="gui_phase_shift15" value="0.0" />
   <parameter name="gui_phase_shift16" value="0.0" />
   <parameter name="gui_phase_shift17" value="0.0" />
-  <parameter name="gui_phase_shift2" value="0.0" />
+  <parameter name="gui_phase_shift2" value="26000.0" />
   <parameter name="gui_phase_shift3" value="0.0" />
   <parameter name="gui_phase_shift4" value="0.0" />
   <parameter name="gui_phase_shift5" value="0.0" />
@@ -507,6 +565,15 @@
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="clock_bridge_0"
+   kind="altera_clock_bridge"
+   version="18.0"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="24576000" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
  </module>
  <module name="ddr4" kind="altera_emif_a10_hps" version="18.0" enabled="1">
   <parameter name="BOARD_DDR3_AC_TO_CK_SKEW_NS" value="0.0" />
@@ -1532,6 +1599,11 @@
   <parameter name="SYS_INFO_UNIQUE_ID" value="$${FILENAME}_ddr4" />
   <parameter name="TRAIT_SUPPORTS_VID" value="0" />
  </module>
+ <module
+   name="dummy_beamformer_ch_sum_0"
+   kind="dummy_beamformer_ch_sum"
+   version="1.0"
+   enabled="1" />
  <module name="hps" kind="altera_arria10_hps" version="18.0" enabled="1">
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
   <parameter name="BOOT_FROM_FPGA_Enable" value="false" />
@@ -1764,6 +1836,16 @@
   <parameter name="PLI_PORT" value="50000" />
   <parameter name="USE_PLI" value="0" />
  </module>
+ <module name="mic_array_0" kind="mic_array" version="1.0" enabled="1" />
+ <module
+   name="mono2stereo_adapter_0"
+   kind="mono2stereo_adapter"
+   version="1.0"
+   enabled="1">
+  <parameter name="clk_freq" value="98304000" />
+  <parameter name="data_width" value="32" />
+  <parameter name="sample_rate" value="48000" />
+ </module>
  <module
    name="sysid_qsys_0"
    kind="altera_avalon_sysid_qsys"
@@ -1781,15 +1863,29 @@
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
-   kind="avalon_streaming"
+   kind="avalon"
    version="18.0"
-   start="FE_Qsys_AD1939_Audio_Research_v1_0.Line_In"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out" />
+   start="jtag_master.master"
+   end="mic_array_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
  <connection
    kind="avalon_streaming"
    version="18.0"
-   start="FE_Qsys_AD1939_Audio_Research_v1_0.Microphone_In"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.Headphone_Out" />
+   start="dummy_beamformer_ch_sum_0.AStOutput"
+   end="mono2stereo_adapter_0.data_in" />
+ <connection
+   kind="avalon_streaming"
+   version="18.0"
+   start="mic_array_0.data_out"
+   end="dummy_beamformer_ch_sum_0.AStInput" />
+ <connection
+   kind="avalon_streaming"
+   version="18.0"
+   start="mono2stereo_adapter_0.data_out"
+   end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out" />
  <connection kind="clock" version="18.0" start="clk_hps.clk" end="jtag_master.clk" />
  <connection
    kind="clock"
@@ -1815,7 +1911,37 @@
    kind="clock"
    version="18.0"
    start="PLL_using_AD1939_MCLK.outclk0"
+   end="dummy_beamformer_ch_sum_0.clock" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="PLL_using_AD1939_MCLK.outclk0"
+   end="mono2stereo_adapter_0.clock" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="PLL_using_AD1939_MCLK.outclk0"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="PLL_using_AD1939_MCLK.outclk0"
+   end="mic_array_0.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="PLL_using_AD1939_MCLK.outclk1"
+   end="clock_bridge_0.in_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="PLL_using_AD1939_MCLK.outclk1"
+   end="mic_array_0.mic_array_master_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="PLL_using_AD1939_MCLK.outclk2"
+   end="mic_array_0.mic_array_receive_clk" />
  <connection
    kind="conduit"
    version="18.0"
@@ -1846,6 +1972,11 @@
    kind="reset"
    version="18.0"
    start="clk_hps.clk_reset"
+   end="dummy_beamformer_ch_sum_0.clock_reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_hps.clk_reset"
    end="hps.h2f_lw_axi_reset" />
  <connection
    kind="reset"
@@ -1857,6 +1988,16 @@
    version="18.0"
    start="clk_hps.clk_reset"
    end="PLL_using_AD1939_MCLK.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_hps.clk_reset"
+   end="mic_array_0.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_hps.clk_reset"
+   end="mono2stereo_adapter_0.reset" />
  <connection
    kind="reset"
    version="18.0"

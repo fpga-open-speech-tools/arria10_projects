@@ -412,6 +412,9 @@ set_instance_assignment -name IO_STANDARD 1.2V -to lnk_m2f_dat
 set_instance_assignment -name IO_STANDARD 1.2V -to lnk_m2f_rst
 set_instance_assignment -name IO_STANDARD 1.2V -to clk_25mhz_fpga
 set_global_assignment -name SEARCH_PATH ../../component_library
+set_global_assignment -name SEARCH_PATH ../../component_library/tapped_delay_line
+set_global_assignment -name SEARCH_PATH ../../component_library/synchronizer
+set_global_assignment -name SEARCH_PATH ../../component_library/OnePulse
 set_location_assignment PIN_AL15 -to AD1939_ADC_ABCLK
 set_location_assignment PIN_AM15 -to AD1939_DAC_DBCLK
 set_location_assignment PIN_AD11 -to AD1939_MCLK
@@ -420,6 +423,16 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_DAC_DBCLK
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_MCLK
 set_instance_assignment -name IO_STANDARD "1.8 V" -to PREAMP_CS
 set_location_assignment PIN_M8 -to PREAMP_CS
+set_location_assignment PIN_M6 -to mic_array_sd
+set_instance_assignment -name IO_STANDARD 1.8V -to mic_array_sd
+set_location_assignment PIN_L6 -to mic_array_ws
+set_instance_assignment -name IO_STANDARD 1.8V -to mic_array_ws
+set_location_assignment PIN_L5 -to mic_array_sck
+set_instance_assignment -name IO_STANDARD 1.8V -to mic_array_sck
+set_location_assignment PIN_M7 -to mic_array_led_ws
+set_instance_assignment -name IO_STANDARD 1.8V -to mic_array_led_ws
+set_location_assignment PIN_M5 -to mic_array_led_sd
+set_instance_assignment -name IO_STANDARD 1.8V -to mic_array_led_sd
 set_global_assignment -name QIP_FILE ../../component_library/AD1939/Source_Files/Serial2Parallel_32bits.qip
 set_global_assignment -name QIP_FILE ../../component_library/AD1939/Source_Files/Parallel2Serial_32bits.qip
 set_global_assignment -name VHDL_FILE ../../component_library/AD1939/Source_Files/AD1939_hps_audio_mini_v1.vhd

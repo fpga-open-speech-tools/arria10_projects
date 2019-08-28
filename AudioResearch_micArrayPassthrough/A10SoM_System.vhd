@@ -4,9 +4,9 @@
 --! @brief      AD1939 using the Audio Research Board on the Arria 10.
 --! @details    Top Level Design for a pass through system using the
 --!             Audio Research Board, developed by Flat Earth Inc.
---! @author     Connor Dack
---! @date       July 2018
---! @copyright  Copyright (C) 2018 Flat Earth Inc
+--! @author     Connor Dack, Trevor Vannoy
+--! @date       Aug 2019
+--! @copyright  Copyright (C) 2019 Flat Earth Inc
 --!
 --! Software Released Under the MIT License
 --
@@ -91,6 +91,12 @@ ENTITY A10SoM_System IS
 		AD1939_DAC_DBCLK      : out std_logic;
 		AD1939_MCLK           : in std_logic;
     PREAMP_CS             : out std_logic;
+
+    mic_array_led_ws      : out std_logic;
+    mic_array_led_sd      : out std_logic;
+    mic_array_sd          : in  std_logic;
+    mic_array_ws          : out std_logic;
+    mic_array_sck         : out std_logic;
 
     ------------------------------------------------------------------------------------------
     -- FMC Top/Bot (HPC)
@@ -326,7 +332,12 @@ ARCHITECTURE A10SoM_System_Arch OF A10SoM_System IS
             hps_spim1_ss3_n_o                    : out   std_logic;                                        -- ss3_n_o
             hps_spim1_sclk_out_clk               : out   std_logic;                                        -- clk
             mclk_pll_locked_export               : out   std_logic;                                        -- export
-            reset_reset_n                        : in    std_logic                     := 'X'              -- reset_n
+            reset_reset_n                        : in    std_logic                     := 'X';             -- reset_n
+            mic_array_0_led_sd                   : out   std_logic;                                        -- led_sd
+            mic_array_0_led_ws                   : out   std_logic;                                        -- led_ws
+            mic_array_0_sd                       : in    std_logic                     := 'X';             -- sd
+            mic_array_0_ws                       : out   std_logic;                                         -- ws
+            mic_array_sck_clk                    : out   std_logic                                         -- clk
         );
     end component soc_system;
 
@@ -378,8 +389,8 @@ ARCHITECTURE A10SoM_System_Arch OF A10SoM_System IS
 	SIGNAL i2c_0_i2c_serial_sda_in		: std_logic;
 	SIGNAL i2c_serial_scl_in				: std_logic;
 	SIGNAL i2c_serial_sda_oe				: std_logic;
-	SIGNAL serial_scl_oe						: std_logic;
-
+  SIGNAL serial_scl_oe						: std_logic;
+  
 	signal cnt : integer := 0;
 --	attribute keep of cnt: integer is true;
 BEGIN
@@ -565,7 +576,12 @@ BEGIN
       hps_i2c0_scl_in_clk                     => i2c_serial_scl_in,
       hps_i2c0_clk_clk                        => serial_scl_oe,
       hps_i2c0_sda_i                          => i2c_0_i2c_serial_sda_in,
-      hps_i2c0_sda_oe                         => i2c_serial_sda_oe
+      hps_i2c0_sda_oe                         => i2c_serial_sda_oe,
+      mic_array_0_led_sd                      => mic_array_led_sd,
+      mic_array_0_led_ws                      => mic_array_led_ws,
+      mic_array_0_sd                          => mic_array_sd,
+      mic_array_0_ws                          => mic_array_ws,
+      mic_array_sck_clk                       => mic_array_sck
      );
 
 
@@ -651,5 +667,7 @@ BEGIN
 			  o   => i2c_serial_scl_in
 		 );
 
+
+  
 
 END ARCHITECTURE;
