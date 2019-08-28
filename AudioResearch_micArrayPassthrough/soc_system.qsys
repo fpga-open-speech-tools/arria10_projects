@@ -13,72 +13,20 @@
    {
       datum _sortIndex
       {
+         value = "4";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
+   }
+   element codec_clocks
+   {
+      datum _sortIndex
+      {
          value = "8";
-         type = "int";
-      }
-      datum sopceditor_expanded
-      {
-         value = "1";
-         type = "boolean";
-      }
-   }
-   element PLL_using_AD1939_MCLK
-   {
-      datum _sortIndex
-      {
-         value = "7";
-         type = "int";
-      }
-      datum sopceditor_expanded
-      {
-         value = "1";
-         type = "boolean";
-      }
-   }
-   element clk_AD1939_ABCLK
-   {
-      datum _sortIndex
-      {
-         value = "5";
-         type = "int";
-      }
-      datum sopceditor_expanded
-      {
-         value = "0";
-         type = "boolean";
-      }
-   }
-   element clk_AD1939_ALRCLK
-   {
-      datum _sortIndex
-      {
-         value = "6";
-         type = "int";
-      }
-      datum sopceditor_expanded
-      {
-         value = "0";
-         type = "boolean";
-      }
-   }
-   element clk_hps
-   {
-      datum _sortIndex
-      {
-         value = "0";
-         type = "int";
-      }
-      datum sopceditor_expanded
-      {
-         value = "1";
-         type = "boolean";
-      }
-   }
-   element clock_bridge_0
-   {
-      datum _sortIndex
-      {
-         value = "12";
          type = "int";
       }
    }
@@ -86,12 +34,12 @@
    {
       datum _sortIndex
       {
-         value = "2";
+         value = "1";
          type = "int";
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -99,7 +47,7 @@
    {
       datum _sortIndex
       {
-         value = "10";
+         value = "6";
          type = "int";
       }
    }
@@ -107,12 +55,12 @@
    {
       datum _sortIndex
       {
-         value = "1";
+         value = "0";
          type = "int";
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -120,7 +68,7 @@
    {
       datum _sortIndex
       {
-         value = "3";
+         value = "2";
          type = "int";
       }
       datum sopceditor_expanded
@@ -133,6 +81,14 @@
    {
       datum _sortIndex
       {
+         value = "5";
+         type = "int";
+      }
+   }
+   element mic_array_clocks
+   {
+      datum _sortIndex
+      {
          value = "9";
          type = "int";
       }
@@ -141,8 +97,16 @@
    {
       datum _sortIndex
       {
-         value = "11";
+         value = "7";
          type = "int";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
       }
    }
    element soc_system
@@ -165,12 +129,12 @@
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "3";
          type = "int";
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -205,17 +169,17 @@
  <instanceScript></instanceScript>
  <interface
    name="ad1939_abclk"
-   internal="clk_AD1939_ABCLK.clk_in"
+   internal="codec_clocks.ad1939_abclk_in"
    type="clock"
    dir="end" />
  <interface
    name="ad1939_alrclk"
-   internal="clk_AD1939_ALRCLK.clk_in"
+   internal="codec_clocks.ad1939_alrclk_in"
    type="clock"
    dir="end" />
  <interface
    name="ad1939_mclk"
-   internal="PLL_using_AD1939_MCLK.refclk"
+   internal="codec_clocks.ad1939_mclk_in"
    type="clock"
    dir="end" />
  <interface
@@ -225,7 +189,6 @@
    dir="end" />
  <interface name="arria10_hps_emac_switch0" internal="hps.emac_switch0" />
  <interface name="arria10_hps_h2f_mpu_events" internal="hps.h2f_mpu_events" />
- <interface name="clk" internal="clk_hps.clk_in" type="clock" dir="end" />
  <interface
    name="ddr4_global_reset_reset_sink"
    internal="ddr4.global_reset_reset_sink"
@@ -292,288 +255,36 @@
  <interface name="hps_spis0_sclk_in" internal="hps.spis0_sclk_in" />
  <interface name="hps_uart0" internal="hps.uart0" />
  <interface
-   name="mclk_pll_locked"
-   internal="PLL_using_AD1939_MCLK.locked"
-   type="conduit"
-   dir="end" />
- <interface
    name="mic_array_0"
    internal="mic_array_0.connect_to_mic_array"
    type="conduit"
    dir="end" />
  <interface
    name="mic_array_sck"
-   internal="clock_bridge_0.out_clk"
+   internal="mic_array_clocks.sck_master_export"
    type="clock"
    dir="start" />
- <interface name="reset" internal="clk_hps.clk_in_reset" type="reset" dir="end" />
+ <interface name="reset" internal="codec_clocks.reset_in" type="reset" dir="end" />
  <module
    name="FE_Qsys_AD1939_Audio_Research_v1_0"
    kind="FE_Qsys_AD1939_Audio_Research_v1"
    version="1.0"
    enabled="1" />
- <module
-   name="PLL_using_AD1939_MCLK"
-   kind="altera_iopll"
-   version="18.0"
-   enabled="1">
-  <parameter name="gui_active_clk" value="false" />
-  <parameter name="gui_c_cnt_in_src0">c_m_cnt_in_src_ph_mux_clk</parameter>
-  <parameter name="gui_c_cnt_in_src1">c_m_cnt_in_src_ph_mux_clk</parameter>
-  <parameter name="gui_c_cnt_in_src2">c_m_cnt_in_src_ph_mux_clk</parameter>
-  <parameter name="gui_c_cnt_in_src3">c_m_cnt_in_src_ph_mux_clk</parameter>
-  <parameter name="gui_c_cnt_in_src4">c_m_cnt_in_src_ph_mux_clk</parameter>
-  <parameter name="gui_c_cnt_in_src5">c_m_cnt_in_src_ph_mux_clk</parameter>
-  <parameter name="gui_c_cnt_in_src6">c_m_cnt_in_src_ph_mux_clk</parameter>
-  <parameter name="gui_c_cnt_in_src7">c_m_cnt_in_src_ph_mux_clk</parameter>
-  <parameter name="gui_c_cnt_in_src8">c_m_cnt_in_src_ph_mux_clk</parameter>
-  <parameter name="gui_cal_code_hex_file" value="iossm.hex" />
-  <parameter name="gui_cal_converge" value="false" />
-  <parameter name="gui_cal_error" value="cal_clean" />
-  <parameter name="gui_cascade_counter0" value="false" />
-  <parameter name="gui_cascade_counter1" value="false" />
-  <parameter name="gui_cascade_counter10" value="false" />
-  <parameter name="gui_cascade_counter11" value="false" />
-  <parameter name="gui_cascade_counter12" value="false" />
-  <parameter name="gui_cascade_counter13" value="false" />
-  <parameter name="gui_cascade_counter14" value="false" />
-  <parameter name="gui_cascade_counter15" value="false" />
-  <parameter name="gui_cascade_counter16" value="false" />
-  <parameter name="gui_cascade_counter17" value="false" />
-  <parameter name="gui_cascade_counter2" value="false" />
-  <parameter name="gui_cascade_counter3" value="false" />
-  <parameter name="gui_cascade_counter4" value="false" />
-  <parameter name="gui_cascade_counter5" value="false" />
-  <parameter name="gui_cascade_counter6" value="false" />
-  <parameter name="gui_cascade_counter7" value="false" />
-  <parameter name="gui_cascade_counter8" value="false" />
-  <parameter name="gui_cascade_counter9" value="false" />
-  <parameter name="gui_cascade_outclk_index" value="0" />
-  <parameter name="gui_clk_bad" value="false" />
-  <parameter name="gui_clock_name_global" value="false" />
-  <parameter name="gui_clock_name_string0" value="outclk0" />
-  <parameter name="gui_clock_name_string1" value="mic_array_master" />
-  <parameter name="gui_clock_name_string10" value="outclk10" />
-  <parameter name="gui_clock_name_string11" value="outclk11" />
-  <parameter name="gui_clock_name_string12" value="outclk12" />
-  <parameter name="gui_clock_name_string13" value="outclk13" />
-  <parameter name="gui_clock_name_string14" value="outclk14" />
-  <parameter name="gui_clock_name_string15" value="outclk15" />
-  <parameter name="gui_clock_name_string16" value="outclk16" />
-  <parameter name="gui_clock_name_string17" value="outclk17" />
-  <parameter name="gui_clock_name_string2" value="mic_array_rcv" />
-  <parameter name="gui_clock_name_string3" value="outclk3" />
-  <parameter name="gui_clock_name_string4" value="outclk4" />
-  <parameter name="gui_clock_name_string5" value="outclk5" />
-  <parameter name="gui_clock_name_string6" value="outclk6" />
-  <parameter name="gui_clock_name_string7" value="outclk7" />
-  <parameter name="gui_clock_name_string8" value="outclk8" />
-  <parameter name="gui_clock_name_string9" value="outclk9" />
-  <parameter name="gui_clock_to_compensate" value="0" />
-  <parameter name="gui_debug_mode" value="false" />
-  <parameter name="gui_divide_factor_c0" value="6" />
-  <parameter name="gui_divide_factor_c1" value="6" />
-  <parameter name="gui_divide_factor_c10" value="6" />
-  <parameter name="gui_divide_factor_c11" value="6" />
-  <parameter name="gui_divide_factor_c12" value="6" />
-  <parameter name="gui_divide_factor_c13" value="6" />
-  <parameter name="gui_divide_factor_c14" value="6" />
-  <parameter name="gui_divide_factor_c15" value="6" />
-  <parameter name="gui_divide_factor_c16" value="6" />
-  <parameter name="gui_divide_factor_c17" value="6" />
-  <parameter name="gui_divide_factor_c2" value="6" />
-  <parameter name="gui_divide_factor_c3" value="6" />
-  <parameter name="gui_divide_factor_c4" value="6" />
-  <parameter name="gui_divide_factor_c5" value="6" />
-  <parameter name="gui_divide_factor_c6" value="6" />
-  <parameter name="gui_divide_factor_c7" value="6" />
-  <parameter name="gui_divide_factor_c8" value="6" />
-  <parameter name="gui_divide_factor_c9" value="6" />
-  <parameter name="gui_divide_factor_n" value="1" />
-  <parameter name="gui_dps_cntr" value="C0" />
-  <parameter name="gui_dps_dir" value="Positive" />
-  <parameter name="gui_dps_num" value="1" />
-  <parameter name="gui_dsm_out_sel" value="1st_order" />
-  <parameter name="gui_duty_cycle0" value="50.0" />
-  <parameter name="gui_duty_cycle1" value="50.0" />
-  <parameter name="gui_duty_cycle10" value="50.0" />
-  <parameter name="gui_duty_cycle11" value="50.0" />
-  <parameter name="gui_duty_cycle12" value="50.0" />
-  <parameter name="gui_duty_cycle13" value="50.0" />
-  <parameter name="gui_duty_cycle14" value="50.0" />
-  <parameter name="gui_duty_cycle15" value="50.0" />
-  <parameter name="gui_duty_cycle16" value="50.0" />
-  <parameter name="gui_duty_cycle17" value="50.0" />
-  <parameter name="gui_duty_cycle2" value="50.0" />
-  <parameter name="gui_duty_cycle3" value="50.0" />
-  <parameter name="gui_duty_cycle4" value="50.0" />
-  <parameter name="gui_duty_cycle5" value="50.0" />
-  <parameter name="gui_duty_cycle6" value="50.0" />
-  <parameter name="gui_duty_cycle7" value="50.0" />
-  <parameter name="gui_duty_cycle8" value="50.0" />
-  <parameter name="gui_duty_cycle9" value="50.0" />
-  <parameter name="gui_en_adv_params" value="false" />
-  <parameter name="gui_en_dps_ports" value="false" />
-  <parameter name="gui_en_extclkout_ports" value="false" />
-  <parameter name="gui_en_lvds_ports" value="Disabled" />
-  <parameter name="gui_en_phout_ports" value="false" />
-  <parameter name="gui_en_reconf" value="false" />
-  <parameter name="gui_enable_cascade_in" value="false" />
-  <parameter name="gui_enable_cascade_out" value="false" />
-  <parameter name="gui_enable_mif_dps" value="false" />
-  <parameter name="gui_enable_output_counter_cascading" value="false" />
-  <parameter name="gui_existing_mif_file_path" value="~/pll.mif" />
-  <parameter name="gui_extclkout_0_source" value="C0" />
-  <parameter name="gui_extclkout_1_source" value="C0" />
-  <parameter name="gui_feedback_clock" value="Global Clock" />
-  <parameter name="gui_fix_vco_frequency" value="false" />
-  <parameter name="gui_fixed_vco_frequency" value="600.0" />
-  <parameter name="gui_frac_multiply_factor" value="1" />
-  <parameter name="gui_fractional_cout" value="32" />
-  <parameter name="gui_include_iossm" value="false" />
-  <parameter name="gui_lock_setting" value="Low Lock Time" />
-  <parameter name="gui_mif_config_name" value="unnamed" />
-  <parameter name="gui_mif_gen_options">Generate New MIF File</parameter>
-  <parameter name="gui_multiply_factor" value="6" />
-  <parameter name="gui_new_mif_file_path" value="~/pll.mif" />
-  <parameter name="gui_number_of_clocks" value="3" />
-  <parameter name="gui_operation_mode" value="direct" />
-  <parameter name="gui_output_clock_frequency0" value="98.304" />
-  <parameter name="gui_output_clock_frequency1" value="24.576" />
-  <parameter name="gui_output_clock_frequency10" value="100.0" />
-  <parameter name="gui_output_clock_frequency11" value="100.0" />
-  <parameter name="gui_output_clock_frequency12" value="100.0" />
-  <parameter name="gui_output_clock_frequency13" value="100.0" />
-  <parameter name="gui_output_clock_frequency14" value="100.0" />
-  <parameter name="gui_output_clock_frequency15" value="100.0" />
-  <parameter name="gui_output_clock_frequency16" value="100.0" />
-  <parameter name="gui_output_clock_frequency17" value="100.0" />
-  <parameter name="gui_output_clock_frequency2" value="24.576" />
-  <parameter name="gui_output_clock_frequency3" value="100.0" />
-  <parameter name="gui_output_clock_frequency4" value="100.0" />
-  <parameter name="gui_output_clock_frequency5" value="100.0" />
-  <parameter name="gui_output_clock_frequency6" value="100.0" />
-  <parameter name="gui_output_clock_frequency7" value="100.0" />
-  <parameter name="gui_output_clock_frequency8" value="100.0" />
-  <parameter name="gui_output_clock_frequency9" value="100.0" />
-  <parameter name="gui_parameter_table_hex_file" value="seq_params_sim.hex" />
-  <parameter name="gui_phase_shift0" value="0.0" />
-  <parameter name="gui_phase_shift1" value="0.0" />
-  <parameter name="gui_phase_shift10" value="0.0" />
-  <parameter name="gui_phase_shift11" value="0.0" />
-  <parameter name="gui_phase_shift12" value="0.0" />
-  <parameter name="gui_phase_shift13" value="0.0" />
-  <parameter name="gui_phase_shift14" value="0.0" />
-  <parameter name="gui_phase_shift15" value="0.0" />
-  <parameter name="gui_phase_shift16" value="0.0" />
-  <parameter name="gui_phase_shift17" value="0.0" />
-  <parameter name="gui_phase_shift2" value="26000.0" />
-  <parameter name="gui_phase_shift3" value="0.0" />
-  <parameter name="gui_phase_shift4" value="0.0" />
-  <parameter name="gui_phase_shift5" value="0.0" />
-  <parameter name="gui_phase_shift6" value="0.0" />
-  <parameter name="gui_phase_shift7" value="0.0" />
-  <parameter name="gui_phase_shift8" value="0.0" />
-  <parameter name="gui_phase_shift9" value="0.0" />
-  <parameter name="gui_phase_shift_deg0" value="0.0" />
-  <parameter name="gui_phase_shift_deg1" value="0.0" />
-  <parameter name="gui_phase_shift_deg10" value="0.0" />
-  <parameter name="gui_phase_shift_deg11" value="0.0" />
-  <parameter name="gui_phase_shift_deg12" value="0.0" />
-  <parameter name="gui_phase_shift_deg13" value="0.0" />
-  <parameter name="gui_phase_shift_deg14" value="0.0" />
-  <parameter name="gui_phase_shift_deg15" value="0.0" />
-  <parameter name="gui_phase_shift_deg16" value="0.0" />
-  <parameter name="gui_phase_shift_deg17" value="0.0" />
-  <parameter name="gui_phase_shift_deg2" value="0.0" />
-  <parameter name="gui_phase_shift_deg3" value="0.0" />
-  <parameter name="gui_phase_shift_deg4" value="0.0" />
-  <parameter name="gui_phase_shift_deg5" value="0.0" />
-  <parameter name="gui_phase_shift_deg6" value="0.0" />
-  <parameter name="gui_phase_shift_deg7" value="0.0" />
-  <parameter name="gui_phase_shift_deg8" value="0.0" />
-  <parameter name="gui_phase_shift_deg9" value="0.0" />
-  <parameter name="gui_phout_division" value="1" />
-  <parameter name="gui_pll_auto_reset" value="false" />
-  <parameter name="gui_pll_bandwidth_preset" value="Low" />
-  <parameter name="gui_pll_cal_done" value="false" />
-  <parameter name="gui_pll_cascading_mode" value="adjpllin" />
-  <parameter name="gui_pll_freqcal_en" value="true" />
-  <parameter name="gui_pll_freqcal_req_flag" value="true" />
-  <parameter name="gui_pll_m_cnt_in_src">c_m_cnt_in_src_ph_mux_clk</parameter>
-  <parameter name="gui_pll_mode" value="Integer-N PLL" />
-  <parameter name="gui_pll_tclk_mux_en" value="false" />
-  <parameter name="gui_pll_tclk_sel" value="pll_tclk_m_src" />
-  <parameter name="gui_pll_type" value="S10_Simple" />
-  <parameter name="gui_pll_vco_freq_band_0">pll_freq_clk0_disabled</parameter>
-  <parameter name="gui_pll_vco_freq_band_1">pll_freq_clk1_disabled</parameter>
-  <parameter name="gui_ps_units0" value="ps" />
-  <parameter name="gui_ps_units1" value="ps" />
-  <parameter name="gui_ps_units10" value="ps" />
-  <parameter name="gui_ps_units11" value="ps" />
-  <parameter name="gui_ps_units12" value="ps" />
-  <parameter name="gui_ps_units13" value="ps" />
-  <parameter name="gui_ps_units14" value="ps" />
-  <parameter name="gui_ps_units15" value="ps" />
-  <parameter name="gui_ps_units16" value="ps" />
-  <parameter name="gui_ps_units17" value="ps" />
-  <parameter name="gui_ps_units2" value="ps" />
-  <parameter name="gui_ps_units3" value="ps" />
-  <parameter name="gui_ps_units4" value="ps" />
-  <parameter name="gui_ps_units5" value="ps" />
-  <parameter name="gui_ps_units6" value="ps" />
-  <parameter name="gui_ps_units7" value="ps" />
-  <parameter name="gui_ps_units8" value="ps" />
-  <parameter name="gui_ps_units9" value="ps" />
-  <parameter name="gui_refclk1_frequency" value="100.0" />
-  <parameter name="gui_refclk_switch" value="false" />
-  <parameter name="gui_reference_clock_frequency" value="12.288" />
-  <parameter name="gui_switchover_delay" value="0" />
-  <parameter name="gui_switchover_mode">Automatic Switchover</parameter>
-  <parameter name="gui_use_NDFB_modes" value="false" />
-  <parameter name="gui_use_locked" value="true" />
-  <parameter name="gui_usr_device_speed_grade" value="1" />
-  <parameter name="gui_vco_frequency" value="600.0" />
-  <parameter name="hp_qsys_scripting_mode" value="false" />
-  <parameter name="system_info_device_component" value="10AS066H2F34I1SG" />
-  <parameter name="system_info_device_family" value="Arria 10" />
-  <parameter name="system_info_device_speed_grade" value="1" />
-  <parameter name="system_part_trait_speed_grade" value="1" />
- </module>
- <module
-   name="clk_AD1939_ABCLK"
-   kind="clock_source"
-   version="18.0"
-   enabled="1">
-  <parameter name="clockFrequency" value="50000000" />
-  <parameter name="clockFrequencyKnown" value="true" />
-  <parameter name="inputClockFrequency" value="0" />
-  <parameter name="resetSynchronousEdges" value="NONE" />
- </module>
- <module
-   name="clk_AD1939_ALRCLK"
-   kind="clock_source"
-   version="18.0"
-   enabled="1">
-  <parameter name="clockFrequency" value="50000000" />
-  <parameter name="clockFrequencyKnown" value="true" />
-  <parameter name="inputClockFrequency" value="0" />
-  <parameter name="resetSynchronousEdges" value="NONE" />
- </module>
- <module name="clk_hps" kind="clock_source" version="18.0" enabled="1">
-  <parameter name="clockFrequency" value="25000000" />
-  <parameter name="clockFrequencyKnown" value="true" />
-  <parameter name="inputClockFrequency" value="0" />
-  <parameter name="resetSynchronousEdges" value="NONE" />
- </module>
- <module
-   name="clock_bridge_0"
-   kind="altera_clock_bridge"
-   version="18.0"
-   enabled="1">
-  <parameter name="DERIVED_CLOCK_RATE" value="24576000" />
-  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
-  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
+ <module name="codec_clocks" kind="codec_clocks" version="1.0" enabled="1">
+  <parameter name="AUTO_AD1939_ABCLK_IN_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_AD1939_ABCLK_IN_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_AD1939_ABCLK_IN_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_AD1939_ALRCLK_IN_CLOCK_DOMAIN" value="2" />
+  <parameter name="AUTO_AD1939_ALRCLK_IN_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_AD1939_ALRCLK_IN_RESET_DOMAIN" value="2" />
+  <parameter name="AUTO_AD1939_MCLK_IN_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_AD1939_MCLK_IN_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_AD1939_MCLK_IN_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_DEVICE" value="10AS066H2F34I1SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_codec_clocks</parameter>
  </module>
  <module name="ddr4" kind="altera_emif_a10_hps" version="18.0" enabled="1">
   <parameter name="BOARD_DDR3_AC_TO_CK_SKEW_NS" value="0.0" />
@@ -1709,7 +1420,7 @@
   <parameter name="H2F_COLD_RST_Enable" value="false" />
   <parameter name="H2F_CTI_CLOCK_FREQ" value="100" />
   <parameter name="H2F_DEBUG_APB_CLOCK_FREQ" value="100" />
-  <parameter name="H2F_LW_AXI_CLOCK_FREQ" value="25000000" />
+  <parameter name="H2F_LW_AXI_CLOCK_FREQ" value="98304000" />
   <parameter name="H2F_PENDING_RST_Enable" value="false" />
   <parameter name="H2F_TPIU_CLOCK_IN_FREQ" value="100" />
   <parameter name="H2F_USER0_CLK_Enable" value="false" />
@@ -1838,6 +1549,20 @@
  </module>
  <module name="mic_array_0" kind="mic_array" version="1.0" enabled="1" />
  <module
+   name="mic_array_clocks"
+   kind="mic_array_clocks"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_AD1939_MCLK_CLOCK_DOMAIN" value="3" />
+  <parameter name="AUTO_AD1939_MCLK_CLOCK_RATE" value="12288000" />
+  <parameter name="AUTO_AD1939_MCLK_RESET_DOMAIN" value="3" />
+  <parameter name="AUTO_DEVICE" value="10AS066H2F34I1SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_mic_array_clocks</parameter>
+ </module>
+ <module
    name="mono2stereo_adapter_0"
    kind="mono2stereo_adapter"
    version="1.0"
@@ -1886,62 +1611,66 @@
    version="18.0"
    start="mono2stereo_adapter_0.data_out"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out" />
- <connection kind="clock" version="18.0" start="clk_hps.clk" end="jtag_master.clk" />
  <connection
    kind="clock"
    version="18.0"
-   start="clk_hps.clk"
-   end="sysid_qsys_0.clk" />
- <connection
-   kind="clock"
-   version="18.0"
-   start="clk_AD1939_ABCLK.clk"
+   start="codec_clocks.ad1939_abclk_out"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.clk_abclk" />
  <connection
    kind="clock"
    version="18.0"
-   start="clk_AD1939_ALRCLK.clk"
+   start="codec_clocks.ad1939_alrclk_out"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.clk_alrclk" />
  <connection
    kind="clock"
    version="18.0"
-   start="clk_hps.clk"
-   end="hps.h2f_lw_axi_clock" />
+   start="codec_clocks.ad1939_mclk_out"
+   end="mic_array_clocks.ad1939_mclk" />
  <connection
    kind="clock"
    version="18.0"
-   start="PLL_using_AD1939_MCLK.outclk0"
-   end="dummy_beamformer_ch_sum_0.clock" />
- <connection
-   kind="clock"
-   version="18.0"
-   start="PLL_using_AD1939_MCLK.outclk0"
-   end="mono2stereo_adapter_0.clock" />
- <connection
-   kind="clock"
-   version="18.0"
-   start="PLL_using_AD1939_MCLK.outclk0"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_clk" />
- <connection
-   kind="clock"
-   version="18.0"
-   start="PLL_using_AD1939_MCLK.outclk0"
-   end="mic_array_0.sys_clk" />
- <connection
-   kind="clock"
-   version="18.0"
-   start="PLL_using_AD1939_MCLK.outclk1"
-   end="clock_bridge_0.in_clk" />
- <connection
-   kind="clock"
-   version="18.0"
-   start="PLL_using_AD1939_MCLK.outclk1"
+   start="mic_array_clocks.sck_master"
    end="mic_array_0.mic_array_master_clk" />
  <connection
    kind="clock"
    version="18.0"
-   start="PLL_using_AD1939_MCLK.outclk2"
+   start="mic_array_clocks.sck_rcv_ch0"
    end="mic_array_0.mic_array_receive_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="codec_clocks.sys_clk"
+   end="sysid_qsys_0.clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="codec_clocks.sys_clk"
+   end="jtag_master.clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="codec_clocks.sys_clk"
+   end="dummy_beamformer_ch_sum_0.clock" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="codec_clocks.sys_clk"
+   end="mono2stereo_adapter_0.clock" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="codec_clocks.sys_clk"
+   end="hps.h2f_lw_axi_clock" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="codec_clocks.sys_clk"
+   end="mic_array_0.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="codec_clocks.sys_clk"
+   end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_clk" />
  <connection
    kind="conduit"
    version="18.0"
@@ -1956,52 +1685,42 @@
  <connection
    kind="reset"
    version="18.0"
-   start="clk_hps.clk_reset"
-   end="clk_AD1939_ALRCLK.clk_in_reset" />
- <connection
-   kind="reset"
-   version="18.0"
-   start="clk_hps.clk_reset"
-   end="clk_AD1939_ABCLK.clk_in_reset" />
- <connection
-   kind="reset"
-   version="18.0"
-   start="clk_hps.clk_reset"
+   start="codec_clocks.reset_out"
    end="jtag_master.clk_reset" />
  <connection
    kind="reset"
    version="18.0"
-   start="clk_hps.clk_reset"
+   start="codec_clocks.reset_out"
    end="dummy_beamformer_ch_sum_0.clock_reset" />
  <connection
    kind="reset"
    version="18.0"
-   start="clk_hps.clk_reset"
+   start="codec_clocks.reset_out"
    end="hps.h2f_lw_axi_reset" />
  <connection
    kind="reset"
    version="18.0"
-   start="clk_hps.clk_reset"
+   start="codec_clocks.reset_out"
    end="sysid_qsys_0.reset" />
  <connection
    kind="reset"
    version="18.0"
-   start="clk_hps.clk_reset"
-   end="PLL_using_AD1939_MCLK.reset" />
- <connection
-   kind="reset"
-   version="18.0"
-   start="clk_hps.clk_reset"
+   start="codec_clocks.reset_out"
    end="mic_array_0.reset" />
  <connection
    kind="reset"
    version="18.0"
-   start="clk_hps.clk_reset"
+   start="codec_clocks.reset_out"
    end="mono2stereo_adapter_0.reset" />
  <connection
    kind="reset"
    version="18.0"
-   start="clk_hps.clk_reset"
+   start="codec_clocks.reset_out"
+   end="mic_array_clocks.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="codec_clocks.reset_out"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />

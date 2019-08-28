@@ -240,7 +240,6 @@ ARCHITECTURE A10SoM_System_Arch OF A10SoM_System IS
             ad1939_physical_ad1939_dac_dsdata2   : out   std_logic;                                        -- ad1939_dac_dsdata2
             ad1939_physical_ad1939_dac_dsdata3   : out   std_logic;                                        -- ad1939_dac_dsdata3
             ad1939_physical_ad1939_dac_dsdata4   : out   std_logic;                                        -- ad1939_dac_dsdata4
-            clk_clk                              : in    std_logic                     := 'X';             -- clk
             ddr4_global_reset_reset_sink_reset_n : in    std_logic                     := 'X';             -- reset_n
             ddr4_mem_conduit_end_mem_ck          : out   std_logic_vector(0 downto 0);                     -- mem_ck
             ddr4_mem_conduit_end_mem_ck_n        : out   std_logic_vector(0 downto 0);                     -- mem_ck_n
@@ -331,8 +330,7 @@ ARCHITECTURE A10SoM_System_Arch OF A10SoM_System IS
             hps_spim1_ss2_n_o                    : out   std_logic;                                        -- ss2_n_o
             hps_spim1_ss3_n_o                    : out   std_logic;                                        -- ss3_n_o
             hps_spim1_sclk_out_clk               : out   std_logic;                                        -- clk
-            mclk_pll_locked_export               : out   std_logic;                                        -- export
-            reset_reset_n                        : in    std_logic                     := 'X';             -- reset_n
+            reset_reset                        : in    std_logic                     := 'X';             -- reset_n
             mic_array_0_led_sd                   : out   std_logic;                                        -- led_sd
             mic_array_0_led_ws                   : out   std_logic;                                        -- led_ws
             mic_array_0_sd                       : in    std_logic                     := 'X';             -- sd
@@ -504,8 +502,7 @@ BEGIN
       ddr4_mem_conduit_end_mem_dbi_n          => hps_ddr4_dbi_n,                --                             .mem_dbi_n
       ddr4_oct_conduit_end_oct_rzqin          => hps_ddr4_oct_rzqin,            --         ddr4_oct_conduit_end.oct_rzqin
       ddr4_pll_ref_clk_clock_sink_clk         => hps_ddr4_pll_ref_clk,          --  ddr4_pll_ref_clk_clock_sink.clk
-      clk_clk                                 => s_sys_clk,                --                          clk.clk
-      reset_reset_n                           => s_sys_rstn,                    --                        reset.reset_n
+      reset_reset                           => s_sys_rst,                    --                        reset.reset_n
       hps_f2h_cold_reset_req_reset_n          => sb_hps_rst_n and not(hps_rst), --       hps_f2h_cold_reset_req.reset_n
       hps_f2h_irq0_irq                        => (OTHERS => '0'),               --                 hps_f2h_irq0.irq
       hps_f2h_irq1_irq                        => (OTHERS => '0'),               --                 hps_f2h_irq1.irq

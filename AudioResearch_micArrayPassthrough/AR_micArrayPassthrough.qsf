@@ -444,4 +444,5 @@ set_global_assignment -name QIP_FILE jlf/buffer2ck.qip
 set_global_assignment -name QIP_FILE common/common.qip
 set_global_assignment -name QSYS_FILE soc_system.qsys
 set_global_assignment -name VHDL_FILE A10SoM_System.vhd
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to AD1939_MCLK
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
