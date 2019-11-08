@@ -422,8 +422,8 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_DAC_DBCLK
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_MCLK
 set_instance_assignment -name IO_STANDARD "1.8 V" -to PREAMP_CS
 set_location_assignment PIN_M8 -to PREAMP_CS
-set_global_assignment -name QIP_FILE ../../component_library/AD1939/Source_Files/Serial2Parallel_32bits.qip
-set_global_assignment -name QIP_FILE ../../component_library/AD1939/Source_Files/Parallel2Serial_32bits.qip
+set_global_assignment -name QIP_FILE ../../component_library/serdes/Serial2Parallel_32bits.qip
+set_global_assignment -name QIP_FILE ../../component_library/serdes/Parallel2Serial_32bits.qip
 set_global_assignment -name VHDL_FILE ../../component_library/AD1939/Source_Files/AD1939_hps_audio_mini_v1.vhd
 set_global_assignment -name SDC_FILE A10SoM_System.sdc
 set_global_assignment -name QSYS_FILE mw_ip/pll_sys.qsys
