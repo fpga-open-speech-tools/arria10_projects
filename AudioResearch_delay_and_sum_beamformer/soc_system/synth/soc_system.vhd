@@ -329,14 +329,14 @@ begin
 			avalon_slave_readdata  => mm_interconnect_0_delay_and_sum_beamformer_0_avalon_slave_readdata,   --                        .readdata
 			avalon_slave_write     => mm_interconnect_0_delay_and_sum_beamformer_0_avalon_slave_write,      --                        .write
 			avalon_slave_writedata => mm_interconnect_0_delay_and_sum_beamformer_0_avalon_slave_writedata,  --                        .writedata
-			avalon_sink_valid      => avalon_st_adapter_002_out_0_valid,                                    --   avalon_streaming_sink.valid
-			avalon_sink_data       => avalon_st_adapter_002_out_0_data,                                     --                        .data
+			avalon_sink_data       => avalon_st_adapter_002_out_0_data,                                     --   avalon_streaming_sink.data
 			avalon_sink_channel    => avalon_st_adapter_002_out_0_channel,                                  --                        .channel
 			avalon_sink_error      => avalon_st_adapter_002_out_0_error,                                    --                        .error
-			avalon_source_valid    => delay_and_sum_beamformer_0_avalon_streaming_source_valid,             -- avalon_streaming_source.valid
+			avalon_sink_valid      => avalon_st_adapter_002_out_0_valid,                                    --                        .valid
+			avalon_source_channel  => delay_and_sum_beamformer_0_avalon_streaming_source_channel,           -- avalon_streaming_source.channel
+			avalon_source_error    => delay_and_sum_beamformer_0_avalon_streaming_source_error,             --                        .error
 			avalon_source_data     => delay_and_sum_beamformer_0_avalon_streaming_source_data,              --                        .data
-			avalon_source_channel  => delay_and_sum_beamformer_0_avalon_streaming_source_channel,           --                        .channel
-			avalon_source_error    => delay_and_sum_beamformer_0_avalon_streaming_source_error              --                        .error
+			avalon_source_valid    => delay_and_sum_beamformer_0_avalon_streaming_source_valid              --                        .valid
 		);
 
 	hps : component soc_system_altera_arria10_hps_180.soc_system_pkg.soc_system_altera_arria10_hps_180_ruxeq2a
@@ -529,7 +529,7 @@ begin
 			rst         => codec_clocks_reset_out_reset            --    reset.reset
 		);
 
-	sysid_qsys_0 : component soc_system_altera_avalon_sysid_qsys_180.soc_system_pkg.soc_system_altera_avalon_sysid_qsys_180_dzv5wqa
+	sysid_qsys_0 : component soc_system_altera_avalon_sysid_qsys_180.soc_system_pkg.soc_system_altera_avalon_sysid_qsys_180_mj5clki
 		port map (
 			clock    => codec_clocks_sys_clk_clk,                                --           clk.clk
 			reset_n  => codec_clocks_reset_out_reset_ports_inv,                  --         reset.reset_n

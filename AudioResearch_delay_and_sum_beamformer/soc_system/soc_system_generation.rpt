@@ -1,5 +1,5 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate /home/trevor/research/NIH_SBIR_R44_DC015443/arria10_projects/AudioResearch_delay_and_sum_beamformer/soc_system.qsys --block-symbol-file --output-directory=/home/trevor/research/NIH_SBIR_R44_DC015443/arria10_projects/AudioResearch_delay_and_sum_beamformer/soc_system --family="Arria 10" --part=10AS066H2F34I1SG
+Info: qsys-generate /home/trevor/NIH/arria10_projects/AudioResearch_delay_and_sum_beamformer/soc_system.qsys --block-symbol-file --output-directory=/home/trevor/NIH/arria10_projects/AudioResearch_delay_and_sum_beamformer/soc_system --family="Arria 10" --part=10AS066H2F34I1SG
 Progress: Loading AudioResearch_delay_and_sum_beamformer/soc_system.qsys
 Progress: Reading input file
 Progress: Adding FE_Qsys_AD1939_Audio_Research_v1_0 [FE_Qsys_AD1939_Audio_Research_v1 1.0]
@@ -50,7 +50,7 @@ Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate /home/trevor/research/NIH_SBIR_R44_DC015443/arria10_projects/AudioResearch_delay_and_sum_beamformer/soc_system.qsys --synthesis=VHDL --output-directory=/home/trevor/research/NIH_SBIR_R44_DC015443/arria10_projects/AudioResearch_delay_and_sum_beamformer/soc_system --family="Arria 10" --part=10AS066H2F34I1SG
+Info: qsys-generate /home/trevor/NIH/arria10_projects/AudioResearch_delay_and_sum_beamformer/soc_system.qsys --synthesis=VHDL --output-directory=/home/trevor/NIH/arria10_projects/AudioResearch_delay_and_sum_beamformer/soc_system --family="Arria 10" --part=10AS066H2F34I1SG
 Progress: Loading AudioResearch_delay_and_sum_beamformer/soc_system.qsys
 Progress: Reading input file
 Progress: Adding FE_Qsys_AD1939_Audio_Research_v1_0 [FE_Qsys_AD1939_Audio_Research_v1 1.0]
@@ -109,7 +109,7 @@ Info: ddr4: Running transform generation_view_transform took 0.000s
 Info: delay_and_sum_beamformer_0: Running transform generation_view_transform
 Info: delay_and_sum_beamformer_0: Running transform generation_view_transform took 0.000s
 Info: hps: Running transform generation_view_transform
-Info: hps: Running transform generation_view_transform took 0.629s
+Info: hps: Running transform generation_view_transform took 0.657s
 Info: jtag_master: Running transform generation_view_transform
 Info: jtag_master: Running transform generation_view_transform took 0.000s
 Info: mic_array_0: Running transform generation_view_transform
@@ -168,24 +168,24 @@ Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting channel_adapter: channel_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
-Info: soc_system: Running transform merlin_avalon_transform took 1.088s
+Info: soc_system: Running transform merlin_avalon_transform took 0.840s
 Info: codec_clocks: Running transform merlin_avalon_transform
-Info: codec_clocks: Running transform merlin_avalon_transform took 0.009s
+Info: codec_clocks: Running transform merlin_avalon_transform took 0.011s
 Info: ddr4: Running transform merlin_avalon_transform
-Info: ddr4: Running transform merlin_avalon_transform took 0.009s
+Info: ddr4: Running transform merlin_avalon_transform took 0.008s
 Info: hps: Running transform merlin_avalon_transform
 Info: hps: Running transform merlin_avalon_transform took 0.008s
 Info: jtag_master: Running transform merlin_avalon_transform
-Info: jtag_master: Running transform merlin_avalon_transform took 0.014s
+Info: jtag_master: Running transform merlin_avalon_transform took 0.012s
 Info: mic_array_clocks: Running transform merlin_avalon_transform
-Info: mic_array_clocks: Running transform merlin_avalon_transform took 0.009s
+Info: mic_array_clocks: Running transform merlin_avalon_transform took 0.008s
 Info: mm_interconnect_0: Running transform merlin_avalon_transform
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
-Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.264s
+Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.190s
 Info: avalon_st_adapter: Running transform merlin_avalon_transform
-Info: avalon_st_adapter: Running transform merlin_avalon_transform took 0.008s
+Info: avalon_st_adapter: Running transform merlin_avalon_transform took 0.007s
 Info: avalon_st_adapter_001: Running transform merlin_avalon_transform
 Info: avalon_st_adapter_001: Running transform merlin_avalon_transform took 0.008s
 Info: avalon_st_adapter_002: Running transform merlin_avalon_transform
@@ -193,7 +193,7 @@ Info: avalon_st_adapter_002: Running transform merlin_avalon_transform took 0.00
 Info: hps_io: Running transform merlin_avalon_transform
 Info: hps_io: Running transform merlin_avalon_transform took 0.008s
 Info: avalon_st_adapter: Running transform merlin_avalon_transform
-Info: avalon_st_adapter: Running transform merlin_avalon_transform took 0.009s
+Info: avalon_st_adapter: Running transform merlin_avalon_transform took 0.008s
 Info: avalon_st_adapter_001: Running transform merlin_avalon_transform
 Info: avalon_st_adapter_001: Running transform merlin_avalon_transform took 0.008s
 Info: avalon_st_adapter_002: Running transform merlin_avalon_transform
@@ -210,7 +210,7 @@ Info: soc_system: "Generating: soc_system_altera_jtag_avalon_master_180_sb3msya"
 Info: soc_system: "Generating: mic_array_avalon"
 Info: soc_system: "Generating: soc_system_mic_array_clocks_10_hjvfn7a"
 Info: soc_system: "Generating: mono2stereo_adapter"
-Info: soc_system: "Generating: soc_system_altera_avalon_sysid_qsys_180_dzv5wqa"
+Info: soc_system: "Generating: soc_system_altera_avalon_sysid_qsys_180_mj5clki"
 Info: soc_system: "Generating: soc_system_altera_mm_interconnect_180_4tjcpzi"
 Info: soc_system: "Generating: soc_system_altera_avalon_st_adapter_180_g7t4xhq"
 Info: soc_system: "Generating: soc_system_altera_avalon_st_adapter_180_gbp22va"
@@ -258,6 +258,6 @@ Info: soc_system: "Generating: soc_system_error_adapter_180_h62ueqq"
 Info: soc_system: "Generating: soc_system_error_adapter_180_rbf7zia"
 Info: soc_system: "Generating: soc_system_altera_arria10_interface_generator_140_5g7ekiy"
 Info: soc_system: "Generating: soc_system_error_adapter_180_ww4pkiq"
-Info: soc_system: Done "soc_system" with 58 modules, 201 files
+Info: soc_system: Done "soc_system" with 58 modules, 223 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

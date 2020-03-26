@@ -12,14 +12,14 @@ package soc_system_pkg is
 			avalon_slave_readdata  : out std_logic_vector(31 downto 0);                    -- readdata
 			avalon_slave_write     : in  std_logic                     := 'X';             -- write
 			avalon_slave_writedata : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
-			avalon_sink_valid      : in  std_logic                     := 'X';             -- valid
 			avalon_sink_data       : in  std_logic_vector(31 downto 0) := (others => 'X'); -- data
 			avalon_sink_channel    : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- channel
 			avalon_sink_error      : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- error
-			avalon_source_valid    : out std_logic;                                        -- valid
-			avalon_source_data     : out std_logic_vector(31 downto 0);                    -- data
+			avalon_sink_valid      : in  std_logic                     := 'X';             -- valid
 			avalon_source_channel  : out std_logic;                                        -- channel
-			avalon_source_error    : out std_logic_vector(1 downto 0)                      -- error
+			avalon_source_error    : out std_logic_vector(1 downto 0);                     -- error
+			avalon_source_data     : out std_logic_vector(31 downto 0);                    -- data
+			avalon_source_valid    : out std_logic                                         -- valid
 		);
 	end component DSBF_dataplane_avalon;
 
