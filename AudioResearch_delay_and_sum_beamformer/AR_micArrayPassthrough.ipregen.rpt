@@ -1,0 +1,152 @@
+IP Upgrade report for AR_micArrayPassthrough
+Mon Aug 26 14:55:35 2019
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Failed Upgrade IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; IP Upgrade Summary                                                             ;
++------------------------------+-------------------------------------------------+
+; IP Components Upgrade Status ; Passed - Mon Aug 26 14:55:35 2019               ;
+; Quartus Prime Version        ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
+; Revision Name                ; AR_micArrayPassthrough                          ;
+; Top-level Entity Name        ; A10SoM_System                                   ;
+; Family                       ; Arria 10                                        ;
++------------------------------+-------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Failed Upgrade IP Components                                                                                                                                      ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+----------------------------------------------------------+
+; Entity Name ; Component Name ; Version ; Original Source File ; Generation File Path ; New Source File ; Message                                                  ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+----------------------------------------------------------+
+; soc_system  ; Qsys           ; N/A     ; soc_system.qsys      ; soc_system.qsys      ;                 ; Error upgrading Platform Designer file "soc_system.qsys" ;
++-------------+----------------+---------+----------------------+----------------------+-----------------+----------------------------------------------------------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "soc_system.qsys" to "soc_system.BAK.qsys"
+Info (11837): Started upgrading IP component Qsys with file "soc_system.qsys"
+Info: 2019.08.26.14:55:06 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2019.08.26.14:55:06 Info: Finished upgrading the ip cores
+Info: 2019.08.26.14:55:23 Info: Saving generation log to /mnt/data/trevor/research/NIH_SBIR_R44_DC015443/arria10_projects/AudioResearch_micArrayPassthrough/soc_system
+Info: 2019.08.26.14:55:23 Info: Starting: Create simulation model
+Info: 2019.08.26.14:55:24 Info: Loading AudioResearch_micArrayPassthrough
+Info: 2019.08.26.14:55:24 Info: Reading input file
+Info: 2019.08.26.14:55:24 Info: Adding FE_Qsys_AD1939_Audio_Research_v1_0 [FE_Qsys_AD1939_Audio_Research_v1 1.0]
+Warning: 2019.08.26.14:55:24 Warning: FE_Qsys_AD1939_Audio_Research_v1_0: Component type FE_Qsys_AD1939_Audio_Research_v1 is not in the library
+Info: 2019.08.26.14:55:24 Info: Parameterizing module FE_Qsys_AD1939_Audio_Research_v1_0
+Info: 2019.08.26.14:55:24 Info: Adding PLL_using_AD1939_MCLK [altera_iopll 18.0]
+Info: 2019.08.26.14:55:24 Info: Parameterizing module PLL_using_AD1939_MCLK
+Info: 2019.08.26.14:55:24 Info: Adding clk_AD1939_ABCLK [clock_source 18.0]
+Info: 2019.08.26.14:55:24 Info: Parameterizing module clk_AD1939_ABCLK
+Info: 2019.08.26.14:55:24 Info: Adding clk_AD1939_ALRCLK [clock_source 18.0]
+Info: 2019.08.26.14:55:24 Info: Parameterizing module clk_AD1939_ALRCLK
+Info: 2019.08.26.14:55:24 Info: Adding clk_hps [clock_source 18.0]
+Info: 2019.08.26.14:55:24 Info: Parameterizing module clk_hps
+Info: 2019.08.26.14:55:24 Info: Adding ddr4 [altera_emif_a10_hps 18.0]
+Info: 2019.08.26.14:55:24 Info: Parameterizing module ddr4
+Info: 2019.08.26.14:55:24 Info: Adding hps [altera_arria10_hps 18.0]
+Info: 2019.08.26.14:55:24 Info: Parameterizing module hps
+Info: 2019.08.26.14:55:24 Info: Adding jtag_master [altera_jtag_avalon_master 18.0]
+Info: 2019.08.26.14:55:24 Info: Parameterizing module jtag_master
+Info: 2019.08.26.14:55:24 Info: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 18.0]
+Info: 2019.08.26.14:55:24 Info: Parameterizing module sysid_qsys_0
+Info: 2019.08.26.14:55:24 Info: Building connections
+Info: 2019.08.26.14:55:24 Info: Parameterizing connections
+Info: 2019.08.26.14:55:24 Info: Validating
+Info: 2019.08.26.14:55:28 Info: Done reading input file
+Error: 2019.08.26.14:55:32 Error: soc_system.FE_Qsys_AD1939_Audio_Research_v1_0: Component FE_Qsys_AD1939_Audio_Research_v1 1.0 not found or could not be instantiated
+Info: 2019.08.26.14:55:32 Info: soc_system.PLL_using_AD1939_MCLK: Able to implement PLL with user settings
+Info: 2019.08.26.14:55:32 Info: soc_system.ddr4: Debug features for HPS are currently not supported.
+Info: 2019.08.26.14:55:32 Info: soc_system.ddr4.arch: Interface estimated to require 2 I/O Bank(s) and 2 I/O PLL(s). This is only an estimation. Final usage depends on user pin location assignments and
+Info: 2019.08.26.14:55:32 Info: soc_system.ddr4.arch: Valid memory frequencies for the current PLL reference clock and user clock rate, in MHz: 1200.0, 900.0
+Info: 2019.08.26.14:55:32 Info: soc_system.ddr4.arch: For additional documentation about the interface, consult the *_readme.txt file after generation.
+Info: 2019.08.26.14:55:32 Info: soc_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: 2019.08.26.14:55:32 Info: soc_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Warning: 2019.08.26.14:55:32 Warning: soc_system.jtag_master: jtag_master.master must be connected to an Avalon-MM slave
+Info: 2019.08.26.14:55:33 Info: soc_system: "Transforming system: soc_system"
+Info: 2019.08.26.14:55:33 Info: soc_system: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: soc_system: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: PLL_using_AD1939_MCLK: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: PLL_using_AD1939_MCLK: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: ddr4: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: ddr4: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: hps: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: hps: Running transform generation_view_transform took 0.678s
+Info: 2019.08.26.14:55:33 Info: jtag_master: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: jtag_master: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: sysid_qsys_0: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: sysid_qsys_0: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: arch: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: arch: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: fpga_interfaces: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: fpga_interfaces: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: hps_io: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: hps_io: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: clk_src: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: clk_src: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: clk_rst: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: clk_rst: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: jtag_phy_embedded_in_jtag_master: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: jtag_phy_embedded_in_jtag_master: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: timing_adt: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: timing_adt: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: fifo: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: fifo: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: b2p: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: b2p: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: p2b: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: p2b: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: transacto: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: transacto: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: b2p_adapter: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: b2p_adapter: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: p2b_adapter: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: p2b_adapter: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: border: Running transform generation_view_transform
+Info: 2019.08.26.14:55:33 Info: border: Running transform generation_view_transform took 0.000s
+Info: 2019.08.26.14:55:33 Info: soc_system: Running transform merlin_avalon_transform
+Info: 2019.08.26.14:55:34 Info: Interconnect is inserted between master hps.h2f_lw_axi_master and slave sysid_qsys_0.control_slave because the master is of type axi and the slave is of type avalon.
+Error: 2019.08.26.14:55:34 Error: missing: no such parameter: synchronousEdges
+Info (11904): Restoring file "soc_system.BAK.qsys" to "soc_system.qsys"
+Error (14923): Error upgrading Platform Designer file "soc_system.qsys"
+Error (11890): Unable to automatically upgrade Platform Designer component. Please manually upgrade "soc_system.qsys" in Platform Designer
+Error (23031): Evaluation of Tcl script /usr/local/intelFPGA/18.0/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 5 errors, 2 warnings
+    Error: Peak virtual memory: 1034 megabytes
+    Error: Processing ended: Mon Aug 26 14:55:35 2019
+    Error: Elapsed time: 00:00:58
+    Error: Total CPU time (on all processors): 00:02:06
+
+

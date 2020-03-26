@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<qsys_generation_info>
+<qsys_file path="/mnt/data/trevor/research/NIH_SBIR_R44_DC015443/arria10_projects/AudioResearch_delay_and_sum_beamformer/soc_system.qsys" />
+<gen_dir path="/mnt/data/trevor/research/NIH_SBIR_R44_DC015443/arria10_projects/AudioResearch_delay_and_sum_beamformer/soc_system/" />
+<user_regen_policy value="Never Regenerate Existing IP" />
+<actual_regen_policy value="Never Regenerate Existing IP" />
+<gen_action value="IP Generation Skipped" />
+<gen_status value="IP Generation Succeeded" />
+</qsys_generation_info>

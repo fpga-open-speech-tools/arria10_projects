@@ -1,0 +1,5 @@
+config soc_system_altera_emif_a10_hps_180_oqueytq_cfg;
+		design soc_system_altera_emif_a10_hps_180_oqueytq;
+		instance soc_system_altera_emif_a10_hps_180_oqueytq.arch use soc_system_altera_emif_arch_nf_180.soc_system_altera_emif_arch_nf_180_hlqzivq;
+endconfig
+

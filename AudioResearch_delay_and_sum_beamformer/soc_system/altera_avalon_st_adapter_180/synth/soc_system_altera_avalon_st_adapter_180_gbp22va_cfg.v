@@ -1,0 +1,6 @@
+config soc_system_altera_avalon_st_adapter_180_gbp22va_cfg;
+		design soc_system_altera_avalon_st_adapter_180_gbp22va;
+		instance soc_system_altera_avalon_st_adapter_180_gbp22va.channel_adapter_0 use soc_system_channel_adapter_180.soc_system_channel_adapter_180_e3bkb2q;
+		instance soc_system_altera_avalon_st_adapter_180_gbp22va.error_adapter_0 use soc_system_error_adapter_180.soc_system_error_adapter_180_h62ueqq;
+endconfig
+

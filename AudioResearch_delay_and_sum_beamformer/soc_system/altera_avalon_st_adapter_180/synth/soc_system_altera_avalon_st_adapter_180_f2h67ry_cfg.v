@@ -1,0 +1,5 @@
+config soc_system_altera_avalon_st_adapter_180_f2h67ry_cfg;
+		design soc_system_altera_avalon_st_adapter_180_f2h67ry;
+		instance soc_system_altera_avalon_st_adapter_180_f2h67ry.error_adapter_0 use soc_system_error_adapter_180.soc_system_error_adapter_180_rbf7zia;
+endconfig
+

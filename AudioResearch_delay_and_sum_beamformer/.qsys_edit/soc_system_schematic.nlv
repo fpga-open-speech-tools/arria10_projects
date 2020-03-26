@@ -1,0 +1,118 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst soc_system.hps.i_timer_sp_1_timer -pg 1
+preplace inst soc_system.hps.i_rst_mgr_rstmgr -pg 1
+preplace inst soc_system.hps.i_spis_0_spis -pg 1
+preplace inst soc_system.codec_clocks.clk_AD1939_ABCLK -pg 1
+preplace inst soc_system.hps.arm_gic_0 -pg 1
+preplace inst soc_system.jtag_master.p2b -pg 1
+preplace inst soc_system.hps.i_watchdog_1_l4wd -pg 1
+preplace inst soc_system.jtag_master.p2b_adapter -pg 1
+preplace inst soc_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst soc_system.hps.i_qspi_QSPIDATA -pg 1
+preplace inst soc_system.sysid_qsys_0 -pg 1 -lvl 6 -y 550
+preplace inst soc_system.mic_array_clocks.clk_AD1939_MCLK -pg 1
+preplace inst soc_system.jtag_master.b2p -pg 1
+preplace inst soc_system.hps.i_dma_DMASECURE -pg 1
+preplace inst soc_system.hps.i_i2c_emac_0_i2c -pg 1
+preplace inst soc_system.hps -pg 1 -lvl 6 -y 680
+preplace inst soc_system.hps.i_i2c_0_i2c -pg 1
+preplace inst soc_system.ddr4 -pg 1 -lvl 6 -y 410
+preplace inst soc_system.jtag_master.clk_rst -pg 1
+preplace inst soc_system.hps.i_i2c_emac_1_i2c -pg 1
+preplace inst soc_system.ddr4.arch -pg 1
+preplace inst soc_system.jtag_master.clk_src -pg 1
+preplace inst soc_system.codec_clocks.clk_AD1939_ALRCLK -pg 1
+preplace inst soc_system.mic_array_clocks.clock_bridge_0 -pg 1
+preplace inst soc_system.codec_clocks.MCLK_PLL -pg 1
+preplace inst soc_system.jtag_master.fifo -pg 1
+preplace inst soc_system.codec_clocks -pg 1 -lvl 1 -y 50
+preplace inst soc_system.hps.i_timer_sys_0_timer -pg 1
+preplace inst soc_system.hps.i_gpio_2_gpio -pg 1
+preplace inst soc_system.hps.i_spis_1_spis -pg 1
+preplace inst soc_system.codec_clocks.reset_bridge_0 -pg 1
+preplace inst soc_system.mic_array_clocks -pg 1 -lvl 2 -y 90
+preplace inst soc_system.hps.i_i2c_1_i2c -pg 1
+preplace inst soc_system.hps.mpu_reg_l2_MPUL2 -pg 1
+preplace inst soc_system.hps.bridges -pg 1
+preplace inst soc_system.codec_clocks.sys_clk_clk_bridge -pg 1
+preplace inst soc_system.hps.i_nand_NANDDATA -pg 1
+preplace inst soc_system.mic_array_clocks.sck_pll -pg 1
+preplace inst soc_system.jtag_master.b2p_adapter -pg 1
+preplace inst soc_system.hps.i_usbotg_1_globgrp -pg 1
+preplace inst soc_system.hps.arm_a9_0 -pg 1
+preplace inst soc_system.mono2stereo_adapter_0 -pg 1 -lvl 5 -y 180
+preplace inst soc_system.hps.arm_a9_1 -pg 1
+preplace inst soc_system.jtag_master.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst soc_system.hps.fpga_interfaces -pg 1
+preplace inst soc_system.jtag_master.transacto -pg 1
+preplace inst soc_system.jtag_master -pg 1 -lvl 2 -y 340
+preplace inst soc_system.hps.cb_intosc_ls_clk -pg 1
+preplace inst soc_system.hps.timer -pg 1
+preplace inst soc_system.hps.i_gpio_0_gpio -pg 1
+preplace inst soc_system.hps.hps_io.border -pg 1
+preplace inst soc_system.dummy_beamformer_ch_sum_0 -pg 1 -lvl 4 -y 160
+preplace inst soc_system.hps.i_timer_sp_0_timer -pg 1
+preplace inst soc_system.hps.i_uart_1_uart -pg 1
+preplace inst soc_system.jtag_master.timing_adt -pg 1
+preplace inst soc_system.hps.i_timer_sys_1_timer -pg 1
+preplace inst soc_system.FE_Qsys_AD1939_Audio_Research_v1_0 -pg 1 -lvl 6 -y 180
+preplace inst soc_system.hps.eosc1 -pg 1
+preplace inst soc_system.hps.i_uart_0_uart -pg 1
+preplace inst soc_system.hps.i_spim_0_spim -pg 1
+preplace inst soc_system.hps.cb_intosc_hs_div2_clk -pg 1
+preplace inst soc_system.hps.scu -pg 1
+preplace inst soc_system.hps.i_emac_emac0 -pg 1
+preplace inst soc_system.hps.i_i2c_emac_2_i2c -pg 1
+preplace inst soc_system.hps.i_emac_emac1 -pg 1
+preplace inst soc_system.hps.i_gpio_1_gpio -pg 1
+preplace inst soc_system.hps.i_sys_mgr_core -pg 1
+preplace inst soc_system.hps.i_emac_emac2 -pg 1
+preplace inst soc_system.mic_array_0 -pg 1 -lvl 3 -y 60
+preplace inst soc_system.hps.clk_0 -pg 1
+preplace inst soc_system.hps.i_spim_1_spim -pg 1
+preplace inst soc_system.hps.hps_io -pg 1
+preplace inst soc_system.hps.i_sdmmc_sdmmc -pg 1
+preplace inst soc_system.codec_clocks.mclk_clk_bridge -pg 1
+preplace inst soc_system.hps.i_watchdog_0_l4wd -pg 1
+preplace inst soc_system.codec_clocks.clk_AD1939_MCLK -pg 1
+preplace inst soc_system.hps.f2s_free_clk -pg 1
+preplace inst soc_system.hps.i_fpga_mgr_fpgamgrregs -pg 1
+preplace inst soc_system.hps.baum_clkmgr -pg 1
+preplace inst soc_system.hps.i_usbotg_0_globgrp -pg 1
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)ddr4.pll_ref_clk_clock_sink,(SLAVE)soc_system.ddr4_pll_ref_clk_clock_sink) 1 0 6 NJ 500 NJ 500 NJ 500 NJ 500 NJ 500 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)dummy_beamformer_ch_sum_0.AStInput,(MASTER)mic_array_0.data_out) 1 3 1 1270
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.ddr4_oct_conduit_end,(SLAVE)ddr4.oct_conduit_end) 1 0 6 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)mic_array_clocks.sck_master,(SLAVE)mic_array_0.mic_array_master_clk) 1 2 1 840
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)codec_clocks.ad1939_abclk_out,(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.clk_abclk) 1 1 5 560 230 NJ 230 NJ 150 NJ 150 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)ddr4.global_reset_reset_sink,(SLAVE)soc_system.ddr4_global_reset_reset_sink) 1 0 6 NJ 420 NJ 420 NJ 420 NJ 420 NJ 420 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)codec_clocks.ad1939_alrclk_in,(SLAVE)soc_system.ad1939_alrclk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.hps_i2c0_clk,(MASTER)hps.i2c0_clk) 1 6 1 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)codec_clocks.ad1939_mclk_in,(SLAVE)soc_system.ad1939_mclk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.ad1939_abclk,(SLAVE)codec_clocks.ad1939_abclk_in) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)hps.h2f_lw_axi_master,(SLAVE)sysid_qsys_0.control_slave) 1 5 2 1760 640 2110
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)jtag_master.master,(SLAVE)mic_array_0.s1) 1 2 1 940
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)hps.spim1_sclk_out,(MASTER)soc_system.hps_spim1_sclk_out) 1 6 1 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)hps.i2c0,(SLAVE)soc_system.hps_i2c0) 1 0 6 NJ 810 NJ 810 NJ 810 NJ 810 NJ 810 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.hps_f2h_cold_reset_req,(SLAVE)hps.f2h_cold_reset_req) 1 0 6 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)hps.spim1,(SLAVE)soc_system.hps_spim1) 1 0 6 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out,(MASTER)mono2stereo_adapter_0.data_out) 1 5 1 N
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)mic_array_clocks.ad1939_mclk,(MASTER)codec_clocks.ad1939_mclk_out) 1 1 1 N
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)dummy_beamformer_ch_sum_0.AStOutput,(SLAVE)mono2stereo_adapter_0.data_in) 1 4 1 1470
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)codec_clocks.ad1939_alrclk_out,(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.clk_alrclk) 1 1 5 520 260 NJ 290 NJ 290 NJ 290 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)mic_array_clocks.sck_rcv_ch0,(SLAVE)mic_array_0.mic_array_receive_clk) 1 2 1 900
+preplace netloc FAN_OUT<net_container>soc_system</net_container>(MASTER)codec_clocks.sys_clk,(SLAVE)jtag_master.clk,(SLAVE)sysid_qsys_0.clk,(SLAVE)mono2stereo_adapter_0.clock,(SLAVE)hps.h2f_lw_axi_clock,(SLAVE)dummy_beamformer_ch_sum_0.clock,(SLAVE)mic_array_0.sys_clk,(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.sys_clk) 1 1 5 500 210 960 250 1250 250 1490 330 1720
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)ddr4.mem_conduit_end,(SLAVE)soc_system.ddr4_mem_conduit_end) 1 0 6 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)codec_clocks.reset_in,(SLAVE)soc_system.reset) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>soc_system</net_container>(SLAVE)mic_array_clocks.reset,(MASTER)codec_clocks.reset_out,(SLAVE)jtag_master.clk_reset,(SLAVE)sysid_qsys_0.reset,(SLAVE)mic_array_0.reset,(SLAVE)mono2stereo_adapter_0.reset,(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.sys_reset,(SLAVE)dummy_beamformer_ch_sum_0.clock_reset,(SLAVE)hps.h2f_lw_axi_reset) 1 1 5 540 300 920 270 1270 270 1510 350 1700
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.mic_array_sck,(MASTER)mic_array_clocks.sck_master_export) 1 2 5 NJ 210 NJ 130 NJ 130 NJ 130 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)mic_array_0.connect_to_mic_array,(SLAVE)soc_system.mic_array_0) 1 0 3 NJ 190 NJ 190 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.hps_io,(SLAVE)hps.hps_io) 1 0 6 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)hps.i2c0_scl_in,(SLAVE)soc_system.hps_i2c0_scl_in) 1 0 6 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.hps_f2h_irq0,(MASTER)hps.f2h_irq0) 1 6 1 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)hps.emif,(SLAVE)ddr4.hps_emif_conduit_end) 1 5 1 1740
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.hps_f2h_irq1,(MASTER)hps.f2h_irq1) 1 6 1 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.ad1939_physical,(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.connect_to_AD1939) 1 0 6 NJ 280 NJ 280 NJ 310 NJ 310 NJ 310 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.hps_f2h_warm_reset_req,(SLAVE)hps.f2h_warm_reset_req) 1 0 6 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ
+levelinfo -pg 1 0 180 2270
+levelinfo -hier soc_system 190 310 650 990 1320 1550 1920 2130

@@ -1,0 +1,5 @@
+config soc_system_altera_arria10_hps_io_180_geofrnq_cfg;
+		design soc_system_altera_arria10_hps_io_180_geofrnq;
+		instance soc_system_altera_arria10_hps_io_180_geofrnq.border use soc_system_altera_arria10_interface_generator_140.soc_system_altera_arria10_interface_generator_140_5g7ekiy;
+endconfig
+
