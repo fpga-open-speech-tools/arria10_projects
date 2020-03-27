@@ -60,7 +60,7 @@
    {
       datum baseAddress
       {
-         value = "0";
+         value = "16";
          type = "String";
       }
    }
@@ -102,7 +102,7 @@
    {
       datum baseAddress
       {
-         value = "16";
+         value = "32";
          type = "String";
       }
    }
@@ -120,6 +120,38 @@
       {
          value = "5";
          type = "int";
+      }
+   }
+   element simple_gain_0
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element simple_gain_0.avalon_slave
+   {
+      datum baseAddress
+      {
+         value = "8";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
       }
    }
    element soc_system
@@ -163,7 +195,7 @@
    {
       datum baseAddress
       {
-         value = "8";
+         value = "0";
          type = "String";
       }
    }
@@ -1592,6 +1624,7 @@
   <parameter name="data_width" value="32" />
   <parameter name="sample_rate" value="48000" />
  </module>
+ <module name="simple_gain_0" kind="simple_gain" version="1.0" enabled="1" />
  <module
    name="sysid_qsys_0"
    kind="altera_avalon_sysid_qsys"
@@ -1605,7 +1638,16 @@
    start="hps.h2f_lw_axi_master"
    end="delay_and_sum_beamformer_0.avalon_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="baseAddress" value="0x0010" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.0"
+   start="hps.h2f_lw_axi_master"
+   end="simple_gain_0.avalon_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0008" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1614,7 +1656,7 @@
    start="hps.h2f_lw_axi_master"
    end="sysid_qsys_0.control_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0008" />
+  <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1623,7 +1665,16 @@
    start="jtag_master.master"
    end="delay_and_sum_beamformer_0.avalon_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="baseAddress" value="0x0010" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.0"
+   start="jtag_master.master"
+   end="simple_gain_0.avalon_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0008" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1632,9 +1683,14 @@
    start="jtag_master.master"
    end="mic_array_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0010" />
+  <parameter name="baseAddress" value="0x0020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
+ <connection
+   kind="avalon_streaming"
+   version="18.0"
+   start="simple_gain_0.avalon_streaming_source"
+   end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out" />
  <connection
    kind="avalon_streaming"
    version="18.0"
@@ -1643,13 +1699,13 @@
  <connection
    kind="avalon_streaming"
    version="18.0"
-   start="mono2stereo_adapter_0.data_out"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out" />
+   start="mic_array_0.data_out"
+   end="delay_and_sum_beamformer_0.avalon_streaming_sink" />
  <connection
    kind="avalon_streaming"
    version="18.0"
-   start="mic_array_0.data_out"
-   end="delay_and_sum_beamformer_0.avalon_streaming_sink" />
+   start="mono2stereo_adapter_0.data_out"
+   end="simple_gain_0.avalon_streaming_sink" />
  <connection
    kind="clock"
    version="18.0"
@@ -1695,6 +1751,11 @@
    version="18.0"
    start="codec_clocks.sys_clk"
    end="delay_and_sum_beamformer_0.clock" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="codec_clocks.sys_clk"
+   end="simple_gain_0.clock" />
  <connection
    kind="clock"
    version="18.0"
@@ -1756,6 +1817,11 @@
    version="18.0"
    start="codec_clocks.reset_out"
    end="delay_and_sum_beamformer_0.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="codec_clocks.reset_out"
+   end="simple_gain_0.reset" />
  <connection
    kind="reset"
    version="18.0"
