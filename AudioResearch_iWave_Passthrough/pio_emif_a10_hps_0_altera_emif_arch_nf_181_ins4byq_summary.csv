@@ -1,0 +1,9 @@
+Core: pio_emif_a10_hps_0_altera_emif_arch_nf_181_ins4byq - Instance: u0|emif_a10_hps_0|emif_a10_hps_0
+Path, Setup Margin, Hold Margin
+"Address/Command (Slow 900mV 100C Model)",0.159,0.159
+"Core (Slow 900mV 100C Model)",--,--
+"Core Recovery/Removal (Slow 900mV 100C Model)",--,--
+"DQS Gating (Slow 900mV 100C Model)",0.529,0.529
+"Read Capture (Slow 900mV 100C Model)",0.016,0.016
+"Write (Slow 900mV 100C Model)",0.028,0.028
+"Write Levelling (Slow 900mV 100C Model)",0.122,0.122

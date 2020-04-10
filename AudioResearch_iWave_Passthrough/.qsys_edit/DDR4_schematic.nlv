@@ -1,0 +1,61 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst DDR4.master_0.b2p_adapter -pg 1
+preplace inst DDR4.master_0.fifo -pg 1
+preplace inst DDR4.master_0.clk_src -pg 1
+preplace inst DDR4.emif_0.ioaux_master_component.ioaux_master_bridge -pg 1
+preplace inst DDR4.emif_0.col_if.colmaster.b2p -pg 1
+preplace inst DDR4.emif_0.em_jtag_0.clk_src -pg 1
+preplace inst DDR4.emif_0 -pg 1 -lvl 3 -y 80
+preplace inst DDR4.clk_0 -pg 1 -lvl 1 -y 60
+preplace inst DDR4.emif_0.em_jtag_0 -pg 1
+preplace inst DDR4.emif_0.col_if.colmaster.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst DDR4.emif_0.col_if.clk_bridge -pg 1
+preplace inst DDR4.emif_0.effmon -pg 1
+preplace inst DDR4.master_0.b2p -pg 1
+preplace inst DDR4.emif_0.ioaux_master_component.ioaux_soft_ram -pg 1
+preplace inst DDR4.emif_0.col_if.colmaster.transacto -pg 1
+preplace inst DDR4.emif_0.col_if.avl_bridge_out -pg 1
+preplace inst DDR4.emif_0.col_if.colmaster.fifo -pg 1
+preplace inst DDR4.master_0.transacto -pg 1
+preplace inst DDR4.emif_0.em_jtag_0.timing_adt -pg 1
+preplace inst DDR4.emif_0.ioaux_master_component.rst_bridge -pg 1
+preplace inst DDR4.emif_0.col_if.colmaster.clk_src -pg 1
+preplace inst DDR4.emif_0.em_jtag_0.p2b_adapter -pg 1
+preplace inst DDR4.emif_0.col_if.colmaster -pg 1
+preplace inst DDR4.emif_0.col_if.rst_bridge -pg 1
+preplace inst DDR4.emif_0.col_if -pg 1
+preplace inst DDR4.emif_0.em_jtag_0.p2b -pg 1
+preplace inst DDR4.emif_0.arch -pg 1
+preplace inst DDR4.master_0.p2b_adapter -pg 1
+preplace inst DDR4.master_0.clk_rst -pg 1
+preplace inst DDR4.emif_0.col_if.colmaster.clk_rst -pg 1
+preplace inst DDR4.emif_0.em_jtag_0.b2p -pg 1
+preplace inst DDR4.emif_0.em_jtag_0.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst DDR4.emif_0.em_jtag_0.clk_rst -pg 1
+preplace inst DDR4 -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst DDR4.master_0.timing_adt -pg 1
+preplace inst DDR4.master_0.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst DDR4.emif_0.col_if.colmaster.p2b_adapter -pg 1
+preplace inst DDR4.emif_0.col_if.colmaster.p2b -pg 1
+preplace inst DDR4.emif_0.ioaux_master_component -pg 1
+preplace inst DDR4.emif_0.em_jtag_0.transacto -pg 1
+preplace inst DDR4.emif_0.em_jtag_0.fifo -pg 1
+preplace inst DDR4.master_0.p2b -pg 1
+preplace inst DDR4.master_0 -pg 1 -lvl 2 -y 50
+preplace inst DDR4.emif_0.col_if.colmaster.timing_adt -pg 1
+preplace inst DDR4.emif_0.em_jtag_0.b2p_adapter -pg 1
+preplace inst DDR4.emif_0.ioaux_master_component.clk_bridge -pg 1
+preplace inst DDR4.emif_0.col_if.colmaster.b2p_adapter -pg 1
+preplace netloc EXPORT<net_container>DDR4</net_container>(SLAVE)DDR4.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>DDR4</net_container>(SLAVE)emif_0.mem,(SLAVE)DDR4.mem) 1 0 3 NJ 170 NJ 170 NJ
+preplace netloc FAN_OUT<net_container>DDR4</net_container>(SLAVE)emif_0.ctrl_amm_0,(SLAVE)emif_0.ctrl_mmr_slave_0,(MASTER)master_0.master) 1 2 1 520
+preplace netloc EXPORT<net_container>DDR4</net_container>(SLAVE)DDR4.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>DDR4</net_container>(SLAVE)emif_0.status,(SLAVE)DDR4.status) 1 0 3 NJ 210 NJ 210 NJ
+preplace netloc EXPORT<net_container>DDR4</net_container>(SLAVE)DDR4.oct,(SLAVE)emif_0.oct) 1 0 3 NJ 190 NJ 190 NJ
+preplace netloc EXPORT<net_container>DDR4</net_container>(MASTER)emif_0.emif_usr_reset_n,(MASTER)DDR4.emif_usr_reset_n) 1 3 1 NJ
+preplace netloc FAN_OUT<net_container>DDR4</net_container>(MASTER)clk_0.clk,(SLAVE)emif_0.pll_ref_clk,(SLAVE)master_0.clk) 1 1 2 260 150 NJ
+preplace netloc FAN_OUT<net_container>DDR4</net_container>(SLAVE)master_0.clk_reset,(SLAVE)emif_0.global_reset_n,(MASTER)clk_0.clk_reset) 1 1 2 280 130 NJ
+preplace netloc EXPORT<net_container>DDR4</net_container>(MASTER)DDR4.emif_usr_clk,(MASTER)emif_0.emif_usr_clk) 1 3 1 NJ
+levelinfo -pg 1 0 50 990
+levelinfo -hier DDR4 60 90 360 680 860

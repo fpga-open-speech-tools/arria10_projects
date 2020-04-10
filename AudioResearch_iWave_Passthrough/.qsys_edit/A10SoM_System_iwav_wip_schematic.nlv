@@ -1,0 +1,150 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst A10SoM_System.volt_sens_pio3 -pg 1 -lvl 2 -y 2680
+preplace inst A10SoM_System.volt_sens_pio4 -pg 1 -lvl 2 -y 1580
+preplace inst A10SoM_System.emif_0_0.col_if -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_i2c_0_i2c -pg 1
+preplace inst A10SoM_System.volt_sens_pio5 -pg 1 -lvl 2 -y 2980
+preplace inst A10SoM_System.arria10_hps_0.hps_io.border -pg 1
+preplace inst A10SoM_System.volt_sens_pio6 -pg 1 -lvl 2 -y 2780
+preplace inst A10SoM_System.iopll_0 -pg 1 -lvl 1 -y 1160
+preplace inst A10SoM_System.arria10_hps_0.i_sys_mgr_core -pg 1
+preplace inst A10SoM_System.PCIex4_inout_pio10 -pg 1 -lvl 2 -y 1680
+preplace inst A10SoM_System.arria10_hps_0.hps_io -pg 1
+preplace inst A10SoM_System.volt_sens_pio7 -pg 1 -lvl 2 -y 2880
+preplace inst A10SoM_System.emif_0_0.col_if.colmaster.p2b_adapter -pg 1
+preplace inst A10SoM_System.ddr_pio -pg 1 -lvl 2 -y 2080
+preplace inst A10SoM_System.arria10_hps_0.i_usbotg_1_globgrp -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_gpio_1_gpio -pg 1
+preplace inst A10SoM_System.mux_ddr_0 -pg 1 -lvl 2 -y 850
+preplace inst A10SoM_System.addr_sel_pio -pg 1 -lvl 2 -y 650
+preplace inst A10SoM_System.FMC1_Inout_pio1 -pg 1 -lvl 2 -y 750
+preplace inst A10SoM_System.arria10_hps_0.i_i2c_emac_1_i2c -pg 1
+preplace inst A10SoM_System.FMC1_Inout_pio2 -pg 1 -lvl 2 -y 330
+preplace inst A10SoM_System.arria10_hps_0.arm_a9_0 -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_uart_0_uart -pg 1
+preplace inst A10SoM_System.FMC1_Inout_pio3 -pg 1 -lvl 2 -y 430
+preplace inst A10SoM_System.arria10_hps_0.arm_a9_1 -pg 1
+preplace inst A10SoM_System.som_config -pg 1 -lvl 2 -y 2180
+preplace inst A10SoM_System.PMOD2_Inout_pio9 -pg 1 -lvl 2 -y 1880
+preplace inst A10SoM_System.FMC1_Inout_pio4 -pg 1 -lvl 2 -y 30
+preplace inst A10SoM_System.arria10_hps_0 -pg 1 -lvl 2 -y 1100
+preplace inst A10SoM_System.arria10_hps_0.bridges -pg 1
+preplace inst A10SoM_System.FMC1_Inout_pio5 -pg 1 -lvl 2 -y 950
+preplace inst A10SoM_System.arria10_hps_0.i_usbotg_0_globgrp -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_spis_1_spis -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_i2c_1_i2c -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_watchdog_1_l4wd -pg 1
+preplace inst A10SoM_System.emif_0_0.cal_slave_component.clk_bridge -pg 1
+preplace inst A10SoM_System.emif_0_0.cal_slave_component -pg 1
+preplace inst A10SoM_System.arria10_hps_0.arm_gic_0 -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_timer_sp_1_timer -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_fpga_mgr_fpgamgrregs -pg 1
+preplace inst A10SoM_System -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst A10SoM_System.arria10_hps_0.fpga_interfaces -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_qspi_QSPIDATA -pg 1
+preplace inst A10SoM_System.emif_0_0.cal_slave_component.ioaux_soft_ram -pg 1
+preplace inst A10SoM_System.emif_0_0.col_if.colmaster.b2p -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_nand_NANDDATA -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_i2c_emac_0_i2c -pg 1
+preplace inst A10SoM_System.emif_0_0.col_if.colmaster.timing_adt -pg 1
+preplace inst A10SoM_System.emif_0_0.arch -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_emac_emac0 -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_emac_emac1 -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_emac_emac2 -pg 1
+preplace inst A10SoM_System.arria10_hps_0.eosc1 -pg 1
+preplace inst A10SoM_System.emif_0_0.col_if.colmaster.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_gpio_2_gpio -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_spim_0_spim -pg 1
+preplace inst A10SoM_System.clk_1 -pg 1 -lvl 1 -y 1940
+preplace inst A10SoM_System.arria10_hps_0.mpu_reg_l2_MPUL2 -pg 1
+preplace inst A10SoM_System.temp_sens_pio -pg 1 -lvl 2 -y 2280
+preplace inst A10SoM_System.emif_0_0.col_if.colmaster -pg 1
+preplace inst A10SoM_System.FMC2_Inout_pio6 -pg 1 -lvl 2 -y 130
+preplace inst A10SoM_System.FMC2_Inout_pio7 -pg 1 -lvl 2 -y 230
+preplace inst A10SoM_System.arria10_hps_0.i_spis_0_spis -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_sdmmc_sdmmc -pg 1
+preplace inst A10SoM_System.emif_0_0.col_if.colmaster.clk_src -pg 1
+preplace inst A10SoM_System.emif_0.arch -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_rst_mgr_rstmgr -pg 1
+preplace inst A10SoM_System.emif_0_0.cal_slave_component.rst_bridge -pg 1
+preplace inst A10SoM_System.emif_0_0.col_if.avl_bridge_out -pg 1
+preplace inst A10SoM_System.arria10_hps_0.timer -pg 1
+preplace inst A10SoM_System.USB_inout_pio11 -pg 1 -lvl 2 -y 1980
+preplace inst A10SoM_System.emif_0 -pg 1 -lvl 2 -y 1440
+preplace inst A10SoM_System.mm_clock_crossing_bridge_0 -pg 1 -lvl 2 -y 530
+preplace inst A10SoM_System.emif_0_0.cal_slave_component.ioaux_master_bridge -pg 1
+preplace inst A10SoM_System.emif_0_0.col_if.clk_bridge -pg 1
+preplace inst A10SoM_System.arria10_hps_0.cb_intosc_ls_clk -pg 1
+preplace inst A10SoM_System.emif_0_0.col_if.rst_bridge -pg 1
+preplace inst A10SoM_System.emif_0_0.col_if.colmaster.clk_rst -pg 1
+preplace inst A10SoM_System.emif_0_0 -pg 1 -lvl 1 -y 480
+preplace inst A10SoM_System.arria10_hps_0.clk_0 -pg 1
+preplace inst A10SoM_System.PMOD1_Inout_pio8 -pg 1 -lvl 2 -y 1780
+preplace inst A10SoM_System.emif_0_0.col_if.colmaster.p2b -pg 1
+preplace inst A10SoM_System.arria10_hps_0.scu -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_spim_1_spim -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_watchdog_0_l4wd -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_timer_sys_0_timer -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_dma_DMASECURE -pg 1
+preplace inst A10SoM_System.emif_0_0.col_if.colmaster.fifo -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_i2c_emac_2_i2c -pg 1
+preplace inst A10SoM_System.arria10_hps_0.baum_clkmgr -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_gpio_0_gpio -pg 1
+preplace inst A10SoM_System.volt_sens_pio0 -pg 1 -lvl 2 -y 2380
+preplace inst A10SoM_System.emif_0_0.col_if.colmaster.transacto -pg 1
+preplace inst A10SoM_System.volt_sens_pio1 -pg 1 -lvl 2 -y 2480
+preplace inst A10SoM_System.arria10_hps_0.i_uart_1_uart -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_timer_sys_1_timer -pg 1
+preplace inst A10SoM_System.arria10_hps_0.cb_intosc_hs_div2_clk -pg 1
+preplace inst A10SoM_System.arria10_hps_0.f2s_free_clk -pg 1
+preplace inst A10SoM_System.volt_sens_pio2 -pg 1 -lvl 2 -y 2580
+preplace inst A10SoM_System.emif_0_0.col_if.colmaster.b2p_adapter -pg 1
+preplace inst A10SoM_System.arria10_hps_0.i_timer_sp_0_timer -pg 1
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.fmc1_inout_pio3,(SLAVE)FMC1_Inout_pio3.external_connection) 1 0 2 NJ 440 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)FMC2_Inout_pio7.external_connection,(SLAVE)A10SoM_System.fmc2_inout_pio7) 1 0 2 NJ 260 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.mem,(SLAVE)emif_0.mem_conduit_end) 1 0 2 NJ 1490 NJ
+preplace netloc FAN_OUT<net_container>A10SoM_System</net_container>(SLAVE)arria10_hps_0.f2h_axi_reset,(SLAVE)PMOD1_Inout_pio8.reset,(SLAVE)volt_sens_pio1.reset,(SLAVE)addr_sel_pio.reset,(MASTER)clk_1.clk_reset,(SLAVE)FMC2_Inout_pio7.reset,(SLAVE)ddr_pio.reset,(SLAVE)volt_sens_pio2.reset,(SLAVE)volt_sens_pio0.reset,(SLAVE)FMC2_Inout_pio6.reset,(SLAVE)volt_sens_pio7.reset,(SLAVE)FMC1_Inout_pio2.reset,(SLAVE)PMOD2_Inout_pio9.reset,(SLAVE)FMC1_Inout_pio4.reset,(SLAVE)FMC1_Inout_pio3.reset,(SLAVE)FMC1_Inout_pio5.reset,(SLAVE)temp_sens_pio.reset,(SLAVE)volt_sens_pio6.reset,(SLAVE)som_config.reset,(SLAVE)arria10_hps_0.h2f_lw_axi_reset,(SLAVE)mux_ddr_0.reset,(SLAVE)volt_sens_pio3.reset,(SLAVE)PCIex4_inout_pio10.reset,(SLAVE)FMC1_Inout_pio1.reset) 1 1 1 660
+preplace netloc FAN_OUT<net_container>A10SoM_System</net_container>(SLAVE)mux_ddr_0.altera_axi_slave,(SLAVE)FMC1_Inout_pio5.s1,(MASTER)arria10_hps_0.h2f_axi_master) 1 1 2 700 1060 1130
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.usb_inout_pio11,(SLAVE)USB_inout_pio11.external_connection) 1 0 2 NJ 2010 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.emif_0_mem,(SLAVE)emif_0_0.mem) 1 0 1 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)ddr_pio.external_connection,(SLAVE)A10SoM_System.ddr_pio) 1 0 2 NJ 2110 NJ
+preplace netloc POINT_TO_POINT<net_container>A10SoM_System</net_container>(SLAVE)arria10_hps_0.f2sdram0_clock,(MASTER)iopll_0.outclk0) 1 1 1 NJ
+preplace netloc INTERCONNECT<net_container>A10SoM_System</net_container>(MASTER)arria10_hps_0.h2f_reset,(SLAVE)volt_sens_pio4.reset,(SLAVE)arria10_hps_0.h2f_axi_reset,(MASTER)emif_0_0.emif_usr_reset_n) 1 1 2 600 1400 1110
+preplace netloc POINT_TO_POINT<net_container>A10SoM_System</net_container>(SLAVE)emif_0.hps_emif_conduit_end,(SLAVE)arria10_hps_0.emif) 1 1 1 700
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.vcc0,(SLAVE)volt_sens_pio0.external_connection) 1 0 2 NJ 2410 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)emif_0_0.pll_ref_clk,(SLAVE)A10SoM_System.emif_0_pll_ref_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.hps_io,(SLAVE)arria10_hps_0.hps_io) 1 0 2 NJ 1250 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.vcc5,(SLAVE)volt_sens_pio5.external_connection) 1 0 2 NJ 3010 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.som_config_pio,(SLAVE)som_config.external_connection) 1 0 2 NJ 2210 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)emif_0_0.global_reset_n,(SLAVE)A10SoM_System.emif_0_global_reset_n) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>A10SoM_System</net_container>(SLAVE)mm_clock_crossing_bridge_0.m0_clk,(MASTER)emif_0_0.emif_usr_clk) 1 1 1 640
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)FMC1_Inout_pio1.external_connection,(SLAVE)A10SoM_System.fmc1_inout_pio1) 1 0 2 NJ 780 NJ
+preplace netloc FAN_OUT<net_container>A10SoM_System</net_container>(SLAVE)volt_sens_pio0.clk,(SLAVE)PMOD2_Inout_pio9.clk,(SLAVE)volt_sens_pio2.clk,(SLAVE)arria10_hps_0.f2h_axi_clock,(SLAVE)FMC1_Inout_pio4.clk,(SLAVE)FMC2_Inout_pio6.clk,(SLAVE)volt_sens_pio3.clk,(SLAVE)FMC1_Inout_pio2.clk,(SLAVE)arria10_hps_0.h2f_lw_axi_clock,(SLAVE)ddr_pio.clk,(SLAVE)temp_sens_pio.clk,(SLAVE)volt_sens_pio7.clk,(SLAVE)FMC1_Inout_pio3.clk,(SLAVE)mux_ddr_0.clock_sink,(SLAVE)PMOD1_Inout_pio8.clk,(SLAVE)addr_sel_pio.clk,(SLAVE)USB_inout_pio11.clk,(SLAVE)volt_sens_pio4.clk,(MASTER)clk_1.clk,(SLAVE)FMC1_Inout_pio1.clk,(SLAVE)volt_sens_pio1.clk,(SLAVE)volt_sens_pio5.clk,(SLAVE)FMC1_Inout_pio5.clk,(SLAVE)arria10_hps_0.h2f_axi_clock,(SLAVE)PCIex4_inout_pio10.clk,(SLAVE)FMC2_Inout_pio7.clk,(SLAVE)volt_sens_pio6.clk,(SLAVE)som_config.clk) 1 1 1 620
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.oct,(SLAVE)emif_0.oct_conduit_end) 1 0 2 NJ 1510 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)clk_1.clk_in,(SLAVE)A10SoM_System.clk_100) 1 0 1 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)emif_0.pll_ref_clk_clock_sink,(SLAVE)A10SoM_System.ddr_ref_clk) 1 0 2 NJ 1530 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)FMC1_Inout_pio2.external_connection,(SLAVE)A10SoM_System.fmc1_inout_pio2) 1 0 2 NJ 360 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.fmc1_inout_pio4,(SLAVE)FMC1_Inout_pio4.external_connection) 1 0 2 NJ 60 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)volt_sens_pio6.external_connection,(SLAVE)A10SoM_System.vcc6) 1 0 2 NJ 2810 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.emif_0_global_reset_reset_sink,(SLAVE)emif_0.global_reset_reset_sink) 1 0 2 NJ 1450 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.vcc2,(SLAVE)volt_sens_pio2.external_connection) 1 0 2 NJ 2610 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.pmod2_inout_pio9,(SLAVE)PMOD2_Inout_pio9.external_connection) 1 0 2 NJ 1910 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.addr_sel_in,(SLAVE)mux_ddr_0.addr_sel_pio) 1 0 2 NJ 860 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)FMC1_Inout_pio5.external_connection,(SLAVE)A10SoM_System.fmc1_inout_pio5) 1 0 2 NJ 980 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)temp_sens_pio.external_connection,(SLAVE)A10SoM_System.temp_sens_pio) 1 0 2 NJ 2310 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.addr_sel_out,(SLAVE)addr_sel_pio.external_connection) 1 0 2 NJ 680 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.emif_0_status,(SLAVE)emif_0_0.status) 1 0 1 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(MASTER)arria10_hps_0.h2f_cold_reset,(MASTER)A10SoM_System.hps_0_h2f_reset) 1 2 1 N
+preplace netloc FAN_OUT<net_container>A10SoM_System</net_container>(SLAVE)PMOD2_Inout_pio9.s1,(SLAVE)volt_sens_pio0.s1,(SLAVE)volt_sens_pio1.s1,(SLAVE)volt_sens_pio7.s1,(SLAVE)PMOD1_Inout_pio8.s1,(MASTER)arria10_hps_0.h2f_lw_axi_master,(SLAVE)ddr_pio.s1,(SLAVE)som_config.s1,(SLAVE)volt_sens_pio5.s1,(SLAVE)addr_sel_pio.s1,(SLAVE)FMC1_Inout_pio3.s1,(SLAVE)FMC1_Inout_pio1.s1,(SLAVE)FMC2_Inout_pio7.s1,(SLAVE)volt_sens_pio2.s1,(SLAVE)temp_sens_pio.s1,(SLAVE)FMC1_Inout_pio2.s1,(SLAVE)volt_sens_pio4.s1,(SLAVE)USB_inout_pio11.s1,(SLAVE)volt_sens_pio6.s1,(SLAVE)FMC1_Inout_pio4.s1,(SLAVE)FMC2_Inout_pio6.s1,(SLAVE)volt_sens_pio3.s1,(SLAVE)PCIex4_inout_pio10.s1) 1 1 2 680 1380 1130
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)volt_sens_pio1.external_connection,(SLAVE)A10SoM_System.vcc1) 1 0 2 NJ 2510 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.vcc4,(SLAVE)volt_sens_pio4.external_connection) 1 0 2 NJ 1610 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)PCIex4_inout_pio10.external_connection,(SLAVE)A10SoM_System.pciex4_inout_pio10) 1 0 2 NJ 1710 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)volt_sens_pio3.external_connection,(SLAVE)A10SoM_System.vcc3) 1 0 2 NJ 2710 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.vcc7,(SLAVE)volt_sens_pio7.external_connection) 1 0 2 NJ 2910 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.reset,(SLAVE)clk_1.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.emif_0_oct,(SLAVE)emif_0_0.oct) 1 0 1 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)FMC2_Inout_pio6.external_connection,(SLAVE)A10SoM_System.fmc2_inout_pio6) 1 0 2 NJ 160 NJ
+preplace netloc EXPORT<net_container>A10SoM_System</net_container>(SLAVE)A10SoM_System.pmod1_inout_pio8,(SLAVE)PMOD1_Inout_pio8.external_connection) 1 0 2 NJ 1810 NJ
+levelinfo -pg 1 0 200 1280
+levelinfo -hier A10SoM_System 210 400 860 1150

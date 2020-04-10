@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable
+   filter="All Interfaces"
+   showAvalonDomains="0"
+   showClockDomains="0"
+   showResetDomains="0">
+  <columns>
+   <connections preferredWidth="63" />
+   <irq preferredWidth="47" />
+   <name preferredWidth="322" />
+   <inputclock preferredWidth="212" />
+   <description preferredWidth="338" />
+   <export preferredWidth="266" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Memory Interfaces and Controllers,Library/Processors and Peripherals/Hard Processor Components,Library/University Program/Bridges,Library/University Program,Library,Library/Basic Functions,Project,Library/Processors and Peripherals,Library/Basic Functions/Simulation; Debug and Verification/Simulation,Library/Basic Functions/Simulation; Debug and Verification" />
+ <window width="1920" height="1400" x="218" y="0" />
+ <generation path="" clear_previous="1" block_symbol_file="0" documentation="0" />
+ <hdlexample language="VHDL" />
+</preferences>
