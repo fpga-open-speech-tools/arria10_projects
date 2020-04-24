@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_iopll_191/sim/pll_altera_iopll_191_zrphyuq.vo"
+   type="VERILOG"
+   library="pll_altera_iopll_191" />
+ <file path="sim/pll.vhd" type="VHDL" hasInlineConfiguration="true" />
+ <topLevel name="pll" />
+ <deviceFamily name="arria10" />
+</simPackage>

@@ -31,8 +31,16 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
+      }
+   }
+   element axi_clk_bridge
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
       }
    }
    element clk_1
@@ -223,8 +231,8 @@
    type="conduit"
    dir="end" />
  <interface
-   name="arria10_hps_0_h2f_axi_clock"
-   internal="arria10_hps_0.h2f_axi_clock"
+   name="axi_clk_bridge_in_clk"
+   internal="axi_clk_bridge.in_clk"
    type="clock"
    dir="end" />
  <interface name="clk_100" internal="clk_1.clk_in" type="clock" dir="end" />
@@ -236,11 +244,6 @@
  <interface
    name="emif_0_global_reset_n"
    internal="emif_0.global_reset_n"
-   type="reset"
-   dir="end" />
- <interface
-   name="emif_0_global_reset_reset_sink"
-   internal="emif_a10_hps_0.global_reset_reset_sink"
    type="reset"
    dir="end" />
  <interface name="emif_0_mem" internal="emif_0.mem" type="conduit" dir="end" />
@@ -266,6 +269,11 @@
    type="conduit"
    dir="end" />
  <interface
+   name="emif_a10_hps_0_global_reset_reset_sink"
+   internal="emif_a10_hps_0.global_reset_reset_sink"
+   type="reset"
+   dir="end" />
+ <interface
    name="hps_0_h2f_reset"
    internal="arria10_hps_0.h2f_cold_reset"
    type="reset"
@@ -284,11 +292,6 @@
    name="mem"
    internal="emif_a10_hps_0.mem_conduit_end"
    type="conduit"
-   dir="end" />
- <interface
-   name="mm_clock_crossing_bridge_0_s0_clk"
-   internal="mm_clock_crossing_bridge_0.s0_clk"
-   type="clock"
    dir="end" />
  <interface
    name="oct"
@@ -527,6 +530,15 @@
   <parameter name="quartus_ini_hps_ip_enable_test_interface" value="false" />
   <parameter name="quartus_ini_hps_ip_overide_f2sdram_delay" value="false" />
   <parameter name="quartus_ini_hps_ip_override_sdmmc_4bit" value="false" />
+ </module>
+ <module
+   name="axi_clk_bridge"
+   kind="altera_clock_bridge"
+   version="18.0"
+   enabled="1">
+  <parameter name="DERIVED_CLOCK_RATE" value="0" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
+  <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
  </module>
  <module name="clk_1" kind="clock_source" version="18.0" enabled="1">
   <parameter name="clockFrequency" value="100000000" />
@@ -2954,6 +2966,16 @@
    version="18.0"
    start="emif_0.emif_usr_clk"
    end="mm_clock_crossing_bridge_0.m0_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="axi_clk_bridge.out_clk"
+   end="arria10_hps_0.h2f_axi_clock" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="axi_clk_bridge.out_clk"
+   end="mm_clock_crossing_bridge_0.s0_clk" />
  <connection
    kind="clock"
    version="18.0"

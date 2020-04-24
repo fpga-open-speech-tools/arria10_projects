@@ -1,0 +1,5 @@
+config som_system_altera_emif_a10_hps_180_uhly6ia_cfg;
+		design som_system_altera_emif_a10_hps_180_uhly6ia;
+		instance som_system_altera_emif_a10_hps_180_uhly6ia.arch use som_system_altera_emif_arch_nf_180.som_system_altera_emif_arch_nf_180_qjbdqci;
+endconfig
+

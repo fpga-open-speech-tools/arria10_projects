@@ -1,0 +1,110 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst som_system.arria10_hps_0.i_uart_1_uart -pg 1
+preplace inst som_system.mm_clock_crossing_bridge_0 -pg 1 -lvl 3 -y 470
+preplace inst som_system.arria10_hps_0.timer -pg 1
+preplace inst som_system.emif_0.arch -pg 1
+preplace inst som_system.arria10_hps_0.i_i2c_emac_2_i2c -pg 1
+preplace inst som_system.arria10_hps_0.bridges -pg 1
+preplace inst som_system.arria10_hps_0.i_i2c_0_i2c -pg 1
+preplace inst som_system.mux_ddr_0 -pg 1 -lvl 2 -y 250
+preplace inst som_system.emif_a10_hps_0.arch -pg 1
+preplace inst som_system.arria10_hps_0.cb_intosc_ls_clk -pg 1
+preplace inst som_system.arria10_hps_0.i_dma_DMASECURE -pg 1
+preplace inst som_system.arria10_hps_0.i_nand_NANDDATA -pg 1
+preplace inst som_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst som_system.emif_0.cal_slave_component.ioaux_master_bridge -pg 1
+preplace inst som_system.arria10_hps_0.f2s_free_clk -pg 1
+preplace inst som_system.arria10_hps_0.i_i2c_emac_0_i2c -pg 1
+preplace inst som_system.arria10_hps_0.i_usbotg_0_globgrp -pg 1
+preplace inst som_system.arria10_hps_0.fpga_interfaces -pg 1
+preplace inst som_system.arria10_hps_0.i_i2c_1_i2c -pg 1
+preplace inst som_system.arria10_hps_0.baum_clkmgr -pg 1
+preplace inst som_system.arria10_hps_0.i_rst_mgr_rstmgr -pg 1
+preplace inst som_system.arria10_hps_0.arm_a9_0 -pg 1
+preplace inst som_system.arria10_hps_0.mpu_reg_l2_MPUL2 -pg 1
+preplace inst som_system.arria10_hps_0.arm_a9_1 -pg 1
+preplace inst som_system.emif_0.cal_slave_component.clk_bridge -pg 1
+preplace inst som_system.arria10_hps_0.i_timer_sp_1_timer -pg 1
+preplace inst som_system.som_config -pg 1 -lvl 2 -y 410
+preplace inst som_system.emif_0.cal_slave_component.rst_bridge -pg 1
+preplace inst som_system.arria10_hps_0.i_watchdog_1_l4wd -pg 1
+preplace inst som_system.clk_AD1939_ABCLK -pg 1 -lvl 2 -y 110
+preplace inst som_system.arria10_hps_0.cb_intosc_hs_div2_clk -pg 1
+preplace inst som_system.arria10_hps_0.i_sdmmc_sdmmc -pg 1
+preplace inst som_system.clk_1 -pg 1 -lvl 1 -y 300
+preplace inst som_system.arria10_hps_0.clk_0 -pg 1
+preplace inst som_system.arria10_hps_0.i_uart_0_uart -pg 1
+preplace inst som_system.arria10_hps_0.i_gpio_1_gpio -pg 1
+preplace inst som_system.arria10_hps_0.i_spim_1_spim -pg 1
+preplace inst som_system.clk_AD1939_ALRCLK -pg 1 -lvl 2 -y 190
+preplace inst som_system.arria10_hps_0.i_emac_emac0 -pg 1
+preplace inst som_system.pll_using_AD1939_MCLK -pg 1 -lvl 2 -y 30
+preplace inst som_system.arria10_hps_0.scu -pg 1
+preplace inst som_system.arria10_hps_0.i_emac_emac1 -pg 1
+preplace inst som_system.arria10_hps_0.i_gpio_2_gpio -pg 1
+preplace inst som_system.arria10_hps_0.i_emac_emac2 -pg 1
+preplace inst som_system.arria10_hps_0.i_spis_0_spis -pg 1
+preplace inst som_system.arria10_hps_0.i_timer_sys_0_timer -pg 1
+preplace inst som_system.arria10_hps_0.arm_gic_0 -pg 1
+preplace inst som_system.arria10_hps_0.hps_io -pg 1
+preplace inst som_system.arria10_hps_0.eosc1 -pg 1
+preplace inst som_system.arria10_hps_0.i_i2c_emac_1_i2c -pg 1
+preplace inst som_system.arria10_hps_0.i_sys_mgr_core -pg 1
+preplace inst som_system.emif_a10_hps_0 -pg 1 -lvl 5 -y 820
+preplace inst som_system.FE_Qsys_AD1939_Audio_Research_v1_0 -pg 1 -lvl 3 -y 50
+preplace inst som_system.arria10_hps_0.i_spim_0_spim -pg 1
+preplace inst som_system.arria10_hps_0.i_qspi_QSPIDATA -pg 1
+preplace inst som_system.emif_0.cal_slave_component.ioaux_soft_ram -pg 1
+preplace inst som_system.axi_clk_bridge -pg 1 -lvl 2 -y 550
+preplace inst som_system.arria10_hps_0.i_timer_sp_0_timer -pg 1
+preplace inst som_system.arria10_hps_0 -pg 1 -lvl 5 -y 370
+preplace inst som_system.arria10_hps_0.i_fpga_mgr_fpgamgrregs -pg 1
+preplace inst som_system.emif_0 -pg 1 -lvl 4 -y 610
+preplace inst som_system.emif_0.cal_slave_component -pg 1
+preplace inst som_system.arria10_hps_0.i_gpio_0_gpio -pg 1
+preplace inst som_system.arria10_hps_0.i_watchdog_0_l4wd -pg 1
+preplace inst som_system.arria10_hps_0.i_usbotg_1_globgrp -pg 1
+preplace inst som_system.arria10_hps_0.i_spis_1_spis -pg 1
+preplace inst som_system.arria10_hps_0.i_timer_sys_1_timer -pg 1
+preplace inst som_system.arria10_hps_0.hps_io.border -pg 1
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)emif_0.pll_extra_clk_0_conduit_end,(SLAVE)som_system.emif_0_pll_extra_clk_0) 1 0 4 NJ 700 NJ 700 NJ 700 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.emif_0_mem,(SLAVE)emif_0.mem) 1 0 4 NJ 660 NJ 660 NJ 660 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)arria10_hps_0.hps_io,(SLAVE)som_system.hps_io) 1 0 5 NJ 540 NJ 540 NJ 460 NJ 460 NJ
+preplace netloc FAN_OUT<net_container>som_system</net_container>(SLAVE)arria10_hps_0.f2sdram0_reset,(SLAVE)clk_AD1939_ALRCLK.clk_in_reset,(SLAVE)som_config.reset,(SLAVE)mux_ddr_0.reset,(SLAVE)arria10_hps_0.f2h_axi_reset,(SLAVE)pll_using_AD1939_MCLK.reset,(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.sys_reset,(MASTER)clk_1.clk_reset,(SLAVE)arria10_hps_0.h2f_lw_axi_reset,(SLAVE)clk_AD1939_ABCLK.clk_in_reset) 1 1 4 430 360 750 340 NJ 340 1560
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.sys_clk,(MASTER)pll_using_AD1939_MCLK.outclk0) 1 2 1 770
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out,(MASTER)FE_Qsys_AD1939_Audio_Research_v1_0.Line_In) 1 2 2 790 40 1090
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.addr_sel_in,(SLAVE)mux_ddr_0.addr_sel_pio) 1 0 2 NJ 260 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)clk_AD1939_ALRCLK.clk_in,(SLAVE)som_system.ad1939_alrclk) 1 0 2 NJ 200 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.emif_0_status,(SLAVE)emif_0.status) 1 0 4 NJ 760 NJ 760 NJ 760 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)clk_AD1939_ABCLK.clk_in,(SLAVE)som_system.ad1939_abclk) 1 0 2 NJ 120 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)mm_clock_crossing_bridge_0.m0_clk,(MASTER)emif_0.emif_usr_clk) 1 2 3 850 780 NJ 810 1500
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)emif_0.pll_locked_conduit_end,(SLAVE)som_system.emif_0_pll_locked) 1 0 4 NJ 720 NJ 720 NJ 720 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)emif_a10_hps_0.hps_emif_conduit_end,(SLAVE)arria10_hps_0.emif) 1 4 1 1640
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)emif_a10_hps_0.mem_conduit_end,(SLAVE)som_system.mem) 1 0 5 NJ 870 NJ 870 NJ 870 NJ 870 NJ
+preplace netloc INTERCONNECT<net_container>som_system</net_container>(SLAVE)mm_clock_crossing_bridge_0.m0_reset,(SLAVE)arria10_hps_0.h2f_axi_reset,(SLAVE)mm_clock_crossing_bridge_0.s0_reset,(MASTER)arria10_hps_0.h2f_reset,(MASTER)emif_0.emif_usr_reset_n) 1 2 4 830 380 NJ 380 1520 670 1990
+preplace netloc FAN_OUT<net_container>som_system</net_container>(SLAVE)arria10_hps_0.f2sdram0_clock,(SLAVE)arria10_hps_0.f2h_axi_clock,(MASTER)clk_1.clk,(SLAVE)arria10_hps_0.h2f_lw_axi_clock,(SLAVE)mux_ddr_0.clock_sink,(SLAVE)som_config.clk) 1 1 4 410 380 NJ 320 NJ 320 1580
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.emif_0_pll_ref_clk,(SLAVE)emif_0.pll_ref_clk) 1 0 4 NJ 740 NJ 740 NJ 740 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)axi_clk_bridge.in_clk,(SLAVE)som_system.axi_clk_bridge_in_clk) 1 0 2 NJ 520 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(MASTER)arria10_hps_0.h2f_cold_reset,(MASTER)som_system.hps_0_h2f_reset) 1 5 1 N
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.connect_to_AD1939,(SLAVE)som_system.ad1939_physical) 1 0 3 NJ 180 NJ 180 NJ
+preplace netloc FAN_OUT<net_container>som_system</net_container>(MASTER)axi_clk_bridge.out_clk,(SLAVE)mm_clock_crossing_bridge_0.s0_clk,(SLAVE)arria10_hps_0.h2f_axi_clock) 1 2 3 810 360 NJ 360 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.clk_alrclk,(MASTER)clk_AD1939_ALRCLK.clk) 1 2 1 750
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.ad1939_mclk,(SLAVE)pll_using_AD1939_MCLK.refclk) 1 0 2 NJ 60 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(MASTER)clk_AD1939_ABCLK.clk,(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.clk_abclk) 1 2 1 750
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)emif_0.ctrl_amm_0,(MASTER)mm_clock_crossing_bridge_0.m0) 1 3 1 1090
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.clk_100,(SLAVE)clk_1.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mclk_pll_locked,(SLAVE)pll_using_AD1939_MCLK.locked) 1 0 2 NJ 40 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)clk_1.clk_in_reset,(SLAVE)som_system.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.oct,(SLAVE)emif_a10_hps_0.oct_conduit_end) 1 0 5 NJ 890 NJ 890 NJ 890 NJ 890 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.emif_0_oct,(SLAVE)emif_0.oct) 1 0 4 NJ 680 NJ 680 NJ 680 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(MASTER)arria10_hps_0.h2f_lw_axi_master,(SLAVE)som_config.s1) 1 1 5 450 520 NJ 440 NJ 440 NJ 650 2010
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(MASTER)mux_ddr_0.altera_axi_master,(SLAVE)mm_clock_crossing_bridge_0.s0) 1 2 1 770
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(MASTER)arria10_hps_0.h2f_axi_master,(SLAVE)mux_ddr_0.altera_axi_slave) 1 1 5 450 400 NJ 400 NJ 400 NJ 330 2010
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(MASTER)FE_Qsys_AD1939_Audio_Research_v1_0.Microphone_In,(SLAVE)FE_Qsys_AD1939_Audio_Research_v1_0.Headphone_Out) 1 2 2 810 260 1090
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_config.external_connection,(SLAVE)som_system.som_config_pio) 1 0 2 NJ 440 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)emif_0.global_reset_n,(SLAVE)som_system.emif_0_global_reset_n) 1 0 4 NJ 640 NJ 640 NJ 640 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.ddr_ref_clk,(SLAVE)emif_a10_hps_0.pll_ref_clk_clock_sink) 1 0 5 NJ 910 NJ 910 NJ 910 NJ 910 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)emif_a10_hps_0.global_reset_reset_sink,(SLAVE)som_system.emif_a10_hps_0_global_reset_reset_sink) 1 0 5 NJ 830 NJ 830 NJ 830 NJ 830 NJ
+levelinfo -pg 1 0 200 2160
+levelinfo -hier som_system 210 240 500 910 1320 1800 2030

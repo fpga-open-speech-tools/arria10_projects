@@ -6,7 +6,7 @@
    version="1.0"
    description=""
    tags="INTERNAL_COMPONENT=true"
-   categories="" />
+   categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
    element iopll_0
@@ -59,7 +59,7 @@
  <module
    name="iopll_0"
    kind="altera_iopll"
-   version="18.0"
+   version="19.1"
    enabled="1"
    autoexport="1">
   <parameter name="gui_active_clk" value="false" />

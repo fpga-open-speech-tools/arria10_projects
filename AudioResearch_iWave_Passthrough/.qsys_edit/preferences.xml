@@ -7,7 +7,7 @@
    showClockDomains="0"
    showResetDomains="0">
   <columns>
-   <connections preferredWidth="95" />
+   <connections preferredWidth="239" />
    <irq preferredWidth="47" />
    <name preferredWidth="202" />
    <inputclock preferredWidth="212" />
@@ -15,9 +15,13 @@
    <export preferredWidth="313" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library,Library/Basic Functions/Bridges and Adaptors,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Project,Library/Basic Functions" />
- <window width="1734" height="1400" x="0" y="0" />
- <generation path="" clear_previous="1" block_symbol_file="0" documentation="0" />
+ <library expandedCategories="Library,Project" />
+ <window width="1734" height="1407" x="1713" y="0" />
+ <generation
+   path=""
+   clear_previous="1"
+   block_symbol_file="0"
+   documentation="0"
+   synthesis="VHDL" />
  <hdlexample language="VHDL" />
 </preferences>

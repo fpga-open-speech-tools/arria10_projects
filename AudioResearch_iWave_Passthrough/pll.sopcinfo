@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="pll" kind="pll" version="1.0" fabric="QSYS">
- <!-- Format version 18.0 614 (Future versions may contain additional information.) -->
- <!-- 2020.04.10.09:27:45 -->
+ <!-- Format version 19.1 670 (Future versions may contain additional information.) -->
+ <!-- 2020.04.14.07:06:58 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1586532465</value>
+  <value>1586869618</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -95,7 +95,7 @@
   <visible>true</visible>
   <valid>true</valid>
  </parameter>
- <module name="iopll_0" kind="altera_iopll" version="18.0" path="iopll_0">
+ <module name="iopll_0" kind="altera_iopll" version="19.1" path="iopll_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <assignment>
@@ -5619,7 +5619,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="reset" kind="reset_sink" version="18.0">
+  <interface name="reset" kind="reset_sink" version="19.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -5668,7 +5668,7 @@ parameters are a RESULT of the module parameters. -->
     <role>reset</role>
    </port>
   </interface>
-  <interface name="refclk" kind="clock_sink" version="18.0">
+  <interface name="refclk" kind="clock_sink" version="19.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -5733,7 +5733,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="locked" kind="conduit_end" version="18.0">
+  <interface name="locked" kind="conduit_end" version="19.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -5782,7 +5782,7 @@ parameters are a RESULT of the module parameters. -->
     <role>export</role>
    </port>
   </interface>
-  <interface name="outclk0" kind="clock_source" version="18.0">
+  <interface name="outclk0" kind="clock_source" version="19.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -5855,7 +5855,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="outclk1" kind="clock_source" version="18.0">
+  <interface name="outclk1" kind="clock_source" version="19.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -5928,7 +5928,7 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
-  <interface name="outclk2" kind="clock_source" version="18.0">
+  <interface name="outclk2" kind="clock_source" version="19.1">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -6008,7 +6008,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>IOPLL Intel FPGA IP</displayName>
-  <version>18.0</version>
+  <version>19.1</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -6016,7 +6016,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Reset Input</displayName>
-  <version>18.0</version>
+  <version>19.1</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -6024,7 +6024,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Clock Input</displayName>
-  <version>18.0</version>
+  <version>19.1</version>
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
@@ -6032,7 +6032,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Conduit</displayName>
-  <version>18.0</version>
+  <version>19.1</version>
  </plugin>
  <plugin>
   <instanceCount>3</instanceCount>
@@ -6040,8 +6040,8 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Clock Output</displayName>
-  <version>18.0</version>
+  <version>19.1</version>
  </plugin>
- <reportVersion>18.0 614</reportVersion>
+ <reportVersion>19.1 670</reportVersion>
  <uniqueIdentifier></uniqueIdentifier>
 </EnsembleReport>

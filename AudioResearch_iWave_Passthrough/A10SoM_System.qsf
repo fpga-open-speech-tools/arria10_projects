@@ -45,7 +45,6 @@ set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Standard Edition"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
 
-
 ########################################################################################################################
 # USB
 ########################################################################################################################
@@ -206,32 +205,6 @@ set_instance_assignment -name IO_STANDARD 1.8V -to hps_gpio2_GPIO8
 ############################################################
 # MEMORY
 ############################################################
-set_location_assignment PIN_H27 -to hps_memory_mem_a[0]
-set_location_assignment PIN_G27 -to hps_memory_mem_a[1]
-set_location_assignment PIN_G26 -to hps_memory_mem_a[10]
-set_location_assignment PIN_F26 -to hps_memory_mem_a[11]
-set_location_assignment PIN_F24 -to hps_memory_mem_a[12]
-set_location_assignment PIN_E27 -to hps_memory_mem_a[13]
-set_location_assignment PIN_D27 -to hps_memory_mem_a[14]
-set_location_assignment PIN_E22 -to hps_memory_mem_a[15]
-set_location_assignment PIN_F23 -to hps_memory_mem_a[16]
-set_location_assignment PIN_G23 -to hps_memory_mem_a[2]
-set_location_assignment PIN_G22 -to hps_memory_mem_a[3]
-set_location_assignment PIN_H25 -to hps_memory_mem_a[4]
-set_location_assignment PIN_G25 -to hps_memory_mem_a[5]
-set_location_assignment PIN_H24 -to hps_memory_mem_a[6]
-set_location_assignment PIN_H23 -to hps_memory_mem_a[7]
-set_location_assignment PIN_H22 -to hps_memory_mem_a[8]
-set_location_assignment PIN_J22 -to hps_memory_mem_a[9]
-set_location_assignment PIN_J24 -to hps_memory_mem_act_n
-set_location_assignment PIN_AJ22 -to hps_memory_mem_alert_n
-set_location_assignment PIN_D26 -to hps_memory_mem_ba[0]
-set_location_assignment PIN_D25 -to hps_memory_mem_ba[1]
-set_location_assignment PIN_C25 -to hps_memory_mem_bg
-set_location_assignment PIN_L23 -to hps_memory_mem_ck
-set_location_assignment PIN_M23 -to hps_memory_mem_ck_n
-set_location_assignment PIN_J27 -to hps_memory_mem_cke
-set_location_assignment PIN_K24 -to hps_memory_mem_cs_n
 set_location_assignment PIN_AE23 -to hps_memory_mem_dbi_n[0]
 set_location_assignment PIN_AP24 -to hps_memory_mem_dbi_n[1]
 set_location_assignment PIN_AM27 -to hps_memory_mem_dbi_n[2]
@@ -277,6 +250,9 @@ set_location_assignment PIN_AF23 -to hps_memory_mem_dq[6]
 set_location_assignment PIN_AK22 -to hps_memory_mem_dq[7]
 set_location_assignment PIN_AN24 -to hps_memory_mem_dq[8]
 set_location_assignment PIN_AM23 -to hps_memory_mem_dq[9]
+set_location_assignment PIN_AJ22 -to hps_memory_mem_alert_n
+set_location_assignment PIN_L24 -to hps_memory_mem_reset_n
+set_location_assignment PIN_F25 -to hps_memory_oct_rzqin
 set_location_assignment PIN_AH24 -to hps_memory_mem_dqs_n[0]
 set_location_assignment PIN_AN22 -to hps_memory_mem_dqs_n[1]
 set_location_assignment PIN_AM26 -to hps_memory_mem_dqs_n[2]
@@ -287,11 +263,94 @@ set_location_assignment PIN_AM22 -to hps_memory_mem_dqs[1]
 set_location_assignment PIN_AM25 -to hps_memory_mem_dqs[2]
 set_location_assignment PIN_AG25 -to hps_memory_mem_dqs[3]
 set_location_assignment PIN_C24 -to hps_memory_mem_dqs[4]
+set_location_assignment PIN_L23 -to hps_memory_mem_ck
+set_location_assignment PIN_M23 -to hps_memory_mem_ck_n
+set_location_assignment PIN_H27 -to hps_memory_mem_a[0]
+set_location_assignment PIN_G27 -to hps_memory_mem_a[1]
+set_location_assignment PIN_G26 -to hps_memory_mem_a[10]
+set_location_assignment PIN_F26 -to hps_memory_mem_a[11]
+set_location_assignment PIN_F24 -to hps_memory_mem_a[12]
+set_location_assignment PIN_E27 -to hps_memory_mem_a[13]
+set_location_assignment PIN_D27 -to hps_memory_mem_a[14]
+set_location_assignment PIN_E22 -to hps_memory_mem_a[15]
+set_location_assignment PIN_F23 -to hps_memory_mem_a[16]
+set_location_assignment PIN_G23 -to hps_memory_mem_a[2]
+set_location_assignment PIN_G22 -to hps_memory_mem_a[3]
+set_location_assignment PIN_H25 -to hps_memory_mem_a[4]
+set_location_assignment PIN_G25 -to hps_memory_mem_a[5]
+set_location_assignment PIN_H24 -to hps_memory_mem_a[6]
+set_location_assignment PIN_H23 -to hps_memory_mem_a[7]
+set_location_assignment PIN_H22 -to hps_memory_mem_a[8]
+set_location_assignment PIN_J22 -to hps_memory_mem_a[9]
+set_location_assignment PIN_J24 -to hps_memory_mem_act_n
+set_location_assignment PIN_D26 -to hps_memory_mem_ba[0]
+set_location_assignment PIN_D25 -to hps_memory_mem_ba[1]
+set_location_assignment PIN_C25 -to hps_memory_mem_bg
+set_location_assignment PIN_J27 -to hps_memory_mem_cke
+set_location_assignment PIN_K24 -to hps_memory_mem_cs_n
 set_location_assignment PIN_K25 -to hps_memory_mem_odt
 set_location_assignment PIN_K22 -to hps_memory_mem_par
-set_location_assignment PIN_L24 -to hps_memory_mem_reset_n
-set_location_assignment PIN_F25 -to hps_memory_oct_rzqin
 
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dbi_n[0]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dbi_n[1]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dbi_n[2]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dbi_n[3]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dbi_n[4]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[0]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[1]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[10]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[11]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[12]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[13]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[14]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[15]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[16]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[17]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[18]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[19]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[2]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[20]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[21]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[22]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[23]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[24]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[25]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[26]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[27]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[28]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[29]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[3]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[30]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[31]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[32]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[33]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[34]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[35]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[36]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[37]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[38]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[39]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[4]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[5]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[6]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[7]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[8]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dq[9]
+set_instance_assignment -name IO_STANDARD 1.2V -to hps_memory_mem_alert_n
+set_instance_assignment -name IO_STANDARD 1.2V -to hps_memory_mem_reset_n
+set_instance_assignment -name IO_STANDARD 1.2V -to hps_memory_oct_rzqin
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to hps_memory_mem_dqs_n[0]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to hps_memory_mem_dqs_n[1]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to hps_memory_mem_dqs_n[2]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to hps_memory_mem_dqs_n[3]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to hps_memory_mem_dqs_n[4]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to hps_memory_mem_dqs[0]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to hps_memory_mem_dqs[1]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to hps_memory_mem_dqs[2]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to hps_memory_mem_dqs[3]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to hps_memory_mem_dqs[4]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to hps_memory_mem_ck
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to hps_memory_mem_ck_n
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_a[0]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_a[1]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_a[10]
@@ -310,73 +369,13 @@ set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_a[7]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_a[8]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_a[9]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_act_n
-set_instance_assignment -name IO_STANDARD 1.2V -to hps_memory_mem_alert_n
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_ba[0]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_ba[1]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_bg
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VSSTL" -to hps_memory_mem_ck
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VSSTL" -to hps_memory_mem_ck_n
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_cke
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_cs_n
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dbi_n[0]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dbi_n[1]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dbi_n[2]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dbi_n[3]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dbi_n[4]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[0]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[1]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[10]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[11]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[12]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[13]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[14]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[15]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[16]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[17]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[18]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[19]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[2]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[20]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[21]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[22]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[23]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[24]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[25]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[26]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[27]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[28]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[29]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[3]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[30]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[31]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[32]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[33]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[34]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[35]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[36]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[37]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[38]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[39]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[4]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[5]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[6]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[7]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[8]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to hps_memory_mem_dq[9]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to hps_memory_mem_dqs_n[0]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to hps_memory_mem_dqs_n[1]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to hps_memory_mem_dqs_n[2]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to hps_memory_mem_dqs_n[3]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to hps_memory_mem_dqs_n[4]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to hps_memory_mem_dqs[0]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to hps_memory_mem_dqs[1]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to hps_memory_mem_dqs[2]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to hps_memory_mem_dqs[3]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to hps_memory_mem_dqs[4]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_odt
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_par
-set_instance_assignment -name IO_STANDARD 1.2V -to hps_memory_mem_reset_n
-set_instance_assignment -name IO_STANDARD 1.2V -to hps_memory_oct_rzqin
 
 ############################################################
 # ETHERNET
@@ -415,6 +414,11 @@ set_instance_assignment -name IO_STANDARD 1.8V -to hps_emac1_TXD3
 ########################################################################################################################
 # MISC
 ########################################################################################################################
+set_location_assignment PIN_J25 -to som_config_pio[0]
+set_location_assignment PIN_J26 -to som_config_pio[1]
+set_location_assignment PIN_K23 -to som_config_pio[2]
+set_location_assignment PIN_A23 -to som_config_pio[3]
+set_location_assignment PIN_AC24 -to som_config_pio[4]
 set_location_assignment PIN_AC9 -to pmod1_inout_pio8[0]
 set_location_assignment PIN_AB8 -to pmod1_inout_pio8[1]
 set_location_assignment PIN_AC10 -to pmod1_inout_pio8[2]
@@ -431,17 +435,17 @@ set_location_assignment PIN_AD5 -to pmod2_inout_pio9[4]
 set_location_assignment PIN_AK3 -to pmod2_inout_pio9[5]
 set_location_assignment PIN_AD6 -to pmod2_inout_pio9[6]
 set_location_assignment PIN_AK4 -to pmod2_inout_pio9[7]
+set_location_assignment PIN_AN7 -to sys_reset_n_i
 set_location_assignment PIN_J30 -to sfp_1F_rx_ch0
 set_location_assignment PIN_J29 -to "sfp_1F_rx_ch0(n)"
 set_location_assignment PIN_H32 -to sfp_1F_tx_ch0
 set_location_assignment PIN_H31 -to "sfp_1F_tx_ch0(n)"
-set_location_assignment PIN_J25 -to som_config_pio[0]
-set_location_assignment PIN_J26 -to som_config_pio[1]
-set_location_assignment PIN_K23 -to som_config_pio[2]
-set_location_assignment PIN_A23 -to som_config_pio[3]
-set_location_assignment PIN_AC24 -to som_config_pio[4]
-set_location_assignment PIN_AN7 -to sys_reset_n_i
 
+set_instance_assignment -name IO_STANDARD 1.2V -to som_config_pio[0]
+set_instance_assignment -name IO_STANDARD 1.2V -to som_config_pio[1]
+set_instance_assignment -name IO_STANDARD 1.2V -to som_config_pio[2]
+set_instance_assignment -name IO_STANDARD 1.2V -to som_config_pio[3]
+set_instance_assignment -name IO_STANDARD 1.2V -to som_config_pio[4]
 set_instance_assignment -name IO_STANDARD 1.8V -to pmod1_inout_pio8[0]
 set_instance_assignment -name IO_STANDARD 1.8V -to pmod1_inout_pio8[1]
 set_instance_assignment -name IO_STANDARD 1.8V -to pmod1_inout_pio8[2]
@@ -458,16 +462,11 @@ set_instance_assignment -name IO_STANDARD 1.8V -to pmod2_inout_pio9[4]
 set_instance_assignment -name IO_STANDARD 1.8V -to pmod2_inout_pio9[5]
 set_instance_assignment -name IO_STANDARD 1.8V -to pmod2_inout_pio9[6]
 set_instance_assignment -name IO_STANDARD 1.8V -to pmod2_inout_pio9[7]
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to sfp_1F_rx_ch0
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "sfp_1F_rx_ch0(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to sfp_1F_tx_ch0
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "sfp_1F_tx_ch0(n)"
-set_instance_assignment -name IO_STANDARD 1.2V -to som_config_pio[0]
-set_instance_assignment -name IO_STANDARD 1.2V -to som_config_pio[1]
-set_instance_assignment -name IO_STANDARD 1.2V -to som_config_pio[2]
-set_instance_assignment -name IO_STANDARD 1.2V -to som_config_pio[3]
-set_instance_assignment -name IO_STANDARD 1.2V -to som_config_pio[4]
 set_instance_assignment -name IO_STANDARD 1.8V -to sys_reset_n_i
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to sfp_1F_rx_ch0
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "sfp_1F_rx_ch0(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to sfp_1F_tx_ch0
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "sfp_1F_tx_ch0(n)"
 
 
 ########################################################################################################################
@@ -559,62 +558,6 @@ set_instance_assignment -name IO_STANDARD 1.8V -to fmc2_inout_pio7[9]
 ########################################################################################################################
 # FMC1
 ########################################################################################################################
-set_location_assignment PIN_AL30 -to fmc_1C_rx_ch0
-set_location_assignment PIN_AL29 -to "fmc_1C_rx_ch0(n)"
-set_location_assignment PIN_AJ30 -to fmc_1C_rx_ch1
-set_location_assignment PIN_AJ29 -to "fmc_1C_rx_ch1(n)"
-set_location_assignment PIN_AG30 -to fmc_1C_rx_ch2
-set_location_assignment PIN_AG29 -to "fmc_1C_rx_ch2(n)"
-set_location_assignment PIN_AF32 -to fmc_1C_rx_ch3
-set_location_assignment PIN_AF31 -to "fmc_1C_rx_ch3(n)"
-set_location_assignment PIN_AP32 -to fmc_1C_tx_ch0
-set_location_assignment PIN_AP31 -to "fmc_1C_tx_ch0(n)"
-set_location_assignment PIN_AM32 -to fmc_1C_tx_ch1
-set_location_assignment PIN_AM31 -to "fmc_1C_tx_ch1(n)"
-set_location_assignment PIN_AK32 -to fmc_1C_tx_ch2
-set_location_assignment PIN_AK31 -to "fmc_1C_tx_ch2(n)"
-set_location_assignment PIN_AH32 -to fmc_1C_tx_ch3
-set_location_assignment PIN_AH31 -to "fmc_1C_tx_ch3(n)"
-set_location_assignment PIN_AC30 -to fmc_1D_rx_ch0
-set_location_assignment PIN_AC29 -to "fmc_1D_rx_ch0(n)"
-set_location_assignment PIN_AB32 -to fmc_1D_rx_ch1
-set_location_assignment PIN_AB31 -to "fmc_1D_rx_ch1(n)"
-set_location_assignment PIN_AA30 -to fmc_1D_rx_ch2
-set_location_assignment PIN_AA29 -to "fmc_1D_rx_ch2(n)"
-set_location_assignment PIN_Y32 -to fmc_1D_rx_ch3
-set_location_assignment PIN_Y31 -to "fmc_1D_rx_ch3(n)"
-set_location_assignment PIN_AJ34 -to fmc_1D_tx_ch0
-set_location_assignment PIN_AJ33 -to "fmc_1D_tx_ch0(n)"
-set_location_assignment PIN_AG34 -to fmc_1D_tx_ch1
-set_location_assignment PIN_AG33 -to "fmc_1D_tx_ch1(n)"
-set_location_assignment PIN_AE34 -to fmc_1D_tx_ch2
-set_location_assignment PIN_AE33 -to "fmc_1D_tx_ch2(n)"
-set_location_assignment PIN_AC34 -to fmc_1D_tx_ch3
-set_location_assignment PIN_AC33 -to "fmc_1D_tx_ch3(n)"
-set_location_assignment PIN_U30 -to fmc_1E_rx_ch0
-set_location_assignment PIN_U29 -to "fmc_1E_rx_ch0(n)"
-set_location_assignment PIN_T32 -to fmc_1E_rx_ch1
-set_location_assignment PIN_T31 -to "fmc_1E_rx_ch1(n)"
-set_location_assignment PIN_R30 -to fmc_1E_rx_ch2
-set_location_assignment PIN_R29 -to "fmc_1E_rx_ch2(n)"
-set_location_assignment PIN_P32 -to fmc_1E_rx_ch3
-set_location_assignment PIN_P31 -to "fmc_1E_rx_ch3(n)"
-set_location_assignment PIN_U34 -to fmc_1E_tx_ch0
-set_location_assignment PIN_U33 -to "fmc_1E_tx_ch0(n)"
-set_location_assignment PIN_R34 -to fmc_1E_tx_ch1
-set_location_assignment PIN_R33 -to "fmc_1E_tx_ch1(n)"
-set_location_assignment PIN_N34 -to fmc_1E_tx_ch2
-set_location_assignment PIN_N33 -to "fmc_1E_tx_ch2(n)"
-set_location_assignment PIN_L34 -to fmc_1E_tx_ch3
-set_location_assignment PIN_L33 -to "fmc_1E_tx_ch3(n)"
-set_location_assignment PIN_L30 -to fmc_1F_rx_ch0
-set_location_assignment PIN_L29 -to "fmc_1F_rx_ch0(n)"
-set_location_assignment PIN_K32 -to fmc_1F_rx_ch1
-set_location_assignment PIN_K31 -to "fmc_1F_rx_ch1(n)"
-set_location_assignment PIN_E34 -to fmc_1F_tx_ch0
-set_location_assignment PIN_E33 -to "fmc_1F_tx_ch0(n)"
-set_location_assignment PIN_C34 -to fmc_1F_tx_ch1
-set_location_assignment PIN_C33 -to "fmc_1F_tx_ch1(n)"
 set_location_assignment PIN_Y1 -to fmc1_inout_pio1[0]
 set_location_assignment PIN_Y2 -to fmc1_inout_pio1[1]
 set_location_assignment PIN_Y6 -to fmc1_inout_pio1[10]
@@ -715,64 +658,63 @@ set_location_assignment PIN_W5 -to fmc1_inout_pio5[6]
 set_location_assignment PIN_AN13 -to fmc1_inout_pio5[7]
 set_location_assignment PIN_AM13 -to fmc1_inout_pio5[8]
 set_location_assignment PIN_AP16 -to fmc1_inout_pio5[9]
-set_location_assignment PIN_T1 -to AD1939_MCLK
+set_location_assignment PIN_AL30 -to fmc_1C_rx_ch0
+set_location_assignment PIN_AL29 -to "fmc_1C_rx_ch0(n)"
+set_location_assignment PIN_AJ30 -to fmc_1C_rx_ch1
+set_location_assignment PIN_AJ29 -to "fmc_1C_rx_ch1(n)"
+set_location_assignment PIN_AG30 -to fmc_1C_rx_ch2
+set_location_assignment PIN_AG29 -to "fmc_1C_rx_ch2(n)"
+set_location_assignment PIN_AF32 -to fmc_1C_rx_ch3
+set_location_assignment PIN_AF31 -to "fmc_1C_rx_ch3(n)"
+set_location_assignment PIN_AP32 -to fmc_1C_tx_ch0
+set_location_assignment PIN_AP31 -to "fmc_1C_tx_ch0(n)"
+set_location_assignment PIN_AM32 -to fmc_1C_tx_ch1
+set_location_assignment PIN_AM31 -to "fmc_1C_tx_ch1(n)"
+set_location_assignment PIN_AK32 -to fmc_1C_tx_ch2
+set_location_assignment PIN_AK31 -to "fmc_1C_tx_ch2(n)"
+set_location_assignment PIN_AH32 -to fmc_1C_tx_ch3
+set_location_assignment PIN_AH31 -to "fmc_1C_tx_ch3(n)"
+set_location_assignment PIN_AC30 -to fmc_1D_rx_ch0
+set_location_assignment PIN_AC29 -to "fmc_1D_rx_ch0(n)"
+set_location_assignment PIN_AB32 -to fmc_1D_rx_ch1
+set_location_assignment PIN_AB31 -to "fmc_1D_rx_ch1(n)"
+set_location_assignment PIN_AA30 -to fmc_1D_rx_ch2
+set_location_assignment PIN_AA29 -to "fmc_1D_rx_ch2(n)"
+set_location_assignment PIN_Y32 -to fmc_1D_rx_ch3
+set_location_assignment PIN_Y31 -to "fmc_1D_rx_ch3(n)"
+set_location_assignment PIN_AJ34 -to fmc_1D_tx_ch0
+set_location_assignment PIN_AJ33 -to "fmc_1D_tx_ch0(n)"
+set_location_assignment PIN_AG34 -to fmc_1D_tx_ch1
+set_location_assignment PIN_AG33 -to "fmc_1D_tx_ch1(n)"
+set_location_assignment PIN_AE34 -to fmc_1D_tx_ch2
+set_location_assignment PIN_AE33 -to "fmc_1D_tx_ch2(n)"
+set_location_assignment PIN_AC34 -to fmc_1D_tx_ch3
+set_location_assignment PIN_AC33 -to "fmc_1D_tx_ch3(n)"
+set_location_assignment PIN_U30 -to fmc_1E_rx_ch0
+set_location_assignment PIN_U29 -to "fmc_1E_rx_ch0(n)"
+set_location_assignment PIN_T32 -to fmc_1E_rx_ch1
+set_location_assignment PIN_T31 -to "fmc_1E_rx_ch1(n)"
+set_location_assignment PIN_R30 -to fmc_1E_rx_ch2
+set_location_assignment PIN_R29 -to "fmc_1E_rx_ch2(n)"
+set_location_assignment PIN_P32 -to fmc_1E_rx_ch3
+set_location_assignment PIN_P31 -to "fmc_1E_rx_ch3(n)"
+set_location_assignment PIN_U34 -to fmc_1E_tx_ch0
+set_location_assignment PIN_U33 -to "fmc_1E_tx_ch0(n)"
+set_location_assignment PIN_R34 -to fmc_1E_tx_ch1
+set_location_assignment PIN_R33 -to "fmc_1E_tx_ch1(n)"
+set_location_assignment PIN_N34 -to fmc_1E_tx_ch2
+set_location_assignment PIN_N33 -to "fmc_1E_tx_ch2(n)"
+set_location_assignment PIN_L34 -to fmc_1E_tx_ch3
+set_location_assignment PIN_L33 -to "fmc_1E_tx_ch3(n)"
+set_location_assignment PIN_L30 -to fmc_1F_rx_ch0
+set_location_assignment PIN_L29 -to "fmc_1F_rx_ch0(n)"
+set_location_assignment PIN_K32 -to fmc_1F_rx_ch1
+set_location_assignment PIN_K31 -to "fmc_1F_rx_ch1(n)"
+set_location_assignment PIN_E34 -to fmc_1F_tx_ch0
+set_location_assignment PIN_E33 -to "fmc_1F_tx_ch0(n)"
+set_location_assignment PIN_C34 -to fmc_1F_tx_ch1
+set_location_assignment PIN_C33 -to "fmc_1F_tx_ch1(n)"
 
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1C_rx_ch0
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1C_rx_ch0(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1C_rx_ch1
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1C_rx_ch1(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1C_rx_ch2
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1C_rx_ch2(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1C_rx_ch3
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1C_rx_ch3(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1C_tx_ch0
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1C_tx_ch0(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1C_tx_ch1
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1C_tx_ch1(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1C_tx_ch2
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1C_tx_ch2(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1C_tx_ch3
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1C_tx_ch3(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1D_rx_ch0
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1D_rx_ch0(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1D_rx_ch1
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1D_rx_ch1(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1D_rx_ch2
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1D_rx_ch2(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1D_rx_ch3
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1D_rx_ch3(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1D_tx_ch0
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1D_tx_ch0(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1D_tx_ch1
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1D_tx_ch1(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1D_tx_ch2
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1D_tx_ch2(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1D_tx_ch3
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1D_tx_ch3(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1E_rx_ch0
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1E_rx_ch0(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1E_rx_ch1
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1E_rx_ch1(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1E_rx_ch2
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1E_rx_ch2(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1E_rx_ch3
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1E_rx_ch3(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1E_tx_ch0
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1E_tx_ch0(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1E_tx_ch1
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1E_tx_ch1(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1E_tx_ch2
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1E_tx_ch2(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1E_tx_ch3
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1E_tx_ch3(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1F_rx_ch0
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1F_rx_ch0(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1F_rx_ch1
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1F_rx_ch1(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1F_tx_ch0
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1F_tx_ch0(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to fmc_1F_tx_ch1
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "fmc_1F_tx_ch1(n)"
 set_instance_assignment -name IO_STANDARD 1.8V -to fmc1_inout_pio1[0]
 set_instance_assignment -name IO_STANDARD 1.8V -to fmc1_inout_pio1[1]
 set_instance_assignment -name IO_STANDARD 1.8V -to fmc1_inout_pio1[10]
@@ -873,63 +815,91 @@ set_instance_assignment -name IO_STANDARD 1.8V -to fmc1_inout_pio5[6]
 set_instance_assignment -name IO_STANDARD 1.8V -to fmc1_inout_pio5[7]
 set_instance_assignment -name IO_STANDARD 1.8V -to fmc1_inout_pio5[8]
 set_instance_assignment -name IO_STANDARD 1.8V -to fmc1_inout_pio5[9]
-set_instance_assignment -name IO_STANDARD 1.8V -to AD1939_MCLK
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch0
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1C_rx_ch0(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch1
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1C_rx_ch1(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch2
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1C_rx_ch2(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch3
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1C_rx_ch3(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_tx_ch0
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1C_tx_ch0(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_tx_ch1
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1C_tx_ch1(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_tx_ch2
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1C_tx_ch2(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_tx_ch3
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1C_tx_ch3(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch0
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1D_rx_ch0(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch1
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1D_rx_ch1(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch2
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1D_rx_ch2(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch3
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1D_rx_ch3(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch0
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1D_tx_ch0(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch1
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1D_tx_ch1(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch2
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1D_tx_ch2(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch3
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1D_tx_ch3(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch0
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1E_rx_ch0(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch1
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1E_rx_ch1(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch2
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1E_rx_ch2(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch3
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1E_rx_ch3(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch0
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1E_tx_ch0(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch1
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1E_tx_ch1(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch2
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1E_tx_ch2(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch3
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1E_tx_ch3(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_rx_ch0
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1F_rx_ch0(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_rx_ch1
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1F_rx_ch1(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_tx_ch0
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1F_tx_ch0(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_tx_ch1
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "fmc_1F_tx_ch1(n)"
 
 
 ########################################################################################################################
 # PCIE
 ########################################################################################################################
 set_location_assignment PIN_AE16 -to pcie_npor_pin_perst
+set_location_assignment PIN_AP9 -to pciex4_inout_pio10[0]
+set_location_assignment PIN_AN9 -to pciex4_inout_pio10[1]
 set_location_assignment PIN_AF28 -to pcie_refclk_clk
 set_location_assignment PIN_AF27 -to "pcie_refclk_clk(n)"
 set_location_assignment PIN_AE30 -to pcie_rx_i
 set_location_assignment PIN_AE29 -to "pcie_rx_i(n)"
 set_location_assignment PIN_AN34 -to pcie_tx_o
 set_location_assignment PIN_AN33 -to "pcie_tx_o(n)"
-set_location_assignment PIN_AP9 -to pciex4_inout_pio10[0]
-set_location_assignment PIN_AN9 -to pciex4_inout_pio10[1]
 
 set_instance_assignment -name IO_STANDARD 1.8V -to pcie_npor_pin_perst
-set_instance_assignment -name IO_STANDARD HCSL -to pcie_refclk_clk
-set_instance_assignment -name IO_STANDARD HCSL -to "pcie_refclk_clk(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to pcie_rx_i
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "pcie_rx_i(n)"
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to pcie_tx_o
-set_instance_assignment -name IO_STANDARD HIGHSPEEDDIFFERENTIALI/O -to "pcie_tx_o(n)"
 set_instance_assignment -name IO_STANDARD 1.8V -to pciex4_inout_pio10[0]
 set_instance_assignment -name IO_STANDARD 1.8V -to pciex4_inout_pio10[1]
+set_instance_assignment -name IO_STANDARD HCSL -to pcie_refclk_clk
+set_instance_assignment -name IO_STANDARD HCSL -to "pcie_refclk_clk(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to pcie_rx_i
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "pcie_rx_i(n)"
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to pcie_tx_o
+set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to "pcie_tx_o(n)"
 
 
 ########################################################################################################################
 # MEMORY
 ########################################################################################################################
-set_location_assignment PIN_AM15 -to fpga_clk_i
-set_location_assignment PIN_G1 -to FPGA_memory_mem1_a[0]
-set_location_assignment PIN_F1 -to FPGA_memory_mem1_a[1]
-set_location_assignment PIN_G5 -to FPGA_memory_mem1_a[10]
-set_location_assignment PIN_G6 -to FPGA_memory_mem1_a[11]
-set_location_assignment PIN_E3 -to FPGA_memory_mem1_a[12]
-set_location_assignment PIN_E2 -to FPGA_memory_mem1_a[13]
-set_location_assignment PIN_D2 -to FPGA_memory_mem1_a[14]
-set_location_assignment PIN_E7 -to FPGA_memory_mem1_a[15]
-set_location_assignment PIN_E6 -to FPGA_memory_mem1_a[16]
-set_location_assignment PIN_H5 -to FPGA_memory_mem1_a[2]
-set_location_assignment PIN_H4 -to FPGA_memory_mem1_a[3]
-set_location_assignment PIN_G2 -to FPGA_memory_mem1_a[4]
-set_location_assignment PIN_G3 -to FPGA_memory_mem1_a[5]
-set_location_assignment PIN_E1 -to FPGA_memory_mem1_a[6]
-set_location_assignment PIN_D1 -to FPGA_memory_mem1_a[7]
-set_location_assignment PIN_H3 -to FPGA_memory_mem1_a[8]
-set_location_assignment PIN_H2 -to FPGA_memory_mem1_a[9]
-set_location_assignment PIN_L11 -to FPGA_memory_mem1_act_n
-set_location_assignment PIN_N2 -to FPGA_memory_mem1_alert_n
-set_location_assignment PIN_E4 -to FPGA_memory_mem1_ba[0]
-set_location_assignment PIN_C3 -to FPGA_memory_mem1_ba[1]
-set_location_assignment PIN_B3 -to FPGA_memory_mem1_bg
-set_location_assignment PIN_L9 -to FPGA_memory_mem1_ck
-set_location_assignment PIN_L10 -to FPGA_memory_mem1_ck_n
-set_location_assignment PIN_J6 -to FPGA_memory_mem1_cke
-set_location_assignment PIN_M11 -to FPGA_memory_mem1_cs_n
 set_location_assignment PIN_N3 -to FPGA_memory_mem1_dbi_n[0]
 set_location_assignment PIN_L6 -to FPGA_memory_mem1_dbi_n[1]
 set_location_assignment PIN_P6 -to FPGA_memory_mem1_dbi_n[2]
@@ -1002,6 +972,10 @@ set_location_assignment PIN_C7 -to FPGA_memory_mem1_dq[63]
 set_location_assignment PIN_M1 -to FPGA_memory_mem1_dq[7]
 set_location_assignment PIN_N5 -to FPGA_memory_mem1_dq[8]
 set_location_assignment PIN_K4 -to FPGA_memory_mem1_dq[9]
+set_location_assignment PIN_N2 -to FPGA_memory_mem1_alert_n
+set_location_assignment PIN_M10 -to FPGA_memory_mem1_reset_n
+set_location_assignment PIN_F3 -to FPGA_memory_oct1_rzqin
+set_location_assignment PIN_AM15 -to fpga_clk_i
 set_location_assignment PIN_J2 -to FPGA_memory_mem1_dqs_n[0]
 set_location_assignment PIN_J5 -to FPGA_memory_mem1_dqs_n[1]
 set_location_assignment PIN_M8 -to FPGA_memory_mem1_dqs_n[2]
@@ -1018,12 +992,128 @@ set_location_assignment PIN_B11 -to FPGA_memory_mem1_dqs[4]
 set_location_assignment PIN_K12 -to FPGA_memory_mem1_dqs[5]
 set_location_assignment PIN_A3 -to FPGA_memory_mem1_dqs[6]
 set_location_assignment PIN_E8 -to FPGA_memory_mem1_dqs[7]
+set_location_assignment PIN_L9 -to FPGA_memory_mem1_ck
+set_location_assignment PIN_L10 -to FPGA_memory_mem1_ck_n
+set_location_assignment PIN_G1 -to FPGA_memory_mem1_a[0]
+set_location_assignment PIN_F1 -to FPGA_memory_mem1_a[1]
+set_location_assignment PIN_G5 -to FPGA_memory_mem1_a[10]
+set_location_assignment PIN_G6 -to FPGA_memory_mem1_a[11]
+set_location_assignment PIN_E3 -to FPGA_memory_mem1_a[12]
+set_location_assignment PIN_E2 -to FPGA_memory_mem1_a[13]
+set_location_assignment PIN_D2 -to FPGA_memory_mem1_a[14]
+set_location_assignment PIN_E7 -to FPGA_memory_mem1_a[15]
+set_location_assignment PIN_E6 -to FPGA_memory_mem1_a[16]
+set_location_assignment PIN_H5 -to FPGA_memory_mem1_a[2]
+set_location_assignment PIN_H4 -to FPGA_memory_mem1_a[3]
+set_location_assignment PIN_G2 -to FPGA_memory_mem1_a[4]
+set_location_assignment PIN_G3 -to FPGA_memory_mem1_a[5]
+set_location_assignment PIN_E1 -to FPGA_memory_mem1_a[6]
+set_location_assignment PIN_D1 -to FPGA_memory_mem1_a[7]
+set_location_assignment PIN_H3 -to FPGA_memory_mem1_a[8]
+set_location_assignment PIN_H2 -to FPGA_memory_mem1_a[9]
+set_location_assignment PIN_L11 -to FPGA_memory_mem1_act_n
+set_location_assignment PIN_E4 -to FPGA_memory_mem1_ba[0]
+set_location_assignment PIN_C3 -to FPGA_memory_mem1_ba[1]
+set_location_assignment PIN_B3 -to FPGA_memory_mem1_bg
+set_location_assignment PIN_J6 -to FPGA_memory_mem1_cke
+set_location_assignment PIN_M11 -to FPGA_memory_mem1_cs_n
 set_location_assignment PIN_K8 -to FPGA_memory_mem1_odt
 set_location_assignment PIN_J9 -to FPGA_memory_mem1_par
-set_location_assignment PIN_M10 -to FPGA_memory_mem1_reset_n
-set_location_assignment PIN_F3 -to FPGA_memory_oct1_rzqin
 
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dbi_n[0]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dbi_n[1]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dbi_n[2]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dbi_n[3]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dbi_n[4]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dbi_n[5]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dbi_n[6]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dbi_n[7]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[0]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[1]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[10]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[11]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[12]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[13]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[14]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[15]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[16]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[17]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[18]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[19]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[2]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[20]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[21]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[22]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[23]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[24]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[25]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[26]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[27]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[28]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[29]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[3]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[30]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[31]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[32]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[33]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[34]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[35]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[36]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[37]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[38]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[39]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[4]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[40]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[41]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[42]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[43]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[44]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[45]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[46]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[47]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[48]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[49]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[5]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[50]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[51]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[52]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[53]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[54]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[55]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[56]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[57]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[58]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[59]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[6]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[60]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[61]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[62]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[63]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[7]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[8]
+set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dq[9]
+set_instance_assignment -name IO_STANDARD 1.2V -to FPGA_memory_mem1_alert_n
+set_instance_assignment -name IO_STANDARD 1.2V -to FPGA_memory_mem1_reset_n
+set_instance_assignment -name IO_STANDARD 1.2V -to FPGA_memory_oct1_rzqin
 set_instance_assignment -name IO_STANDARD 1.8V -to fpga_clk_i
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs_n[0]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs_n[1]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs_n[2]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs_n[3]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs_n[4]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs_n[5]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs_n[6]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs_n[7]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs[0]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs[1]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs[2]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs[3]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs[4]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs[5]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs[6]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V POD" -to FPGA_memory_mem1_dqs[7]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to FPGA_memory_mem1_ck
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to FPGA_memory_mem1_ck_n
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_a[0]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_a[1]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_a[10]
@@ -1042,112 +1132,24 @@ set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_a[7]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_a[8]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_a[9]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_act_n
-set_instance_assignment -name IO_STANDARD 1.2V -to FPGA_memory_mem1_alert_n
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_ba[0]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_ba[1]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_bg
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VSSTL" -to FPGA_memory_mem1_ck
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VSSTL" -to FPGA_memory_mem1_ck_n
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_cke
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_cs_n
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dbi_n[0]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dbi_n[1]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dbi_n[2]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dbi_n[3]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dbi_n[4]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dbi_n[5]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dbi_n[6]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dbi_n[7]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[0]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[1]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[10]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[11]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[12]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[13]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[14]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[15]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[16]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[17]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[18]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[19]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[2]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[20]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[21]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[22]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[23]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[24]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[25]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[26]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[27]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[28]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[29]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[3]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[30]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[31]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[32]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[33]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[34]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[35]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[36]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[37]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[38]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[39]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[4]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[40]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[41]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[42]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[43]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[44]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[45]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[46]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[47]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[48]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[49]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[5]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[50]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[51]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[52]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[53]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[54]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[55]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[56]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[57]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[58]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[59]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[6]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[60]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[61]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[62]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[63]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[7]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[8]
-set_instance_assignment -name IO_STANDARD "1.2-VPOD" -to FPGA_memory_mem1_dq[9]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs_n[0]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs_n[1]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs_n[2]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs_n[3]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs_n[4]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs_n[5]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs_n[6]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs_n[7]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs[0]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs[1]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs[2]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs[3]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs[4]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs[5]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs[6]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL1.2-VPOD" -to FPGA_memory_mem1_dqs[7]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_odt
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_par
-set_instance_assignment -name IO_STANDARD 1.2V -to FPGA_memory_mem1_reset_n
-set_instance_assignment -name IO_STANDARD 1.2V -to FPGA_memory_oct1_rzqin
+
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name QIP_FILE ../../component_library/serdes/Serial2Parallel_32bits.qip
+set_global_assignment -name QIP_FILE ../../component_library/serdes/Parallel2Serial_32bits.qip
+set_global_assignment -name VHDL_FILE ../../component_library/AD1939/Source_Files/AD1939_hps_audio_research_v1.vhd
+set_global_assignment -name QIP_FILE som_system/som_system.qip
+set_global_assignment -name SOURCE_FILE som_system/som_system.cmp
 set_global_assignment -name QSYS_FILE pll.qsys
-set_global_assignment -name SOURCE_FILE A10SoM_System/A10SoM_System.cmp
 set_global_assignment -name VHDL_FILE A10SoM_System.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
