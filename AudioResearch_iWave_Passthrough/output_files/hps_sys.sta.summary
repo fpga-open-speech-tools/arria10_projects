@@ -1,0 +1,2312 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : -4.825
+TNS   : -153.566
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : -4.819
+TNS   : -151.965
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : -4.769
+TNS   : -151.786
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : -4.752
+TNS   : -150.120
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : -4.748
+TNS   : -150.349
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : -4.617
+TNS   : -144.645
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : -4.616
+TNS   : -146.393
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : -4.592
+TNS   : -146.289
+
+Type  : Setup 'pll|iopll_0|outclk0'
+Slack : -1.235
+TNS   : -2.287
+
+Type  : Setup 'u0|iopll_0|pio_iopll_0|outclk0'
+Slack : -0.518
+TNS   : -4.851
+
+Type  : Setup 'u0|emif_0|emif_0_core_usr_clk'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Setup 'u0|emif_0|emif_0_phy_clk_l_1'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Setup 'u0|emif_0|emif_0_phy_clk_l_2'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.316
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.538
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.575
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_4|xcvr_native_a10_0|rx_pma_clk'
+Slack : 0.634
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 0.639
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 0.641
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.660
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.679
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 0.701
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 0.747
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.756
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.760
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.765
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 0.772
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 0.826
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.849
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.857
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.880
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_4|xcvr_native_a10_0|tx_coreclkin'
+Slack : 0.887
+TNS   : 0.000
+
+Type  : Setup 'u0|iopll_0|pio_iopll_0|outclk1'
+Slack : 0.898
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 0.934
+TNS   : 0.000
+
+Type  : Setup 'u0|emif_0|emif_0_phy_clk_l_0'
+Slack : 0.937
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 0.947
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.955
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 0.972
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.973
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 0.983
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.985
+TNS   : 0.000
+
+Type  : Setup 'pio_system|emif_0_ref_clock'
+Slack : 1.100
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 1.169
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 1.203
+TNS   : 0.000
+
+Type  : Setup 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|tx_pma_clk'
+Slack : 1.211
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 1.252
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_4|xcvr_native_a10_0|tx_pma_clk'
+Slack : 1.301
+TNS   : 0.000
+
+Type  : Setup 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|pld_clk'
+Slack : 1.309
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 1.386
+TNS   : 0.000
+
+Type  : Setup 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|wys~CORE_CLK_OUT'
+Slack : 1.488
+TNS   : 0.000
+
+Type  : Setup 'pll|iopll_0|outclk1'
+Slack : 2.180
+TNS   : 0.000
+
+Type  : Setup 'u0|emif_0|emif_0_core_extra_clk_0'
+Slack : 2.188
+TNS   : 0.000
+
+Type  : Setup 'u0|emif_0|emif_0_core_cal_master_clk'
+Slack : 2.710
+TNS   : 0.000
+
+Type  : Setup 'u0|emif_0|emif_0_core_cal_slave_clk'
+Slack : 2.951
+TNS   : 0.000
+
+Type  : Setup 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|avmmclk'
+Slack : 3.670
+TNS   : 0.000
+
+Type  : Setup 'pcie_refclk_clk'
+Slack : 3.987
+TNS   : 0.000
+
+Type  : Setup '~ALTERA_CLKUSR~'
+Slack : 4.191
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|avmmclk'
+Slack : 5.173
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|avmmclk'
+Slack : 5.312
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|avmmclk'
+Slack : 5.747
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 6.003
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 6.024
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 6.041
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|avmmclk'
+Slack : 6.309
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 6.368
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_4|xcvr_native_a10_0|avmmclk'
+Slack : 6.537
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 6.679
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 6.687
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 6.754
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|avmmclk'
+Slack : 6.774
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|avmmclk'
+Slack : 6.998
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 7.445
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 9.278
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 9.346
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 9.505
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 9.530
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 9.640
+TNS   : 0.000
+
+Type  : Setup 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 10.026
+TNS   : 0.000
+
+Type  : Setup 'altera_reserved_tck'
+Slack : 15.612
+TNS   : 0.000
+
+Type  : Setup 'pll|iopll_0|outclk2'
+Slack : 37.235
+TNS   : 0.000
+
+Type  : Hold 'pll|iopll_0|outclk0'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Hold 'u0|emif_0|emif_0_core_extra_clk_0'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Hold 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|wys~CORE_CLK_OUT'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Hold 'altera_reserved_tck'
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Hold 'pcie_refclk_clk'
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Hold 'u0|emif_0|emif_0_core_cal_master_clk'
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Hold 'u0|iopll_0|pio_iopll_0|outclk0'
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Hold 'u0|iopll_0|pio_iopll_0|outclk1'
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Hold 'pll|iopll_0|outclk2'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Hold '~ALTERA_CLKUSR~'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 0.047
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 0.050
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.051
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Hold 'pio_system|emif_0_ref_clock'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Hold 'u0|emif_0|emif_0_core_cal_slave_clk'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.054
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_4|xcvr_native_a10_0|rx_pma_clk'
+Slack : 0.055
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 0.059
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.059
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 0.060
+TNS   : 0.000
+
+Type  : Hold 'u0|emif_0|emif_0_core_usr_clk'
+Slack : 0.061
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.061
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 0.063
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.063
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 0.063
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 0.066
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_4|xcvr_native_a10_0|tx_pma_clk'
+Slack : 0.066
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 0.067
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 0.073
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 0.082
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 0.084
+TNS   : 0.000
+
+Type  : Hold 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|tx_pma_clk'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Hold 'pll|iopll_0|outclk1'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 0.237
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.260
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.277
+TNS   : 0.000
+
+Type  : Hold 'u0|emif_0|emif_0_phy_clk_l_0'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Hold 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|pld_clk'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Hold 'u0|emif_0|emif_0_phy_clk_l_1'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Hold 'u0|emif_0|emif_0_phy_clk_l_2'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.432
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 0.470
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.476
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 0.512
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_4|xcvr_native_a10_0|tx_coreclkin'
+Slack : 0.607
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|avmmclk'
+Slack : 0.608
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|avmmclk'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 0.689
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 0.697
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 0.697
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_4|xcvr_native_a10_0|avmmclk'
+Slack : 0.697
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|avmmclk'
+Slack : 0.723
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|avmmclk'
+Slack : 0.752
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 0.755
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 0.768
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 0.796
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|avmmclk'
+Slack : 0.816
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 0.835
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 0.836
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 0.845
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 0.849
+TNS   : 0.000
+
+Type  : Hold 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|avmmclk'
+Slack : 1.029
+TNS   : 0.000
+
+Type  : Hold 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|avmmclk'
+Slack : 1.199
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : -5.353
+TNS   : -37.378
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : -4.880
+TNS   : -33.943
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : -4.545
+TNS   : -30.761
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : -4.499
+TNS   : -30.959
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : -4.493
+TNS   : -31.369
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : -4.464
+TNS   : -30.897
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : -4.425
+TNS   : -30.661
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : -4.423
+TNS   : -30.112
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : -4.386
+TNS   : -30.060
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : -4.324
+TNS   : -30.066
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : -3.588
+TNS   : -24.586
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : -3.393
+TNS   : -23.555
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 0.860
+TNS   : 0.000
+
+Type  : Recovery 'u0|iopll_0|pio_iopll_0|outclk0'
+Slack : 0.896
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 1.041
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 1.060
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 1.067
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 1.094
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 1.153
+TNS   : 0.000
+
+Type  : Recovery 'u0|emif_0|emif_0_core_usr_clk'
+Slack : 1.171
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 1.215
+TNS   : 0.000
+
+Type  : Recovery 'u0|iopll_0|pio_iopll_0|outclk1'
+Slack : 1.250
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 1.335
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 1.384
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 1.563
+TNS   : 0.000
+
+Type  : Recovery 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|wys~CORE_CLK_OUT'
+Slack : 1.653
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_4|xcvr_native_a10_0|rx_pma_clk'
+Slack : 1.675
+TNS   : 0.000
+
+Type  : Recovery 'pio_system|emif_0_ref_clock'
+Slack : 1.958
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_4|xcvr_native_a10_0|tx_pma_clk'
+Slack : 2.148
+TNS   : 0.000
+
+Type  : Recovery 'u0|emif_0|emif_0_phy_clk_1'
+Slack : 2.645
+TNS   : 0.000
+
+Type  : Recovery 'u0|emif_0|emif_0_phy_clk_2'
+Slack : 2.656
+TNS   : 0.000
+
+Type  : Recovery 'pll|iopll_0|outclk0'
+Slack : 3.133
+TNS   : 0.000
+
+Type  : Recovery 'u0|emif_0|emif_0_core_extra_clk_0'
+Slack : 3.422
+TNS   : 0.000
+
+Type  : Recovery 'u0|emif_0|emif_0_core_cal_master_clk'
+Slack : 4.117
+TNS   : 0.000
+
+Type  : Recovery 'u0|emif_0|emif_0_core_cal_slave_clk'
+Slack : 4.156
+TNS   : 0.000
+
+Type  : Recovery 'u0|emif_0|emif_0_phy_clk_0'
+Slack : 4.346
+TNS   : 0.000
+
+Type  : Recovery 'pcie_refclk_clk'
+Slack : 4.536
+TNS   : 0.000
+
+Type  : Recovery '~ALTERA_CLKUSR~'
+Slack : 6.872
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 10.283
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 10.787
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 10.807
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 10.938
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 11.011
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 11.137
+TNS   : 0.000
+
+Type  : Recovery 'u0|emif_0|emif_0_phy_clk_l_0'
+Slack : 11.315
+TNS   : 0.000
+
+Type  : Recovery 'u0|emif_0|emif_0_phy_clk_l_2'
+Slack : 11.617
+TNS   : 0.000
+
+Type  : Recovery 'u0|emif_0|emif_0_phy_clk_l_1'
+Slack : 11.673
+TNS   : 0.000
+
+Type  : Recovery 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|rx_fref'
+Slack : 17.293
+TNS   : 0.000
+
+Type  : Recovery 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|rx_pma_clk'
+Slack : 17.638
+TNS   : 0.000
+
+Type  : Recovery 'altera_reserved_tck'
+Slack : 38.088
+TNS   : 0.000
+
+Type  : Recovery 'pll|iopll_0|outclk2'
+Slack : 38.355
+TNS   : 0.000
+
+Type  : Recovery 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|pll_pcie_clk'
+Slack : 45.050
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 47.686
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 47.945
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 48.019
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 48.045
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 48.102
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 48.113
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 48.201
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 48.295
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 48.338
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 48.343
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_4|xcvr_native_a10_0|tx_coreclkin'
+Slack : 48.356
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 48.366
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 50.633
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 50.758
+TNS   : 0.000
+
+Type  : Recovery 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 51.553
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.284
+TNS   : 0.000
+
+Type  : Removal 'pll|iopll_0|outclk0'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Removal 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|wys~CORE_CLK_OUT'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 0.304
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_4|xcvr_native_a10_0|rx_pma_clk'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.314
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_4|xcvr_native_a10_0|tx_pma_clk'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 0.325
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Removal 'u0|emif_0|emif_0_core_usr_clk'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.346
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Removal 'u0|emif_0|emif_0_core_cal_slave_clk'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Removal '~ALTERA_CLKUSR~'
+Slack : 0.351
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.371
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 0.372
+TNS   : 0.000
+
+Type  : Removal 'pcie_refclk_clk'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Removal 'u0|emif_0|emif_0_core_cal_master_clk'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 0.423
+TNS   : 0.000
+
+Type  : Removal 'u0|iopll_0|pio_iopll_0|outclk0'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Removal 'u0|emif_0|emif_0_core_extra_clk_0'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Removal 'u0|iopll_0|pio_iopll_0|outclk1'
+Slack : 0.510
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.574
+TNS   : 0.000
+
+Type  : Removal 'pio_system|emif_0_ref_clock'
+Slack : 0.646
+TNS   : 0.000
+
+Type  : Removal 'altera_reserved_tck'
+Slack : 0.660
+TNS   : 0.000
+
+Type  : Removal 'pll|iopll_0|outclk2'
+Slack : 0.751
+TNS   : 0.000
+
+Type  : Removal 'u0|emif_0|emif_0_phy_clk_0'
+Slack : 3.101
+TNS   : 0.000
+
+Type  : Removal 'u0|emif_0|emif_0_phy_clk_l_0'
+Slack : 3.108
+TNS   : 0.000
+
+Type  : Removal 'u0|emif_0|emif_0_phy_clk_l_1'
+Slack : 3.512
+TNS   : 0.000
+
+Type  : Removal 'u0|emif_0|emif_0_phy_clk_l_2'
+Slack : 4.297
+TNS   : 0.000
+
+Type  : Removal 'u0|emif_0|emif_0_phy_clk_1'
+Slack : 4.408
+TNS   : 0.000
+
+Type  : Removal 'u0|emif_0|emif_0_phy_clk_2'
+Slack : 4.411
+TNS   : 0.000
+
+Type  : Removal 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|rx_pma_clk'
+Slack : 9.336
+TNS   : 0.000
+
+Type  : Removal 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|rx_fref'
+Slack : 12.070
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 45.081
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 46.043
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 46.068
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_4|xcvr_native_a10_0|tx_coreclkin'
+Slack : 48.869
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 48.915
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 48.955
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 48.990
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 49.046
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 49.056
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 49.106
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 49.137
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 49.219
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 49.243
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 49.332
+TNS   : 0.000
+
+Type  : Removal 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 49.450
+TNS   : 0.000
+
+Type  : Removal 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|pll_pcie_clk'
+Slack : 52.378
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'FPGA_memory_mem1_dqs[1]_IN'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'FPGA_memory_mem1_dqs[3]_IN'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'FPGA_memory_mem1_dqs[5]_IN'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'FPGA_memory_mem1_dqs[7]_IN'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'FPGA_memory_mem1_dqs[0]_IN'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'FPGA_memory_mem1_dqs[2]_IN'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'FPGA_memory_mem1_dqs[4]_IN'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'FPGA_memory_mem1_dqs[6]_IN'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'hps_memory_mem_dqs[0]_IN'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'hps_memory_mem_dqs[3]_IN'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'hps_memory_mem_dqs[4]_IN'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'hps_memory_mem_dqs[1]_IN'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'hps_memory_mem_dqs[2]_IN'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|gen_twentynm_hssi_pma_tx_cgb.inst_twentynm_hssi_pma_tx_cgb~O_HIFREQCLKN'
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_wf_clk_10'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_wf_clk_3'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_wf_clk_4'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_wf_clk_5'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_wf_clk_6'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_wf_clk_7'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_wf_clk_8'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_wf_clk_9'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_wf_clk_3'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_wf_clk_4'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_wf_clk_5'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_wf_clk_6'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_wf_clk_7'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_vco_clk'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_wf_clk_0'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_wf_clk_1'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_wf_clk_2'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_wf_clk_0'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_wf_clk_1'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_wf_clk_2'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_vco_clk_1'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_vco_clk_2'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_vco_clk_0'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_vco_clk_1'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|tx_pma_clk'
+Slack : 0.501
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.660
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|rx_pma_clk'
+Slack : 0.666
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|pll_pcie_clk'
+Slack : 0.709
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_phy_clk_0'
+Slack : 0.718
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_phy_clk_1'
+Slack : 0.718
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_phy_clk_2'
+Slack : 0.718
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_phy_clk_0'
+Slack : 0.719
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_phy_clk_1'
+Slack : 0.719
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_phy_clk_l_0'
+Slack : 0.720
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_a10_hps_0|emif_a10_hps_0_phy_clk_l_1'
+Slack : 0.720
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|hip_cmn_clk[0]'
+Slack : 0.726
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 0.981
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.139
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 1.139
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 1.139
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 1.139
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.139
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 1.139
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 1.139
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 1.139
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.139
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 1.139
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 1.300
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_pma_clk'
+Slack : 1.300
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_pma_clk'
+Slack : 1.301
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_pma_clk'
+Slack : 1.301
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_pma_clk'
+Slack : 1.301
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_4|xcvr_native_a10_0|tx_pma_clk'
+Slack : 1.301
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_core_usr_clk'
+Slack : 1.340
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|tx_coreclkin'
+Slack : 1.459
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|tx_coreclkin'
+Slack : 1.459
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|tx_coreclkin'
+Slack : 1.459
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|tx_coreclkin'
+Slack : 1.459
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_4|xcvr_native_a10_0|tx_coreclkin'
+Slack : 1.459
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 1.466
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 1.466
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 1.466
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 1.466
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 1.466
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 1.466
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 1.466
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_4|xcvr_native_a10_0|rx_pma_clk'
+Slack : 1.466
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|pma_hclk_by2'
+Slack : 1.482
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_coreclkin'
+Slack : 1.499
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_coreclkin'
+Slack : 1.499
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_coreclkin'
+Slack : 1.499
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_coreclkin'
+Slack : 1.499
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_coreclkin'
+Slack : 1.499
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_coreclkin'
+Slack : 1.499
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_coreclkin'
+Slack : 1.499
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_coreclkin'
+Slack : 1.499
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_4|xcvr_native_a10_0|rx_coreclkin'
+Slack : 1.499
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pio_system|emif_0_ref_clock'
+Slack : 1.522
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_phy_clk_l_0'
+Slack : 1.554
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_phy_clk_l_1'
+Slack : 1.554
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_phy_clk_l_2'
+Slack : 1.554
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pio_system|emif_a10_hps_0_ref_clock'
+Slack : 1.593
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|iopll_0|pio_iopll_0|outclk0'
+Slack : 1.600
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pll|iopll_0|outclk1'
+Slack : 1.790
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_core_cal_master_clk'
+Slack : 2.574
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_core_cal_slave_clk'
+Slack : 2.576
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|iopll_0|pio_iopll_0|outclk1'
+Slack : 2.715
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|wys~CORE_CLK_OUT'
+Slack : 2.827
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|tx_clkout'
+Slack : 3.059
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|pld_clk'
+Slack : 3.067
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|rx_clk'
+Slack : 3.088
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|tx_clk'
+Slack : 3.104
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pcie_refclk_clk'
+Slack : 3.647
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'refclk_1C_p'
+Slack : 3.744
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'refclk_1D_p'
+Slack : 3.744
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'refclk_1E_p'
+Slack : 3.744
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'refclk_1F_p'
+Slack : 3.747
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'sfp_refclk_1F_p'
+Slack : 3.753
+TNS   : 0.000
+
+Type  : Minimum Pulse Width '~ALTERA_CLKUSR~'
+Slack : 3.772
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|emif_0|emif_0_core_extra_clk_0'
+Slack : 3.805
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|rx_fref'
+Slack : 3.881
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|avmmclk'
+Slack : 3.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pll|iopll_0|outclk0'
+Slack : 4.586
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_0|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_1|xcvr_native_a10_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_4|xcvr_native_a10_0|avmmclk'
+Slack : 4.904
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 6.266
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 6.266
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk'
+Slack : 6.266
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk'
+Slack : 6.266
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk'
+Slack : 6.266
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk'
+Slack : 6.266
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_coreclkin'
+Slack : 6.299
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_coreclkin'
+Slack : 6.299
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_coreclkin'
+Slack : 6.299
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_coreclkin'
+Slack : 6.299
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_coreclkin'
+Slack : 6.299
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_coreclkin'
+Slack : 6.299
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'fpga_clk_i'
+Slack : 9.967
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'altera_reserved_tck'
+Slack : 20.693
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pll|iopll_0|outclk2'
+Slack : 24.902
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'altera_ts_clk'
+Slack : 500.000
+TNS   : 0.000
+
+Type  : Max Skew 'set_max_skew'
+Slack : 2.124
+
+Type  : Max Skew 'set_max_skew'
+Slack : 2.220
+
+Type  : Max Skew 'set_max_skew'
+Slack : 4.426
+
+Type  : Max Skew 'set_max_skew'
+Slack : 4.538
+
+Type  : Max Skew 'set_max_skew'
+Slack : 4.669
+
+Type  : Max Skew 'set_max_skew'
+Slack : 4.731
+
+Type  : Max Skew 'set_max_skew'
+Slack : 5.866
+
+Type  : Max Skew 'set_max_skew'
+Slack : 5.911
+
+Type  : Max Skew 'set_max_skew'
+Slack : 5.953
+
+Type  : Max Skew 'set_max_skew'
+Slack : 5.956
+
+Type  : Max Skew 'set_max_skew'
+Slack : 6.130
+
+Type  : Max Skew 'set_max_skew'
+Slack : 6.133
+
+Type  : Net Delay 'set_net_delay'
+Slack : 0.938
+
+Type  : Net Delay 'set_net_delay'
+Slack : 0.944
+
+Type  : Net Delay 'set_net_delay'
+Slack : 1.125
+
+Type  : Net Delay 'set_net_delay'
+Slack : 1.303
+
+Type  : Net Delay 'set_net_delay'
+Slack : 1.668
+
+Type  : Net Delay 'set_net_delay'
+Slack : 1.812
+
+Type  : Net Delay 'set_net_delay'
+Slack : 2.262
+
+Type  : Net Delay 'set_net_delay'
+Slack : 2.295
+
+Type  : Net Delay 'set_net_delay'
+Slack : 2.410
+
+Type  : Net Delay 'set_net_delay'
+Slack : 2.534
+
+Type  : Net Delay 'set_net_delay'
+Slack : 2.618
+
+Type  : Net Delay 'set_net_delay'
+Slack : 2.624
+
+Type  : Net Delay 'set_net_delay'
+Slack : 2.925
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.108
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.221
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.226
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.272
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.306
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.308
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.336
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.384
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.390
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.422
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.428
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.441
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.445
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.456
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.537
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.537
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.556
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.577
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.588
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.597
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.600
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.615
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.623
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.624
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.626
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.671
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.719
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.752
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.756
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.773
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.788
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.795
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.814
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.822
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.843
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.863
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.867
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.886
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.898
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.921
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.938
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.940
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.944
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.945
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.946
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.956
+
+Type  : Net Delay 'set_net_delay'
+Slack : 3.966
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.026
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.048
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.049
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.057
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.072
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.095
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.099
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.127
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.160
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.186
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.186
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.206
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.216
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.242
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.255
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.258
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.262
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.266
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.307
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.322
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.338
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.350
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.358
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.366
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.428
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.436
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.439
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.440
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.450
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.461
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.487
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.526
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.564
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.567
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.663
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.680
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.746
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.779
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.828
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.874
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.929
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.986
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.991
+
+Type  : Net Delay 'set_net_delay'
+Slack : 4.994
+
+Type  : Net Delay 'set_net_delay'
+Slack : 5.236
+
+Type  : Net Delay 'set_net_delay'
+Slack : 5.256
+
+Type  : Net Delay 'set_net_delay'
+Slack : 5.290
+
+Type  : Net Delay 'set_net_delay'
+Slack : 5.381
+
+Type  : Net Delay 'set_net_delay'
+Slack : 5.496
+
+Type  : Net Delay 'set_net_delay'
+Slack : 5.605
+
+Type  : Net Delay 'set_net_delay'
+Slack : 5.620
+
+Type  : Net Delay 'set_net_delay'
+Slack : 5.633
+
+Type  : Net Delay 'set_net_delay'
+Slack : 5.701
+
+Type  : Net Delay 'set_net_delay'
+Slack : 5.820
+
+Type  : Net Delay 'set_net_delay'
+Slack : 5.847
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.109
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.205
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.354
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.429
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.540
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.584
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.609
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.612
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.616
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.699
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.805
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.811
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.851
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.952
+
+Type  : Net Delay 'set_net_delay'
+Slack : 6.984
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.020
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.040
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.048
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.056
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.066
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.129
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.162
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.336
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.367
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.477
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.528
+
+Type  : Net Delay 'set_net_delay'
+Slack : 7.536
+
+Type  : Net Delay 'set_net_delay'
+Slack : 25.505
+
+Type  : Net Delay 'set_net_delay'
+Slack : 26.633
+
+Type  : Net Delay 'set_net_delay'
+Slack : 26.766
+
+Type  : Net Delay 'set_net_delay'
+Slack : 27.827
+
+Type  : Net Delay 'set_net_delay'
+Slack : 28.718
+
+Type  : Net Delay 'set_net_delay'
+Slack : 29.576
+
+Type  : Net Delay 'set_net_delay'
+Slack : 30.015
+
+Type  : Net Delay 'set_net_delay'
+Slack : 30.175
+
+Type  : Net Delay 'set_net_delay'
+Slack : 30.425
+
+Type  : Net Delay 'set_net_delay'
+Slack : 30.748
+
+Type  : Net Delay 'set_net_delay'
+Slack : 32.078
+
+Type  : Net Delay 'set_net_delay'
+Slack : 32.500
+
+Type  : Net Delay 'set_net_delay'
+Slack : 32.591
+
+Type  : Net Delay 'set_net_delay'
+Slack : 32.756
+
+------------------------------------------------------------
+Info: see the "DDR report" for DDR timing results
+------------------------------------------------------------
+------------------------------------------------------------
