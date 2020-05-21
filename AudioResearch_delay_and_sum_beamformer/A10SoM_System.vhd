@@ -388,6 +388,12 @@ architecture a10som_system_arch of a10som_system is
   signal i2c_serial_sda_oe				: std_logic;
   signal serial_scl_oe						: std_logic;
   
+  -- Reset Signals
+  signal count : integer := 0;
+  signal reset_en : std_logic;
+  signal reset_n : std_logic;
+  signal RESET : std_logic;
+  
 begin
 
   ------------------------------------------------------------------------------------------
@@ -412,65 +418,87 @@ begin
       rst      => sb_rst         
     );
 
-  ------------------------------------------------------------------------------------------
-  -- Delayed reset.
-  ------------------------------------------------------------------------------------------
-  i_delayed_rst : entity WORK.delayed_rst 
-    generic map (
-      NB_BITS   => C_RST_DELAY_NB_BITS          --     integer   := 2   -- number of bits for the internal counter. Ex. 2 will generate a 2**NB_BITS+3 cycles reset
-    ) 
-    port map (
-      in_rst    => lnk_m2f_rst,                  -- in  std_logic := '0' -- asynchronous active high reset (choose only one between active low or high reset).
-      out_clk   => clk_25mhz_fpga,               -- in  std_logic        -- clock used to synchronize reset and for counter
-      out_rst   => sb_rst_dly                   -- out std_logic        -- synchronous de-asserted active high reset
-    );
+  -- ------------------------------------------------------------------------------------------
+  -- -- Delayed reset.
+  -- ------------------------------------------------------------------------------------------
+  -- i_delayed_rst : entity WORK.delayed_rst 
+    -- generic map (
+      -- NB_BITS   => C_RST_DELAY_NB_BITS          --     integer   := 2   -- number of bits for the internal counter. Ex. 2 will generate a 2**NB_BITS+3 cycles reset
+    -- ) 
+    -- port map (
+      -- in_rst    => lnk_m2f_rst,                  -- in  std_logic := '0' -- asynchronous active high reset (choose only one between active low or high reset).
+      -- out_clk   => clk_25mhz_fpga,               -- in  std_logic        -- clock used to synchronize reset and for counter
+      -- out_rst   => sb_rst_dly                   -- out std_logic        -- synchronous de-asserted active high reset
+    -- );
 
-  ------------------------------------------------------------------------------------------
-  -- Generate reset
-  ------------------------------------------------------------------------------------------
-  i_sync_rst : entity WORK.sync_rst 
-    generic map (
-      NB_RESET      => 1                --     integer                               := 1             -- number of reset to synchronize
-    ) 
-    port map (
-      in_com_rst    => sb_rst_dly,       -- in  std_logic                             := '0'           -- asynchronous active high reset  common to all clock domains /!\ choose only one reset source for each output /!\
-      in_rst   (0)  => '0',              -- in  std_logic_vector(NB_RESET-1 downto 0) := (others=>'0') -- asynchronous active high resets                            /!\ choose only one reset source for each output /!\
-      out_clk  (0)  => s_sys_clk,        -- in  std_logic_vector(NB_RESET-1 downto 0)                  -- clocks used to synchronize resets
-      out_rst_n(0)  => s_sys_rstn,       -- out std_logic_vector(NB_RESET-1 downto 0)                  -- synchronous de-asserted active low resets
-      out_rst  (0)  => s_sys_rst        -- out std_logic_vector(NB_RESET-1 downto 0)                  -- synchronous de-asserted active high resets
-    );
+  -- ------------------------------------------------------------------------------------------
+  -- -- Generate reset
+  -- ------------------------------------------------------------------------------------------
+  -- i_sync_rst : entity WORK.sync_rst 
+    -- generic map (
+      -- NB_RESET      => 2                --     integer                               := 1             -- number of reset to synchronize
+    -- ) 
+    -- port map (
+      -- in_com_rst    => sb_rst_dly,       -- in  std_logic                             := '0'           -- asynchronous active high reset  common to all clock domains /!\ choose only one reset source for each output /!\
+      -- in_rst   (0)  => '0',              -- in  std_logic_vector(NB_RESET-1 downto 0) := (others=>'0') -- asynchronous active high resets                            /!\ choose only one reset source for each output /!\
+      -- out_clk  (0)  => s_sys_clk,        -- in  std_logic_vector(NB_RESET-1 downto 0)                  -- clocks used to synchronize resets
+      -- out_rst_n(0)  => s_sys_rstn,       -- out std_logic_vector(NB_RESET-1 downto 0)                  -- synchronous de-asserted active low resets
+      -- out_rst  (0)  => s_sys_rst        -- out std_logic_vector(NB_RESET-1 downto 0)                  -- synchronous de-asserted active high resets
+    -- );
 
-  ------------------------------------------------------------------------------------------
-  -- Tick generators and timestamp
-  ------------------------------------------------------------------------------------------
-  -- 8Hz
-  i_tick_gen_8hz : entity WORK.tick_gen 
-    generic map (
-      NB_CYCLE    => C_SYS_CLK_FREQUENCY/8      --     integer   := 160000000 -- generate one 'tick' every NB_CYCLE clock periodes
-    ) 
-    port map (
-      rst         => s_sys_rst,                  -- in  std_logic := '0'       -- asynchronous active high reset
-      clk         => s_sys_clk,                  -- in  std_logic              -- module and base clock
-      tick        => s_tick_8hz,                 -- out std_logic              -- '1' for one cycle
-      tick_toggle => open                       -- out std_logic              -- inverted each time
-  );
+  -- ------------------------------------------------------------------------------------------
+  -- -- Tick generators and timestamp
+  -- ------------------------------------------------------------------------------------------
+  -- -- 8Hz
+  -- i_tick_gen_8hz : entity WORK.tick_gen 
+    -- generic map (
+      -- NB_CYCLE    => C_SYS_CLK_FREQUENCY/8      --     integer   := 160000000 -- generate one 'tick' every NB_CYCLE clock periodes
+    -- ) 
+    -- port map (
+      -- rst         => s_sys_rst,                  -- in  std_logic := '0'       -- asynchronous active high reset
+      -- clk         => s_sys_clk,                  -- in  std_logic              -- module and base clock
+      -- tick        => s_tick_8hz,                 -- out std_logic              -- '1' for one cycle
+      -- tick_toggle => open                       -- out std_logic              -- inverted each time
+  -- );
 
-  process (s_sys_rst, s_sys_clk)
-    begin
-      if(s_sys_rst='1') then
-        sb_reset_dly    <= (others=>'1');
-      elsif(rising_edge(s_sys_clk)) then
-        if s_tick_8hz='1' then
-          sb_reset_dly <= sb_reset_dly(sb_reset_dly'high-1 downto 0) & '0';
-        end if;
+  -- process (s_sys_rst, s_sys_clk)
+    -- begin
+      -- if(s_sys_rst='1') then
+        -- sb_reset_dly    <= (others=>'1');
+      -- elsif(rising_edge(s_sys_clk)) then
+        -- if s_tick_8hz='1' then
+          -- sb_reset_dly <= sb_reset_dly(sb_reset_dly'high-1 downto 0) & '0';
+        -- end if;
+      -- end if;
+  -- end process;
+
+
+  -- sb_ddr_rst_n <= not(sb_reset_dly(0)); -- de-assert hps ddr reset 125ms after reset from m10 (which is de-assert after si5341 cnfiguration)
+  -- sb_hps_rst_n <= not(sb_reset_dly(1)); -- de-assert hps     reset 125ms after hps ddr reset
+  
+  -- Counter process to delay the ddr reset
+  process(s_sys_clk, hps_rst)
+  begin 
+    if hps_rst = '0' then 
+      count <= 0;
+      reset_en <= '0';
+    elsif rising_edge(s_sys_clk) then 
+      if count = 16#1000000# then 
+        count <= count;
+        reset_en <= '1';
+      else
+        count <= count + 1;
       end if;
+    end if;
   end process;
 
-
-  sb_ddr_rst_n <= not(sb_reset_dly(0)); -- de-assert hps ddr reset 125ms after reset from m10 (which is de-assert after si5341 cnfiguration)
-  sb_hps_rst_n <= not(sb_reset_dly(1)); -- de-assert hps     reset 125ms after hps ddr reset
-
-
+  reset_n             <= not(hps_rst and RESET);
+  RESET               <= reset_en;
+  
+  sb_ddr_rst_n  <= reset_n;
+  sb_hps_rst_n  <= not hps_rst; 
+  s_sys_rst     <= not hps_rst;
+  
   u0 : component soc_system
     port map (
 
@@ -506,7 +534,7 @@ begin
       ddr4_mem_conduit_end_mem_dbi_n          => hps_ddr4_dbi_n,                --                             .mem_dbi_n
       ddr4_oct_conduit_end_oct_rzqin          => hps_ddr4_oct_rzqin,            --         ddr4_oct_conduit_end.oct_rzqin
       ddr4_pll_ref_clk_clock_sink_clk         => hps_ddr4_pll_ref_clk,          --  ddr4_pll_ref_clk_clock_sink.clk
-      reset_reset                           => s_sys_rst,                    --                        reset.reset_n
+      reset_reset                             => s_sys_rst,                    --                        reset.reset_n
       hps_f2h_cold_reset_req_reset_n          => sb_hps_rst_n and not(hps_rst), --       hps_f2h_cold_reset_req.reset_n
       hps_f2h_irq0_irq                        => (OTHERS => '0'),               --                 hps_f2h_irq0.irq
       hps_f2h_irq1_irq                        => (OTHERS => '0'),               --                 hps_f2h_irq1.irq
