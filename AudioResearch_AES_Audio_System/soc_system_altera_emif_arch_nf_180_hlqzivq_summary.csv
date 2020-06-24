@@ -1,0 +1,30 @@
+Core: soc_system_altera_emif_arch_nf_180_hlqzivq - Instance: u0|ddr4
+Path, Setup Margin, Hold Margin
+"Address/Command (Slow 900mV 100C Model)",0.152,0.152
+"Core (Slow 900mV 100C Model)",--,--
+"Core Recovery/Removal (Slow 900mV 100C Model)",--,--
+"DQS Gating (Slow 900mV 100C Model)",0.529,0.529
+"Read Capture (Slow 900mV 100C Model)",0.011,0.011
+"Write (Slow 900mV 100C Model)",0.024,0.024
+"Write Levelling (Slow 900mV 100C Model)",0.12,0.12
+"Address/Command (Slow 900mV -40C Model)",0.152,0.152
+"Core (Slow 900mV -40C Model)",--,--
+"Core Recovery/Removal (Slow 900mV -40C Model)",--,--
+"DQS Gating (Slow 900mV -40C Model)",0.529,0.529
+"Read Capture (Slow 900mV -40C Model)",0.011,0.011
+"Write (Slow 900mV -40C Model)",0.024,0.024
+"Write Levelling (Slow 900mV -40C Model)",0.12,0.12
+"Address/Command (Fast 900mV 100C Model)",0.152,0.152
+"Core (Fast 900mV 100C Model)",--,--
+"Core Recovery/Removal (Fast 900mV 100C Model)",--,--
+"DQS Gating (Fast 900mV 100C Model)",0.529,0.529
+"Read Capture (Fast 900mV 100C Model)",0.011,0.011
+"Write (Fast 900mV 100C Model)",0.024,0.024
+"Write Levelling (Fast 900mV 100C Model)",0.12,0.12
+"Address/Command (Fast 900mV -40C Model)",0.152,0.152
+"Core (Fast 900mV -40C Model)",--,--
+"Core Recovery/Removal (Fast 900mV -40C Model)",--,--
+"DQS Gating (Fast 900mV -40C Model)",0.529,0.529
+"Read Capture (Fast 900mV -40C Model)",0.011,0.011
+"Write (Fast 900mV -40C Model)",0.024,0.024
+"Write Levelling (Fast 900mV -40C Model)",0.12,0.12

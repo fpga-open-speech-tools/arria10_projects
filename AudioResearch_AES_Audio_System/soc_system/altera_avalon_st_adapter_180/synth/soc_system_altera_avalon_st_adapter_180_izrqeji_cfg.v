@@ -1,0 +1,5 @@
+config soc_system_altera_avalon_st_adapter_180_izrqeji_cfg;
+		design soc_system_altera_avalon_st_adapter_180_izrqeji;
+		instance soc_system_altera_avalon_st_adapter_180_izrqeji.channel_adapter_0 use soc_system_channel_adapter_180.soc_system_channel_adapter_180_h655kzi;
+endconfig
+

@@ -1,0 +1,5 @@
+config soc_system_altera_avalon_st_adapter_180_iqzgnoy_cfg;
+		design soc_system_altera_avalon_st_adapter_180_iqzgnoy;
+		instance soc_system_altera_avalon_st_adapter_180_iqzgnoy.channel_adapter_0 use soc_system_channel_adapter_180.soc_system_channel_adapter_180_hanja2i;
+endconfig
+

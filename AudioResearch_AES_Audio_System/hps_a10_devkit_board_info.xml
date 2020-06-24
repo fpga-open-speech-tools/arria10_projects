@@ -1,0 +1,126 @@
+<BoardInfo>
+<!--
+	This file contains information that is common to all A10 HPS Development Kits.
+-->
+<alias name="ethernet0" value="/sopc@0/ethernet@0xff800000"/>
+<alias name="ethernet1" value="/sopc@0/ethernet@0xff802000"/>
+<alias name="ethernet2" value="/sopc@0/ethernet@0xff804000"/>
+<alias name="serial0" value="/sopc@0/serial@0xffc02100"/>
+
+<DTAppend name="clk-phase" parentlabel="sdmmc_clk">
+<val type="number">0</val>
+<val type="number">135</val>
+</DTAppend>
+
+<DTAppend name="supports-highspeed" type="bool" parentlabel="hps_i_sdmmc_sdmmc" val="true"/>
+<DTAppend name="cap-sd-highspeed" type="bool" parentlabel="hps_i_sdmmc_sdmmc" val="true"/>
+<DTAppend name="broken-cd" type="bool" parentlabel="hps_i_sdmmc_sdmmc" val="true"/>
+<DTAppend name="altr,dw-mshc-ciu-div" type="number" parentlabel="hps_i_sdmmc_sdmmc" val="3"/>
+<DTAppend name="altr,dw-mshc-sdr-timing" parentlabel="hps_i_sdmmc_sdmmc">
+<val type="number">0</val>
+<val type="number">3</val>
+</DTAppend>
+<DTAppend name="pwr-en" type="number"  parentlabel="hps_i_sdmmc_sdmmc" val="0" />
+<DTAppend name="#address-cells" type="number" parentlabel="hps_i_sdmmc_sdmmc" val="1"/>
+<DTAppend name="#size-cells" type="number" parentlabel="hps_i_sdmmc_sdmmc" val="0"/>
+<DTAppend name="slot@0" type="node" parentlabel="hps_i_sdmmc_sdmmc" newlabel="slot0"/>
+<DTAppend name="reg" type="number" parentlabel="slot0" val="0"/>
+<DTAppend name="bus-width" type="number" parentlabel="slot0" val="8"/>
+<DTAppend name="bus-width" type="number" parentlabel="hps_i_sdmmc_sdmmc" val="8"/>
+
+
+<DTAppend name="phy-mode" type="string" parentlabel="hps_i_emac_emac1" val="rgmii"/>
+<DTAppend name="phy-addr" type="hex" parentlabel="hps_i_emac_emac1" val="0xffffffff"/>
+<DTAppend name="txd0-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="0"/>
+<DTAppend name="txd1-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="0"/>
+<DTAppend name="txd2-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="0"/>
+<DTAppend name="txd3-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="0"/>
+<DTAppend name="rxd0-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="420"/>
+<DTAppend name="rxd1-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="420"/>
+<DTAppend name="rxd2-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="420"/>
+<DTAppend name="rxd3-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="420"/>
+<DTAppend name="txen-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="0"/>
+<DTAppend name="txc-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="1860"/>
+<DTAppend name="rxdv-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="420"/>
+<DTAppend name="rxc-skew-ps" type="number" parentlabel="hps_i_emac_emac1" val="1680"/>
+<DTAppend name="max-frame-size" type="number" parentlabel="hps_i_emac_emac1" val="3800"/>
+
+<DTAppend name="phy-mode" type="string" parentlabel="hps_i_emac_emac2" val="rgmii"/>
+<DTAppend name="phy-addr" type="hex" parentlabel="hps_i_emac_emac2" val="0xffffffff"/>
+<DTAppend name="txd0-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="0"/>
+<DTAppend name="txd1-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="0"/>
+<DTAppend name="txd2-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="0"/>
+<DTAppend name="txd3-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="0"/>
+<DTAppend name="rxd0-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="420"/>
+<DTAppend name="rxd1-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="420"/>
+<DTAppend name="rxd2-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="420"/>
+<DTAppend name="rxd3-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="420"/>
+<DTAppend name="txen-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="0"/>
+<DTAppend name="txc-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="1860"/>
+<DTAppend name="rxdv-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="420"/>
+<DTAppend name="rxc-skew-ps" type="number" parentlabel="hps_i_emac_emac2" val="1680"/>
+<DTAppend name="max-frame-size" type="number" parentlabel="hps_i_emac_emac2" val="3800"/>
+
+<DTAppend name="phys" type="phandle" parentlabel="hps_i_usbotg_0_globgrp" val="usbphy0"/>
+<DTAppend name="usbphy0" type="node" parentlabel="sopc0" newlabel="usbphy0"/>
+<DTAppend name="#phy-cells" type="number" parentlabel="usbphy0" val="0" />
+<DTAppend name="compatible" type="string" parentlabel="usbphy0" val="usb-nop-xceiv" />
+<DTAppend name="status" type="string" parentlabel="usbphy0" val="okay" />
+
+<DTAppend name="speed-mode" type="number" parentlabel="hps_i_i2c_0_i2c" val="0" />
+<DTAppend name="clock-frequency" type="number" parentlabel="hps_i_i2c_0_i2c" val="100000" />
+<DTAppend name="i2c-sda-falling-time-ns" type="number" parentlabel="hps_i_i2c_0_i2c" val="6000" />
+<DTAppend name="i2c-scl-falling-time-ns" type="number" parentlabel="hps_i_i2c_0_i2c" val="6000" />
+
+<I2CBus master="hps_i_i2c_0_i2c">
+	<I2CChip addr="0x48" name="ti,tmp102" label="tempsensor"/>
+	<I2CChip addr="0x51" name="nxp,pcf8563" label="rtc"/>
+	<I2CChip addr="0x54" name="uc,at24" label="eeprom"/>
+</I2CBus>
+
+<DTAppend name="bytelen" type="number" parentlabel="eeprom" val="256" />
+<DTAppend name="pagesize" type="number" parentlabel="eeprom" val="16" />
+
+
+<DTAppend name="wilc_spi@0" type="node" parentlabel="hps_i_spim_0_spim" newlabel="wilc_spi"/>
+<DTAppend name="compatible" type="string" parentlabel="wilc_spi" val="atmel,wilc_spi"/>
+<DTAppend name="spi-max-frequency" type="number" parentlabel="wilc_spi" val="6000000"/>
+<DTAppend name="reg" type="number" parentlabel="wilc_spi" val="0"/>
+<DTAppend name="status" type="string" parentlabel="wilc_spi" val="disabled"/>
+
+
+<DTAppend name="interrupts" parentlabel="hps_i_spim_1_spim">
+<val type="hex">0x0</val>
+<val type="hex">0x66</val>
+<val type="hex">0x4</val>
+</DTAppend>
+
+<DTAppend name="tx-dma-channel" parentlabel="hps_i_spim_1_spim">
+<val type="hex">0x1d</val>
+<val type="hex">0x10</val>
+</DTAppend>
+
+<DTAppend name="rx-dma-channel" parentlabel="hps_i_spim_1_spim">
+<val type="hex">0x1d</val>
+<val type="hex">0x11</val>
+</DTAppend>
+<DTAppend name="32bit_access" type="bool" parentlabel="hps_i_spim_1_spim"/>
+<DTAppend name="a10_sysctl@0" type="node" parentlabel="hps_i_spim_1_spim" newlabel="a10_sysctl"/>
+<DTAppend name="compatible" type="string" parentlabel="a10_sysctl" val="altr,a10sycon"/>
+<DTAppend name="reg" type="number" parentlabel="a10_sysctl" val="0"/>
+<DTAppend name="interrupt-parent" type="phandle" parentlabel="a10_sysctl" val="hps_i_gpio_1_gpio"/>
+<DTAppend name="interrupts" parentlabel="a10_sysctl">
+<val type="number">5</val>
+<val type="number">8</val>
+</DTAppend>
+<DTAppend name="interrupt-controller" type="bool" parentlabel="a10_sysctl" />
+<DTAppend name="#interrupt-cells" type="number" parentlabel="a10_sysctl" val="2"/>
+<DTAppend name="spi-max-frequency" type="number" parentlabel="a10_sysctl" val="1000000"/>
+<DTAppend name="gpio-controller" type="node" parentlabel="a10_sysctl" newlabel="gpio4"/>
+<DTAppend name="compatible" type="string" parentlabel="gpio4" val="altr,a10sycon-gpio"/>
+<DTAppend name="gpio-controller" type="bool" parentlabel="gpio4" />
+<DTAppend name="#gpio-cells" type="number" parentlabel="gpio4" val="2"/>
+<DTAppend name="ngpios" type="number" parentlabel="gpio4" val="16"/>
+
+</BoardInfo>
+
