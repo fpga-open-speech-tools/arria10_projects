@@ -3,10 +3,10 @@
 --! @file       a10som_system.vhd
 --! @brief      AD1939 using the Audio Research Board on the Arria 10.
 --! @details    Top Level Design for a pass through system using the
---!             Audio Research Board, developed by Flat Earth Inc.
+--!             Audio Research Board, developed by Audio Logic
 --! @author     Connor Dack, Trevor Vannoy
 --! @date       Aug 2019
---! @copyright  Copyright (C) 2019 Flat Earth Inc
+--! @copyright  Copyright (C) 2019 Audio Logic
 --!
 --! Software Released Under the MIT License
 --
@@ -28,7 +28,7 @@
 --  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --
 --  Connor Dack, Trevor Vannoy
---  Flat Earth Inc
+--  Audio Logic
 --  985 Technology Blvd,
 --  Bozeman, MT 59718
 --
