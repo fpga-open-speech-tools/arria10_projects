@@ -18,7 +18,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -44,7 +44,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -83,7 +83,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -109,16 +109,16 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
-   element delay_and_sum_beamformer_0.avalon_slave
+   element fft_filters_0
    {
-      datum baseAddress
+      datum _sortIndex
       {
-         value = "16";
-         type = "String";
+         value = "13";
+         type = "int";
       }
    }
    element hps
@@ -147,6 +147,14 @@
          type = "boolean";
       }
    }
+   element noise_suppression_0
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+   }
    element simple_gain_0
    {
       datum _sortIndex
@@ -156,7 +164,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -165,6 +173,78 @@
       datum baseAddress
       {
          value = "0";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
          type = "String";
       }
    }
@@ -354,7 +434,7 @@
  <module
    name="PLL_using_AD1939_MCLK"
    kind="altera_iopll"
-   version="18.0"
+   version="19.1"
    enabled="1">
   <parameter name="gui_active_clk" value="false" />
   <parameter name="gui_c_cnt_in_src0">c_m_cnt_in_src_ph_mux_clk</parameter>
@@ -582,7 +662,7 @@
  <module
    name="clk_AD1939_ABCLK"
    kind="clock_source"
-   version="18.0"
+   version="19.1"
    enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
@@ -592,20 +672,20 @@
  <module
    name="clk_AD1939_ALRCLK"
    kind="clock_source"
-   version="18.0"
+   version="19.1"
    enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
- <module name="clk_hps" kind="clock_source" version="18.0" enabled="1">
+ <module name="clk_hps" kind="clock_source" version="19.1" enabled="1">
   <parameter name="clockFrequency" value="25000000" />
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
- <module name="ddr4" kind="altera_emif_a10_hps" version="18.0" enabled="1">
+ <module name="ddr4" kind="altera_emif_a10_hps" version="19.1" enabled="1">
   <parameter name="BOARD_DDR3_AC_TO_CK_SKEW_NS" value="0.0" />
   <parameter name="BOARD_DDR3_BRD_SKEW_WITHIN_AC_NS" value="0.02" />
   <parameter name="BOARD_DDR3_BRD_SKEW_WITHIN_DQS_NS" value="0.02" />
@@ -1634,7 +1714,8 @@
    kind="delay_and_sum_beamformer"
    version="1.0"
    enabled="1" />
- <module name="hps" kind="altera_arria10_hps" version="18.0" enabled="1">
+ <module name="fft_filters_0" kind="fft_filters" version="1.0" enabled="1" />
+ <module name="hps" kind="altera_arria10_hps" version="19.1" enabled="1">
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
   <parameter name="BOOT_FROM_FPGA_Enable" value="false" />
   <parameter name="BSEL" value="6" />
@@ -1855,7 +1936,7 @@
  <module
    name="jtag_master"
    kind="altera_jtag_avalon_master"
-   version="18.0"
+   version="19.1"
    enabled="1">
   <parameter name="AUTO_DEVICE" value="10AS066H2F34I1SG" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
@@ -1866,17 +1947,22 @@
   <parameter name="PLI_PORT" value="50000" />
   <parameter name="USE_PLI" value="0" />
  </module>
+ <module
+   name="noise_suppression_0"
+   kind="noise_suppression"
+   version="1.0"
+   enabled="1" />
  <module name="simple_gain_0" kind="simple_gain" version="1.0" enabled="1" />
  <module
    name="sysid_qsys_0"
    kind="altera_avalon_sysid_qsys"
-   version="18.0"
+   version="19.1"
    enabled="1">
   <parameter name="id" value="1" />
  </module>
  <connection
    kind="avalon"
-   version="18.0"
+   version="19.1"
    start="hps.h2f_lw_axi_master"
    end="delay_and_sum_beamformer_0.avalon_slave">
   <parameter name="arbitrationPriority" value="1" />
@@ -1885,7 +1971,7 @@
  </connection>
  <connection
    kind="avalon"
-   version="18.0"
+   version="19.1"
    start="hps.h2f_lw_axi_master"
    end="simple_gain_0.avalon_slave">
   <parameter name="arbitrationPriority" value="1" />
@@ -1894,7 +1980,7 @@
  </connection>
  <connection
    kind="avalon"
-   version="18.0"
+   version="19.1"
    start="hps.h2f_lw_axi_master"
    end="sysid_qsys_0.control_slave">
   <parameter name="arbitrationPriority" value="1" />
@@ -1903,73 +1989,93 @@
  </connection>
  <connection
    kind="avalon_streaming"
-   version="18.0"
+   version="19.1"
    start="FE_Qsys_AD1939_Audio_Research_v1_0.Line_In"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out" />
  <connection
    kind="avalon_streaming"
-   version="18.0"
-   start="simple_gain_0.avalon_streaming_source"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.XLR1_Out" />
+   version="19.1"
+   start="fft_filters_0.avalon_streaming_source"
+   end="FE_Qsys_AD1939_Audio_Research_v1_0.Headphone_Out" />
  <connection
    kind="avalon_streaming"
-   version="18.0"
+   version="19.1"
    start="delay_and_sum_beamformer_0.avalon_streaming_source"
    end="simple_gain_0.avalon_streaming_sink" />
  <connection
    kind="avalon_streaming"
-   version="18.0"
+   version="19.1"
+   start="simple_gain_0.avalon_streaming_source"
+   end="noise_suppression_0.avalon_streaming_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="19.1"
+   start="noise_suppression_0.avalon_streaming_source"
+   end="fft_filters_0.avalon_streaming_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="19.1"
    start="FE_FPGA_Microphone_Encoder_Decoder_0.mic_output"
    end="delay_and_sum_beamformer_0.avalon_streaming_sink" />
- <connection kind="clock" version="18.0" start="clk_hps.clk" end="jtag_master.clk" />
+ <connection kind="clock" version="19.1" start="clk_hps.clk" end="jtag_master.clk" />
  <connection
    kind="clock"
-   version="18.0"
+   version="19.1"
    start="clk_hps.clk"
    end="sysid_qsys_0.clk" />
  <connection
    kind="clock"
-   version="18.0"
+   version="19.1"
    start="clk_AD1939_ABCLK.clk"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.clk_abclk" />
  <connection
    kind="clock"
-   version="18.0"
+   version="19.1"
    start="clk_AD1939_ALRCLK.clk"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.clk_alrclk" />
  <connection
    kind="clock"
-   version="18.0"
+   version="19.1"
    start="clk_hps.clk"
    end="hps.h2f_lw_axi_clock" />
  <connection
    kind="clock"
-   version="18.0"
+   version="19.1"
    start="PLL_using_AD1939_MCLK.outclk0"
    end="delay_and_sum_beamformer_0.clock" />
  <connection
    kind="clock"
-   version="18.0"
+   version="19.1"
    start="PLL_using_AD1939_MCLK.outclk0"
    end="simple_gain_0.clock" />
  <connection
    kind="clock"
-   version="18.0"
+   version="19.1"
+   start="PLL_using_AD1939_MCLK.outclk0"
+   end="noise_suppression_0.clock" />
+ <connection
+   kind="clock"
+   version="19.1"
+   start="PLL_using_AD1939_MCLK.outclk0"
+   end="fft_filters_0.clock" />
+ <connection
+   kind="clock"
+   version="19.1"
    start="PLL_using_AD1939_MCLK.outclk0"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_clk" />
  <connection
    kind="clock"
-   version="18.0"
+   version="19.1"
    start="PLL_using_AD1939_MCLK.outclk0"
    end="FE_FPGA_Microphone_Encoder_Decoder_0.sys_clk" />
  <connection
    kind="clock"
-   version="18.0"
+   version="19.1"
    start="PLL_using_AD1939_MCLK.outclk1"
    end="FE_FPGA_Microphone_Encoder_Decoder_0.serial_clk" />
  <connection
    kind="conduit"
-   version="18.0"
+   version="19.1"
    start="hps.emif"
    end="ddr4.hps_emif_conduit_end">
   <parameter name="endPort" value="" />
@@ -1980,52 +2086,62 @@
  </connection>
  <connection
    kind="reset"
-   version="18.0"
+   version="19.1"
    start="clk_hps.clk_reset"
    end="clk_AD1939_ALRCLK.clk_in_reset" />
  <connection
    kind="reset"
-   version="18.0"
+   version="19.1"
    start="clk_hps.clk_reset"
    end="clk_AD1939_ABCLK.clk_in_reset" />
  <connection
    kind="reset"
-   version="18.0"
+   version="19.1"
    start="clk_hps.clk_reset"
    end="jtag_master.clk_reset" />
  <connection
    kind="reset"
-   version="18.0"
+   version="19.1"
    start="clk_hps.clk_reset"
    end="hps.h2f_lw_axi_reset" />
  <connection
    kind="reset"
-   version="18.0"
+   version="19.1"
    start="clk_hps.clk_reset"
    end="sysid_qsys_0.reset" />
  <connection
    kind="reset"
-   version="18.0"
+   version="19.1"
    start="clk_hps.clk_reset"
    end="PLL_using_AD1939_MCLK.reset" />
  <connection
    kind="reset"
-   version="18.0"
+   version="19.1"
    start="clk_hps.clk_reset"
    end="FE_FPGA_Microphone_Encoder_Decoder_0.reset" />
  <connection
    kind="reset"
-   version="18.0"
+   version="19.1"
    start="clk_hps.clk_reset"
    end="delay_and_sum_beamformer_0.reset" />
  <connection
    kind="reset"
-   version="18.0"
+   version="19.1"
    start="clk_hps.clk_reset"
    end="simple_gain_0.reset" />
  <connection
    kind="reset"
-   version="18.0"
+   version="19.1"
+   start="clk_hps.clk_reset"
+   end="fft_filters_0.reset" />
+ <connection
+   kind="reset"
+   version="19.1"
+   start="clk_hps.clk_reset"
+   end="noise_suppression_0.reset" />
+ <connection
+   kind="reset"
+   version="19.1"
    start="clk_hps.clk_reset"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
