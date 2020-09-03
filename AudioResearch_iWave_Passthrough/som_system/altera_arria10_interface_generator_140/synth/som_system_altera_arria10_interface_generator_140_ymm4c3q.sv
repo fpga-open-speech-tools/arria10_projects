@@ -11,7 +11,7 @@
 // agreement for further details.
 
 
-module som_system_altera_arria10_interface_generator_140_mv5mwwi(
+module som_system_altera_arria10_interface_generator_140_ymm4c3q(
 // hps_io
   output wire [1 - 1 : 0 ] hps_io_phery_emac1_TX_CLK
  ,output wire [1 - 1 : 0 ] hps_io_phery_emac1_TXD0
@@ -53,11 +53,7 @@ module som_system_altera_arria10_interface_generator_140_mv5mwwi(
  ,inout wire [1 - 1 : 0 ] hps_io_gpio_gpio2_io8
  ,inout wire [1 - 1 : 0 ] hps_io_gpio_gpio0_io0
  ,inout wire [1 - 1 : 0 ] hps_io_gpio_gpio0_io1
- ,inout wire [1 - 1 : 0 ] hps_io_gpio_gpio0_io2
- ,inout wire [1 - 1 : 0 ] hps_io_gpio_gpio0_io3
  ,inout wire [1 - 1 : 0 ] hps_io_gpio_gpio0_io6
- ,inout wire [1 - 1 : 0 ] hps_io_gpio_gpio0_io7
- ,inout wire [1 - 1 : 0 ] hps_io_gpio_gpio0_io10
  ,inout wire [1 - 1 : 0 ] hps_io_gpio_gpio0_io11
  ,inout wire [1 - 1 : 0 ] hps_io_gpio_gpio1_io12
  ,inout wire [1 - 1 : 0 ] hps_io_gpio_gpio1_io13
@@ -93,28 +89,24 @@ assign hps_io_gpio_gpio2_io6 = intermediate[31] ? intermediate[30] : 'z;
 assign hps_io_gpio_gpio2_io8 = intermediate[33] ? intermediate[32] : 'z;
 assign hps_io_gpio_gpio0_io0 = intermediate[35] ? intermediate[34] : 'z;
 assign hps_io_gpio_gpio0_io1 = intermediate[37] ? intermediate[36] : 'z;
-assign hps_io_gpio_gpio0_io2 = intermediate[39] ? intermediate[38] : 'z;
-assign hps_io_gpio_gpio0_io3 = intermediate[41] ? intermediate[40] : 'z;
-assign hps_io_gpio_gpio0_io6 = intermediate[43] ? intermediate[42] : 'z;
-assign hps_io_gpio_gpio0_io7 = intermediate[45] ? intermediate[44] : 'z;
-assign hps_io_gpio_gpio0_io10 = intermediate[47] ? intermediate[46] : 'z;
-assign hps_io_gpio_gpio0_io11 = intermediate[49] ? intermediate[48] : 'z;
-assign hps_io_gpio_gpio1_io12 = intermediate[51] ? intermediate[50] : 'z;
-assign hps_io_gpio_gpio1_io13 = intermediate[53] ? intermediate[52] : 'z;
-assign hps_io_gpio_gpio1_io14 = intermediate[55] ? intermediate[54] : 'z;
-assign hps_io_gpio_gpio1_io15 = intermediate[57] ? intermediate[56] : 'z;
-assign hps_io_gpio_gpio1_io16 = intermediate[59] ? intermediate[58] : 'z;
-assign hps_io_gpio_gpio1_io17 = intermediate[61] ? intermediate[60] : 'z;
-assign hps_io_gpio_gpio1_io18 = intermediate[63] ? intermediate[62] : 'z;
-assign hps_io_gpio_gpio1_io19 = intermediate[65] ? intermediate[64] : 'z;
-assign hps_io_gpio_gpio1_io20 = intermediate[67] ? intermediate[66] : 'z;
-assign hps_io_gpio_gpio1_io21 = intermediate[69] ? intermediate[68] : 'z;
-assign hps_io_gpio_gpio1_io22 = intermediate[71] ? intermediate[70] : 'z;
-assign hps_io_gpio_gpio1_io23 = intermediate[73] ? intermediate[72] : 'z;
+assign hps_io_gpio_gpio0_io6 = intermediate[39] ? intermediate[38] : 'z;
+assign hps_io_gpio_gpio0_io11 = intermediate[41] ? intermediate[40] : 'z;
+assign hps_io_gpio_gpio1_io12 = intermediate[43] ? intermediate[42] : 'z;
+assign hps_io_gpio_gpio1_io13 = intermediate[45] ? intermediate[44] : 'z;
+assign hps_io_gpio_gpio1_io14 = intermediate[47] ? intermediate[46] : 'z;
+assign hps_io_gpio_gpio1_io15 = intermediate[49] ? intermediate[48] : 'z;
+assign hps_io_gpio_gpio1_io16 = intermediate[51] ? intermediate[50] : 'z;
+assign hps_io_gpio_gpio1_io17 = intermediate[53] ? intermediate[52] : 'z;
+assign hps_io_gpio_gpio1_io18 = intermediate[55] ? intermediate[54] : 'z;
+assign hps_io_gpio_gpio1_io19 = intermediate[57] ? intermediate[56] : 'z;
+assign hps_io_gpio_gpio1_io20 = intermediate[59] ? intermediate[58] : 'z;
+assign hps_io_gpio_gpio1_io21 = intermediate[61] ? intermediate[60] : 'z;
+assign hps_io_gpio_gpio1_io22 = intermediate[63] ? intermediate[62] : 'z;
+assign hps_io_gpio_gpio1_io23 = intermediate[65] ? intermediate[64] : 'z;
 
-wire [74 - 1 : 0] intermediate;
+wire [66 - 1 : 0] intermediate;
 
-wire [69 - 1 : 0] floating;
+wire [81 - 1 : 0] floating;
 
 twentynm_hps_peripheral_emac phery_emac1(
  .EMAC_CLK_RX({
@@ -265,42 +257,38 @@ twentynm_hps_peripheral_i2c phery_i2c0(
 twentynm_hps_peripheral_gpio gpio(
  .GPIO0_PORTA_I({
     hps_io_gpio_gpio0_io11[0:0] // 11:11
-   ,hps_io_gpio_gpio0_io10[0:0] // 10:10
-   ,floating[1:0] // 9:8
-   ,hps_io_gpio_gpio0_io7[0:0] // 7:7
+   ,floating[3:0] // 10:7
    ,hps_io_gpio_gpio0_io6[0:0] // 6:6
-   ,floating[3:2] // 5:4
-   ,hps_io_gpio_gpio0_io3[0:0] // 3:3
-   ,hps_io_gpio_gpio0_io2[0:0] // 2:2
+   ,floating[7:4] // 5:2
    ,hps_io_gpio_gpio0_io1[0:0] // 1:1
    ,hps_io_gpio_gpio0_io0[0:0] // 0:0
   })
 ,.GPIO1_PORTA_OE({
-    intermediate[73:73] // 23:23
-   ,intermediate[71:71] // 22:22
-   ,intermediate[69:69] // 21:21
-   ,intermediate[67:67] // 20:20
-   ,intermediate[65:65] // 19:19
-   ,intermediate[63:63] // 18:18
-   ,intermediate[61:61] // 17:17
-   ,intermediate[59:59] // 16:16
-   ,intermediate[57:57] // 15:15
-   ,intermediate[55:55] // 14:14
-   ,intermediate[53:53] // 13:13
-   ,intermediate[51:51] // 12:12
-   ,floating[15:4] // 11:0
+    intermediate[65:65] // 23:23
+   ,intermediate[63:63] // 22:22
+   ,intermediate[61:61] // 21:21
+   ,intermediate[59:59] // 20:20
+   ,intermediate[57:57] // 19:19
+   ,intermediate[55:55] // 18:18
+   ,intermediate[53:53] // 17:17
+   ,intermediate[51:51] // 16:16
+   ,intermediate[49:49] // 15:15
+   ,intermediate[47:47] // 14:14
+   ,intermediate[45:45] // 13:13
+   ,intermediate[43:43] // 12:12
+   ,floating[19:8] // 11:0
   })
 ,.GPIO2_PORTA_O({
     intermediate[32:32] // 8:8
-   ,floating[16:16] // 7:7
+   ,floating[20:20] // 7:7
    ,intermediate[30:30] // 6:6
-   ,floating[22:17] // 5:0
+   ,floating[26:21] // 5:0
   })
 ,.GPIO2_PORTA_OE({
     intermediate[33:33] // 8:8
-   ,floating[23:23] // 7:7
+   ,floating[27:27] // 7:7
    ,intermediate[31:31] // 6:6
-   ,floating[29:24] // 5:0
+   ,floating[33:28] // 5:0
   })
 ,.GPIO1_PORTA_I({
     hps_io_gpio_gpio1_io23[0:0] // 23:23
@@ -315,52 +303,44 @@ twentynm_hps_peripheral_gpio gpio(
    ,hps_io_gpio_gpio1_io14[0:0] // 14:14
    ,hps_io_gpio_gpio1_io13[0:0] // 13:13
    ,hps_io_gpio_gpio1_io12[0:0] // 12:12
-   ,floating[41:30] // 11:0
+   ,floating[45:34] // 11:0
   })
 ,.GPIO2_PORTA_I({
     hps_io_gpio_gpio2_io8[0:0] // 8:8
-   ,floating[42:42] // 7:7
+   ,floating[46:46] // 7:7
    ,hps_io_gpio_gpio2_io6[0:0] // 6:6
-   ,floating[48:43] // 5:0
+   ,floating[52:47] // 5:0
   })
 ,.GPIO0_PORTA_O({
-    intermediate[48:48] // 11:11
-   ,intermediate[46:46] // 10:10
-   ,floating[50:49] // 9:8
-   ,intermediate[44:44] // 7:7
-   ,intermediate[42:42] // 6:6
-   ,floating[52:51] // 5:4
-   ,intermediate[40:40] // 3:3
-   ,intermediate[38:38] // 2:2
+    intermediate[40:40] // 11:11
+   ,floating[56:53] // 10:7
+   ,intermediate[38:38] // 6:6
+   ,floating[60:57] // 5:2
    ,intermediate[36:36] // 1:1
    ,intermediate[34:34] // 0:0
   })
 ,.GPIO0_PORTA_OE({
-    intermediate[49:49] // 11:11
-   ,intermediate[47:47] // 10:10
-   ,floating[54:53] // 9:8
-   ,intermediate[45:45] // 7:7
-   ,intermediate[43:43] // 6:6
-   ,floating[56:55] // 5:4
-   ,intermediate[41:41] // 3:3
-   ,intermediate[39:39] // 2:2
+    intermediate[41:41] // 11:11
+   ,floating[64:61] // 10:7
+   ,intermediate[39:39] // 6:6
+   ,floating[68:65] // 5:2
    ,intermediate[37:37] // 1:1
    ,intermediate[35:35] // 0:0
   })
 ,.GPIO1_PORTA_O({
-    intermediate[72:72] // 23:23
-   ,intermediate[70:70] // 22:22
-   ,intermediate[68:68] // 21:21
-   ,intermediate[66:66] // 20:20
-   ,intermediate[64:64] // 19:19
-   ,intermediate[62:62] // 18:18
-   ,intermediate[60:60] // 17:17
-   ,intermediate[58:58] // 16:16
-   ,intermediate[56:56] // 15:15
-   ,intermediate[54:54] // 14:14
-   ,intermediate[52:52] // 13:13
-   ,intermediate[50:50] // 12:12
-   ,floating[68:57] // 11:0
+    intermediate[64:64] // 23:23
+   ,intermediate[62:62] // 22:22
+   ,intermediate[60:60] // 21:21
+   ,intermediate[58:58] // 20:20
+   ,intermediate[56:56] // 19:19
+   ,intermediate[54:54] // 18:18
+   ,intermediate[52:52] // 17:17
+   ,intermediate[50:50] // 16:16
+   ,intermediate[48:48] // 15:15
+   ,intermediate[46:46] // 14:14
+   ,intermediate[44:44] // 13:13
+   ,intermediate[42:42] // 12:12
+   ,floating[80:69] // 11:0
   })
 );
 

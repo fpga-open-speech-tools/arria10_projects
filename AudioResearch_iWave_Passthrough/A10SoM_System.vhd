@@ -29,45 +29,11 @@ library pll;
 
 ENTITY A10SoM_System IS
   PORT(
-    AD1939_MCLK                       : in std_logic;
     clk_200                           : in std_logic;
     ddr_ref_clk_i                     : in std_logic;
-    fmc1_inout_pio1                   : inout std_logic_vector(19 downto 0);
-    fmc1_inout_pio2                   : inout std_logic_vector(19 downto 0);
-    fmc1_inout_pio3                   : inout std_logic_vector(19 downto 0);
-    fmc1_inout_pio4                   : inout std_logic_vector(19 downto 0);
-    fmc1_inout_pio5                   : inout std_logic_vector(19 downto 0);
-    fmc2_inout_pio6                   : inout std_logic_vector(19 downto 0);
-    fmc2_inout_pio7                   : inout std_logic_vector(19 downto 0);
-    fmc_1C_rx_ch0                     : in std_logic;
-    fmc_1C_rx_ch1                     : in std_logic;
-    fmc_1C_rx_ch2                     : in std_logic;
-    fmc_1C_rx_ch3                     : in std_logic;
-    fmc_1C_tx_ch0                     : out std_logic;
-    fmc_1C_tx_ch1                     : out std_logic;
-    fmc_1C_tx_ch2                     : out std_logic;
-    fmc_1C_tx_ch3                     : out std_logic;
-    fmc_1D_rx_ch0                     : in std_logic;
-    fmc_1D_rx_ch1                     : in std_logic;
-    fmc_1D_rx_ch2                     : in std_logic;
-    fmc_1D_rx_ch3                     : in std_logic;
-    fmc_1D_tx_ch0                     : out std_logic;
-    fmc_1D_tx_ch1                     : out std_logic;
-    fmc_1D_tx_ch2                     : out std_logic;
-    fmc_1D_tx_ch3                     : out std_logic;
-    fmc_1E_rx_ch0                     : in std_logic;
-    fmc_1E_rx_ch1                     : in std_logic;
-    fmc_1E_rx_ch2                     : in std_logic;
-    fmc_1E_rx_ch3                     : in std_logic;
-    fmc_1E_tx_ch0                     : out std_logic;
-    fmc_1E_tx_ch1                     : out std_logic;
-    fmc_1E_tx_ch2                     : out std_logic;
-    fmc_1E_tx_ch3                     : out std_logic;
-    fmc_1F_rx_ch0                     : in std_logic;
-    fmc_1F_rx_ch1                     : in std_logic;
-    fmc_1F_tx_ch0                     : out std_logic;
-    fmc_1F_tx_ch1                     : out std_logic;
     fpga_clk_i                        : in std_logic;
+    
+    -- FPGA memory signals
     FPGA_memory_mem1_a                : out std_logic_vector(16 downto 0);
     FPGA_memory_mem1_act_n            : out std_logic;
     FPGA_memory_mem1_alert_n          : in std_logic;
@@ -85,6 +51,8 @@ ENTITY A10SoM_System IS
     FPGA_memory_mem1_par              : out std_logic;
     FPGA_memory_mem1_reset_n          : out std_logic;
     FPGA_memory_oct1_rzqin            : in std_logic;
+    
+    -- Dedicated  HPS signal
     hps_emac1_MDC                     : out std_logic;
     hps_emac1_MDIO                    : inout std_logic;
     hps_emac1_RX_CLK                  : in std_logic;
@@ -103,11 +71,7 @@ ENTITY A10SoM_System IS
     hps_gpio2_GPIO8                   : inout std_logic;
     hps_gpio_GPIO0                    : inout std_logic;
     hps_gpio_GPIO1                    : inout std_logic;
-    hps_gpio_GPIO2                    : inout std_logic;
-    hps_gpio_GPIO3                    : inout std_logic;
     hps_gpio_GPIO6                    : inout std_logic;
-    hps_gpio_GPIO7                    : inout std_logic;
-    hps_gpio_GPIO10                   : inout std_logic;
     hps_gpio_GPIO11                   : inout std_logic;
     hps_gpio_GPIO12                   : inout std_logic;
     hps_gpio_GPIO13                   : inout std_logic;
@@ -121,8 +85,12 @@ ENTITY A10SoM_System IS
     hps_gpio_GPIO21                   : inout std_logic;
     hps_gpio_GPIO22                   : inout std_logic;
     hps_gpio_GPIO23                   : inout std_logic;
+    
+    -- HPS I2C
     hps_i2c0_SCL                      : inout std_logic;
     hps_i2c0_SDA                      : inout std_logic;
+    
+    -- HPS Memory mapping
     hps_memory_mem_a                  : out std_logic_vector(16 downto 0);
     hps_memory_mem_act_n              : out std_logic;
     hps_memory_mem_alert_n            : in std_logic;
@@ -140,14 +108,21 @@ ENTITY A10SoM_System IS
     hps_memory_mem_par                : out std_logic;
     hps_memory_mem_reset_n            : out std_logic;
     hps_memory_oct_rzqin              : in std_logic;
+    
+    
+    -- HPS serial
     hps_sdio_CLK                      : out std_logic;
     hps_sdio_CMD                      : inout std_logic;
     hps_sdio_D0                       : inout std_logic;
     hps_sdio_D1                       : inout std_logic;
     hps_sdio_D2                       : inout std_logic;
     hps_sdio_D3                       : inout std_logic;
+    
+    -- HPS UART
     hps_uart1_RX                      : in std_logic;
     hps_uart1_TX                      : out std_logic;
+    
+    -- HPS USB mapping
     hps_usb1_CLK                      : in std_logic;
     hps_usb1_D0                       : inout std_logic;
     hps_usb1_D1                       : inout std_logic;
@@ -160,423 +135,358 @@ ENTITY A10SoM_System IS
     hps_usb1_DIR                      : in std_logic;
     hps_usb1_NXT                      : in std_logic;
     hps_usb1_STP                      : out std_logic;
+    
     pcie_npor_pin_perst               : in std_logic;
-    pcie_refclk_clk                   : in std_logic;
-    pcie_rx_i                         : in std_logic;
-    pcie_tx_o                         : out std_logic;
-    pciex4_inout_pio10                : inout std_logic_vector(1 downto 0);
-    pmod1_inout_pio8                  : inout std_logic_vector(7 downto 0);
-    pmod2_inout_pio9                  : inout std_logic_vector(7 downto 0);
-    refclk_1C_p                       : in std_logic;
-    refclk_1D_p                       : in std_logic;
-    refclk_1E_p                       : in std_logic;
-    refclk_1F_p                       : in std_logic;
-    sfp_1F_rx_ch0                     : in std_logic;
-    sfp_1F_tx_ch0                     : out std_logic;
-    sfp_refclk_1F_p                   : in std_logic;
+       
     som_config_pio                    : in std_logic_vector(4 downto 0);
     sys_reset_n_i                     : in std_logic;
-    usb_inout_pio11                   : inout std_logic_vector(1 downto 0);
-    AD4020_EN                         : in std_logic;
-    AD5791_EN                         : in std_logic;
-    HSA_IN_CLK                        : in std_logic;
-    HSA_IN_EN_N                       : in std_logic;
-    HSA_IN_L_CNV                      : in std_logic;
-    HSA_IN_L_SDI                      : in std_logic;
+    
+    AD4020_EN                         : out std_logic;
+    AD5791_EN                         : out std_logic;
+    
+    HSA_IN_CLK                        : out std_logic;
+    HSA_IN_EN_N                       : out std_logic;
+    HSA_IN_L_CNV                      : out std_logic;
+    HSA_IN_R_CNV                      : out std_logic;
+    HSA_IN_L_SDI                      : out std_logic;
+    HSA_IN_R_SDI                      : out std_logic;
     HSA_IN_L_SDO                      : in std_logic;
-    HSA_IN_R_CNV                      : in std_logic;
-    HSA_IN_R_SDI                      : in std_logic;
     HSA_IN_R_SDO                      : in std_logic;
-    HSA_OUT_CLK                       : in std_logic;
-    HSA_OUT_L_CLR_N                   : in std_logic;
-    HSA_OUT_L_LDAC_N                  : in std_logic;
-    HSA_OUT_L_RESET_N                 : in std_logic;
-    HSA_OUT_L_SDIN                    : in std_logic;
+    
+    HSA_OUT_CLK                       : out std_logic;
+    HSA_OUT_L_CLR_N                   : out std_logic;
+    HSA_OUT_R_CLR_N                   : out std_logic;
+    HSA_OUT_L_LDAC_N                  : out std_logic;
+    HSA_OUT_R_LDAC_N                  : out std_logic;
+    HSA_OUT_L_RESET_N                 : out std_logic;
+    HSA_OUT_R_RESET_N                 : out std_logic;
+    HSA_OUT_L_SDI                     : out std_logic;
+    HSA_OUT_R_SDI                     : out std_logic;
     HSA_OUT_L_SDO                     : in std_logic;
-    HSA_OUT_L_SYNC_N                  : in std_logic;
-    HSA_OUT_R_CLR_N                   : in std_logic;
-    HSA_OUT_R_LDAC_N                  : in std_logic;
-    HSA_OUT_R_RESET_N                 : in std_logic;
-    HSA_OUT_R_SDI                     : in std_logic;
     HSA_OUT_R_SDO                     : in std_logic;
-    HSA_OUT_R_SDIN                    : in std_logic;
-    HSA_OUT_R_SYNC_N                  : in std_logic;
-    HDPHN_I2C_SCL                     : in std_logic;
-    HDPHN_I2C_SDA                     : in std_logic;
-    HDPHN_PWR_OFF_N                   : in std_logic;
-    PGA2505_CS_N                      : in std_logic;
-    EEPROM_WP                         : in std_logic;
+    HSA_OUT_L_SYNC_N                  : out std_logic;
+    HSA_OUT_R_SYNC_N                  : out std_logic;
+        
+    HDPHN_I2C_SCL                     : inout std_logic;
+    HDPHN_I2C_SDA                     : inout std_logic;
+    HDPHN_PWR_OFF_N                   : out std_logic;
+    
+    PGA2505_CS_N                      : out std_logic;
+    
+    EEPROM_WP                         : out std_logic;
     FAN_FAIL_N                        : in std_logic;
-    FPGA_LED                          : in std_logic;
-    FPGA_RESET                        : in std_logic;
-    FULL_SPEED_N                      : in std_logic;
+    FPGA_LED                          : out std_logic;
+    FPGA_RESET                        : out std_logic;
+    FULL_SPEED_N                      : out std_logic;
     TEMP_ALERT_N                      : in std_logic;
-    clk_200_n                         : in std_logic;
-    ddr_ref_clk_i_n                   : in std_logic;
-    refclk_1C_n                       : in std_logic;
-    refclk_1D_n                       : in std_logic;
-    refclk_1E_n                       : in std_logic;
-    refclk_1F_n                       : in std_logic;
-    sfp_refclk_1F_n                   : in std_logic;
-    HPS_RST                           : in std_logic;
-    UART1_RX                          : in std_logic;
-    UART1_TX                          : in std_logic;
-    sfp_1F_rx_ch0_n                   : in std_logic;
-    sfp_1F_tx_ch0_n                   : in std_logic;
-    MSATA_A                           : in std_logic;
-    MSATA_A_n                         : in std_logic;
+            
+    MSATA_A                           : out std_logic;
     MSATA_B                           : in std_logic;
-    MSATA_B_n                         : in std_logic;
-    MSATA_PWR_EN                      : in std_logic;
-    FT232_RST_N                       : in std_logic;
-    fmc_1C_rx_ch0_n                   : in std_logic;
-    fmc_1C_rx_ch1_n                   : in std_logic;
-    fmc_1C_rx_ch2_n                   : in std_logic;
-    fmc_1C_rx_ch3_n                   : in std_logic;
-    fmc_1C_tx_ch0_n                   : in std_logic;
-    fmc_1C_tx_ch1_n                   : in std_logic;
-    fmc_1C_tx_ch2_n                   : in std_logic;
-    fmc_1C_tx_ch3_n                   : in std_logic;
-    fmc_1D_rx_ch0_n                   : in std_logic;
-    fmc_1D_rx_ch1_n                   : in std_logic;
-    fmc_1D_rx_ch2_n                   : in std_logic;
-    fmc_1D_rx_ch3_n                   : in std_logic;
-    fmc_1D_tx_ch0_n                   : in std_logic;
-    fmc_1D_tx_ch1_n                   : in std_logic;
-    fmc_1D_tx_ch2_n                   : in std_logic;
-    fmc_1D_tx_ch3_n                   : in std_logic;
-    fmc_1E_rx_ch0_n                   : in std_logic;
-    fmc_1E_rx_ch1_n                   : in std_logic;
-    fmc_1E_rx_ch2_n                   : in std_logic;
-    fmc_1E_rx_ch3_n                   : in std_logic;
-    fmc_1E_tx_ch0_n                   : in std_logic;
-    fmc_1E_tx_ch1_n                   : in std_logic;
-    fmc_1E_tx_ch2_n                   : in std_logic;
-    fmc_1E_tx_ch3_n                   : in std_logic;
-    fmc_1F_rx_ch0_n                   : in std_logic;
-    fmc_1F_rx_ch1_n                   : in std_logic;
-    fmc_1F_tx_ch0_n                   : in std_logic;
-    fmc_1F_tx_ch1_n                   : in std_logic;
-    AD7768_CS_N                       : in std_logic;
-    AD7768_DCLK                       : in std_logic;
+    MSATA_PWR_EN                      : out std_logic;
+        
+    AD7768_CS_N                       : out std_logic;
+    AD7768_DCLK                       : out std_logic;
     AD7768_DRDY_N                     : in std_logic;
-    AD7768_EN                         : in std_logic;
-    AD7768_MCLK                       : in std_logic;
-    AD7768_RESET                      : in std_logic;
-    AD7768_RESET_N                    : in std_logic;
-    AD7768_SDI                        : in std_logic;
+    AD7768_EN                         : out std_logic;
+    AD7768_MCLK                       : out std_logic;
+    AD7768_RESET_N                    : out std_logic;
+    AD7768_SDI                        : out std_logic;
     AD7768_SDO                        : in std_logic;
-    AD7768_SPI_SCK                    : in std_logic;
-    AD7768_SYNC_IN                    : in std_logic;
-    pcie_refclk_clk_n                 : in std_logic;
-    pcie_rx_i_n                       : in std_logic;
-    pcie_tx_o_n                       : in std_logic;
+    AD7768_SPI_SCK                    : out std_logic;
+    AD7768_SYNC_IN                    : out std_logic;
+    AD7768_DOUT                       : in std_logic_vector(3 downto 0);
+    
     FPGA_RX                           : in std_logic;
-    FPGA_TX                           : in std_logic;
-    DB25_PWR_EN                       : in std_logic;
-    GPIO_LED                          : in std_logic;
-    HPS_LED                           : in std_logic;
+    FPGA_TX                           : out std_logic;
+    
+    DB25_PWR_EN                       : out std_logic;
+    GPIO_LED                          : out std_logic;
+    
+    AD1939_MCLK                       : in std_logic;
     AD1939_ABCLK                      : in std_logic;
     AD1939_ALRCLK                     : in std_logic;
-    AD1939_CS_N                       : in std_logic;
-    AD1939_DBCLK                      : in std_logic;
-    AD1939_DLRCLK                     : in std_logic;
-    AD1939_HDPHN_OUT_DSDATA           : in std_logic;
+    AD1939_CS_N                       : out std_logic;
+    AD1939_DBCLK                      : out std_logic;
+    AD1939_DLRCLK                     : out std_logic;
+    AD1939_HDPHN_OUT_DSDATA           : out std_logic;
     AD1939_LINE_IN_DSDATA             : in std_logic;
-    AD1939_LINE_OUT_DSDATA            : in std_logic;
+    AD1939_LINE_OUT_DSDATA            : out std_logic;
     AD1939_MIC_IN_DSDATA              : in std_logic;
-    AD1939_PWR_EN                     : in std_logic;
-    AD1939_RST_CODEC_N                : in std_logic;
+    AD1939_PWR_EN                     : out std_logic;
+    AD1939_RST_CODEC_N                : out std_logic;
     AD1939_SPI_MISO                   : in std_logic;
-    AD1939_SPI_MOSI                   : in std_logic;
-    AD1939_SPI_SCK                    : in std_logic;
-    FULL_SPEED_n                      : in std_logic;
-    JTAG_TCK                          : in std_logic;
-    JTAG_TDI                          : in std_logic;
-    JTAG_TDO                          : in std_logic;
-    JTAG_TMS                          : in std_logic;
-    JTAG_TRST                         : in std_logic;
-    I2C_SCL                           : in std_logic;
-    I2C_SDA                           : in std_logic;
-    AA_12V0_EN                        : in std_logic_vector(0 to 3);
-    AA_BANK_EN                        : in std_logic_vector(0 to 1);
-    AA_LVDS_EN_N                      : in std_logic_vector(0 to 15);
-    AA_MCLK                           : in std_logic_vector(0 to 3);
-    AA_SDI                            : in std_logic_vector(0 to 15);
-    AA_SDO                            : in std_logic_vector(0 to 15);
-    AD7768_DOUT                       : in std_logic_vector(0 to 3);
-    DB25_GPIO                         : in std_logic_vector(0 to 17);
-    P3_GPIO                           : in std_logic_vector(0 to 3)
+    AD1939_SPI_MOSI                   : out std_logic;
+    AD1939_SPI_SCK                    : out std_logic;
 
-  );
+    I2C_SCL                           : inout std_logic;
+    I2C_SDA                           : inout std_logic;
+    
+    AA_12V0_EN                        : out std_logic_vector(3  downto 0);
+    AA_BANK_EN                        : out std_logic_vector(1  downto 0);
+    AA_LVDS_EN_N                      : out std_logic_vector(15 downto 0);
+    AA_MCLK                           : out std_logic_vector(3  downto 0);
+    AA_SDI                            : out std_logic_vector(15 downto 0);
+    AA_SDO                            : in std_logic_vector( 15 downto 0);
+    
+    DB25_GPIO                         : inout std_logic_vector(17 downto 0);
+    P3_GPIO                           : inout std_logic_vector(3 downto 0)
 );
 
 end entity;
--- *****************************************************************************
--- *                 Internal signals and signalisters Declarations                 *
--- *****************************************************************************
+
 ARCHITECTURE A10SoM_System_Arch OF A10SoM_System IS
 
 component som_system is
-  port (
-    ad1939_abclk_clk                       : in    std_logic                     := 'X';             -- clk
-    ad1939_alrclk_clk                      : in    std_logic                     := 'X';             -- clk
-    ad1939_mclk_clk                        : in    std_logic                     := 'X';             -- clk
-    ad1939_physical_ad1939_adc_asdata1     : in    std_logic                     := 'X';             -- ad1939_adc_asdata1
-    ad1939_physical_ad1939_adc_asdata2     : in    std_logic                     := 'X';             -- ad1939_adc_asdata2
-    ad1939_physical_ad1939_dac_dbclk       : out   std_logic;                                        -- ad1939_dac_dbclk
-    ad1939_physical_ad1939_dac_dlrclk      : out   std_logic;                                        -- ad1939_dac_dlrclk
-    ad1939_physical_ad1939_dac_dsdata1     : out   std_logic;                                        -- ad1939_dac_dsdata1
-    ad1939_physical_ad1939_dac_dsdata2     : out   std_logic;                                        -- ad1939_dac_dsdata2
-    ad1939_physical_ad1939_dac_dsdata3     : out   std_logic;                                        -- ad1939_dac_dsdata3
-    ad1939_physical_ad1939_dac_dsdata4     : out   std_logic;                                        -- ad1939_dac_dsdata4
-    addr_sel_in_add_sel                    : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- add_sel
-    clk_100_clk                            : in    std_logic                     := 'X';             -- clk
-    ddr_ref_clk_clk                        : in    std_logic                     := 'X';             -- clk
-    emif_0_global_reset_n_reset_n          : in    std_logic                     := 'X';             -- reset_n
+port (
+    ad1939_abclk_clk                               : in    std_logic                     := 'X';             -- clk
+    ad1939_alrclk_clk                              : in    std_logic                     := 'X';             -- clk
+    ad1939_mclk_clk                                : in    std_logic                     := 'X';             -- clk
+    ad1939_physical_ad1939_adc_asdata1             : in    std_logic                     := 'X';             -- ad1939_adc_asdata1
+    ad1939_physical_ad1939_adc_asdata2             : in    std_logic                     := 'X';             -- ad1939_adc_asdata2
+    ad1939_physical_ad1939_dac_dbclk               : out   std_logic;                                        -- ad1939_dac_dbclk
+    ad1939_physical_ad1939_dac_dlrclk              : out   std_logic;                                        -- ad1939_dac_dlrclk
+    ad1939_physical_ad1939_dac_dsdata1             : out   std_logic;                                        -- ad1939_dac_dsdata1
+    ad1939_physical_ad1939_dac_dsdata2             : out   std_logic;                                        -- ad1939_dac_dsdata2
+    ad1939_physical_ad1939_dac_dsdata3             : out   std_logic;                                        -- ad1939_dac_dsdata3
+    ad1939_physical_ad1939_dac_dsdata4             : out   std_logic;                                        -- ad1939_dac_dsdata4
+    ad5791_left_physical_ad5791_clr_n_out          : out   std_logic;                                        -- ad5791_clr_n_out
+    ad5791_left_physical_ad5791_ldac_n_out         : out   std_logic;                                        -- ad5791_ldac_n_out
+    ad5791_left_physical_ad5791_miso_out           : in    std_logic                     := 'X';             -- ad5791_miso_out
+    ad5791_left_physical_ad5791_mosi_in            : out   std_logic;                                        -- ad5791_mosi_in
+    ad5791_left_physical_ad5791_sclk_out           : out   std_logic;                                        -- ad5791_sclk_out
+    ad5791_left_physical_ad5791_sync_n_out         : out   std_logic;                                        -- ad5791_sync_n_out
+    ad7768_physical_ad7768_dout_in                 : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- ad7768_dout_in
+    ad7768_physical_ad7768_drdy_in                 : in    std_logic                     := 'X';             -- ad7768_drdy_in
+    ad7768_physical_ad7768_dclk_in                 : in    std_logic                     := 'X';             -- ad7768_dclk_in
+    addr_sel_in_add_sel                            : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- add_sel
+    axi_clk_bridge_in_clk_clk                      : in    std_logic                     := 'X';             -- clk
+    clk_100_clk                                    : in    std_logic                     := 'X';             -- clk
+    ddr_ref_clk_clk                                : in    std_logic                     := 'X';             -- clk
+    emif_0_global_reset_n_reset_n                  : in    std_logic                     := 'X';             -- reset_n
+    emif_0_mem_mem_ck                              : out   std_logic;                     -- mem_ck
+    emif_0_mem_mem_ck_n                            : out   std_logic;                     -- mem_ck_n
+    emif_0_mem_mem_a                               : out   std_logic_vector(16 downto 0);                    -- mem_a
+    emif_0_mem_mem_act_n                           : out   std_logic;                     -- mem_act_n
+    emif_0_mem_mem_ba                              : out   std_logic_vector(1 downto 0);                     -- mem_ba
+    emif_0_mem_mem_bg                              : out   std_logic;                     -- mem_bg
+    emif_0_mem_mem_cke                             : out   std_logic;                     -- mem_cke
+    emif_0_mem_mem_cs_n                            : out   std_logic;                     -- mem_cs_n
+    emif_0_mem_mem_odt                             : out   std_logic;                     -- mem_odt
+    emif_0_mem_mem_reset_n                         : out   std_logic;                     -- mem_reset_n
+    emif_0_mem_mem_par                             : out   std_logic;                     -- mem_par
+    emif_0_mem_mem_alert_n                         : in    std_logic                     := 'X'; -- mem_alert_n
+    emif_0_mem_mem_dqs                             : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dqs
+    emif_0_mem_mem_dqs_n                           : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dqs_n
+    emif_0_mem_mem_dq                              : inout std_logic_vector(63 downto 0) := (others => 'X'); -- mem_dq
+    emif_0_mem_mem_dbi_n                           : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dbi_n
+    emif_0_oct_oct_rzqin                           : in    std_logic                     := 'X';             -- oct_rzqin
+    emif_0_pll_extra_clk_0_pll_extra_clk_0         : out   std_logic;                                        -- pll_extra_clk_0
+    emif_0_pll_locked_pll_locked                   : out   std_logic;                                        -- pll_locked
+    emif_0_pll_ref_clk_clk                         : in    std_logic                     := 'X';             -- clk
+    emif_0_status_local_cal_success                : out   std_logic;                                        -- local_cal_success
+    emif_0_status_local_cal_fail                   : out   std_logic;                                        -- local_cal_fail
     emif_a10_hps_0_global_reset_reset_sink_reset_n : in    std_logic                     := 'X';             -- reset_n
-    emif_0_mem_mem_ck                      : out   std_logic                     := 'X';                     -- mem_ck
-    emif_0_mem_mem_ck_n                    : out   std_logic                     := 'X';                     -- mem_ck_n
-    emif_0_mem_mem_a                       : out   std_logic_vector(16 downto 0);                    -- mem_a
-    emif_0_mem_mem_act_n                   : out   std_logic                     := 'X';                     -- mem_act_n
-    emif_0_mem_mem_ba                      : out   std_logic_vector(1 downto 0);                     -- mem_ba
-    emif_0_mem_mem_bg                      : out   std_logic                     := 'X';                     -- mem_bg
-    emif_0_mem_mem_cke                     : out   std_logic                     := 'X';                     -- mem_cke
-    emif_0_mem_mem_cs_n                    : out   std_logic                     := 'X';                     -- mem_cs_n
-    emif_0_mem_mem_odt                     : out   std_logic                     := 'X';                     -- mem_odt
-    emif_0_mem_mem_reset_n                 : out   std_logic                     := 'X';                     -- mem_reset_n
-    emif_0_mem_mem_par                     : out   std_logic                     := 'X';                     -- mem_par
-    emif_0_mem_mem_alert_n                 : in    std_logic                     := 'X'; -- mem_alert_n
-    emif_0_mem_mem_dqs                     : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dqs
-    emif_0_mem_mem_dqs_n                   : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dqs_n
-    emif_0_mem_mem_dq                      : inout std_logic_vector(63 downto 0) := (others => 'X'); -- mem_dq
-    emif_0_mem_mem_dbi_n                   : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dbi_n
-    emif_0_oct_oct_rzqin                   : in    std_logic                     := 'X';             -- oct_rzqin
-    emif_0_pll_extra_clk_0_pll_extra_clk_0 : out   std_logic;                                        -- pll_extra_clk_0
-    emif_0_pll_locked_pll_locked           : out   std_logic;                                        -- pll_locked
-    emif_0_pll_ref_clk_clk                 : in    std_logic                     := 'X';             -- clk
-    emif_0_status_local_cal_success        : out   std_logic;                                        -- local_cal_success
-    emif_0_status_local_cal_fail           : out   std_logic;                                        -- local_cal_fail
-    hps_0_h2f_reset_reset_n                : out   std_logic;                                        -- reset_n
-    hps_io_hps_io_phery_emac1_TX_CLK       : out   std_logic;                                        -- hps_io_phery_emac1_TX_CLK
-    hps_io_hps_io_phery_emac1_TXD0         : out   std_logic;                                        -- hps_io_phery_emac1_TXD0
-    hps_io_hps_io_phery_emac1_TXD1         : out   std_logic;                                        -- hps_io_phery_emac1_TXD1
-    hps_io_hps_io_phery_emac1_TXD2         : out   std_logic;                                        -- hps_io_phery_emac1_TXD2
-    hps_io_hps_io_phery_emac1_TXD3         : out   std_logic;                                        -- hps_io_phery_emac1_TXD3
-    hps_io_hps_io_phery_emac1_RX_CTL       : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RX_CTL
-    hps_io_hps_io_phery_emac1_TX_CTL       : out   std_logic;                                        -- hps_io_phery_emac1_TX_CTL
-    hps_io_hps_io_phery_emac1_RX_CLK       : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RX_CLK
-    hps_io_hps_io_phery_emac1_RXD0         : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD0
-    hps_io_hps_io_phery_emac1_RXD1         : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD1
-    hps_io_hps_io_phery_emac1_RXD2         : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD2
-    hps_io_hps_io_phery_emac1_RXD3         : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD3
-    hps_io_hps_io_phery_emac1_MDIO         : inout std_logic                     := 'X';             -- hps_io_phery_emac1_MDIO
-    hps_io_hps_io_phery_emac1_MDC          : out   std_logic;                                        -- hps_io_phery_emac1_MDC
-    hps_io_hps_io_phery_sdmmc_CMD          : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_CMD
-    hps_io_hps_io_phery_sdmmc_D0           : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D0
-    hps_io_hps_io_phery_sdmmc_D1           : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D1
-    hps_io_hps_io_phery_sdmmc_D2           : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D2
-    hps_io_hps_io_phery_sdmmc_D3           : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D3
-    hps_io_hps_io_phery_sdmmc_CCLK         : out   std_logic;                                        -- hps_io_phery_sdmmc_CCLK
-    hps_io_hps_io_phery_usb1_DATA0         : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA0
-    hps_io_hps_io_phery_usb1_DATA1         : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA1
-    hps_io_hps_io_phery_usb1_DATA2         : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA2
-    hps_io_hps_io_phery_usb1_DATA3         : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA3
-    hps_io_hps_io_phery_usb1_DATA4         : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA4
-    hps_io_hps_io_phery_usb1_DATA5         : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA5
-    hps_io_hps_io_phery_usb1_DATA6         : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA6
-    hps_io_hps_io_phery_usb1_DATA7         : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA7
-    hps_io_hps_io_phery_usb1_CLK           : in    std_logic                     := 'X';             -- hps_io_phery_usb1_CLK
-    hps_io_hps_io_phery_usb1_STP           : out   std_logic;                                        -- hps_io_phery_usb1_STP
-    hps_io_hps_io_phery_usb1_DIR           : in    std_logic                     := 'X';             -- hps_io_phery_usb1_DIR
-    hps_io_hps_io_phery_usb1_NXT           : in    std_logic                     := 'X';             -- hps_io_phery_usb1_NXT
-    hps_io_hps_io_phery_uart1_RX           : in    std_logic                     := 'X';             -- hps_io_phery_uart1_RX
-    hps_io_hps_io_phery_uart1_TX           : out   std_logic;                                        -- hps_io_phery_uart1_TX
-    hps_io_hps_io_phery_i2c0_SDA           : inout std_logic                     := 'X';             -- hps_io_phery_i2c0_SDA
-    hps_io_hps_io_phery_i2c0_SCL           : inout std_logic                     := 'X';             -- hps_io_phery_i2c0_SCL
-    hps_io_hps_io_gpio_gpio2_io6           : inout std_logic                     := 'X';             -- hps_io_gpio_gpio2_io6
-    hps_io_hps_io_gpio_gpio2_io8           : inout std_logic                     := 'X';             -- hps_io_gpio_gpio2_io8
-    hps_io_hps_io_gpio_gpio0_io0           : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io0
-    hps_io_hps_io_gpio_gpio0_io1           : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io1
-    hps_io_hps_io_gpio_gpio0_io2           : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io2
-    hps_io_hps_io_gpio_gpio0_io3           : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io3
-    hps_io_hps_io_gpio_gpio0_io6           : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io6
-    hps_io_hps_io_gpio_gpio0_io7           : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io7
-    hps_io_hps_io_gpio_gpio0_io10          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io10
-    hps_io_hps_io_gpio_gpio0_io11          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io11
-    hps_io_hps_io_gpio_gpio1_io12          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io12
-    hps_io_hps_io_gpio_gpio1_io13          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io13
-    hps_io_hps_io_gpio_gpio1_io14          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io14
-    hps_io_hps_io_gpio_gpio1_io15          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io15
-    hps_io_hps_io_gpio_gpio1_io16          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io16
-    hps_io_hps_io_gpio_gpio1_io17          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io17
-    hps_io_hps_io_gpio_gpio1_io18          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io18
-    hps_io_hps_io_gpio_gpio1_io19          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io19
-    hps_io_hps_io_gpio_gpio1_io20          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io20
-    hps_io_hps_io_gpio_gpio1_io21          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io21
-    hps_io_hps_io_gpio_gpio1_io22          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io22
-    hps_io_hps_io_gpio_gpio1_io23          : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io23
-    hps_spim0_mosi_o                       : out   std_logic;                                        -- mosi_o
-    hps_spim0_miso_i                       : in    std_logic                     := 'X';             -- miso_i
-    hps_spim0_ss_in_n                      : in    std_logic                     := 'X';             -- ss_in_n
-    hps_spim0_mosi_oe                      : out   std_logic;                                        -- mosi_oe
-    hps_spim0_ss0_n_o                      : out   std_logic;                                        -- ss0_n_o
-    hps_spim0_ss1_n_o                      : out   std_logic;                                        -- ss1_n_o
-    hps_spim0_ss2_n_o                      : out   std_logic;                                        -- ss2_n_o
-    hps_spim0_ss3_n_o                      : out   std_logic;                                        -- ss3_n_o
-    hps_spim0_sclk_out_clk                 : out   std_logic;                                        -- clk
-    mclk_pll_locked_export                 : out   std_logic;                                        -- export
-    mem_mem_ck                             : out   std_logic                     := 'X';                     -- mem_ck
-    mem_mem_ck_n                           : out   std_logic                     := 'X';                     -- mem_ck_n
-    mem_mem_a                              : out   std_logic_vector(16 downto 0);                    -- mem_a
-    mem_mem_act_n                          : out   std_logic                     := 'X';                     -- mem_act_n
-    mem_mem_ba                             : out   std_logic_vector(1 downto 0);                     -- mem_ba
-    mem_mem_bg                             : out   std_logic                     := 'X';                     -- mem_bg
-    mem_mem_cke                            : out   std_logic                     := 'X';                     -- mem_cke
-    mem_mem_cs_n                           : out   std_logic                     := 'X';                     -- mem_cs_n
-    mem_mem_odt                            : out   std_logic                     := 'X';                     -- mem_odt
-    mem_mem_reset_n                        : out   std_logic                     := 'X';                     -- mem_reset_n
-    mem_mem_par                            : out   std_logic                     := 'X';                     -- mem_par
-    mem_mem_alert_n                        : in    std_logic                     := 'X'; -- mem_alert_n
-    mem_mem_dqs                            : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- mem_dqs
-    mem_mem_dqs_n                          : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- mem_dqs_n
-    mem_mem_dq                             : inout std_logic_vector(39 downto 0) := (others => 'X'); -- mem_dq
-    mem_mem_dbi_n                          : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- mem_dbi_n
-    oct_oct_rzqin                          : in    std_logic                     := 'X';             -- oct_rzqin
-    reset_reset_n                          : in    std_logic                     := 'X';             -- reset_n
-    som_config_pio_export                  : inout std_logic_vector(1 downto 0)  := (others => 'X'); -- export
-    axi_clk_bridge_in_clk_clk              : in    std_logic                     := 'X'              -- clk
+    hps_0_h2f_reset_reset_n                        : out   std_logic;                                        -- reset_n
+    hps_io_hps_io_phery_emac1_TX_CLK               : out   std_logic;                                        -- hps_io_phery_emac1_TX_CLK
+    hps_io_hps_io_phery_emac1_TXD0                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD0
+    hps_io_hps_io_phery_emac1_TXD1                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD1
+    hps_io_hps_io_phery_emac1_TXD2                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD2
+    hps_io_hps_io_phery_emac1_TXD3                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD3
+    hps_io_hps_io_phery_emac1_RX_CTL               : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RX_CTL
+    hps_io_hps_io_phery_emac1_TX_CTL               : out   std_logic;                                        -- hps_io_phery_emac1_TX_CTL
+    hps_io_hps_io_phery_emac1_RX_CLK               : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RX_CLK
+    hps_io_hps_io_phery_emac1_RXD0                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD0
+    hps_io_hps_io_phery_emac1_RXD1                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD1
+    hps_io_hps_io_phery_emac1_RXD2                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD2
+    hps_io_hps_io_phery_emac1_RXD3                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD3
+    hps_io_hps_io_phery_emac1_MDIO                 : inout std_logic                     := 'X';             -- hps_io_phery_emac1_MDIO
+    hps_io_hps_io_phery_emac1_MDC                  : out   std_logic;                                        -- hps_io_phery_emac1_MDC
+    hps_io_hps_io_phery_sdmmc_CMD                  : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_CMD
+    hps_io_hps_io_phery_sdmmc_D0                   : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D0
+    hps_io_hps_io_phery_sdmmc_D1                   : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D1
+    hps_io_hps_io_phery_sdmmc_D2                   : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D2
+    hps_io_hps_io_phery_sdmmc_D3                   : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D3
+    hps_io_hps_io_phery_sdmmc_CCLK                 : out   std_logic;                                        -- hps_io_phery_sdmmc_CCLK
+    hps_io_hps_io_phery_usb1_DATA0                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA0
+    hps_io_hps_io_phery_usb1_DATA1                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA1
+    hps_io_hps_io_phery_usb1_DATA2                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA2
+    hps_io_hps_io_phery_usb1_DATA3                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA3
+    hps_io_hps_io_phery_usb1_DATA4                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA4
+    hps_io_hps_io_phery_usb1_DATA5                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA5
+    hps_io_hps_io_phery_usb1_DATA6                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA6
+    hps_io_hps_io_phery_usb1_DATA7                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA7
+    hps_io_hps_io_phery_usb1_CLK                   : in    std_logic                     := 'X';             -- hps_io_phery_usb1_CLK
+    hps_io_hps_io_phery_usb1_STP                   : out   std_logic;                                        -- hps_io_phery_usb1_STP
+    hps_io_hps_io_phery_usb1_DIR                   : in    std_logic                     := 'X';             -- hps_io_phery_usb1_DIR
+    hps_io_hps_io_phery_usb1_NXT                   : in    std_logic                     := 'X';             -- hps_io_phery_usb1_NXT
+    hps_io_hps_io_phery_uart1_RX                   : in    std_logic                     := 'X';             -- hps_io_phery_uart1_RX
+    hps_io_hps_io_phery_uart1_TX                   : out   std_logic;                                        -- hps_io_phery_uart1_TX
+    hps_io_hps_io_phery_i2c0_SDA                   : inout std_logic                     := 'X';             -- hps_io_phery_i2c0_SDA
+    hps_io_hps_io_phery_i2c0_SCL                   : inout std_logic                     := 'X';             -- hps_io_phery_i2c0_SCL
+    hps_io_hps_io_gpio_gpio2_io6                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio2_io6
+    hps_io_hps_io_gpio_gpio2_io8                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio2_io8
+    hps_io_hps_io_gpio_gpio0_io0                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io0
+    hps_io_hps_io_gpio_gpio0_io1                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io1
+    --hps_io_hps_io_gpio_gpio0_io2                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io2
+    --hps_io_hps_io_gpio_gpio0_io3                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io3
+    hps_io_hps_io_gpio_gpio0_io6                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io6
+    --hps_io_hps_io_gpio_gpio0_io7                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io7
+    --hps_io_hps_io_gpio_gpio0_io10                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io10
+    hps_io_hps_io_gpio_gpio0_io11                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io11
+    hps_io_hps_io_gpio_gpio1_io12                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io12
+    hps_io_hps_io_gpio_gpio1_io13                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io13
+    hps_io_hps_io_gpio_gpio1_io14                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io14
+    hps_io_hps_io_gpio_gpio1_io15                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io15
+    hps_io_hps_io_gpio_gpio1_io16                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io16
+    hps_io_hps_io_gpio_gpio1_io17                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io17
+    hps_io_hps_io_gpio_gpio1_io18                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io18
+    hps_io_hps_io_gpio_gpio1_io19                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io19
+    hps_io_hps_io_gpio_gpio1_io20                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io20
+    hps_io_hps_io_gpio_gpio1_io21                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io21
+    hps_io_hps_io_gpio_gpio1_io22                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io22
+    hps_io_hps_io_gpio_gpio1_io23                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io23
+    hps_spim0_mosi_o                               : out   std_logic;                                        -- mosi_o
+    hps_spim0_miso_i                               : in    std_logic                     := 'X';             -- miso_i
+    hps_spim0_ss_in_n                              : in    std_logic                     := 'X';             -- ss_in_n
+    hps_spim0_mosi_oe                              : out   std_logic;                                        -- mosi_oe
+    hps_spim0_ss0_n_o                              : out   std_logic;                                        -- ss0_n_o
+    hps_spim0_ss1_n_o                              : out   std_logic;                                        -- ss1_n_o
+    hps_spim0_ss2_n_o                              : out   std_logic;                                        -- ss2_n_o
+    hps_spim0_ss3_n_o                              : out   std_logic;                                        -- ss3_n_o
+    hps_spim0_sclk_out_clk                         : out   std_logic;                                        -- clk
+    mclk_pll_locked_export                         : out   std_logic;                                        -- export
+    mem_mem_ck                                     : out   std_logic;                     -- mem_ck
+    mem_mem_ck_n                                   : out   std_logic;                     -- mem_ck_n
+    mem_mem_a                                      : out   std_logic_vector(16 downto 0);                    -- mem_a
+    mem_mem_act_n                                  : out   std_logic;                     -- mem_act_n
+    mem_mem_ba                                     : out   std_logic_vector(1 downto 0);                     -- mem_ba
+    mem_mem_bg                                     : out   std_logic;                     -- mem_bg
+    mem_mem_cke                                    : out   std_logic;                     -- mem_cke
+    mem_mem_cs_n                                   : out   std_logic;                     -- mem_cs_n
+    mem_mem_odt                                    : out   std_logic;                     -- mem_odt
+    mem_mem_reset_n                                : out   std_logic;                     -- mem_reset_n
+    mem_mem_par                                    : out   std_logic;                     -- mem_par
+    mem_mem_alert_n                                : in    std_logic                     := 'X'; -- mem_alert_n
+    mem_mem_dqs                                    : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- mem_dqs
+    mem_mem_dqs_n                                  : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- mem_dqs_n
+    mem_mem_dq                                     : inout std_logic_vector(39 downto 0) := (others => 'X'); -- mem_dq
+    mem_mem_dbi_n                                  : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- mem_dbi_n
+    oct_oct_rzqin                                  : in    std_logic                     := 'X';             -- oct_rzqin
+    reset_reset_n                                  : in    std_logic                     := 'X';             -- reset_n
+    som_config_pio_export                          : inout std_logic_vector(1 downto 0)  := (others => 'X'); -- export
+    mic_array0_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array0_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+    mic_array0_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+    mic_array0_control_busy_out                    : out   std_logic;                                        -- busy_out
+    mic_array1_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array1_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+    mic_array1_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+    mic_array2_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array2_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+    mic_array2_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+    mic_array2_control_busy_out                    : out   std_logic;                                        -- busy_out
+    mic_array3_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array3_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+    mic_array3_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+    mic_array3_control_busy_out                    : out   std_logic;                                        -- busy_out
+    mic_array4_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array4_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+    mic_array4_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+    mic_array4_control_busy_out                    : out   std_logic;                                        -- busy_out
+    mic_array5_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array5_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+    mic_array5_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+    mic_array5_control_busy_out                    : out   std_logic;                                        -- busy_out
+    mic_array6_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array6_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+    mic_array6_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+    mic_array6_physical_1_busy_out                 : out   std_logic;                                        -- busy_out
+    mic_array7_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array7_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+    mic_array7_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+    mic_array7_control_busy_out                    : out   std_logic;                                        -- busy_out
+    mic_array8_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array8_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+    mic_array8_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+    mic_array8_control_busy_out                    : out   std_logic;                                        -- busy_out
+    mic_array9_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array9_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+    mic_array9_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+    mic_array9_control_busy_out                    : out   std_logic;                                        -- busy_out
+    mic_array10_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array10_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+    mic_array10_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+    mic_array10_control_busy_out                   : out   std_logic;                                        -- busy_out
+    mic_array11_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array11_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+    mic_array11_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+    mic_array11_control_busy_out                   : out   std_logic;                                        -- busy_out
+    mic_array12_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array12_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+    mic_array12_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+    mic_array12_control_busy_out                   : out   std_logic;                                        -- busy_out
+    mic_array13_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array13_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+    mic_array13_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+    mic_array13_control_busy_out                   : out   std_logic;                                        -- busy_out
+    mic_array14_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array14_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+    mic_array14_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+    mic_array14_control_busy_out                   : out   std_logic;                                        -- busy_out
+    mic_array15_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+    mic_array15_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+    mic_array15_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+    mic_array15_control_busy_out                   : out   std_logic;                                        -- busy_out
+    mic_array1_control_busy_out                    : out   std_logic;                                        -- busy_out
+    ad5791_right_physical_ad5791_clr_n_out         : out   std_logic;                                        -- ad5791_clr_n_out
+    ad5791_right_physical_ad5791_ldac_n_out        : out   std_logic;                                        -- ad5791_ldac_n_out
+    ad5791_right_physical_ad5791_miso_out          : in    std_logic                     := 'X';             -- ad5791_miso_out
+    ad5791_right_physical_ad5791_mosi_in           : out   std_logic;                                        -- ad5791_mosi_in
+    ad5791_right_physical_ad5791_sclk_out          : out   std_logic;                                        -- ad5791_sclk_out
+    ad5791_right_physical_ad5791_sync_n_out        : out   std_logic;                                        -- ad5791_sync_n_out
+    ad4020_right_physical_cnv                      : out   std_logic;                                        -- cnv
+    ad4020_right_physical_miso                     : in    std_logic                     := 'X';             -- miso
+    ad4020_right_physical_mosi                     : out   std_logic;                                        -- mosi
+    ad4020_right_physical_sclk                     : out   std_logic;                                        -- sclk
+    ad4020_left_physical_cnv                       : out   std_logic;                                        -- cnv
+    ad4020_left_physical_miso                      : in    std_logic                     := 'X';             -- miso
+    ad4020_left_physical_mosi                      : out   std_logic;                                        -- mosi
+    ad4020_left_physical_sclk                      : out   std_logic                                         -- sclk
   );
 end component som_system;
 
+
+
   signal hps_fpga_reset_n : std_logic;
   signal reset_n : std_logic;
-  signal Gen_pass : std_logic;
-  signal Gen_fail : std_logic;
-  signal Gen_timeout : std_logic;
+  
+  signal count : integer := 0;
+  signal count1 : std_logic;
+  
+  signal reset1_n : std_logic;
+  signal RESETn : std_logic;
+  
+  signal user_clk : std_logic;
+  signal ddr_clk : std_logic;
+  
+  signal locked : std_logic;
+  signal addr_sel : std_logic;  
+  
+  signal ddr_reset_clk : std_logic;
+  signal temp_sens_clk : std_logic;
+  
   signal Cal_success : std_logic;
   signal Cal_success_1 : std_logic;  
   signal Cal_success_2 : std_logic;
   signal Cal_fail : std_logic;
   signal Cal_fail_1 : std_logic;
   signal Cal_fail_2 : std_logic;
-  signal ddr_pio : std_logic_vector(1 downto 0) := (others =>'0');
-  signal count : integer := 0;
-  signal count1 : std_logic;
-  signal reset1_n : std_logic;
-  signal RESETn : std_logic;
-  signal user_clk : std_logic;
-  signal locked : std_logic;
-  signal ddr_clk : std_logic;
-  signal addr_sel : std_logic;  
-  signal fmc_1C_rx_parallel_data_ch0 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1C_rx_parallel_data_ch1 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1C_rx_parallel_data_ch2 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1C_rx_parallel_data_ch3 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1C_tx_parallel_data_ch0 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1C_tx_parallel_data_ch1 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1C_tx_parallel_data_ch2 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1C_tx_parallel_data_ch3 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1C_rx_clkout_ch0_clk : std_logic;
-  signal fmc_1C_rx_clkout_ch1_clk : std_logic;
-  signal fmc_1C_rx_clkout_ch2_clk : std_logic;
-  signal fmc_1C_rx_clkout_ch3_clk : std_logic;
-  signal fmc_1C_tx_clkout_ch0_clk : std_logic;
-  signal fmc_1C_tx_clkout_ch1_clk : std_logic;
-  signal fmc_1C_tx_clkout_ch2_clk : std_logic;
-  signal fmc_1C_tx_clkout_ch3_clk : std_logic;
-  signal fmc_1D_rx_parallel_data_ch0 : std_logic_vector(31 downto 0) := (others => '0');  
-  signal fmc_1D_rx_parallel_data_ch1 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1D_rx_parallel_data_ch2 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1D_rx_parallel_data_ch3 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1D_tx_parallel_data_ch0 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1D_tx_parallel_data_ch1 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1D_tx_parallel_data_ch2 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1D_tx_parallel_data_ch3 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1D_rx_clkout_ch0_clk : std_logic;
-  signal fmc_1D_rx_clkout_ch1_clk : std_logic;
-  signal fmc_1D_rx_clkout_ch2_clk : std_logic;
-  signal fmc_1D_rx_clkout_ch3_clk : std_logic;
-  signal fmc_1D_tx_clkout_ch0_clk : std_logic;
-  signal fmc_1D_tx_clkout_ch1_clk : std_logic;
-  signal fmc_1D_tx_clkout_ch2_clk : std_logic;
-  signal fmc_1D_tx_clkout_ch3_clk : std_logic;
-  signal fmc_1E_rx_parallel_data_ch0 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1E_rx_parallel_data_ch1 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1E_rx_parallel_data_ch2 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1E_rx_parallel_data_ch3 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1E_tx_parallel_data_ch0 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1E_tx_parallel_data_ch1 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1E_tx_parallel_data_ch2 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1E_tx_parallel_data_ch3 : std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1E_rx_clkout_ch0_clk : std_logic;
-  signal fmc_1E_rx_clkout_ch1_clk : std_logic;
-  signal fmc_1E_rx_clkout_ch2_clk : std_logic;
-  signal fmc_1E_rx_clkout_ch3_clk : std_logic;
-  signal fmc_1E_tx_clkout_ch0_clk : std_logic;
-  signal fmc_1E_tx_clkout_ch1_clk : std_logic;
-  signal fmc_1E_tx_clkout_ch2_clk : std_logic;
-  signal fmc_1E_tx_clkout_ch3_clk : std_logic;
-  signal fmc_1F_rx_parallel_data_ch0: std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1F_rx_parallel_data_ch1: std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1F_tx_parallel_data_ch0: std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1F_tx_parallel_data_ch1: std_logic_vector(31 downto 0) := (others => '0');
-  signal fmc_1F_tx_clkout_ch0_clk : std_logic;
-  signal fmc_1F_tx_clkout_ch1_clk : std_logic;
-  signal fmc_1F_rx_clkout_ch0_clk : std_logic;
-  signal fmc_1F_rx_clkout_ch1_clk : std_logic;
-  signal sfp_1F_rx_parallel_data_ch0 : std_logic_vector(31 downto 0) := (others => '0');
-  signal sfp_1F_tx_parallel_data_ch0 : std_logic_vector(31 downto 0) := (others => '0');
-  signal sfp_1F_tx_clkout_ch0_clk : std_logic;   
-  signal sfp_1F_rx_clkout_ch0_clk : std_logic;     
   
-  signal corectl : std_logic;
-  signal eoc_d : std_logic;  
-  signal eoc : std_logic;  
-  signal tempout: std_logic_vector(9 downto 0) := (others => '0');
-  signal en_cntr: integer := 0;
-  signal temp_out_hps: std_logic_vector(9 downto 0) := (others => '0');
-  signal ddr_reset_clk : std_logic;
-  signal temp_sens_clk : std_logic;
-  signal activity_led_o : std_logic;
-  
-  signal coreclk_fanout_reset_n : std_logic;
-  signal pcie_sim_ltssmstate: std_logic_vector(4 downto 0) := (others => '0'); 
-  signal pcie_eidleinfersel0: std_logic_vector(2 downto 0) := (others => '0');
-  signal pcie_powerdown0 : std_logic_vector(1 downto 0) := (others => '0');     
-  signal pcie_rxpolarity0 : std_logic;
-  signal pcie_txcompl0 : std_logic;
-  signal pcie_npor_npor : std_logic;  
-
-  signal reset_signal : std_logic;
-  -- signal for connecting example_SM and VS WYISWYG
-  signal corectl_signal_vs : std_logic;
-  signal reconfig_signal_vs : std_logic;
-  signal confin_signal_vs : std_logic;
-  signal eos_signal_vs : std_logic;
-  signal eos_signal_vs_d : std_logic;  
-  signal eoc_signal_vs : std_logic;
-  signal eoc_signal_vs_d : std_logic;
-  signal dataout_signal_vs  : std_logic_vector(11 downto 0) := (others => '0');-- synthesis keep 
-  signal dataout_signal_vs1 : std_logic_vector(11 downto 0) := (others => '0');
-  signal vcc0: std_logic_vector(5 downto 0) := (others => '0');
-  signal vcc1: std_logic_vector(5 downto 0) := (others => '0');
-  signal vcc2: std_logic_vector(5 downto 0) := (others => '0');
-  signal vcc3: std_logic_vector(5 downto 0) := (others => '0');
-  signal vcc4: std_logic_vector(5 downto 0) := (others => '0');
-  signal vcc5: std_logic_vector(5 downto 0) := (others => '0');
-  signal vcc6: std_logic_vector(5 downto 0) := (others => '0');
-  signal vcc7: std_logic_vector(5 downto 0) := (others => '0');
-  signal chsel_signal_vs : std_logic_vector(3 downto 0) := (others => '0');
-  signal conv : std_logic_vector(2 downto 0) := (others => '0');           
-  signal reset_signal_vs : std_logic;         
-  signal enable_cntr : integer := 0;   
-  signal vs_reset : std_logic;
-  
+    
   signal spi_mosi : std_logic;
   signal spi_miso : std_logic;
   signal spi_clk  : std_logic;
-  
+     
   begin 
 -- *****************************************************************************
 -- *                            Combinational logic                             *
@@ -584,11 +494,7 @@ end component som_system;
 
   reset_n             <= hps_fpga_reset_n and sys_reset_n_i;
   reset1_n            <= sys_reset_n_i and RESETn;
-  ddr_pio             <= Cal_success_2 & Cal_fail_2;
   RESETn              <= count1;
-  reset_signal        <= not vs_reset or not locked;
-  pcie_npor_npor      <= hps_fpga_reset_n and pcie_npor_pin_perst and reset1_n;
-  dataout_signal_vs1  <= dataout_signal_vs; 
   
 -- *****************************************************************************
 -- *                              Sequential logic                             *
@@ -635,9 +541,9 @@ end component som_system;
     rst       => not sys_reset_n_i,                                         
     refclk    => fpga_clk_i,                                             
     locked    => locked,  
-    outclk_0  => user_clk, -- 100 Mhz O/P
-    outclk_1  => ddr_reset_clk,                                           -- 266.66 Mhz O/P
-    outclk_2  => temp_sens_clk   -- 20 Mhz O/P 
+    outclk_0  => user_clk,              -- 100 Mhz O/P
+    outclk_1  => ddr_reset_clk,         -- 266.66 Mhz O/P
+    outclk_2  => temp_sens_clk          -- 20 Mhz O/P 
   );
   
    
@@ -709,15 +615,16 @@ end component som_system;
     hps_io_hps_io_phery_sdmmc_CCLK                 => hps_sdio_CLK,
     hps_io_hps_io_phery_i2c0_SDA                   => hps_i2c0_SDA,
     hps_io_hps_io_phery_i2c0_SCL                   => hps_i2c0_SCL,                                         
+    
     hps_io_hps_io_gpio_gpio2_io6                   => hps_gpio2_GPIO6,                                         
     hps_io_hps_io_gpio_gpio2_io8                   => hps_gpio2_GPIO8,                                            
     hps_io_hps_io_gpio_gpio0_io0                   => hps_gpio_GPIO0,                                         
     hps_io_hps_io_gpio_gpio0_io1                   => hps_gpio_GPIO1,
-    hps_io_hps_io_gpio_gpio0_io2                   => hps_gpio_GPIO2,
-    hps_io_hps_io_gpio_gpio0_io3                   => hps_gpio_GPIO3,
+    --hps_io_hps_io_gpio_gpio0_io2                   => hps_gpio_GPIO2,
+    --hps_io_hps_io_gpio_gpio0_io3                   => hps_gpio_GPIO3,
     hps_io_hps_io_gpio_gpio0_io6                   => hps_gpio_GPIO6,                             
-    hps_io_hps_io_gpio_gpio0_io7                   => hps_gpio_GPIO7,                             
-    hps_io_hps_io_gpio_gpio0_io10                  => hps_gpio_GPIO10,
+    --hps_io_hps_io_gpio_gpio0_io7                   => hps_gpio_GPIO7,                             
+    --hps_io_hps_io_gpio_gpio0_io10                  => hps_gpio_GPIO10,
     hps_io_hps_io_gpio_gpio0_io11                  => hps_gpio_GPIO11,
     hps_io_hps_io_gpio_gpio1_io12                  => hps_gpio_GPIO12,
     hps_io_hps_io_gpio_gpio1_io13                  => hps_gpio_GPIO13,
@@ -733,15 +640,15 @@ end component som_system;
     hps_io_hps_io_gpio_gpio1_io23                  => hps_gpio_GPIO23,                                         
 
     -- FPGA SPI Signals
-    hps_spim0_mosi_o                               => spi_mosi,                               --                              hps_spim0.mosi_o
-    hps_spim0_miso_i                               => spi_miso,                               --                                       .miso_i
-    hps_spim0_ss_in_n                              => '1',                              --                                       .ss_in_n
-    hps_spim0_mosi_oe                              => open,                              --                                       .mosi_oe
-    hps_spim0_ss0_n_o                              => fmc1_inout_pio3(15), -- AD1939                              --                                       .ss0_n_o
-    hps_spim0_ss1_n_o                              => fmc1_inout_pio4(16), -- PGA 2505                             --                                       .ss1_n_o
-    hps_spim0_ss2_n_o                              => open,                              --                                       .ss2_n_o
-    hps_spim0_ss3_n_o                              => open,                              --                                       .ss3_n_o
-    hps_spim0_sclk_out_clk                         => spi_clk,                         --                     hps_spim0_sclk_out.clk
+    hps_spim0_mosi_o                               => spi_mosi,            
+    hps_spim0_miso_i                               => spi_miso,            
+    hps_spim0_ss_in_n                              => '1',                 
+    hps_spim0_mosi_oe                              => open,                
+    hps_spim0_ss0_n_o                              => AD1939_CS_N, 
+    hps_spim0_ss1_n_o                              => PGA2505_CS_N, 
+    hps_spim0_ss2_n_o                              => open,                
+    hps_spim0_ss3_n_o                              => open,                
+    hps_spim0_sclk_out_clk                         => spi_clk,             
             
             
     -- FPGA DDR Signals
@@ -765,42 +672,171 @@ end component som_system;
     reset_reset_n                                  => reset1_n,                                         
     
     -- DDR Clock Mappings
-    emif_0_pll_extra_clk_0_pll_extra_clk_0 => ddr_clk,                      
-    axi_clk_bridge_in_clk_clk              => ddr_clk,                                             
+    emif_0_pll_extra_clk_0_pll_extra_clk_0        => ddr_clk,                      
+    axi_clk_bridge_in_clk_clk                     => ddr_clk,                                             
 
   -- AD1939 Connections
-  ad1939_abclk_clk                          =>  fmc1_inout_pio3(2),   -- Pin 177 connector 2 (FMC1 H5)
-  ad1939_alrclk_clk                         =>  fmc1_inout_pio3(12),  -- Pin 146 connector 2 (FMC G22)
-  ad1939_mclk_clk                           =>  AD1939_MCLK,          -- Pin 171 connector 2 (FMC G3)
-  ad1939_physical_ad1939_adc_asdata1        =>  fmc1_inout_pio4(11),  -- Pin 136 connector 2 (FMC H19)
-  ad1939_physical_ad1939_adc_asdata2        =>  fmc1_inout_pio4(12),  -- Pin 138 connector 2 (FMC H20)
-  ad1939_physical_ad1939_dac_dbclk          =>  fmc1_inout_pio3(1),   -- Pin 175 connector 2 (FMC H4)
-  ad1939_physical_ad1939_dac_dlrclk         =>  fmc1_inout_pio3(9),   -- Pin 164 connector 2 (FMC G18)
-  ad1939_physical_ad1939_dac_dsdata1        =>  fmc1_inout_pio4(8),   -- Pin 153 connector 2 (FMC H14)
-  ad1939_physical_ad1939_dac_dsdata2        =>  fmc1_inout_pio4(9),   -- Pin 163 connector 2 (FMC H16)
-  ad1939_physical_ad1939_dac_dsdata3        =>  fmc1_inout_pio3(7),   -- Pin 148 connector 2 (FMC G15)
-  ad1939_physical_ad1939_dac_dsdata4        =>  fmc1_inout_pio3(8),   -- Pin 150 connector 2 (FMC G16) 
+  ad1939_abclk_clk                                =>  AD1939_ABCLK,   
+  ad1939_alrclk_clk                               =>  AD1939_ALRCLK,  
+  ad1939_mclk_clk                                 =>  AD1939_MCLK,    
+  ad1939_physical_ad1939_adc_asdata1              =>  AD1939_LINE_IN_DSDATA, 
+  ad1939_physical_ad1939_adc_asdata2              =>  AD1939_MIC_IN_DSDATA, 
+  ad1939_physical_ad1939_dac_dbclk                =>  AD1939_DBCLK, 
+  ad1939_physical_ad1939_dac_dlrclk               =>  AD1939_DLRCLK, 
+  ad1939_physical_ad1939_dac_dsdata1              =>  AD1939_LINE_OUT_DSDATA, 
+  ad1939_physical_ad1939_dac_dsdata2              =>  AD1939_HDPHN_OUT_DSDATA, 
+  ad1939_physical_ad1939_dac_dsdata3              =>  open,   
+  ad1939_physical_ad1939_dac_dsdata4              =>  open,   
 
-  mclk_pll_locked_export                    => open
-            
-    
-  );              
-
--- TODO: 
---  Add SPI to Qsys system
-
-fmc1_inout_pio4(7) <= '1';   -- AD1939 reset_n      Pin 151  connector 2 (FMC H13)
-fmc1_inout_pio4(17) <= '1'; -- TPA630A2 shutdown    Pin 38   connector 1 (FMC H28)
-
--- fmc1_inout_pio4(16) -- Pre amp CS                Pin 184  connector 2 (FMC H26)
--- fmc1_inout_pio3(15) -- Codec CS                  Pin 44   connector 1 (FMC G27)
-
-spi_miso            <= fmc1_inout_pio3(16); -- FPGA CIN                  Pin 42   connector 1 (FMC G28)
-fmc1_inout_pio4(14) <= spi_mosi;            -- FPGA COUT                 Pin 154  connector 2 (FMC H23)
-fmc1_inout_pio3(18) <= spi_clk;             -- FPGA CCLK                 Pin 34   connector 1 (FMC G31)
+  mclk_pll_locked_export                          => open,
+  
+  --AD4020 connections  
+  ad4020_left_physical_cnv                        => HSA_IN_L_CNV,    
+  ad4020_left_physical_miso                       => HSA_IN_L_SDO,    
+  ad4020_left_physical_mosi                       => HSA_IN_L_SDI,    
+  ad4020_left_physical_sclk                       => HSA_IN_CLK,      
+          
+  ad4020_right_physical_cnv                       =>  HSA_IN_R_CNV,   
+  ad4020_right_physical_miso                      =>  HSA_IN_R_SDO,   
+  ad4020_right_physical_mosi                      =>  HSA_IN_R_SDI,   
+  ad4020_right_physical_sclk                      =>  open,     
 
   
+  -- AD5791 connections
+  ad5791_left_physical_ad5791_clr_n_out          => HSA_OUT_L_CLR_N,  
+  ad5791_left_physical_ad5791_ldac_n_out         => HSA_OUT_L_LDAC_N, 
+  ad5791_left_physical_ad5791_miso_out           => HSA_OUT_L_SDO,    
+  ad5791_left_physical_ad5791_mosi_in            => HSA_OUT_L_SDI,    
+  ad5791_left_physical_ad5791_sclk_out           => HSA_OUT_CLK,      
+  ad5791_left_physical_ad5791_sync_n_out         => HSA_OUT_L_SYNC_N, 
+ 
+  ad5791_right_physical_ad5791_clr_n_out          => HSA_OUT_R_CLR_N, 
+  ad5791_right_physical_ad5791_ldac_n_out         => HSA_OUT_R_LDAC_N,
+  ad5791_right_physical_ad5791_miso_out           => HSA_OUT_R_SDO,   
+  ad5791_right_physical_ad5791_mosi_in            => HSA_OUT_R_SDI,   
+  ad5791_right_physical_ad5791_sclk_out           => open,     
+  ad5791_right_physical_ad5791_sync_n_out         => HSA_OUT_R_SYNC_N,
+   
+  
+  -- Microphone array connections
+  mic_array0_physical_serial_data_in             => AA_SDO(0), 
+  mic_array0_physical_serial_data_out            => AA_SDI(0), 
+  mic_array0_physical_serial_clk_out             => AA_MCLK(0),
+  mic_array0_control_busy_out                    => open,      
+  mic_array1_physical_serial_data_in             => AA_SDO(1), 
+  mic_array1_physical_serial_data_out            => AA_SDI(1), 
+  mic_array1_physical_serial_clk_out             => open,
+  mic_array1_control_busy_out                    => open,      
+  mic_array2_physical_serial_data_in             => AA_SDO(2), 
+  mic_array2_physical_serial_data_out            => AA_SDI(2), 
+  mic_array2_physical_serial_clk_out             => open,
+  mic_array2_control_busy_out                    => open,      
+  mic_array3_physical_serial_data_in             => AA_SDO(3), 
+  mic_array3_physical_serial_data_out            => AA_SDI(3), 
+  mic_array3_physical_serial_clk_out             => open,
+  mic_array3_control_busy_out                    => open,      
+  mic_array4_physical_serial_data_in             => AA_SDO(4), 
+  mic_array4_physical_serial_data_out            => AA_SDI(4), 
+  mic_array4_physical_serial_clk_out             => AA_MCLK(1),
+  mic_array4_control_busy_out                    => open,      
+  mic_array5_physical_serial_data_in             => AA_SDO(5), 
+  mic_array5_physical_serial_data_out            => AA_SDI(5), 
+  mic_array5_physical_serial_clk_out             => open,
+  mic_array5_control_busy_out                    => open,      
+  mic_array6_physical_serial_data_in             => AA_SDO(6), 
+  mic_array6_physical_serial_data_out            => AA_SDI(6), 
+  mic_array6_physical_serial_clk_out             => open,
+  mic_array6_physical_1_busy_out                 => open,      
+  mic_array7_physical_serial_data_in             => AA_SDO(7), 
+  mic_array7_physical_serial_data_out            => AA_SDI(7), 
+  mic_array7_physical_serial_clk_out             => open,
+  mic_array7_control_busy_out                    => open,      
+  mic_array8_physical_serial_data_in             => AA_SDO(8), 
+  mic_array8_physical_serial_data_out            => AA_SDI(8), 
+  mic_array8_physical_serial_clk_out             => AA_MCLK(2),
+  mic_array8_control_busy_out                    => open,      
+  mic_array9_physical_serial_data_in             => AA_SDO(9), 
+  mic_array9_physical_serial_data_out            => AA_SDI(9), 
+  mic_array9_physical_serial_clk_out             => open,
+  mic_array9_control_busy_out                    => open,      
+  mic_array10_physical_serial_data_in            => AA_SDO(10),
+  mic_array10_physical_serial_data_out           => AA_SDI(10),
+  mic_array10_physical_serial_clk_out            => open,
+  mic_array10_control_busy_out                   => open,      
+  mic_array11_physical_serial_data_in            => AA_SDO(11),
+  mic_array11_physical_serial_data_out           => AA_SDI(11),
+  mic_array11_physical_serial_clk_out            => open,
+  mic_array11_control_busy_out                   => open,      
+  mic_array12_physical_serial_data_in            => AA_SDO(12),
+  mic_array12_physical_serial_data_out           => AA_SDI(12),
+  mic_array12_physical_serial_clk_out            => AA_MCLK(3),
+  mic_array12_control_busy_out                   => open,      
+  mic_array13_physical_serial_data_in            => AA_SDO(13),
+  mic_array13_physical_serial_data_out           => AA_SDI(13),
+  mic_array13_physical_serial_clk_out            => open,
+  mic_array13_control_busy_out                   => open,      
+  mic_array14_physical_serial_data_in            => AA_SDO(14),
+  mic_array14_physical_serial_data_out           => AA_SDI(14),
+  mic_array14_physical_serial_clk_out            => open,
+  mic_array14_control_busy_out                   => open,      
+  mic_array15_physical_serial_data_in            => AA_SDO(15),
+  mic_array15_physical_serial_data_out           => AA_SDI(15),
+  mic_array15_physical_serial_clk_out            => open,
+  mic_array15_control_busy_out                   => open       
+    
+);           
+
+-- Enable used the components
+HSA_IN_EN_N <= '0';
+AA_LVDS_EN_N <= (others => '0');
+
+AD1939_RST_CODEC_N <= '1';
+AD4020_EN <= '1';
+AD5791_EN <= '1';
+
+-- Disable unused components
+-- MSATA_PWR_EN <= '0';
 
 
 
 end architecture;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

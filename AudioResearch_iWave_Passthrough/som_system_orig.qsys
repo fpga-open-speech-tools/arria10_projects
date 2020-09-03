@@ -42,6 +42,11 @@
          value = "11";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
    }
    element clk_1
    {
@@ -91,7 +96,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -104,7 +109,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -114,6 +119,11 @@
       {
          value = "10";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
       }
    }
    element mm_clock_crossing_bridge_0.s0
@@ -184,6 +194,30 @@
          type = "String";
       }
    }
+   element som_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element som_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
+   element som_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
 }
 ]]></parameter>
  <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
@@ -230,6 +264,11 @@
    internal="mux_ddr_0.addr_sel_pio"
    type="conduit"
    dir="end" />
+ <interface name="arria10_hps_0_i2c0_clk" internal="arria10_hps_0.i2c0_clk" />
+ <interface name="arria10_hps_0_spim1" internal="arria10_hps_0.spim1" />
+ <interface
+   name="arria10_hps_0_spim1_sclk_out"
+   internal="arria10_hps_0.spim1_sclk_out" />
  <interface
    name="axi_clk_bridge_in_clk"
    internal="axi_clk_bridge.in_clk"
@@ -278,11 +317,23 @@
    internal="arria10_hps_0.h2f_cold_reset"
    type="reset"
    dir="start" />
+ <interface name="hps_i2c0" internal="arria10_hps_0.i2c0" />
+ <interface name="hps_i2c0_scl_in" internal="arria10_hps_0.i2c0_scl_in" />
  <interface
    name="hps_io"
    internal="arria10_hps_0.hps_io"
    type="conduit"
    dir="end" />
+ <interface
+   name="hps_spim0"
+   internal="arria10_hps_0.spim0"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="hps_spim0_sclk_out"
+   internal="arria10_hps_0.spim0_sclk_out"
+   type="clock"
+   dir="start" />
  <interface
    name="mclk_pll_locked"
    internal="pll_using_AD1939_MCLK.locked"
@@ -497,8 +548,8 @@
   <parameter name="SDMMC_PinMuxing" value="IO" />
   <parameter name="SDMMC_REF_CLK" value="200" />
   <parameter name="SECURITY_MODULE_Enable" value="false" />
-  <parameter name="SPIM0_Mode" value="N/A" />
-  <parameter name="SPIM0_PinMuxing" value="Unused" />
+  <parameter name="SPIM0_Mode">Single_slave_selects</parameter>
+  <parameter name="SPIM0_PinMuxing" value="FPGA" />
   <parameter name="SPIM1_Mode" value="N/A" />
   <parameter name="SPIM1_PinMuxing" value="Unused" />
   <parameter name="SPIS0_Mode" value="N/A" />

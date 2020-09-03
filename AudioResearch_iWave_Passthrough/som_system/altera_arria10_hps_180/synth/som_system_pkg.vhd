@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 package som_system_pkg is
-	component som_system_altera_arria10_hps_180_tspx5ca is
+	component som_system_altera_arria10_hps_180_6ptam2q is
 		generic (
 			F2S_Width : integer := 5;
 			S2F_Width : integer := 5
@@ -227,11 +227,7 @@ package som_system_pkg is
 			hps_io_gpio_gpio2_io8     : inout std_logic                       := 'X';             -- hps_io_gpio_gpio2_io8
 			hps_io_gpio_gpio0_io0     : inout std_logic                       := 'X';             -- hps_io_gpio_gpio0_io0
 			hps_io_gpio_gpio0_io1     : inout std_logic                       := 'X';             -- hps_io_gpio_gpio0_io1
-			hps_io_gpio_gpio0_io2     : inout std_logic                       := 'X';             -- hps_io_gpio_gpio0_io2
-			hps_io_gpio_gpio0_io3     : inout std_logic                       := 'X';             -- hps_io_gpio_gpio0_io3
 			hps_io_gpio_gpio0_io6     : inout std_logic                       := 'X';             -- hps_io_gpio_gpio0_io6
-			hps_io_gpio_gpio0_io7     : inout std_logic                       := 'X';             -- hps_io_gpio_gpio0_io7
-			hps_io_gpio_gpio0_io10    : inout std_logic                       := 'X';             -- hps_io_gpio_gpio0_io10
 			hps_io_gpio_gpio0_io11    : inout std_logic                       := 'X';             -- hps_io_gpio_gpio0_io11
 			hps_io_gpio_gpio1_io12    : inout std_logic                       := 'X';             -- hps_io_gpio_gpio1_io12
 			hps_io_gpio_gpio1_io13    : inout std_logic                       := 'X';             -- hps_io_gpio_gpio1_io13
@@ -246,6 +242,6 @@ package som_system_pkg is
 			hps_io_gpio_gpio1_io22    : inout std_logic                       := 'X';             -- hps_io_gpio_gpio1_io22
 			hps_io_gpio_gpio1_io23    : inout std_logic                       := 'X'              -- hps_io_gpio_gpio1_io23
 		);
-	end component som_system_altera_arria10_hps_180_tspx5ca;
+	end component som_system_altera_arria10_hps_180_6ptam2q;
 
 end som_system_pkg;

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="FPGA_memory_mem1_ck" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="FPGA_memory_mem1_ck_n" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="FPGA_memory_mem1_dqs[7]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="FPGA_memory_mem1_dqs[6]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="FPGA_memory_mem1_dqs[5]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="FPGA_memory_mem1_dqs[4]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="FPGA_memory_mem1_dqs[3]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="FPGA_memory_mem1_dqs[2]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="FPGA_memory_mem1_dqs[1]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="FPGA_memory_mem1_dqs[0]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="hps_memory_mem_ck" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="hps_memory_mem_ck_n" direction="Output" source="Hierarchy Database" >
+		</pin>
+		<pin name="hps_memory_mem_dqs[4]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="hps_memory_mem_dqs[3]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="hps_memory_mem_dqs[2]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="hps_memory_mem_dqs[1]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+		<pin name="hps_memory_mem_dqs[0]" direction="Bidir" source="Hierarchy Database" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

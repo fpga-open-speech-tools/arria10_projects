@@ -9,6 +9,279 @@
    categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
+   element FE_AD4020_Left
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_AD4020_Right
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_AD5791_v1_Left
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_AD5791_v1_Right
+   {
+      datum _sortIndex
+      {
+         value = "16";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_AD7768_v1_0
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_0
+   {
+      datum _sortIndex
+      {
+         value = "17";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_1
+   {
+      datum _sortIndex
+      {
+         value = "18";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_10
+   {
+      datum _sortIndex
+      {
+         value = "27";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_11
+   {
+      datum _sortIndex
+      {
+         value = "28";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_12
+   {
+      datum _sortIndex
+      {
+         value = "29";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_13
+   {
+      datum _sortIndex
+      {
+         value = "30";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_14
+   {
+      datum _sortIndex
+      {
+         value = "31";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_15
+   {
+      datum _sortIndex
+      {
+         value = "32";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_2
+   {
+      datum _sortIndex
+      {
+         value = "19";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_3
+   {
+      datum _sortIndex
+      {
+         value = "20";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_4
+   {
+      datum _sortIndex
+      {
+         value = "21";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_5
+   {
+      datum _sortIndex
+      {
+         value = "22";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_6
+   {
+      datum _sortIndex
+      {
+         value = "23";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_7
+   {
+      datum _sortIndex
+      {
+         value = "24";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_8
+   {
+      datum _sortIndex
+      {
+         value = "25";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
+   element FE_FPGA_Microphone_Encoder_Decoder_9
+   {
+      datum _sortIndex
+      {
+         value = "26";
+         type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
+   }
    element FE_Qsys_AD1939_Audio_Research_v1_0
    {
       datum _sortIndex
@@ -31,7 +304,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -41,6 +314,11 @@
       {
          value = "11";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
       }
    }
    element clk_1
@@ -91,7 +369,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -104,7 +382,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -114,6 +392,11 @@
       {
          value = "10";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
       }
    }
    element mm_clock_crossing_bridge_0.s0
@@ -208,6 +491,14 @@
          type = "String";
       }
    }
+   element som_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
 }
 ]]></parameter>
  <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
@@ -247,6 +538,31 @@
  <interface
    name="ad1939_physical"
    internal="FE_Qsys_AD1939_Audio_Research_v1_0.connect_to_AD1939"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="ad4020_left_physical"
+   internal="FE_AD4020_Left.connect_to_ad4020"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="ad4020_right_physical"
+   internal="FE_AD4020_Right.connect_to_ad4020"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="ad5791_left_physical"
+   internal="FE_AD5791_v1_Left.connect_to_AD5791"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="ad5791_right_physical"
+   internal="FE_AD5791_v1_Right.connect_to_AD5791"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="ad7768_physical"
+   internal="FE_AD7768_v1_0.AD7768_physical"
    type="conduit"
    dir="end" />
  <interface
@@ -324,6 +640,8 @@
    internal="arria10_hps_0.spim0_sclk_out"
    type="clock"
    dir="start" />
+ <interface name="hsa_in_clk" internal="pll_using_AD1939_MCLK.outclk6" />
+ <interface name="hsa_out_clk" internal="pll_using_AD1939_MCLK.outclk5" />
  <interface
    name="mclk_pll_locked"
    internal="pll_using_AD1939_MCLK.locked"
@@ -335,16 +653,406 @@
    type="conduit"
    dir="end" />
  <interface
+   name="mic_array0_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_0.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array0_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_0.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array10_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_10.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array10_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_10.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array11_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_11.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array11_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_11.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array12_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_12.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array12_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_12.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array13_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_13.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array13_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_13.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array14_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_14.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array14_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_14.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array15_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_15.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array15_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_15.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array1_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_1.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array1_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_1.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array2_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_2.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array2_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_2.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array3_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_3.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array3_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_3.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array4_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_4.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array4_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_4.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array5_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_5.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array5_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_5.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array6_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_6.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array6_physical_1"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_6.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array7_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_7.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array7_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_7.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array8_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_8.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array8_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_8.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array9_control"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_9.control_conduit"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="mic_array9_physical"
+   internal="FE_FPGA_Microphone_Encoder_Decoder_9.RJ45_Interface"
+   type="conduit"
+   dir="end" />
+ <interface
    name="oct"
    internal="emif_a10_hps_0.oct_conduit_end"
    type="conduit"
    dir="end" />
+ <interface
+   name="pll_using_ad1939_mclk_outclk7"
+   internal="pll_using_AD1939_MCLK.outclk7" />
  <interface name="reset" internal="clk_1.clk_in_reset" type="reset" dir="end" />
  <interface
    name="som_config_pio"
    internal="som_config.external_connection"
    type="conduit"
    dir="end" />
+ <module name="FE_AD4020_Left" kind="FE_AD4020" version="1.0" enabled="1">
+  <parameter name="input_clk_freq" value="71000000" />
+ </module>
+ <module name="FE_AD4020_Right" kind="FE_AD4020" version="1.0" enabled="1">
+  <parameter name="input_clk_freq" value="71000000" />
+ </module>
+ <module
+   name="FE_AD5791_v1_Left"
+   kind="FE_AD5791_v1"
+   version="1.0"
+   enabled="1" />
+ <module
+   name="FE_AD5791_v1_Right"
+   kind="FE_AD5791_v1"
+   version="1.0"
+   enabled="1" />
+ <module name="FE_AD7768_v1_0" kind="FE_AD7768_v1" version="1.0" enabled="1">
+  <parameter name="n_channels" value="4" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_0"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_1"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_10"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_11"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_12"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_13"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_14"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_15"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_2"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_3"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_4"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_5"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_6"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_7"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_8"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
+ <module
+   name="FE_FPGA_Microphone_Encoder_Decoder_9"
+   kind="FE_FPGA_Microphone_Encoder_Decoder"
+   version="1.0"
+   enabled="1">
+  <parameter name="avalon_data_width" value="32" />
+  <parameter name="bme_data_width" value="96" />
+  <parameter name="cfg_data_width" value="16" />
+  <parameter name="ch_width" value="4" />
+  <parameter name="mic_data_width" value="24" />
+  <parameter name="n_mics" value="16" />
+  <parameter name="rgb_data_width" value="16" />
+ </module>
  <module
    name="FE_Qsys_AD1939_Audio_Research_v1_0"
    kind="FE_Qsys_AD1939_Audio_Research_v1"
@@ -468,7 +1176,7 @@
   <parameter name="H2F_USER1_CLK_FREQ" value="400" />
   <parameter name="HMC_PLL_REF_CLK" value="800" />
   <parameter name="HPS_DIV_GPIO_FREQ" value="125" />
-  <parameter name="HPS_IO_Enable">SDMMC:D0,SDMMC:CMD,SDMMC:CCLK,SDMMC:D1,SDMMC:D2,SDMMC:D3,GPIO,NONE,GPIO,NONE,NONE,NONE,UART1:TX,UART1:RX,GPIO,GPIO,GPIO,GPIO,I2C0:SDA,I2C0:SCL,GPIO,GPIO,MDIO1:MDIO,MDIO1:MDC,GPIO,GPIO,USB1:CLK,USB1:STP,USB1:DIR,USB1:DATA0,USB1:DATA1,USB1:NXT,USB1:DATA2,USB1:DATA3,USB1:DATA4,USB1:DATA5,USB1:DATA6,USB1:DATA7,EMAC1:TX_CLK,EMAC1:TX_CTL,EMAC1:RX_CLK,EMAC1:RX_CTL,EMAC1:TXD0,EMAC1:TXD1,EMAC1:RXD0,EMAC1:RXD1,EMAC1:TXD2,EMAC1:TXD3,EMAC1:RXD2,EMAC1:RXD3,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO</parameter>
+  <parameter name="HPS_IO_Enable">SDMMC:D0,SDMMC:CMD,SDMMC:CCLK,SDMMC:D1,SDMMC:D2,SDMMC:D3,GPIO,NONE,GPIO,NONE,NONE,NONE,UART1:TX,UART1:RX,GPIO,GPIO,NONE,NONE,I2C0:SDA,I2C0:SCL,GPIO,NONE,MDIO1:MDIO,MDIO1:MDC,NONE,GPIO,USB1:CLK,USB1:STP,USB1:DIR,USB1:DATA0,USB1:DATA1,USB1:NXT,USB1:DATA2,USB1:DATA3,USB1:DATA4,USB1:DATA5,USB1:DATA6,USB1:DATA7,EMAC1:TX_CLK,EMAC1:TX_CTL,EMAC1:RX_CLK,EMAC1:RX_CTL,EMAC1:TXD0,EMAC1:TXD1,EMAC1:RXD0,EMAC1:RXD1,EMAC1:TXD2,EMAC1:TXD3,EMAC1:RXD2,EMAC1:RXD3,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO,GPIO</parameter>
   <parameter name="I2C0_Mode" value="default" />
   <parameter name="I2C0_PinMuxing" value="IO" />
   <parameter name="I2C1_Mode" value="N/A" />
@@ -2722,8 +3430,8 @@
   <parameter name="gui_cascade_outclk_index" value="0" />
   <parameter name="gui_clk_bad" value="false" />
   <parameter name="gui_clock_name_global" value="false" />
-  <parameter name="gui_clock_name_string0" value="outclk0" />
-  <parameter name="gui_clock_name_string1" value="outclk1" />
+  <parameter name="gui_clock_name_string0" value="sys_clk" />
+  <parameter name="gui_clock_name_string1" value="ad5791_spi_clk" />
   <parameter name="gui_clock_name_string10" value="outclk10" />
   <parameter name="gui_clock_name_string11" value="outclk11" />
   <parameter name="gui_clock_name_string12" value="outclk12" />
@@ -2732,9 +3440,9 @@
   <parameter name="gui_clock_name_string15" value="outclk15" />
   <parameter name="gui_clock_name_string16" value="outclk16" />
   <parameter name="gui_clock_name_string17" value="outclk17" />
-  <parameter name="gui_clock_name_string2" value="outclk2" />
-  <parameter name="gui_clock_name_string3" value="outclk3" />
-  <parameter name="gui_clock_name_string4" value="outclk4" />
+  <parameter name="gui_clock_name_string2" value="ad5791_2spi_clk" />
+  <parameter name="gui_clock_name_string3" value="mic_array_clk" />
+  <parameter name="gui_clock_name_string4" value="ad4020_clk" />
   <parameter name="gui_clock_name_string5" value="outclk5" />
   <parameter name="gui_clock_name_string6" value="outclk6" />
   <parameter name="gui_clock_name_string7" value="outclk7" />
@@ -2807,10 +3515,10 @@
   <parameter name="gui_mif_gen_options">Generate New MIF File</parameter>
   <parameter name="gui_multiply_factor" value="6" />
   <parameter name="gui_new_mif_file_path" value="~/pll.mif" />
-  <parameter name="gui_number_of_clocks" value="1" />
+  <parameter name="gui_number_of_clocks" value="5" />
   <parameter name="gui_operation_mode" value="direct" />
   <parameter name="gui_output_clock_frequency0" value="98.304" />
-  <parameter name="gui_output_clock_frequency1" value="100.0" />
+  <parameter name="gui_output_clock_frequency1" value="33.792" />
   <parameter name="gui_output_clock_frequency10" value="100.0" />
   <parameter name="gui_output_clock_frequency11" value="100.0" />
   <parameter name="gui_output_clock_frequency12" value="100.0" />
@@ -2819,9 +3527,9 @@
   <parameter name="gui_output_clock_frequency15" value="100.0" />
   <parameter name="gui_output_clock_frequency16" value="100.0" />
   <parameter name="gui_output_clock_frequency17" value="100.0" />
-  <parameter name="gui_output_clock_frequency2" value="100.0" />
-  <parameter name="gui_output_clock_frequency3" value="100.0" />
-  <parameter name="gui_output_clock_frequency4" value="100.0" />
+  <parameter name="gui_output_clock_frequency2" value="67.584" />
+  <parameter name="gui_output_clock_frequency3" value="32.768" />
+  <parameter name="gui_output_clock_frequency4" value="67.584" />
   <parameter name="gui_output_clock_frequency5" value="100.0" />
   <parameter name="gui_output_clock_frequency6" value="100.0" />
   <parameter name="gui_output_clock_frequency7" value="100.0" />
@@ -2969,6 +3677,16 @@
  <connection
    kind="avalon_streaming"
    version="18.0"
+   start="FE_AD4020_Left.Line_In"
+   end="FE_AD5791_v1_Left.Line_Out" />
+ <connection
+   kind="avalon_streaming"
+   version="18.0"
+   start="FE_AD4020_Right.Line_In"
+   end="FE_AD5791_v1_Right.Line_Out" />
+ <connection
+   kind="avalon_streaming"
+   version="18.0"
    start="FE_Qsys_AD1939_Audio_Research_v1_0.Microphone_In"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.Headphone_Out" />
  <connection kind="clock" version="18.0" start="clk_1.clk" end="som_config.clk" />
@@ -3005,6 +3723,11 @@
  <connection
    kind="clock"
    version="18.0"
+   start="clk_1.clk"
+   end="FE_FPGA_Microphone_Encoder_Decoder_14.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
    start="emif_0.emif_usr_clk"
    end="mm_clock_crossing_bridge_0.m0_clk" />
  <connection
@@ -3022,6 +3745,216 @@
    version="18.0"
    start="pll_using_AD1939_MCLK.outclk0"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_AD7768_v1_0.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_AD5791_v1_Left.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_0.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_1.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_2.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_3.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_4.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_5.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_6.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_7.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_8.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_9.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_10.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_11.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_12.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_13.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_FPGA_Microphone_Encoder_Decoder_15.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_AD5791_v1_Right.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_AD4020_Left.sys_clock" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_AD4020_Right.sys_clock" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk1"
+   end="FE_AD5791_v1_Left.spi_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk1"
+   end="FE_AD5791_v1_Right.spi_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk2"
+   end="FE_AD5791_v1_Left.double_spi_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk2"
+   end="FE_AD5791_v1_Right.double_spi_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_0.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_1.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_2.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_3.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_4.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_5.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_6.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_7.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_8.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_9.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_10.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_11.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_12.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_13.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_14.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk3"
+   end="FE_FPGA_Microphone_Encoder_Decoder_15.serial_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk4"
+   end="FE_AD4020_Left.spi_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk4"
+   end="FE_AD4020_Right.spi_clk" />
  <connection
    kind="conduit"
    version="18.0"
@@ -3077,7 +4010,112 @@
    kind="reset"
    version="18.0"
    start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_0.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_1.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_2.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_3.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_4.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_5.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_6.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_7.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_8.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_9.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_10.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_11.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_12.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_13.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_14.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_FPGA_Microphone_Encoder_Decoder_15.reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
    end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_AD7768_v1_0.sys_reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_AD5791_v1_Left.sys_reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_AD5791_v1_Right.sys_reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_AD4020_Left.sys_reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_AD4020_Right.sys_reset" />
  <connection
    kind="reset"
    version="18.0"

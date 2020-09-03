@@ -7,16 +7,16 @@
    showClockDomains="0"
    showResetDomains="0">
   <columns>
-   <connections preferredWidth="239" />
+   <connections preferredWidth="30" />
    <irq preferredWidth="47" />
-   <name preferredWidth="202" />
+   <name preferredWidth="339" />
    <inputclock preferredWidth="212" />
    <description preferredWidth="218" />
    <export preferredWidth="313" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
- <window width="1734" height="1407" x="1713" y="0" />
+ <library expandedCategories="Project,Library/FPGA Open Speech Tools,Library" />
+ <window width="2180" height="1400" x="0" y="0" />
  <generation
    path=""
    clear_previous="1"

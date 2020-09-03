@@ -45,10 +45,6 @@ set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Standard Edition"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
 
-
-
-
-
 ########################################################################################################################
 # AA
 ########################################################################################################################
@@ -111,64 +107,64 @@ set_location_assignment PIN_AC9 -to AA_SDO[7]
 set_location_assignment PIN_R2 -to AA_SDO[8]
 set_location_assignment PIN_T3 -to AA_SDO[9]
 
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_12V0_EN[0]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_12V0_EN[1]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_12V0_EN[2]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_12V0_EN[3]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_BANK_EN[0]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_BANK_EN[1]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[0]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[1]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[10]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[11]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[12]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[13]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[14]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[15]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[2]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[3]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[4]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[5]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[6]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[7]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[8]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_LVDS_EN_N[9]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_MCLK[0]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_MCLK[1]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_MCLK[2]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_MCLK[3]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[0]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[1]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[10]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[11]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[12]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[13]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[14]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[15]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[2]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[3]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[4]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[5]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[6]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[7]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[8]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDI[9]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[0]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[1]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[10]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[11]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[12]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[13]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[14]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[15]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[2]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[3]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[4]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[5]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[6]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[7]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[8]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AA_SDO[9]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_BANK_EN[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_BANK_EN[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[10]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[11]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[12]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[13]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[14]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[15]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[8]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[9]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_MCLK[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_MCLK[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_MCLK[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_MCLK[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[10]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[11]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[12]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[13]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[14]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[15]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[8]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDI[9]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[10]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[11]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[12]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[13]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[14]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[15]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[8]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_SDO[9]
 
 
 ########################################################################################################################
@@ -188,7 +184,7 @@ set_location_assignment PIN_AM16 -to HSA_OUT_CLK
 set_location_assignment PIN_AL18 -to HSA_OUT_L_CLR_N
 set_location_assignment PIN_AK18 -to HSA_OUT_L_LDAC_N
 set_location_assignment PIN_AP17 -to HSA_OUT_L_RESET_N
-set_location_assignment PIN_AN12 -to HSA_OUT_L_SDIN
+set_location_assignment PIN_AN12 -to HSA_OUT_L_SDI
 set_location_assignment PIN_AP12 -to HSA_OUT_L_SDO
 set_location_assignment PIN_AP16 -to HSA_OUT_L_SYNC_N
 set_location_assignment PIN_AE19 -to HSA_OUT_R_CLR_N
@@ -196,6 +192,7 @@ set_location_assignment PIN_AD17 -to HSA_OUT_R_LDAC_N
 set_location_assignment PIN_AF19 -to HSA_OUT_R_RESET_N
 set_location_assignment PIN_AH14 -to HSA_OUT_R_SDI
 set_location_assignment PIN_AC17 -to HSA_OUT_R_SDO
+set_location_assignment PIN_AJ14 -to HSA_OUT_R_SYNC_N
 
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD4020_EN
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD5791_EN
@@ -211,7 +208,7 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_CLK
 set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_L_CLR_N
 set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_L_LDAC_N
 set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_L_RESET_N
-set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_L_SDIN
+set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_L_SDI
 set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_L_SDO
 set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_L_SYNC_N
 set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_R_CLR_N
@@ -219,15 +216,6 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_R_LDAC_N
 set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_R_RESET_N
 set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_R_SDI
 set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_R_SDO
-
-
-########################################################################################################################
-# HSA 
-########################################################################################################################
-set_location_assignment PIN_AH14 -to HSA_OUT_R_SDIN
-set_location_assignment PIN_AJ14 -to HSA_OUT_R_SYNC_N
-
-set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_R_SDIN
 set_instance_assignment -name IO_STANDARD "1.8 V" -to HSA_OUT_R_SYNC_N
 
 
@@ -239,10 +227,10 @@ set_location_assignment PIN_AC4 -to HDPHN_I2C_SDA
 set_location_assignment PIN_AD1 -to HDPHN_PWR_OFF_N
 set_location_assignment PIN_AE8 -to PGA2505_CS_N
 
-set_instance_assignment -name IO_STANDARD "3.3 V" -to HDPHN_I2C_SCL
-set_instance_assignment -name IO_STANDARD "3.3 V" -to HDPHN_I2C_SDA
-set_instance_assignment -name IO_STANDARD "3.3 V" -to HDPHN_PWR_OFF_N
-set_instance_assignment -name IO_STANDARD "3.3 V" -to PGA2505_CS_N
+set_instance_assignment -name IO_STANDARD "1.8 V" -to HDPHN_I2C_SCL
+set_instance_assignment -name IO_STANDARD "1.8 V" -to HDPHN_I2C_SDA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to HDPHN_PWR_OFF_N
+set_instance_assignment -name IO_STANDARD "1.8 V" -to PGA2505_CS_N
 
 
 ########################################################################################################################
@@ -255,58 +243,33 @@ set_location_assignment PIN_AP4 -to FPGA_RESET
 set_location_assignment PIN_AM7 -to FULL_SPEED_N
 set_location_assignment PIN_AE12 -to TEMP_ALERT_N
 
-set_instance_assignment -name IO_STANDARD "3.3 V" -to EEPROM_WP
-set_instance_assignment -name IO_STANDARD "3.3 V" -to FAN_FAIL_N
-set_instance_assignment -name IO_STANDARD "3.3 V" -to FPGA_LED
-set_instance_assignment -name IO_STANDARD "3.3 V" -to FPGA_RESET
-set_instance_assignment -name IO_STANDARD "3.3 V" -to FULL_SPEED_N
-set_instance_assignment -name IO_STANDARD "3.3 V" -to TEMP_ALERT_N
+set_instance_assignment -name IO_STANDARD "1.8 V" -to EEPROM_WP
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FAN_FAIL_N
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_LED
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_RESET
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FULL_SPEED_N
+set_instance_assignment -name IO_STANDARD "1.8 V" -to TEMP_ALERT_N
 
 
 ########################################################################################################################
 # CLK
 ########################################################################################################################
 set_location_assignment PIN_F6 -to clk_200
-set_location_assignment PIN_F5 -to clk_200_n
+#set_location_assignment PIN_F5 -to clk_200_n
 set_location_assignment PIN_E23 -to ddr_ref_clk_i
-set_location_assignment PIN_E24 -to ddr_ref_clk_i_n
-set_location_assignment PIN_AD28 -to refclk_1C_p
-set_location_assignment PIN_AD27 -to refclk_1C_n
-set_location_assignment PIN_Y28 -to refclk_1D_p
-set_location_assignment PIN_Y27 -to refclk_1D_n
-set_location_assignment PIN_T28 -to refclk_1E_p
-set_location_assignment PIN_T27 -to refclk_1E_n
-set_location_assignment PIN_M28 -to refclk_1F_p
-set_location_assignment PIN_M27 -to refclk_1F_n
-set_location_assignment PIN_V28 -to sfp_refclk_1F_p
-set_location_assignment PIN_V27 -to sfp_refclk_1F_n
 
 set_instance_assignment -name IO_STANDARD LVDS -to clk_200
-set_instance_assignment -name IO_STANDARD LVDS -to clk_200_n
+#set_instance_assignment -name IO_STANDARD LVDS -to clk_200_n
 set_instance_assignment -name IO_STANDARD LVDS -to ddr_ref_clk_i
-set_instance_assignment -name IO_STANDARD LVDS -to ddr_ref_clk_i_n
-set_instance_assignment -name IO_STANDARD LVDS -to refclk_1C_p
-set_instance_assignment -name IO_STANDARD LVDS -to refclk_1C_n
-set_instance_assignment -name IO_STANDARD LVDS -to refclk_1D_p
-set_instance_assignment -name IO_STANDARD LVDS -to refclk_1D_n
-set_instance_assignment -name IO_STANDARD LVDS -to refclk_1E_p
-set_instance_assignment -name IO_STANDARD LVDS -to refclk_1E_n
-set_instance_assignment -name IO_STANDARD LVDS -to refclk_1F_p
-set_instance_assignment -name IO_STANDARD LVDS -to refclk_1F_n
-set_instance_assignment -name IO_STANDARD LVDS -to sfp_refclk_1F_p
-set_instance_assignment -name IO_STANDARD LVDS -to sfp_refclk_1F_n
-
 
 ########################################################################################################################
 # HPS
 ########################################################################################################################
 set_location_assignment PIN_L21 -to hps_i2c0_SCL
 set_location_assignment PIN_M21 -to hps_i2c0_SDA
-set_location_assignment PIN_L14 -to HPS_RST
 
 set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_i2c0_SCL
 set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_i2c0_SDA
-set_instance_assignment -name IO_STANDARD "1.8 V" -to HPS_RST
 
 ############################################################
 # USB
@@ -342,13 +305,9 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_usb1_STP
 ############################################################
 set_location_assignment PIN_H15 -to hps_uart1_RX
 set_location_assignment PIN_F15 -to hps_uart1_TX
-set_location_assignment PIN_L18 -to UART1_RX
-set_location_assignment PIN_K18 -to UART1_TX
 
 set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_uart1_RX
 set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_uart1_TX
-set_instance_assignment -name IO_STANDARD "1.8 V" -to UART1_RX
-set_instance_assignment -name IO_STANDARD "1.8 V" -to UART1_TX
 
 ############################################################
 # SDMMC
@@ -519,8 +478,8 @@ set_instance_assignment -name IO_STANDARD "1.2 V" -to hps_memory_mem_alert_n
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_ba[0]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_ba[1]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_bg
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-VSSTL" -to hps_memory_mem_ck
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-VSSTL" -to hps_memory_mem_ck_n
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to hps_memory_mem_ck
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to hps_memory_mem_ck_n
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_cke
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to hps_memory_mem_cs_n
 set_instance_assignment -name IO_STANDARD "1.2-V POD" -to hps_memory_mem_dbi_n[0]
@@ -620,11 +579,6 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to hps_emac1_TXD3
 ########################################################################################################################
 # MISC
 ########################################################################################################################
-set_location_assignment PIN_AC7 -to pmod2_inout_pio9[1]
-set_location_assignment PIN_J30 -to sfp_1F_rx_ch0
-set_location_assignment PIN_J29 -to sfp_1F_rx_ch0_n
-set_location_assignment PIN_H32 -to sfp_1F_tx_ch0
-set_location_assignment PIN_H31 -to sfp_1F_tx_ch0_n
 set_location_assignment PIN_J25 -to som_config_pio[0]
 set_location_assignment PIN_J26 -to som_config_pio[1]
 set_location_assignment PIN_K23 -to som_config_pio[2]
@@ -632,11 +586,6 @@ set_location_assignment PIN_A23 -to som_config_pio[3]
 set_location_assignment PIN_AC24 -to som_config_pio[4]
 set_location_assignment PIN_AN7 -to sys_reset_n_i
 
-set_instance_assignment -name IO_STANDARD "1.8 V" -to pmod2_inout_pio9[1]
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to sfp_1F_rx_ch0
-set_instance_assignment -name IO_STANDARD "HIGHSPEED DIFFERENTIAL I/O" -to sfp_1F_rx_ch0_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to sfp_1F_tx_ch0
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to sfp_1F_tx_ch0_n
 set_instance_assignment -name IO_STANDARD "1.2 V" -to som_config_pio[0]
 set_instance_assignment -name IO_STANDARD "1.2 V" -to som_config_pio[1]
 set_instance_assignment -name IO_STANDARD "1.2 V" -to som_config_pio[2]
@@ -646,224 +595,18 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to sys_reset_n_i
 
 
 ########################################################################################################################
-# FMC2
-########################################################################################################################
-set_location_assignment PIN_AD10 -to fmc2_inout_pio6[18]
-set_location_assignment PIN_AD11 -to fmc2_inout_pio6[19]
-set_location_assignment PIN_AK2 -to fmc2_inout_pio6[2]
-set_location_assignment PIN_AM3 -to fmc2_inout_pio6[4]
-set_location_assignment PIN_AC8 -to fmc2_inout_pio6[6]
-set_location_assignment PIN_AD9 -to fmc2_inout_pio6[7]
-set_location_assignment PIN_AE2 -to fmc2_inout_pio6[8]
-set_location_assignment PIN_AE3 -to fmc2_inout_pio6[9]
-set_location_assignment PIN_AB6 -to fmc2_inout_pio7[12]
-set_location_assignment PIN_AB5 -to fmc2_inout_pio7[13]
-set_location_assignment PIN_AB10 -to fmc2_inout_pio7[14]
-set_location_assignment PIN_AB11 -to fmc2_inout_pio7[15]
-set_location_assignment PIN_AE4 -to fmc2_inout_pio7[2]
-set_location_assignment PIN_AC5 -to fmc2_inout_pio7[7]
-
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio6[18]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio6[19]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio6[2]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio6[4]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio6[6]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio6[7]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio6[8]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio6[9]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio7[12]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio7[13]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio7[14]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio7[15]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio7[2]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc2_inout_pio7[7]
-
-
-########################################################################################################################
 # MSATA
 ########################################################################################################################
-set_location_assignment PIN_D32 -to MSATA_A
-set_location_assignment PIN_D31 -to MSATA_A_n
-set_location_assignment PIN_E30 -to MSATA_B
-set_location_assignment PIN_E29 -to MSATA_B_n
 set_location_assignment PIN_AA5 -to MSATA_PWR_EN
 
+set_location_assignment PIN_D32 -to MSATA_A
+set_location_assignment PIN_D31 -to "MSATA_A(n)"
+set_location_assignment PIN_E30 -to MSATA_B
+set_location_assignment PIN_E29 -to "MSATA_B(n)"
+
 set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to MSATA_A
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to MSATA_A_n
 set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to MSATA_B
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to MSATA_B_n
-set_instance_assignment -name IO_STANDARD "3.3 V" -to MSATA_PWR_EN
-
-
-########################################################################################################################
-# FT232
-########################################################################################################################
-set_location_assignment PIN_J21 -to FT232_RST_N
-
-set_instance_assignment -name IO_STANDARD "1.8 V" -to FT232_RST_N
-
-
-########################################################################################################################
-# FMC1
-########################################################################################################################
-set_location_assignment PIN_AL30 -to fmc_1C_rx_ch0
-set_location_assignment PIN_AL29 -to fmc_1C_rx_ch0_n
-set_location_assignment PIN_AJ30 -to fmc_1C_rx_ch1
-set_location_assignment PIN_AJ29 -to fmc_1C_rx_ch1_n
-set_location_assignment PIN_AG30 -to fmc_1C_rx_ch2
-set_location_assignment PIN_AG29 -to fmc_1C_rx_ch2_n
-set_location_assignment PIN_AF32 -to fmc_1C_rx_ch3
-set_location_assignment PIN_AF31 -to fmc_1C_rx_ch3_n
-set_location_assignment PIN_AP31 -to fmc_1C_tx_ch0_n
-set_location_assignment PIN_AM32 -to fmc_1C_tx_ch1
-set_location_assignment PIN_AM31 -to fmc_1C_tx_ch1_n
-set_location_assignment PIN_AK32 -to fmc_1C_tx_ch2
-set_location_assignment PIN_AK31 -to fmc_1C_tx_ch2_n
-set_location_assignment PIN_AH32 -to fmc_1C_tx_ch3
-set_location_assignment PIN_AH31 -to fmc_1C_tx_ch3_n
-set_location_assignment PIN_AC30 -to fmc_1D_rx_ch0
-set_location_assignment PIN_AC29 -to fmc_1D_rx_ch0_n
-set_location_assignment PIN_AB32 -to fmc_1D_rx_ch1
-set_location_assignment PIN_AB31 -to fmc_1D_rx_ch1_n
-set_location_assignment PIN_AA30 -to fmc_1D_rx_ch2
-set_location_assignment PIN_AA29 -to fmc_1D_rx_ch2_n
-set_location_assignment PIN_Y32 -to fmc_1D_rx_ch3
-set_location_assignment PIN_Y31 -to fmc_1D_rx_ch3_n
-set_location_assignment PIN_AJ34 -to fmc_1D_tx_ch0
-set_location_assignment PIN_AJ33 -to fmc_1D_tx_ch0_n
-set_location_assignment PIN_AG34 -to fmc_1D_tx_ch1
-set_location_assignment PIN_AG33 -to fmc_1D_tx_ch1_n
-set_location_assignment PIN_AE34 -to fmc_1D_tx_ch2
-set_location_assignment PIN_AE33 -to fmc_1D_tx_ch2_n
-set_location_assignment PIN_AC34 -to fmc_1D_tx_ch3
-set_location_assignment PIN_AC33 -to fmc_1D_tx_ch3_n
-set_location_assignment PIN_U30 -to fmc_1E_rx_ch0
-set_location_assignment PIN_U29 -to fmc_1E_rx_ch0_n
-set_location_assignment PIN_T32 -to fmc_1E_rx_ch1
-set_location_assignment PIN_T31 -to fmc_1E_rx_ch1_n
-set_location_assignment PIN_R30 -to fmc_1E_rx_ch2
-set_location_assignment PIN_R29 -to fmc_1E_rx_ch2_n
-set_location_assignment PIN_P32 -to fmc_1E_rx_ch3
-set_location_assignment PIN_P31 -to fmc_1E_rx_ch3_n
-set_location_assignment PIN_U34 -to fmc_1E_tx_ch0
-set_location_assignment PIN_U33 -to fmc_1E_tx_ch0_n
-set_location_assignment PIN_R34 -to fmc_1E_tx_ch1
-set_location_assignment PIN_R33 -to fmc_1E_tx_ch1_n
-set_location_assignment PIN_N34 -to fmc_1E_tx_ch2
-set_location_assignment PIN_N33 -to fmc_1E_tx_ch2_n
-set_location_assignment PIN_L34 -to fmc_1E_tx_ch3
-set_location_assignment PIN_L33 -to fmc_1E_tx_ch3_n
-set_location_assignment PIN_L30 -to fmc_1F_rx_ch0
-set_location_assignment PIN_L29 -to fmc_1F_rx_ch0_n
-set_location_assignment PIN_K32 -to fmc_1F_rx_ch1
-set_location_assignment PIN_K31 -to fmc_1F_rx_ch1_n
-set_location_assignment PIN_E34 -to fmc_1F_tx_ch0
-set_location_assignment PIN_E33 -to fmc_1F_tx_ch0_n
-set_location_assignment PIN_C34 -to fmc_1F_tx_ch1
-set_location_assignment PIN_C33 -to fmc_1F_tx_ch1_n
-set_location_assignment PIN_Y1 -to fmc1_inout_pio1[0]
-set_location_assignment PIN_Y2 -to fmc1_inout_pio1[1]
-set_location_assignment PIN_Y6 -to fmc1_inout_pio1[10]
-set_location_assignment PIN_Y7 -to fmc1_inout_pio1[11]
-set_location_assignment PIN_AL4 -to fmc1_inout_pio1[19]
-set_location_assignment PIN_U2 -to fmc1_inout_pio1[3]
-set_location_assignment PIN_Y9 -to fmc1_inout_pio1[5]
-set_location_assignment PIN_R3 -to fmc1_inout_pio2[1]
-set_location_assignment PIN_AH19 -to fmc1_inout_pio2[13]
-set_location_assignment PIN_AG11 -to fmc1_inout_pio2[15]
-set_location_assignment PIN_AD19 -to fmc1_inout_pio2[8]
-set_location_assignment PIN_W1 -to fmc1_inout_pio3[1]
-set_location_assignment PIN_T5 -to fmc1_inout_pio3[13]
-set_location_assignment PIN_T6 -to fmc1_inout_pio3[14]
-set_location_assignment PIN_W2 -to fmc1_inout_pio3[2]
-set_location_assignment PIN_AA8 -to fmc1_inout_pio3[5]
-set_location_assignment PIN_AA9 -to fmc1_inout_pio3[6]
-set_location_assignment PIN_V4 -to fmc1_inout_pio3[8]
-set_location_assignment PIN_AA6 -to fmc1_inout_pio4[16]
-set_location_assignment PIN_AB1 -to fmc1_inout_pio4[5]
-set_location_assignment PIN_AE11 -to fmc1_inout_pio5[15]
-set_location_assignment PIN_AL9 -to fmc1_inout_pio5[16]
-set_location_assignment PIN_AL8 -to fmc1_inout_pio5[17]
-
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch0
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch0_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch1
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch1_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch2
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch2_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch3
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_rx_ch3_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_tx_ch0_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_tx_ch1
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_tx_ch1_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_tx_ch2
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_tx_ch2_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_tx_ch3
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1C_tx_ch3_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch0
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch0_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch1
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch1_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch2
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch2_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch3
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_rx_ch3_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch0
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch0_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch1
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch1_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch2
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch2_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch3
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1D_tx_ch3_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch0
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch0_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch1
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch1_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch2
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch2_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch3
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_rx_ch3_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch0
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch0_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch1
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch1_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch2
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch2_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch3
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1E_tx_ch3_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_rx_ch0
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_rx_ch0_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_rx_ch1
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_rx_ch1_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_tx_ch0
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_tx_ch0_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_tx_ch1
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to fmc_1F_tx_ch1_n
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio1[0]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio1[1]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio1[10]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio1[11]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio1[19]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio1[3]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio1[5]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio2[1]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio2[13]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio2[15]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio2[8]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio3[1]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio3[13]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio3[14]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio3[2]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio3[5]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio3[6]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio3[8]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio4[16]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio4[5]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio5[15]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio5[16]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to fmc1_inout_pio5[17]
-
+set_instance_assignment -name IO_STANDARD "1.8 V" -to MSATA_PWR_EN
 
 ########################################################################################################################
 # AD7768
@@ -877,7 +620,6 @@ set_location_assignment PIN_AL13 -to AD7768_DOUT[3]
 set_location_assignment PIN_AP14 -to AD7768_DRDY_N
 set_location_assignment PIN_AK17 -to AD7768_EN
 set_location_assignment PIN_AG17 -to AD7768_MCLK
-set_location_assignment PIN_AL14 -to AD7768_RESET
 set_location_assignment PIN_AL14 -to AD7768_RESET_N
 set_location_assignment PIN_AM13 -to AD7768_SDI
 set_location_assignment PIN_AJ16 -to AD7768_SDO
@@ -893,7 +635,6 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to AD7768_DOUT[3]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD7768_DRDY_N
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD7768_EN
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD7768_MCLK
-set_instance_assignment -name IO_STANDARD "1.8 V" -to AD7768_RESET
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD7768_RESET_N
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD7768_SDI
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD7768_SDO
@@ -902,31 +643,13 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to AD7768_SYNC_IN
 
 
 ########################################################################################################################
-# PCIE
-########################################################################################################################
-set_location_assignment PIN_AF28 -to pcie_refclk_clk
-set_location_assignment PIN_AF27 -to pcie_refclk_clk_n
-set_location_assignment PIN_AE30 -to pcie_rx_i
-set_location_assignment PIN_AE29 -to pcie_rx_i_n
-set_location_assignment PIN_AN34 -to pcie_tx_o
-set_location_assignment PIN_AN33 -to pcie_tx_o_n
-
-set_instance_assignment -name IO_STANDARD HCSL -to pcie_refclk_clk
-set_instance_assignment -name IO_STANDARD HCSL -to pcie_refclk_clk_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to pcie_rx_i
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to pcie_rx_i_n
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to pcie_tx_o
-set_instance_assignment -name IO_STANDARD "HIGH SPEED DIFFERENTIAL I/O" -to pcie_tx_o_n
-
-
-########################################################################################################################
 # UART
 ########################################################################################################################
 set_location_assignment PIN_AM5 -to FPGA_RX
 set_location_assignment PIN_AM6 -to FPGA_TX
 
-set_instance_assignment -name IO_STANDARD "3.3 V" -to FPGA_RX
-set_instance_assignment -name IO_STANDARD "3.3 V" -to FPGA_TX
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_RX
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FPGA_TX
 
 
 ########################################################################################################################
@@ -1075,8 +798,8 @@ set_instance_assignment -name IO_STANDARD "1.2 V" -to FPGA_memory_mem1_alert_n
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_ba[0]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_ba[1]
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_bg
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-VSSTL" -to FPGA_memory_mem1_ck
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-VSSTL" -to FPGA_memory_mem1_ck_n
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to FPGA_memory_mem1_ck
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to FPGA_memory_mem1_ck_n
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_cke
 set_instance_assignment -name IO_STANDARD "SSTL-12" -to FPGA_memory_mem1_cs_n
 set_instance_assignment -name IO_STANDARD "1.2-V POD" -to FPGA_memory_mem1_dbi_n[0]
@@ -1196,37 +919,35 @@ set_location_assignment PIN_AH8 -to DB25_GPIO[8]
 set_location_assignment PIN_AG8 -to DB25_GPIO[9]
 set_location_assignment PIN_AE18 -to DB25_PWR_EN
 set_location_assignment PIN_AP7 -to GPIO_LED
-set_location_assignment PIN_L20 -to HPS_LED
 set_location_assignment PIN_AG10 -to P3_GPIO[0]
 set_location_assignment PIN_AF10 -to P3_GPIO[1]
 set_location_assignment PIN_AN8 -to P3_GPIO[2]
 set_location_assignment PIN_AM8 -to P3_GPIO[3]
 
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[0]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[1]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[10]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[11]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[10]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[11]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[12]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[13]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[14]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[15]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[16]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[17]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[2]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[3]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[4]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[5]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[6]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[7]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[8]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to DB25_GPIO[9]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[8]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_GPIO[9]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to DB25_PWR_EN
-set_instance_assignment -name IO_STANDARD "3.3 V" -to GPIO_LED
-set_instance_assignment -name IO_STANDARD "1.8 V" -to HPS_LED
-set_instance_assignment -name IO_STANDARD "3.3 V" -to P3_GPIO[0]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to P3_GPIO[1]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to P3_GPIO[2]
-set_instance_assignment -name IO_STANDARD "3.3 V" -to P3_GPIO[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to GPIO_LED
+set_instance_assignment -name IO_STANDARD "1.8 V" -to P3_GPIO[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to P3_GPIO[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to P3_GPIO[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to P3_GPIO[3]
 
 
 ########################################################################################################################
@@ -1249,39 +970,22 @@ set_location_assignment PIN_AE9 -to AD1939_SPI_MOSI
 set_location_assignment PIN_AL3 -to AD1939_SPI_SCK
 set_location_assignment PIN_AP32 -to FULL_SPEED_n
 
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_ABCLK
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_ALRCLK
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_CS_N
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_DBCLK
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_DLRCLK
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_HDPHN_OUT_DSDATA
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_LINE_IN_DSDATA
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_LINE_OUT_DSDATA
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_MCLK
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_MIC_IN_DSDATA
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_PWR_EN
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_RST_CODEC_N
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_SPI_MISO
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_SPI_MOSI
-set_instance_assignment -name IO_STANDARD "3.3 V" -to AD1939_SPI_SCK
-set_instance_assignment -name IO_STANDARD "3.3 V" -to FULL_SPEED_n
-
-
-########################################################################################################################
-# JTAG
-########################################################################################################################
-set_location_assignment PIN_AH12 -to JTAG_TCK
-set_location_assignment PIN_AH13 -to JTAG_TDI
-set_location_assignment PIN_AJ12 -to JTAG_TDO
-set_location_assignment PIN_AL10 -to JTAG_TMS
-set_location_assignment PIN_AL11 -to JTAG_TRST
-
-set_instance_assignment -name IO_STANDARD "1.8 V" -to JTAG_TCK
-set_instance_assignment -name IO_STANDARD "1.8 V" -to JTAG_TDI
-set_instance_assignment -name IO_STANDARD "1.8 V" -to JTAG_TDO
-set_instance_assignment -name IO_STANDARD "1.8 V" -to JTAG_TMS
-set_instance_assignment -name IO_STANDARD "1.8 V" -to JTAG_TRST
-
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_ABCLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_ALRCLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_CS_N
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_DBCLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_DLRCLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_HDPHN_OUT_DSDATA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_LINE_IN_DSDATA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_LINE_OUT_DSDATA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_MCLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_MIC_IN_DSDATA
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_PWR_EN
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_RST_CODEC_N
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_SPI_MISO
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_SPI_MOSI
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_SPI_SCK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FULL_SPEED_n
 
 ########################################################################################################################
 # I2C
@@ -1289,25 +993,27 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to JTAG_TRST
 set_location_assignment PIN_AF4 -to I2C_SCL
 set_location_assignment PIN_AD2 -to I2C_SDA
 
-set_instance_assignment -name IO_STANDARD "3.3 V" -to I2C_SCL
-set_instance_assignment -name IO_STANDARD "3.3 V" -to I2C_SDA
-
-
-
-
-
-
+set_instance_assignment -name IO_STANDARD "1.8 V" -to I2C_SCL
+set_instance_assignment -name IO_STANDARD "1.8 V" -to I2C_SDA
 
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name QIP_FILE ../../component_library/serdes/Serial2Parallel_32bits.qip
-set_global_assignment -name QIP_FILE ../../component_library/serdes/Parallel2Serial_32bits.qip
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN ON
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE A10SoM_System.vhd
 set_global_assignment -name VHDL_FILE ../../component_library/AD1939/Source_Files/AD1939_hps_audio_research_v1.vhd
 set_global_assignment -name QIP_FILE som_system/som_system.qip
 set_global_assignment -name SOURCE_FILE som_system/som_system.cmp
 set_global_assignment -name QSYS_FILE pll.qsys
-set_global_assignment -name VHDL_FILE A10SoM_System_pins.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
