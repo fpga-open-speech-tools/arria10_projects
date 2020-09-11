@@ -11,7 +11,7 @@
 // agreement for further details.
 
 
-module som_system_altera_arria10_interface_generator_140_rt64riy(
+module som_system_altera_arria10_interface_generator_140_hnufizi(
 // h2f_reset
   output wire [1 - 1 : 0 ] h2f_rst_n
 // h2f_cold_reset
@@ -210,6 +210,13 @@ module som_system_altera_arria10_interface_generator_140_rt64riy(
  ,output wire [1 - 1 : 0 ] spim0_ss3_n_o
 // spim0_sclk_out
  ,output wire [1 - 1 : 0 ] spim0_sclk_out
+// i2c1_scl_in
+ ,input wire [1 - 1 : 0 ] i2c1_scl_i
+// i2c1_clk
+ ,output wire [1 - 1 : 0 ] i2c1_scl_oe
+// i2c1
+ ,input wire [1 - 1 : 0 ] i2c1_sda_i
+ ,output wire [1 - 1 : 0 ] i2c1_sda_oe
 );
 
 
@@ -1039,6 +1046,22 @@ twentynm_hps_interface_peripheral_spi_master peripheral_spim0(
   })
 ,.mosi_oe({
     spim0_mosi_oe[0:0] // 0:0
+  })
+);
+
+
+twentynm_hps_interface_peripheral_i2c peripheral_i2c1(
+ .sda_i({
+    i2c1_sda_i[0:0] // 0:0
+  })
+,.scl_oe({
+    i2c1_scl_oe[0:0] // 0:0
+  })
+,.scl_i({
+    i2c1_scl_i[0:0] // 0:0
+  })
+,.sda_oe({
+    i2c1_sda_oe[0:0] // 0:0
   })
 );
 

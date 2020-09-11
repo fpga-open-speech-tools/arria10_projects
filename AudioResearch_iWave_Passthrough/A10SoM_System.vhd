@@ -352,6 +352,10 @@ port (
     hps_spim0_ss2_n_o                              : out   std_logic;                                        -- ss2_n_o
     hps_spim0_ss3_n_o                              : out   std_logic;                                        -- ss3_n_o
     hps_spim0_sclk_out_clk                         : out   std_logic;                                        -- clk
+    hps_i2c1_scl_in_clk                            : in    std_logic                     := 'X';             -- clk
+    hps_i2c1_clk_clk                               : out   std_logic;                                        -- clk
+    hps_i2c1_sda_i                                 : in    std_logic                     := 'X';             -- sda_i
+    hps_i2c1_sda_oe                                : out   std_logic;                                         -- sda_oe
     mclk_pll_locked_export                         : out   std_logic;                                        -- export
     mem_mem_ck                                     : out   std_logic;                     -- mem_ck
     mem_mem_ck_n                                   : out   std_logic;                     -- mem_ck_n
@@ -486,6 +490,12 @@ end component som_system;
   signal spi_clk  : std_logic;
   
   signal heartbeat_counter : integer range 0 to 12288001 := 0;
+  
+  signal i2c1_i2c_serial_sda_in		: std_logic;
+	signal i2c1_serial_scl_in				: std_logic;
+	signal i2c1_serial_sda_oe				: std_logic;
+	signal serial_scl_oe						: std_logic;
+
      
   begin 
 -- *****************************************************************************
@@ -648,8 +658,13 @@ end component som_system;
     hps_spim0_ss1_n_o                              => PGA2505_CS_N, 
     hps_spim0_ss2_n_o                              => open,                
     hps_spim0_ss3_n_o                              => open,                
-    hps_spim0_sclk_out_clk                         => spi_clk,             
-            
+    hps_spim0_sclk_out_clk                         => spi_clk,      
+
+    -- I2C1 Signals
+    hps_i2c1_scl_in_clk                          => i2c1_serial_scl_in,                          --                      hps_0_i2c1_scl_in.clk
+    hps_i2c1_clk_clk                             => serial_scl_oe,                             --                         hps_0_i2c1_clk.clk
+    hps_i2c1_sda_i                               => i2c1_i2c_serial_sda_in,                               --                             hps_0_i2c1.sda_i
+    hps_i2c1_sda_oe                              => i2c1_serial_sda_oe,                             --                                       .sda_oe
             
     -- FPGA DDR Signals
     mem_mem_a                                      => hps_memory_mem_a,
@@ -784,27 +799,45 @@ end component som_system;
     
 );           
 
--- Enable used the components
-HSA_IN_EN_N <= '0';
+-- Enable the audio arrays
 AA_LVDS_EN_N <= (others => '0');
 
+-- Enable the AD1939
+AD1939_PWR_EN <= '1';
 AD1939_RST_CODEC_N <= '1';
+
+-- Enable the high speed audio
+HSA_IN_EN_N <= '0';
 AD4020_EN <= '1';
 AD5791_EN <= '1';
-AD1939_PWR_EN <= '1';
+
+-- Enable the TPA613
 HDPHN_PWR_OFF_N <= '1';
-
--- Map the I2C signals
-HDPHN_I2C_SCL <= hps_i2c0_SCL;
-HDPHN_I2C_SDA <= hps_i2c0_SDA;
-
--- I2C_SCL <= hps_i2c0_SCL;
--- I2C_SDA <= hps_i2c0_SDA;
 
 -- Map the SPI signals
 spi_miso <= AD1939_SPI_MISO;
 AD1939_SPI_MOSI <= spi_mosi;
 AD1939_SPI_SCK  <= spi_clk;
+
+---------------------------------------------------------------------------------------------
+-- Tri-state buffer the I2C signals
+---------------------------------------------------------------------------------------------
+  ubuf1 : component alt_iobuf
+  port map(
+      i   => '0',
+      oe  => i2c1_serial_sda_oe,
+      io  => HDPHN_I2C_SDA,
+      o   => i2c1_i2c_serial_sda_in
+   );
+
+  ubuf2 : component alt_iobuf
+   port map(
+      i   => '0',
+      oe  => serial_scl_oe,
+      io  => HDPHN_I2C_SCL,
+      o   => i2c1_serial_scl_in
+   );
+
 
 heartbeat: process(AD1939_MCLK,sys_reset_n_i)
 begin 

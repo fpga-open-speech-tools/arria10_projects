@@ -99,6 +99,10 @@ entity som_system is
 		emif_0_status_local_cal_fail                   : out   std_logic;                                        --                                       .local_cal_fail
 		emif_a10_hps_0_global_reset_reset_sink_reset_n : in    std_logic                     := '0';             -- emif_a10_hps_0_global_reset_reset_sink.reset_n
 		hps_0_h2f_reset_reset_n                        : out   std_logic;                                        --                        hps_0_h2f_reset.reset_n
+		hps_i2c1_sda_i                                 : in    std_logic                     := '0';             --                               hps_i2c1.sda_i
+		hps_i2c1_sda_oe                                : out   std_logic;                                        --                                       .sda_oe
+		hps_i2c1_clk_clk                               : out   std_logic;                                        --                           hps_i2c1_clk.clk
+		hps_i2c1_scl_in_clk                            : in    std_logic                     := '0';             --                        hps_i2c1_scl_in.clk
 		hps_io_hps_io_phery_emac1_TX_CLK               : out   std_logic;                                        --                                 hps_io.hps_io_phery_emac1_TX_CLK
 		hps_io_hps_io_phery_emac1_TXD0                 : out   std_logic;                                        --                                       .hps_io_phery_emac1_TXD0
 		hps_io_hps_io_phery_emac1_TXD1                 : out   std_logic;                                        --                                       .hps_io_phery_emac1_TXD1
@@ -1264,7 +1268,7 @@ begin
 			AD1939_ADC_ABCLK    => ad1939_abclk_clk                                       --         clk_abclk.clk
 		);
 
-	arria10_hps_0 : component som_system_altera_arria10_hps_180.som_system_pkg.som_system_altera_arria10_hps_180_6ptam2q
+	arria10_hps_0 : component som_system_altera_arria10_hps_180.som_system_pkg.som_system_altera_arria10_hps_180_zmlrihi
 		generic map (
 			F2S_Width => 6,
 			S2F_Width => 6
@@ -1448,6 +1452,10 @@ begin
 			spim0_ss2_n_o             => hps_spim0_ss2_n_o,                                 --                  .ss2_n_o
 			spim0_ss3_n_o             => hps_spim0_ss3_n_o,                                 --                  .ss3_n_o
 			spim0_sclk_out            => hps_spim0_sclk_out_clk,                            --    spim0_sclk_out.clk
+			i2c1_scl_i                => hps_i2c1_scl_in_clk,                               --       i2c1_scl_in.clk
+			i2c1_scl_oe               => hps_i2c1_clk_clk,                                  --          i2c1_clk.clk
+			i2c1_sda_i                => hps_i2c1_sda_i,                                    --              i2c1.sda_i
+			i2c1_sda_oe               => hps_i2c1_sda_oe,                                   --                  .sda_oe
 			hps_io_phery_emac1_TX_CLK => hps_io_hps_io_phery_emac1_TX_CLK,                  --            hps_io.hps_io_phery_emac1_TX_CLK
 			hps_io_phery_emac1_TXD0   => hps_io_hps_io_phery_emac1_TXD0,                    --                  .hps_io_phery_emac1_TXD0
 			hps_io_phery_emac1_TXD1   => hps_io_hps_io_phery_emac1_TXD1,                    --                  .hps_io_phery_emac1_TXD1

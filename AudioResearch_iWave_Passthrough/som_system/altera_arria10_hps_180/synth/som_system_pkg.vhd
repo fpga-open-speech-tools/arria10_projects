@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 package som_system_pkg is
-	component som_system_altera_arria10_hps_180_6ptam2q is
+	component som_system_altera_arria10_hps_180_zmlrihi is
 		generic (
 			F2S_Width : integer := 5;
 			S2F_Width : integer := 5
@@ -187,6 +187,10 @@ package som_system_pkg is
 			spim0_ss2_n_o             : out   std_logic;                                          -- ss2_n_o
 			spim0_ss3_n_o             : out   std_logic;                                          -- ss3_n_o
 			spim0_sclk_out            : out   std_logic;                                          -- clk
+			i2c1_scl_i                : in    std_logic                       := 'X';             -- clk
+			i2c1_scl_oe               : out   std_logic;                                          -- clk
+			i2c1_sda_i                : in    std_logic                       := 'X';             -- sda_i
+			i2c1_sda_oe               : out   std_logic;                                          -- sda_oe
 			hps_io_phery_emac1_TX_CLK : out   std_logic;                                          -- hps_io_phery_emac1_TX_CLK
 			hps_io_phery_emac1_TXD0   : out   std_logic;                                          -- hps_io_phery_emac1_TXD0
 			hps_io_phery_emac1_TXD1   : out   std_logic;                                          -- hps_io_phery_emac1_TXD1
@@ -242,6 +246,6 @@ package som_system_pkg is
 			hps_io_gpio_gpio1_io22    : inout std_logic                       := 'X';             -- hps_io_gpio_gpio1_io22
 			hps_io_gpio_gpio1_io23    : inout std_logic                       := 'X'              -- hps_io_gpio_gpio1_io23
 		);
-	end component som_system_altera_arria10_hps_180_6ptam2q;
+	end component som_system_altera_arria10_hps_180_zmlrihi;
 
 end som_system_pkg;

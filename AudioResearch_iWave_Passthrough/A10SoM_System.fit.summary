@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Sep 11 09:57:15 2020
+Fitter Status : Successful - Fri Sep 11 10:58:23 2020
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 Revision Name : A10SoM_System
 Top-level Entity Name : A10SoM_System
 Family : Arria 10
 Device : 10AS066H2F34I1HG
 Timing Models : Final
-Logic utilization (in ALMs) : 10,615 / 251,680 ( 4 % )
-Total registers : 21660
+Logic utilization (in ALMs) : 10,553 / 251,680 ( 4 % )
+Total registers : 21651
 Total pins : 422 / 604 ( 70 % )
 Total virtual pins : 0
 Total block memory bits : 559,872 / 43,642,880 ( 1 % )

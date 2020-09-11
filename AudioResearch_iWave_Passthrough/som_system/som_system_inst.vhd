@@ -61,46 +61,8 @@
 			emif_0_status_local_cal_fail                   : out   std_logic;                                        -- local_cal_fail
 			emif_a10_hps_0_global_reset_reset_sink_reset_n : in    std_logic                     := 'X';             -- reset_n
 			hps_0_h2f_reset_reset_n                        : out   std_logic;                                        -- reset_n
-			hps_io_hps_io_phery_emac1_TX_CLK               : out   std_logic;                                        -- hps_io_phery_emac1_TX_CLK
-			hps_io_hps_io_phery_emac1_TXD0                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD0
-			hps_io_hps_io_phery_emac1_TXD1                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD1
-			hps_io_hps_io_phery_emac1_TXD2                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD2
-			hps_io_hps_io_phery_emac1_TXD3                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD3
-			hps_io_hps_io_phery_emac1_RX_CTL               : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RX_CTL
-			hps_io_hps_io_phery_emac1_TX_CTL               : out   std_logic;                                        -- hps_io_phery_emac1_TX_CTL
-			hps_io_hps_io_phery_emac1_RX_CLK               : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RX_CLK
-			hps_io_hps_io_phery_emac1_RXD0                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD0
-			hps_io_hps_io_phery_emac1_RXD1                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD1
-			hps_io_hps_io_phery_emac1_RXD2                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD2
-			hps_io_hps_io_phery_emac1_RXD3                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD3
-			hps_io_hps_io_phery_emac1_MDIO                 : inout std_logic                     := 'X';             -- hps_io_phery_emac1_MDIO
-			hps_io_hps_io_phery_emac1_MDC                  : out   std_logic;                                        -- hps_io_phery_emac1_MDC
-			hps_io_hps_io_phery_sdmmc_CMD                  : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_CMD
-			hps_io_hps_io_phery_sdmmc_D0                   : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D0
-			hps_io_hps_io_phery_sdmmc_D1                   : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D1
-			hps_io_hps_io_phery_sdmmc_D2                   : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D2
-			hps_io_hps_io_phery_sdmmc_D3                   : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D3
-			hps_io_hps_io_phery_sdmmc_CCLK                 : out   std_logic;                                        -- hps_io_phery_sdmmc_CCLK
-			hps_io_hps_io_phery_usb1_DATA0                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA0
-			hps_io_hps_io_phery_usb1_DATA1                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA1
-			hps_io_hps_io_phery_usb1_DATA2                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA2
-			hps_io_hps_io_phery_usb1_DATA3                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA3
-			hps_io_hps_io_phery_usb1_DATA4                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA4
-			hps_io_hps_io_phery_usb1_DATA5                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA5
-			hps_io_hps_io_phery_usb1_DATA6                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA6
-			hps_io_hps_io_phery_usb1_DATA7                 : inout std_logic                     := 'X';             -- hps_io_phery_usb1_DATA7
-			hps_io_hps_io_phery_usb1_CLK                   : in    std_logic                     := 'X';             -- hps_io_phery_usb1_CLK
-			hps_io_hps_io_phery_usb1_STP                   : out   std_logic;                                        -- hps_io_phery_usb1_STP
-			hps_io_hps_io_phery_usb1_DIR                   : in    std_logic                     := 'X';             -- hps_io_phery_usb1_DIR
-			hps_io_hps_io_phery_usb1_NXT                   : in    std_logic                     := 'X';             -- hps_io_phery_usb1_NXT
-			hps_io_hps_io_phery_uart1_RX                   : in    std_logic                     := 'X';             -- hps_io_phery_uart1_RX
-			hps_io_hps_io_phery_uart1_TX                   : out   std_logic;                                        -- hps_io_phery_uart1_TX
-			hps_io_hps_io_phery_i2c0_SDA                   : inout std_logic                     := 'X';             -- hps_io_phery_i2c0_SDA
-			hps_io_hps_io_phery_i2c0_SCL                   : inout std_logic                     := 'X';             -- hps_io_phery_i2c0_SCL
 			hps_io_hps_io_gpio_gpio2_io6                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio2_io6
 			hps_io_hps_io_gpio_gpio2_io8                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio2_io8
-			hps_io_hps_io_gpio_gpio0_io0                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io0
-			hps_io_hps_io_gpio_gpio0_io1                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io1
 			hps_io_hps_io_gpio_gpio0_io6                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io6
 			hps_io_hps_io_gpio_gpio0_io11                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io11
 			hps_io_hps_io_gpio_gpio1_io12                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io12
@@ -207,7 +169,11 @@
 			mic_array9_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
 			oct_oct_rzqin                                  : in    std_logic                     := 'X';             -- oct_rzqin
 			reset_reset_n                                  : in    std_logic                     := 'X';             -- reset_n
-			som_config_pio_export                          : inout std_logic_vector(1 downto 0)  := (others => 'X')  -- export
+			som_config_pio_export                          : inout std_logic_vector(1 downto 0)  := (others => 'X'); -- export
+			hps_i2c1_scl_in_clk                            : in    std_logic                     := 'X';             -- clk
+			hps_i2c1_clk_clk                               : out   std_logic;                                        -- clk
+			hps_i2c1_sda_i                                 : in    std_logic                     := 'X';             -- sda_i
+			hps_i2c1_sda_oe                                : out   std_logic                                         -- sda_oe
 		);
 	end component som_system;
 
@@ -274,46 +240,8 @@
 			emif_0_status_local_cal_fail                   => CONNECTED_TO_emif_0_status_local_cal_fail,                   --                                       .local_cal_fail
 			emif_a10_hps_0_global_reset_reset_sink_reset_n => CONNECTED_TO_emif_a10_hps_0_global_reset_reset_sink_reset_n, -- emif_a10_hps_0_global_reset_reset_sink.reset_n
 			hps_0_h2f_reset_reset_n                        => CONNECTED_TO_hps_0_h2f_reset_reset_n,                        --                        hps_0_h2f_reset.reset_n
-			hps_io_hps_io_phery_emac1_TX_CLK               => CONNECTED_TO_hps_io_hps_io_phery_emac1_TX_CLK,               --                                 hps_io.hps_io_phery_emac1_TX_CLK
-			hps_io_hps_io_phery_emac1_TXD0                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_TXD0,                 --                                       .hps_io_phery_emac1_TXD0
-			hps_io_hps_io_phery_emac1_TXD1                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_TXD1,                 --                                       .hps_io_phery_emac1_TXD1
-			hps_io_hps_io_phery_emac1_TXD2                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_TXD2,                 --                                       .hps_io_phery_emac1_TXD2
-			hps_io_hps_io_phery_emac1_TXD3                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_TXD3,                 --                                       .hps_io_phery_emac1_TXD3
-			hps_io_hps_io_phery_emac1_RX_CTL               => CONNECTED_TO_hps_io_hps_io_phery_emac1_RX_CTL,               --                                       .hps_io_phery_emac1_RX_CTL
-			hps_io_hps_io_phery_emac1_TX_CTL               => CONNECTED_TO_hps_io_hps_io_phery_emac1_TX_CTL,               --                                       .hps_io_phery_emac1_TX_CTL
-			hps_io_hps_io_phery_emac1_RX_CLK               => CONNECTED_TO_hps_io_hps_io_phery_emac1_RX_CLK,               --                                       .hps_io_phery_emac1_RX_CLK
-			hps_io_hps_io_phery_emac1_RXD0                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_RXD0,                 --                                       .hps_io_phery_emac1_RXD0
-			hps_io_hps_io_phery_emac1_RXD1                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_RXD1,                 --                                       .hps_io_phery_emac1_RXD1
-			hps_io_hps_io_phery_emac1_RXD2                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_RXD2,                 --                                       .hps_io_phery_emac1_RXD2
-			hps_io_hps_io_phery_emac1_RXD3                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_RXD3,                 --                                       .hps_io_phery_emac1_RXD3
-			hps_io_hps_io_phery_emac1_MDIO                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_MDIO,                 --                                       .hps_io_phery_emac1_MDIO
-			hps_io_hps_io_phery_emac1_MDC                  => CONNECTED_TO_hps_io_hps_io_phery_emac1_MDC,                  --                                       .hps_io_phery_emac1_MDC
-			hps_io_hps_io_phery_sdmmc_CMD                  => CONNECTED_TO_hps_io_hps_io_phery_sdmmc_CMD,                  --                                       .hps_io_phery_sdmmc_CMD
-			hps_io_hps_io_phery_sdmmc_D0                   => CONNECTED_TO_hps_io_hps_io_phery_sdmmc_D0,                   --                                       .hps_io_phery_sdmmc_D0
-			hps_io_hps_io_phery_sdmmc_D1                   => CONNECTED_TO_hps_io_hps_io_phery_sdmmc_D1,                   --                                       .hps_io_phery_sdmmc_D1
-			hps_io_hps_io_phery_sdmmc_D2                   => CONNECTED_TO_hps_io_hps_io_phery_sdmmc_D2,                   --                                       .hps_io_phery_sdmmc_D2
-			hps_io_hps_io_phery_sdmmc_D3                   => CONNECTED_TO_hps_io_hps_io_phery_sdmmc_D3,                   --                                       .hps_io_phery_sdmmc_D3
-			hps_io_hps_io_phery_sdmmc_CCLK                 => CONNECTED_TO_hps_io_hps_io_phery_sdmmc_CCLK,                 --                                       .hps_io_phery_sdmmc_CCLK
-			hps_io_hps_io_phery_usb1_DATA0                 => CONNECTED_TO_hps_io_hps_io_phery_usb1_DATA0,                 --                                       .hps_io_phery_usb1_DATA0
-			hps_io_hps_io_phery_usb1_DATA1                 => CONNECTED_TO_hps_io_hps_io_phery_usb1_DATA1,                 --                                       .hps_io_phery_usb1_DATA1
-			hps_io_hps_io_phery_usb1_DATA2                 => CONNECTED_TO_hps_io_hps_io_phery_usb1_DATA2,                 --                                       .hps_io_phery_usb1_DATA2
-			hps_io_hps_io_phery_usb1_DATA3                 => CONNECTED_TO_hps_io_hps_io_phery_usb1_DATA3,                 --                                       .hps_io_phery_usb1_DATA3
-			hps_io_hps_io_phery_usb1_DATA4                 => CONNECTED_TO_hps_io_hps_io_phery_usb1_DATA4,                 --                                       .hps_io_phery_usb1_DATA4
-			hps_io_hps_io_phery_usb1_DATA5                 => CONNECTED_TO_hps_io_hps_io_phery_usb1_DATA5,                 --                                       .hps_io_phery_usb1_DATA5
-			hps_io_hps_io_phery_usb1_DATA6                 => CONNECTED_TO_hps_io_hps_io_phery_usb1_DATA6,                 --                                       .hps_io_phery_usb1_DATA6
-			hps_io_hps_io_phery_usb1_DATA7                 => CONNECTED_TO_hps_io_hps_io_phery_usb1_DATA7,                 --                                       .hps_io_phery_usb1_DATA7
-			hps_io_hps_io_phery_usb1_CLK                   => CONNECTED_TO_hps_io_hps_io_phery_usb1_CLK,                   --                                       .hps_io_phery_usb1_CLK
-			hps_io_hps_io_phery_usb1_STP                   => CONNECTED_TO_hps_io_hps_io_phery_usb1_STP,                   --                                       .hps_io_phery_usb1_STP
-			hps_io_hps_io_phery_usb1_DIR                   => CONNECTED_TO_hps_io_hps_io_phery_usb1_DIR,                   --                                       .hps_io_phery_usb1_DIR
-			hps_io_hps_io_phery_usb1_NXT                   => CONNECTED_TO_hps_io_hps_io_phery_usb1_NXT,                   --                                       .hps_io_phery_usb1_NXT
-			hps_io_hps_io_phery_uart1_RX                   => CONNECTED_TO_hps_io_hps_io_phery_uart1_RX,                   --                                       .hps_io_phery_uart1_RX
-			hps_io_hps_io_phery_uart1_TX                   => CONNECTED_TO_hps_io_hps_io_phery_uart1_TX,                   --                                       .hps_io_phery_uart1_TX
-			hps_io_hps_io_phery_i2c0_SDA                   => CONNECTED_TO_hps_io_hps_io_phery_i2c0_SDA,                   --                                       .hps_io_phery_i2c0_SDA
-			hps_io_hps_io_phery_i2c0_SCL                   => CONNECTED_TO_hps_io_hps_io_phery_i2c0_SCL,                   --                                       .hps_io_phery_i2c0_SCL
-			hps_io_hps_io_gpio_gpio2_io6                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio2_io6,                   --                                       .hps_io_gpio_gpio2_io6
+			hps_io_hps_io_gpio_gpio2_io6                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio2_io6,                   --                                 hps_io.hps_io_gpio_gpio2_io6
 			hps_io_hps_io_gpio_gpio2_io8                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio2_io8,                   --                                       .hps_io_gpio_gpio2_io8
-			hps_io_hps_io_gpio_gpio0_io0                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io0,                   --                                       .hps_io_gpio_gpio0_io0
-			hps_io_hps_io_gpio_gpio0_io1                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io1,                   --                                       .hps_io_gpio_gpio0_io1
 			hps_io_hps_io_gpio_gpio0_io6                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io6,                   --                                       .hps_io_gpio_gpio0_io6
 			hps_io_hps_io_gpio_gpio0_io11                  => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io11,                  --                                       .hps_io_gpio_gpio0_io11
 			hps_io_hps_io_gpio_gpio1_io12                  => CONNECTED_TO_hps_io_hps_io_gpio_gpio1_io12,                  --                                       .hps_io_gpio_gpio1_io12
@@ -420,6 +348,10 @@
 			mic_array9_physical_serial_clk_out             => CONNECTED_TO_mic_array9_physical_serial_clk_out,             --                                       .serial_clk_out
 			oct_oct_rzqin                                  => CONNECTED_TO_oct_oct_rzqin,                                  --                                    oct.oct_rzqin
 			reset_reset_n                                  => CONNECTED_TO_reset_reset_n,                                  --                                  reset.reset_n
-			som_config_pio_export                          => CONNECTED_TO_som_config_pio_export                           --                         som_config_pio.export
+			som_config_pio_export                          => CONNECTED_TO_som_config_pio_export,                          --                         som_config_pio.export
+			hps_i2c1_scl_in_clk                            => CONNECTED_TO_hps_i2c1_scl_in_clk,                            --                        hps_i2c1_scl_in.clk
+			hps_i2c1_clk_clk                               => CONNECTED_TO_hps_i2c1_clk_clk,                               --                           hps_i2c1_clk.clk
+			hps_i2c1_sda_i                                 => CONNECTED_TO_hps_i2c1_sda_i,                                 --                               hps_i2c1.sda_i
+			hps_i2c1_sda_oe                                => CONNECTED_TO_hps_i2c1_sda_oe                                 --                                       .sda_oe
 		);
 

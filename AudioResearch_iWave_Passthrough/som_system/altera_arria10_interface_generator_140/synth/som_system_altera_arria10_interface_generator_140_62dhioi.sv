@@ -11,7 +11,7 @@
 // agreement for further details.
 
 
-module som_system_altera_arria10_interface_generator_140_ymm4c3q(
+module som_system_altera_arria10_interface_generator_140_62dhioi(
 // hps_io
   output wire [1 - 1 : 0 ] hps_io_phery_emac1_TX_CLK
  ,output wire [1 - 1 : 0 ] hps_io_phery_emac1_TXD0

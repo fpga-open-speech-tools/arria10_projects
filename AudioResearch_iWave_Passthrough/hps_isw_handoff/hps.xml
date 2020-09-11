@@ -2,7 +2,7 @@
   <system>
     <config name='VERSION' value='18.0' />
     <config name='DEVICE_FAMILY' value='Arria 10' />
-    <config name='TIME_AND_DATE' value='Friday September, 11, 2020 - 08:31:21 AM MDT' />
+    <config name='TIME_AND_DATE' value='Friday September, 11, 2020 - 10:45:46 AM MDT' />
     <config name='DMA_Enable' value='No No No No No No No No' />
     <config name='eosc1_clk_hz' value='25000000.0' />
     <config name='emac0_clk_hz' value='250000000' />
@@ -58,7 +58,7 @@
       <config name='CONFIG_HPS_UART1_RX' value='1' />
     </peripheral>
     <peripheral name='i2c0' used='true' />
-    <peripheral name='i2c1' used='false' />
+    <peripheral name='i2c1' used='true' />
     <peripheral name='i2cemac0' used='false' />
     <peripheral name='i2cemac1' used='false' />
     <peripheral name='i2cemac2' used='false' />
@@ -143,7 +143,7 @@
     <config name='i_io48_pin_mux_fpga_interface_grp.pinmux_uart0_usefpga.sel' value='0' />
     <config name='i_io48_pin_mux_fpga_interface_grp.pinmux_uart1_usefpga.sel' value='0' />
     <config name='i_io48_pin_mux_fpga_interface_grp.pinmux_i2c0_usefpga.sel' value='0' />
-    <config name='i_io48_pin_mux_fpga_interface_grp.pinmux_i2c1_usefpga.sel' value='0' />
+    <config name='i_io48_pin_mux_fpga_interface_grp.pinmux_i2c1_usefpga.sel' value='1' />
     <config name='i_io48_pin_mux_fpga_interface_grp.pinmux_i2cemac0_usefpga.sel' value='0' />
     <config name='i_io48_pin_mux_fpga_interface_grp.pinmux_i2cemac1_usefpga.sel' value='0' />
     <config name='i_io48_pin_mux_fpga_interface_grp.pinmux_i2cemac2_usefpga.sel' value='0' />
@@ -203,7 +203,7 @@
   </csr>
   <csr />
   <!-- This section was added by Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition -->
-  <!-- Generated on Fri Sep 11 09:49:43 2020 -->
+  <!-- Generated on Fri Sep 11 10:50:32 2020 -->
   <csr>
     <!-- OSC_CLK_1_HPS -->
     <config name='i_io48_pin_mux_dedicated_io_grp.configuration_dedicated_io_1.rtrim'        value='1' />

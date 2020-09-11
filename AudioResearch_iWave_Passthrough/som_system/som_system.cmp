@@ -61,6 +61,10 @@
 			emif_0_status_local_cal_fail                   : out   std_logic;                                        -- local_cal_fail
 			emif_a10_hps_0_global_reset_reset_sink_reset_n : in    std_logic                     := 'X';             -- reset_n
 			hps_0_h2f_reset_reset_n                        : out   std_logic;                                        -- reset_n
+			hps_i2c1_sda_i                                 : in    std_logic                     := 'X';             -- sda_i
+			hps_i2c1_sda_oe                                : out   std_logic;                                        -- sda_oe
+			hps_i2c1_clk_clk                               : out   std_logic;                                        -- clk
+			hps_i2c1_scl_in_clk                            : in    std_logic                     := 'X';             -- clk
 			hps_io_hps_io_phery_emac1_TX_CLK               : out   std_logic;                                        -- hps_io_phery_emac1_TX_CLK
 			hps_io_hps_io_phery_emac1_TXD0                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD0
 			hps_io_hps_io_phery_emac1_TXD1                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD1
