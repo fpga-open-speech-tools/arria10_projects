@@ -149,7 +149,7 @@ AA_SDI[2]                    : AB2       : output : 1.8 V             :         
 AA_SDO[2]                    : AB3       : input  : 1.8 V             :         : 3C        : Y               : --           
 GND                          : AB4       : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 3B        :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 3B        :                 : --           
+pcie_npor_pin_perst          : AB6       : input  : 1.8 V             :         : 3B        : N               : --           
 AA_SDI[6]                    : AB7       : output : 1.8 V             :         : 3B        : Y               : --           
 AA_SDO[6]                    : AB8       : input  : 1.8 V             :         : 3B        : Y               : --           
 VCCIO3B                      : AB9       : power  :                   : 1.8V    : 3B        :                 : --           
@@ -184,7 +184,7 @@ AA_12V0_EN[1]                : AC3       : output : 1.8 V             :         
 HDPHN_I2C_SDA                : AC4       : bidir  : 1.8 V             :         : 3B        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 3B        :                 : --           
 VCCIO3B                      : AC6       : power  :                   : 1.8V    : 3B        :                 : --           
-pcie_npor_pin_perst          : AC7       : input  : 1.8 V             :         : 3B        : N               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC7       :        :                   :         : 3B        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC8       :        :                   :         : 3B        :                 : --           
 AA_SDO[7]                    : AC9       : input  : 1.8 V             :         : 3B        : Y               : --           
 AA_BANK_EN[1]                : AC10      : output : 1.8 V             :         : 3B        : Y               : --           
@@ -359,8 +359,8 @@ DB25_GPIO[8]                 : AH8       : bidir  : 1.8 V             :         
 AD1939_HDPHN_OUT_DSDATA      : AH9       : output : 1.8 V             :         : 3A        : Y               : --           
 AD1939_LINE_OUT_DSDATA       : AH10      : output : 1.8 V             :         : 3A        : Y               : --           
 GND                          : AH11      : gnd    :                   :         :           :                 : --           
-TCK                          : AH12      : input  :                   :         : CSS       :                 : --           
-TDI                          : AH13      : input  :                   :         : CSS       :                 : --           
+altera_reserved_tck          : AH12      : input  : 1.8 V             :         : CSS       : N               : --           
+altera_reserved_tdi          : AH13      : input  : 1.8 V             :         : CSS       : N               : --           
 HSA_OUT_R_SDI                : AH14      : output : 1.8 V             :         : 2A        : Y               : --           
 DB25_GPIO[12]                : AH15      : bidir  : 1.8 V             :         : 2A        : Y               : --           
 VCCIO2A                      : AH16      : power  :                   : 1.8V    : 2A        :                 : --           
@@ -393,7 +393,7 @@ GND                          : AJ8       : gnd    :                   :         
 AD1939_ALRCLK                : AJ9       : input  : 1.8 V             :         : 3A        : Y               : --           
 DCLK                         : AJ10      : bidir  :                   :         : CSS       :                 : --           
 AS_DATA0, ASDO               : AJ11      :        :                   :         : CSS       :                 : --           
-TDO                          : AJ12      : output :                   :         : CSS       :                 : --           
+altera_reserved_tdo          : AJ12      : output : 1.8 V             :         : CSS       : N               : --           
 GND                          : AJ13      : gnd    :                   :         :           :                 : --           
 HSA_OUT_R_SYNC_N             : AJ14      : output : 1.8 V             :         : 2A        : Y               : --           
 DB25_GPIO[13]                : AJ15      : bidir  : 1.8 V             :         : 2A        : Y               : --           
@@ -459,8 +459,8 @@ DB25_GPIO[0]                 : AL6       : bidir  : 1.8 V             :         
 GND                          : AL7       : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AL8       :        :                   :         : 3A        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AL9       :        :                   :         : 3A        :                 : --           
-TMS                          : AL10      : input  :                   :         : CSS       :                 : --           
-TRST                         : AL11      : input  :                   :         : CSS       :                 : --           
+altera_reserved_tms          : AL10      : input  : 1.8 V             :         : CSS       : N               : --           
+altera_reserved_ntrst        : AL11      : input  : 1.8 V             :         : CSS       : N               : --           
 GND                          : AL12      : gnd    :                   :         :           :                 : --           
 AD7768_DOUT[3]               : AL13      : input  : 1.8 V             :         : 2A        : Y               : --           
 AD7768_RESET_N               : AL14      : output : 1.8 V             :         : 2A        : Y               : --           

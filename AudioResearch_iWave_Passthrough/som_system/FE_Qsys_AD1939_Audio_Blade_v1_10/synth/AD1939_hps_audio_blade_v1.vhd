@@ -5,9 +5,9 @@
 --
 -- Create Date:      06/29/2018
 --
--- Design Name:      AD1939_hps_audio_research.vhd  
+-- Design Name:      AD1939_hps_audio_blade.vhd  
 --                      
--- Description:      The AD1939_hps_audio_research component does the following:
+-- Description:      The AD1939_hps_audio_blade component does the following:
 --                         1. Provides a simple Qsys data interface for to the AD1939 Audio Codec 
 --                         2. Note: It is assumed that the AD1939 SPI Control Interface is connected to the SPI master of the Cyclone V HPS, thus there is no control interface in this component.
 --                            -- Signals to/from AD1939 SPI Control Port (data direction from AD1939 perspective), connection to physical pins on AD1939
@@ -22,7 +22,7 @@
 --                               c.  ADC set as Master
 --                               d.  DAC set as Slave
 --
--- Target Device(s): Terasic D1E0-Nano Board
+-- Target Device(s): Audio Blade (Arria 10 FPGA)
 -- Tool versions:    Quartus Prime 18.0
 --
 --
@@ -34,7 +34,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity AD1939_hps_audio_research is
+entity AD1939_hps_audio_blade is
     port
     (   
       sys_clk                     : in     std_logic;  -- FPGA system fabric clock  (Note: sys_clk is assumed to be faster and synchronous to the AD1939 sample rate clock and bit clock, typically one generates sys_clk using a PLL that is N * AD1939_ADC_ALRCLK)
@@ -53,8 +53,6 @@ entity AD1939_hps_audio_research is
       -- physical signals to DAC
       AD1939_DAC_DSDATA1          : out    std_logic;   -- Serial data to AD1939 pin 20 DSDATA1, DAC1 24-bit normal stereo serial mode
       AD1939_DAC_DSDATA2          : out    std_logic;   -- Serial data to AD1939 pin 20 DSDATA1, DAC1 24-bit normal stereo serial mode
-      AD1939_DAC_DSDATA3          : out    std_logic;   -- Serial data to AD1939 pin 20 DSDATA1, DAC1 24-bit normal stereo serial mode
-      AD1939_DAC_DSDATA4          : out    std_logic;   -- Serial data to AD1939 pin 20 DSDATA1, DAC1 24-bit normal stereo serial mode
 
       AD1939_DAC_DBCLK            : out    std_logic;   -- Bit Clock for DAC (Slave Mode) to pin 21 DBCLK on AD1939
       AD1939_DAC_DLRCLK           : out    std_logic;   -- Left/Right framing Clock for DAC (Slave Mode) to pin 22 DLRCLK on AD1939
@@ -87,21 +85,11 @@ entity AD1939_hps_audio_research is
       AD1939_DAC2_data         : in     std_logic_vector(31 downto 0);  -- W=32; F=28; Signed 2's Complement
       AD1939_DAC2_channel      : in     std_logic_vector(1 downto 0);   -- Left <-> channel 0;  Right <-> channel 1
       AD1939_DAC2_valid        : in     std_logic;                      -- asserted when data is valid 
-      AD1939_DAC2_error        : in     std_logic_vector(1 downto 0);   -- error channel is ignored, assumed to be error free at this point
+      AD1939_DAC2_error        : in     std_logic_vector(1 downto 0)    -- error channel is ignored, assumed to be error free at this point
+);
+end AD1939_hps_audio_blade;
 
-      AD1939_DAC3_data         : in     std_logic_vector(31 downto 0);  -- W=32; F=28; Signed 2's Complement
-      AD1939_DAC3_channel      : in     std_logic_vector(1 downto 0);   -- Left <-> channel 0;  Right <-> channel 1
-      AD1939_DAC3_valid        : in     std_logic;                      -- asserted when data is valid 
-      AD1939_DAC3_error        : in     std_logic_vector(1 downto 0);   -- error channel is ignored, assumed to be error free at this point
-
-      AD1939_DAC4_data         : in     std_logic_vector(31 downto 0);  -- W=32; F=28; Signed 2's Complement
-      AD1939_DAC4_channel      : in     std_logic_vector(1 downto 0);   -- Left <-> channel 0;  Right <-> channel 1
-      AD1939_DAC4_valid        : in     std_logic;                      -- asserted when data is valid 
-      AD1939_DAC4_error        : in     std_logic_vector(1 downto 0)   -- error channel is ignored, assumed to be error free at this point
-    );
-end AD1939_hps_audio_research;
-
-architecture behavioral of AD1939_hps_audio_research is
+architecture behavioral of AD1939_hps_audio_blade is
 
     --------------------------------------------------------------
     -- Intel/Altera component to convert serial data to parallel
@@ -159,16 +147,6 @@ architecture behavioral of AD1939_hps_audio_research is
     signal DAC2_data_right          : std_logic_vector(23 downto 0);
     signal AD1939_DAC_DSDATA2_left  : std_logic;
     signal AD1939_DAC_DSDATA2_right : std_logic;  
-    
-    signal DAC3_data_left           : std_logic_vector(23 downto 0);
-    signal DAC3_data_right          : std_logic_vector(23 downto 0);
-    signal AD1939_DAC_DSDATA3_left  : std_logic;
-    signal AD1939_DAC_DSDATA3_right : std_logic; 
-    
-    signal DAC4_data_left           : std_logic_vector(23 downto 0);
-    signal DAC4_data_right          : std_logic_vector(23 downto 0);
-    signal AD1939_DAC_DSDATA4_left  : std_logic;
-    signal AD1939_DAC_DSDATA4_right : std_logic;
     
     -- Register the output
     signal AD1939_ADC1_valid_r       : std_logic;
@@ -336,32 +314,6 @@ begin
         end if;
       end if;
   end process;
-
-  process (sys_clk)
-    begin
-      if (rising_edge(sys_clk)) then
-        if AD1939_DAC3_valid  = '1' then  -- data has arrived
-          case AD1939_DAC3_channel is
-            when "00" => DAC3_data_left  <= AD1939_DAC3_data(27 downto 4);  -- grab 24 bits out of the left channel that is W=32, F=28
-            when "01" => DAC3_data_right <= AD1939_DAC3_data(27 downto 4);  -- grab 24 bits out of the right channel that is W=32, F=28
-            when others =>                                                 -- do nothing
-          end case;
-        end if;
-      end if;
-  end process;
-  
-  process (sys_clk)
-    begin
-      if (rising_edge(sys_clk)) then
-        if AD1939_DAC4_valid  = '1' then  -- data has arrived
-          case AD1939_DAC4_channel is
-            when "00" => DAC4_data_left  <= AD1939_DAC4_data(27 downto 4);  -- grab 24 bits out of the left channel that is W=32, F=28
-            when "01" => DAC4_data_right <= AD1939_DAC4_data(27 downto 4);  -- grab 24 bits out of the right channel that is W=32, F=28
-            when others =>                                                 -- do nothing
-          end case;
-        end if;
-      end if;
-  end process;
   -------------------------------------------------------------
   -- DAC1 Left
   -------------------------------------------------------------
@@ -401,47 +353,7 @@ begin
     load            => not AD1939_ADC_ALRCLK,                         -- load: loads when high, component performs shift operation when low.  LRCLK -> Right High so start shifting when not LRCK goes low
     shiftout        => AD1939_DAC_DSDATA2_right
   );
-  
-  -------------------------------------------------------------
-  -- DAC3 Left
-  -------------------------------------------------------------
-  P2S_DAC3_left : Parallel2Serial_32bits PORT MAP (
-    clock           => AD1939_ADC_ABCLK,
-    data            => '0' & DAC3_data_left & "0000000",          -- Insert the 24-bits with a SDATA delay of 1 (SDATA delay set in DAC Control 0 Register; See Table 18 page 25 of AD1939 data sheet).
-    load            => AD1939_ADC_ALRCLK,                     -- load: loads when high, component performs shift operation when low.  LRCLK -> Left Low so start shifting when LRCK goes low
-    shiftout        => AD1939_DAC_DSDATA3_left
-  );
 
-  -------------------------------------------------------------
-  -- DAC3 Right
-  -------------------------------------------------------------
-  P2S_DAC3_right : Parallel2Serial_32bits PORT MAP (
-    clock           => AD1939_ADC_ABCLK,
-    data            => '0' & DAC3_data_right & "0000000",         -- Insert the 24-bits with a SDATA delay of 1 (SDATA delay set in DAC Control 0 Register; See Table 18 page 25 of AD1939 data sheet).
-    load            => not AD1939_ADC_ALRCLK,                         -- load: loads when high, component performs shift operation when low.  LRCLK -> Right High so start shifting when not LRCK goes low
-    shiftout        => AD1939_DAC_DSDATA3_right
-  );
-  
-  -------------------------------------------------------------
-  -- DAC4 Left
-  -------------------------------------------------------------
-  P2S_DAC4_left : Parallel2Serial_32bits PORT MAP (
-    clock           => AD1939_ADC_ABCLK,
-    data            => '0' & DAC4_data_left & "0000000",          -- Insert the 24-bits with a SDATA delay of 1 (SDATA delay set in DAC Control 0 Register; See Table 18 page 25 of AD1939 data sheet).
-    load            => AD1939_ADC_ALRCLK,                     -- load: loads when high, component performs shift operation when low.  LRCLK -> Left Low so start shifting when LRCK goes low
-    shiftout        => AD1939_DAC_DSDATA4_left
-  );
-
-  -------------------------------------------------------------
-  -- DAC4 Right
-  -------------------------------------------------------------
-  P2S_DAC4_right : Parallel2Serial_32bits PORT MAP (
-    clock           => AD1939_ADC_ABCLK,
-    data            => '0' & DAC4_data_right & "0000000",         -- Insert the 24-bits with a SDATA delay of 1 (SDATA delay set in DAC Control 0 Register; See Table 18 page 25 of AD1939 data sheet).
-    load            => not AD1939_ADC_ALRCLK,                         -- load: loads when high, component performs shift operation when low.  LRCLK -> Right High so start shifting when not LRCK goes low
-    shiftout        => AD1939_DAC_DSDATA4_right
-  );
-  
    ------------------------------------------------------------------
    -- Interleave the left/right serial data that goes out to the DAC
    ------------------------------------------------------------------
@@ -450,13 +362,9 @@ begin
         if (AD1939_ADC_ALRCLK = '0') then
             AD1939_DAC_DSDATA1 <= AD1939_DAC_DSDATA1_left;  -- When LRCLK is 1, stream out the left channel   (Left-Justified Mode;  See Figure 23 on page 21 of AD1939 data sheet)
             AD1939_DAC_DSDATA2 <= AD1939_DAC_DSDATA2_left;  -- When LRCLK is 1, stream out the left channel   (Left-Justified Mode;  See Figure 23 on page 21 of AD1939 data sheet)
-            AD1939_DAC_DSDATA3 <= AD1939_DAC_DSDATA3_left;  -- When LRCLK is 1, stream out the left channel   (Left-Justified Mode;  See Figure 23 on page 21 of AD1939 data sheet)
-            AD1939_DAC_DSDATA4 <= AD1939_DAC_DSDATA4_left;  -- When LRCLK is 1, stream out the left channel   (Left-Justified Mode;  See Figure 23 on page 21 of AD1939 data sheet)
         else
             AD1939_DAC_DSDATA1 <= AD1939_DAC_DSDATA1_right;
             AD1939_DAC_DSDATA2 <= AD1939_DAC_DSDATA2_right;
-            AD1939_DAC_DSDATA3 <= AD1939_DAC_DSDATA3_right;
-            AD1939_DAC_DSDATA4 <= AD1939_DAC_DSDATA4_right;
         end if;
     end process;
  

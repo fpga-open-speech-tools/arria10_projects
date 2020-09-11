@@ -282,17 +282,12 @@
          type = "boolean";
       }
    }
-   element FE_Qsys_AD1939_Audio_Research_v1_0
+   element FE_Qsys_AD1939_Audio_Blade_v1_0
    {
       datum _sortIndex
       {
          value = "4";
          type = "int";
-      }
-      datum sopceditor_expanded
-      {
-         value = "0";
-         type = "boolean";
       }
    }
    element arria10_hps_0
@@ -343,7 +338,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -356,7 +351,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "0";
+         value = "1";
          type = "boolean";
       }
    }
@@ -499,6 +494,14 @@
          type = "String";
       }
    }
+   element som_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Arria 10";
+         type = "String";
+      }
+   }
 }
 ]]></parameter>
  <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
@@ -537,7 +540,7 @@
    dir="end" />
  <interface
    name="ad1939_physical"
-   internal="FE_Qsys_AD1939_Audio_Research_v1_0.connect_to_AD1939"
+   internal="FE_Qsys_AD1939_Audio_Blade_v1_0.connect_to_AD1939"
    type="conduit"
    dir="end" />
  <interface
@@ -1054,8 +1057,8 @@
   <parameter name="rgb_data_width" value="16" />
  </module>
  <module
-   name="FE_Qsys_AD1939_Audio_Research_v1_0"
-   kind="FE_Qsys_AD1939_Audio_Research_v1"
+   name="FE_Qsys_AD1939_Audio_Blade_v1_0"
+   kind="FE_Qsys_AD1939_Audio_Blade_v1"
    version="1.0"
    enabled="1" />
  <module
@@ -3672,8 +3675,8 @@
  <connection
    kind="avalon_streaming"
    version="18.0"
-   start="FE_Qsys_AD1939_Audio_Research_v1_0.Line_In"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out" />
+   start="FE_Qsys_AD1939_Audio_Blade_v1_0.Line_In"
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.Headphone_Out" />
  <connection
    kind="avalon_streaming"
    version="18.0"
@@ -3687,19 +3690,19 @@
  <connection
    kind="avalon_streaming"
    version="18.0"
-   start="FE_Qsys_AD1939_Audio_Research_v1_0.Microphone_In"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.Headphone_Out" />
+   start="FE_Qsys_AD1939_Audio_Blade_v1_0.Microphone_In"
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.Line_Out" />
  <connection kind="clock" version="18.0" start="clk_1.clk" end="som_config.clk" />
  <connection
    kind="clock"
    version="18.0"
    start="clk_AD1939_ABCLK.clk"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.clk_abclk" />
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.clk_abclk" />
  <connection
    kind="clock"
    version="18.0"
    start="clk_AD1939_ALRCLK.clk"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.clk_alrclk" />
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.clk_alrclk" />
  <connection
    kind="clock"
    version="18.0"
@@ -3740,11 +3743,6 @@
    version="18.0"
    start="axi_clk_bridge.out_clk"
    end="mm_clock_crossing_bridge_0.s0_clk" />
- <connection
-   kind="clock"
-   version="18.0"
-   start="pll_using_AD1939_MCLK.outclk0"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_clk" />
  <connection
    kind="clock"
    version="18.0"
@@ -3835,6 +3833,11 @@
    version="18.0"
    start="pll_using_AD1939_MCLK.outclk0"
    end="FE_AD5791_v1_Right.sys_clk" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.sys_clk" />
  <connection
    kind="clock"
    version="18.0"
@@ -4090,11 +4093,6 @@
    kind="reset"
    version="18.0"
    start="clk_1.clk_reset"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_reset" />
- <connection
-   kind="reset"
-   version="18.0"
-   start="clk_1.clk_reset"
    end="FE_AD7768_v1_0.sys_reset" />
  <connection
    kind="reset"
@@ -4116,6 +4114,11 @@
    version="18.0"
    start="clk_1.clk_reset"
    end="FE_AD4020_Right.sys_reset" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.sys_reset" />
  <connection
    kind="reset"
    version="18.0"

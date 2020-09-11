@@ -7,7 +7,7 @@
    showClockDomains="0"
    showResetDomains="0">
   <columns>
-   <connections preferredWidth="30" />
+   <connections preferredWidth="127" />
    <irq preferredWidth="47" />
    <name preferredWidth="339" />
    <inputclock preferredWidth="212" />
@@ -16,7 +16,7 @@
   </columns>
  </systemtable>
  <library expandedCategories="Project,Library/FPGA Open Speech Tools,Library" />
- <window width="2180" height="1400" x="0" y="0" />
+ <window width="2400" height="1400" x="0" y="0" />
  <generation
    path=""
    clear_previous="1"

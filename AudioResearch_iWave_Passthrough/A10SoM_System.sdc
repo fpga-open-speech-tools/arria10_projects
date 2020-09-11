@@ -60,7 +60,11 @@ create_clock -name {hps_memory_mem_dqs[3]_IN} -period 0.937 -waveform { 0.000 0.
 create_clock -name {hps_memory_mem_dqs[4]_IN} -period 0.937 -waveform { 0.000 0.469 } [get_ports {hps_memory_mem_dqs[4]}]
 create_clock -name {sfp_refclk_1F_p} -period 8.000 -waveform { 0.000 4.000 } [get_ports {sfp_refclk_1F_p}]
 
-set_instance_assignment -name GLOBAL_SIGNAL "GLOBAL CLOCK" -to fpga_clk_i
+# AD1939 Clocks
+# Note the period of a 12.288 MHz clock is 81.380208333333329
+create_clock -period "12.288 MHz" [get_ports AD1939_MCLK]
+create_clock -period "12.288 MHz" [get_ports AD1939_ADC_ABCLK] 
+create_clock -period  "0.192 MHz" [get_ports AD1939_ADC_ALRCLK]
 
 #**************************************************************
 # Create Generated Clock
@@ -1670,6 +1674,12 @@ set_output_delay -add_delay  -clock [get_clocks {pio_system|emif_a10_hps_0_ref_c
 #**************************************************************
 # Set Clock Groups
 #**************************************************************
+
+set_clock_groups -asynchronous \
+						-group { AD1939_MCLK \
+						         AD1939_ADC_ABCLK \
+						         AD1939_ADC_ALRCLK \
+						       }
 
 set_clock_groups -asynchronous -group [get_clocks {pll|iopll_0|outclk1}] -group [get_clocks {u0|emif_0|emif_0_core_cal_master_clk}] 
 set_clock_groups -asynchronous -group [get_clocks {pll|iopll_0|outclk1}] -group [get_clocks {u0|emif_0|emif_0_core_cal_slave_clk}] 

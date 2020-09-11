@@ -179,11 +179,11 @@ ENTITY A10SoM_System IS
     FPGA_RESET                        : out std_logic;
     FULL_SPEED_N                      : out std_logic;
     TEMP_ALERT_N                      : in std_logic;
-            
+
     MSATA_A                           : out std_logic;
     MSATA_B                           : in std_logic;
     MSATA_PWR_EN                      : out std_logic;
-        
+
     AD7768_CS_N                       : out std_logic;
     AD7768_DCLK                       : out std_logic;
     AD7768_DRDY_N                     : in std_logic;
@@ -247,8 +247,6 @@ port (
     ad1939_physical_ad1939_dac_dlrclk              : out   std_logic;                                        -- ad1939_dac_dlrclk
     ad1939_physical_ad1939_dac_dsdata1             : out   std_logic;                                        -- ad1939_dac_dsdata1
     ad1939_physical_ad1939_dac_dsdata2             : out   std_logic;                                        -- ad1939_dac_dsdata2
-    ad1939_physical_ad1939_dac_dsdata3             : out   std_logic;                                        -- ad1939_dac_dsdata3
-    ad1939_physical_ad1939_dac_dsdata4             : out   std_logic;                                        -- ad1939_dac_dsdata4
     ad5791_left_physical_ad5791_clr_n_out          : out   std_logic;                                        -- ad5791_clr_n_out
     ad5791_left_physical_ad5791_ldac_n_out         : out   std_logic;                                        -- ad5791_ldac_n_out
     ad5791_left_physical_ad5791_miso_out           : in    std_logic                     := 'X';             -- ad5791_miso_out
@@ -486,6 +484,8 @@ end component som_system;
   signal spi_mosi : std_logic;
   signal spi_miso : std_logic;
   signal spi_clk  : std_logic;
+  
+  signal heartbeat_counter : integer range 0 to 12288001 := 0;
      
   begin 
 -- *****************************************************************************
@@ -685,8 +685,6 @@ end component som_system;
   ad1939_physical_ad1939_dac_dlrclk               =>  AD1939_DLRCLK, 
   ad1939_physical_ad1939_dac_dsdata1              =>  AD1939_LINE_OUT_DSDATA, 
   ad1939_physical_ad1939_dac_dsdata2              =>  AD1939_HDPHN_OUT_DSDATA, 
-  ad1939_physical_ad1939_dac_dsdata3              =>  open,   
-  ad1939_physical_ad1939_dac_dsdata4              =>  open,   
 
   mclk_pll_locked_export                          => open,
   
@@ -793,10 +791,47 @@ AA_LVDS_EN_N <= (others => '0');
 AD1939_RST_CODEC_N <= '1';
 AD4020_EN <= '1';
 AD5791_EN <= '1';
+AD1939_PWR_EN <= '1';
+HDPHN_PWR_OFF_N <= '1';
 
--- Disable unused components
--- MSATA_PWR_EN <= '0';
+-- Map the I2C signals
+HDPHN_I2C_SCL <= hps_i2c0_SCL;
+HDPHN_I2C_SDA <= hps_i2c0_SDA;
 
+-- I2C_SCL <= hps_i2c0_SCL;
+-- I2C_SDA <= hps_i2c0_SDA;
+
+-- Map the SPI signals
+spi_miso <= AD1939_SPI_MISO;
+AD1939_SPI_MOSI <= spi_mosi;
+AD1939_SPI_SCK  <= spi_clk;
+
+heartbeat: process(AD1939_MCLK,sys_reset_n_i)
+begin 
+  -- if sys_reset_n_i = '0' then 
+    -- FPGA_LED <= '0';
+    -- GPIO_LED <= '1';
+    -- heartbeat_counter <= 0;
+  if rising_edge(AD1939_MCLK) then 
+    if heartbeat_counter > 0 and heartbeat_counter < 1228800 then 
+      FPGA_LED <= '1';
+      GPIO_LED <= '0';
+    elsif heartbeat_counter > 3686400 and heartbeat_counter < 4915200 then 
+      FPGA_LED <= '1';
+      GPIO_LED <= '0';
+    else
+      FPGA_LED <= '0';
+      GPIO_LED <= '1';
+    end if;
+    
+    if heartbeat_counter = 12288000 then 
+      heartbeat_counter <= 0;
+    else
+      heartbeat_counter <= heartbeat_counter + 1;
+    end if;
+    
+  end if;
+end process;
 
 
 end architecture;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="som_system" kind="som_system" version="1.0" fabric="QSYS">
  <!-- Format version 18.0 614 (Future versions may contain additional information.) -->
- <!-- 2020.09.03.08:31:28 -->
+ <!-- 2020.09.11.08:31:11 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1599143486</value>
+  <value>1599834669</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -16120,10 +16120,10 @@ parameters are a RESULT of the module parameters. -->
   </interface>
  </module>
  <module
-   name="FE_Qsys_AD1939_Audio_Research_v1_0"
-   kind="FE_Qsys_AD1939_Audio_Research_v1"
+   name="FE_Qsys_AD1939_Audio_Blade_v1_0"
+   kind="FE_Qsys_AD1939_Audio_Blade_v1"
    version="1.0"
-   path="FE_Qsys_AD1939_Audio_Research_v1_0">
+   path="FE_Qsys_AD1939_Audio_Blade_v1_0">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <parameter name="deviceFamily">
@@ -16142,7 +16142,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="Headphone_Out" kind="avalon_streaming_sink" version="18.0">
+  <interface name="Line_In" kind="avalon_streaming_source" version="18.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -16212,7 +16212,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="maxChannel">
     <type>int</type>
-    <value>3</value>
+    <value>0</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -16259,28 +16259,171 @@ parameters are a RESULT of the module parameters. -->
     <valid>true</valid>
    </parameter>
    <type>avalon_streaming</type>
-   <isStart>false</isStart>
+   <isStart>true</isStart>
    <port>
-    <name>AD1939_DAC1_channel</name>
-    <direction>Input</direction>
-    <width>2</width>
-    <role>channel</role>
-   </port>
-   <port>
-    <name>AD1939_DAC1_data</name>
-    <direction>Input</direction>
+    <name>AD1939_ADC2_data</name>
+    <direction>Output</direction>
     <width>32</width>
     <role>data</role>
    </port>
    <port>
-    <name>AD1939_DAC1_error</name>
-    <direction>Input</direction>
+    <name>AD1939_ADC2_channel</name>
+    <direction>Output</direction>
+    <width>2</width>
+    <role>channel</role>
+   </port>
+   <port>
+    <name>AD1939_ADC2_valid</name>
+    <direction>Output</direction>
+    <width>1</width>
+    <role>valid</role>
+   </port>
+   <port>
+    <name>AD1939_ADC2_error</name>
+    <direction>Output</direction>
+    <width>2</width>
+    <role>error</role>
+   </port>
+  </interface>
+  <interface name="Microphone_In" kind="avalon_streaming_source" version="18.0">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>sys_clk</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value>sys_reset</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="beatsPerCycle">
+    <type>int</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="dataBitsPerSymbol">
+    <type>int</type>
+    <value>32</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="emptyWithinPacket">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="errorDescriptor">
+    <type>[Ljava.lang.String;</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="firstSymbolInHighOrderBits">
+    <type>boolean</type>
+    <value>true</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="highOrderSymbolAtMSB">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="maxChannel">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="packetDescription">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="readyLatency">
+    <type>int</type>
+    <value>0</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="symbolsPerBeat">
+    <type>int</type>
+    <value>1</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>avalon_streaming</type>
+   <isStart>true</isStart>
+   <port>
+    <name>AD1939_ADC1_channel</name>
+    <direction>Output</direction>
+    <width>2</width>
+    <role>channel</role>
+   </port>
+   <port>
+    <name>AD1939_ADC1_data</name>
+    <direction>Output</direction>
+    <width>32</width>
+    <role>data</role>
+   </port>
+   <port>
+    <name>AD1939_ADC1_error</name>
+    <direction>Output</direction>
     <width>2</width>
     <role>error</role>
    </port>
    <port>
-    <name>AD1939_DAC1_valid</name>
-    <direction>Input</direction>
+    <name>AD1939_ADC1_valid</name>
+    <direction>Output</direction>
     <width>1</width>
     <role>valid</role>
    </port>
@@ -16355,7 +16498,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="maxChannel">
     <type>int</type>
-    <value>3</value>
+    <value>0</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -16428,7 +16571,7 @@ parameters are a RESULT of the module parameters. -->
     <role>valid</role>
    </port>
   </interface>
-  <interface name="XLR1_Out" kind="avalon_streaming_sink" version="18.0">
+  <interface name="Headphone_Out" kind="avalon_streaming_sink" version="18.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -16498,7 +16641,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="maxChannel">
     <type>int</type>
-    <value>3</value>
+    <value>0</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -16547,592 +16690,28 @@ parameters are a RESULT of the module parameters. -->
    <type>avalon_streaming</type>
    <isStart>false</isStart>
    <port>
-    <name>AD1939_DAC3_channel</name>
+    <name>AD1939_DAC1_channel</name>
     <direction>Input</direction>
     <width>2</width>
     <role>channel</role>
    </port>
    <port>
-    <name>AD1939_DAC3_data</name>
+    <name>AD1939_DAC1_data</name>
     <direction>Input</direction>
     <width>32</width>
     <role>data</role>
    </port>
    <port>
-    <name>AD1939_DAC3_error</name>
+    <name>AD1939_DAC1_error</name>
     <direction>Input</direction>
     <width>2</width>
     <role>error</role>
    </port>
    <port>
-    <name>AD1939_DAC3_valid</name>
+    <name>AD1939_DAC1_valid</name>
     <direction>Input</direction>
     <width>1</width>
     <role>valid</role>
-   </port>
-  </interface>
-  <interface name="XLR2_Out" kind="avalon_streaming_sink" version="18.0">
-   <!-- The connection points exposed by a module instance for the
-particular module parameters. Connection points and their
-parameters are a RESULT of the module parameters. -->
-   <parameter name="associatedClock">
-    <type>java.lang.String</type>
-    <value>sys_clk</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="associatedReset">
-    <type>java.lang.String</type>
-    <value>sys_reset</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="beatsPerCycle">
-    <type>int</type>
-    <value>1</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="dataBitsPerSymbol">
-    <type>int</type>
-    <value>32</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="emptyWithinPacket">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="errorDescriptor">
-    <type>[Ljava.lang.String;</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="firstSymbolInHighOrderBits">
-    <type>boolean</type>
-    <value>true</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="highOrderSymbolAtMSB">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="maxChannel">
-    <type>int</type>
-    <value>3</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="packetDescription">
-    <type>java.lang.String</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="readyLatency">
-    <type>int</type>
-    <value>0</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="symbolsPerBeat">
-    <type>int</type>
-    <value>1</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="deviceFamily">
-    <type>java.lang.String</type>
-    <value>UNKNOWN</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="generateLegacySim">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <type>avalon_streaming</type>
-   <isStart>false</isStart>
-   <port>
-    <name>AD1939_DAC4_channel</name>
-    <direction>Input</direction>
-    <width>2</width>
-    <role>channel</role>
-   </port>
-   <port>
-    <name>AD1939_DAC4_data</name>
-    <direction>Input</direction>
-    <width>32</width>
-    <role>data</role>
-   </port>
-   <port>
-    <name>AD1939_DAC4_error</name>
-    <direction>Input</direction>
-    <width>2</width>
-    <role>error</role>
-   </port>
-   <port>
-    <name>AD1939_DAC4_valid</name>
-    <direction>Input</direction>
-    <width>1</width>
-    <role>valid</role>
-   </port>
-  </interface>
-  <interface name="Line_In" kind="avalon_streaming_source" version="18.0">
-   <!-- The connection points exposed by a module instance for the
-particular module parameters. Connection points and their
-parameters are a RESULT of the module parameters. -->
-   <parameter name="associatedClock">
-    <type>java.lang.String</type>
-    <value>sys_clk</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="associatedReset">
-    <type>java.lang.String</type>
-    <value>sys_reset</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="beatsPerCycle">
-    <type>int</type>
-    <value>1</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="dataBitsPerSymbol">
-    <type>int</type>
-    <value>32</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="emptyWithinPacket">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="errorDescriptor">
-    <type>[Ljava.lang.String;</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="firstSymbolInHighOrderBits">
-    <type>boolean</type>
-    <value>true</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="highOrderSymbolAtMSB">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="maxChannel">
-    <type>int</type>
-    <value>3</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="packetDescription">
-    <type>java.lang.String</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="readyLatency">
-    <type>int</type>
-    <value>0</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="symbolsPerBeat">
-    <type>int</type>
-    <value>1</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="deviceFamily">
-    <type>java.lang.String</type>
-    <value>UNKNOWN</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="generateLegacySim">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <type>avalon_streaming</type>
-   <isStart>true</isStart>
-   <port>
-    <name>AD1939_ADC2_channel</name>
-    <direction>Output</direction>
-    <width>2</width>
-    <role>channel</role>
-   </port>
-   <port>
-    <name>AD1939_ADC2_data</name>
-    <direction>Output</direction>
-    <width>32</width>
-    <role>data</role>
-   </port>
-   <port>
-    <name>AD1939_ADC2_error</name>
-    <direction>Output</direction>
-    <width>2</width>
-    <role>error</role>
-   </port>
-   <port>
-    <name>AD1939_ADC2_valid</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>valid</role>
-   </port>
-  </interface>
-  <interface name="Microphone_In" kind="avalon_streaming_source" version="18.0">
-   <!-- The connection points exposed by a module instance for the
-particular module parameters. Connection points and their
-parameters are a RESULT of the module parameters. -->
-   <parameter name="associatedClock">
-    <type>java.lang.String</type>
-    <value>sys_clk</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="associatedReset">
-    <type>java.lang.String</type>
-    <value>sys_reset</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="beatsPerCycle">
-    <type>int</type>
-    <value>1</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="dataBitsPerSymbol">
-    <type>int</type>
-    <value>32</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="emptyWithinPacket">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="errorDescriptor">
-    <type>[Ljava.lang.String;</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="firstSymbolInHighOrderBits">
-    <type>boolean</type>
-    <value>true</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="highOrderSymbolAtMSB">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="maxChannel">
-    <type>int</type>
-    <value>3</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="packetDescription">
-    <type>java.lang.String</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="readyLatency">
-    <type>int</type>
-    <value>0</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="symbolsPerBeat">
-    <type>int</type>
-    <value>1</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="deviceFamily">
-    <type>java.lang.String</type>
-    <value>UNKNOWN</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="generateLegacySim">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <type>avalon_streaming</type>
-   <isStart>true</isStart>
-   <port>
-    <name>AD1939_ADC1_channel</name>
-    <direction>Output</direction>
-    <width>2</width>
-    <role>channel</role>
-   </port>
-   <port>
-    <name>AD1939_ADC1_data</name>
-    <direction>Output</direction>
-    <width>32</width>
-    <role>data</role>
-   </port>
-   <port>
-    <name>AD1939_ADC1_error</name>
-    <direction>Output</direction>
-    <width>2</width>
-    <role>error</role>
-   </port>
-   <port>
-    <name>AD1939_ADC1_valid</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>valid</role>
-   </port>
-  </interface>
-  <interface name="sys_reset" kind="reset_sink" version="18.0">
-   <!-- The connection points exposed by a module instance for the
-particular module parameters. Connection points and their
-parameters are a RESULT of the module parameters. -->
-   <parameter name="associatedClock">
-    <type>java.lang.String</type>
-    <value>sys_clk</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="synchronousEdges">
-    <type>com.altera.sopcmodel.reset.Reset$Edges</type>
-    <value>DEASSERT</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="deviceFamily">
-    <type>java.lang.String</type>
-    <value>UNKNOWN</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="generateLegacySim">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <type>reset</type>
-   <isStart>false</isStart>
-   <port>
-    <name>sys_reset</name>
-    <direction>Input</direction>
-    <width>1</width>
-    <role>reset</role>
-   </port>
-  </interface>
-  <interface name="clk_abclk" kind="clock_sink" version="18.0">
-   <!-- The connection points exposed by a module instance for the
-particular module parameters. Connection points and their
-parameters are a RESULT of the module parameters. -->
-   <parameter name="externallyDriven">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="ptfSchematicName">
-    <type>java.lang.String</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="deviceFamily">
-    <type>java.lang.String</type>
-    <value>UNKNOWN</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="generateLegacySim">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <type>clock</type>
-   <isStart>false</isStart>
-   <port>
-    <name>AD1939_ADC_ABCLK</name>
-    <direction>Input</direction>
-    <width>1</width>
-    <role>clk</role>
-   </port>
-  </interface>
-  <interface name="clk_alrclk" kind="clock_sink" version="18.0">
-   <!-- The connection points exposed by a module instance for the
-particular module parameters. Connection points and their
-parameters are a RESULT of the module parameters. -->
-   <parameter name="externallyDriven">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="ptfSchematicName">
-    <type>java.lang.String</type>
-    <value></value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>false</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="deviceFamily">
-    <type>java.lang.String</type>
-    <value>UNKNOWN</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <parameter name="generateLegacySim">
-    <type>boolean</type>
-    <value>false</value>
-    <derived>false</derived>
-    <enabled>true</enabled>
-    <visible>true</visible>
-    <valid>true</valid>
-   </parameter>
-   <type>clock</type>
-   <isStart>false</isStart>
-   <port>
-    <name>AD1939_ADC_ALRCLK</name>
-    <direction>Input</direction>
-    <width>1</width>
-    <role>clk</role>
    </port>
   </interface>
   <interface name="sys_clk" kind="clock_sink" version="18.0">
@@ -17180,13 +16759,58 @@ parameters are a RESULT of the module parameters. -->
     <role>clk</role>
    </port>
   </interface>
+  <interface name="sys_reset" kind="reset_sink" version="18.0">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>sys_clk</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="synchronousEdges">
+    <type>com.altera.sopcmodel.reset.Reset$Edges</type>
+    <value>DEASSERT</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>reset</type>
+   <isStart>false</isStart>
+   <port>
+    <name>sys_reset</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>reset</role>
+   </port>
+  </interface>
   <interface name="connect_to_AD1939" kind="conduit_end" version="18.0">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
    <parameter name="associatedClock">
     <type>java.lang.String</type>
-    <value>clk_abclk</value>
+    <value>sys_clk</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -17231,18 +16855,6 @@ parameters are a RESULT of the module parameters. -->
     <role>ad1939_adc_asdata2</role>
    </port>
    <port>
-    <name>AD1939_DAC_DBCLK</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>ad1939_dac_dbclk</role>
-   </port>
-   <port>
-    <name>AD1939_DAC_DLRCLK</name>
-    <direction>Output</direction>
-    <width>1</width>
-    <role>ad1939_dac_dlrclk</role>
-   </port>
-   <port>
     <name>AD1939_DAC_DSDATA1</name>
     <direction>Output</direction>
     <width>1</width>
@@ -17255,16 +16867,106 @@ parameters are a RESULT of the module parameters. -->
     <role>ad1939_dac_dsdata2</role>
    </port>
    <port>
-    <name>AD1939_DAC_DSDATA3</name>
+    <name>AD1939_DAC_DBCLK</name>
     <direction>Output</direction>
     <width>1</width>
-    <role>ad1939_dac_dsdata3</role>
+    <role>ad1939_dac_dbclk</role>
    </port>
    <port>
-    <name>AD1939_DAC_DSDATA4</name>
+    <name>AD1939_DAC_DLRCLK</name>
     <direction>Output</direction>
     <width>1</width>
-    <role>ad1939_dac_dsdata4</role>
+    <role>ad1939_dac_dlrclk</role>
+   </port>
+  </interface>
+  <interface name="clk_alrclk" kind="clock_sink" version="18.0">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="externallyDriven">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="ptfSchematicName">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>clock</type>
+   <isStart>false</isStart>
+   <port>
+    <name>AD1939_ADC_ALRCLK</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role>
+   </port>
+  </interface>
+  <interface name="clk_abclk" kind="clock_sink" version="18.0">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="externallyDriven">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="ptfSchematicName">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>false</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>clock</type>
+   <isStart>false</isStart>
+   <port>
+    <name>AD1939_ADC_ABCLK</name>
+    <direction>Input</direction>
+    <width>1</width>
+    <role>clk</role>
    </port>
   </interface>
  </module>
@@ -55313,9 +55015,9 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>FE_Qsys_AD1939_Audio_Research_v1_0</moduleName>
+    <moduleName>FE_Qsys_AD1939_Audio_Blade_v1_0</moduleName>
     <slaveName>clk_abclk</slaveName>
-    <name>FE_Qsys_AD1939_Audio_Research_v1_0.clk_abclk</name>
+    <name>FE_Qsys_AD1939_Audio_Blade_v1_0.clk_abclk</name>
    </clockDomainMember>
   </interface>
   <interface name="clk_reset" kind="reset_source" version="18.0">
@@ -55621,9 +55323,9 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>FE_Qsys_AD1939_Audio_Research_v1_0</moduleName>
+    <moduleName>FE_Qsys_AD1939_Audio_Blade_v1_0</moduleName>
     <slaveName>clk_alrclk</slaveName>
-    <name>FE_Qsys_AD1939_Audio_Research_v1_0.clk_alrclk</name>
+    <name>FE_Qsys_AD1939_Audio_Blade_v1_0.clk_alrclk</name>
    </clockDomainMember>
   </interface>
   <interface name="clk_reset" kind="reset_source" version="18.0">
@@ -118813,12 +118515,6 @@ parameters are a RESULT of the module parameters. -->
    </port>
    <clockDomainMember>
     <isBridge>false</isBridge>
-    <moduleName>FE_Qsys_AD1939_Audio_Research_v1_0</moduleName>
-    <slaveName>sys_clk</slaveName>
-    <name>FE_Qsys_AD1939_Audio_Research_v1_0.sys_clk</name>
-   </clockDomainMember>
-   <clockDomainMember>
-    <isBridge>false</isBridge>
     <moduleName>FE_AD7768_v1_0</moduleName>
     <slaveName>sys_clk</slaveName>
     <name>FE_AD7768_v1_0.sys_clk</name>
@@ -118924,6 +118620,12 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>FE_AD5791_v1_Right</moduleName>
     <slaveName>sys_clk</slaveName>
     <name>FE_AD5791_v1_Right.sys_clk</name>
+   </clockDomainMember>
+   <clockDomainMember>
+    <isBridge>false</isBridge>
+    <moduleName>FE_Qsys_AD1939_Audio_Blade_v1_0</moduleName>
+    <slaveName>sys_clk</slaveName>
+    <name>FE_Qsys_AD1939_Audio_Blade_v1_0.sys_clk</name>
    </clockDomainMember>
    <clockDomainMember>
     <isBridge>false</isBridge>
@@ -130325,11 +130027,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>ctrl_amm_0</endConnectionPoint>
  </connection>
  <connection
-   name="FE_Qsys_AD1939_Audio_Research_v1_0.Line_In/FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out"
+   name="FE_Qsys_AD1939_Audio_Blade_v1_0.Line_In/FE_Qsys_AD1939_Audio_Blade_v1_0.Headphone_Out"
    kind="avalon_streaming"
    version="18.0"
-   start="FE_Qsys_AD1939_Audio_Research_v1_0.Line_In"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.Line_Out">
+   start="FE_Qsys_AD1939_Audio_Blade_v1_0.Line_In"
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.Headphone_Out">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -130346,10 +130048,10 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>FE_Qsys_AD1939_Audio_Research_v1_0</startModule>
+  <startModule>FE_Qsys_AD1939_Audio_Blade_v1_0</startModule>
   <startConnectionPoint>Line_In</startConnectionPoint>
-  <endModule>FE_Qsys_AD1939_Audio_Research_v1_0</endModule>
-  <endConnectionPoint>Line_Out</endConnectionPoint>
+  <endModule>FE_Qsys_AD1939_Audio_Blade_v1_0</endModule>
+  <endConnectionPoint>Headphone_Out</endConnectionPoint>
  </connection>
  <connection
    name="FE_AD4020_Left.Line_In/FE_AD5791_v1_Left.Line_Out"
@@ -130406,11 +130108,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>Line_Out</endConnectionPoint>
  </connection>
  <connection
-   name="FE_Qsys_AD1939_Audio_Research_v1_0.Microphone_In/FE_Qsys_AD1939_Audio_Research_v1_0.Headphone_Out"
+   name="FE_Qsys_AD1939_Audio_Blade_v1_0.Microphone_In/FE_Qsys_AD1939_Audio_Blade_v1_0.Line_Out"
    kind="avalon_streaming"
    version="18.0"
-   start="FE_Qsys_AD1939_Audio_Research_v1_0.Microphone_In"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.Headphone_Out">
+   start="FE_Qsys_AD1939_Audio_Blade_v1_0.Microphone_In"
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.Line_Out">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -130427,10 +130129,10 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>FE_Qsys_AD1939_Audio_Research_v1_0</startModule>
+  <startModule>FE_Qsys_AD1939_Audio_Blade_v1_0</startModule>
   <startConnectionPoint>Microphone_In</startConnectionPoint>
-  <endModule>FE_Qsys_AD1939_Audio_Research_v1_0</endModule>
-  <endConnectionPoint>Headphone_Out</endConnectionPoint>
+  <endModule>FE_Qsys_AD1939_Audio_Blade_v1_0</endModule>
+  <endConnectionPoint>Line_Out</endConnectionPoint>
  </connection>
  <connection
    name="clk_1.clk/som_config.clk"
@@ -130460,11 +130162,11 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>clk</endConnectionPoint>
  </connection>
  <connection
-   name="clk_AD1939_ABCLK.clk/FE_Qsys_AD1939_Audio_Research_v1_0.clk_abclk"
+   name="clk_AD1939_ABCLK.clk/FE_Qsys_AD1939_Audio_Blade_v1_0.clk_abclk"
    kind="clock"
    version="18.0"
    start="clk_AD1939_ABCLK.clk"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.clk_abclk">
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.clk_abclk">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -130483,15 +130185,15 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_AD1939_ABCLK</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>FE_Qsys_AD1939_Audio_Research_v1_0</endModule>
+  <endModule>FE_Qsys_AD1939_Audio_Blade_v1_0</endModule>
   <endConnectionPoint>clk_abclk</endConnectionPoint>
  </connection>
  <connection
-   name="clk_AD1939_ALRCLK.clk/FE_Qsys_AD1939_Audio_Research_v1_0.clk_alrclk"
+   name="clk_AD1939_ALRCLK.clk/FE_Qsys_AD1939_Audio_Blade_v1_0.clk_alrclk"
    kind="clock"
    version="18.0"
    start="clk_AD1939_ALRCLK.clk"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.clk_alrclk">
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.clk_alrclk">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
    <value>UNKNOWN</value>
@@ -130510,7 +130212,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <startModule>clk_AD1939_ALRCLK</startModule>
   <startConnectionPoint>clk</startConnectionPoint>
-  <endModule>FE_Qsys_AD1939_Audio_Research_v1_0</endModule>
+  <endModule>FE_Qsys_AD1939_Audio_Blade_v1_0</endModule>
   <endConnectionPoint>clk_alrclk</endConnectionPoint>
  </connection>
  <connection
@@ -130728,33 +130430,6 @@ parameters are a RESULT of the module parameters. -->
   <startConnectionPoint>out_clk</startConnectionPoint>
   <endModule>mm_clock_crossing_bridge_0</endModule>
   <endConnectionPoint>s0_clk</endConnectionPoint>
- </connection>
- <connection
-   name="pll_using_AD1939_MCLK.outclk0/FE_Qsys_AD1939_Audio_Research_v1_0.sys_clk"
-   kind="clock"
-   version="18.0"
-   start="pll_using_AD1939_MCLK.outclk0"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_clk">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>pll_using_AD1939_MCLK</startModule>
-  <startConnectionPoint>outclk0</startConnectionPoint>
-  <endModule>FE_Qsys_AD1939_Audio_Research_v1_0</endModule>
-  <endConnectionPoint>sys_clk</endConnectionPoint>
  </connection>
  <connection
    name="pll_using_AD1939_MCLK.outclk0/FE_AD7768_v1_0.sys_clk"
@@ -131240,6 +130915,33 @@ parameters are a RESULT of the module parameters. -->
   <startModule>pll_using_AD1939_MCLK</startModule>
   <startConnectionPoint>outclk0</startConnectionPoint>
   <endModule>FE_AD5791_v1_Right</endModule>
+  <endConnectionPoint>sys_clk</endConnectionPoint>
+ </connection>
+ <connection
+   name="pll_using_AD1939_MCLK.outclk0/FE_Qsys_AD1939_Audio_Blade_v1_0.sys_clk"
+   kind="clock"
+   version="18.0"
+   start="pll_using_AD1939_MCLK.outclk0"
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.sys_clk">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>pll_using_AD1939_MCLK</startModule>
+  <startConnectionPoint>outclk0</startConnectionPoint>
+  <endModule>FE_Qsys_AD1939_Audio_Blade_v1_0</endModule>
   <endConnectionPoint>sys_clk</endConnectionPoint>
  </connection>
  <connection
@@ -132606,33 +132308,6 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>reset</endConnectionPoint>
  </connection>
  <connection
-   name="clk_1.clk_reset/FE_Qsys_AD1939_Audio_Research_v1_0.sys_reset"
-   kind="reset"
-   version="18.0"
-   start="clk_1.clk_reset"
-   end="FE_Qsys_AD1939_Audio_Research_v1_0.sys_reset">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>clk_1</startModule>
-  <startConnectionPoint>clk_reset</startConnectionPoint>
-  <endModule>FE_Qsys_AD1939_Audio_Research_v1_0</endModule>
-  <endConnectionPoint>sys_reset</endConnectionPoint>
- </connection>
- <connection
    name="clk_1.clk_reset/FE_AD7768_v1_0.sys_reset"
    kind="reset"
    version="18.0"
@@ -132765,6 +132440,33 @@ parameters are a RESULT of the module parameters. -->
   <startModule>clk_1</startModule>
   <startConnectionPoint>clk_reset</startConnectionPoint>
   <endModule>FE_AD4020_Right</endModule>
+  <endConnectionPoint>sys_reset</endConnectionPoint>
+ </connection>
+ <connection
+   name="clk_1.clk_reset/FE_Qsys_AD1939_Audio_Blade_v1_0.sys_reset"
+   kind="reset"
+   version="18.0"
+   start="clk_1.clk_reset"
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.sys_reset">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>clk_1</startModule>
+  <startConnectionPoint>clk_reset</startConnectionPoint>
+  <endModule>FE_Qsys_AD1939_Audio_Blade_v1_0</endModule>
   <endConnectionPoint>sys_reset</endConnectionPoint>
  </connection>
  <connection
@@ -132924,7 +132626,7 @@ parameters are a RESULT of the module parameters. -->
   <version>1.0</version>
  </plugin>
  <plugin>
-  <instanceCount>38</instanceCount>
+  <instanceCount>36</instanceCount>
   <name>avalon_streaming_sink</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
@@ -132949,10 +132651,10 @@ parameters are a RESULT of the module parameters. -->
  </plugin>
  <plugin>
   <instanceCount>1</instanceCount>
-  <name>FE_Qsys_AD1939_Audio_Research_v1</name>
+  <name>FE_Qsys_AD1939_Audio_Blade_v1</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
-  <displayName>FE_Qsys_AD1939_Audio_Research_v1</displayName>
+  <displayName>FE_Qsys_AD1939_Audio_Blade_v1</displayName>
   <version>1.0</version>
  </plugin>
  <plugin>

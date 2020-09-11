@@ -5,12 +5,10 @@
 			ad1939_mclk_clk                                : in    std_logic                     := 'X';             -- clk
 			ad1939_physical_ad1939_adc_asdata1             : in    std_logic                     := 'X';             -- ad1939_adc_asdata1
 			ad1939_physical_ad1939_adc_asdata2             : in    std_logic                     := 'X';             -- ad1939_adc_asdata2
-			ad1939_physical_ad1939_dac_dbclk               : out   std_logic;                                        -- ad1939_dac_dbclk
-			ad1939_physical_ad1939_dac_dlrclk              : out   std_logic;                                        -- ad1939_dac_dlrclk
 			ad1939_physical_ad1939_dac_dsdata1             : out   std_logic;                                        -- ad1939_dac_dsdata1
 			ad1939_physical_ad1939_dac_dsdata2             : out   std_logic;                                        -- ad1939_dac_dsdata2
-			ad1939_physical_ad1939_dac_dsdata3             : out   std_logic;                                        -- ad1939_dac_dsdata3
-			ad1939_physical_ad1939_dac_dsdata4             : out   std_logic;                                        -- ad1939_dac_dsdata4
+			ad1939_physical_ad1939_dac_dbclk               : out   std_logic;                                        -- ad1939_dac_dbclk
+			ad1939_physical_ad1939_dac_dlrclk              : out   std_logic;                                        -- ad1939_dac_dlrclk
 			ad4020_left_physical_cnv                       : out   std_logic;                                        -- cnv
 			ad4020_left_physical_miso                      : in    std_logic                     := 'X';             -- miso
 			ad4020_left_physical_mosi                      : out   std_logic;                                        -- mosi
