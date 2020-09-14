@@ -299,7 +299,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -338,7 +338,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -351,7 +351,7 @@
       }
       datum sopceditor_expanded
       {
-         value = "1";
+         value = "0";
          type = "boolean";
       }
    }
@@ -3690,11 +3690,6 @@
  <connection
    kind="avalon_streaming"
    version="18.0"
-   start="FE_Qsys_AD1939_Audio_Blade_v1_0.Line_In"
-   end="FE_Qsys_AD1939_Audio_Blade_v1_0.Headphone_Out" />
- <connection
-   kind="avalon_streaming"
-   version="18.0"
    start="FE_AD4020_Left.Line_In"
    end="FE_AD5791_v1_Left.Line_Out" />
  <connection
@@ -3705,7 +3700,12 @@
  <connection
    kind="avalon_streaming"
    version="18.0"
-   start="FE_Qsys_AD1939_Audio_Blade_v1_0.Microphone_In"
+   start="FE_FPGA_Microphone_Encoder_Decoder_1.mic_output"
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.Headphone_Out" />
+ <connection
+   kind="avalon_streaming"
+   version="18.0"
+   start="FE_FPGA_Microphone_Encoder_Decoder_0.mic_output"
    end="FE_Qsys_AD1939_Audio_Blade_v1_0.Line_Out" />
  <connection kind="clock" version="18.0" start="clk_1.clk" end="som_config.clk" />
  <connection

@@ -60,8 +60,50 @@
 		.emif_0_status_local_cal_fail                   (<connected-to-emif_0_status_local_cal_fail>),                   //                                       .local_cal_fail
 		.emif_a10_hps_0_global_reset_reset_sink_reset_n (<connected-to-emif_a10_hps_0_global_reset_reset_sink_reset_n>), // emif_a10_hps_0_global_reset_reset_sink.reset_n
 		.hps_0_h2f_reset_reset_n                        (<connected-to-hps_0_h2f_reset_reset_n>),                        //                        hps_0_h2f_reset.reset_n
-		.hps_io_hps_io_gpio_gpio2_io6                   (<connected-to-hps_io_hps_io_gpio_gpio2_io6>),                   //                                 hps_io.hps_io_gpio_gpio2_io6
+		.hps_i2c1_sda_i                                 (<connected-to-hps_i2c1_sda_i>),                                 //                               hps_i2c1.sda_i
+		.hps_i2c1_sda_oe                                (<connected-to-hps_i2c1_sda_oe>),                                //                                       .sda_oe
+		.hps_i2c1_clk_clk                               (<connected-to-hps_i2c1_clk_clk>),                               //                           hps_i2c1_clk.clk
+		.hps_i2c1_scl_in_clk                            (<connected-to-hps_i2c1_scl_in_clk>),                            //                        hps_i2c1_scl_in.clk
+		.hps_io_hps_io_phery_emac1_TX_CLK               (<connected-to-hps_io_hps_io_phery_emac1_TX_CLK>),               //                                 hps_io.hps_io_phery_emac1_TX_CLK
+		.hps_io_hps_io_phery_emac1_TXD0                 (<connected-to-hps_io_hps_io_phery_emac1_TXD0>),                 //                                       .hps_io_phery_emac1_TXD0
+		.hps_io_hps_io_phery_emac1_TXD1                 (<connected-to-hps_io_hps_io_phery_emac1_TXD1>),                 //                                       .hps_io_phery_emac1_TXD1
+		.hps_io_hps_io_phery_emac1_TXD2                 (<connected-to-hps_io_hps_io_phery_emac1_TXD2>),                 //                                       .hps_io_phery_emac1_TXD2
+		.hps_io_hps_io_phery_emac1_TXD3                 (<connected-to-hps_io_hps_io_phery_emac1_TXD3>),                 //                                       .hps_io_phery_emac1_TXD3
+		.hps_io_hps_io_phery_emac1_RX_CTL               (<connected-to-hps_io_hps_io_phery_emac1_RX_CTL>),               //                                       .hps_io_phery_emac1_RX_CTL
+		.hps_io_hps_io_phery_emac1_TX_CTL               (<connected-to-hps_io_hps_io_phery_emac1_TX_CTL>),               //                                       .hps_io_phery_emac1_TX_CTL
+		.hps_io_hps_io_phery_emac1_RX_CLK               (<connected-to-hps_io_hps_io_phery_emac1_RX_CLK>),               //                                       .hps_io_phery_emac1_RX_CLK
+		.hps_io_hps_io_phery_emac1_RXD0                 (<connected-to-hps_io_hps_io_phery_emac1_RXD0>),                 //                                       .hps_io_phery_emac1_RXD0
+		.hps_io_hps_io_phery_emac1_RXD1                 (<connected-to-hps_io_hps_io_phery_emac1_RXD1>),                 //                                       .hps_io_phery_emac1_RXD1
+		.hps_io_hps_io_phery_emac1_RXD2                 (<connected-to-hps_io_hps_io_phery_emac1_RXD2>),                 //                                       .hps_io_phery_emac1_RXD2
+		.hps_io_hps_io_phery_emac1_RXD3                 (<connected-to-hps_io_hps_io_phery_emac1_RXD3>),                 //                                       .hps_io_phery_emac1_RXD3
+		.hps_io_hps_io_phery_emac1_MDIO                 (<connected-to-hps_io_hps_io_phery_emac1_MDIO>),                 //                                       .hps_io_phery_emac1_MDIO
+		.hps_io_hps_io_phery_emac1_MDC                  (<connected-to-hps_io_hps_io_phery_emac1_MDC>),                  //                                       .hps_io_phery_emac1_MDC
+		.hps_io_hps_io_phery_sdmmc_CMD                  (<connected-to-hps_io_hps_io_phery_sdmmc_CMD>),                  //                                       .hps_io_phery_sdmmc_CMD
+		.hps_io_hps_io_phery_sdmmc_D0                   (<connected-to-hps_io_hps_io_phery_sdmmc_D0>),                   //                                       .hps_io_phery_sdmmc_D0
+		.hps_io_hps_io_phery_sdmmc_D1                   (<connected-to-hps_io_hps_io_phery_sdmmc_D1>),                   //                                       .hps_io_phery_sdmmc_D1
+		.hps_io_hps_io_phery_sdmmc_D2                   (<connected-to-hps_io_hps_io_phery_sdmmc_D2>),                   //                                       .hps_io_phery_sdmmc_D2
+		.hps_io_hps_io_phery_sdmmc_D3                   (<connected-to-hps_io_hps_io_phery_sdmmc_D3>),                   //                                       .hps_io_phery_sdmmc_D3
+		.hps_io_hps_io_phery_sdmmc_CCLK                 (<connected-to-hps_io_hps_io_phery_sdmmc_CCLK>),                 //                                       .hps_io_phery_sdmmc_CCLK
+		.hps_io_hps_io_phery_usb1_DATA0                 (<connected-to-hps_io_hps_io_phery_usb1_DATA0>),                 //                                       .hps_io_phery_usb1_DATA0
+		.hps_io_hps_io_phery_usb1_DATA1                 (<connected-to-hps_io_hps_io_phery_usb1_DATA1>),                 //                                       .hps_io_phery_usb1_DATA1
+		.hps_io_hps_io_phery_usb1_DATA2                 (<connected-to-hps_io_hps_io_phery_usb1_DATA2>),                 //                                       .hps_io_phery_usb1_DATA2
+		.hps_io_hps_io_phery_usb1_DATA3                 (<connected-to-hps_io_hps_io_phery_usb1_DATA3>),                 //                                       .hps_io_phery_usb1_DATA3
+		.hps_io_hps_io_phery_usb1_DATA4                 (<connected-to-hps_io_hps_io_phery_usb1_DATA4>),                 //                                       .hps_io_phery_usb1_DATA4
+		.hps_io_hps_io_phery_usb1_DATA5                 (<connected-to-hps_io_hps_io_phery_usb1_DATA5>),                 //                                       .hps_io_phery_usb1_DATA5
+		.hps_io_hps_io_phery_usb1_DATA6                 (<connected-to-hps_io_hps_io_phery_usb1_DATA6>),                 //                                       .hps_io_phery_usb1_DATA6
+		.hps_io_hps_io_phery_usb1_DATA7                 (<connected-to-hps_io_hps_io_phery_usb1_DATA7>),                 //                                       .hps_io_phery_usb1_DATA7
+		.hps_io_hps_io_phery_usb1_CLK                   (<connected-to-hps_io_hps_io_phery_usb1_CLK>),                   //                                       .hps_io_phery_usb1_CLK
+		.hps_io_hps_io_phery_usb1_STP                   (<connected-to-hps_io_hps_io_phery_usb1_STP>),                   //                                       .hps_io_phery_usb1_STP
+		.hps_io_hps_io_phery_usb1_DIR                   (<connected-to-hps_io_hps_io_phery_usb1_DIR>),                   //                                       .hps_io_phery_usb1_DIR
+		.hps_io_hps_io_phery_usb1_NXT                   (<connected-to-hps_io_hps_io_phery_usb1_NXT>),                   //                                       .hps_io_phery_usb1_NXT
+		.hps_io_hps_io_phery_uart1_RX                   (<connected-to-hps_io_hps_io_phery_uart1_RX>),                   //                                       .hps_io_phery_uart1_RX
+		.hps_io_hps_io_phery_uart1_TX                   (<connected-to-hps_io_hps_io_phery_uart1_TX>),                   //                                       .hps_io_phery_uart1_TX
+		.hps_io_hps_io_phery_i2c0_SDA                   (<connected-to-hps_io_hps_io_phery_i2c0_SDA>),                   //                                       .hps_io_phery_i2c0_SDA
+		.hps_io_hps_io_phery_i2c0_SCL                   (<connected-to-hps_io_hps_io_phery_i2c0_SCL>),                   //                                       .hps_io_phery_i2c0_SCL
+		.hps_io_hps_io_gpio_gpio2_io6                   (<connected-to-hps_io_hps_io_gpio_gpio2_io6>),                   //                                       .hps_io_gpio_gpio2_io6
 		.hps_io_hps_io_gpio_gpio2_io8                   (<connected-to-hps_io_hps_io_gpio_gpio2_io8>),                   //                                       .hps_io_gpio_gpio2_io8
+		.hps_io_hps_io_gpio_gpio0_io0                   (<connected-to-hps_io_hps_io_gpio_gpio0_io0>),                   //                                       .hps_io_gpio_gpio0_io0
+		.hps_io_hps_io_gpio_gpio0_io1                   (<connected-to-hps_io_hps_io_gpio_gpio0_io1>),                   //                                       .hps_io_gpio_gpio0_io1
 		.hps_io_hps_io_gpio_gpio0_io6                   (<connected-to-hps_io_hps_io_gpio_gpio0_io6>),                   //                                       .hps_io_gpio_gpio0_io6
 		.hps_io_hps_io_gpio_gpio0_io11                  (<connected-to-hps_io_hps_io_gpio_gpio0_io11>),                  //                                       .hps_io_gpio_gpio0_io11
 		.hps_io_hps_io_gpio_gpio1_io12                  (<connected-to-hps_io_hps_io_gpio_gpio1_io12>),                  //                                       .hps_io_gpio_gpio1_io12
@@ -168,10 +210,6 @@
 		.mic_array9_physical_serial_clk_out             (<connected-to-mic_array9_physical_serial_clk_out>),             //                                       .serial_clk_out
 		.oct_oct_rzqin                                  (<connected-to-oct_oct_rzqin>),                                  //                                    oct.oct_rzqin
 		.reset_reset_n                                  (<connected-to-reset_reset_n>),                                  //                                  reset.reset_n
-		.som_config_pio_export                          (<connected-to-som_config_pio_export>),                          //                         som_config_pio.export
-		.hps_i2c1_scl_in_clk                            (<connected-to-hps_i2c1_scl_in_clk>),                            //                        hps_i2c1_scl_in.clk
-		.hps_i2c1_clk_clk                               (<connected-to-hps_i2c1_clk_clk>),                               //                           hps_i2c1_clk.clk
-		.hps_i2c1_sda_i                                 (<connected-to-hps_i2c1_sda_i>),                                 //                               hps_i2c1.sda_i
-		.hps_i2c1_sda_oe                                (<connected-to-hps_i2c1_sda_oe>)                                 //                                       .sda_oe
+		.som_config_pio_export                          (<connected-to-som_config_pio_export>)                           //                         som_config_pio.export
 	);
 

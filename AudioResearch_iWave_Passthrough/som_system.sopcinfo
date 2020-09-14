@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="som_system" kind="som_system" version="1.0" fabric="QSYS">
  <!-- Format version 18.0 614 (Future versions may contain additional information.) -->
- <!-- 2020.09.11.10:45:37 -->
+ <!-- 2020.09.14.08:08:11 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1599842735</value>
+  <value>1600092489</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -130403,33 +130403,6 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>ctrl_amm_0</endConnectionPoint>
  </connection>
  <connection
-   name="FE_Qsys_AD1939_Audio_Blade_v1_0.Line_In/FE_Qsys_AD1939_Audio_Blade_v1_0.Headphone_Out"
-   kind="avalon_streaming"
-   version="18.0"
-   start="FE_Qsys_AD1939_Audio_Blade_v1_0.Line_In"
-   end="FE_Qsys_AD1939_Audio_Blade_v1_0.Headphone_Out">
-  <parameter name="deviceFamily">
-   <type>java.lang.String</type>
-   <value>UNKNOWN</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <parameter name="generateLegacySim">
-   <type>boolean</type>
-   <value>false</value>
-   <derived>false</derived>
-   <enabled>true</enabled>
-   <visible>true</visible>
-   <valid>true</valid>
-  </parameter>
-  <startModule>FE_Qsys_AD1939_Audio_Blade_v1_0</startModule>
-  <startConnectionPoint>Line_In</startConnectionPoint>
-  <endModule>FE_Qsys_AD1939_Audio_Blade_v1_0</endModule>
-  <endConnectionPoint>Headphone_Out</endConnectionPoint>
- </connection>
- <connection
    name="FE_AD4020_Left.Line_In/FE_AD5791_v1_Left.Line_Out"
    kind="avalon_streaming"
    version="18.0"
@@ -130484,10 +130457,37 @@ parameters are a RESULT of the module parameters. -->
   <endConnectionPoint>Line_Out</endConnectionPoint>
  </connection>
  <connection
-   name="FE_Qsys_AD1939_Audio_Blade_v1_0.Microphone_In/FE_Qsys_AD1939_Audio_Blade_v1_0.Line_Out"
+   name="FE_FPGA_Microphone_Encoder_Decoder_1.mic_output/FE_Qsys_AD1939_Audio_Blade_v1_0.Headphone_Out"
    kind="avalon_streaming"
    version="18.0"
-   start="FE_Qsys_AD1939_Audio_Blade_v1_0.Microphone_In"
+   start="FE_FPGA_Microphone_Encoder_Decoder_1.mic_output"
+   end="FE_Qsys_AD1939_Audio_Blade_v1_0.Headphone_Out">
+  <parameter name="deviceFamily">
+   <type>java.lang.String</type>
+   <value>UNKNOWN</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <parameter name="generateLegacySim">
+   <type>boolean</type>
+   <value>false</value>
+   <derived>false</derived>
+   <enabled>true</enabled>
+   <visible>true</visible>
+   <valid>true</valid>
+  </parameter>
+  <startModule>FE_FPGA_Microphone_Encoder_Decoder_1</startModule>
+  <startConnectionPoint>mic_output</startConnectionPoint>
+  <endModule>FE_Qsys_AD1939_Audio_Blade_v1_0</endModule>
+  <endConnectionPoint>Headphone_Out</endConnectionPoint>
+ </connection>
+ <connection
+   name="FE_FPGA_Microphone_Encoder_Decoder_0.mic_output/FE_Qsys_AD1939_Audio_Blade_v1_0.Line_Out"
+   kind="avalon_streaming"
+   version="18.0"
+   start="FE_FPGA_Microphone_Encoder_Decoder_0.mic_output"
    end="FE_Qsys_AD1939_Audio_Blade_v1_0.Line_Out">
   <parameter name="deviceFamily">
    <type>java.lang.String</type>
@@ -130505,8 +130505,8 @@ parameters are a RESULT of the module parameters. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <startModule>FE_Qsys_AD1939_Audio_Blade_v1_0</startModule>
-  <startConnectionPoint>Microphone_In</startConnectionPoint>
+  <startModule>FE_FPGA_Microphone_Encoder_Decoder_0</startModule>
+  <startConnectionPoint>mic_output</startConnectionPoint>
   <endModule>FE_Qsys_AD1939_Audio_Blade_v1_0</endModule>
   <endConnectionPoint>Line_Out</endConnectionPoint>
  </connection>

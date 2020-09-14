@@ -386,16 +386,8 @@ architecture rtl of som_system is
 		);
 	end component som_system_rst_controller_002;
 
-	signal fe_qsys_ad1939_audio_blade_v1_0_line_in_valid                 : std_logic;                       -- FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_ADC2_valid -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC1_valid
-	signal fe_qsys_ad1939_audio_blade_v1_0_line_in_data                  : std_logic_vector(31 downto 0);   -- FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_ADC2_data -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC1_data
-	signal fe_qsys_ad1939_audio_blade_v1_0_line_in_channel               : std_logic_vector(1 downto 0);    -- FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_ADC2_channel -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC1_channel
-	signal fe_qsys_ad1939_audio_blade_v1_0_line_in_error                 : std_logic_vector(1 downto 0);    -- FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_ADC2_error -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC1_error
-	signal fe_qsys_ad1939_audio_blade_v1_0_microphone_in_valid           : std_logic;                       -- FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_ADC1_valid -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC2_valid
-	signal fe_qsys_ad1939_audio_blade_v1_0_microphone_in_data            : std_logic_vector(31 downto 0);   -- FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_ADC1_data -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC2_data
-	signal fe_qsys_ad1939_audio_blade_v1_0_microphone_in_channel         : std_logic_vector(1 downto 0);    -- FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_ADC1_channel -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC2_channel
-	signal fe_qsys_ad1939_audio_blade_v1_0_microphone_in_error           : std_logic_vector(1 downto 0);    -- FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_ADC1_error -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC2_error
 	signal emif_0_emif_usr_clk_clk                                       : std_logic;                       -- emif_0:emif_usr_clk -> [mm_clock_crossing_bridge_0:m0_clk, mm_interconnect_3:emif_0_emif_usr_clk_clk, rst_controller_003:clk]
-	signal pll_using_ad1939_mclk_outclk0_clk                             : std_logic;                       -- pll_using_AD1939_MCLK:outclk_0 -> [FE_AD4020_Left:sys_clk, FE_AD4020_Right:sys_clk, FE_AD5791_v1_Left:sys_clk, FE_AD5791_v1_Right:sys_clk, FE_AD7768_v1_0:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_0:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_10:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_11:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_12:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_13:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_15:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_1:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_2:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_3:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_4:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_5:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_6:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_7:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_8:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_9:sys_clk, FE_Qsys_AD1939_Audio_Blade_v1_0:sys_clk, avalon_st_adapter:in_clk_0_clk, avalon_st_adapter_001:in_clk_0_clk, rst_controller:clk]
+	signal pll_using_ad1939_mclk_outclk0_clk                             : std_logic;                       -- pll_using_AD1939_MCLK:outclk_0 -> [FE_AD4020_Left:sys_clk, FE_AD4020_Right:sys_clk, FE_AD5791_v1_Left:sys_clk, FE_AD5791_v1_Right:sys_clk, FE_AD7768_v1_0:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_0:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_10:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_11:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_12:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_13:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_15:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_1:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_2:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_3:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_4:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_5:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_6:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_7:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_8:sys_clk, FE_FPGA_Microphone_Encoder_Decoder_9:sys_clk, FE_Qsys_AD1939_Audio_Blade_v1_0:sys_clk, avalon_st_adapter:in_clk_0_clk, avalon_st_adapter_001:in_clk_0_clk, avalon_st_adapter_002:in_clk_0_clk, avalon_st_adapter_003:in_clk_0_clk, rst_controller:clk]
 	signal pll_using_ad1939_mclk_outclk1_clk                             : std_logic;                       -- pll_using_AD1939_MCLK:outclk_1 -> [FE_AD5791_v1_Left:spi_clk, FE_AD5791_v1_Right:spi_clk]
 	signal pll_using_ad1939_mclk_outclk2_clk                             : std_logic;                       -- pll_using_AD1939_MCLK:outclk_2 -> [FE_AD5791_v1_Left:double_spi_clk_in, FE_AD5791_v1_Right:double_spi_clk_in]
 	signal pll_using_ad1939_mclk_outclk3_clk                             : std_logic;                       -- pll_using_AD1939_MCLK:outclk_3 -> [FE_FPGA_Microphone_Encoder_Decoder_0:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_10:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_11:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_12:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_13:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_14:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_15:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_1:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_2:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_3:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_4:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_5:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_6:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_7:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_8:serial_clk, FE_FPGA_Microphone_Encoder_Decoder_9:serial_clk]
@@ -606,7 +598,23 @@ architecture rtl of som_system is
 	signal avalon_st_adapter_001_out_0_valid                             : std_logic;                       -- avalon_st_adapter_001:out_0_valid -> FE_AD5791_v1_Right:AD5791_valid_in
 	signal avalon_st_adapter_001_out_0_data                              : std_logic_vector(31 downto 0);   -- avalon_st_adapter_001:out_0_data -> FE_AD5791_v1_Right:AD5791_data_in
 	signal avalon_st_adapter_001_out_0_error                             : std_logic_vector(1 downto 0);    -- avalon_st_adapter_001:out_0_error -> FE_AD5791_v1_Right:AD5791_error_in
-	signal rst_controller_reset_out_reset                                : std_logic;                       -- rst_controller:reset_out -> [FE_Qsys_AD1939_Audio_Blade_v1_0:sys_reset, avalon_st_adapter:in_rst_0_reset, avalon_st_adapter_001:in_rst_0_reset, rst_controller_reset_out_reset:in]
+	signal fe_fpga_microphone_encoder_decoder_1_mic_output_valid         : std_logic;                       -- FE_FPGA_Microphone_Encoder_Decoder_1:mic_out_valid -> avalon_st_adapter_002:in_0_valid
+	signal fe_fpga_microphone_encoder_decoder_1_mic_output_data          : std_logic_vector(31 downto 0);   -- FE_FPGA_Microphone_Encoder_Decoder_1:mic_out_data -> avalon_st_adapter_002:in_0_data
+	signal fe_fpga_microphone_encoder_decoder_1_mic_output_channel       : std_logic_vector(3 downto 0);    -- FE_FPGA_Microphone_Encoder_Decoder_1:mic_out_channel -> avalon_st_adapter_002:in_0_channel
+	signal fe_fpga_microphone_encoder_decoder_1_mic_output_error         : std_logic_vector(1 downto 0);    -- FE_FPGA_Microphone_Encoder_Decoder_1:mic_out_error -> avalon_st_adapter_002:in_0_error
+	signal avalon_st_adapter_002_out_0_valid                             : std_logic;                       -- avalon_st_adapter_002:out_0_valid -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC1_valid
+	signal avalon_st_adapter_002_out_0_data                              : std_logic_vector(31 downto 0);   -- avalon_st_adapter_002:out_0_data -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC1_data
+	signal avalon_st_adapter_002_out_0_channel                           : std_logic_vector(1 downto 0);    -- avalon_st_adapter_002:out_0_channel -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC1_channel
+	signal avalon_st_adapter_002_out_0_error                             : std_logic_vector(1 downto 0);    -- avalon_st_adapter_002:out_0_error -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC1_error
+	signal fe_fpga_microphone_encoder_decoder_0_mic_output_valid         : std_logic;                       -- FE_FPGA_Microphone_Encoder_Decoder_0:mic_out_valid -> avalon_st_adapter_003:in_0_valid
+	signal fe_fpga_microphone_encoder_decoder_0_mic_output_data          : std_logic_vector(31 downto 0);   -- FE_FPGA_Microphone_Encoder_Decoder_0:mic_out_data -> avalon_st_adapter_003:in_0_data
+	signal fe_fpga_microphone_encoder_decoder_0_mic_output_channel       : std_logic_vector(3 downto 0);    -- FE_FPGA_Microphone_Encoder_Decoder_0:mic_out_channel -> avalon_st_adapter_003:in_0_channel
+	signal fe_fpga_microphone_encoder_decoder_0_mic_output_error         : std_logic_vector(1 downto 0);    -- FE_FPGA_Microphone_Encoder_Decoder_0:mic_out_error -> avalon_st_adapter_003:in_0_error
+	signal avalon_st_adapter_003_out_0_valid                             : std_logic;                       -- avalon_st_adapter_003:out_0_valid -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC2_valid
+	signal avalon_st_adapter_003_out_0_data                              : std_logic_vector(31 downto 0);   -- avalon_st_adapter_003:out_0_data -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC2_data
+	signal avalon_st_adapter_003_out_0_channel                           : std_logic_vector(1 downto 0);    -- avalon_st_adapter_003:out_0_channel -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC2_channel
+	signal avalon_st_adapter_003_out_0_error                             : std_logic_vector(1 downto 0);    -- avalon_st_adapter_003:out_0_error -> FE_Qsys_AD1939_Audio_Blade_v1_0:AD1939_DAC2_error
+	signal rst_controller_reset_out_reset                                : std_logic;                       -- rst_controller:reset_out -> [FE_Qsys_AD1939_Audio_Blade_v1_0:sys_reset, avalon_st_adapter:in_rst_0_reset, avalon_st_adapter_001:in_rst_0_reset, avalon_st_adapter_002:in_rst_0_reset, avalon_st_adapter_003:in_rst_0_reset, rst_controller_reset_out_reset:in]
 	signal rst_controller_001_reset_out_reset                            : std_logic;                       -- rst_controller_001:reset_out -> [mm_interconnect_0:mux_ddr_0_reset_reset_bridge_in_reset_reset, mm_interconnect_1:mux_ddr_0_reset_reset_bridge_in_reset_reset, mm_interconnect_2:arria10_hps_0_h2f_lw_axi_reset_reset_bridge_in_reset_reset, mux_ddr_0:reset, rst_controller_001_reset_out_reset:in]
 	signal rst_controller_002_reset_out_reset                            : std_logic;                       -- rst_controller_002:reset_out -> [mm_interconnect_1:arria10_hps_0_h2f_axi_reset_reset_bridge_in_reset_reset, rst_controller_002_reset_out_reset:in]
 	signal emif_0_emif_usr_reset_n_reset                                 : std_logic;                       -- emif_0:emif_usr_reset_n -> emif_0_emif_usr_reset_n_reset:in
@@ -721,26 +729,26 @@ begin
 			n_mics            => 16
 		)
 		port map (
-			reset_n         => rst_controller_reset_out_reset_ports_inv, --           reset.reset_n
-			serial_data_in  => mic_array0_physical_serial_data_in,       --  RJ45_Interface.serial_data_in
-			serial_data_out => mic_array0_physical_serial_data_out,      --                .serial_data_out
-			serial_clk_out  => mic_array0_physical_serial_clk_out,       --                .serial_clk_out
-			sys_clk         => pll_using_ad1939_mclk_outclk0_clk,        --         sys_clk.clk
-			busy_out        => mic_array0_control_busy_out,              -- control_conduit.busy_out
-			bme_out_data    => open,                                     --      bme_output.data
-			bme_out_error   => open,                                     --                .error
-			bme_out_valid   => open,                                     --                .valid
-			mic_out_channel => open,                                     --      mic_output.channel
-			mic_out_data    => open,                                     --                .data
-			mic_out_error   => open,                                     --                .error
-			mic_out_valid   => open,                                     --                .valid
-			cfg_input_data  => open,                                     --       cfg_input.data
-			cfg_input_error => open,                                     --                .error
-			cfg_input_valid => open,                                     --                .valid
-			rgb_input_data  => open,                                     --       rgb_input.data
-			rgb_input_error => open,                                     --                .error
-			rgb_input_valid => open,                                     --                .valid
-			serial_clk      => pll_using_ad1939_mclk_outclk3_clk         --      serial_clk.clk
+			reset_n         => rst_controller_reset_out_reset_ports_inv,                --           reset.reset_n
+			serial_data_in  => mic_array0_physical_serial_data_in,                      --  RJ45_Interface.serial_data_in
+			serial_data_out => mic_array0_physical_serial_data_out,                     --                .serial_data_out
+			serial_clk_out  => mic_array0_physical_serial_clk_out,                      --                .serial_clk_out
+			sys_clk         => pll_using_ad1939_mclk_outclk0_clk,                       --         sys_clk.clk
+			busy_out        => mic_array0_control_busy_out,                             -- control_conduit.busy_out
+			bme_out_data    => open,                                                    --      bme_output.data
+			bme_out_error   => open,                                                    --                .error
+			bme_out_valid   => open,                                                    --                .valid
+			mic_out_channel => fe_fpga_microphone_encoder_decoder_0_mic_output_channel, --      mic_output.channel
+			mic_out_data    => fe_fpga_microphone_encoder_decoder_0_mic_output_data,    --                .data
+			mic_out_error   => fe_fpga_microphone_encoder_decoder_0_mic_output_error,   --                .error
+			mic_out_valid   => fe_fpga_microphone_encoder_decoder_0_mic_output_valid,   --                .valid
+			cfg_input_data  => open,                                                    --       cfg_input.data
+			cfg_input_error => open,                                                    --                .error
+			cfg_input_valid => open,                                                    --                .valid
+			rgb_input_data  => open,                                                    --       rgb_input.data
+			rgb_input_error => open,                                                    --                .error
+			rgb_input_valid => open,                                                    --                .valid
+			serial_clk      => pll_using_ad1939_mclk_outclk3_clk                        --      serial_clk.clk
 		);
 
 	fe_fpga_microphone_encoder_decoder_1 : component som_system_FE_FPGA_Microphone_Encoder_Decoder_10.som_system_pkg.FE_FPGA_Microphone_Encoder_Decoder
@@ -754,26 +762,26 @@ begin
 			n_mics            => 16
 		)
 		port map (
-			reset_n         => rst_controller_reset_out_reset_ports_inv, --           reset.reset_n
-			serial_data_in  => mic_array1_physical_serial_data_in,       --  RJ45_Interface.serial_data_in
-			serial_data_out => mic_array1_physical_serial_data_out,      --                .serial_data_out
-			serial_clk_out  => mic_array1_physical_serial_clk_out,       --                .serial_clk_out
-			sys_clk         => pll_using_ad1939_mclk_outclk0_clk,        --         sys_clk.clk
-			busy_out        => mic_array1_control_busy_out,              -- control_conduit.busy_out
-			bme_out_data    => open,                                     --      bme_output.data
-			bme_out_error   => open,                                     --                .error
-			bme_out_valid   => open,                                     --                .valid
-			mic_out_channel => open,                                     --      mic_output.channel
-			mic_out_data    => open,                                     --                .data
-			mic_out_error   => open,                                     --                .error
-			mic_out_valid   => open,                                     --                .valid
-			cfg_input_data  => open,                                     --       cfg_input.data
-			cfg_input_error => open,                                     --                .error
-			cfg_input_valid => open,                                     --                .valid
-			rgb_input_data  => open,                                     --       rgb_input.data
-			rgb_input_error => open,                                     --                .error
-			rgb_input_valid => open,                                     --                .valid
-			serial_clk      => pll_using_ad1939_mclk_outclk3_clk         --      serial_clk.clk
+			reset_n         => rst_controller_reset_out_reset_ports_inv,                --           reset.reset_n
+			serial_data_in  => mic_array1_physical_serial_data_in,                      --  RJ45_Interface.serial_data_in
+			serial_data_out => mic_array1_physical_serial_data_out,                     --                .serial_data_out
+			serial_clk_out  => mic_array1_physical_serial_clk_out,                      --                .serial_clk_out
+			sys_clk         => pll_using_ad1939_mclk_outclk0_clk,                       --         sys_clk.clk
+			busy_out        => mic_array1_control_busy_out,                             -- control_conduit.busy_out
+			bme_out_data    => open,                                                    --      bme_output.data
+			bme_out_error   => open,                                                    --                .error
+			bme_out_valid   => open,                                                    --                .valid
+			mic_out_channel => fe_fpga_microphone_encoder_decoder_1_mic_output_channel, --      mic_output.channel
+			mic_out_data    => fe_fpga_microphone_encoder_decoder_1_mic_output_data,    --                .data
+			mic_out_error   => fe_fpga_microphone_encoder_decoder_1_mic_output_error,   --                .error
+			mic_out_valid   => fe_fpga_microphone_encoder_decoder_1_mic_output_valid,   --                .valid
+			cfg_input_data  => open,                                                    --       cfg_input.data
+			cfg_input_error => open,                                                    --                .error
+			cfg_input_valid => open,                                                    --                .valid
+			rgb_input_data  => open,                                                    --       rgb_input.data
+			rgb_input_error => open,                                                    --                .error
+			rgb_input_valid => open,                                                    --                .valid
+			serial_clk      => pll_using_ad1939_mclk_outclk3_clk                        --      serial_clk.clk
 		);
 
 	fe_fpga_microphone_encoder_decoder_10 : component som_system_FE_FPGA_Microphone_Encoder_Decoder_10.som_system_pkg.FE_FPGA_Microphone_Encoder_Decoder
@@ -1240,32 +1248,32 @@ begin
 
 	fe_qsys_ad1939_audio_blade_v1_0 : component som_system_FE_Qsys_AD1939_Audio_Blade_v1_10.som_system_pkg.AD1939_hps_audio_blade
 		port map (
-			AD1939_ADC2_data    => fe_qsys_ad1939_audio_blade_v1_0_line_in_data,          --           Line_In.data
-			AD1939_ADC2_channel => fe_qsys_ad1939_audio_blade_v1_0_line_in_channel,       --                  .channel
-			AD1939_ADC2_valid   => fe_qsys_ad1939_audio_blade_v1_0_line_in_valid,         --                  .valid
-			AD1939_ADC2_error   => fe_qsys_ad1939_audio_blade_v1_0_line_in_error,         --                  .error
-			AD1939_ADC1_channel => fe_qsys_ad1939_audio_blade_v1_0_microphone_in_channel, --     Microphone_In.channel
-			AD1939_ADC1_data    => fe_qsys_ad1939_audio_blade_v1_0_microphone_in_data,    --                  .data
-			AD1939_ADC1_error   => fe_qsys_ad1939_audio_blade_v1_0_microphone_in_error,   --                  .error
-			AD1939_ADC1_valid   => fe_qsys_ad1939_audio_blade_v1_0_microphone_in_valid,   --                  .valid
-			AD1939_DAC2_channel => fe_qsys_ad1939_audio_blade_v1_0_microphone_in_channel, --          Line_Out.channel
-			AD1939_DAC2_data    => fe_qsys_ad1939_audio_blade_v1_0_microphone_in_data,    --                  .data
-			AD1939_DAC2_error   => fe_qsys_ad1939_audio_blade_v1_0_microphone_in_error,   --                  .error
-			AD1939_DAC2_valid   => fe_qsys_ad1939_audio_blade_v1_0_microphone_in_valid,   --                  .valid
-			AD1939_DAC1_channel => fe_qsys_ad1939_audio_blade_v1_0_line_in_channel,       --     Headphone_Out.channel
-			AD1939_DAC1_data    => fe_qsys_ad1939_audio_blade_v1_0_line_in_data,          --                  .data
-			AD1939_DAC1_error   => fe_qsys_ad1939_audio_blade_v1_0_line_in_error,         --                  .error
-			AD1939_DAC1_valid   => fe_qsys_ad1939_audio_blade_v1_0_line_in_valid,         --                  .valid
-			sys_clk             => pll_using_ad1939_mclk_outclk0_clk,                     --           sys_clk.clk
-			sys_reset           => rst_controller_reset_out_reset,                        --         sys_reset.reset
-			AD1939_ADC_ASDATA1  => ad1939_physical_ad1939_adc_asdata1,                    -- connect_to_AD1939.ad1939_adc_asdata1
-			AD1939_ADC_ASDATA2  => ad1939_physical_ad1939_adc_asdata2,                    --                  .ad1939_adc_asdata2
-			AD1939_DAC_DSDATA1  => ad1939_physical_ad1939_dac_dsdata1,                    --                  .ad1939_dac_dsdata1
-			AD1939_DAC_DSDATA2  => ad1939_physical_ad1939_dac_dsdata2,                    --                  .ad1939_dac_dsdata2
-			AD1939_DAC_DBCLK    => ad1939_physical_ad1939_dac_dbclk,                      --                  .ad1939_dac_dbclk
-			AD1939_DAC_DLRCLK   => ad1939_physical_ad1939_dac_dlrclk,                     --                  .ad1939_dac_dlrclk
-			AD1939_ADC_ALRCLK   => ad1939_alrclk_clk,                                     --        clk_alrclk.clk
-			AD1939_ADC_ABCLK    => ad1939_abclk_clk                                       --         clk_abclk.clk
+			AD1939_ADC2_data    => open,                                --           Line_In.data
+			AD1939_ADC2_channel => open,                                --                  .channel
+			AD1939_ADC2_valid   => open,                                --                  .valid
+			AD1939_ADC2_error   => open,                                --                  .error
+			AD1939_ADC1_channel => open,                                --     Microphone_In.channel
+			AD1939_ADC1_data    => open,                                --                  .data
+			AD1939_ADC1_error   => open,                                --                  .error
+			AD1939_ADC1_valid   => open,                                --                  .valid
+			AD1939_DAC2_channel => avalon_st_adapter_003_out_0_channel, --          Line_Out.channel
+			AD1939_DAC2_data    => avalon_st_adapter_003_out_0_data,    --                  .data
+			AD1939_DAC2_error   => avalon_st_adapter_003_out_0_error,   --                  .error
+			AD1939_DAC2_valid   => avalon_st_adapter_003_out_0_valid,   --                  .valid
+			AD1939_DAC1_channel => avalon_st_adapter_002_out_0_channel, --     Headphone_Out.channel
+			AD1939_DAC1_data    => avalon_st_adapter_002_out_0_data,    --                  .data
+			AD1939_DAC1_error   => avalon_st_adapter_002_out_0_error,   --                  .error
+			AD1939_DAC1_valid   => avalon_st_adapter_002_out_0_valid,   --                  .valid
+			sys_clk             => pll_using_ad1939_mclk_outclk0_clk,   --           sys_clk.clk
+			sys_reset           => rst_controller_reset_out_reset,      --         sys_reset.reset
+			AD1939_ADC_ASDATA1  => ad1939_physical_ad1939_adc_asdata1,  -- connect_to_AD1939.ad1939_adc_asdata1
+			AD1939_ADC_ASDATA2  => ad1939_physical_ad1939_adc_asdata2,  --                  .ad1939_adc_asdata2
+			AD1939_DAC_DSDATA1  => ad1939_physical_ad1939_dac_dsdata1,  --                  .ad1939_dac_dsdata1
+			AD1939_DAC_DSDATA2  => ad1939_physical_ad1939_dac_dsdata2,  --                  .ad1939_dac_dsdata2
+			AD1939_DAC_DBCLK    => ad1939_physical_ad1939_dac_dbclk,    --                  .ad1939_dac_dbclk
+			AD1939_DAC_DLRCLK   => ad1939_physical_ad1939_dac_dlrclk,   --                  .ad1939_dac_dlrclk
+			AD1939_ADC_ALRCLK   => ad1939_alrclk_clk,                   --        clk_alrclk.clk
+			AD1939_ADC_ABCLK    => ad1939_abclk_clk                     --         clk_abclk.clk
 		);
 
 	arria10_hps_0 : component som_system_altera_arria10_hps_180.som_system_pkg.som_system_altera_arria10_hps_180_zmlrihi
@@ -2010,6 +2018,70 @@ begin
 			out_0_data     => avalon_st_adapter_001_out_0_data,  --    out_0.data
 			out_0_valid    => avalon_st_adapter_001_out_0_valid, --         .valid
 			out_0_error    => avalon_st_adapter_001_out_0_error  --         .error
+		);
+
+	avalon_st_adapter_002 : component som_system_altera_avalon_st_adapter_180.som_system_pkg.som_system_altera_avalon_st_adapter_180_cgdcaea
+		generic map (
+			inBitsPerSymbol => 32,
+			inUsePackets    => 0,
+			inDataWidth     => 32,
+			inChannelWidth  => 4,
+			inErrorWidth    => 2,
+			inUseEmptyPort  => 0,
+			inUseValid      => 1,
+			inUseReady      => 0,
+			inReadyLatency  => 0,
+			outDataWidth    => 32,
+			outChannelWidth => 2,
+			outErrorWidth   => 2,
+			outUseEmptyPort => 0,
+			outUseValid     => 1,
+			outUseReady     => 0,
+			outReadyLatency => 0
+		)
+		port map (
+			in_clk_0_clk   => pll_using_ad1939_mclk_outclk0_clk,                       -- in_clk_0.clk
+			in_rst_0_reset => rst_controller_reset_out_reset,                          -- in_rst_0.reset
+			in_0_data      => fe_fpga_microphone_encoder_decoder_1_mic_output_data,    --     in_0.data
+			in_0_valid     => fe_fpga_microphone_encoder_decoder_1_mic_output_valid,   --         .valid
+			in_0_error     => fe_fpga_microphone_encoder_decoder_1_mic_output_error,   --         .error
+			in_0_channel   => fe_fpga_microphone_encoder_decoder_1_mic_output_channel, --         .channel
+			out_0_data     => avalon_st_adapter_002_out_0_data,                        --    out_0.data
+			out_0_valid    => avalon_st_adapter_002_out_0_valid,                       --         .valid
+			out_0_error    => avalon_st_adapter_002_out_0_error,                       --         .error
+			out_0_channel  => avalon_st_adapter_002_out_0_channel                      --         .channel
+		);
+
+	avalon_st_adapter_003 : component som_system_altera_avalon_st_adapter_180.som_system_pkg.som_system_altera_avalon_st_adapter_180_cgdcaea
+		generic map (
+			inBitsPerSymbol => 32,
+			inUsePackets    => 0,
+			inDataWidth     => 32,
+			inChannelWidth  => 4,
+			inErrorWidth    => 2,
+			inUseEmptyPort  => 0,
+			inUseValid      => 1,
+			inUseReady      => 0,
+			inReadyLatency  => 0,
+			outDataWidth    => 32,
+			outChannelWidth => 2,
+			outErrorWidth   => 2,
+			outUseEmptyPort => 0,
+			outUseValid     => 1,
+			outUseReady     => 0,
+			outReadyLatency => 0
+		)
+		port map (
+			in_clk_0_clk   => pll_using_ad1939_mclk_outclk0_clk,                       -- in_clk_0.clk
+			in_rst_0_reset => rst_controller_reset_out_reset,                          -- in_rst_0.reset
+			in_0_data      => fe_fpga_microphone_encoder_decoder_0_mic_output_data,    --     in_0.data
+			in_0_valid     => fe_fpga_microphone_encoder_decoder_0_mic_output_valid,   --         .valid
+			in_0_error     => fe_fpga_microphone_encoder_decoder_0_mic_output_error,   --         .error
+			in_0_channel   => fe_fpga_microphone_encoder_decoder_0_mic_output_channel, --         .channel
+			out_0_data     => avalon_st_adapter_003_out_0_data,                        --    out_0.data
+			out_0_valid    => avalon_st_adapter_003_out_0_valid,                       --         .valid
+			out_0_error    => avalon_st_adapter_003_out_0_error,                       --         .error
+			out_0_channel  => avalon_st_adapter_003_out_0_channel                      --         .channel
 		);
 
 	rst_controller : component som_system_rst_controller

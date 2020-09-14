@@ -61,8 +61,50 @@ module som_system (
 	emif_0_status_local_cal_fail,
 	emif_a10_hps_0_global_reset_reset_sink_reset_n,
 	hps_0_h2f_reset_reset_n,
+	hps_i2c1_sda_i,
+	hps_i2c1_sda_oe,
+	hps_i2c1_clk_clk,
+	hps_i2c1_scl_in_clk,
+	hps_io_hps_io_phery_emac1_TX_CLK,
+	hps_io_hps_io_phery_emac1_TXD0,
+	hps_io_hps_io_phery_emac1_TXD1,
+	hps_io_hps_io_phery_emac1_TXD2,
+	hps_io_hps_io_phery_emac1_TXD3,
+	hps_io_hps_io_phery_emac1_RX_CTL,
+	hps_io_hps_io_phery_emac1_TX_CTL,
+	hps_io_hps_io_phery_emac1_RX_CLK,
+	hps_io_hps_io_phery_emac1_RXD0,
+	hps_io_hps_io_phery_emac1_RXD1,
+	hps_io_hps_io_phery_emac1_RXD2,
+	hps_io_hps_io_phery_emac1_RXD3,
+	hps_io_hps_io_phery_emac1_MDIO,
+	hps_io_hps_io_phery_emac1_MDC,
+	hps_io_hps_io_phery_sdmmc_CMD,
+	hps_io_hps_io_phery_sdmmc_D0,
+	hps_io_hps_io_phery_sdmmc_D1,
+	hps_io_hps_io_phery_sdmmc_D2,
+	hps_io_hps_io_phery_sdmmc_D3,
+	hps_io_hps_io_phery_sdmmc_CCLK,
+	hps_io_hps_io_phery_usb1_DATA0,
+	hps_io_hps_io_phery_usb1_DATA1,
+	hps_io_hps_io_phery_usb1_DATA2,
+	hps_io_hps_io_phery_usb1_DATA3,
+	hps_io_hps_io_phery_usb1_DATA4,
+	hps_io_hps_io_phery_usb1_DATA5,
+	hps_io_hps_io_phery_usb1_DATA6,
+	hps_io_hps_io_phery_usb1_DATA7,
+	hps_io_hps_io_phery_usb1_CLK,
+	hps_io_hps_io_phery_usb1_STP,
+	hps_io_hps_io_phery_usb1_DIR,
+	hps_io_hps_io_phery_usb1_NXT,
+	hps_io_hps_io_phery_uart1_RX,
+	hps_io_hps_io_phery_uart1_TX,
+	hps_io_hps_io_phery_i2c0_SDA,
+	hps_io_hps_io_phery_i2c0_SCL,
 	hps_io_hps_io_gpio_gpio2_io6,
 	hps_io_hps_io_gpio_gpio2_io8,
+	hps_io_hps_io_gpio_gpio0_io0,
+	hps_io_hps_io_gpio_gpio0_io1,
 	hps_io_hps_io_gpio_gpio0_io6,
 	hps_io_hps_io_gpio_gpio0_io11,
 	hps_io_hps_io_gpio_gpio1_io12,
@@ -169,11 +211,7 @@ module som_system (
 	mic_array9_physical_serial_clk_out,
 	oct_oct_rzqin,
 	reset_reset_n,
-	som_config_pio_export,
-	hps_i2c1_scl_in_clk,
-	hps_i2c1_clk_clk,
-	hps_i2c1_sda_i,
-	hps_i2c1_sda_oe);	
+	som_config_pio_export);	
 
 	input		ad1939_abclk_clk;
 	input		ad1939_alrclk_clk;
@@ -236,8 +274,50 @@ module som_system (
 	output		emif_0_status_local_cal_fail;
 	input		emif_a10_hps_0_global_reset_reset_sink_reset_n;
 	output		hps_0_h2f_reset_reset_n;
+	input		hps_i2c1_sda_i;
+	output		hps_i2c1_sda_oe;
+	output		hps_i2c1_clk_clk;
+	input		hps_i2c1_scl_in_clk;
+	output		hps_io_hps_io_phery_emac1_TX_CLK;
+	output		hps_io_hps_io_phery_emac1_TXD0;
+	output		hps_io_hps_io_phery_emac1_TXD1;
+	output		hps_io_hps_io_phery_emac1_TXD2;
+	output		hps_io_hps_io_phery_emac1_TXD3;
+	input		hps_io_hps_io_phery_emac1_RX_CTL;
+	output		hps_io_hps_io_phery_emac1_TX_CTL;
+	input		hps_io_hps_io_phery_emac1_RX_CLK;
+	input		hps_io_hps_io_phery_emac1_RXD0;
+	input		hps_io_hps_io_phery_emac1_RXD1;
+	input		hps_io_hps_io_phery_emac1_RXD2;
+	input		hps_io_hps_io_phery_emac1_RXD3;
+	inout		hps_io_hps_io_phery_emac1_MDIO;
+	output		hps_io_hps_io_phery_emac1_MDC;
+	inout		hps_io_hps_io_phery_sdmmc_CMD;
+	inout		hps_io_hps_io_phery_sdmmc_D0;
+	inout		hps_io_hps_io_phery_sdmmc_D1;
+	inout		hps_io_hps_io_phery_sdmmc_D2;
+	inout		hps_io_hps_io_phery_sdmmc_D3;
+	output		hps_io_hps_io_phery_sdmmc_CCLK;
+	inout		hps_io_hps_io_phery_usb1_DATA0;
+	inout		hps_io_hps_io_phery_usb1_DATA1;
+	inout		hps_io_hps_io_phery_usb1_DATA2;
+	inout		hps_io_hps_io_phery_usb1_DATA3;
+	inout		hps_io_hps_io_phery_usb1_DATA4;
+	inout		hps_io_hps_io_phery_usb1_DATA5;
+	inout		hps_io_hps_io_phery_usb1_DATA6;
+	inout		hps_io_hps_io_phery_usb1_DATA7;
+	input		hps_io_hps_io_phery_usb1_CLK;
+	output		hps_io_hps_io_phery_usb1_STP;
+	input		hps_io_hps_io_phery_usb1_DIR;
+	input		hps_io_hps_io_phery_usb1_NXT;
+	input		hps_io_hps_io_phery_uart1_RX;
+	output		hps_io_hps_io_phery_uart1_TX;
+	inout		hps_io_hps_io_phery_i2c0_SDA;
+	inout		hps_io_hps_io_phery_i2c0_SCL;
 	inout		hps_io_hps_io_gpio_gpio2_io6;
 	inout		hps_io_hps_io_gpio_gpio2_io8;
+	inout		hps_io_hps_io_gpio_gpio0_io0;
+	inout		hps_io_hps_io_gpio_gpio0_io1;
 	inout		hps_io_hps_io_gpio_gpio0_io6;
 	inout		hps_io_hps_io_gpio_gpio0_io11;
 	inout		hps_io_hps_io_gpio_gpio1_io12;
@@ -345,8 +425,4 @@ module som_system (
 	input		oct_oct_rzqin;
 	input		reset_reset_n;
 	inout	[1:0]	som_config_pio_export;
-	input		hps_i2c1_scl_in_clk;
-	output		hps_i2c1_clk_clk;
-	input		hps_i2c1_sda_i;
-	output		hps_i2c1_sda_oe;
 endmodule

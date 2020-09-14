@@ -800,7 +800,9 @@ end component som_system;
 );           
 
 -- Enable the audio arrays
-AA_LVDS_EN_N <= (others => '0');
+AA_LVDS_EN_N  <= (others => '0');
+AA_BANK_EN    <= (others => '1');
+AA_12V0_EN    <= (others => '1');
 
 -- Enable the AD1939
 AD1939_PWR_EN <= '1';
@@ -822,21 +824,21 @@ AD1939_SPI_SCK  <= spi_clk;
 ---------------------------------------------------------------------------------------------
 -- Tri-state buffer the I2C signals
 ---------------------------------------------------------------------------------------------
-  ubuf1 : component alt_iobuf
-  port map(
-      i   => '0',
-      oe  => i2c1_serial_sda_oe,
-      io  => HDPHN_I2C_SDA,
-      o   => i2c1_i2c_serial_sda_in
-   );
+ubuf1 : component alt_iobuf
+port map(
+    i   => '0',
+    oe  => i2c1_serial_sda_oe,
+    io  => HDPHN_I2C_SDA,
+    o   => i2c1_i2c_serial_sda_in
+ );
 
-  ubuf2 : component alt_iobuf
-   port map(
-      i   => '0',
-      oe  => serial_scl_oe,
-      io  => HDPHN_I2C_SCL,
-      o   => i2c1_serial_scl_in
-   );
+ubuf2 : component alt_iobuf
+ port map(
+    i   => '0',
+    oe  => serial_scl_oe,
+    io  => HDPHN_I2C_SCL,
+    o   => i2c1_serial_scl_in
+ );
 
 
 heartbeat: process(AD1939_MCLK,sys_reset_n_i)
