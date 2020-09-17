@@ -1,5 +1,5 @@
 Assembler report for A10SoM_System
-Mon Sep 14 10:38:34 2020
+Wed Sep 16 15:40:48 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Sep 14 10:38:34 2020 ;
+; Assembler Status      ; Successful - Wed Sep 16 15:40:48 2020 ;
 ; Revision Name         ; A10SoM_System                         ;
 ; Top-level Entity Name ; A10SoM_System                         ;
 ; Family                ; Arria 10                              ;
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 ; Option         ; Setting                                                                                 ;
 +----------------+-----------------------------------------------------------------------------------------+
 ; JTAG usercode  ; 0xFFFFFFFF                                                                              ;
-; Checksum       ; 0x1CFC4071                                                                              ;
+; Checksum       ; 0x1CF722D4                                                                              ;
 +----------------+-----------------------------------------------------------------------------------------+
 
 
@@ -88,13 +88,13 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Mon Sep 14 10:37:53 2020
+    Info: Processing started: Wed Sep 16 15:40:07 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off A10SoM_System -c A10SoM_System
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 9086 megabytes
-    Info: Processing ended: Mon Sep 14 10:38:36 2020
-    Info: Elapsed time: 00:00:43
+    Info: Peak virtual memory: 9088 megabytes
+    Info: Processing ended: Wed Sep 16 15:40:49 2020
+    Info: Elapsed time: 00:00:42
     Info: Total CPU time (on all processors): 00:00:42
 
 

@@ -2,188 +2,188 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 900mV 100C Model Setup 'i0|emif_0_core_usr_clk'
-Slack : -0.001
-TNS   : -0.001
-
-Type  : Slow 900mV 100C Model Setup 'i0|emif_0_phy_clk_l_1'
-Slack : 0.124
+Type  : Slow 900mV 100C Model Setup 'i0|emif_0_phy_clk_l_2'
+Slack : 0.158
 TNS   : 0.000
 
-Type  : Slow 900mV 100C Model Setup 'i0|emif_0_phy_clk_l_2'
-Slack : 0.220
+Type  : Slow 900mV 100C Model Setup 'i0|emif_0_core_usr_clk'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Setup 'i0|emif_0_phy_clk_l_1'
+Slack : 0.289
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Setup 'i0|emif_0_phy_clk_l_0'
-Slack : 1.068
+Slack : 1.079
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Setup 'pio_system|emif_0_ref_clock'
-Slack : 2.034
+Slack : 2.075
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Setup 'i0|emif_0_core_extra_clk_0'
-Slack : 3.391
+Slack : 2.110
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Setup 'i0|emif_0_core_cal_slave_clk'
-Slack : 4.097
+Slack : 4.166
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Setup 'fpga_clk_i'
-Slack : 12.997
+Slack : 12.554
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Setup 'altera_reserved_tck'
-Slack : 15.136
+Slack : 15.539
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Setup 'AD1939_MCLK'
-Slack : 36.283
+Slack : 36.214
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Hold 'AD1939_MCLK'
-Slack : -0.749
-TNS   : -5.602
+Slack : -0.740
+TNS   : -5.564
 
 Type  : Slow 900mV 100C Model Hold 'altera_reserved_tck'
-Slack : 0.036
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Hold 'i0|emif_0_core_extra_clk_0'
-Slack : 0.039
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Hold 'i0|emif_0_core_cal_slave_clk'
-Slack : 0.040
+Slack : 0.037
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Hold 'fpga_clk_i'
-Slack : 0.041
+Slack : 0.039
 TNS   : 0.000
 
-Type  : Slow 900mV 100C Model Hold 'pio_system|emif_0_ref_clock'
-Slack : 0.048
+Type  : Slow 900mV 100C Model Hold 'i0|emif_0_core_extra_clk_0'
+Slack : 0.040
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'i0|emif_0_core_cal_slave_clk'
+Slack : 0.043
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Hold 'i0|emif_0_core_usr_clk'
-Slack : 0.062
+Slack : 0.061
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'pio_system|emif_0_ref_clock'
+Slack : 0.071
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Hold 'i0|emif_0_phy_clk_l_0'
-Slack : 0.339
+Slack : 0.348
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Hold 'i0|emif_0_phy_clk_l_2'
-Slack : 0.384
+Slack : 0.377
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Hold 'i0|emif_0_phy_clk_l_1'
-Slack : 0.392
+Slack : 0.383
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_core_usr_clk'
-Slack : 0.969
+Slack : 0.954
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Recovery 'pio_system|emif_0_ref_clock'
-Slack : 1.872
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_core_cal_slave_clk'
-Slack : 3.926
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_phy_clk_2'
-Slack : 5.221
+Slack : 2.011
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_phy_clk_1'
-Slack : 5.390
+Slack : 3.403
 TNS   : 0.000
 
-Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_core_extra_clk_0'
-Slack : 5.557
+Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_core_cal_slave_clk'
+Slack : 3.458
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_phy_clk_0'
-Slack : 5.970
+Slack : 4.486
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_core_extra_clk_0'
+Slack : 5.534
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_phy_clk_2'
+Slack : 5.573
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_phy_clk_l_1'
-Slack : 13.874
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_phy_clk_l_2'
-Slack : 14.484
+Slack : 12.151
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_phy_clk_l_0'
-Slack : 14.926
+Slack : 13.599
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Recovery 'i0|emif_0_phy_clk_l_2'
+Slack : 14.453
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Recovery 'fpga_clk_i'
-Slack : 15.260
+Slack : 14.706
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Recovery 'altera_reserved_tck'
-Slack : 38.023
+Slack : 38.571
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Recovery 'AD1939_MCLK'
-Slack : 77.969
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Removal 'i0|emif_0_core_extra_clk_0'
-Slack : 0.320
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Removal 'fpga_clk_i'
-Slack : 0.367
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Removal 'AD1939_MCLK'
-Slack : 0.408
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Removal 'i0|emif_0_core_usr_clk'
-Slack : 0.418
+Slack : 77.889
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Removal 'i0|emif_0_core_cal_slave_clk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'AD1939_MCLK'
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i0|emif_0_core_usr_clk'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'fpga_clk_i'
 Slack : 0.553
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Removal 'altera_reserved_tck'
-Slack : 0.832
+Slack : 0.558
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i0|emif_0_core_extra_clk_0'
+Slack : 0.583
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Removal 'pio_system|emif_0_ref_clock'
-Slack : 0.893
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Removal 'i0|emif_0_phy_clk_0'
-Slack : 3.286
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Removal 'i0|emif_0_phy_clk_1'
-Slack : 3.756
+Slack : 0.793
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Removal 'i0|emif_0_phy_clk_2'
-Slack : 3.899
+Slack : 3.611
 TNS   : 0.000
 
-Type  : Slow 900mV 100C Model Removal 'i0|emif_0_phy_clk_l_0'
-Slack : 4.807
-TNS   : 0.000
-
-Type  : Slow 900mV 100C Model Removal 'i0|emif_0_phy_clk_l_1'
-Slack : 5.261
+Type  : Slow 900mV 100C Model Removal 'i0|emif_0_phy_clk_0'
+Slack : 4.446
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Removal 'i0|emif_0_phy_clk_l_2'
-Slack : 5.264
+Slack : 5.284
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i0|emif_0_phy_clk_1'
+Slack : 5.322
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i0|emif_0_phy_clk_l_0'
+Slack : 5.654
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Removal 'i0|emif_0_phy_clk_l_1'
+Slack : 6.995
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Minimum Pulse Width 'FPGA_memory_mem1_dqs[0]_IN'
@@ -383,11 +383,11 @@ Slack : 1.594
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Minimum Pulse Width 'pio_system|emif_0_ref_clock'
-Slack : 1.610
+Slack : 1.620
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Minimum Pulse Width 'i0|emif_0_core_cal_slave_clk'
-Slack : 2.964
+Slack : 2.960
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
@@ -395,11 +395,11 @@ Slack : 3.696
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Minimum Pulse Width 'i0|emif_0_core_extra_clk_0'
-Slack : 4.597
+Slack : 4.605
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Minimum Pulse Width 'hps_spim0_sclk_out'
-Slack : 4.849
+Slack : 4.852
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Minimum Pulse Width 'fpga_clk_i'
@@ -407,211 +407,211 @@ Slack : 9.797
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 20.412
+Slack : 20.395
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Minimum Pulse Width 'AD1939_MCLK'
-Slack : 40.235
+Slack : 40.237
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Minimum Pulse Width 'hps_i2c_internal'
-Slack : 1249.903
+Slack : 1249.861
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
-Slack : 2.042
+Slack : 1.440
 
 Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
-Slack : 2.127
+Slack : 2.007
 
 Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
-Slack : 3.155
+Slack : 2.027
 
 Type  : Slow 900mV 100C Model Net Delay 'set_net_delay'
-Slack : 4.165
+Slack : 4.511
 
 Type  : Slow 900mV -40C Model Setup 'i0|emif_0_core_usr_clk'
-Slack : 0.031
-TNS   : 0.000
-
-Type  : Slow 900mV -40C Model Setup 'i0|emif_0_phy_clk_l_1'
-Slack : 0.222
+Slack : 0.191
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Setup 'i0|emif_0_phy_clk_l_2'
-Slack : 0.324
+Slack : 0.258
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Setup 'i0|emif_0_phy_clk_l_1'
+Slack : 0.330
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Setup 'i0|emif_0_phy_clk_l_0'
-Slack : 1.124
+Slack : 1.189
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Setup 'pio_system|emif_0_ref_clock'
-Slack : 1.960
+Slack : 1.994
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Setup 'i0|emif_0_core_extra_clk_0'
-Slack : 3.979
+Slack : 2.807
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Setup 'i0|emif_0_core_cal_slave_clk'
-Slack : 4.128
+Slack : 4.170
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Setup 'fpga_clk_i'
-Slack : 13.178
+Slack : 12.840
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Setup 'altera_reserved_tck'
-Slack : 15.374
+Slack : 15.967
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Setup 'AD1939_MCLK'
-Slack : 36.988
+Slack : 36.859
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Hold 'AD1939_MCLK'
-Slack : -0.842
-TNS   : -6.345
+Slack : -0.838
+TNS   : -6.355
 
 Type  : Slow 900mV -40C Model Hold 'altera_reserved_tck'
-Slack : 0.031
-TNS   : 0.000
-
-Type  : Slow 900mV -40C Model Hold 'i0|emif_0_core_extra_clk_0'
-Slack : 0.033
+Slack : 0.027
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Hold 'fpga_clk_i'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i0|emif_0_core_extra_clk_0'
 Slack : 0.034
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Hold 'i0|emif_0_core_cal_slave_clk'
-Slack : 0.035
-TNS   : 0.000
-
-Type  : Slow 900mV -40C Model Hold 'pio_system|emif_0_ref_clock'
-Slack : 0.037
+Slack : 0.036
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Hold 'i0|emif_0_core_usr_clk'
 Slack : 0.051
 TNS   : 0.000
 
-Type  : Slow 900mV -40C Model Hold 'i0|emif_0_phy_clk_l_1'
-Slack : 0.233
+Type  : Slow 900mV -40C Model Hold 'pio_system|emif_0_ref_clock'
+Slack : 0.061
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Hold 'i0|emif_0_phy_clk_l_2'
+Slack : 0.233
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'i0|emif_0_phy_clk_l_1'
 Slack : 0.250
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Hold 'i0|emif_0_phy_clk_l_0'
-Slack : 0.282
+Slack : 0.277
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_core_usr_clk'
-Slack : 1.078
+Slack : 1.098
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Recovery 'pio_system|emif_0_ref_clock'
-Slack : 1.956
-TNS   : 0.000
-
-Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_core_cal_slave_clk'
-Slack : 4.072
-TNS   : 0.000
-
-Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_phy_clk_2'
-Slack : 5.217
+Slack : 2.067
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_phy_clk_1'
-Slack : 5.369
+Slack : 3.633
 TNS   : 0.000
 
-Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_core_extra_clk_0'
-Slack : 5.426
+Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_core_cal_slave_clk'
+Slack : 3.647
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_phy_clk_0'
-Slack : 5.877
+Slack : 4.590
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_core_extra_clk_0'
+Slack : 5.401
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_phy_clk_2'
+Slack : 5.507
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_phy_clk_l_1'
-Slack : 13.875
-TNS   : 0.000
-
-Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_phy_clk_l_2'
-Slack : 14.400
+Slack : 12.387
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_phy_clk_l_0'
-Slack : 14.803
+Slack : 13.627
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Recovery 'i0|emif_0_phy_clk_l_2'
+Slack : 14.363
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Recovery 'fpga_clk_i'
-Slack : 15.659
+Slack : 15.221
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Recovery 'altera_reserved_tck'
-Slack : 38.301
+Slack : 38.811
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Recovery 'AD1939_MCLK'
-Slack : 78.219
+Slack : 78.190
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Removal 'AD1939_MCLK'
-Slack : 0.278
-TNS   : 0.000
-
-Type  : Slow 900mV -40C Model Removal 'i0|emif_0_core_extra_clk_0'
-Slack : 0.317
-TNS   : 0.000
-
-Type  : Slow 900mV -40C Model Removal 'fpga_clk_i'
-Slack : 0.367
-TNS   : 0.000
-
-Type  : Slow 900mV -40C Model Removal 'i0|emif_0_core_usr_clk'
-Slack : 0.406
+Slack : 0.246
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Removal 'i0|emif_0_core_cal_slave_clk'
-Slack : 0.516
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i0|emif_0_core_usr_clk'
+Slack : 0.371
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Removal 'altera_reserved_tck'
-Slack : 0.705
+Slack : 0.495
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'fpga_clk_i'
+Slack : 0.529
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i0|emif_0_core_extra_clk_0'
+Slack : 0.541
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Removal 'pio_system|emif_0_ref_clock'
-Slack : 0.800
-TNS   : 0.000
-
-Type  : Slow 900mV -40C Model Removal 'i0|emif_0_phy_clk_0'
-Slack : 3.263
-TNS   : 0.000
-
-Type  : Slow 900mV -40C Model Removal 'i0|emif_0_phy_clk_1'
-Slack : 3.667
+Slack : 0.723
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Removal 'i0|emif_0_phy_clk_2'
-Slack : 3.799
+Slack : 3.562
 TNS   : 0.000
 
-Type  : Slow 900mV -40C Model Removal 'i0|emif_0_phy_clk_l_0'
-Slack : 4.789
+Type  : Slow 900mV -40C Model Removal 'i0|emif_0_phy_clk_0'
+Slack : 4.272
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i0|emif_0_phy_clk_1'
+Slack : 5.041
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Removal 'i0|emif_0_phy_clk_l_2'
-Slack : 5.173
+Slack : 5.225
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Removal 'i0|emif_0_phy_clk_l_0'
+Slack : 5.515
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Removal 'i0|emif_0_phy_clk_l_1'
-Slack : 5.179
+Slack : 6.704
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'FPGA_memory_mem1_dqs[0]_IN'
@@ -791,7 +791,7 @@ Slack : 0.706
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'i0|emif_0_core_usr_clk'
-Slack : 1.318
+Slack : 1.311
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'i0|emif_0_phy_clk_l_0'
@@ -807,7 +807,7 @@ Slack : 1.540
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'pio_system|emif_0_ref_clock'
-Slack : 1.571
+Slack : 1.583
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'pio_system|emif_a10_hps_0_ref_clock'
@@ -815,7 +815,7 @@ Slack : 1.602
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'i0|emif_0_core_cal_slave_clk'
-Slack : 2.942
+Slack : 2.937
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
@@ -823,11 +823,11 @@ Slack : 3.669
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'i0|emif_0_core_extra_clk_0'
-Slack : 4.572
+Slack : 4.571
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'hps_spim0_sclk_out'
-Slack : 4.879
+Slack : 4.877
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'fpga_clk_i'
@@ -835,211 +835,211 @@ Slack : 9.652
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 20.475
+Slack : 20.473
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'AD1939_MCLK'
-Slack : 40.111
+Slack : 40.104
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'hps_i2c_internal'
-Slack : 1249.693
+Slack : 1249.787
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
-Slack : 2.127
+Slack : 1.593
 
 Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
-Slack : 2.187
+Slack : 2.095
 
 Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
-Slack : 3.827
+Slack : 2.717
 
 Type  : Slow 900mV -40C Model Net Delay 'set_net_delay'
-Slack : 4.641
+Slack : 4.960
+
+Type  : Fast 900mV 100C Model Setup 'i0|emif_0_phy_clk_l_2'
+Slack : 0.934
+TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Setup 'i0|emif_0_core_usr_clk'
-Slack : 0.838
+Slack : 0.943
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Setup 'i0|emif_0_phy_clk_l_1'
-Slack : 0.932
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Setup 'i0|emif_0_phy_clk_l_2'
-Slack : 0.998
+Slack : 1.064
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Setup 'i0|emif_0_phy_clk_l_0'
-Slack : 1.664
+Slack : 1.637
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Setup 'pio_system|emif_0_ref_clock'
-Slack : 2.535
+Slack : 2.562
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Setup 'i0|emif_0_core_extra_clk_0'
-Slack : 4.552
+Slack : 4.262
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Setup 'i0|emif_0_core_cal_slave_clk'
-Slack : 4.825
+Slack : 4.913
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Setup 'fpga_clk_i'
-Slack : 14.733
+Slack : 14.742
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Setup 'altera_reserved_tck'
-Slack : 16.596
+Slack : 16.748
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Setup 'AD1939_MCLK'
-Slack : 36.736
+Slack : 36.662
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Hold 'AD1939_MCLK'
-Slack : -0.448
-TNS   : -3.457
+Slack : -0.465
+TNS   : -3.452
 
 Type  : Fast 900mV 100C Model Hold 'altera_reserved_tck'
 Slack : 0.013
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Hold 'fpga_clk_i'
-Slack : 0.015
+Slack : 0.014
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Hold 'i0|emif_0_core_extra_clk_0'
-Slack : 0.015
+Slack : 0.017
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Hold 'i0|emif_0_core_cal_slave_clk'
-Slack : 0.016
+Slack : 0.018
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Hold 'pio_system|emif_0_ref_clock'
-Slack : 0.024
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Hold 'i0|emif_0_core_usr_clk'
 Slack : 0.026
 TNS   : 0.000
 
+Type  : Fast 900mV 100C Model Hold 'i0|emif_0_core_usr_clk'
+Slack : 0.030
+TNS   : 0.000
+
 Type  : Fast 900mV 100C Model Hold 'i0|emif_0_phy_clk_l_0'
-Slack : 0.188
+Slack : 0.192
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Hold 'i0|emif_0_phy_clk_l_1'
-Slack : 0.290
+Slack : 0.279
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Hold 'i0|emif_0_phy_clk_l_2'
-Slack : 0.294
+Slack : 0.288
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_core_usr_clk'
-Slack : 1.506
+Slack : 1.463
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Recovery 'pio_system|emif_0_ref_clock'
-Slack : 2.319
+Slack : 2.420
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_core_cal_slave_clk'
-Slack : 4.512
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_phy_clk_2'
-Slack : 6.438
+Slack : 4.153
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_phy_clk_1'
-Slack : 6.599
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_core_extra_clk_0'
-Slack : 6.905
+Slack : 4.885
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_phy_clk_0'
-Slack : 7.059
+Slack : 5.790
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_phy_clk_2'
+Slack : 6.741
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_core_extra_clk_0'
+Slack : 6.873
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_phy_clk_l_1'
-Slack : 15.511
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_phy_clk_l_2'
-Slack : 16.023
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Recovery 'fpga_clk_i'
-Slack : 16.179
+Slack : 13.994
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_phy_clk_l_0'
-Slack : 16.358
+Slack : 15.231
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'fpga_clk_i'
+Slack : 15.570
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Recovery 'i0|emif_0_phy_clk_l_2'
+Slack : 16.000
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Recovery 'altera_reserved_tck'
-Slack : 38.708
+Slack : 39.127
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Recovery 'AD1939_MCLK'
-Slack : 78.711
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Removal 'i0|emif_0_core_extra_clk_0'
-Slack : 0.203
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Removal 'fpga_clk_i'
-Slack : 0.234
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Removal 'i0|emif_0_core_usr_clk'
-Slack : 0.270
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Removal 'AD1939_MCLK'
-Slack : 0.292
+Slack : 78.535
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Removal 'i0|emif_0_core_cal_slave_clk'
-Slack : 0.355
+Slack : 0.179
 TNS   : 0.000
 
-Type  : Fast 900mV 100C Model Removal 'pio_system|emif_0_ref_clock'
-Slack : 0.621
+Type  : Fast 900mV 100C Model Removal 'i0|emif_0_core_usr_clk'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'AD1939_MCLK'
+Slack : 0.283
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'fpga_clk_i'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i0|emif_0_core_extra_clk_0'
+Slack : 0.365
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Removal 'altera_reserved_tck'
-Slack : 0.663
+Slack : 0.380
 TNS   : 0.000
 
-Type  : Fast 900mV 100C Model Removal 'i0|emif_0_phy_clk_0'
-Slack : 2.829
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Removal 'i0|emif_0_phy_clk_1'
-Slack : 3.199
+Type  : Fast 900mV 100C Model Removal 'pio_system|emif_0_ref_clock'
+Slack : 0.546
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Removal 'i0|emif_0_phy_clk_2'
-Slack : 3.334
+Slack : 3.086
 TNS   : 0.000
 
-Type  : Fast 900mV 100C Model Removal 'i0|emif_0_phy_clk_l_0'
-Slack : 4.409
+Type  : Fast 900mV 100C Model Removal 'i0|emif_0_phy_clk_0'
+Slack : 3.821
 TNS   : 0.000
 
-Type  : Fast 900mV 100C Model Removal 'i0|emif_0_phy_clk_l_1'
-Slack : 4.749
+Type  : Fast 900mV 100C Model Removal 'i0|emif_0_phy_clk_1'
+Slack : 4.552
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Removal 'i0|emif_0_phy_clk_l_2'
-Slack : 4.783
+Slack : 4.753
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i0|emif_0_phy_clk_l_0'
+Slack : 5.159
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'i0|emif_0_phy_clk_l_1'
+Slack : 6.219
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Minimum Pulse Width 'FPGA_memory_mem1_dqs[0]_IN'
@@ -1239,11 +1239,11 @@ Slack : 1.619
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Minimum Pulse Width 'pio_system|emif_0_ref_clock'
-Slack : 1.625
+Slack : 1.627
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Minimum Pulse Width 'i0|emif_0_core_cal_slave_clk'
-Slack : 2.967
+Slack : 2.966
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
@@ -1251,11 +1251,11 @@ Slack : 3.904
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Minimum Pulse Width 'i0|emif_0_core_extra_clk_0'
-Slack : 4.617
+Slack : 4.619
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Minimum Pulse Width 'hps_spim0_sclk_out'
-Slack : 4.959
+Slack : 4.960
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Minimum Pulse Width 'fpga_clk_i'
@@ -1263,87 +1263,87 @@ Slack : 9.870
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 20.346
+Slack : 20.338
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Minimum Pulse Width 'AD1939_MCLK'
-Slack : 40.343
+Slack : 40.342
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Minimum Pulse Width 'hps_i2c_internal'
-Slack : 1249.773
+Slack : 1249.807
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
-Slack : 2.180
+Slack : 1.640
 
 Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
-Slack : 2.239
+Slack : 2.142
 
 Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
-Slack : 3.911
+Slack : 2.982
 
 Type  : Fast 900mV 100C Model Net Delay 'set_net_delay'
-Slack : 4.807
+Slack : 5.247
 
 Type  : Fast 900mV -40C Model Setup 'i0|emif_0_core_usr_clk'
-Slack : 1.186
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Setup 'i0|emif_0_phy_clk_l_1'
-Slack : 1.272
+Slack : 1.281
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Setup 'i0|emif_0_phy_clk_l_2'
-Slack : 1.333
+Slack : 1.291
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'i0|emif_0_phy_clk_l_1'
+Slack : 1.361
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Setup 'i0|emif_0_phy_clk_l_0'
-Slack : 1.882
+Slack : 1.895
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Setup 'pio_system|emif_0_ref_clock'
-Slack : 2.612
+Slack : 2.649
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Setup 'i0|emif_0_core_cal_slave_clk'
-Slack : 5.121
+Slack : 5.183
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Setup 'i0|emif_0_core_extra_clk_0'
-Slack : 5.823
+Slack : 5.469
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Setup 'fpga_clk_i'
-Slack : 15.608
+Slack : 15.695
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Setup 'altera_reserved_tck'
-Slack : 17.369
+Slack : 17.606
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Setup 'AD1939_MCLK'
-Slack : 37.690
+Slack : 37.596
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Hold 'AD1939_MCLK'
-Slack : -0.448
-TNS   : -3.472
+Slack : -0.465
+TNS   : -3.520
 
 Type  : Fast 900mV -40C Model Hold 'altera_reserved_tck'
-Slack : 0.011
+Slack : 0.012
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Hold 'fpga_clk_i'
-Slack : 0.011
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Hold 'i0|emif_0_core_extra_clk_0'
 Slack : 0.012
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Hold 'i0|emif_0_core_cal_slave_clk'
-Slack : 0.013
+Slack : 0.015
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'i0|emif_0_core_extra_clk_0'
+Slack : 0.015
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Hold 'pio_system|emif_0_ref_clock'
@@ -1351,15 +1351,15 @@ Slack : 0.020
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Hold 'i0|emif_0_core_usr_clk'
-Slack : 0.025
+Slack : 0.026
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Hold 'i0|emif_0_phy_clk_l_1'
-Slack : 0.109
+Slack : 0.100
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Hold 'i0|emif_0_phy_clk_l_0'
-Slack : 0.110
+Slack : 0.114
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Hold 'i0|emif_0_phy_clk_l_2'
@@ -1367,107 +1367,107 @@ Slack : 0.114
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_core_usr_clk'
-Slack : 1.896
+Slack : 1.886
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Recovery 'pio_system|emif_0_ref_clock'
-Slack : 2.545
+Slack : 2.601
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_core_cal_slave_clk'
-Slack : 4.977
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_phy_clk_2'
-Slack : 6.974
+Slack : 4.698
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_phy_clk_1'
-Slack : 7.093
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_core_extra_clk_0'
-Slack : 7.272
+Slack : 5.881
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_phy_clk_0'
-Slack : 7.425
+Slack : 6.515
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_phy_clk_2'
+Slack : 7.184
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_core_extra_clk_0'
+Slack : 7.264
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_phy_clk_l_1'
-Slack : 16.233
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_phy_clk_l_2'
-Slack : 16.585
+Slack : 15.148
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_phy_clk_l_0'
-Slack : 16.839
+Slack : 16.040
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Recovery 'i0|emif_0_phy_clk_l_2'
+Slack : 16.572
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Recovery 'fpga_clk_i'
-Slack : 17.057
+Slack : 16.722
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Recovery 'altera_reserved_tck'
-Slack : 39.306
+Slack : 39.630
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Recovery 'AD1939_MCLK'
-Slack : 79.281
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Removal 'i0|emif_0_core_extra_clk_0'
-Slack : 0.165
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Removal 'AD1939_MCLK'
-Slack : 0.174
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Removal 'fpga_clk_i'
-Slack : 0.191
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Removal 'i0|emif_0_core_usr_clk'
-Slack : 0.217
+Slack : 79.177
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Removal 'i0|emif_0_core_cal_slave_clk'
-Slack : 0.257
+Slack : 0.140
 TNS   : 0.000
 
-Type  : Fast 900mV -40C Model Removal 'pio_system|emif_0_ref_clock'
-Slack : 0.447
+Type  : Fast 900mV -40C Model Removal 'AD1939_MCLK'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i0|emif_0_core_usr_clk'
+Slack : 0.198
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'fpga_clk_i'
+Slack : 0.282
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i0|emif_0_core_extra_clk_0'
+Slack : 0.299
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Removal 'altera_reserved_tck'
-Slack : 0.493
+Slack : 0.321
 TNS   : 0.000
 
-Type  : Fast 900mV -40C Model Removal 'i0|emif_0_phy_clk_0'
-Slack : 2.531
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Removal 'i0|emif_0_phy_clk_1'
-Slack : 2.792
+Type  : Fast 900mV -40C Model Removal 'pio_system|emif_0_ref_clock'
+Slack : 0.410
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Removal 'i0|emif_0_phy_clk_2'
-Slack : 2.892
+Slack : 2.721
 TNS   : 0.000
 
-Type  : Fast 900mV -40C Model Removal 'i0|emif_0_phy_clk_l_0'
-Slack : 4.140
+Type  : Fast 900mV -40C Model Removal 'i0|emif_0_phy_clk_0'
+Slack : 3.244
 TNS   : 0.000
 
-Type  : Fast 900mV -40C Model Removal 'i0|emif_0_phy_clk_l_1'
-Slack : 4.382
+Type  : Fast 900mV -40C Model Removal 'i0|emif_0_phy_clk_1'
+Slack : 3.751
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Removal 'i0|emif_0_phy_clk_l_2'
-Slack : 4.403
+Slack : 4.388
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i0|emif_0_phy_clk_l_0'
+Slack : 4.667
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Removal 'i0|emif_0_phy_clk_l_1'
+Slack : 5.418
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width 'FPGA_memory_mem1_dqs[1]_IN'
@@ -1647,7 +1647,7 @@ Slack : 0.786
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width 'i0|emif_0_core_usr_clk'
-Slack : 1.347
+Slack : 1.348
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width 'i0|emif_0_phy_clk_l_0'
@@ -1671,7 +1671,7 @@ Slack : 1.653
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width 'i0|emif_0_core_cal_slave_clk'
-Slack : 3.026
+Slack : 3.025
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width '~ALTERA_CLKUSR~'
@@ -1679,11 +1679,11 @@ Slack : 3.788
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width 'i0|emif_0_core_extra_clk_0'
-Slack : 4.673
+Slack : 4.675
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width 'hps_spim0_sclk_out'
-Slack : 4.802
+Slack : 4.799
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width 'fpga_clk_i'
@@ -1691,28 +1691,28 @@ Slack : 9.933
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 20.378
+Slack : 20.370
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width 'AD1939_MCLK'
-Slack : 40.362
+Slack : 40.363
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width 'hps_i2c_internal'
-Slack : 1249.563
+Slack : 1249.669
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
-Slack : 2.292
+Slack : 1.859
 
 Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
-Slack : 2.339
+Slack : 2.261
 
 Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
-Slack : 4.905
+Slack : 4.125
 
 Type  : Fast 900mV -40C Model Net Delay 'set_net_delay'
-Slack : 5.566
+Slack : 5.950
 
 ------------------------------------------------------------
 Info: see the "DDR report" for DDR timing results

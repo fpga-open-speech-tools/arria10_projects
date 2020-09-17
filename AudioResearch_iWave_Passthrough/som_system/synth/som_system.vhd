@@ -1706,7 +1706,7 @@ begin
 			add_sel                              => addr_sel_in_add_sel                                   --      addr_sel_pio.add_sel
 		);
 
-	pll_using_ad1939_mclk : component som_system_altera_iopll_180.som_system_pkg.som_system_altera_iopll_180_pjxg52y
+	pll_using_ad1939_mclk : component som_system_altera_iopll_180.som_system_pkg.som_system_altera_iopll_180_bgd33sq
 		port map (
 			rst      => reset_reset_n_ports_inv,           --   reset.reset
 			refclk   => ad1939_mclk_clk,                   --  refclk.clk

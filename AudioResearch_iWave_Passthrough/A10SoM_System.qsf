@@ -103,14 +103,14 @@ set_location_assignment PIN_AA4 -to AA_SDO[3]
 set_location_assignment PIN_AH4 -to AA_SDO[4]
 set_location_assignment PIN_AG3 -to AA_SDO[5]
 set_location_assignment PIN_AB8 -to AA_SDO[6]
-set_location_assignment PIN_AC9 -to AA_SDO[7]
+set_location_assignment PIN_AD32 -to AA_SDO[7]
 set_location_assignment PIN_R2 -to AA_SDO[8]
 set_location_assignment PIN_T3 -to AA_SDO[9]
 
-set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN[0]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN[1]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN[2]
-set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN_N[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN_N[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN_N[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_12V0_EN_N[3]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_BANK_EN[0]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_BANK_EN[1]
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AA_LVDS_EN_N[0]
@@ -968,7 +968,6 @@ set_location_assignment PIN_AP6 -to AD1939_RST_CODEC_N
 set_location_assignment PIN_AF9 -to AD1939_SPI_MISO
 set_location_assignment PIN_AE9 -to AD1939_SPI_MOSI
 set_location_assignment PIN_AL3 -to AD1939_SPI_SCK
-set_location_assignment PIN_AP32 -to FULL_SPEED_n
 
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_ABCLK
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_ALRCLK
@@ -985,7 +984,6 @@ set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_RST_CODEC_N
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_SPI_MISO
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_SPI_MOSI
 set_instance_assignment -name IO_STANDARD "1.8 V" -to AD1939_SPI_SCK
-set_instance_assignment -name IO_STANDARD "1.8 V" -to FULL_SPEED_n
 
 ########################################################################################################################
 # I2C
@@ -1027,10 +1025,7 @@ set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -s
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INCREMENTAL_ROUTING=1" -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[23] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[31] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=128" -section_id auto_signaltap_0
@@ -1049,29 +1044,17 @@ set_global_assignment -name SOURCE_FILE som_system/som_system.cmp
 set_global_assignment -name QSYS_FILE pll.qsys
 set_global_assignment -name SIGNALTAP_FILE stp1.stp
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[6] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[18] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[25] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[3] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[4] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[21] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[22] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[26] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[27] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[20] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[30] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[13] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=185" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=185" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=185" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
-set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=576" -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to AA_MCLK[0] -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to AA_MCLK[1] -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to AA_MCLK[2] -section_id auto_signaltap_0
@@ -1255,8 +1238,6 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[179
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[180] -to "som_system:i0|AD1939_hps_audio_blade:fe_qsys_ad1939_audio_blade_v1_0|AD1939_DAC2_data[8]" -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[181] -to "som_system:i0|AD1939_hps_audio_blade:fe_qsys_ad1939_audio_blade_v1_0|AD1939_DAC2_data[9]" -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[182] -to "som_system:i0|AD1939_hps_audio_blade:fe_qsys_ad1939_audio_blade_v1_0|AD1939_DAC2_valid" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[183] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_r" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[184] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_out_valid_r" -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to AA_MCLK[0] -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to AA_MCLK[1] -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to AA_MCLK[2] -section_id auto_signaltap_0
@@ -1440,15 +1421,78 @@ set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[179] -
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[180] -to "som_system:i0|AD1939_hps_audio_blade:fe_qsys_ad1939_audio_blade_v1_0|AD1939_DAC2_data[8]" -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[181] -to "som_system:i0|AD1939_hps_audio_blade:fe_qsys_ad1939_audio_blade_v1_0|AD1939_DAC2_data[9]" -section_id auto_signaltap_0
 set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[182] -to "som_system:i0|AD1939_hps_audio_blade:fe_qsys_ad1939_audio_blade_v1_0|AD1939_DAC2_valid" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[183] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_r" -section_id auto_signaltap_0
-set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[184] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_out_valid_r" -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[0] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[2] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[7] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
 set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[14] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
-set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[183] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[184] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[185] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[186] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[187] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[188] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[189] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[190] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[191] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[192] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[193] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[194] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[195] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[196] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[197] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[198] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[199] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[200] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[201] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[202] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[203] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[204] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[205] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[206] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[207] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_out_valid" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[183] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[184] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[185] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[186] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[187] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[188] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[189] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[190] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[191] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[192] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[193] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[194] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[195] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[196] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[197] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[198] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[199] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[200] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[201] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[202] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[203] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[204] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[205] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[206] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_data_out_r[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[207] -to "som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_0|mic_out_valid" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=208" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=208" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_BITS=208" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=645" -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[1] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[5] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[8] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[9] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[10] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[11] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[12] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[15] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[16] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[17] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[19] -to auto_signaltap_0|gnd -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[24] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[28] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
+set_instance_assignment -name POST_FIT_CONNECT_TO_SLD_NODE_ENTITY_PORT crc[29] -to auto_signaltap_0|vcc -section_id auto_signaltap_0
 set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

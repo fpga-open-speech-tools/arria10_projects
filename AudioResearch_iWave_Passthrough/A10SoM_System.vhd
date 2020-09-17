@@ -221,12 +221,12 @@ ENTITY A10SoM_System IS
     I2C_SCL                           : inout std_logic;
     I2C_SDA                           : inout std_logic;
     
-    AA_12V0_EN                        : out std_logic_vector(3  downto 0);
-    AA_BANK_EN                        : out std_logic_vector(1  downto 0);
+    AA_12V0_EN                        : out std_logic_vector(3 downto 0);
+    AA_BANK_EN                        : out std_logic_vector(1 downto 0);
     AA_LVDS_EN_N                      : out std_logic_vector(15 downto 0);
-    AA_MCLK                           : out std_logic_vector(3  downto 0);
-    AA_SDI                            : out std_logic_vector(15 downto 0);
-    AA_SDO                            : in std_logic_vector( 15 downto 0);
+    AA_MCLK                           : out std_logic_vector(3 downto 0);
+    AA_SDI                            : in  std_logic_vector(15 downto 0);
+    AA_SDO                            : out std_logic_vector(15 downto 0);
     
     DB25_GPIO                         : inout std_logic_vector(17 downto 0);
     P3_GPIO                           : inout std_logic_vector(3 downto 0)
@@ -732,68 +732,68 @@ end component som_system;
    
   
   -- Microphone array connections
-  mic_array0_physical_serial_data_in             => AA_SDO(0), 
-  mic_array0_physical_serial_data_out            => AA_SDI(0), 
+  mic_array0_physical_serial_data_in             => AA_SDI(0), 
+  mic_array0_physical_serial_data_out            => AA_SDO(0), 
   mic_array0_physical_serial_clk_out             => AA_MCLK(0),
   mic_array0_control_busy_out                    => open,      
-  mic_array1_physical_serial_data_in             => AA_SDO(1), 
-  mic_array1_physical_serial_data_out            => AA_SDI(1), 
+  mic_array1_physical_serial_data_in             => AA_SDI(1), 
+  mic_array1_physical_serial_data_out            => AA_SDO(1), 
   mic_array1_physical_serial_clk_out             => open,
   mic_array1_control_busy_out                    => open,      
-  mic_array2_physical_serial_data_in             => AA_SDO(2), 
-  mic_array2_physical_serial_data_out            => AA_SDI(2), 
+  mic_array2_physical_serial_data_in             => AA_SDI(2), 
+  mic_array2_physical_serial_data_out            => AA_SDO(2), 
   mic_array2_physical_serial_clk_out             => open,
   mic_array2_control_busy_out                    => open,      
-  mic_array3_physical_serial_data_in             => AA_SDO(3), 
-  mic_array3_physical_serial_data_out            => AA_SDI(3), 
+  mic_array3_physical_serial_data_in             => AA_SDI(3), 
+  mic_array3_physical_serial_data_out            => AA_SDO(3), 
   mic_array3_physical_serial_clk_out             => open,
   mic_array3_control_busy_out                    => open,      
-  mic_array4_physical_serial_data_in             => AA_SDO(4), 
-  mic_array4_physical_serial_data_out            => AA_SDI(4), 
+  mic_array4_physical_serial_data_in             => AA_SDI(4), 
+  mic_array4_physical_serial_data_out            => AA_SDO(4), 
   mic_array4_physical_serial_clk_out             => AA_MCLK(1),
   mic_array4_control_busy_out                    => open,      
-  mic_array5_physical_serial_data_in             => AA_SDO(5), 
-  mic_array5_physical_serial_data_out            => AA_SDI(5), 
+  mic_array5_physical_serial_data_in             => AA_SDI(5), 
+  mic_array5_physical_serial_data_out            => AA_SDO(5), 
   mic_array5_physical_serial_clk_out             => open,
   mic_array5_control_busy_out                    => open,      
-  mic_array6_physical_serial_data_in             => AA_SDO(6), 
-  mic_array6_physical_serial_data_out            => AA_SDI(6), 
+  mic_array6_physical_serial_data_in             => AA_SDI(6), 
+  mic_array6_physical_serial_data_out            => AA_SDO(6), 
   mic_array6_physical_serial_clk_out             => open,
   mic_array6_physical_1_busy_out                 => open,      
-  mic_array7_physical_serial_data_in             => AA_SDO(7), 
-  mic_array7_physical_serial_data_out            => AA_SDI(7), 
+  mic_array7_physical_serial_data_in             => AA_SDI(7), 
+  mic_array7_physical_serial_data_out            => AA_SDO(7), 
   mic_array7_physical_serial_clk_out             => open,
   mic_array7_control_busy_out                    => open,      
-  mic_array8_physical_serial_data_in             => AA_SDO(8), 
-  mic_array8_physical_serial_data_out            => AA_SDI(8), 
+  mic_array8_physical_serial_data_in             => AA_SDI(8), 
+  mic_array8_physical_serial_data_out            => AA_SDO(8), 
   mic_array8_physical_serial_clk_out             => AA_MCLK(2),
   mic_array8_control_busy_out                    => open,      
-  mic_array9_physical_serial_data_in             => AA_SDO(9), 
-  mic_array9_physical_serial_data_out            => AA_SDI(9), 
+  mic_array9_physical_serial_data_in             => AA_SDI(9), 
+  mic_array9_physical_serial_data_out            => AA_SDO(9), 
   mic_array9_physical_serial_clk_out             => open,
   mic_array9_control_busy_out                    => open,      
-  mic_array10_physical_serial_data_in            => AA_SDO(10),
-  mic_array10_physical_serial_data_out           => AA_SDI(10),
+  mic_array10_physical_serial_data_in            => AA_SDI(10),
+  mic_array10_physical_serial_data_out           => AA_SDO(10),
   mic_array10_physical_serial_clk_out            => open,
   mic_array10_control_busy_out                   => open,      
-  mic_array11_physical_serial_data_in            => AA_SDO(11),
-  mic_array11_physical_serial_data_out           => AA_SDI(11),
+  mic_array11_physical_serial_data_in            => AA_SDI(11),
+  mic_array11_physical_serial_data_out           => AA_SDO(11),
   mic_array11_physical_serial_clk_out            => open,
   mic_array11_control_busy_out                   => open,      
-  mic_array12_physical_serial_data_in            => AA_SDO(12),
-  mic_array12_physical_serial_data_out           => AA_SDI(12),
+  mic_array12_physical_serial_data_in            => AA_SDI(12),
+  mic_array12_physical_serial_data_out           => AA_SDO(12),
   mic_array12_physical_serial_clk_out            => AA_MCLK(3),
   mic_array12_control_busy_out                   => open,      
-  mic_array13_physical_serial_data_in            => AA_SDO(13),
-  mic_array13_physical_serial_data_out           => AA_SDI(13),
+  mic_array13_physical_serial_data_in            => AA_SDI(13),
+  mic_array13_physical_serial_data_out           => AA_SDO(13),
   mic_array13_physical_serial_clk_out            => open,
   mic_array13_control_busy_out                   => open,      
-  mic_array14_physical_serial_data_in            => AA_SDO(14),
-  mic_array14_physical_serial_data_out           => AA_SDI(14),
+  mic_array14_physical_serial_data_in            => AA_SDI(14),
+  mic_array14_physical_serial_data_out           => AA_SDO(14),
   mic_array14_physical_serial_clk_out            => open,
   mic_array14_control_busy_out                   => open,      
-  mic_array15_physical_serial_data_in            => AA_SDO(15),
-  mic_array15_physical_serial_data_out           => AA_SDI(15),
+  mic_array15_physical_serial_data_in            => AA_SDI(15),
+  mic_array15_physical_serial_data_out           => AA_SDO(15),
   mic_array15_physical_serial_clk_out            => open,
   mic_array15_control_busy_out                   => open       
     

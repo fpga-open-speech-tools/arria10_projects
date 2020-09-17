@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="som_system" kind="som_system" version="1.0" fabric="QSYS">
  <!-- Format version 18.0 614 (Future versions may contain additional information.) -->
- <!-- 2020.09.14.08:08:11 -->
+ <!-- 2020.09.16.07:26:04 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1600092489</value>
+  <value>1600262762</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -114248,7 +114248,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="gui_output_clock_frequency3">
    <type>double</type>
-   <value>32.768</value>
+   <value>37.28772</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -114392,7 +114392,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="gui_actual_output_clock_frequency3">
    <type>java.lang.String</type>
-   <value>32.768000</value>
+   <value>37.287724</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -114536,7 +114536,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="gui_actual_output_clock_frequency_range3">
    <type>[Ljava.lang.String;</type>
-   <value>30.037333,30.895543,31.804235,32.768000,33.792000,34.882065</value>
+   <value>33.792000,34.882065,36.044800,37.287724,38.619429,40.049778</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -115544,7 +115544,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="gui_actual_phase_shift_deg_range3">
    <type>[Ljava.lang.String;</type>
-   <value>0.0,1.4,2.7,4.1,5.5,6.8</value>
+   <value>0.0,1.6,3.1,4.7,6.2,7.8</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -115976,7 +115976,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="gui_actual_duty_cycle_range3">
    <type>[Ljava.lang.String;</type>
-   <value>45.45,46.97,48.48,50.0,51.52,53.03</value>
+   <value>44.83,46.55,48.28,50.0,51.72,53.45</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -116104,7 +116104,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="parameterTable_values">
    <type>[Ljava.lang.String;</type>
-   <value>88,1,1081.344000 MHz,11,32,16,33,16,1,1,1,1,false,44,44,false,false,256,256,false,true,6,16,8,17,8,256,256,256,256,5,16,8,16,8,256,256,256,256,true,false,false,true,false,false,false,false,false,false,false,false,false,false,true,true,true,true,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,pll_cp_setting21,pll_bw_res_setting5</value>
+   <value>88,1,1081.344000 MHz,11,32,16,29,16,1,1,1,1,false,44,44,false,false,256,256,false,true,6,16,8,15,8,256,256,256,256,5,16,8,14,8,256,256,256,256,true,false,false,true,false,false,false,false,false,false,false,false,false,false,true,true,true,true,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,pll_cp_setting21,pll_bw_res_setting5</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -116504,7 +116504,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="c_cnt_hi_div3">
    <type>int</type>
-   <value>17</value>
+   <value>15</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -116648,7 +116648,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="c_cnt_lo_div3">
    <type>int</type>
-   <value>16</value>
+   <value>14</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -117512,7 +117512,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="output_clock_frequency3">
    <type>java.lang.String</type>
-   <value>32.768000 MHz</value>
+   <value>37.287724 MHz</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -118232,7 +118232,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="hp_actual_output_clock_frequency_fp3">
    <type>double</type>
-   <value>32.768</value>
+   <value>37.287724137931036</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -119204,7 +119204,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="clockRate">
     <type>long</type>
-    <value>32768000</value>
+    <value>37287724</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>

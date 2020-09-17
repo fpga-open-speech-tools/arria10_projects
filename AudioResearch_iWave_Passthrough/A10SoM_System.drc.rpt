@@ -1,5 +1,5 @@
 Design Assistant report for A10SoM_System
-Tue Sep 08 13:47:30 2020
+Wed Sep 16 07:39:16 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -34,7 +34,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Design Assistant Summary                                              ;
 +-----------------------------------+-----------------------------------+
-; Design Assistant Status           ; Failed - Tue Sep 08 13:47:30 2020 ;
+; Design Assistant Status           ; Failed - Wed Sep 16 07:39:16 2020 ;
 ; Revision Name                     ; A10SoM_System                     ;
 ; Top-level Entity Name             ; A10SoM_System                     ;
 ; Family                            ; Arria 10                          ;
@@ -51,14 +51,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Design Assistant
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Tue Sep 08 13:47:26 2020
+    Info: Processing started: Wed Sep 16 07:39:12 2020
 Info: Command: quartus_drc A10SoM_System -c A10SoM_System
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Error (12595): Design Assistant information: Design Assistant does not support current family.
 Error: Quartus Prime Design Assistant was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4753 megabytes
-    Error: Processing ended: Tue Sep 08 13:47:31 2020
-    Error: Elapsed time: 00:00:05
-    Error: Total CPU time (on all processors): 00:00:04
+    Error: Peak virtual memory: 4760 megabytes
+    Error: Processing ended: Wed Sep 16 07:39:16 2020
+    Error: Elapsed time: 00:00:04
+    Error: Total CPU time (on all processors): 00:00:05
 
 

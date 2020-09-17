@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2020.09.14.08:08:23"
+ date="2020.09.16.07:26:16"
  outputDirectory="D:/NIH3Repo/arria10_projects/AudioResearch_iWave_Passthrough/som_system/">
  <perimeter>
   <parameter
@@ -1345,7 +1345,7 @@
   <parameter name="AUTO_EMIF_0_PLL_REF_CLK_RESET_DOMAIN" value="-1" />
   <parameter name="AUTO_AD1939_ALRCLK_RESET_DOMAIN" value="-1" />
   <parameter name="AUTO_AD1939_ABCLK_RESET_DOMAIN" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1600092489" />
+  <parameter name="AUTO_GENERATION_ID" value="1600262762" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
   <parameter name="AUTO_HPS_I2C1_SCL_IN_CLOCK_RATE" value="-1" />
   <parameter name="AUTO_DDR_REF_CLK_RESET_DOMAIN" value="-1" />
@@ -1494,47 +1494,43 @@
    <file
        path="C:/intelfpga/18.0/ip/altera/emif/ip_arch_nf/altera_emif_arch_nf_hw.tcl" />
    <file
+       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_channel_adapter/avalon-st_channel_adapter_hw.tcl" />
+   <file
+       path="D:/NIH3Repo/arria10_projects/AudioResearch_iWave_Passthrough/mux_ddr_hw.tcl" />
+   <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_mm_interconnect/altera_mm_interconnect_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_width_adapter/altera_merlin_width_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser.v" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_width_adapter/altera_merlin_width_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
-   <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_slave_ni/altera_merlin_axi_slave_ni_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_slave_ni/altera_merlin_axi_slave_ni.sv" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/emif/hwtcl/altera_emif/altera_emif_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/emif/ip_cal_slave/ip_core_nf/altera_emif_cal_slave_nf_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_avalon_mm_bridge/altera_avalon_mm_bridge_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/altera_avalon_onchip_memory2_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_mm_interconnect/altera_mm_interconnect_hw.tcl" />
    <file
@@ -1542,50 +1538,74 @@
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/emif/ip_arch_nf/altera_emif_arch_nf_hw.tcl" />
-   <file
-       path="D:/NIH3Repo/arria10_projects/AudioResearch_iWave_Passthrough/mux_ddr_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_irq_mapper/altera_irq_mapper_hw.tcl" />
-   <file
        path="D:/NIH3Repo/component_library/microphone_array/FE_FPGA_Microphone_Encoder_Decoder_hw.tcl" />
-   <file path="D:/NIH3Repo/component_library/ad5791/FE_AD5791_v1_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_avalon_mm_clock_crossing_bridge/altera_avalon_mm_clock_crossing_bridge_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_mm_interconnect/altera_mm_interconnect_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_error_adapter/avalon-st_error_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo.v" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
-   <file
-       path="D:/NIH3Repo/component_library/ad1939/FE_Qsys_AD1939_Audio_Blade_v1_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/altera_hps/altera_hps_arria_10/hps/altera_hps_arria10_hw.tcl" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.privateinterfaces.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/guava-15.0.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.infrastructure.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.jdbcsqlite.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.version.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.qsys.model.common.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.utilities.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/hamcrest-all-1.3.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/commons-lang3-3.1.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/javasysmon.jar" />
+   <file path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/jaxb-impl.jar" />
+   <file path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/jaxb-api.jar" />
+   <file path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/jaxb-core.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/commons-logging-1.1.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopclibrary.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.atlantic.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.tclmodule.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.hdlcomponent.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.hdlwriter.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.minieval2.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopc.generator.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.qsys.cmsis.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.qsys.ipxact.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopc.qsymbol.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.transforms.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcdocument.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.build.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.tcl.interpreter.jar" />
+   <file
+       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/jacl1.3.2a.jar" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/altera_hps/altera_hps_arria_10/interface_generator/altera_arria10_interface_generator_hw.tcl" />
    <file
        path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
    <file
@@ -1717,107 +1737,29 @@
    <file
        path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/jacl1.3.2a.jar" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/altera_hps/altera_hps_arria_10/interface_generator/altera_arria10_interface_generator_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_avalon_mm_clock_crossing_bridge/altera_avalon_mm_clock_crossing_bridge_hw.tcl" />
    <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
+       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
    <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.privateinterfaces.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/guava-15.0.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.infrastructure.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.jdbcsqlite.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.version.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.qsys.model.common.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.utilities.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/hamcrest-all-1.3.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/commons-lang3-3.1.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/javasysmon.jar" />
-   <file path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/jaxb-impl.jar" />
-   <file path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/jaxb-api.jar" />
-   <file path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/jaxb-core.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/commons-logging-1.1.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopclibrary.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.atlantic.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.tclmodule.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.hdlcomponent.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.hdlwriter.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.minieval2.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopc.generator.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.qsys.cmsis.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.qsys.ipxact.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopc.qsymbol.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.transforms.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcdocument.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.build.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.tcl.interpreter.jar" />
-   <file
-       path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/jacl1.3.2a.jar" />
-   <file path="D:/NIH3Repo/component_library/ad4020/FE_AD4020_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/altera_iopll/top/altera_iopll_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_pio/altera_avalon_pio_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_channel_adapter/avalon-st_channel_adapter_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_mm_interconnect/altera_mm_interconnect_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser.v" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_width_adapter/altera_merlin_width_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo.v" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
-   <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_width_adapter/altera_merlin_width_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
    <file
@@ -1825,110 +1767,168 @@
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
    <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser.v" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
+   <file
+       path="D:/NIH3Repo/component_library/ad1939/FE_Qsys_AD1939_Audio_Blade_v1_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_mm_interconnect/altera_mm_interconnect_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_error_adapter/avalon-st_error_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo.v" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+   <file path="D:/NIH3Repo/component_library/ad4020/FE_AD4020_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/altera_iopll/top/altera_iopll_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_irq_mapper/altera_irq_mapper_hw.tcl" />
+   <file path="D:/NIH3Repo/component_library/ad5791/FE_AD5791_v1_hw.tcl" />
+   <file path="D:/NIH3Repo/component_library/ad7768/FE_AD7768_v1_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/emif/hwtcl/altera_emif/altera_emif_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/emif/ip_arch_nf/altera_emif_arch_nf_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/emif/ip_cal_slave/ip_core_nf/altera_emif_cal_slave_nf_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_avalon_mm_bridge/altera_avalon_mm_bridge_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/altera_avalon_onchip_memory2_hw.tcl" />
+   <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_mm_interconnect/altera_mm_interconnect_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_master_translator/altera_merlin_master_translator_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_channel_adapter/avalon-st_channel_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_channel_adapter/avalon-st_channel_adapter_hw.tcl" />
-   <file path="D:/NIH3Repo/component_library/ad7768/FE_AD7768_v1_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_pio/altera_avalon_pio_hw.tcl" />
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="som_system">"Generating: som_system"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_emif_a10_hps_180_uhly6ia"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_emif_arch_nf_180_qjbdqci"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_st_adapter_180_bbxpcfy"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_channel_adapter_180_agpsntq"</message>
+   <message level="Info" culprit="som_system">"Generating: mux_ddr"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_2zdh4ci"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_ay6xe7y"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_dqbhvfa"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_zd5hm5y"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_avalon_st_handshake_clock_crosser"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_width_adapter"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_lxmadiq"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_goyglzq"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_x2ejjsa"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_slave_ni"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_goyglzq"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_width_adapter"</message>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_burst_adapter"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_oh2yaqq"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_zd5hm5y"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_iv666ga"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_avalon_st_handshake_clock_crosser"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_dqbhvfa"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_oh2yaqq"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_ay6xe7y"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_slave_ni"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_nzcyb6q"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_master_translator"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
+   <message level="Info" culprit="som_system">"Generating: FE_FPGA_Microphone_Encoder_Decoder"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_hps_180_zmlrihi"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_interface_generator_140_hnufizi"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_hps_io_180_of6hmti"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_interface_generator_140_62dhioi"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_avalon_mm_clock_crossing_bridge"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_st_adapter_180_cgdcaea"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_channel_adapter_180_iipikvi"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_d4sniia"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_ae2iwoi"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_avalon_sc_fifo"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_gil3sua"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_2q47q3i"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_width_adapter"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_jxs3q3q"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_st_adapter_180_v3lgypq"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_error_adapter_180_jats3da"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_xdoo6gq"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_agent"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_burst_adapter"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_avalon_st_handshake_clock_crosser"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_reioipy"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
+   <message level="Info" culprit="som_system">"Generating: AD1939_hps_audio_blade"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_g5k2ojy"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_aogbhry"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_bobv3li"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_agent"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_burst_adapter"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_uoxykti"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_7q6ljiq"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_st_adapter_180_caevfly"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_error_adapter_180_ww4pkiq"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_6yqffvy"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_27h65fa"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_avalon_sc_fifo"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_reset_controller"</message>
+   <message level="Info" culprit="som_system">"Generating: FE_AD4020_v1"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_iopll_180_bgd33sq"</message>
+   <message level="Debug" culprit="pll_using_AD1939_MCLK">IN HDL WRAP: reset refclk locked outclk0 outclk1 outclk2 outclk3 outclk4</message>
+   <message level="Debug" culprit="pll_using_AD1939_MCLK">--hdl_params: c_cnt_bypass_en0 c_cnt_bypass_en1 c_cnt_bypass_en2 c_cnt_bypass_en3 c_cnt_bypass_en4 c_cnt_bypass_en5 c_cnt_bypass_en6 c_cnt_bypass_en7 c_cnt_bypass_en8 c_cnt_hi_div0 c_cnt_hi_div1 c_cnt_hi_div2 c_cnt_hi_div3 c_cnt_hi_div4 c_cnt_hi_div5 c_cnt_hi_div6 c_cnt_hi_div7 c_cnt_hi_div8 c_cnt_in_src0 c_cnt_in_src1 c_cnt_in_src2 c_cnt_in_src3 c_cnt_in_src4 c_cnt_in_src5 c_cnt_in_src6 c_cnt_in_src7 c_cnt_in_src8 c_cnt_lo_div0 c_cnt_lo_div1 c_cnt_lo_div2 c_cnt_lo_div3 c_cnt_lo_div4 c_cnt_lo_div5 c_cnt_lo_div6 c_cnt_lo_div7 c_cnt_lo_div8 c_cnt_odd_div_duty_en0 c_cnt_odd_div_duty_en1 c_cnt_odd_div_duty_en2 c_cnt_odd_div_duty_en3 c_cnt_odd_div_duty_en4 c_cnt_odd_div_duty_en5 c_cnt_odd_div_duty_en6 c_cnt_odd_div_duty_en7 c_cnt_odd_div_duty_en8 c_cnt_ph_mux_prst0 c_cnt_ph_mux_prst1 c_cnt_ph_mux_prst2 c_cnt_ph_mux_prst3 c_cnt_ph_mux_prst4 c_cnt_ph_mux_prst5 c_cnt_ph_mux_prst6 c_cnt_ph_mux_prst7 c_cnt_ph_mux_prst8 c_cnt_prst0 c_cnt_prst1 c_cnt_prst2 c_cnt_prst3 c_cnt_prst4 c_cnt_prst5 c_cnt_prst6 c_cnt_prst7 c_cnt_prst8 clock_name_0 clock_name_1 clock_name_2 clock_name_3 clock_name_4 clock_name_5 clock_name_6 clock_name_7 clock_name_8 clock_name_global_0 clock_name_global_1 clock_name_global_2 clock_name_global_3 clock_name_global_4 clock_name_global_5 clock_name_global_6 clock_name_global_7 clock_name_global_8 duty_cycle0 duty_cycle1 duty_cycle2 duty_cycle3 duty_cycle4 duty_cycle5 duty_cycle6 duty_cycle7 duty_cycle8 m_cnt_bypass_en m_cnt_hi_div m_cnt_lo_div m_cnt_odd_div_duty_en n_cnt_bypass_en n_cnt_hi_div n_cnt_lo_div n_cnt_odd_div_duty_en number_of_clocks operation_mode output_clock_frequency0 output_clock_frequency1 output_clock_frequency2 output_clock_frequency3 output_clock_frequency4 output_clock_frequency5 output_clock_frequency6 output_clock_frequency7 output_clock_frequency8 phase_shift0 phase_shift1 phase_shift2 phase_shift3 phase_shift4 phase_shift5 phase_shift6 phase_shift7 phase_shift8 pll_bw_sel pll_bwctrl pll_cp_current pll_extclk_0_cnt_src pll_extclk_1_cnt_src pll_fbclk_mux_1 pll_fbclk_mux_2 pll_m_cnt_in_src pll_output_clk_frequency pll_slf_rst pll_subtype pll_type reference_clock_frequency</message>
+   <message level="Debug" culprit="pll_using_AD1939_MCLK">altera_pll_ports ports: refclk1 {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} rst {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} fbclk {DIRECT_MAPPING false MAPPING_FUNCTION map_fbclk_port TIE_OFF {}} fboutclk {DIRECT_MAPPING false MAPPING_FUNCTION map_fboutclk_port TIE_OFF {}} zdbfbclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} locked {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} loaden {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} phase_done {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} reconfig_to_pll {DIRECT_MAPPING false MAPPING_FUNCTION map_reconfig_to_port TIE_OFF {}} refclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} scanclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} phout {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} num_phase_shifts {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 3'b0} cntsel {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 5'b0} clkbad {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} extclk_out {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} lvds_clk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} outclk {DIRECT_MAPPING false MAPPING_FUNCTION map_outclk_port TIE_OFF {}} phase_en {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} extswitch {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} cascade_out {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} activeclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} adjpllin {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} updn {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} reconfig_from_pll {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }}</message>
+   <message level="Debug" culprit="pll_using_AD1939_MCLK">module ports: rst refclk locked outclk_0 outclk_1 outclk_2 outclk_3 outclk_4</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_irq_mapper_180_vrecy4a"</message>
+   <message level="Info" culprit="som_system">"Generating: FE_AD5791_v1"</message>
+   <message level="Info" culprit="som_system">"Generating: FE_AD7768_v1"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_emif_180_brz44ly"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_emif_arch_nf_180_3nk2okq"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_emif_cal_slave_nf_180_5pbk77i"</message>
    <message level="Info" culprit="som_system">"Generating: altera_avalon_mm_bridge"</message>
    <message level="Info" culprit="som_system">"Generating: altera_reset_controller"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_onchip_memory2_180_m2wik5y"</message>
    <message level="Info" culprit="ioaux_soft_ram">Starting RTL generation for module 'som_system_altera_avalon_onchip_memory2_180_m2wik5y'</message>
-   <message level="Info" culprit="ioaux_soft_ram">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=som_system_altera_avalon_onchip_memory2_180_m2wik5y --dir=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0049_ioaux_soft_ram_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0049_ioaux_soft_ram_gen//som_system_altera_avalon_onchip_memory2_180_m2wik5y_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="ioaux_soft_ram">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=som_system_altera_avalon_onchip_memory2_180_m2wik5y --dir=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0049_ioaux_soft_ram_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0049_ioaux_soft_ram_gen//som_system_altera_avalon_onchip_memory2_180_m2wik5y_component_configuration.pl  --do_build_sim=0  ]</message>
    <message level="Info" culprit="ioaux_soft_ram">Done RTL generation for module 'som_system_altera_avalon_onchip_memory2_180_m2wik5y'</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_l5dmrei"</message>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_master_translator"</message>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_emif_arch_nf_180_3nk2okq"</message>
-   <message level="Info" culprit="som_system">"Generating: mux_ddr"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_irq_mapper_180_vrecy4a"</message>
-   <message level="Info" culprit="som_system">"Generating: FE_FPGA_Microphone_Encoder_Decoder"</message>
-   <message level="Info" culprit="som_system">"Generating: FE_AD5791_v1"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_avalon_mm_clock_crossing_bridge"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_g5k2ojy"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_agent"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_aogbhry"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_7q6ljiq"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_27h65fa"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_st_adapter_180_caevfly"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_error_adapter_180_ww4pkiq"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_uoxykti"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_avalon_sc_fifo"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_bobv3li"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_burst_adapter"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_6yqffvy"</message>
-   <message level="Info" culprit="som_system">"Generating: AD1939_hps_audio_blade"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_hps_180_zmlrihi"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_hps_io_180_of6hmti"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_interface_generator_140_62dhioi"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_interface_generator_140_hnufizi"</message>
-   <message level="Info" culprit="som_system">"Generating: FE_AD4020_v1"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_reset_controller"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_iopll_180_pjxg52y"</message>
-   <message level="Debug" culprit="pll_using_AD1939_MCLK">IN HDL WRAP: reset refclk locked outclk0 outclk1 outclk2 outclk3 outclk4</message>
-   <message level="Debug" culprit="pll_using_AD1939_MCLK">--hdl_params: c_cnt_bypass_en0 c_cnt_bypass_en1 c_cnt_bypass_en2 c_cnt_bypass_en3 c_cnt_bypass_en4 c_cnt_bypass_en5 c_cnt_bypass_en6 c_cnt_bypass_en7 c_cnt_bypass_en8 c_cnt_hi_div0 c_cnt_hi_div1 c_cnt_hi_div2 c_cnt_hi_div3 c_cnt_hi_div4 c_cnt_hi_div5 c_cnt_hi_div6 c_cnt_hi_div7 c_cnt_hi_div8 c_cnt_in_src0 c_cnt_in_src1 c_cnt_in_src2 c_cnt_in_src3 c_cnt_in_src4 c_cnt_in_src5 c_cnt_in_src6 c_cnt_in_src7 c_cnt_in_src8 c_cnt_lo_div0 c_cnt_lo_div1 c_cnt_lo_div2 c_cnt_lo_div3 c_cnt_lo_div4 c_cnt_lo_div5 c_cnt_lo_div6 c_cnt_lo_div7 c_cnt_lo_div8 c_cnt_odd_div_duty_en0 c_cnt_odd_div_duty_en1 c_cnt_odd_div_duty_en2 c_cnt_odd_div_duty_en3 c_cnt_odd_div_duty_en4 c_cnt_odd_div_duty_en5 c_cnt_odd_div_duty_en6 c_cnt_odd_div_duty_en7 c_cnt_odd_div_duty_en8 c_cnt_ph_mux_prst0 c_cnt_ph_mux_prst1 c_cnt_ph_mux_prst2 c_cnt_ph_mux_prst3 c_cnt_ph_mux_prst4 c_cnt_ph_mux_prst5 c_cnt_ph_mux_prst6 c_cnt_ph_mux_prst7 c_cnt_ph_mux_prst8 c_cnt_prst0 c_cnt_prst1 c_cnt_prst2 c_cnt_prst3 c_cnt_prst4 c_cnt_prst5 c_cnt_prst6 c_cnt_prst7 c_cnt_prst8 clock_name_0 clock_name_1 clock_name_2 clock_name_3 clock_name_4 clock_name_5 clock_name_6 clock_name_7 clock_name_8 clock_name_global_0 clock_name_global_1 clock_name_global_2 clock_name_global_3 clock_name_global_4 clock_name_global_5 clock_name_global_6 clock_name_global_7 clock_name_global_8 duty_cycle0 duty_cycle1 duty_cycle2 duty_cycle3 duty_cycle4 duty_cycle5 duty_cycle6 duty_cycle7 duty_cycle8 m_cnt_bypass_en m_cnt_hi_div m_cnt_lo_div m_cnt_odd_div_duty_en n_cnt_bypass_en n_cnt_hi_div n_cnt_lo_div n_cnt_odd_div_duty_en number_of_clocks operation_mode output_clock_frequency0 output_clock_frequency1 output_clock_frequency2 output_clock_frequency3 output_clock_frequency4 output_clock_frequency5 output_clock_frequency6 output_clock_frequency7 output_clock_frequency8 phase_shift0 phase_shift1 phase_shift2 phase_shift3 phase_shift4 phase_shift5 phase_shift6 phase_shift7 phase_shift8 pll_bw_sel pll_bwctrl pll_cp_current pll_extclk_0_cnt_src pll_extclk_1_cnt_src pll_fbclk_mux_1 pll_fbclk_mux_2 pll_m_cnt_in_src pll_output_clk_frequency pll_slf_rst pll_subtype pll_type reference_clock_frequency</message>
-   <message level="Debug" culprit="pll_using_AD1939_MCLK">altera_pll_ports ports: refclk1 {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} rst {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} fbclk {DIRECT_MAPPING false MAPPING_FUNCTION map_fbclk_port TIE_OFF {}} fboutclk {DIRECT_MAPPING false MAPPING_FUNCTION map_fboutclk_port TIE_OFF {}} zdbfbclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} locked {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} loaden {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} phase_done {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} reconfig_to_pll {DIRECT_MAPPING false MAPPING_FUNCTION map_reconfig_to_port TIE_OFF {}} refclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} scanclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} phout {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} num_phase_shifts {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 3'b0} cntsel {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 5'b0} clkbad {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} extclk_out {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} lvds_clk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} outclk {DIRECT_MAPPING false MAPPING_FUNCTION map_outclk_port TIE_OFF {}} phase_en {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} extswitch {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} cascade_out {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} activeclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} adjpllin {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} updn {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} reconfig_from_pll {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }}</message>
-   <message level="Debug" culprit="pll_using_AD1939_MCLK">module ports: rst refclk locked outclk_0 outclk_1 outclk_2 outclk_3 outclk_4</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_pio_180_z5a3aci"</message>
    <message level="Info" culprit="som_config">Starting RTL generation for module 'som_system_altera_avalon_pio_180_z5a3aci'</message>
-   <message level="Info" culprit="som_config">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=som_system_altera_avalon_pio_180_z5a3aci --dir=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0010_som_config_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0010_som_config_gen//som_system_altera_avalon_pio_180_z5a3aci_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="som_config">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=som_system_altera_avalon_pio_180_z5a3aci --dir=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0010_som_config_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0010_som_config_gen//som_system_altera_avalon_pio_180_z5a3aci_component_configuration.pl  --do_build_sim=0  ]</message>
    <message level="Info" culprit="som_config">Done RTL generation for module 'som_system_altera_avalon_pio_180_z5a3aci'</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_d4sniia"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_ae2iwoi"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_avalon_st_handshake_clock_crosser"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_width_adapter"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_agent"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_2q47q3i"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_gil3sua"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_reioipy"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_avalon_sc_fifo"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_jxs3q3q"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_burst_adapter"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_st_adapter_180_v3lgypq"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_error_adapter_180_jats3da"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_xdoo6gq"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_nzcyb6q"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_master_translator"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_st_adapter_180_bbxpcfy"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_channel_adapter_180_agpsntq"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_st_adapter_180_cgdcaea"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_channel_adapter_180_iipikvi"</message>
-   <message level="Info" culprit="som_system">"Generating: FE_AD7768_v1"</message>
   </messages>
  </entity>
  <entity kind="FE_AD4020" version="1.0" name="FE_AD4020_v1">
@@ -2451,8 +2451,6 @@
   </sourceFiles>
   <childSourceFiles>
    <file
-       path="C:/intelfpga/18.0/ip/altera/altera_hps/altera_hps_arria_10/hps_io/altera_hps_arria10_io_hw.tcl" />
-   <file
        path="C:/intelfpga/18.0/ip/altera/altera_hps/altera_hps_arria_10/interface_generator/altera_arria10_interface_generator_hw.tcl" />
    <file
        path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
@@ -2517,6 +2515,8 @@
        path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/com.altera.tcl.interpreter.jar" />
    <file
        path="C:/intelFPGA/18.0/quartus/sopc_builder/model/lib/jacl1.3.2a.jar" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/altera_hps/altera_hps_arria_10/hps_io/altera_hps_arria10_io_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/altera_hps/altera_hps_arria_10/interface_generator/altera_arria10_interface_generator_hw.tcl" />
    <file
@@ -2586,9 +2586,9 @@
   <instantiator instantiator="som_system" as="arria10_hps_0" />
   <messages>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_hps_180_zmlrihi"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_interface_generator_140_hnufizi"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_hps_io_180_of6hmti"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_interface_generator_140_62dhioi"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_arria10_interface_generator_140_hnufizi"</message>
   </messages>
  </entity>
  <entity
@@ -4299,6 +4299,8 @@
   </sourceFiles>
   <childSourceFiles>
    <file
+       path="C:/intelfpga/18.0/ip/altera/emif/ip_arch_nf/altera_emif_arch_nf_hw.tcl" />
+   <file
        path="C:/intelfpga/18.0/ip/altera/emif/ip_cal_slave/ip_core_nf/altera_emif_cal_slave_nf_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_avalon_mm_bridge/altera_avalon_mm_bridge_hw.tcl" />
@@ -4312,23 +4314,21 @@
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_master_translator/altera_merlin_master_translator_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/emif/ip_arch_nf/altera_emif_arch_nf_hw.tcl" />
   </childSourceFiles>
   <instantiator instantiator="som_system" as="emif_0" />
   <messages>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_emif_180_brz44ly"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_emif_arch_nf_180_3nk2okq"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_emif_cal_slave_nf_180_5pbk77i"</message>
    <message level="Info" culprit="som_system">"Generating: altera_avalon_mm_bridge"</message>
    <message level="Info" culprit="som_system">"Generating: altera_reset_controller"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_onchip_memory2_180_m2wik5y"</message>
    <message level="Info" culprit="ioaux_soft_ram">Starting RTL generation for module 'som_system_altera_avalon_onchip_memory2_180_m2wik5y'</message>
-   <message level="Info" culprit="ioaux_soft_ram">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=som_system_altera_avalon_onchip_memory2_180_m2wik5y --dir=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0049_ioaux_soft_ram_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0049_ioaux_soft_ram_gen//som_system_altera_avalon_onchip_memory2_180_m2wik5y_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="ioaux_soft_ram">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=som_system_altera_avalon_onchip_memory2_180_m2wik5y --dir=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0049_ioaux_soft_ram_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0049_ioaux_soft_ram_gen//som_system_altera_avalon_onchip_memory2_180_m2wik5y_component_configuration.pl  --do_build_sim=0  ]</message>
    <message level="Info" culprit="ioaux_soft_ram">Done RTL generation for module 'som_system_altera_avalon_onchip_memory2_180_m2wik5y'</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_l5dmrei"</message>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_master_translator"</message>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_emif_arch_nf_180_3nk2okq"</message>
   </messages>
  </entity>
  <entity
@@ -6128,7 +6128,7 @@
  <entity
    kind="altera_iopll"
    version="18.0"
-   name="som_system_altera_iopll_180_pjxg52y">
+   name="som_system_altera_iopll_180_bgd33sq">
   <parameter name="gui_clock_name_string12" value="outclk12" />
   <parameter name="hp_actual_phase_shift_fp5" value="0.0" />
   <parameter name="gui_clock_name_string11" value="outclk11" />
@@ -6374,7 +6374,7 @@
   <parameter name="gui_actual_output_clock_frequency4" value="67.584000" />
   <parameter name="gui_actual_duty_cycle_range16" value="50.0" />
   <parameter name="gui_use_locked" value="true" />
-  <parameter name="gui_actual_output_clock_frequency3" value="32.768000" />
+  <parameter name="gui_actual_output_clock_frequency3" value="37.287724" />
   <parameter name="gui_actual_duty_cycle_range17" value="50.0" />
   <parameter name="gui_actual_output_clock_frequency2" value="67.584000" />
   <parameter name="gui_en_reconf" value="false" />
@@ -6458,7 +6458,7 @@
      value="0.0,2.8,5.6,8.4,11.3,14.1" />
   <parameter
      name="gui_actual_phase_shift_deg_range3"
-     value="0.0,1.4,2.7,4.1,5.5,6.8" />
+     value="0.0,1.6,3.1,4.7,6.2,7.8" />
   <parameter name="parameter_table_hex_file" value="seq_params_sim.hex" />
   <parameter
      name="gui_actual_phase_shift_deg_range2"
@@ -6540,7 +6540,7 @@
   <parameter name="gui_output_clock_frequency6" value="100.0" />
   <parameter name="gui_actual_duty_cycle11" value="50.0" />
   <parameter name="gui_divide_factor_c10" value="6" />
-  <parameter name="gui_output_clock_frequency3" value="32.768" />
+  <parameter name="gui_output_clock_frequency3" value="37.28772" />
   <parameter name="gui_actual_duty_cycle14" value="50.0" />
   <parameter name="gui_divide_factor_c11" value="6" />
   <parameter name="gui_output_clock_frequency4" value="67.584" />
@@ -6566,7 +6566,9 @@
   <parameter name="hp_actual_output_clock_frequency_fp9" value="100.0" />
   <parameter name="hp_actual_output_clock_frequency_fp8" value="100.0" />
   <parameter name="gui_refclk_switch" value="false" />
-  <parameter name="hp_actual_output_clock_frequency_fp3" value="32.768" />
+  <parameter
+     name="hp_actual_output_clock_frequency_fp3"
+     value="37.287724137931036" />
   <parameter name="hp_actual_output_clock_frequency_fp2" value="67.584" />
   <parameter name="hp_actual_output_clock_frequency_fp5" value="100.0" />
   <parameter name="gui_pll_cal_done" value="false" />
@@ -6593,7 +6595,7 @@
      value="56.912842,60.074667,63.608471,67.584000,72.089600,77.238857" />
   <parameter
      name="gui_actual_output_clock_frequency_range3"
-     value="30.037333,30.895543,31.804235,32.768000,33.792000,34.882065" />
+     value="33.792000,34.882065,36.044800,37.287724,38.619429,40.049778" />
   <parameter name="gui_actual_output_clock_frequency_range8" value="100.0" />
   <parameter name="clock_name_1" value="ad5791_spi_clk" />
   <parameter name="gui_actual_output_clock_frequency_range9" value="100.0" />
@@ -6624,7 +6626,7 @@
   <parameter name="clock_name_global_0" value="false" />
   <parameter name="c_cnt_hi_div1" value="16" />
   <parameter name="c_cnt_hi_div2" value="8" />
-  <parameter name="c_cnt_hi_div3" value="17" />
+  <parameter name="c_cnt_hi_div3" value="15" />
   <parameter name="c_cnt_hi_div4" value="8" />
   <parameter name="clock_name_global_5" value="false" />
   <parameter
@@ -6719,7 +6721,7 @@
   <parameter name="hp_actual_phase_shift_fp14" value="0.0" />
   <parameter name="c_cnt_lo_div6" value="256" />
   <parameter name="hp_actual_phase_shift_fp15" value="0.0" />
-  <parameter name="c_cnt_lo_div3" value="16" />
+  <parameter name="c_cnt_lo_div3" value="14" />
   <parameter name="hp_actual_phase_shift_fp16" value="0.0" />
   <parameter name="c_cnt_lo_div4" value="8" />
   <parameter name="pll_vco_freq_band_0" value="pll_freq_clk0_disabled" />
@@ -6732,7 +6734,7 @@
   <parameter name="hp_actual_phase_shift_fp12" value="0.0" />
   <parameter
      name="parameterTable_values"
-     value="88,1,1081.344000 MHz,11,32,16,33,16,1,1,1,1,false,44,44,false,false,256,256,false,true,6,16,8,17,8,256,256,256,256,5,16,8,16,8,256,256,256,256,true,false,false,true,false,false,false,false,false,false,false,false,false,false,true,true,true,true,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,pll_cp_setting21,pll_bw_res_setting5" />
+     value="88,1,1081.344000 MHz,11,32,16,29,16,1,1,1,1,false,44,44,false,false,256,256,false,true,6,16,8,15,8,256,256,256,256,5,16,8,14,8,256,256,256,256,true,false,false,true,false,false,false,false,false,false,false,false,false,false,true,true,true,true,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,pll_cp_setting21,pll_bw_res_setting5" />
   <parameter name="hp_actual_phase_shift_fp13" value="0.0" />
   <parameter name="pll_cp_current" value="pll_cp_setting21" />
   <parameter name="gui_usr_device_speed_grade" value="1" />
@@ -6794,7 +6796,7 @@
      value="40.63,43.75,46.88,50.0,53.13,56.25" />
   <parameter
      name="gui_actual_duty_cycle_range3"
-     value="45.45,46.97,48.48,50.0,51.52,53.03" />
+     value="44.83,46.55,48.28,50.0,51.72,53.45" />
   <parameter
      name="gui_actual_duty_cycle_range0"
      value="36.36,40.91,45.45,50.0,54.55,59.09" />
@@ -6842,7 +6844,7 @@
   <parameter name="c_cnt_odd_div_duty_en13" value="false" />
   <parameter name="gui_cascade_counter4" value="false" />
   <parameter name="c_cnt_odd_div_duty_en12" value="false" />
-  <parameter name="output_clock_frequency3" value="32.768000 MHz" />
+  <parameter name="output_clock_frequency3" value="37.287724 MHz" />
   <parameter name="gui_cascade_counter3" value="false" />
   <parameter name="c_cnt_odd_div_duty_en11" value="false" />
   <parameter name="output_clock_frequency4" value="67.584000 MHz" />
@@ -6865,12 +6867,12 @@
   <parameter name="c_cnt_bypass_en5" value="true" />
   <generatedFiles>
    <file
-       path="D:\NIH3Repo\arria10_projects\AudioResearch_iWave_Passthrough\som_system\altera_iopll_180\synth\som_system_altera_iopll_180_pjxg52y.v"
+       path="D:\NIH3Repo\arria10_projects\AudioResearch_iWave_Passthrough\som_system\altera_iopll_180\synth\som_system_altera_iopll_180_bgd33sq.v"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="D:\NIH3Repo\arria10_projects\AudioResearch_iWave_Passthrough\som_system\altera_iopll_180\synth\som_system_altera_iopll_180_pjxg52y.v"
+       path="D:\NIH3Repo\arria10_projects\AudioResearch_iWave_Passthrough\som_system\altera_iopll_180\synth\som_system_altera_iopll_180_bgd33sq.v"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
@@ -6880,7 +6882,7 @@
   <childSourceFiles/>
   <instantiator instantiator="som_system" as="pll_using_AD1939_MCLK" />
   <messages>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_iopll_180_pjxg52y"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_iopll_180_bgd33sq"</message>
    <message level="Debug" culprit="pll_using_AD1939_MCLK">IN HDL WRAP: reset refclk locked outclk0 outclk1 outclk2 outclk3 outclk4</message>
    <message level="Debug" culprit="pll_using_AD1939_MCLK">--hdl_params: c_cnt_bypass_en0 c_cnt_bypass_en1 c_cnt_bypass_en2 c_cnt_bypass_en3 c_cnt_bypass_en4 c_cnt_bypass_en5 c_cnt_bypass_en6 c_cnt_bypass_en7 c_cnt_bypass_en8 c_cnt_hi_div0 c_cnt_hi_div1 c_cnt_hi_div2 c_cnt_hi_div3 c_cnt_hi_div4 c_cnt_hi_div5 c_cnt_hi_div6 c_cnt_hi_div7 c_cnt_hi_div8 c_cnt_in_src0 c_cnt_in_src1 c_cnt_in_src2 c_cnt_in_src3 c_cnt_in_src4 c_cnt_in_src5 c_cnt_in_src6 c_cnt_in_src7 c_cnt_in_src8 c_cnt_lo_div0 c_cnt_lo_div1 c_cnt_lo_div2 c_cnt_lo_div3 c_cnt_lo_div4 c_cnt_lo_div5 c_cnt_lo_div6 c_cnt_lo_div7 c_cnt_lo_div8 c_cnt_odd_div_duty_en0 c_cnt_odd_div_duty_en1 c_cnt_odd_div_duty_en2 c_cnt_odd_div_duty_en3 c_cnt_odd_div_duty_en4 c_cnt_odd_div_duty_en5 c_cnt_odd_div_duty_en6 c_cnt_odd_div_duty_en7 c_cnt_odd_div_duty_en8 c_cnt_ph_mux_prst0 c_cnt_ph_mux_prst1 c_cnt_ph_mux_prst2 c_cnt_ph_mux_prst3 c_cnt_ph_mux_prst4 c_cnt_ph_mux_prst5 c_cnt_ph_mux_prst6 c_cnt_ph_mux_prst7 c_cnt_ph_mux_prst8 c_cnt_prst0 c_cnt_prst1 c_cnt_prst2 c_cnt_prst3 c_cnt_prst4 c_cnt_prst5 c_cnt_prst6 c_cnt_prst7 c_cnt_prst8 clock_name_0 clock_name_1 clock_name_2 clock_name_3 clock_name_4 clock_name_5 clock_name_6 clock_name_7 clock_name_8 clock_name_global_0 clock_name_global_1 clock_name_global_2 clock_name_global_3 clock_name_global_4 clock_name_global_5 clock_name_global_6 clock_name_global_7 clock_name_global_8 duty_cycle0 duty_cycle1 duty_cycle2 duty_cycle3 duty_cycle4 duty_cycle5 duty_cycle6 duty_cycle7 duty_cycle8 m_cnt_bypass_en m_cnt_hi_div m_cnt_lo_div m_cnt_odd_div_duty_en n_cnt_bypass_en n_cnt_hi_div n_cnt_lo_div n_cnt_odd_div_duty_en number_of_clocks operation_mode output_clock_frequency0 output_clock_frequency1 output_clock_frequency2 output_clock_frequency3 output_clock_frequency4 output_clock_frequency5 output_clock_frequency6 output_clock_frequency7 output_clock_frequency8 phase_shift0 phase_shift1 phase_shift2 phase_shift3 phase_shift4 phase_shift5 phase_shift6 phase_shift7 phase_shift8 pll_bw_sel pll_bwctrl pll_cp_current pll_extclk_0_cnt_src pll_extclk_1_cnt_src pll_fbclk_mux_1 pll_fbclk_mux_2 pll_m_cnt_in_src pll_output_clk_frequency pll_slf_rst pll_subtype pll_type reference_clock_frequency</message>
    <message level="Debug" culprit="pll_using_AD1939_MCLK">altera_pll_ports ports: refclk1 {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} rst {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} fbclk {DIRECT_MAPPING false MAPPING_FUNCTION map_fbclk_port TIE_OFF {}} fboutclk {DIRECT_MAPPING false MAPPING_FUNCTION map_fboutclk_port TIE_OFF {}} zdbfbclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} locked {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} loaden {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} phase_done {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} reconfig_to_pll {DIRECT_MAPPING false MAPPING_FUNCTION map_reconfig_to_port TIE_OFF {}} refclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} scanclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} phout {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} num_phase_shifts {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 3'b0} cntsel {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 5'b0} clkbad {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} extclk_out {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} lvds_clk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} outclk {DIRECT_MAPPING false MAPPING_FUNCTION map_outclk_port TIE_OFF {}} phase_en {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} extswitch {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} cascade_out {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} activeclk {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }} adjpllin {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} updn {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF 1'b0} reconfig_from_pll {DIRECT_MAPPING true MAPPING_FUNCTION {} TIE_OFF { }}</message>
@@ -6930,7 +6932,7 @@
   <messages>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_pio_180_z5a3aci"</message>
    <message level="Info" culprit="som_config">Starting RTL generation for module 'som_system_altera_avalon_pio_180_z5a3aci'</message>
-   <message level="Info" culprit="som_config">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=som_system_altera_avalon_pio_180_z5a3aci --dir=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0010_som_config_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0010_som_config_gen//som_system_altera_avalon_pio_180_z5a3aci_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="som_config">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=som_system_altera_avalon_pio_180_z5a3aci --dir=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0010_som_config_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0010_som_config_gen//som_system_altera_avalon_pio_180_z5a3aci_component_configuration.pl  --do_build_sim=0  ]</message>
    <message level="Info" culprit="som_config">Done RTL generation for module 'som_system_altera_avalon_pio_180_z5a3aci'</message>
   </messages>
  </entity>
@@ -6978,56 +6980,56 @@
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser.v" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_width_adapter/altera_merlin_width_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo.v" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
-   <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_width_adapter/altera_merlin_width_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_error_adapter/avalon-st_error_adapter_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser.v" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
   </childSourceFiles>
   <instantiator instantiator="som_system" as="mm_interconnect_0" />
   <messages>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_d4sniia"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_ae2iwoi"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_avalon_st_handshake_clock_crosser"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_width_adapter"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_agent"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_2q47q3i"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_gil3sua"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_reioipy"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_avalon_sc_fifo"</message>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_avalon_sc_fifo"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_gil3sua"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_2q47q3i"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_width_adapter"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_jxs3q3q"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_burst_adapter"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_st_adapter_180_v3lgypq"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_error_adapter_180_jats3da"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_xdoo6gq"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_agent"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_burst_adapter"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_avalon_st_handshake_clock_crosser"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_reioipy"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
   </messages>
  </entity>
  <entity
@@ -7072,52 +7074,52 @@
   </sourceFiles>
   <childSourceFiles>
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
    <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_width_adapter/altera_merlin_width_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
+   <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_handshake_clock_crosser/altera_avalon_st_handshake_clock_crosser.v" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_width_adapter/altera_merlin_width_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
-   <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_slave_ni/altera_merlin_axi_slave_ni_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_slave_ni/altera_merlin_axi_slave_ni.sv" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
   </childSourceFiles>
   <instantiator instantiator="som_system" as="mm_interconnect_1" />
   <messages>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_2zdh4ci"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_ay6xe7y"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_dqbhvfa"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_zd5hm5y"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_avalon_st_handshake_clock_crosser"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_width_adapter"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_lxmadiq"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_goyglzq"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_x2ejjsa"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_slave_ni"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_goyglzq"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_width_adapter"</message>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_burst_adapter"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_oh2yaqq"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_zd5hm5y"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_iv666ga"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_avalon_st_handshake_clock_crosser"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_dqbhvfa"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_oh2yaqq"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_ay6xe7y"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_slave_ni"</message>
   </messages>
  </entity>
  <entity
@@ -7162,50 +7164,50 @@
   </sourceFiles>
   <childSourceFiles>
    <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+   <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_agent/altera_merlin_slave_agent_hw.tcl" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_adapter/altera_avalon_st_adapter_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/avalon_st/altera_avalon_st_error_adapter/avalon-st_error_adapter_hw.tcl" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo_hw.tcl" />
    <file
        path="C:/intelfpga/18.0/ip/altera/sopc_builder_ip/altera_avalon_sc_fifo/altera_avalon_sc_fifo.v" />
    <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_demultiplexer/altera_merlin_demultiplexer_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_burst_adapter/altera_merlin_burst_adapter_hw.tcl" />
-   <file
-       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_router/altera_merlin_router_hw.tcl" />
+       path="C:/intelfpga/18.0/ip/altera/merlin/altera_merlin_axi_master_ni/altera_merlin_axi_master_ni_hw.tcl" />
   </childSourceFiles>
   <instantiator instantiator="som_system" as="mm_interconnect_2" />
   <messages>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_g5k2ojy"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_agent"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_aogbhry"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_bobv3li"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_agent"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_burst_adapter"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_uoxykti"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_7q6ljiq"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_27h65fa"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_st_adapter_180_caevfly"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_error_adapter_180_ww4pkiq"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_uoxykti"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_avalon_sc_fifo"</message>
-   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_demultiplexer_180_bobv3li"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
-   <message level="Info" culprit="som_system">"Generating: altera_merlin_burst_adapter"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_router_180_6yqffvy"</message>
+   <message level="Info" culprit="som_system">"Generating: som_system_altera_merlin_multiplexer_180_27h65fa"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_avalon_sc_fifo"</message>
+   <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
   </messages>
  </entity>
  <entity
@@ -11125,7 +11127,7 @@
    <message level="Info" culprit="som_system">"Generating: altera_reset_controller"</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_onchip_memory2_180_m2wik5y"</message>
    <message level="Info" culprit="ioaux_soft_ram">Starting RTL generation for module 'som_system_altera_avalon_onchip_memory2_180_m2wik5y'</message>
-   <message level="Info" culprit="ioaux_soft_ram">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=som_system_altera_avalon_onchip_memory2_180_m2wik5y --dir=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0049_ioaux_soft_ram_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0049_ioaux_soft_ram_gen//som_system_altera_avalon_onchip_memory2_180_m2wik5y_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="ioaux_soft_ram">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=som_system_altera_avalon_onchip_memory2_180_m2wik5y --dir=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0049_ioaux_soft_ram_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0049_ioaux_soft_ram_gen//som_system_altera_avalon_onchip_memory2_180_m2wik5y_component_configuration.pl  --do_build_sim=0  ]</message>
    <message level="Info" culprit="ioaux_soft_ram">Done RTL generation for module 'som_system_altera_avalon_onchip_memory2_180_m2wik5y'</message>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_mm_interconnect_180_l5dmrei"</message>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_master_translator"</message>
@@ -11164,11 +11166,11 @@
   </sourceFiles>
   <childSourceFiles/>
   <instantiator
-     instantiator="som_system_altera_emif_cal_slave_nf_180_5pbk77i"
-     as="rst_controller" />
-  <instantiator
      instantiator="som_system"
      as="rst_controller,rst_controller_001,rst_controller_002,rst_controller_003,rst_controller_004" />
+  <instantiator
+     instantiator="som_system_altera_emif_cal_slave_nf_180_5pbk77i"
+     as="rst_controller" />
   <messages>
    <message level="Info" culprit="som_system">"Generating: altera_reset_controller"</message>
   </messages>
@@ -14662,14 +14664,14 @@
   </sourceFiles>
   <childSourceFiles/>
   <instantiator
+     instantiator="som_system_altera_mm_interconnect_180_g5k2ojy"
+     as="arria10_hps_0_h2f_lw_axi_master_agent" />
+  <instantiator
      instantiator="som_system_altera_mm_interconnect_180_2zdh4ci"
      as="arria10_hps_0_h2f_axi_master_agent" />
   <instantiator
      instantiator="som_system_altera_mm_interconnect_180_d4sniia"
      as="mux_ddr_0_altera_axi_master_agent" />
-  <instantiator
-     instantiator="som_system_altera_mm_interconnect_180_g5k2ojy"
-     as="arria10_hps_0_h2f_lw_axi_master_agent" />
   <messages>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_axi_master_ni"</message>
   </messages>
@@ -14700,11 +14702,11 @@
   </sourceFiles>
   <childSourceFiles/>
   <instantiator
-     instantiator="som_system_altera_mm_interconnect_180_d4sniia"
-     as="mm_clock_crossing_bridge_0_s0_agent" />
-  <instantiator
      instantiator="som_system_altera_mm_interconnect_180_g5k2ojy"
      as="som_config_s1_agent" />
+  <instantiator
+     instantiator="som_system_altera_mm_interconnect_180_d4sniia"
+     as="mm_clock_crossing_bridge_0_s0_agent" />
   <messages>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_agent"</message>
   </messages>
@@ -14733,11 +14735,11 @@
   </sourceFiles>
   <childSourceFiles/>
   <instantiator
-     instantiator="som_system_altera_mm_interconnect_180_d4sniia"
-     as="mm_clock_crossing_bridge_0_s0_agent_rsp_fifo,mm_clock_crossing_bridge_0_s0_agent_rdata_fifo" />
-  <instantiator
      instantiator="som_system_altera_mm_interconnect_180_g5k2ojy"
      as="som_config_s1_agent_rsp_fifo,som_config_s1_agent_rdata_fifo" />
+  <instantiator
+     instantiator="som_system_altera_mm_interconnect_180_d4sniia"
+     as="mm_clock_crossing_bridge_0_s0_agent_rsp_fifo,mm_clock_crossing_bridge_0_s0_agent_rdata_fifo" />
   <messages>
    <message level="Info" culprit="som_system">"Generating: altera_avalon_sc_fifo"</message>
   </messages>
@@ -14932,14 +14934,14 @@
   </sourceFiles>
   <childSourceFiles/>
   <instantiator
+     instantiator="som_system_altera_mm_interconnect_180_g5k2ojy"
+     as="som_config_s1_burst_adapter" />
+  <instantiator
      instantiator="som_system_altera_mm_interconnect_180_2zdh4ci"
      as="mux_ddr_0_altera_axi_slave_wr_burst_adapter,mux_ddr_0_altera_axi_slave_rd_burst_adapter" />
   <instantiator
      instantiator="som_system_altera_mm_interconnect_180_d4sniia"
      as="mm_clock_crossing_bridge_0_s0_burst_adapter" />
-  <instantiator
-     instantiator="som_system_altera_mm_interconnect_180_g5k2ojy"
-     as="som_config_s1_burst_adapter" />
   <messages>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_burst_adapter"</message>
   </messages>
@@ -16325,7 +16327,7 @@
   <messages>
    <message level="Info" culprit="som_system">"Generating: som_system_altera_avalon_onchip_memory2_180_m2wik5y"</message>
    <message level="Info" culprit="ioaux_soft_ram">Starting RTL generation for module 'som_system_altera_avalon_onchip_memory2_180_m2wik5y'</message>
-   <message level="Info" culprit="ioaux_soft_ram">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=som_system_altera_avalon_onchip_memory2_180_m2wik5y --dir=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0049_ioaux_soft_ram_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8519_30022841866335581.dir/0049_ioaux_soft_ram_gen//som_system_altera_avalon_onchip_memory2_180_m2wik5y_component_configuration.pl  --do_build_sim=0  ]</message>
+   <message level="Info" culprit="ioaux_soft_ram">  Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=som_system_altera_avalon_onchip_memory2_180_m2wik5y --dir=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0049_ioaux_soft_ram_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0049_ioaux_soft_ram_gen//som_system_altera_avalon_onchip_memory2_180_m2wik5y_component_configuration.pl  --do_build_sim=0  ]</message>
    <message level="Info" culprit="ioaux_soft_ram">Done RTL generation for module 'som_system_altera_avalon_onchip_memory2_180_m2wik5y'</message>
   </messages>
  </entity>
@@ -16424,17 +16426,17 @@
   </sourceFiles>
   <childSourceFiles/>
   <instantiator
-     instantiator="som_system_altera_mm_interconnect_180_d4sniia"
-     as="mm_clock_crossing_bridge_0_s0_translator" />
+     instantiator="som_system_altera_mm_interconnect_180_g5k2ojy"
+     as="som_config_s1_translator" />
   <instantiator
      instantiator="som_system_altera_mm_interconnect_180_nzcyb6q"
      as="emif_0_ctrl_amm_0_translator" />
   <instantiator
-     instantiator="som_system_altera_mm_interconnect_180_g5k2ojy"
-     as="som_config_s1_translator" />
-  <instantiator
      instantiator="som_system_altera_mm_interconnect_180_l5dmrei"
      as="ioaux_soft_ram_s1_translator" />
+  <instantiator
+     instantiator="som_system_altera_mm_interconnect_180_d4sniia"
+     as="mm_clock_crossing_bridge_0_s0_translator" />
   <messages>
    <message level="Info" culprit="som_system">"Generating: altera_merlin_slave_translator"</message>
   </messages>
