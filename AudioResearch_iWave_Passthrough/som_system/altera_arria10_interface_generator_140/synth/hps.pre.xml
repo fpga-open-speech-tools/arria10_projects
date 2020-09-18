@@ -203,7 +203,7 @@
   </csr>
   <csr />
   <!-- This section was added by Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition -->
-  <!-- Generated on Wed Sep 16 15:31:23 2020 -->
+  <!-- Generated on Thu Sep 17 13:34:24 2020 -->
   <csr>
     <!-- OSC_CLK_1_HPS -->
     <config name='i_io48_pin_mux_dedicated_io_grp.configuration_dedicated_io_1.rtrim'        value='1' />

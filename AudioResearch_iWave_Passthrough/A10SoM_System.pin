@@ -112,8 +112,8 @@ GND                          : A32       : gnd    :                   :         
 GND                          : A33       : gnd    :                   :         :           :                 : --           
 AA_LVDS_EN_N[3]              : AA1       : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : AA2       : gnd    :                   :         :           :                 : --           
-AA_SDI[3]                    : AA3       : input  : 1.8 V             :         : 3C        : Y               : --           
-AA_SDO[3]                    : AA4       : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[3]                    : AA3       : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[3]                    : AA4       : input  : 1.8 V             :         : 3C        : Y               : --           
 MSATA_PWR_EN                 : AA5       : output : 1.8 V             :         : 3C        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   :         : 3C        :                 : --           
 VCCIO3C                      : AA7       : power  :                   : 1.8V    : 3C        :                 : --           
@@ -145,13 +145,13 @@ GND                          : AA32      : gnd    :                   :         
 GXB_NC                       : AA33      :        :                   :         : 1D        :                 : --           
 GXB_NC                       : AA34      :        :                   :         : 1D        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB1       :        :                   :         : 3C        :                 : --           
-AA_SDI[2]                    : AB2       : input  : 1.8 V             :         : 3C        : Y               : --           
-AA_SDO[2]                    : AB3       : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[2]                    : AB2       : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[2]                    : AB3       : input  : 1.8 V             :         : 3C        : Y               : --           
 GND                          : AB4       : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 3B        :                 : --           
 pcie_npor_pin_perst          : AB6       : input  : 1.8 V             :         : 3B        : N               : --           
-AA_SDI[6]                    : AB7       : input  : 1.8 V             :         : 3B        : Y               : --           
-AA_SDO[6]                    : AB8       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[6]                    : AB7       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[6]                    : AB8       : input  : 1.8 V             :         : 3B        : Y               : --           
 VCCIO3B                      : AB9       : power  :                   : 1.8V    : 3B        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB10      :        :                   :         : 3B        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB11      :        :                   :         : 3B        :                 : --           
@@ -186,7 +186,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :      
 VCCIO3B                      : AC6       : power  :                   : 1.8V    : 3B        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC7       :        :                   :         : 3B        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC8       :        :                   :         : 3B        :                 : --           
-AA_SDO[7]                    : AC9       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[7]                    : AC9       : input  : 1.8 V             :         : 3B        : Y               : --           
 AA_BANK_EN[1]                : AC10      : output : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AC11      : gnd    :                   :         :           :                 : --           
 VREFB3BN0                    : AC12      : power  :                   :         : 3B        :                 : --           
@@ -216,9 +216,9 @@ HDPHN_PWR_OFF_N              : AD1       : output : 1.8 V             :         
 I2C_SDA                      : AD2       : bidir  : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AD3       : gnd    :                   :         :           :                 : --           
 AA_LVDS_EN_N[13]             : AD4       : output : 1.8 V             :         : 3B        : Y               : --           
-AA_SDI[14]                   : AD5       : input  : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[14]                   : AD5       : output : 1.8 V             :         : 3B        : Y               : --           
 AA_LVDS_EN_N[14]             : AD6       : output : 1.8 V             :         : 3B        : Y               : --           
-AA_SDO[14]                   : AD7       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[14]                   : AD7       : input  : 1.8 V             :         : 3B        : Y               : --           
 VCCIO3B                      : AD8       : power  :                   : 1.8V    : 3B        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD9       :        :                   :         : 3B        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD10      :        :                   :         : 3B        :                 : --           
@@ -246,7 +246,7 @@ GXB_GND*                     : AD31      :        :                   :         
 GXB_GND*                     : AD32      :        :                   :         : 1C        :                 : --           
 GND                          : AD33      : gnd    :                   :         :           :                 : --           
 GND                          : AD34      : gnd    :                   :         :           :                 : --           
-AA_SDO[13]                   : AE1       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[13]                   : AE1       : input  : 1.8 V             :         : 3B        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE2       :        :                   :         : 3B        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 3B        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 3B        :                 : --           
@@ -280,12 +280,12 @@ GND                          : AE31      : gnd    :                   :         
 GND                          : AE32      : gnd    :                   :         :           :                 : --           
 GXB_NC                       : AE33      :        :                   :         : 1D        :                 : --           
 GXB_NC                       : AE34      :        :                   :         : 1D        :                 : --           
-AA_SDI[13]                   : AF1       : input  : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[13]                   : AF1       : output : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AF2       : gnd    :                   :         :           :                 : --           
 HDPHN_I2C_SCL                : AF3       : bidir  : 1.8 V             :         : 3B        : Y               : --           
 I2C_SCL                      : AF4       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-AA_SDO[15]                   : AF5       : output : 1.8 V             :         : 3B        : Y               : --           
-AA_SDI[7]                    : AF6       : input  : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[15]                   : AF5       : input  : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[7]                    : AF6       : output : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AF7       : gnd    :                   :         :           :                 : --           
 AD1939_CS_N                  : AF8       : output : 1.8 V             :         : 3A        : Y               : --           
 AD1939_SPI_MISO              : AF9       : input  : 1.8 V             :         : 3A        : Y               : --           
@@ -315,10 +315,10 @@ GXB_GND*                     : AF32      :        :                   :         
 GND                          : AF33      : gnd    :                   :         :           :                 : --           
 GND                          : AF34      : gnd    :                   :         :           :                 : --           
 AA_LVDS_EN_N[5]              : AG1       : output : 1.8 V             :         : 3B        : Y               : --           
-AA_SDI[5]                    : AG2       : input  : 1.8 V             :         : 3B        : Y               : --           
-AA_SDO[5]                    : AG3       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[5]                    : AG2       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[5]                    : AG3       : input  : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AG4       : gnd    :                   :         :           :                 : --           
-AA_SDI[15]                   : AG5       : input  : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[15]                   : AG5       : output : 1.8 V             :         : 3B        : Y               : --           
 AA_LVDS_EN_N[7]              : AG6       : output : 1.8 V             :         : 3B        : Y               : --           
 DB25_GPIO[7]                 : AG7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
 DB25_GPIO[9]                 : AG8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
@@ -351,7 +351,7 @@ GXB_NC                       : AG34      :        :                   :         
 GND                          : AH1       : gnd    :                   :         :           :                 : --           
 AA_LVDS_EN_N[12]             : AH2       : output : 1.8 V             :         : 3B        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH3       :        :                   :         : 3B        :                 : --           
-AA_SDO[4]                    : AH4       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[4]                    : AH4       : input  : 1.8 V             :         : 3B        : Y               : --           
 AD1939_DLRCLK                : AH5       : output : 1.8 V             :         : 3A        : Y               : --           
 GND                          : AH6       : gnd    :                   :         :           :                 : --           
 DB25_GPIO[6]                 : AH7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
@@ -382,8 +382,8 @@ GXB_NC                       : AH31      :        :                   :         
 GXB_NC                       : AH32      :        :                   :         : 1C        :                 : --           
 GND                          : AH33      : gnd    :                   :         :           :                 : --           
 GND                          : AH34      : gnd    :                   :         :           :                 : --           
-AA_SDI[12]                   : AJ1       : input  : 1.8 V             :         : 3B        : Y               : --           
-AA_SDO[12]                   : AJ2       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[12]                   : AJ1       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[12]                   : AJ2       : input  : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AJ3       : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AJ4       :        :                   :         : 3B        :                 : --           
 AD1939_DBCLK                 : AJ5       : output : 1.8 V             :         : 3A        : Y               : --           
@@ -450,7 +450,7 @@ GXB_NC                       : AK31      :        :                   :         
 GXB_NC                       : AK32      :        :                   :         : 1C        :                 : --           
 GND                          : AK33      : gnd    :                   :         :           :                 : --           
 GND                          : AK34      : gnd    :                   :         :           :                 : --           
-AA_SDI[4]                    : AL1       : input  : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[4]                    : AL1       : output : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AL2       : gnd    :                   :         :           :                 : --           
 AD1939_SPI_SCK               : AL3       : output : 1.8 V             :         : 3A        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AL4       :        :                   :         : 3A        :                 : --           
@@ -993,9 +993,9 @@ GND                          : N32       : gnd    :                   :         
 GXB_NC                       : N33       :        :                   :         : 1E        :                 : --           
 GXB_NC                       : N34       :        :                   :         : 1E        :                 : --           
 AA_LVDS_EN_N[8]              : P1        : output : 1.8 V             :         : 3C        : Y               : --           
-AA_SDI[8]                    : P2        : input  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[8]                    : P2        : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : P3        : gnd    :                   :         :           :                 : --           
-AA_SDI[9]                    : P4        : input  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[9]                    : P4        : output : 1.8 V             :         : 3C        : Y               : --           
 AA_LVDS_EN_N[9]              : P5        : output : 1.8 V             :         : 3C        : Y               : --           
 FPGA_memory_mem1_dbi_n[2]    : P6        : bidir  : 1.2-V POD         :         : 3D        : Y               : 114ps        
 FPGA_memory_mem1_dq[21]      : P7        : bidir  : 1.2-V POD         :         : 3D        : Y               : 104ps        
@@ -1027,7 +1027,7 @@ GXB_GND*                     : P32       :        :                   :         
 GND                          : P33       : gnd    :                   :         :           :                 : --           
 GND                          : P34       : gnd    :                   :         :           :                 : --           
 AA_12V0_EN[0]                : R1        : output : 1.8 V             :         : 3C        : Y               : --           
-AA_SDO[8]                    : R2        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[8]                    : R2        : input  : 1.8 V             :         : 3C        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : R3        :        :                   :         : 3C        :                 : --           
 AA_BANK_EN[0]                : R4        : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : R5        : gnd    :                   :         :           :                 : --           
@@ -1062,8 +1062,8 @@ GXB_NC                       : R33       :        :                   :         
 GXB_NC                       : R34       :        :                   :         : 1E        :                 : --           
 AA_MCLK[0]                   : T1        : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : T2        : gnd    :                   :         :           :                 : --           
-AA_SDO[9]                    : T3        : output : 1.8 V             :         : 3C        : Y               : --           
-AA_SDO[0]                    : T4        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[9]                    : T3        : input  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[0]                    : T4        : input  : 1.8 V             :         : 3C        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : T5        :        :                   :         : 3C        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : T6        :        :                   :         : 3C        :                 : --           
 VCCIO3D                      : T7        : power  :                   : 1.2V    : 3D        :                 : --           
@@ -1096,9 +1096,9 @@ GND                          : T33       : gnd    :                   :         
 GND                          : T34       : gnd    :                   :         :           :                 : --           
 AA_MCLK[1]                   : U1        : output : 1.8 V             :         : 3C        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : U2        :        :                   :         : 3C        :                 : --           
-AA_SDI[11]                   : U3        : input  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[11]                   : U3        : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : U4        : gnd    :                   :         :           :                 : --           
-AA_SDI[0]                    : U5        : input  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[0]                    : U5        : output : 1.8 V             :         : 3C        : Y               : --           
 AA_LVDS_EN_N[0]              : U6        : output : 1.8 V             :         : 3C        : Y               : --           
 FPGA_memory_mem1_dq[25]      : U7        : bidir  : 1.2-V POD         :         : 3D        : Y               : 104ps        
 RESERVED_INPUT_WITH_WEAK_PULLUP : U8        :        :                   :         : 3D        :                 : --           
@@ -1130,7 +1130,7 @@ GXB_NC                       : U33       :        :                   :         
 GXB_NC                       : U34       :        :                   :         : 1E        :                 : --           
 GND                          : V1        : gnd    :                   :         :           :                 : --           
 AA_LVDS_EN_N[11]             : V2        : output : 1.8 V             :         : 3C        : Y               : --           
-AA_SDO[11]                   : V3        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[11]                   : V3        : input  : 1.8 V             :         : 3C        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : V4        :        :                   :         : 3C        :                 : --           
 AA_LVDS_EN_N[10]             : V5        : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : V6        : gnd    :                   :         :           :                 : --           
@@ -1168,7 +1168,7 @@ GND                          : W3        : gnd    :                   :         
 AA_MCLK[3]                   : W4        : output : 1.8 V             :         : 3C        : Y               : --           
 AA_MCLK[2]                   : W5        : output : 1.8 V             :         : 3C        : Y               : --           
 AA_LVDS_EN_N[1]              : W6        : output : 1.8 V             :         : 3C        : Y               : --           
-AA_SDI[1]                    : W7        : input  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[1]                    : W7        : output : 1.8 V             :         : 3C        : Y               : --           
 VCCIO3C                      : W8        : power  :                   : 1.8V    : 3C        :                 : --           
 FPGA_memory_mem1_dbi_n[3]    : W9        : bidir  : 1.2-V POD         :         : 3D        : Y               : 103ps        
 FPGA_memory_mem1_dq[30]      : W10       : bidir  : 1.2-V POD         :         : 3D        : Y               : 107ps        
@@ -1198,12 +1198,12 @@ GXB_NC                       : W33       :        :                   :         
 GXB_NC                       : W34       :        :                   :         : 1D        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y1        :        :                   :         : 3C        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y2        :        :                   :         : 3C        :                 : --           
-AA_SDO[10]                   : Y3        : output : 1.8 V             :         : 3C        : Y               : --           
-AA_SDI[10]                   : Y4        : input  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[10]                   : Y3        : input  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[10]                   : Y4        : output : 1.8 V             :         : 3C        : Y               : --           
 VCCIO3C                      : Y5        : power  :                   : 1.8V    : 3C        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   :         : 3C        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y7        :        :                   :         : 3C        :                 : --           
-AA_SDO[1]                    : Y8        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[1]                    : Y8        : input  : 1.8 V             :         : 3C        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y9        :        :                   :         : 3C        :                 : --           
 GND                          : Y10       : gnd    :                   :         :           :                 : --           
 VCC                          : Y11       : power  :                   : 0.9V    :           :                 : --           
