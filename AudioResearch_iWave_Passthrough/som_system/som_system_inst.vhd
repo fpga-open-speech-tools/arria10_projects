@@ -211,7 +211,7 @@
 			mic_array9_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
 			oct_oct_rzqin                                  : in    std_logic                     := 'X';             -- oct_rzqin
 			reset_reset_n                                  : in    std_logic                     := 'X';             -- reset_n
-			som_config_pio_export                          : inout std_logic_vector(1 downto 0)  := (others => 'X')  -- export
+			som_config_pio_export                          : in    std_logic_vector(4 downto 0)  := (others => 'X')  -- export
 		);
 	end component som_system;
 

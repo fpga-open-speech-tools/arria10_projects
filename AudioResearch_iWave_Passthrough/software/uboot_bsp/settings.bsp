@@ -2,9 +2,6 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>uboot</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Apr 24, 2020 7:20:04 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1587734404006</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>.\</BspGeneratedLocation>
         <BspSettingsFile>D:\NIH3Repo\arria10_projects\AudioResearch_iWave_Passthrough\software\uboot_bsp\settings.bsp</BspSettingsFile>
         <HpsSettingsPath>..\..\hps_isw_handoff</HpsSettingsPath>
         <JdiFile>default</JdiFile>
@@ -14,7 +11,7 @@
                 <SettingName>uboot.model</SettingName>
                 <Identifier>model</Identifier>
                 <Type>QuotedString</Type>
-                <Value>iWG24M Arria10 SOCFPGA Development Platform</Value>
+                <Value>SOCFPGA Arria10 Dev Kit</Value>
                 <DefaultValue>SOCFPGA Arria10 Dev Kit</DefaultValue>
                 <DestinationFile>device_tree_property</DestinationFile>
                 <Description>Device tree model</Description>
@@ -62,7 +59,7 @@
                 <SettingName>uboot.rbf_filename</SettingName>
                 <Identifier>chosen.cff-file</Identifier>
                 <Type>QuotedString</Type>
-                <Value>som_system.rbf</Value>
+                <Value>socfpga.rbf</Value>
                 <DefaultValue>socfpga.rbf</DefaultValue>
                 <DestinationFile>device_tree_property</DestinationFile>
                 <Description>Full FPGA .rbf filename. This setting is ignored when uboot.external_fpga_config setting is enabled.</Description>

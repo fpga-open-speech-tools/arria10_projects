@@ -170,7 +170,7 @@ Info: FE_AD5791_v1_Right: Running transform generation_view_transform took 0.000
 Info: FE_AD7768_v1_0: Running transform generation_view_transform
 Info: FE_AD7768_v1_0: Running transform generation_view_transform took 0.000s
 Info: FE_FPGA_Microphone_Encoder_Decoder_0: Running transform generation_view_transform
-Info: FE_FPGA_Microphone_Encoder_Decoder_0: Running transform generation_view_transform took 0.000s
+Info: FE_FPGA_Microphone_Encoder_Decoder_0: Running transform generation_view_transform took 0.001s
 Info: FE_FPGA_Microphone_Encoder_Decoder_1: Running transform generation_view_transform
 Info: FE_FPGA_Microphone_Encoder_Decoder_1: Running transform generation_view_transform took 0.000s
 Info: FE_FPGA_Microphone_Encoder_Decoder_10: Running transform generation_view_transform
@@ -204,7 +204,7 @@ Info: FE_FPGA_Microphone_Encoder_Decoder_9: Running transform generation_view_tr
 Info: FE_Qsys_AD1939_Audio_Blade_v1_0: Running transform generation_view_transform
 Info: FE_Qsys_AD1939_Audio_Blade_v1_0: Running transform generation_view_transform took 0.000s
 Info: arria10_hps_0: Running transform generation_view_transform
-Info: arria10_hps_0: Running transform generation_view_transform took 0.593s
+Info: arria10_hps_0: Running transform generation_view_transform took 0.704s
 Info: axi_clk_bridge: Running transform generation_view_transform
 Info: axi_clk_bridge: Running transform generation_view_transform took 0.000s
 Info: emif_0: Running transform generation_view_transform
@@ -267,29 +267,29 @@ Info: avalon_st_adapter: Inserting channel_adapter: channel_adapter_0
 Info: avalon_st_adapter_001: Inserting channel_adapter: channel_adapter_0
 Info: avalon_st_adapter_002: Inserting channel_adapter: channel_adapter_0
 Info: avalon_st_adapter_003: Inserting channel_adapter: channel_adapter_0
-Info: som_system: Running transform merlin_avalon_transform took 3.262s
+Info: som_system: Running transform merlin_avalon_transform took 4.867s
 Info: arria10_hps_0: Running transform merlin_avalon_transform
-Info: arria10_hps_0: Running transform merlin_avalon_transform took 0.012s
+Info: arria10_hps_0: Running transform merlin_avalon_transform took 0.032s
 Info: emif_0: Running transform merlin_avalon_transform
-Info: emif_0: Running transform merlin_avalon_transform took 0.182s
+Info: emif_0: Running transform merlin_avalon_transform took 0.280s
 Info: emif_a10_hps_0: Running transform merlin_avalon_transform
-Info: emif_a10_hps_0: Running transform merlin_avalon_transform took 0.026s
+Info: emif_a10_hps_0: Running transform merlin_avalon_transform took 0.013s
 Info: mm_interconnect_0: Running transform merlin_avalon_transform
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
-Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.361s
+Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.580s
 Info: mm_interconnect_1: Running transform merlin_avalon_transform
-Info: mm_interconnect_1: Running transform merlin_avalon_transform took 0.013s
+Info: mm_interconnect_1: Running transform merlin_avalon_transform took 0.011s
 Info: mm_interconnect_2: Running transform merlin_avalon_transform
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
-Info: mm_interconnect_2: Running transform merlin_avalon_transform took 0.335s
+Info: mm_interconnect_2: Running transform merlin_avalon_transform took 0.558s
 Info: mm_interconnect_3: Running transform merlin_avalon_transform
-Info: mm_interconnect_3: Running transform merlin_avalon_transform took 0.172s
+Info: mm_interconnect_3: Running transform merlin_avalon_transform took 0.277s
 Info: avalon_st_adapter: Running transform merlin_avalon_transform
 Info: avalon_st_adapter: Running transform merlin_avalon_transform took 0.014s
 Info: avalon_st_adapter_001: Running transform merlin_avalon_transform
-Info: avalon_st_adapter_001: Running transform merlin_avalon_transform took 0.024s
+Info: avalon_st_adapter_001: Running transform merlin_avalon_transform took 0.013s
 Info: avalon_st_adapter_002: Running transform merlin_avalon_transform
-Info: avalon_st_adapter_002: Running transform merlin_avalon_transform took 0.014s
+Info: avalon_st_adapter_002: Running transform merlin_avalon_transform took 0.012s
 Info: avalon_st_adapter_003: Running transform merlin_avalon_transform
 Info: avalon_st_adapter_003: Running transform merlin_avalon_transform took 0.014s
 Info: hps_io: Running transform merlin_avalon_transform
@@ -300,13 +300,13 @@ Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave i
 Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
 Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has address signal 16 bit wide, but the slave is 12 bit wide.
 Info: Interconnect is inserted between master ioaux_master_bridge.m0 and slave ioaux_soft_ram.s1 because the master has read signal 1 bit wide, but the slave is 0 bit wide.
-Info: cal_slave_component: Running transform merlin_avalon_transform took 0.360s
+Info: cal_slave_component: Running transform merlin_avalon_transform took 0.676s
 Info: avalon_st_adapter: Running transform merlin_avalon_transform
 Info: avalon_st_adapter: Running transform merlin_avalon_transform took 0.014s
 Info: avalon_st_adapter: Running transform merlin_avalon_transform
-Info: avalon_st_adapter: Running transform merlin_avalon_transform took 0.015s
+Info: avalon_st_adapter: Running transform merlin_avalon_transform took 0.013s
 Info: mm_interconnect_0: Running transform merlin_avalon_transform
-Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.171s
+Info: mm_interconnect_0: Running transform merlin_avalon_transform took 0.277s
 Info: som_system: "Naming system components in system: som_system"
 Info: som_system: "Processing generation queue"
 Info: som_system: "Generating: som_system"
@@ -321,13 +321,13 @@ Info: som_system: "Generating: som_system_altera_emif_a10_hps_180_uhly6ia"
 Info: som_system: "Generating: altera_avalon_mm_clock_crossing_bridge"
 Info: som_system: "Generating: mux_ddr"
 Info: som_system: "Generating: som_system_altera_iopll_180_bgd33sq"
-Info: som_system: "Generating: som_system_altera_avalon_pio_180_z5a3aci"
-Info: som_config: Starting RTL generation for module 'som_system_altera_avalon_pio_180_z5a3aci'
-Info: som_config:   Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=som_system_altera_avalon_pio_180_z5a3aci --dir=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0010_som_config_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0010_som_config_gen//som_system_altera_avalon_pio_180_z5a3aci_component_configuration.pl  --do_build_sim=0  ]
-Info: som_config: Done RTL generation for module 'som_system_altera_avalon_pio_180_z5a3aci'
+Info: som_system: "Generating: som_system_altera_avalon_pio_180_4xcd3ea"
+Info: som_config: Starting RTL generation for module 'som_system_altera_avalon_pio_180_4xcd3ea'
+Info: som_config:   Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=som_system_altera_avalon_pio_180_4xcd3ea --dir=C:/Users/tyler/AppData/Local/Temp/alt8541_5281375399242061127.dir/0010_som_config_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8541_5281375399242061127.dir/0010_som_config_gen//som_system_altera_avalon_pio_180_4xcd3ea_component_configuration.pl  --do_build_sim=0  ]
+Info: som_config: Done RTL generation for module 'som_system_altera_avalon_pio_180_4xcd3ea'
 Info: som_system: "Generating: som_system_altera_mm_interconnect_180_d4sniia"
 Info: som_system: "Generating: som_system_altera_mm_interconnect_180_2zdh4ci"
-Info: som_system: "Generating: som_system_altera_mm_interconnect_180_g5k2ojy"
+Info: som_system: "Generating: som_system_altera_mm_interconnect_180_lpsnuca"
 Info: som_system: "Generating: som_system_altera_mm_interconnect_180_nzcyb6q"
 Info: som_system: "Generating: som_system_altera_irq_mapper_180_vrecy4a"
 Info: som_system: "Generating: som_system_altera_avalon_st_adapter_180_bbxpcfy"
@@ -361,7 +361,7 @@ Info: som_system: "Generating: som_system_altera_merlin_demultiplexer_180_oh2yaq
 Info: som_system: "Generating: som_system_altera_merlin_multiplexer_180_zd5hm5y"
 Info: som_system: "Generating: som_system_altera_merlin_demultiplexer_180_x2ejjsa"
 Info: som_system: "Generating: som_system_altera_merlin_multiplexer_180_ay6xe7y"
-Info: som_system: "Generating: som_system_altera_merlin_router_180_7q6ljiq"
+Info: som_system: "Generating: som_system_altera_merlin_router_180_yxmpvni"
 Info: som_system: "Generating: som_system_altera_merlin_router_180_6yqffvy"
 Info: som_system: "Generating: som_system_altera_merlin_demultiplexer_180_bobv3li"
 Info: som_system: "Generating: som_system_altera_merlin_multiplexer_180_aogbhry"
@@ -375,7 +375,7 @@ Info: som_system: "Generating: som_system_altera_arria10_interface_generator_140
 Info: som_system: "Generating: altera_avalon_mm_bridge"
 Info: som_system: "Generating: som_system_altera_avalon_onchip_memory2_180_m2wik5y"
 Info: ioaux_soft_ram: Starting RTL generation for module 'som_system_altera_avalon_onchip_memory2_180_m2wik5y'
-Info: ioaux_soft_ram:   Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=som_system_altera_avalon_onchip_memory2_180_m2wik5y --dir=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0049_ioaux_soft_ram_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8521_8296976397670981924.dir/0049_ioaux_soft_ram_gen//som_system_altera_avalon_onchip_memory2_180_m2wik5y_component_configuration.pl  --do_build_sim=0  ]
+Info: ioaux_soft_ram:   Generation command is [exec C:/intelfpga/18.0/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.0/quartus/bin64/perl/lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.0/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.0/quartus/sopc_builder/bin -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=som_system_altera_avalon_onchip_memory2_180_m2wik5y --dir=C:/Users/tyler/AppData/Local/Temp/alt8541_5281375399242061127.dir/0049_ioaux_soft_ram_gen/ --quartus_dir=C:/intelfpga/18.0/quartus --verilog --config=C:/Users/tyler/AppData/Local/Temp/alt8541_5281375399242061127.dir/0049_ioaux_soft_ram_gen//som_system_altera_avalon_onchip_memory2_180_m2wik5y_component_configuration.pl  --do_build_sim=0  ]
 Info: ioaux_soft_ram: Done RTL generation for module 'som_system_altera_avalon_onchip_memory2_180_m2wik5y'
 Info: som_system: "Generating: som_system_altera_mm_interconnect_180_l5dmrei"
 Info: som_system: "Generating: som_system_error_adapter_180_jats3da"

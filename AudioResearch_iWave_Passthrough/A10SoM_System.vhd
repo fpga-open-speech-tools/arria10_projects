@@ -1,23 +1,3 @@
-------------------------------------------------------------------------------
--- Copyright 2018                                          iWavesystems Technologies Pvt. Ltd.
--- iWave Confidential Proprietary
-------------------------------------------------------------------------------
--- Title       : Top Module for Arria 10 SX
--- Design      : GPIO
--- File        : hps_top.v
-------------------------------------------------------------------------------
--- Version     : Ver 1.0
--- Generated   : 18/10/2018
--- Author      : Tushar Sharma                                          Tyler Davis
-------------------------------------------------------------------------------
---  Description :
---      * Top wrapper for SoC system
---      * Added GPIO Controller
---      * Added Transceiver Interfaces
---      * Added SATA Interface
---      * Ported to VHDL from Verilog
-------------------------------------------------------------------------------
-
 LIBRARY IEEE ;                      --! Use standard library.
 USE     IEEE.STD_LOGIC_1164.ALL;    --! Use standard logic elements.
 USE     IEEE.NUMERIC_STD.ALL ;      --! Use numeric standard
@@ -375,7 +355,7 @@ port (
     mem_mem_dbi_n                                  : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- mem_dbi_n
     oct_oct_rzqin                                  : in    std_logic                     := 'X';             -- oct_rzqin
     reset_reset_n                                  : in    std_logic                     := 'X';             -- reset_n
-    som_config_pio_export                          : inout std_logic_vector(1 downto 0)  := (others => 'X'); -- export
+    som_config_pio_export                          : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- export
     mic_array0_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
     mic_array0_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
     mic_array0_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
@@ -498,6 +478,11 @@ end component som_system;
 
      
   begin 
+  
+  
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+-- Code written by Tushar Sharma from the iWave reference design
 -- *****************************************************************************
 -- *                            Combinational logic                             *
 -- *****************************************************************************
@@ -555,7 +540,9 @@ end component som_system;
     outclk_1  => ddr_reset_clk,         -- 266.66 Mhz O/P
     outclk_2  => temp_sens_clk          -- 20 Mhz O/P 
   );
-  
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
    
  -- QSYS Design 
   i0: component som_system
@@ -630,11 +617,7 @@ end component som_system;
     hps_io_hps_io_gpio_gpio2_io8                   => hps_gpio2_GPIO8,                                            
     hps_io_hps_io_gpio_gpio0_io0                   => hps_gpio_GPIO0,                                         
     hps_io_hps_io_gpio_gpio0_io1                   => hps_gpio_GPIO1,
-    --hps_io_hps_io_gpio_gpio0_io2                   => hps_gpio_GPIO2,
-    --hps_io_hps_io_gpio_gpio0_io3                   => hps_gpio_GPIO3,
-    hps_io_hps_io_gpio_gpio0_io6                   => hps_gpio_GPIO6,                             
-    --hps_io_hps_io_gpio_gpio0_io7                   => hps_gpio_GPIO7,                             
-    --hps_io_hps_io_gpio_gpio0_io10                  => hps_gpio_GPIO10,
+    hps_io_hps_io_gpio_gpio0_io6                   => hps_gpio_GPIO6,
     hps_io_hps_io_gpio_gpio0_io11                  => hps_gpio_GPIO11,
     hps_io_hps_io_gpio_gpio1_io12                  => hps_gpio_GPIO12,
     hps_io_hps_io_gpio_gpio1_io13                  => hps_gpio_GPIO13,
@@ -644,27 +627,27 @@ end component som_system;
     hps_io_hps_io_gpio_gpio1_io17                  => hps_gpio_GPIO17,
     hps_io_hps_io_gpio_gpio1_io18                  => hps_gpio_GPIO18,
     hps_io_hps_io_gpio_gpio1_io19                  => hps_gpio_GPIO19,
-    hps_io_hps_io_gpio_gpio1_io20                  => hps_gpio_GPIO20,                             
-    hps_io_hps_io_gpio_gpio1_io21                  => hps_gpio_GPIO21,                             
-    hps_io_hps_io_gpio_gpio1_io22                  => hps_gpio_GPIO22,                             
-    hps_io_hps_io_gpio_gpio1_io23                  => hps_gpio_GPIO23,                                         
+    hps_io_hps_io_gpio_gpio1_io20                  => hps_gpio_GPIO20,
+    hps_io_hps_io_gpio_gpio1_io21                  => hps_gpio_GPIO21,
+    hps_io_hps_io_gpio_gpio1_io22                  => hps_gpio_GPIO22,
+    hps_io_hps_io_gpio_gpio1_io23                  => hps_gpio_GPIO23,
 
     -- FPGA SPI Signals
-    hps_spim0_mosi_o                               => spi_mosi,            
-    hps_spim0_miso_i                               => spi_miso,            
-    hps_spim0_ss_in_n                              => '1',                 
-    hps_spim0_mosi_oe                              => open,                
-    hps_spim0_ss0_n_o                              => AD1939_CS_N, 
-    hps_spim0_ss1_n_o                              => PGA2505_CS_N, 
-    hps_spim0_ss2_n_o                              => open,                
-    hps_spim0_ss3_n_o                              => open,                
-    hps_spim0_sclk_out_clk                         => spi_clk,      
+    hps_spim0_mosi_o                               => spi_mosi,
+    hps_spim0_miso_i                               => spi_miso,
+    hps_spim0_ss_in_n                              => '1',
+    hps_spim0_mosi_oe                              => open,
+    hps_spim0_ss0_n_o                              => AD1939_CS_N,
+    hps_spim0_ss1_n_o                              => PGA2505_CS_N,
+    hps_spim0_ss2_n_o                              => open,
+    hps_spim0_ss3_n_o                              => open,
+    hps_spim0_sclk_out_clk                         => spi_clk,
 
     -- I2C1 Signals
-    hps_i2c1_scl_in_clk                          => i2c1_serial_scl_in,                          --                      hps_0_i2c1_scl_in.clk
-    hps_i2c1_clk_clk                             => serial_scl_oe,                             --                         hps_0_i2c1_clk.clk
-    hps_i2c1_sda_i                               => i2c1_i2c_serial_sda_in,                               --                             hps_0_i2c1.sda_i
-    hps_i2c1_sda_oe                              => i2c1_serial_sda_oe,                             --                                       .sda_oe
+    hps_i2c1_scl_in_clk                          => i2c1_serial_scl_in,
+    hps_i2c1_clk_clk                             => serial_scl_oe,
+    hps_i2c1_sda_i                               => i2c1_i2c_serial_sda_in,
+    hps_i2c1_sda_oe                              => i2c1_serial_sda_oe,
             
     -- FPGA DDR Signals
     mem_mem_a                                      => hps_memory_mem_a,
@@ -797,7 +780,7 @@ end component som_system;
   mic_array15_physical_serial_clk_out            => open,
   mic_array15_control_busy_out                   => open       
     
-);           
+);
 
 -- Enable the audio arrays
 AA_LVDS_EN_N  <= (others => '0');
@@ -805,38 +788,54 @@ AA_BANK_EN    <= (others => '1');
 AA_12V0_EN    <= (others => '1');
 
 -- Enable the AD1939
-AD1939_PWR_EN <= '1';
-AD1939_RST_CODEC_N <= '1';
+AD1939_PWR_EN       <= '1';
+AD1939_RST_CODEC_N  <= '1';
 
 -- Enable the high speed audio
-HSA_IN_EN_N <= '0';
-AD4020_EN <= '1';
-AD5791_EN <= '1';
+HSA_IN_EN_N   <= '0';
+AD4020_EN     <= '1';
+AD5791_EN     <= '1';
 
 -- Enable the TPA613
 HDPHN_PWR_OFF_N <= '1';
 
 -- Map the SPI signals
-spi_miso <= AD1939_SPI_MISO;
-AD1939_SPI_MOSI <= spi_mosi;
-AD1939_SPI_SCK  <= spi_clk;
+spi_miso          <= AD1939_SPI_MISO;
+AD1939_SPI_MOSI   <= spi_mosi;
+AD1939_SPI_SCK    <= spi_clk;
 
 ---------------------------------------------------------------------------------------------
 -- Tri-state buffer the I2C signals
 ---------------------------------------------------------------------------------------------
-ubuf1 : component alt_iobuf
+-- ubuf1 : component alt_iobuf
+-- port map(
+    -- i   => '0',
+    -- oe  => i2c1_serial_sda_oe,
+    -- io  => I2C_SDA,
+    -- o   => i2c1_i2c_serial_sda_in
+ -- );
+
+-- ubuf2 : component alt_iobuf
+ -- port map(
+    -- i   => '0',
+    -- oe  => serial_scl_oe,
+    -- io  => I2C_SCL,
+    -- o   => i2c1_serial_scl_in
+ -- );
+
+ubuf3 : component alt_iobuf
 port map(
     i   => '0',
     oe  => i2c1_serial_sda_oe,
-    io  => HDPHN_I2C_SDA,
+    io  => HDPHN_I2C_SCL,
     o   => i2c1_i2c_serial_sda_in
  );
 
-ubuf2 : component alt_iobuf
+ubuf4 : component alt_iobuf
  port map(
     i   => '0',
     oe  => serial_scl_oe,
-    io  => HDPHN_I2C_SCL,
+    io  => HDPHN_I2C_SDA,
     o   => i2c1_serial_scl_in
  );
 
