@@ -3,10 +3,10 @@
 --! @file       A10SoM_System.vhd
 --! @brief      AD1939 using the Audio Research Board on the Arria 10.
 --! @details    Top Level Design for a pass through system using the
---!             Audio Research Board, developed by Flat Earth Inc.
+--!             Audio Research Board, developed by Audio Logic
 --! @author     Connor Dack
 --! @date       July 2018
---! @copyright  Copyright (C) 2018 Flat Earth Inc
+--! @copyright  Copyright (C) 2018 Audio Logic
 --!
 --! Software Released Under the MIT License
 --
@@ -28,7 +28,7 @@
 --  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --
 --  Connor Dack
---  Flat Earth Inc
+--  Audio Logic
 --  985 Technology Blvd,
 --  Bozeman, MT 59718
 --
@@ -72,24 +72,30 @@ ENTITY A10SoM_System IS
 		AD1939_ADC_ALRCLK     : in std_logic;
 		AD1939_ADC_ASDATA1    : in std_logic;
 		AD1939_ADC_ASDATA2    : in std_logic;
-		AD1939_DAC_DLRCLK     : out std_logic;
+		
+    AD1939_DAC_DLRCLK     : out std_logic;
 		AD1939_DAC_DSDATA1    : out std_logic;
 		AD1939_DAC_DSDATA2    : out std_logic;
 		AD1939_DAC_DSDATA3    : out std_logic;
 		AD1939_DAC_DSDATA4    : out std_logic;
-		AD1939_RESET_n        : out std_logic;
+		
+    AD1939_RESET_n        : out std_logic;
 		AD1939_spi_CCLK       : out std_logic;
 		AD1939_spi_CIN        : out std_logic;
 		AD1939_spi_CLATCH_n   : out std_logic;
 		AD1939_spi_COUT       : in std_logic;
-		INMP621_mic_CLK       : in std_logic;
+		
+    INMP621_mic_CLK       : in std_logic;
 		INMP621_mic_DATA      : in std_logic;
-		TPA6130_power_off     : out std_logic;
+		
+    TPA6130_power_off     : out std_logic;
 		TPA6130_i2c_SCL       : inout std_logic;
 		TPA6130_i2c_SDA       : inout std_logic;
-		AD1939_ADC_ABCLK      : in std_logic;
+		
+    AD1939_ADC_ABCLK      : in std_logic;
 		AD1939_DAC_DBCLK      : out std_logic;
 		AD1939_MCLK           : in std_logic;
+    
     PREAMP_CS             : out std_logic;
 
     ------------------------------------------------------------------------------------------

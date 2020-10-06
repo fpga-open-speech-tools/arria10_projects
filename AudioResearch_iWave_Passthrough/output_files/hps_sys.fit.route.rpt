@@ -1,0 +1,869 @@
+Fitter Route Stage Report for hps_sys
+Sat Sep 28 19:44:53 2019
+Quartus Prime Version 18.1.0 Build 222 09/21/2018 SJ Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. PLL Delay Chain Settings
+  3. Delay Chain Summary
+  4. Routing Usage Summary
+  5. Route Messages
+  6. Estimated Delay Added for Hold Timing Summary
+  7. Estimated Delay Added for Hold Timing Details
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------+
+; PLL Delay Chain Settings                                                           ;
++------------------------------------------------------------------------------+-----+
+;                                                                              ;     ;
++------------------------------------------------------------------------------+-----+
+; pll|iopll_0|altera_iopll_i|twentynm_pll|iopll_inst                           ;     ;
+;     -- Delay Chain Setting                                                   ; N/A ;
+;     -- PLL Output Counter 0                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 1                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 2                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 3                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 4                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 5                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 6                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 7                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 8                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;                                                                              ;     ;
+; u0|emif_0|emif_0|arch|arch_inst|pll_inst|pll_inst                            ;     ;
+;     -- Delay Chain Setting                                                   ; N/A ;
+;     -- PLL Output Counter 0                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 1                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 2                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 3                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 4                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 5                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 6                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 7                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 8                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;                                                                              ;     ;
+; u0|iopll_0|pio_iopll_0|altera_iopll_i|twentynm_pll|iopll_inst                ;     ;
+;     -- Delay Chain Setting                                                   ; N/A ;
+;     -- PLL Output Counter 0                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 1                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 2                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 3                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 4                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 5                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 6                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 7                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 8                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;                                                                              ;     ;
+; u0|emif_a10_hps_0|emif_a10_hps_0|arch|arch_inst|pll_inst|pll_inst            ;     ;
+;     -- Delay Chain Setting                                                   ; N/A ;
+;     -- PLL Output Counter 0                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 1                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 2                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 3                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;             -- LVDS Delay Chain Setting                                      ; 0   ;
+;     -- PLL Output Counter 4                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 5                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 6                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 7                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;     -- PLL Output Counter 8                                                  ;     ;
+;             -- C Counter Delay Chain Setting                                 ; 0   ;
+;                                                                              ;     ;
+; u0|emif_0|emif_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate                 ;     ;
+;     -- Delay Chain Setting                                                   ; N/A ;
+;                                                                              ;     ;
+; u0|emif_0|emif_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate_1               ;     ;
+;     -- Delay Chain Setting                                                   ; N/A ;
+;                                                                              ;     ;
+; u0|emif_a10_hps_0|emif_a10_hps_0|arch|arch_inst|pll_inst|pll_inst~_Duplicate ;     ;
+;     -- Delay Chain Setting                                                   ; N/A ;
+;                                                                              ;     ;
++------------------------------------------------------------------------------+-----+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                                                                        ;
++---------------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; Name                      ; Pin Type ; Input Delay Chain 0 ; Output Delay Chain ; OE Delay Chain ; IO_12_LANE Input Data Delay Chain ; IO_12_LANE Input Strobe Delay Chain ;
++---------------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; FPGA_memory_mem1_ck       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_ck_n     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[0]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[1]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[2]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[3]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[4]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[5]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[6]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[7]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[8]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[9]     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[10]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[11]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[12]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[13]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[14]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[15]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_a[16]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_act_n    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_ba[0]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_ba[1]    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_bg       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_cke      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_cs_n     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_odt      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_par      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1C_tx_ch3             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1C_tx_ch0             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1C_tx_ch1             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1C_tx_ch2             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; pcie_tx_o                 ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1D_tx_ch0             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1D_tx_ch1             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1D_tx_ch2             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1D_tx_ch3             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1E_tx_ch0             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1E_tx_ch1             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1E_tx_ch2             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1E_tx_ch3             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1F_tx_ch0             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1F_tx_ch1             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; sfp_1F_tx_ch0             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_reset_n  ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_emac1_TX_CLK          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_emac1_TXD0            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_emac1_TXD1            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_emac1_TXD2            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_emac1_TXD3            ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_emac1_MDC             ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_emac1_TX_CTL          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_sdio_CLK              ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_usb1_STP              ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_act_n      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_bg         ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_par        ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[0]       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[1]       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[2]       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[3]       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[4]       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[5]       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[6]       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[7]       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[8]       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[9]       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[10]      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[11]      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[12]      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[13]      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[14]      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[15]      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_a[16]      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_ba[0]      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_ba[1]      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_ck         ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_ck_n       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_cke        ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_cs_n       ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_reset_n    ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_odt        ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_uart1_TX              ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[0]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[1]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[2]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[3]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[4]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[5]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[6]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[7]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[8]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[9]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[10]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[11]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[12]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[13]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[14]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[15]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[16]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[17]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[18]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio1[19]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[0]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[1]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[2]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[3]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[4]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[5]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[6]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[7]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[8]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[9]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[10]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[11]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[12]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[13]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[14]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[15]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[16]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[17]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[18]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio2[19]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[0]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[1]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[2]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[3]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[4]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[5]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[6]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[7]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[8]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[9]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[10]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[11]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[12]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[13]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[14]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[15]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[16]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[17]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[18]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio3[19]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[0]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[1]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[2]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[3]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[4]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[5]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[6]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[7]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[8]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[9]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[10]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[11]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[12]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[13]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[14]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[15]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[16]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[17]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[18]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio4[19]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[0]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[1]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[2]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[3]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[4]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[5]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[6]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[7]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[8]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[9]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[10]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[11]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[12]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[13]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[14]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[15]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[16]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[17]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[18]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc1_inout_pio5[19]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[0]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[1]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[2]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[3]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[4]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[5]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[6]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[7]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[8]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[9]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[10]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[11]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[12]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[13]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[14]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[15]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[16]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[17]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[18]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio6[19]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[0]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[1]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[2]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[3]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[4]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[5]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[6]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[7]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[8]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[9]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[10]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[11]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[12]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[13]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[14]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[15]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[16]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[17]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[18]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc2_inout_pio7[19]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod1_inout_pio8[0]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod1_inout_pio8[1]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod1_inout_pio8[2]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod1_inout_pio8[3]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod1_inout_pio8[4]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod1_inout_pio8[5]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod1_inout_pio8[6]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod1_inout_pio8[7]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod2_inout_pio9[0]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod2_inout_pio9[1]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod2_inout_pio9[2]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod2_inout_pio9[3]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod2_inout_pio9[4]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod2_inout_pio9[5]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod2_inout_pio9[6]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pmod2_inout_pio9[7]       ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_mem1_dqs[0]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs[1]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs[2]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs[3]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs[4]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs[5]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs[6]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs[7]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs_n[0] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs_n[1] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs_n[2] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs_n[3] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs_n[4] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs_n[5] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs_n[6] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dqs_n[7] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; FPGA_memory_mem1_dq[0]    ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[1]    ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[2]    ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[3]    ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[4]    ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[5]    ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[6]    ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[7]    ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[8]    ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[9]    ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[10]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[11]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[12]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[13]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[14]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[15]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[16]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[17]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[18]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[19]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[20]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[21]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[22]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[23]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[24]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[25]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[26]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[27]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[28]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[29]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[30]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[31]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[32]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[33]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[34]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[35]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[36]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[37]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[38]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[39]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[40]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[41]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[42]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[43]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[44]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[45]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[46]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[47]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[48]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[49]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[50]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[51]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[52]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[53]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[54]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[55]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[56]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[57]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[58]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[59]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[60]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[61]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[62]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dq[63]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dbi_n[0] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dbi_n[1] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dbi_n[2] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dbi_n[3] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dbi_n[4] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dbi_n[5] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dbi_n[6] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; FPGA_memory_mem1_dbi_n[7] ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; pciex4_inout_pio10[0]     ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; pciex4_inout_pio10[1]     ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; usb_inout_pio11[0]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; usb_inout_pio11[1]        ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_emac1_MDIO            ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_i2c0_SDA              ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_i2c0_SCL              ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_sdio_CMD              ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_sdio_D0               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_sdio_D1               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_sdio_D2               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_sdio_D3               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_usb1_D0               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_usb1_D1               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_usb1_D2               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_usb1_D3               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_usb1_D4               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_usb1_D5               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_usb1_D6               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_usb1_D7               ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_memory_mem_dbi_n[0]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dbi_n[1]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dbi_n[2]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dbi_n[3]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dbi_n[4]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[0]      ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[1]      ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[2]      ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[3]      ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[4]      ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[5]      ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[6]      ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[7]      ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[8]      ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[9]      ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[10]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[11]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[12]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[13]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[14]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[15]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[16]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[17]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[18]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[19]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[20]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[21]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[22]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[23]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[24]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[25]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[26]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[27]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[28]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[29]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[30]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[31]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[32]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[33]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[34]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[35]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[36]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[37]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[38]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dq[39]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; --                                  ;
+; hps_memory_mem_dqs[0]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; hps_memory_mem_dqs[1]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; hps_memory_mem_dqs[2]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; hps_memory_mem_dqs[3]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; hps_memory_mem_dqs[4]     ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; hps_memory_mem_dqs_n[0]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; hps_memory_mem_dqs_n[1]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; hps_memory_mem_dqs_n[2]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; hps_memory_mem_dqs_n[3]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; hps_memory_mem_dqs_n[4]   ; Bidir    ; 0                   ; 0                  ; 0              ; 0                                 ; 0                                   ;
+; hps_gpio2_GPIO6           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio2_GPIO8           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO0            ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO1            ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO2            ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO3            ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO6            ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO7            ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO10           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO11           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO12           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO13           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO14           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO15           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO16           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO17           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO18           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO19           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO20           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO21           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO22           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; hps_gpio_GPIO23           ; Bidir    ; 0                   ; 0                  ; 0              ; --                                ; --                                  ;
+; FPGA_memory_oct1_rzqin    ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; pcie_refclk_clk           ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; FPGA_memory_mem1_alert_n  ; Input    ; 0                   ; --                 ; --             ; 0                                 ; --                                  ;
+; hps_emac1_RX_CLK          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; hps_emac1_RX_CTL          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; hps_emac1_RXD0            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; hps_emac1_RXD1            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; hps_emac1_RXD2            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; hps_emac1_RXD3            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; hps_usb1_CLK              ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; hps_usb1_DIR              ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; hps_usb1_NXT              ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; hps_memory_oct_rzqin      ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; hps_memory_mem_alert_n    ; Input    ; 0                   ; --                 ; --             ; 0                                 ; --                                  ;
+; hps_uart1_RX              ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; sys_reset_n_i             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fpga_clk_i                ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; clk_200                   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1C_rx_ch3             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1C_rx_ch0             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1C_rx_ch1             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1C_rx_ch2             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; pcie_rx_i                 ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; pcie_npor_pin_perst       ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1D_rx_ch0             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1D_rx_ch1             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1D_rx_ch2             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1D_rx_ch3             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1E_rx_ch0             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1E_rx_ch1             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1E_rx_ch2             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1E_rx_ch3             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1F_rx_ch0             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1F_rx_ch1             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; sfp_1F_rx_ch0             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_1C_p               ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_1D_p               ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_1E_p               ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_1F_p               ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; sfp_refclk_1F_p           ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; ddr_ref_clk_i             ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; som_config_pio[0]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; som_config_pio[1]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; som_config_pio[2]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; som_config_pio[3]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; som_config_pio[4]         ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1C_tx_ch3(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1C_tx_ch0(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1C_tx_ch1(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1C_tx_ch2(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; pcie_tx_o(n)              ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1D_tx_ch0(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1D_tx_ch1(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1D_tx_ch2(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1D_tx_ch3(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1E_tx_ch0(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1E_tx_ch1(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1E_tx_ch2(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1E_tx_ch3(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1F_tx_ch0(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; fmc_1F_tx_ch1(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; sfp_1F_tx_ch0(n)          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; pcie_refclk_clk(n)        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; clk_200(n)                ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1C_rx_ch3(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1C_rx_ch0(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1C_rx_ch1(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1C_rx_ch2(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; pcie_rx_i(n)              ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1D_rx_ch0(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1D_rx_ch1(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1D_rx_ch2(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1D_rx_ch3(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1E_rx_ch0(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1E_rx_ch1(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1E_rx_ch2(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1E_rx_ch3(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1F_rx_ch0(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; fmc_1F_rx_ch1(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; sfp_1F_rx_ch0(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_1C_p(n)            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_1D_p(n)            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_1E_p(n)            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; refclk_1F_p(n)            ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; sfp_refclk_1F_p(n)        ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; ddr_ref_clk_i(n)          ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
++---------------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+
+
++------------------------------------------------------------+
+; Routing Usage Summary                                      ;
++------------------------------+-----------------------------+
+; Routing Resource Type        ; Usage                       ;
++------------------------------+-----------------------------+
+; Block interconnects          ; 207,753 / 2,248,138 ( 9 % ) ;
+; C27 interconnects            ; 4,374 / 35,203 ( 12 % )     ;
+; C4 interconnects             ; 127,033 / 1,597,544 ( 8 % ) ;
+; Direct links                 ; 43,092 / 2,248,138 ( 2 % )  ;
+; Global clocks                ; 19 / 32 ( 59 % )            ;
+; Periphery clocks             ; 27 / 739 ( 4 % )            ;
+; R3 interconnects             ; 62,915 / 758,112 ( 8 % )    ;
+; R32 interconnects            ; 3,616 / 66,605 ( 5 % )      ;
+; R32/C27 interconnect drivers ; 5,269 / 239,816 ( 2 % )     ;
+; R6 interconnects             ; 111,313 / 1,488,576 ( 7 % ) ;
+; Regional clock lefts         ; 0 / 16 ( 0 % )              ;
+; Regional clock out bottoms   ; 3 / 16 ( 19 % )             ;
+; Regional clock out tops      ; 0 / 16 ( 0 % )              ;
+; Regional clock rights        ; 3 / 16 ( 19 % )             ;
+; Regional clocks              ; 3 / 16 ( 19 % )             ;
+; Spine buffers                ; 73 / 660 ( 11 % )           ;
+; Spine clocks                 ; 131 / 990 ( 13 % )          ;
+; Spine feedthroughs           ; 31 / 736 ( 4 % )            ;
++------------------------------+-----------------------------+
+
+
++----------------+
+; Route Messages ;
++----------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 18.1.0 Build 222 09/21/2018 SJ Pro Edition
+    Info: Processing started: Sat Sep 28 19:12:30 2019
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off hps_sys -c hps_sys
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = hps_sys
+Info: Revision = hps_sys
+Info (170193): Fitter routing operations beginning
+Warning (292002): Connection to license server reestablished for feature quartus_pro.
+Info (170089): 1e+04 ns of routing delay (approximately 2.1% of available device routing delay) has been added to meet hold timing. For more information, refer to the Estimated Delay Added for Hold Timing section in the Fitter report.
+Info (20215): Router estimated peak interconnect utilization : 225% of long high speed down directional wire in region X136_Y133 to X143_Y139
+    Info (20265): Estimated peak short right directional wire utilization : 28% in region X24_Y63 to X31_Y69
+    Info (20265): Estimated peak short left directional wire utilization : 27% in region X112_Y0 to X119_Y6
+    Info (20265): Estimated peak short up directional wire utilization : 55% in region X104_Y189 to X111_Y195
+    Info (20265): Estimated peak short down directional wire utilization : 100% in region X104_Y196 to X111_Y202
+    Info (20265): Estimated peak long high speed right directional wire utilization : 205% in region X64_Y168 to X71_Y174
+    Info (20265): Estimated peak long high speed left directional wire utilization : 178% in region X144_Y161 to X151_Y167
+    Info (20265): Estimated peak long high speed up directional wire utilization : 173% in region X144_Y140 to X151_Y146
+    Info (20265): Estimated peak long high speed down directional wire utilization : 225% in region X136_Y133 to X143_Y139
+    Info (20315): Note that the router may use short wires to implement long connections at higher delay
+Info (170239): Router is attempting to preserve 0.00 percent of routes from an earlier compilation, a user specified Routing Constraints File, or internal routing requirements.
+Info (11888): Total time spent on timing analysis during Routing is 155.06 seconds.
+Info (16607): Fitter routing operations ending: elapsed time is 00:10:10
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                                                                                                     ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+-------------------+
+; Source Clock(s)                                                       ; Destination Clock(s)                                                  ; Delay Added in ns ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+-------------------+
+; pll|iopll_0|outclk0                                                   ; pll|iopll_0|outclk0                                                   ; 5623.3            ;
+; u0|emif_0|emif_0_core_extra_clk_0                                     ; u0|emif_0|emif_0_core_extra_clk_0                                     ; 4632.2            ;
+; altera_reserved_tck                                                   ; altera_reserved_tck                                                   ; 3383.4            ;
+; u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|wys~CORE_CLK_OUT ; u0|pio_pcie_0|pcie_a10|subsystem_pcie_pcie_a10_hip_0|wys~CORE_CLK_OUT ; 1119.9            ;
+; u0|iopll_0|pio_iopll_0|outclk1                                        ; u0|iopll_0|pio_iopll_0|outclk1                                        ; 1065.7            ;
+; u0|iopll_0|pio_iopll_0|outclk0                                        ; u0|iopll_0|pio_iopll_0|outclk0                                        ; 611.5             ;
+; pcie_refclk_clk                                                       ; pcie_refclk_clk                                                       ; 184.5             ;
+; u0|emif_0|emif_0_core_cal_master_clk                                  ; u0|emif_0|emif_0_core_cal_master_clk                                  ; 105.3             ;
+; u0|xcvr_4|xcvr_native_a10_0|rx_pma_clk                                ; u0|xcvr_4|xcvr_native_a10_0|rx_pma_clk                                ; 68.8              ;
+; u0|emif_0|emif_0_core_cal_slave_clk                                   ; u0|emif_0|emif_0_core_cal_slave_clk                                   ; 67.5              ;
+; u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk         ; u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk         ; 64.7              ;
+; u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk         ; u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk         ; 63.6              ;
+; u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk         ; u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk         ; 63.3              ;
+; u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk         ; u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk         ; 62.0              ;
+; u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk         ; u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk         ; 61.9              ;
+; u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk         ; u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk         ; 61.8              ;
+; u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk         ; u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk         ; 61.5              ;
+; pll|iopll_0|outclk2                                                   ; pll|iopll_0|outclk0                                                   ; 61.4              ;
+; u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk         ; u0|xcvr_2|xcvr_native_a10_0|g_xcvr_native_insts[0]|rx_pma_clk         ; 61.3              ;
+; u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk         ; u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[3]|rx_pma_clk         ; 60.7              ;
+; u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk         ; u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk         ; 60.3              ;
+; u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk         ; u0|xcvr_1|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk         ; 60.1              ;
+; u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk         ; u0|xcvr_0|xcvr_native_a10_0|g_xcvr_native_insts[2]|rx_pma_clk         ; 59.1              ;
+; u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk         ; u0|xcvr_3|xcvr_native_a10_0|g_xcvr_native_insts[1]|rx_pma_clk         ; 58.5              ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                                                                                                             ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------------------+
+; Source Register                                                                                             ; Destination Register                                                                                                    ; Delay Added in ns ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------------------+
+; temp_sens_u0|temp_sense_0|sd1~sn_adc_ts_clk.reg                                                             ; eoc_d                                                                                                                   ; 7.137             ;
+; u0|xcvr_0|rst_controller|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out                           ; u0|xcvr_0|data_pattern_generator_3|data_pattern_generator_3|data_pattern_generator|enable_register_synchronizer|dreg[0] ; 6.502             ;
+; u0|emif_0|emif_0|arch|arch_inst|seq_if_inst|afi_cal_success_sync_inst|dreg[1]                               ; Cal_success_1                                                                                                           ; 5.027             ;
+; en_cntr[12]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.507             ;
+; en_cntr[13]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.502             ;
+; en_cntr[14]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.493             ;
+; en_cntr[15]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.488             ;
+; en_cntr[19]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.486             ;
+; en_cntr[24]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.483             ;
+; en_cntr[26]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.471             ;
+; eoc_d                                                                                                       ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[11]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[10]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[9]                                                                                                  ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[8]                                                                                                  ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[7]                                                                                                  ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[6]                                                                                                  ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[5]                                                                                                  ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[1]                                                                                                  ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[2]                                                                                                  ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[3]                                                                                                  ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[4]                                                                                                  ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[0]                                                                                                  ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[17]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[16]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[23]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[22]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[21]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[20]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[18]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.460             ;
+; en_cntr[25]                                                                                                 ; en_cntr[24]                                                                                                             ; 4.460             ;
+; u0|xcvr_1|rst_controller|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out                           ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|snapper|t2p_data|in_reg                    ; 4.448             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|enable_register                ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 4.262             ;
+; u0|xcvr_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|enable_register                ; u0|xcvr_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|expected_data[15]                          ; 4.246             ;
+; u0|xcvr_1|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|enable_register                ; u0|xcvr_1|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|expected_data[30]                          ; 4.157             ;
+; u0|xcvr_1|data_pattern_checker_2|pcie_1d_xcvr_data_pattern_checker_2|data_pattern_checker|enable_register   ; u0|xcvr_1|data_pattern_checker_2|pcie_1d_xcvr_data_pattern_checker_2|data_pattern_checker|expected_data[27]             ; 4.104             ;
+; u0|xcvr_1|data_pattern_checker_3|pcie_1d_xcvr_data_pattern_checker_3|data_pattern_checker|enable_register   ; u0|xcvr_1|data_pattern_checker_3|pcie_1d_xcvr_data_pattern_checker_3|data_pattern_checker|expected_data[28]             ; 4.018             ;
+; u0|xcvr_0|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|enable_register                ; u0|xcvr_0|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[30]                          ; 3.995             ;
+; u0|xcvr_0|data_pattern_checker_2|data_pattern_checker_2|data_pattern_checker|enable_register                ; u0|xcvr_0|data_pattern_checker_2|data_pattern_checker_2|data_pattern_checker|expected_data[30]                          ; 3.928             ;
+; u0|xcvr_0|data_pattern_checker_3|data_pattern_checker_3|data_pattern_checker|enable_register                ; u0|xcvr_0|data_pattern_checker_3|data_pattern_checker_3|data_pattern_checker|expected_data[30]                          ; 3.880             ;
+; corectl                                                                                                     ; corectl                                                                                                                 ; 3.486             ;
+; u0|emif_0|emif_0|arch|arch_inst|seq_if_inst|afi_cal_fail_sync_inst|dreg[1]                                  ; Cal_fail_1                                                                                                              ; 3.004             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[30]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.357             ;
+; u0|xcvr_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|expected_data[31]              ; u0|xcvr_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|expected_data[15]                          ; 2.352             ;
+; u0|xcvr_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|buffered_data[31]              ; u0|xcvr_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|expected_data[15]                          ; 2.336             ;
+; u0|xcvr_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|expected_data[30]              ; u0|xcvr_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|expected_data[15]                          ; 2.332             ;
+; u0|xcvr_1|data_pattern_checker_2|pcie_1d_xcvr_data_pattern_checker_2|data_pattern_checker|buffered_data[30] ; u0|xcvr_1|data_pattern_checker_2|pcie_1d_xcvr_data_pattern_checker_2|data_pattern_checker|expected_data[27]             ; 2.302             ;
+; u0|xcvr_1|data_pattern_checker_2|pcie_1d_xcvr_data_pattern_checker_2|data_pattern_checker|expected_data[31] ; u0|xcvr_1|data_pattern_checker_2|pcie_1d_xcvr_data_pattern_checker_2|data_pattern_checker|expected_data[27]             ; 2.296             ;
+; u0|xcvr_1|data_pattern_checker_2|pcie_1d_xcvr_data_pattern_checker_2|data_pattern_checker|buffered_data[31] ; u0|xcvr_1|data_pattern_checker_2|pcie_1d_xcvr_data_pattern_checker_2|data_pattern_checker|expected_data[27]             ; 2.275             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[31]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.270             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[30]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.266             ;
+; u0|xcvr_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|buffered_data[30]              ; u0|xcvr_0|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|expected_data[15]                          ; 2.263             ;
+; u0|xcvr_0|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[31]              ; u0|xcvr_0|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[30]                          ; 2.260             ;
+; u0|xcvr_1|data_pattern_checker_3|pcie_1d_xcvr_data_pattern_checker_3|data_pattern_checker|expected_data[31] ; u0|xcvr_1|data_pattern_checker_3|pcie_1d_xcvr_data_pattern_checker_3|data_pattern_checker|expected_data[28]             ; 2.260             ;
+; u0|xcvr_1|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|buffered_data[30]              ; u0|xcvr_1|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|expected_data[30]                          ; 2.246             ;
+; u0|xcvr_1|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|expected_data[30]              ; u0|xcvr_1|data_pattern_checker_0|data_pattern_checker_0|data_pattern_checker|expected_data[30]                          ; 2.233             ;
+; u0|xcvr_0|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[31]              ; u0|xcvr_0|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[30]                          ; 2.230             ;
+; u0|xcvr_1|data_pattern_checker_3|pcie_1d_xcvr_data_pattern_checker_3|data_pattern_checker|expected_data[30] ; u0|xcvr_1|data_pattern_checker_3|pcie_1d_xcvr_data_pattern_checker_3|data_pattern_checker|expected_data[28]             ; 2.225             ;
+; u0|xcvr_0|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[30]              ; u0|xcvr_0|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[30]                          ; 2.219             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[31]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.213             ;
+; u0|xcvr_1|data_pattern_checker_3|pcie_1d_xcvr_data_pattern_checker_3|data_pattern_checker|buffered_data[31] ; u0|xcvr_1|data_pattern_checker_3|pcie_1d_xcvr_data_pattern_checker_3|data_pattern_checker|expected_data[28]             ; 2.211             ;
+; u0|xcvr_0|data_pattern_checker_2|data_pattern_checker_2|data_pattern_checker|expected_data[30]              ; u0|xcvr_0|data_pattern_checker_2|data_pattern_checker_2|data_pattern_checker|expected_data[30]                          ; 2.176             ;
+; u0|xcvr_1|data_pattern_checker_2|pcie_1d_xcvr_data_pattern_checker_2|data_pattern_checker|expected_data[30] ; u0|xcvr_1|data_pattern_checker_2|pcie_1d_xcvr_data_pattern_checker_2|data_pattern_checker|expected_data[27]             ; 2.161             ;
+; u0|xcvr_1|data_pattern_checker_3|pcie_1d_xcvr_data_pattern_checker_3|data_pattern_checker|buffered_data[30] ; u0|xcvr_1|data_pattern_checker_3|pcie_1d_xcvr_data_pattern_checker_3|data_pattern_checker|expected_data[28]             ; 2.146             ;
+; u0|xcvr_0|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[30]              ; u0|xcvr_0|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[30]                          ; 2.134             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[5]               ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[4]               ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[3]               ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[2]               ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[1]               ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[0]               ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[8]               ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[7]               ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[6]               ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[11]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[10]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[9]               ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[14]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[13]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[12]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[17]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[16]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[15]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[23]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[22]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[21]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[20]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[19]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[18]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[26]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[25]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[24]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[29]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[28]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|buffered_data[27]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|state.ST_GET_LOCK              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|pattern_select[8]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|pattern_select[0]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|pattern_select[7]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
+; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|pattern_select[6]              ; u0|xcvr_1|data_pattern_checker_1|data_pattern_checker_1|data_pattern_checker|expected_data[24]                          ; 2.131             ;
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+-------------------+
+Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
+
+

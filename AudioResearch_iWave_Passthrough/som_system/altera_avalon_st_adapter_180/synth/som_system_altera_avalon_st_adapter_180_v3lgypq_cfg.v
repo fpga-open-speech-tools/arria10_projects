@@ -1,0 +1,5 @@
+config som_system_altera_avalon_st_adapter_180_v3lgypq_cfg;
+		design som_system_altera_avalon_st_adapter_180_v3lgypq;
+		instance som_system_altera_avalon_st_adapter_180_v3lgypq.error_adapter_0 use som_system_error_adapter_180.som_system_error_adapter_180_jats3da;
+endconfig
+

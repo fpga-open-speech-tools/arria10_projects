@@ -1,0 +1,30 @@
+Core: ed_synth_altera_emif_arch_nf_160_zawtumy - Instance: mem_ddr4|emif_0_example_design
+Path, Setup Margin, Hold Margin
+"Address/Command (Slow 900mV 100C Model)",0.354,0.354
+"Core (Slow 900mV 100C Model)",0.939,0.053
+"Core Recovery/Removal (Slow 900mV 100C Model)",1.959,0.372
+"DQS Gating (Slow 900mV 100C Model)",0.929,0.929
+"Read Capture (Slow 900mV 100C Model)",0.094,0.094
+"Write (Slow 900mV 100C Model)",0.104,0.104
+"Write Levelling (Slow 900mV 100C Model)",0.311,0.311
+"Address/Command (Slow 900mV 0C Model)",0.354,0.354
+"Core (Slow 900mV 0C Model)",0.978,0.052
+"Core Recovery/Removal (Slow 900mV 0C Model)",2.101,0.383
+"DQS Gating (Slow 900mV 0C Model)",0.929,0.929
+"Read Capture (Slow 900mV 0C Model)",0.094,0.094
+"Write (Slow 900mV 0C Model)",0.104,0.104
+"Write Levelling (Slow 900mV 0C Model)",0.311,0.311
+"Address/Command (Fast 900mV 100C Model)",0.354,0.354
+"Core (Fast 900mV 100C Model)",1.7,0.021
+"Core Recovery/Removal (Fast 900mV 100C Model)",2.786,0.201
+"DQS Gating (Fast 900mV 100C Model)",0.929,0.929
+"Read Capture (Fast 900mV 100C Model)",0.094,0.094
+"Write (Fast 900mV 100C Model)",0.104,0.104
+"Write Levelling (Fast 900mV 100C Model)",0.311,0.311
+"Address/Command (Fast 900mV 0C Model)",0.354,0.354
+"Core (Fast 900mV 0C Model)",2.327,0.02
+"Core Recovery/Removal (Fast 900mV 0C Model)",3.194,0.177
+"DQS Gating (Fast 900mV 0C Model)",0.929,0.929
+"Read Capture (Fast 900mV 0C Model)",0.094,0.094
+"Write (Fast 900mV 0C Model)",0.104,0.104
+"Write Levelling (Fast 900mV 0C Model)",0.311,0.311

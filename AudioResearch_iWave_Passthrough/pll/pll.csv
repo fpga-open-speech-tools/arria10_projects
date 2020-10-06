@@ -1,0 +1,18 @@
+# system info pll on 2020.04.14.07:06:56
+system_info:
+name,value
+DEVICE,10AS066H2F34I1HG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1586869615
+#
+#
+# Files generated for pll on 2020.04.14.07:06:56
+files:
+filepath,kind,attributes,module,is_top
+sim/pll.vhd,VHDL,CONTAINS_INLINE_CONFIGURATION,pll,true
+altera_iopll_191/sim/pll_altera_iopll_191_zrphyuq.vo,VERILOG,,pll_altera_iopll_191_zrphyuq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+pll.iopll_0,pll_altera_iopll_191_zrphyuq

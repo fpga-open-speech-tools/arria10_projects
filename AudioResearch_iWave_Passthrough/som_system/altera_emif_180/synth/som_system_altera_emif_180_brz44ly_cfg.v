@@ -1,0 +1,6 @@
+config som_system_altera_emif_180_brz44ly_cfg;
+		design som_system_altera_emif_180_brz44ly;
+		instance som_system_altera_emif_180_brz44ly.arch use som_system_altera_emif_arch_nf_180.som_system_altera_emif_arch_nf_180_3nk2okq;
+		instance som_system_altera_emif_180_brz44ly.cal_slave_component use som_system_altera_emif_cal_slave_nf_180.som_system_altera_emif_cal_slave_nf_180_5pbk77i;
+endconfig
+

@@ -1,0 +1,179 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst som_system.FE_AD7768_v1_0 -pg 1 -lvl 3 -y 810
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_9 -pg 1 -lvl 3 -y 2910
+preplace inst som_system.arria10_hps_0.i_uart_1_uart -pg 1
+preplace inst som_system.FE_Qsys_AD1939_Audio_Blade_v1_0 -pg 1 -lvl 3 -y 30
+preplace inst som_system.mm_clock_crossing_bridge_0 -pg 1 -lvl 3 -y 1550
+preplace inst som_system.arria10_hps_0.timer -pg 1
+preplace inst som_system.FE_AD5791_v1_Left -pg 1 -lvl 4 -y 860
+preplace inst som_system.emif_0.arch -pg 1
+preplace inst som_system.arria10_hps_0.i_i2c_emac_2_i2c -pg 1
+preplace inst som_system.arria10_hps_0.bridges -pg 1
+preplace inst som_system.arria10_hps_0.i_i2c_0_i2c -pg 1
+preplace inst som_system.FE_AD5791_v1_Right -pg 1 -lvl 4 -y 1000
+preplace inst som_system.mux_ddr_0 -pg 1 -lvl 2 -y 1270
+preplace inst som_system.emif_a10_hps_0.arch -pg 1
+preplace inst som_system.arria10_hps_0.cb_intosc_ls_clk -pg 1
+preplace inst som_system.arria10_hps_0.i_dma_DMASECURE -pg 1
+preplace inst som_system.arria10_hps_0.i_nand_NANDDATA -pg 1
+preplace inst som_system.emif_0.cal_slave_component.ioaux_master_bridge -pg 1
+preplace inst som_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst som_system.arria10_hps_0.f2s_free_clk -pg 1
+preplace inst som_system.arria10_hps_0.i_i2c_emac_0_i2c -pg 1
+preplace inst som_system.arria10_hps_0.i_usbotg_0_globgrp -pg 1
+preplace inst som_system.arria10_hps_0.fpga_interfaces -pg 1
+preplace inst som_system.arria10_hps_0.i_i2c_1_i2c -pg 1
+preplace inst som_system.arria10_hps_0.baum_clkmgr -pg 1
+preplace inst som_system.FE_AD4020_Left -pg 1 -lvl 3 -y 320
+preplace inst som_system.arria10_hps_0.i_rst_mgr_rstmgr -pg 1
+preplace inst som_system.arria10_hps_0.arm_a9_0 -pg 1
+preplace inst som_system.emif_0.cal_slave_component.clk_bridge -pg 1
+preplace inst som_system.arria10_hps_0.mpu_reg_l2_MPUL2 -pg 1
+preplace inst som_system.arria10_hps_0.arm_a9_1 -pg 1
+preplace inst som_system.arria10_hps_0.i_timer_sp_1_timer -pg 1
+preplace inst som_system.som_config -pg 1 -lvl 2 -y 1470
+preplace inst som_system.emif_0.cal_slave_component.rst_bridge -pg 1
+preplace inst som_system.arria10_hps_0.i_watchdog_1_l4wd -pg 1
+preplace inst som_system.clk_AD1939_ABCLK -pg 1 -lvl 2 -y 1090
+preplace inst som_system.arria10_hps_0.cb_intosc_hs_div2_clk -pg 1
+preplace inst som_system.clk_1 -pg 1 -lvl 1 -y 1310
+preplace inst som_system.arria10_hps_0.i_sdmmc_sdmmc -pg 1
+preplace inst som_system.arria10_hps_0.clk_0 -pg 1
+preplace inst som_system.arria10_hps_0.i_uart_0_uart -pg 1
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_10 -pg 1 -lvl 3 -y 3390
+preplace inst som_system.arria10_hps_0.i_gpio_1_gpio -pg 1
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_11 -pg 1 -lvl 3 -y 3550
+preplace inst som_system.arria10_hps_0.i_spim_1_spim -pg 1
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_12 -pg 1 -lvl 3 -y 3710
+preplace inst som_system.clk_AD1939_ALRCLK -pg 1 -lvl 2 -y 1190
+preplace inst som_system.arria10_hps_0.i_emac_emac0 -pg 1
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_13 -pg 1 -lvl 3 -y 3070
+preplace inst som_system.pll_using_AD1939_MCLK -pg 1 -lvl 2 -y 910
+preplace inst som_system.arria10_hps_0.scu -pg 1
+preplace inst som_system.arria10_hps_0.i_emac_emac1 -pg 1
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_14 -pg 1 -lvl 3 -y 3230
+preplace inst som_system.arria10_hps_0.i_gpio_2_gpio -pg 1
+preplace inst som_system.arria10_hps_0.i_emac_emac2 -pg 1
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_15 -pg 1 -lvl 3 -y 3870
+preplace inst som_system.arria10_hps_0.i_spis_0_spis -pg 1
+preplace inst som_system.arria10_hps_0.i_timer_sys_0_timer -pg 1
+preplace inst som_system.arria10_hps_0.arm_gic_0 -pg 1
+preplace inst som_system.arria10_hps_0.hps_io -pg 1
+preplace inst som_system.arria10_hps_0.eosc1 -pg 1
+preplace inst som_system.arria10_hps_0.i_i2c_emac_1_i2c -pg 1
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_0 -pg 1 -lvl 3 -y 430
+preplace inst som_system.arria10_hps_0.i_sys_mgr_core -pg 1
+preplace inst som_system.emif_a10_hps_0 -pg 1 -lvl 5 -y 1870
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_1 -pg 1 -lvl 3 -y 650
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_2 -pg 1 -lvl 3 -y 1170
+preplace inst som_system.arria10_hps_0.i_qspi_QSPIDATA -pg 1
+preplace inst som_system.arria10_hps_0.i_spim_0_spim -pg 1
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_3 -pg 1 -lvl 3 -y 1930
+preplace inst som_system.emif_0.cal_slave_component.ioaux_soft_ram -pg 1
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_4 -pg 1 -lvl 3 -y 2110
+preplace inst som_system.axi_clk_bridge -pg 1 -lvl 2 -y 1630
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_5 -pg 1 -lvl 3 -y 2270
+preplace inst som_system.arria10_hps_0.i_timer_sp_0_timer -pg 1
+preplace inst som_system.arria10_hps_0 -pg 1 -lvl 5 -y 1360
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_6 -pg 1 -lvl 3 -y 2430
+preplace inst som_system.arria10_hps_0.i_fpga_mgr_fpgamgrregs -pg 1
+preplace inst som_system.emif_0.cal_slave_component -pg 1
+preplace inst som_system.emif_0 -pg 1 -lvl 4 -y 1650
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_7 -pg 1 -lvl 3 -y 2590
+preplace inst som_system.arria10_hps_0.i_gpio_0_gpio -pg 1
+preplace inst som_system.FE_AD4020_Right -pg 1 -lvl 3 -y 200
+preplace inst som_system.arria10_hps_0.i_usbotg_1_globgrp -pg 1
+preplace inst som_system.arria10_hps_0.i_watchdog_0_l4wd -pg 1
+preplace inst som_system.arria10_hps_0.i_spis_1_spis -pg 1
+preplace inst som_system.arria10_hps_0.i_timer_sys_1_timer -pg 1
+preplace inst som_system.arria10_hps_0.hps_io.border -pg 1
+preplace inst som_system.FE_FPGA_Microphone_Encoder_Decoder_8 -pg 1 -lvl 3 -y 2750
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mem,(SLAVE)emif_a10_hps_0.mem_conduit_end) 1 0 5 NJ 1900 NJ 1900 NJ 1900 NJ 1900 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_3.RJ45_Interface,(SLAVE)som_system.mic_array3_physical) 1 0 3 NJ 1940 NJ 1940 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_1.RJ45_Interface,(SLAVE)som_system.mic_array1_physical) 1 0 3 NJ 1040 NJ 1040 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_10.RJ45_Interface,(SLAVE)som_system.mic_array10_physical) 1 0 3 NJ 3400 NJ 3400 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.emif_0_mem,(SLAVE)emif_0.mem) 1 0 4 NJ 1710 NJ 1710 NJ 1710 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)arria10_hps_0.hps_io,(SLAVE)som_system.hps_io) 1 0 5 NJ 1540 NJ 1600 NJ 1480 NJ 1560 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)FE_Qsys_AD1939_Audio_Blade_v1_0.clk_abclk,(MASTER)clk_AD1939_ABCLK.clk) 1 2 1 830
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.reset,(SLAVE)clk_1.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array9_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_9.control_conduit) 1 0 3 NJ 2960 NJ 2960 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array11_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_11.control_conduit) 1 0 3 NJ 3600 NJ 3600 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.addr_sel_in,(SLAVE)mux_ddr_0.addr_sel_pio) 1 0 2 NJ 1280 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.ad1939_physical,(SLAVE)FE_Qsys_AD1939_Audio_Blade_v1_0.connect_to_AD1939) 1 0 3 NJ 120 NJ 120 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)clk_AD1939_ALRCLK.clk_in,(SLAVE)som_system.ad1939_alrclk) 1 0 2 NJ 1200 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array14_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_14.control_conduit) 1 0 3 NJ 3280 NJ 3280 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)arria10_hps_0.i2c1_scl_in,(SLAVE)som_system.hps_i2c1_scl_in) 1 0 5 NJ 1400 NJ 1400 NJ 1400 NJ 1400 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(MASTER)clk_AD1939_ALRCLK.clk,(SLAVE)FE_Qsys_AD1939_Audio_Blade_v1_0.clk_alrclk) 1 2 1 870
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.emif_0_status,(SLAVE)emif_0.status) 1 0 4 NJ 1810 NJ 1810 NJ 1810 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.emif_0_pll_locked,(SLAVE)emif_0.pll_locked_conduit_end) 1 0 4 NJ 1770 NJ 1770 NJ 1770 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_AD4020_Left.connect_to_ad4020,(SLAVE)som_system.ad4020_left_physical) 1 0 3 NJ 330 NJ 330 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)clk_AD1939_ABCLK.clk_in,(SLAVE)som_system.ad1939_abclk) 1 0 2 NJ 1100 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_8.control_conduit,(SLAVE)som_system.mic_array8_control) 1 0 3 NJ 2800 NJ 2800 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_4.RJ45_Interface,(SLAVE)som_system.mic_array4_physical) 1 0 3 NJ 2120 NJ 2120 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array5_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_5.control_conduit) 1 0 3 NJ 2320 NJ 2320 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array13_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_13.control_conduit) 1 0 3 NJ 3120 NJ 3120 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)emif_0.oct,(SLAVE)som_system.emif_0_oct) 1 0 4 NJ 1730 NJ 1730 NJ 1730 NJ
+preplace netloc FAN_OUT<net_container>som_system</net_container>(SLAVE)FE_AD4020_Left.spi_clk,(MASTER)pll_using_AD1939_MCLK.outclk4,(SLAVE)FE_AD4020_Right.spi_clk) 1 2 1 850
+preplace netloc FAN_OUT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_1.serial_clk,(MASTER)pll_using_AD1939_MCLK.outclk3,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_12.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_9.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_10.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_11.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_15.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_4.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_13.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_14.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_3.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_7.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_0.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_6.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_8.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_2.serial_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_5.serial_clk) 1 2 1 1070
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array7_physical,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_7.RJ45_Interface) 1 0 3 NJ 2600 NJ 2600 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_7.control_conduit,(SLAVE)som_system.mic_array7_control) 1 0 3 NJ 2640 NJ 2640 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array6_physical_1,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_6.control_conduit) 1 0 3 NJ 2480 NJ 2480 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)pll_using_AD1939_MCLK.locked,(SLAVE)som_system.mclk_pll_locked) 1 0 2 NJ 940 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_14.RJ45_Interface,(SLAVE)som_system.mic_array14_physical) 1 0 3 NJ 3240 NJ 3240 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.hps_spim0,(SLAVE)arria10_hps_0.spim0) 1 0 5 NJ 1440 NJ 1420 NJ 1440 NJ 1440 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(MASTER)FE_FPGA_Microphone_Encoder_Decoder_0.mic_output,(SLAVE)FE_Qsys_AD1939_Audio_Blade_v1_0.Line_Out) 1 2 2 1170 310 1430
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.emif_0_pll_ref_clk,(SLAVE)emif_0.pll_ref_clk) 1 0 4 NJ 1790 NJ 1790 NJ 1790 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)axi_clk_bridge.in_clk,(SLAVE)som_system.axi_clk_bridge_in_clk) 1 0 2 NJ 1560 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_2.RJ45_Interface,(SLAVE)som_system.mic_array2_physical) 1 0 3 NJ 1260 NJ 1260 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array13_physical,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_13.RJ45_Interface) 1 0 3 NJ 3080 NJ 3080 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array2_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_2.control_conduit) 1 0 3 NJ 1180 NJ 1180 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)arria10_hps_0.emif,(SLAVE)emif_a10_hps_0.hps_emif_conduit_end) 1 4 1 2160
+preplace netloc FAN_OUT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_3.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_13.sys_clk,(SLAVE)FE_AD4020_Left.sys_clock,(SLAVE)FE_AD5791_v1_Right.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_7.sys_clk,(MASTER)pll_using_AD1939_MCLK.outclk0,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_5.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_2.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_11.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_15.sys_clk,(SLAVE)FE_Qsys_AD1939_Audio_Blade_v1_0.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_1.sys_clk,(SLAVE)FE_AD5791_v1_Left.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_0.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_10.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_4.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_12.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_9.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_8.sys_clk,(SLAVE)FE_AD7768_v1_0.sys_clk,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_6.sys_clk,(SLAVE)FE_AD4020_Right.sys_clock) 1 2 2 970 1090 1490
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array15_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_15.control_conduit) 1 0 3 NJ 3920 NJ 3920 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array4_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_4.control_conduit) 1 0 3 NJ 2160 NJ 2160 NJ
+preplace netloc FAN_OUT<net_container>som_system</net_container>(SLAVE)FE_AD5791_v1_Right.double_spi_clk,(MASTER)pll_using_AD1939_MCLK.outclk2,(SLAVE)FE_AD5791_v1_Left.double_spi_clk) 1 2 2 1030 1050 1450
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array11_physical,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_11.RJ45_Interface) 1 0 3 NJ 3560 NJ 3560 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.ad1939_mclk,(SLAVE)pll_using_AD1939_MCLK.refclk) 1 0 2 NJ 960 NJ
+preplace netloc FAN_OUT<net_container>som_system</net_container>(SLAVE)mux_ddr_0.reset,(SLAVE)pll_using_AD1939_MCLK.reset,(SLAVE)FE_AD4020_Left.sys_reset,(SLAVE)clk_AD1939_ABCLK.clk_in_reset,(SLAVE)arria10_hps_0.f2h_axi_reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_2.reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_9.reset,(SLAVE)clk_AD1939_ALRCLK.clk_in_reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_14.reset,(MASTER)clk_1.clk_reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_13.reset,(SLAVE)arria10_hps_0.f2sdram0_reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_5.reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_10.reset,(SLAVE)FE_AD7768_v1_0.sys_reset,(SLAVE)FE_AD4020_Right.sys_reset,(SLAVE)som_config.reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_3.reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_7.reset,(SLAVE)FE_AD5791_v1_Left.sys_reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_4.reset,(SLAVE)arria10_hps_0.h2f_lw_axi_reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_11.reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_8.reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_1.reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_0.reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_12.reset,(SLAVE)FE_Qsys_AD1939_Audio_Blade_v1_0.sys_reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_15.reset,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_6.reset,(SLAVE)FE_AD5791_v1_Right.sys_reset) 1 1 4 470 1460 1010 1340 1530 1360 2120
+preplace netloc EXPORT<net_container>som_system</net_container>(MASTER)arria10_hps_0.i2c1_clk,(MASTER)som_system.hps_i2c1_clk) 1 5 1 NJ
+preplace netloc FAN_OUT<net_container>som_system</net_container>(SLAVE)FE_AD5791_v1_Left.spi_clk,(SLAVE)FE_AD5791_v1_Right.spi_clk,(MASTER)pll_using_AD1939_MCLK.outclk1) 1 2 2 1050 1070 1470
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(MASTER)emif_0.emif_usr_clk,(SLAVE)mm_clock_crossing_bridge_0.m0_clk) 1 2 3 1170 1860 NJ 1870 1960
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)emif_0.ctrl_amm_0,(MASTER)mm_clock_crossing_bridge_0.m0) 1 3 1 1430
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.clk_100,(SLAVE)clk_1.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.ad4020_right_physical,(SLAVE)FE_AD4020_Right.connect_to_ad4020) 1 0 3 NJ 210 NJ 210 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array0_physical,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_0.RJ45_Interface) 1 0 3 NJ 440 NJ 440 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array8_physical,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_8.RJ45_Interface) 1 0 3 NJ 2760 NJ 2760 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array10_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_10.control_conduit) 1 0 3 NJ 3440 NJ 3440 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_AD5791_v1_Right.connect_to_AD5791,(SLAVE)som_system.ad5791_right_physical) 1 0 4 NJ 1080 NJ 1080 NJ 1030 NJ
+preplace netloc FAN_OUT<net_container>som_system</net_container>(MASTER)clk_1.clk,(SLAVE)arria10_hps_0.f2h_axi_clock,(SLAVE)som_config.clk,(SLAVE)mux_ddr_0.clock_sink,(SLAVE)arria10_hps_0.f2sdram0_clock,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_14.sys_clk,(SLAVE)arria10_hps_0.h2f_lw_axi_clock) 1 1 4 450 1440 850 1360 NJ 1340 2140
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(MASTER)FE_AD4020_Right.Line_In,(SLAVE)FE_AD5791_v1_Right.Line_Out) 1 3 1 1510
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.oct,(SLAVE)emif_a10_hps_0.oct_conduit_end) 1 0 5 NJ 1920 NJ 1920 NJ 1920 NJ 1920 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.emif_0_pll_extra_clk_0,(SLAVE)emif_0.pll_extra_clk_0_conduit_end) 1 0 4 NJ 1750 NJ 1750 NJ 1750 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_AD7768_v1_0.AD7768_physical,(SLAVE)som_system.ad7768_physical) 1 0 3 NJ 1160 NJ 1160 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array9_physical,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_9.RJ45_Interface) 1 0 3 NJ 2920 NJ 2920 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)arria10_hps_0.i2c1,(SLAVE)som_system.hps_i2c1) 1 0 5 NJ 1380 NJ 1380 NJ 1380 NJ 1380 NJ
+preplace netloc INTERCONNECT<net_container>som_system</net_container>(SLAVE)mm_clock_crossing_bridge_0.m0_reset,(SLAVE)arria10_hps_0.h2f_axi_reset,(SLAVE)mm_clock_crossing_bridge_0.s0_reset,(MASTER)emif_0.emif_usr_reset_n,(MASTER)arria10_hps_0.h2f_reset) 1 2 4 1150 1520 NJ 1540 1980 1320 2550
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array5_physical,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_5.RJ45_Interface) 1 0 3 NJ 2280 NJ 2280 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_12.RJ45_Interface,(SLAVE)som_system.mic_array12_physical) 1 0 3 NJ 3720 NJ 3720 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array3_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_3.control_conduit) 1 0 3 NJ 1980 NJ 1980 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(MASTER)arria10_hps_0.h2f_axi_master,(SLAVE)mux_ddr_0.altera_axi_slave) 1 1 5 490 1580 NJ 1460 NJ 1500 NJ 1720 2530
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array0_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_0.control_conduit) 1 0 3 NJ 480 NJ 480 NJ
+preplace netloc FAN_OUT<net_container>som_system</net_container>(SLAVE)arria10_hps_0.h2f_axi_clock,(MASTER)axi_clk_bridge.out_clk,(SLAVE)mm_clock_crossing_bridge_0.s0_clk) 1 2 3 1130 1500 NJ 1520 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(MASTER)arria10_hps_0.spim0_sclk_out,(MASTER)som_system.hps_spim0_sclk_out) 1 5 1 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)som_config.s1,(MASTER)arria10_hps_0.h2f_lw_axi_master) 1 1 5 510 1620 NJ 1540 NJ 1600 NJ 1740 2510
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_config.external_connection,(SLAVE)som_system.som_config_pio) 1 0 2 NJ 1500 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(MASTER)som_system.hps_0_h2f_reset,(MASTER)arria10_hps_0.h2f_cold_reset) 1 5 1 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.emif_0_global_reset_n,(SLAVE)emif_0.global_reset_n) 1 0 4 NJ 1680 NJ 1680 NJ 1680 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array1_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_1.control_conduit) 1 0 3 NJ 1060 NJ 1060 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)mm_clock_crossing_bridge_0.s0,(MASTER)mux_ddr_0.altera_axi_master) 1 2 1 930
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.ddr_ref_clk,(SLAVE)emif_a10_hps_0.pll_ref_clk_clock_sink) 1 0 5 NJ 2100 NJ 2100 NJ 2100 NJ 2100 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(MASTER)FE_FPGA_Microphone_Encoder_Decoder_1.mic_output,(SLAVE)FE_Qsys_AD1939_Audio_Blade_v1_0.Headphone_Out) 1 2 2 1150 640 1430
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)emif_a10_hps_0.global_reset_reset_sink,(SLAVE)som_system.emif_a10_hps_0_global_reset_reset_sink) 1 0 5 NJ 1880 NJ 1880 NJ 1880 NJ 1850 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_6.RJ45_Interface,(SLAVE)som_system.mic_array6_physical) 1 0 3 NJ 2440 NJ 2440 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array15_physical,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_15.RJ45_Interface) 1 0 3 NJ 3880 NJ 3880 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.mic_array12_control,(SLAVE)FE_FPGA_Microphone_Encoder_Decoder_12.control_conduit) 1 0 3 NJ 3760 NJ 3760 NJ
+preplace netloc EXPORT<net_container>som_system</net_container>(SLAVE)som_system.ad5791_left_physical,(SLAVE)FE_AD5791_v1_Left.connect_to_AD5791) 1 0 4 NJ 900 NJ 900 NJ 900 NJ
+preplace netloc POINT_TO_POINT<net_container>som_system</net_container>(SLAVE)FE_AD5791_v1_Left.Line_Out,(MASTER)FE_AD4020_Left.Line_In) 1 3 1 1450
+levelinfo -pg 1 0 200 2710
+levelinfo -hier som_system 210 260 580 1230 1780 2320 2570

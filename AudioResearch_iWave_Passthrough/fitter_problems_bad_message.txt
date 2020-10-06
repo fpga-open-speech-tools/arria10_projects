@@ -1,0 +1,22 @@
+Error (175020): The Fitter cannot place logic pin in region (0, 93) to (0, 93), to which it is constrained, because there are no valid locations in the region for logic of this type.
+  Info (14596): Information about the failing component(s):
+    Info (175028): The pin name(s): MSATA_B_n
+  Error (16234): No legal location could be found out of 1 considered location(s).  Reasons why each location could not be used are summarized below:
+    Error (184016): There were not enough differential input pin locations available (1 location affected)
+      Info (175029): pin containing PIN_E30. Already placed at this location: pin MSATA_B
+        Info (175015): The I/O pad MSATA_B is constrained to the location PIN_E30 due to: User Location Constraints (PIN_E30)
+          Info (14709): The constrained I/O pad is contained within this pin
+    Info (175015): The I/O pad MSATA_B_n is constrained to the location PIN_E29 due to: User Location Constraints (PIN_E29)
+      Info (14709): The constrained I/O pad is contained within this pin
+
+Error (175020): The Fitter cannot place logic pin in region (0, 93) to (0, 93), to which it is constrained, because there are no valid locations in the region for logic of this type.
+  Info (14596): Information about the failing component(s):
+    Info (175028): The pin name(s): MSATA_A_n
+  Error (16234): No legal location could be found out of 1 considered location(s).  Reasons why each location could not be used are summarized below:
+    Error (184016): There were not enough differential output pin locations available (1 location affected)
+      Info (175029): pin containing PIN_D32. Already placed at this location: pin MSATA_A
+        Info (175015): The I/O pad MSATA_A is constrained to the location PIN_D32 due to: User Location Constraints (PIN_D32)
+          Info (14709): The constrained I/O pad is contained within this pin
+    Info (175015): The I/O pad MSATA_A_n is constrained to the location PIN_D31 due to: User Location Constraints (PIN_D31)
+      Info (14709): The constrained I/O pad is contained within this pin
+

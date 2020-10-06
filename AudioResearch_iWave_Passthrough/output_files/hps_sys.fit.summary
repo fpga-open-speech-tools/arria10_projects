@@ -1,0 +1,17 @@
+Fitter Status : Successful - Sat Sep 28 19:50:17 2019
+Quartus Prime Version : 18.1.0 Build 222 09/21/2018 SJ Pro Edition
+Revision Name : hps_sys
+Top-level Entity Name : hps_top
+Family : Arria 10
+Device : 10AS066H2F34I1HG
+Timing Models : Final
+Logic utilization (in ALMs) : 48,049 / 251,680 ( 19 % )
+Total registers : 78089
+Total pins : 509 / 604 ( 84 % )
+Total virtual pins : 0
+Total block memory bits : 3,713,440 / 43,642,880 ( 9 % )
+Total RAM Blocks : 266 / 2,131 ( 12 % )
+Total DSP Blocks : 0 / 1,687 ( 0 % )
+Total HSSI RX channels : 16 / 24 ( 67 % )
+Total HSSI TX channels : 16 / 24 ( 67 % )
+Total PLLs : 37 / 64 ( 58 % )

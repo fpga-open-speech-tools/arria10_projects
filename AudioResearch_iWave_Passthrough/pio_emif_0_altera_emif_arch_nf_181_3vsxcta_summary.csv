@@ -1,0 +1,9 @@
+Core: pio_emif_0_altera_emif_arch_nf_181_3vsxcta - Instance: u0|emif_0|emif_0
+Path, Setup Margin, Hold Margin
+"Address/Command (Slow 900mV 100C Model)",0.159,0.159
+"Core (Slow 900mV 100C Model)",-1.235,0.053
+"Core Recovery/Removal (Slow 900mV 100C Model)",1.958,0.342
+"DQS Gating (Slow 900mV 100C Model)",0.529,0.529
+"Read Capture (Slow 900mV 100C Model)",0.016,0.016
+"Write (Slow 900mV 100C Model)",0.028,0.028
+"Write Levelling (Slow 900mV 100C Model)",0.122,0.122
