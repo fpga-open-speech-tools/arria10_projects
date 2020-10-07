@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="som_system" kind="som_system" version="1.0" fabric="QSYS">
  <!-- Format version 18.0 614 (Future versions may contain additional information.) -->
- <!-- 2020.09.16.07:26:04 -->
+ <!-- 2020.10.06.10:58:20 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1600262762</value>
+  <value>1602003497</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -119462,7 +119462,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.DATA_WIDTH</name>
-   <value>2</value>
+   <value>5</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.DO_TEST_BENCH_WIRING</name>
@@ -119482,7 +119482,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.HAS_IN</name>
-   <value>0</value>
+   <value>1</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.HAS_OUT</name>
@@ -119490,7 +119490,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.HAS_TRI</name>
-   <value>1</value>
+   <value>0</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.IRQ_TYPE</name>
@@ -119514,7 +119514,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.altr,gpio-bank-width</name>
-   <value>2</value>
+   <value>5</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.resetvalue</name>
@@ -119536,7 +119536,7 @@ the requested settings for a module instance. -->
    <type>boolean</type>
    <value>true</value>
    <derived>false</derived>
-   <enabled>true</enabled>
+   <enabled>false</enabled>
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
@@ -119550,7 +119550,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="direction">
    <type>java.lang.String</type>
-   <value>Bidir</value>
+   <value>Input</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -119584,7 +119584,7 @@ the requested settings for a module instance. -->
    <type>long</type>
    <value>0</value>
    <derived>false</derived>
-   <enabled>true</enabled>
+   <enabled>false</enabled>
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
@@ -119606,7 +119606,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="width">
    <type>int</type>
-   <value>2</value>
+   <value>5</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -119624,7 +119624,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_has_tri">
    <type>boolean</type>
-   <value>true</value>
+   <value>false</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -119640,7 +119640,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_has_in">
    <type>boolean</type>
-   <value>false</value>
+   <value>true</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -120149,24 +120149,6 @@ parameters are a RESULT of the module parameters. -->
     <role>address</role>
    </port>
    <port>
-    <name>write_n</name>
-    <direction>Input</direction>
-    <width>1</width>
-    <role>write_n</role>
-   </port>
-   <port>
-    <name>writedata</name>
-    <direction>Input</direction>
-    <width>32</width>
-    <role>writedata</role>
-   </port>
-   <port>
-    <name>chipselect</name>
-    <direction>Input</direction>
-    <width>1</width>
-    <role>chipselect</role>
-   </port>
-   <port>
     <name>readdata</name>
     <direction>Output</direction>
     <width>32</width>
@@ -120212,9 +120194,9 @@ parameters are a RESULT of the module parameters. -->
    <type>conduit</type>
    <isStart>false</isStart>
    <port>
-    <name>bidir_port</name>
-    <direction>Bidir</direction>
-    <width>2</width>
+    <name>in_port</name>
+    <direction>Input</direction>
+    <width>5</width>
     <role>export</role>
    </port>
   </interface>

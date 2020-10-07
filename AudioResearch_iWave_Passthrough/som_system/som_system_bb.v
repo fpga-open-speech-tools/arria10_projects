@@ -424,5 +424,5 @@ module som_system (
 	output		mic_array9_physical_serial_clk_out;
 	input		oct_oct_rzqin;
 	input		reset_reset_n;
-	inout	[1:0]	som_config_pio_export;
+	input	[4:0]	som_config_pio_export;
 endmodule

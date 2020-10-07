@@ -249,7 +249,7 @@ entity som_system is
 		mic_array9_physical_serial_clk_out             : out   std_logic;                                        --                                       .serial_clk_out
 		oct_oct_rzqin                                  : in    std_logic                     := '0';             --                                    oct.oct_rzqin
 		reset_reset_n                                  : in    std_logic                     := '0';             --                                  reset.reset_n
-		som_config_pio_export                          : inout std_logic_vector(1 downto 0)  := (others => '0')  --                         som_config_pio.export
+		som_config_pio_export                          : in    std_logic_vector(4 downto 0)  := (others => '0')  --                         som_config_pio.export
 	);
 end entity som_system;
 
@@ -558,11 +558,8 @@ architecture rtl of som_system is
 	signal arria10_hps_0_h2f_lw_axi_master_awvalid                       : std_logic;                       -- arria10_hps_0:h2f_lw_AWVALID -> mm_interconnect_2:arria10_hps_0_h2f_lw_axi_master_awvalid
 	signal arria10_hps_0_h2f_lw_axi_master_aruser                        : std_logic_vector(4 downto 0);    -- arria10_hps_0:h2f_lw_ARUSER -> mm_interconnect_2:arria10_hps_0_h2f_lw_axi_master_aruser
 	signal arria10_hps_0_h2f_lw_axi_master_rvalid                        : std_logic;                       -- mm_interconnect_2:arria10_hps_0_h2f_lw_axi_master_rvalid -> arria10_hps_0:h2f_lw_RVALID
-	signal mm_interconnect_2_som_config_s1_chipselect                    : std_logic;                       -- mm_interconnect_2:som_config_s1_chipselect -> som_config:chipselect
 	signal mm_interconnect_2_som_config_s1_readdata                      : std_logic_vector(31 downto 0);   -- som_config:readdata -> mm_interconnect_2:som_config_s1_readdata
 	signal mm_interconnect_2_som_config_s1_address                       : std_logic_vector(2 downto 0);    -- mm_interconnect_2:som_config_s1_address -> som_config:address
-	signal mm_interconnect_2_som_config_s1_write                         : std_logic;                       -- mm_interconnect_2:som_config_s1_write -> mm_interconnect_2_som_config_s1_write:in
-	signal mm_interconnect_2_som_config_s1_writedata                     : std_logic_vector(31 downto 0);   -- mm_interconnect_2:som_config_s1_writedata -> som_config:writedata
 	signal mm_clock_crossing_bridge_0_m0_waitrequest                     : std_logic;                       -- mm_interconnect_3:mm_clock_crossing_bridge_0_m0_waitrequest -> mm_clock_crossing_bridge_0:m0_waitrequest
 	signal mm_clock_crossing_bridge_0_m0_readdata                        : std_logic_vector(511 downto 0);  -- mm_interconnect_3:mm_clock_crossing_bridge_0_m0_readdata -> mm_clock_crossing_bridge_0:m0_readdata
 	signal mm_clock_crossing_bridge_0_m0_debugaccess                     : std_logic;                       -- mm_clock_crossing_bridge_0:m0_debugaccess -> mm_interconnect_3:mm_clock_crossing_bridge_0_m0_debugaccess
@@ -622,7 +619,6 @@ architecture rtl of som_system is
 	signal rst_controller_003_reset_out_reset                            : std_logic;                       -- rst_controller_003:reset_out -> [mm_clock_crossing_bridge_0:m0_reset, mm_interconnect_3:mm_clock_crossing_bridge_0_m0_reset_reset_bridge_in_reset_reset]
 	signal rst_controller_004_reset_out_reset                            : std_logic;                       -- rst_controller_004:reset_out -> [mm_clock_crossing_bridge_0:s0_reset, mm_interconnect_0:mm_clock_crossing_bridge_0_s0_reset_reset_bridge_in_reset_reset]
 	signal reset_reset_n_ports_inv                                       : std_logic;                       -- reset_reset_n:inv -> [pll_using_AD1939_MCLK:rst, rst_controller:reset_in0, rst_controller_001:reset_in0]
-	signal mm_interconnect_2_som_config_s1_write_ports_inv               : std_logic;                       -- mm_interconnect_2_som_config_s1_write:inv -> som_config:write_n
 	signal mm_interconnect_3_emif_0_ctrl_amm_0_inv                       : std_logic;                       -- emif_0_ctrl_amm_0_waitrequest:inv -> mm_interconnect_3:emif_0_ctrl_amm_0_waitrequest
 	signal rst_controller_reset_out_reset_ports_inv                      : std_logic;                       -- rst_controller_reset_out_reset:inv -> [FE_AD4020_Left:sys_reset_n, FE_AD4020_Right:sys_reset_n, FE_AD5791_v1_Left:sys_reset_n, FE_AD5791_v1_Right:sys_reset_n, FE_AD7768_v1_0:sys_reset_n, FE_FPGA_Microphone_Encoder_Decoder_0:reset_n, FE_FPGA_Microphone_Encoder_Decoder_10:reset_n, FE_FPGA_Microphone_Encoder_Decoder_11:reset_n, FE_FPGA_Microphone_Encoder_Decoder_12:reset_n, FE_FPGA_Microphone_Encoder_Decoder_13:reset_n, FE_FPGA_Microphone_Encoder_Decoder_15:reset_n, FE_FPGA_Microphone_Encoder_Decoder_1:reset_n, FE_FPGA_Microphone_Encoder_Decoder_2:reset_n, FE_FPGA_Microphone_Encoder_Decoder_3:reset_n, FE_FPGA_Microphone_Encoder_Decoder_4:reset_n, FE_FPGA_Microphone_Encoder_Decoder_5:reset_n, FE_FPGA_Microphone_Encoder_Decoder_6:reset_n, FE_FPGA_Microphone_Encoder_Decoder_7:reset_n, FE_FPGA_Microphone_Encoder_Decoder_8:reset_n, FE_FPGA_Microphone_Encoder_Decoder_9:reset_n]
 	signal rst_controller_001_reset_out_reset_ports_inv                  : std_logic;                       -- rst_controller_001_reset_out_reset:inv -> [FE_FPGA_Microphone_Encoder_Decoder_14:reset_n, arria10_hps_0:f2h_axi_rst, arria10_hps_0:f2s_sdram0_rst, arria10_hps_0:h2f_lw_axi_rst, som_config:reset_n]
@@ -1718,16 +1714,13 @@ begin
 			outclk_4 => pll_using_ad1939_mclk_outclk4_clk  -- outclk4.clk
 		);
 
-	som_config : component som_system_altera_avalon_pio_180.som_system_pkg.som_system_altera_avalon_pio_180_z5a3aci
+	som_config : component som_system_altera_avalon_pio_180.som_system_pkg.som_system_altera_avalon_pio_180_4xcd3ea
 		port map (
-			clk        => clk_100_clk,                                     --                 clk.clk
-			reset_n    => rst_controller_001_reset_out_reset_ports_inv,    --               reset.reset_n
-			address    => mm_interconnect_2_som_config_s1_address,         --                  s1.address
-			write_n    => mm_interconnect_2_som_config_s1_write_ports_inv, --                    .write_n
-			writedata  => mm_interconnect_2_som_config_s1_writedata,       --                    .writedata
-			chipselect => mm_interconnect_2_som_config_s1_chipselect,      --                    .chipselect
-			readdata   => mm_interconnect_2_som_config_s1_readdata,        --                    .readdata
-			bidir_port => som_config_pio_export                            -- external_connection.export
+			clk      => clk_100_clk,                                  --                 clk.clk
+			reset_n  => rst_controller_001_reset_out_reset_ports_inv, --               reset.reset_n
+			address  => mm_interconnect_2_som_config_s1_address,      --                  s1.address
+			readdata => mm_interconnect_2_som_config_s1_readdata,     --                    .readdata
+			in_port  => som_config_pio_export                         -- external_connection.export
 		);
 
 	mm_interconnect_0 : component som_system_altera_mm_interconnect_180.som_system_pkg.som_system_altera_mm_interconnect_180_d4sniia
@@ -1870,53 +1863,50 @@ begin
 			mux_ddr_0_reset_reset_bridge_in_reset_reset             => rst_controller_001_reset_out_reset                    --             mux_ddr_0_reset_reset_bridge_in_reset.reset
 		);
 
-	mm_interconnect_2 : component som_system_altera_mm_interconnect_180.som_system_pkg.som_system_altera_mm_interconnect_180_g5k2ojy
+	mm_interconnect_2 : component som_system_altera_mm_interconnect_180.som_system_pkg.som_system_altera_mm_interconnect_180_lpsnuca
 		port map (
-			arria10_hps_0_h2f_lw_axi_master_awid                       => arria10_hps_0_h2f_lw_axi_master_awid,       --                      arria10_hps_0_h2f_lw_axi_master.awid
-			arria10_hps_0_h2f_lw_axi_master_awaddr                     => arria10_hps_0_h2f_lw_axi_master_awaddr,     --                                                     .awaddr
-			arria10_hps_0_h2f_lw_axi_master_awlen                      => arria10_hps_0_h2f_lw_axi_master_awlen,      --                                                     .awlen
-			arria10_hps_0_h2f_lw_axi_master_awsize                     => arria10_hps_0_h2f_lw_axi_master_awsize,     --                                                     .awsize
-			arria10_hps_0_h2f_lw_axi_master_awburst                    => arria10_hps_0_h2f_lw_axi_master_awburst,    --                                                     .awburst
-			arria10_hps_0_h2f_lw_axi_master_awlock                     => arria10_hps_0_h2f_lw_axi_master_awlock,     --                                                     .awlock
-			arria10_hps_0_h2f_lw_axi_master_awcache                    => arria10_hps_0_h2f_lw_axi_master_awcache,    --                                                     .awcache
-			arria10_hps_0_h2f_lw_axi_master_awprot                     => arria10_hps_0_h2f_lw_axi_master_awprot,     --                                                     .awprot
-			arria10_hps_0_h2f_lw_axi_master_awuser                     => arria10_hps_0_h2f_lw_axi_master_awuser,     --                                                     .awuser
-			arria10_hps_0_h2f_lw_axi_master_awvalid                    => arria10_hps_0_h2f_lw_axi_master_awvalid,    --                                                     .awvalid
-			arria10_hps_0_h2f_lw_axi_master_awready                    => arria10_hps_0_h2f_lw_axi_master_awready,    --                                                     .awready
-			arria10_hps_0_h2f_lw_axi_master_wid                        => arria10_hps_0_h2f_lw_axi_master_wid,        --                                                     .wid
-			arria10_hps_0_h2f_lw_axi_master_wdata                      => arria10_hps_0_h2f_lw_axi_master_wdata,      --                                                     .wdata
-			arria10_hps_0_h2f_lw_axi_master_wstrb                      => arria10_hps_0_h2f_lw_axi_master_wstrb,      --                                                     .wstrb
-			arria10_hps_0_h2f_lw_axi_master_wlast                      => arria10_hps_0_h2f_lw_axi_master_wlast,      --                                                     .wlast
-			arria10_hps_0_h2f_lw_axi_master_wvalid                     => arria10_hps_0_h2f_lw_axi_master_wvalid,     --                                                     .wvalid
-			arria10_hps_0_h2f_lw_axi_master_wready                     => arria10_hps_0_h2f_lw_axi_master_wready,     --                                                     .wready
-			arria10_hps_0_h2f_lw_axi_master_bid                        => arria10_hps_0_h2f_lw_axi_master_bid,        --                                                     .bid
-			arria10_hps_0_h2f_lw_axi_master_bresp                      => arria10_hps_0_h2f_lw_axi_master_bresp,      --                                                     .bresp
-			arria10_hps_0_h2f_lw_axi_master_bvalid                     => arria10_hps_0_h2f_lw_axi_master_bvalid,     --                                                     .bvalid
-			arria10_hps_0_h2f_lw_axi_master_bready                     => arria10_hps_0_h2f_lw_axi_master_bready,     --                                                     .bready
-			arria10_hps_0_h2f_lw_axi_master_arid                       => arria10_hps_0_h2f_lw_axi_master_arid,       --                                                     .arid
-			arria10_hps_0_h2f_lw_axi_master_araddr                     => arria10_hps_0_h2f_lw_axi_master_araddr,     --                                                     .araddr
-			arria10_hps_0_h2f_lw_axi_master_arlen                      => arria10_hps_0_h2f_lw_axi_master_arlen,      --                                                     .arlen
-			arria10_hps_0_h2f_lw_axi_master_arsize                     => arria10_hps_0_h2f_lw_axi_master_arsize,     --                                                     .arsize
-			arria10_hps_0_h2f_lw_axi_master_arburst                    => arria10_hps_0_h2f_lw_axi_master_arburst,    --                                                     .arburst
-			arria10_hps_0_h2f_lw_axi_master_arlock                     => arria10_hps_0_h2f_lw_axi_master_arlock,     --                                                     .arlock
-			arria10_hps_0_h2f_lw_axi_master_arcache                    => arria10_hps_0_h2f_lw_axi_master_arcache,    --                                                     .arcache
-			arria10_hps_0_h2f_lw_axi_master_arprot                     => arria10_hps_0_h2f_lw_axi_master_arprot,     --                                                     .arprot
-			arria10_hps_0_h2f_lw_axi_master_aruser                     => arria10_hps_0_h2f_lw_axi_master_aruser,     --                                                     .aruser
-			arria10_hps_0_h2f_lw_axi_master_arvalid                    => arria10_hps_0_h2f_lw_axi_master_arvalid,    --                                                     .arvalid
-			arria10_hps_0_h2f_lw_axi_master_arready                    => arria10_hps_0_h2f_lw_axi_master_arready,    --                                                     .arready
-			arria10_hps_0_h2f_lw_axi_master_rid                        => arria10_hps_0_h2f_lw_axi_master_rid,        --                                                     .rid
-			arria10_hps_0_h2f_lw_axi_master_rdata                      => arria10_hps_0_h2f_lw_axi_master_rdata,      --                                                     .rdata
-			arria10_hps_0_h2f_lw_axi_master_rresp                      => arria10_hps_0_h2f_lw_axi_master_rresp,      --                                                     .rresp
-			arria10_hps_0_h2f_lw_axi_master_rlast                      => arria10_hps_0_h2f_lw_axi_master_rlast,      --                                                     .rlast
-			arria10_hps_0_h2f_lw_axi_master_rvalid                     => arria10_hps_0_h2f_lw_axi_master_rvalid,     --                                                     .rvalid
-			arria10_hps_0_h2f_lw_axi_master_rready                     => arria10_hps_0_h2f_lw_axi_master_rready,     --                                                     .rready
-			clk_1_clk_clk                                              => clk_100_clk,                                --                                            clk_1_clk.clk
-			arria10_hps_0_h2f_lw_axi_reset_reset_bridge_in_reset_reset => rst_controller_001_reset_out_reset,         -- arria10_hps_0_h2f_lw_axi_reset_reset_bridge_in_reset.reset
-			som_config_s1_address                                      => mm_interconnect_2_som_config_s1_address,    --                                        som_config_s1.address
-			som_config_s1_write                                        => mm_interconnect_2_som_config_s1_write,      --                                                     .write
-			som_config_s1_readdata                                     => mm_interconnect_2_som_config_s1_readdata,   --                                                     .readdata
-			som_config_s1_writedata                                    => mm_interconnect_2_som_config_s1_writedata,  --                                                     .writedata
-			som_config_s1_chipselect                                   => mm_interconnect_2_som_config_s1_chipselect  --                                                     .chipselect
+			arria10_hps_0_h2f_lw_axi_master_awid                       => arria10_hps_0_h2f_lw_axi_master_awid,     --                      arria10_hps_0_h2f_lw_axi_master.awid
+			arria10_hps_0_h2f_lw_axi_master_awaddr                     => arria10_hps_0_h2f_lw_axi_master_awaddr,   --                                                     .awaddr
+			arria10_hps_0_h2f_lw_axi_master_awlen                      => arria10_hps_0_h2f_lw_axi_master_awlen,    --                                                     .awlen
+			arria10_hps_0_h2f_lw_axi_master_awsize                     => arria10_hps_0_h2f_lw_axi_master_awsize,   --                                                     .awsize
+			arria10_hps_0_h2f_lw_axi_master_awburst                    => arria10_hps_0_h2f_lw_axi_master_awburst,  --                                                     .awburst
+			arria10_hps_0_h2f_lw_axi_master_awlock                     => arria10_hps_0_h2f_lw_axi_master_awlock,   --                                                     .awlock
+			arria10_hps_0_h2f_lw_axi_master_awcache                    => arria10_hps_0_h2f_lw_axi_master_awcache,  --                                                     .awcache
+			arria10_hps_0_h2f_lw_axi_master_awprot                     => arria10_hps_0_h2f_lw_axi_master_awprot,   --                                                     .awprot
+			arria10_hps_0_h2f_lw_axi_master_awuser                     => arria10_hps_0_h2f_lw_axi_master_awuser,   --                                                     .awuser
+			arria10_hps_0_h2f_lw_axi_master_awvalid                    => arria10_hps_0_h2f_lw_axi_master_awvalid,  --                                                     .awvalid
+			arria10_hps_0_h2f_lw_axi_master_awready                    => arria10_hps_0_h2f_lw_axi_master_awready,  --                                                     .awready
+			arria10_hps_0_h2f_lw_axi_master_wid                        => arria10_hps_0_h2f_lw_axi_master_wid,      --                                                     .wid
+			arria10_hps_0_h2f_lw_axi_master_wdata                      => arria10_hps_0_h2f_lw_axi_master_wdata,    --                                                     .wdata
+			arria10_hps_0_h2f_lw_axi_master_wstrb                      => arria10_hps_0_h2f_lw_axi_master_wstrb,    --                                                     .wstrb
+			arria10_hps_0_h2f_lw_axi_master_wlast                      => arria10_hps_0_h2f_lw_axi_master_wlast,    --                                                     .wlast
+			arria10_hps_0_h2f_lw_axi_master_wvalid                     => arria10_hps_0_h2f_lw_axi_master_wvalid,   --                                                     .wvalid
+			arria10_hps_0_h2f_lw_axi_master_wready                     => arria10_hps_0_h2f_lw_axi_master_wready,   --                                                     .wready
+			arria10_hps_0_h2f_lw_axi_master_bid                        => arria10_hps_0_h2f_lw_axi_master_bid,      --                                                     .bid
+			arria10_hps_0_h2f_lw_axi_master_bresp                      => arria10_hps_0_h2f_lw_axi_master_bresp,    --                                                     .bresp
+			arria10_hps_0_h2f_lw_axi_master_bvalid                     => arria10_hps_0_h2f_lw_axi_master_bvalid,   --                                                     .bvalid
+			arria10_hps_0_h2f_lw_axi_master_bready                     => arria10_hps_0_h2f_lw_axi_master_bready,   --                                                     .bready
+			arria10_hps_0_h2f_lw_axi_master_arid                       => arria10_hps_0_h2f_lw_axi_master_arid,     --                                                     .arid
+			arria10_hps_0_h2f_lw_axi_master_araddr                     => arria10_hps_0_h2f_lw_axi_master_araddr,   --                                                     .araddr
+			arria10_hps_0_h2f_lw_axi_master_arlen                      => arria10_hps_0_h2f_lw_axi_master_arlen,    --                                                     .arlen
+			arria10_hps_0_h2f_lw_axi_master_arsize                     => arria10_hps_0_h2f_lw_axi_master_arsize,   --                                                     .arsize
+			arria10_hps_0_h2f_lw_axi_master_arburst                    => arria10_hps_0_h2f_lw_axi_master_arburst,  --                                                     .arburst
+			arria10_hps_0_h2f_lw_axi_master_arlock                     => arria10_hps_0_h2f_lw_axi_master_arlock,   --                                                     .arlock
+			arria10_hps_0_h2f_lw_axi_master_arcache                    => arria10_hps_0_h2f_lw_axi_master_arcache,  --                                                     .arcache
+			arria10_hps_0_h2f_lw_axi_master_arprot                     => arria10_hps_0_h2f_lw_axi_master_arprot,   --                                                     .arprot
+			arria10_hps_0_h2f_lw_axi_master_aruser                     => arria10_hps_0_h2f_lw_axi_master_aruser,   --                                                     .aruser
+			arria10_hps_0_h2f_lw_axi_master_arvalid                    => arria10_hps_0_h2f_lw_axi_master_arvalid,  --                                                     .arvalid
+			arria10_hps_0_h2f_lw_axi_master_arready                    => arria10_hps_0_h2f_lw_axi_master_arready,  --                                                     .arready
+			arria10_hps_0_h2f_lw_axi_master_rid                        => arria10_hps_0_h2f_lw_axi_master_rid,      --                                                     .rid
+			arria10_hps_0_h2f_lw_axi_master_rdata                      => arria10_hps_0_h2f_lw_axi_master_rdata,    --                                                     .rdata
+			arria10_hps_0_h2f_lw_axi_master_rresp                      => arria10_hps_0_h2f_lw_axi_master_rresp,    --                                                     .rresp
+			arria10_hps_0_h2f_lw_axi_master_rlast                      => arria10_hps_0_h2f_lw_axi_master_rlast,    --                                                     .rlast
+			arria10_hps_0_h2f_lw_axi_master_rvalid                     => arria10_hps_0_h2f_lw_axi_master_rvalid,   --                                                     .rvalid
+			arria10_hps_0_h2f_lw_axi_master_rready                     => arria10_hps_0_h2f_lw_axi_master_rready,   --                                                     .rready
+			clk_1_clk_clk                                              => clk_100_clk,                              --                                            clk_1_clk.clk
+			arria10_hps_0_h2f_lw_axi_reset_reset_bridge_in_reset_reset => rst_controller_001_reset_out_reset,       -- arria10_hps_0_h2f_lw_axi_reset_reset_bridge_in_reset.reset
+			som_config_s1_address                                      => mm_interconnect_2_som_config_s1_address,  --                                        som_config_s1.address
+			som_config_s1_readdata                                     => mm_interconnect_2_som_config_s1_readdata  --                                                     .readdata
 		);
 
 	mm_interconnect_3 : component som_system_altera_mm_interconnect_180.som_system_pkg.som_system_altera_mm_interconnect_180_nzcyb6q
@@ -2410,8 +2400,6 @@ begin
 		);
 
 	reset_reset_n_ports_inv <= not reset_reset_n;
-
-	mm_interconnect_2_som_config_s1_write_ports_inv <= not mm_interconnect_2_som_config_s1_write;
 
 	mm_interconnect_3_emif_0_ctrl_amm_0_inv <= not emif_0_ctrl_amm_0_waitrequest;
 

@@ -145,7 +145,7 @@ package som_system_pkg is
 		);
 	end component som_system_altera_mm_interconnect_180_2zdh4ci;
 
-	component som_system_altera_mm_interconnect_180_g5k2ojy is
+	component som_system_altera_mm_interconnect_180_lpsnuca is
 		port (
 			arria10_hps_0_h2f_lw_axi_master_awid                       : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- awid
 			arria10_hps_0_h2f_lw_axi_master_awaddr                     : in  std_logic_vector(20 downto 0) := (others => 'X'); -- awaddr
@@ -188,12 +188,9 @@ package som_system_pkg is
 			clk_1_clk_clk                                              : in  std_logic                     := 'X';             -- clk
 			arria10_hps_0_h2f_lw_axi_reset_reset_bridge_in_reset_reset : in  std_logic                     := 'X';             -- reset
 			som_config_s1_address                                      : out std_logic_vector(2 downto 0);                     -- address
-			som_config_s1_write                                        : out std_logic;                                        -- write
-			som_config_s1_readdata                                     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
-			som_config_s1_writedata                                    : out std_logic_vector(31 downto 0);                    -- writedata
-			som_config_s1_chipselect                                   : out std_logic                                         -- chipselect
+			som_config_s1_readdata                                     : in  std_logic_vector(31 downto 0) := (others => 'X')  -- readdata
 		);
-	end component som_system_altera_mm_interconnect_180_g5k2ojy;
+	end component som_system_altera_mm_interconnect_180_lpsnuca;
 
 	component som_system_altera_mm_interconnect_180_nzcyb6q is
 		port (

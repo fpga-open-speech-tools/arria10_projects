@@ -13,26 +13,6 @@ state.ST_COMP_TRANS 1 0 0 1
 state.ST_UNCOMP_TRANS 1 0 1 0 
 state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
 
-State Machine - |A10SoM_System|som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_15|cur_sdo_state
-Name cur_sdo_state.shift_wait cur_sdo_state.load_shift_reg cur_sdo_state.load_rgb cur_sdo_state.load_cfg cur_sdo_state.load_n_mics cur_sdo_state.load_header cur_sdo_state.idle 
-cur_sdo_state.idle 0 0 0 0 0 0 0 
-cur_sdo_state.load_header 0 0 0 0 0 1 1 
-cur_sdo_state.load_n_mics 0 0 0 0 1 0 1 
-cur_sdo_state.load_cfg 0 0 0 1 0 0 1 
-cur_sdo_state.load_rgb 0 0 1 0 0 0 1 
-cur_sdo_state.load_shift_reg 0 1 0 0 0 0 1 
-cur_sdo_state.shift_wait 1 0 0 0 0 0 1 
-
-State Machine - |A10SoM_System|som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_15|next_sdo_state
-Name next_sdo_state.shift_wait next_sdo_state.load_shift_reg next_sdo_state.load_rgb next_sdo_state.load_cfg next_sdo_state.load_n_mics next_sdo_state.load_header next_sdo_state.idle 
-next_sdo_state.idle 0 0 0 0 0 0 0 
-next_sdo_state.load_header 0 0 0 0 0 1 1 
-next_sdo_state.load_n_mics 0 0 0 0 1 0 1 
-next_sdo_state.load_cfg 0 0 0 1 0 0 1 
-next_sdo_state.load_rgb 0 0 1 0 0 0 1 
-next_sdo_state.load_shift_reg 0 1 0 0 0 0 1 
-next_sdo_state.shift_wait 1 0 0 0 0 0 1 
-
 State Machine - |A10SoM_System|som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_9|cur_sdi_state
 Name cur_sdi_state.valid_pulse cur_sdi_state.read_mic_data cur_sdi_state.read_humid cur_sdi_state.read_temp cur_sdi_state.read_pressure cur_sdi_state.read_n_mics cur_sdi_state.read_packet_number cur_sdi_state.idle 
 cur_sdi_state.idle 0 0 0 0 0 0 0 0 
@@ -104,6 +84,26 @@ mic_valid_state.idle 0 0 0 0
 mic_valid_state.increment_counter 0 0 1 1 
 mic_valid_state.pulse 0 1 0 1 
 mic_valid_state.low_wait 1 0 0 1 
+
+State Machine - |A10SoM_System|som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_15|cur_sdo_state
+Name cur_sdo_state.shift_wait cur_sdo_state.load_shift_reg cur_sdo_state.load_rgb cur_sdo_state.load_cfg cur_sdo_state.load_n_mics cur_sdo_state.load_header cur_sdo_state.idle 
+cur_sdo_state.idle 0 0 0 0 0 0 0 
+cur_sdo_state.load_header 0 0 0 0 0 1 1 
+cur_sdo_state.load_n_mics 0 0 0 0 1 0 1 
+cur_sdo_state.load_cfg 0 0 0 1 0 0 1 
+cur_sdo_state.load_rgb 0 0 1 0 0 0 1 
+cur_sdo_state.load_shift_reg 0 1 0 0 0 0 1 
+cur_sdo_state.shift_wait 1 0 0 0 0 0 1 
+
+State Machine - |A10SoM_System|som_system:i0|FE_FPGA_Microphone_Encoder_Decoder:fe_fpga_microphone_encoder_decoder_15|next_sdo_state
+Name next_sdo_state.shift_wait next_sdo_state.load_shift_reg next_sdo_state.load_rgb next_sdo_state.load_cfg next_sdo_state.load_n_mics next_sdo_state.load_header next_sdo_state.idle 
+next_sdo_state.idle 0 0 0 0 0 0 0 
+next_sdo_state.load_header 0 0 0 0 0 1 1 
+next_sdo_state.load_n_mics 0 0 0 0 1 0 1 
+next_sdo_state.load_cfg 0 0 0 1 0 0 1 
+next_sdo_state.load_rgb 0 0 1 0 0 0 1 
+next_sdo_state.load_shift_reg 0 1 0 0 0 0 1 
+next_sdo_state.shift_wait 1 0 0 0 0 0 1 
 
 State Machine - |A10SoM_System|som_system:i0|AD1939_hps_audio_blade:fe_qsys_ad1939_audio_blade_v1_0|state
 Name state.state_right_valid state.state_right_capture state.state_right_wait state.state_left_valid state.state_left_capture state.state_left_wait 
@@ -846,7 +846,7 @@ cur_spi_state.SPI_SHIFT 0 0 1 0 1
 cur_spi_state.SPI_CSN_DELAY 0 1 0 0 1 
 cur_spi_state.SPI_CSN 1 0 0 0 1 
 
-State Machine - |A10SoM_System|som_system:i0|som_system_altera_mm_interconnect_180_g5k2ojy:mm_interconnect_2|altera_merlin_burst_adapter:som_config_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+State Machine - |A10SoM_System|som_system:i0|som_system_altera_mm_interconnect_180_lpsnuca:mm_interconnect_2|altera_merlin_burst_adapter:som_config_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
 Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
 state.ST_IDLE 0 0 0 0 
 state.ST_COMP_TRANS 1 0 0 1 

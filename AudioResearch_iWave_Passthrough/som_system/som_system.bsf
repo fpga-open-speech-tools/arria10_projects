@@ -402,6 +402,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 4704)(pt 272 4704)(line_width 1))
 	)
 	(port
+		(pt 0 4744)
+		(input)
+		(text "som_config_pio_export[4..0]" (rect 0 0 115 12)(font "Arial" (font_size 8)))
+		(text "som_config_pio_export[4..0]" (rect 4 4733 166 4744)(font "Arial" (font_size 8)))
+		(line (pt 0 4744)(pt 272 4744)(line_width 3))
+	)
+	(port
 		(pt 0 224)
 		(output)
 		(text "ad1939_physical_ad1939_dac_dsdata1" (rect 0 0 153 12)(font "Arial" (font_size 8)))
@@ -1499,13 +1506,6 @@ refer to the applicable agreement for further details.
 		(text "mem_mem_dbi_n[4..0]" (rect 0 0 96 12)(font "Arial" (font_size 8)))
 		(text "mem_mem_dbi_n[4..0]" (rect 4 2821 118 2832)(font "Arial" (font_size 8)))
 		(line (pt 0 2832)(pt 272 2832)(line_width 3))
-	)
-	(port
-		(pt 0 4744)
-		(bidir)
-		(text "som_config_pio_export[1..0]" (rect 0 0 113 12)(font "Arial" (font_size 8)))
-		(text "som_config_pio_export[1..0]" (rect 4 4733 166 4744)(font "Arial" (font_size 8)))
-		(line (pt 0 4744)(pt 272 4744)(line_width 3))
 	)
 	(drawing
 		(text "ad1939_abclk" (rect 195 43 462 99)(font "Arial" (color 128 0 0)(font_size 9)))
