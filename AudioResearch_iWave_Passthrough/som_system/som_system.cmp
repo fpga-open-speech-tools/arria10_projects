@@ -5,12 +5,33 @@
 			ad1939_mclk_clk                                : in    std_logic                     := 'X';             -- clk
 			ad1939_physical_ad1939_adc_asdata1             : in    std_logic                     := 'X';             -- ad1939_adc_asdata1
 			ad1939_physical_ad1939_adc_asdata2             : in    std_logic                     := 'X';             -- ad1939_adc_asdata2
-			ad1939_physical_ad1939_dac_dbclk               : out   std_logic;                                        -- ad1939_dac_dbclk
-			ad1939_physical_ad1939_dac_dlrclk              : out   std_logic;                                        -- ad1939_dac_dlrclk
 			ad1939_physical_ad1939_dac_dsdata1             : out   std_logic;                                        -- ad1939_dac_dsdata1
 			ad1939_physical_ad1939_dac_dsdata2             : out   std_logic;                                        -- ad1939_dac_dsdata2
-			ad1939_physical_ad1939_dac_dsdata3             : out   std_logic;                                        -- ad1939_dac_dsdata3
-			ad1939_physical_ad1939_dac_dsdata4             : out   std_logic;                                        -- ad1939_dac_dsdata4
+			ad1939_physical_ad1939_dac_dbclk               : out   std_logic;                                        -- ad1939_dac_dbclk
+			ad1939_physical_ad1939_dac_dlrclk              : out   std_logic;                                        -- ad1939_dac_dlrclk
+			ad4020_left_physical_cnv                       : out   std_logic;                                        -- cnv
+			ad4020_left_physical_miso                      : in    std_logic                     := 'X';             -- miso
+			ad4020_left_physical_mosi                      : out   std_logic;                                        -- mosi
+			ad4020_left_physical_sclk                      : out   std_logic;                                        -- sclk
+			ad4020_right_physical_cnv                      : out   std_logic;                                        -- cnv
+			ad4020_right_physical_miso                     : in    std_logic                     := 'X';             -- miso
+			ad4020_right_physical_mosi                     : out   std_logic;                                        -- mosi
+			ad4020_right_physical_sclk                     : out   std_logic;                                        -- sclk
+			ad5791_left_physical_ad5791_clr_n_out          : out   std_logic;                                        -- ad5791_clr_n_out
+			ad5791_left_physical_ad5791_ldac_n_out         : out   std_logic;                                        -- ad5791_ldac_n_out
+			ad5791_left_physical_ad5791_miso_out           : in    std_logic                     := 'X';             -- ad5791_miso_out
+			ad5791_left_physical_ad5791_mosi_in            : out   std_logic;                                        -- ad5791_mosi_in
+			ad5791_left_physical_ad5791_sclk_out           : out   std_logic;                                        -- ad5791_sclk_out
+			ad5791_left_physical_ad5791_sync_n_out         : out   std_logic;                                        -- ad5791_sync_n_out
+			ad5791_right_physical_ad5791_clr_n_out         : out   std_logic;                                        -- ad5791_clr_n_out
+			ad5791_right_physical_ad5791_ldac_n_out        : out   std_logic;                                        -- ad5791_ldac_n_out
+			ad5791_right_physical_ad5791_miso_out          : in    std_logic                     := 'X';             -- ad5791_miso_out
+			ad5791_right_physical_ad5791_mosi_in           : out   std_logic;                                        -- ad5791_mosi_in
+			ad5791_right_physical_ad5791_sclk_out          : out   std_logic;                                        -- ad5791_sclk_out
+			ad5791_right_physical_ad5791_sync_n_out        : out   std_logic;                                        -- ad5791_sync_n_out
+			ad7768_physical_ad7768_dout_in                 : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- ad7768_dout_in
+			ad7768_physical_ad7768_drdy_in                 : in    std_logic                     := 'X';             -- ad7768_drdy_in
+			ad7768_physical_ad7768_dclk_in                 : in    std_logic                     := 'X';             -- ad7768_dclk_in
 			addr_sel_in_add_sel                            : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- add_sel
 			axi_clk_bridge_in_clk_clk                      : in    std_logic                     := 'X';             -- clk
 			clk_100_clk                                    : in    std_logic                     := 'X';             -- clk
@@ -40,6 +61,10 @@
 			emif_0_status_local_cal_fail                   : out   std_logic;                                        -- local_cal_fail
 			emif_a10_hps_0_global_reset_reset_sink_reset_n : in    std_logic                     := 'X';             -- reset_n
 			hps_0_h2f_reset_reset_n                        : out   std_logic;                                        -- reset_n
+			hps_i2c1_sda_i                                 : in    std_logic                     := 'X';             -- sda_i
+			hps_i2c1_sda_oe                                : out   std_logic;                                        -- sda_oe
+			hps_i2c1_clk_clk                               : out   std_logic;                                        -- clk
+			hps_i2c1_scl_in_clk                            : in    std_logic                     := 'X';             -- clk
 			hps_io_hps_io_phery_emac1_TX_CLK               : out   std_logic;                                        -- hps_io_phery_emac1_TX_CLK
 			hps_io_hps_io_phery_emac1_TXD0                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD0
 			hps_io_hps_io_phery_emac1_TXD1                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD1
@@ -80,11 +105,7 @@
 			hps_io_hps_io_gpio_gpio2_io8                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio2_io8
 			hps_io_hps_io_gpio_gpio0_io0                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io0
 			hps_io_hps_io_gpio_gpio0_io1                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io1
-			hps_io_hps_io_gpio_gpio0_io2                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io2
-			hps_io_hps_io_gpio_gpio0_io3                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io3
 			hps_io_hps_io_gpio_gpio0_io6                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io6
-			hps_io_hps_io_gpio_gpio0_io7                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io7
-			hps_io_hps_io_gpio_gpio0_io10                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io10
 			hps_io_hps_io_gpio_gpio0_io11                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io11
 			hps_io_hps_io_gpio_gpio1_io12                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io12
 			hps_io_hps_io_gpio_gpio1_io13                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io13
@@ -124,9 +145,73 @@
 			mem_mem_dqs_n                                  : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- mem_dqs_n
 			mem_mem_dq                                     : inout std_logic_vector(39 downto 0) := (others => 'X'); -- mem_dq
 			mem_mem_dbi_n                                  : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- mem_dbi_n
+			mic_array0_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array0_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array0_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array0_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array10_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array10_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array10_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array10_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array11_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array11_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array11_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array11_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array12_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array12_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array12_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array12_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array13_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array13_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array13_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array13_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array14_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array14_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array14_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array14_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array15_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array15_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array15_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array15_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array1_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array1_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array1_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array1_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array2_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array2_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array2_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array2_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array3_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array3_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array3_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array3_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array4_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array4_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array4_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array4_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array5_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array5_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array5_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array5_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array6_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array6_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array6_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array6_physical_1_busy_out                 : out   std_logic;                                        -- busy_out
+			mic_array7_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array7_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array7_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array7_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array8_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array8_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array8_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array8_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array9_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array9_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array9_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array9_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
 			oct_oct_rzqin                                  : in    std_logic                     := 'X';             -- oct_rzqin
 			reset_reset_n                                  : in    std_logic                     := 'X';             -- reset_n
-			som_config_pio_export                          : inout std_logic_vector(1 downto 0)  := (others => 'X')  -- export
+			som_config_pio_export                          : in    std_logic_vector(4 downto 0)  := (others => 'X')  -- export
 		);
 	end component som_system;
 

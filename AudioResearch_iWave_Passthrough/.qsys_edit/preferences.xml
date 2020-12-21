@@ -7,16 +7,16 @@
    showClockDomains="0"
    showResetDomains="0">
   <columns>
-   <connections preferredWidth="239" />
+   <connections preferredWidth="207" />
    <irq preferredWidth="47" />
-   <name preferredWidth="202" />
+   <name preferredWidth="339" />
    <inputclock preferredWidth="212" />
    <description preferredWidth="218" />
    <export preferredWidth="313" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
- <window width="1734" height="1407" x="1713" y="0" />
+ <library expandedCategories="Project,Library" />
+ <window width="2410" height="1407" x="-7" y="0" />
  <generation
    path=""
    clear_previous="1"

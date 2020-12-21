@@ -1,0 +1,5 @@
+config som_system_altera_avalon_st_adapter_180_cgdcaea_cfg;
+		design som_system_altera_avalon_st_adapter_180_cgdcaea;
+		instance som_system_altera_avalon_st_adapter_180_cgdcaea.channel_adapter_0 use som_system_channel_adapter_180.som_system_channel_adapter_180_iipikvi;
+endconfig
+

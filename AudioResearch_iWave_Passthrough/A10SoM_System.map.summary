@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Apr 23 13:09:55 2020
+Analysis & Synthesis Status : Successful - Tue Oct 06 12:33:16 2020
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 Revision Name : A10SoM_System
 Top-level Entity Name : A10SoM_System
 Family : Arria 10
 Logic utilization (in ALMs) : N/A
-Total registers : 20285
-Total pins : 470
+Total registers : 23480
+Total pins : 418
 Total virtual pins : 0
-Total block memory bits : 536,960
+Total block memory bits : 564,352
 Total DSP Blocks : 0
 Total HSSI RX channels : 0
 Total HSSI TX channels : 0

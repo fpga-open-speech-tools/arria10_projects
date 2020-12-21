@@ -1,0 +1,25 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\NIH3Repo\arria10_projects\AudioResearch_iWave_Passthrough\pll.qsys --synthesis=VHDL --output-directory=D:\NIH3Repo\arria10_projects\AudioResearch_iWave_Passthrough\pll --family="Arria 10" --part=10AS066H2F34I1HG
+Progress: Loading AudioResearch_iWave_Passthrough/pll.qsys
+Progress: Reading input file
+Progress: Adding iopll_0 [altera_iopll 18.0]
+Progress: Parameterizing module iopll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: pll.iopll_0: Able to implement PLL - Actual settings differ from Requested settings
+Info: pll: "Transforming system: pll"
+Info: pll: Running transform generation_view_transform
+Info: pll: Running transform generation_view_transform took 0.000s
+Info: iopll_0: Running transform generation_view_transform
+Info: iopll_0: Running transform generation_view_transform took 0.000s
+Info: pll: Running transform merlin_avalon_transform
+Info: pll: Running transform merlin_avalon_transform took 0.029s
+Info: pll: "Naming system components in system: pll"
+Info: pll: "Processing generation queue"
+Info: pll: "Generating: pll"
+Info: pll: "Generating: pll_altera_iopll_180_arafcwy"
+Info: pll: Done "pll" with 2 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -110,15 +110,15 @@ GND                          : A30       : gnd    :                   :         
 GND                          : A31       : gnd    :                   :         :           :                 : --           
 GND                          : A32       : gnd    :                   :         :           :                 : --           
 GND                          : A33       : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio4[6]           : AA1       : bidir  : 1.8 V             :         : 3C        : Y               : --           
+AA_LVDS_EN_N[3]              : AA1       : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : AA2       : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio3[3]           : AA3       : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio3[4]           : AA4       : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio4[15]          : AA5       : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio4[16]          : AA6       : bidir  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[3]                    : AA3       : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[3]                    : AA4       : input  : 1.8 V             :         : 3C        : Y               : --           
+MSATA_PWR_EN                 : AA5       : output : 1.8 V             :         : 3C        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   :         : 3C        :                 : --           
 VCCIO3C                      : AA7       : power  :                   : 1.8V    : 3C        :                 : --           
-fmc1_inout_pio3[5]           : AA8       : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio3[6]           : AA9       : bidir  : 1.8 V             :         : 3C        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA8       :        :                   :         : 3C        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA9       :        :                   :         : 3C        :                 : --           
 VREFB3CN0                    : AA10      : power  :                   :         : 3C        :                 : --           
 VCC                          : AA11      : power  :                   : 0.9V    :           :                 : --           
 GND                          : AA12      : gnd    :                   :         :           :                 : --           
@@ -138,23 +138,23 @@ GND                          : AA25      : gnd    :                   :         
 GND                          : AA26      : gnd    :                   :         :           :                 : --           
 VCCR_GXBL1D                  : AA27      : power  :                   : 0.95V   :           :                 : --           
 VCCR_GXBL1D                  : AA28      : power  :                   : 0.95V   :           :                 : --           
-fmc_1D_rx_ch2(n)             : AA29      : input  : High Speed Differential I/O :         : 1D        : Y               : --           
-fmc_1D_rx_ch2                : AA30      : input  : High Speed Differential I/O :         : 1D        : Y               : --           
+GXB_GND*                     : AA29      :        :                   :         : 1D        :                 : --           
+GXB_GND*                     : AA30      :        :                   :         : 1D        :                 : --           
 GND                          : AA31      : gnd    :                   :         :           :                 : --           
 GND                          : AA32      : gnd    :                   :         :           :                 : --           
 GXB_NC                       : AA33      :        :                   :         : 1D        :                 : --           
 GXB_NC                       : AA34      :        :                   :         : 1D        :                 : --           
-fmc1_inout_pio4[5]           : AB1       : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio4[11]          : AB2       : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio4[12]          : AB3       : bidir  : 1.8 V             :         : 3C        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB1       :        :                   :         : 3C        :                 : --           
+AA_SDO[2]                    : AB2       : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[2]                    : AB3       : input  : 1.8 V             :         : 3C        : Y               : --           
 GND                          : AB4       : gnd    :                   :         :           :                 : --           
-fmc2_inout_pio7[13]          : AB5       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio7[12]          : AB6       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod1_inout_pio8[3]          : AB7       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod1_inout_pio8[1]          : AB8       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 3B        :                 : --           
+pcie_npor_pin_perst          : AB6       : input  : 1.8 V             :         : 3B        : N               : --           
+AA_SDO[6]                    : AB7       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[6]                    : AB8       : input  : 1.8 V             :         : 3B        : Y               : --           
 VCCIO3B                      : AB9       : power  :                   : 1.8V    : 3B        :                 : --           
-fmc2_inout_pio7[14]          : AB10      : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio7[15]          : AB11      : bidir  : 1.8 V             :         : 3B        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB10      :        :                   :         : 3B        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB11      :        :                   :         : 3B        :                 : --           
 VCC                          : AB12      : power  :                   : 0.9V    :           :                 : --           
 VCC                          : AB13      : power  :                   : 0.9V    :           :                 : --           
 VCC                          : AB14      : power  :                   : 0.9V    :           :                 : --           
@@ -174,27 +174,27 @@ GXB_GND*                     : AB27      :        :                   :         
 GXB_GND*                     : AB28      :        :                   :         : 1D        :                 : --           
 GND                          : AB29      : gnd    :                   :         :           :                 : --           
 GND                          : AB30      : gnd    :                   :         :           :                 : --           
-fmc_1D_rx_ch1(n)             : AB31      : input  : High Speed Differential I/O :         : 1D        : Y               : --           
-fmc_1D_rx_ch1                : AB32      : input  : High Speed Differential I/O :         : 1D        : Y               : --           
+GXB_GND*                     : AB31      :        :                   :         : 1D        :                 : --           
+GXB_GND*                     : AB32      :        :                   :         : 1D        :                 : --           
 GND                          : AB33      : gnd    :                   :         :           :                 : --           
 GND                          : AB34      : gnd    :                   :         :           :                 : --           
 GND                          : AC1       : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio4[4]           : AC2       : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio4[3]           : AC3       : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc2_inout_pio7[6]           : AC4       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio7[7]           : AC5       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+AA_LVDS_EN_N[2]              : AC2       : output : 1.8 V             :         : 3C        : Y               : --           
+AA_12V0_EN[1]                : AC3       : output : 1.8 V             :         : 3C        : Y               : --           
+HDPHN_I2C_SDA                : AC4       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 3B        :                 : --           
 VCCIO3B                      : AC6       : power  :                   : 1.8V    : 3B        :                 : --           
-pmod2_inout_pio9[1]          : AC7       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio6[6]           : AC8       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod1_inout_pio8[0]          : AC9       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod1_inout_pio8[2]          : AC10      : bidir  : 1.8 V             :         : 3B        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC7       :        :                   :         : 3B        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC8       :        :                   :         : 3B        :                 : --           
+AA_SDI[7]                    : AC9       : input  : 1.8 V             :         : 3B        : Y               : --           
+AA_BANK_EN[1]                : AC10      : output : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AC11      : gnd    :                   :         :           :                 : --           
 VREFB3BN0                    : AC12      : power  :                   :         : 3B        :                 : --           
 DNU                          : AC13      :        :                   :         :           :                 : --           
 DNU                          : AC14      :        :                   :         :           :                 : --           
 DNU                          : AC15      :        :                   :         :           :                 : --           
 GND                          : AC16      : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio5[13]          : AC17      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+HSA_OUT_R_SDO                : AC17      : input  : 1.8 V             :         : 2A        : Y               : --           
 VCC                          : AC18      : power  :                   : 0.9V    :           :                 : --           
 VREFB2AN0                    : AC19      : power  :                   :         : 2A        :                 : --           
 NC                           : AC20      :        :                   :         :           :                 : --           
@@ -206,31 +206,31 @@ GND                          : AC25      : gnd    :                   :         
 VCCH_GXBL                    : AC26      : power  :                   : 1.8V    :           :                 : --           
 VCCT_GXBL1C                  : AC27      : power  :                   : 0.95V   :           :                 : --           
 VCCT_GXBL1C                  : AC28      : power  :                   : 0.95V   :           :                 : --           
-fmc_1D_rx_ch0(n)             : AC29      : input  : High Speed Differential I/O :         : 1D        : Y               : --           
-fmc_1D_rx_ch0                : AC30      : input  : High Speed Differential I/O :         : 1D        : Y               : --           
+GXB_GND*                     : AC29      :        :                   :         : 1D        :                 : --           
+GXB_GND*                     : AC30      :        :                   :         : 1D        :                 : --           
 GND                          : AC31      : gnd    :                   :         :           :                 : --           
 GND                          : AC32      : gnd    :                   :         :           :                 : --           
-fmc_1D_tx_ch3(n)             : AC33      : output : High Speed Differential I/O :         : 1D        : Y               : --           
-fmc_1D_tx_ch3                : AC34      : output : High Speed Differential I/O :         : 1D        : Y               : --           
-fmc2_inout_pio7[17]          : AD1       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio7[16]          : AD2       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+GXB_NC                       : AC33      :        :                   :         : 1D        :                 : --           
+GXB_NC                       : AC34      :        :                   :         : 1D        :                 : --           
+HDPHN_PWR_OFF_N              : AD1       : output : 1.8 V             :         : 3B        : Y               : --           
+I2C_SDA                      : AD2       : bidir  : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AD3       : gnd    :                   :         :           :                 : --           
-fmc2_inout_pio7[3]           : AD4       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod2_inout_pio9[4]          : AD5       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod2_inout_pio9[6]          : AD6       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod2_inout_pio9[3]          : AD7       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+AA_LVDS_EN_N[13]             : AD4       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[14]                   : AD5       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_LVDS_EN_N[14]             : AD6       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[14]                   : AD7       : input  : 1.8 V             :         : 3B        : Y               : --           
 VCCIO3B                      : AD8       : power  :                   : 1.8V    : 3B        :                 : --           
-fmc2_inout_pio6[7]           : AD9       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio6[18]          : AD10      : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio6[19]          : AD11      : bidir  : 1.8 V             :         : 3B        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD9       :        :                   :         : 3B        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD10      :        :                   :         : 3B        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD11      :        :                   :         : 3B        :                 : --           
 VREFB3AN0                    : AD12      : power  :                   :         : 3A        :                 : --           
 GND                          : AD13      : gnd    :                   :         :           :                 : --           
 VCCBAT                       : AD14      : power  :                   : 1.8V    :           :                 : --           
 VCCPGM                       : AD15      : power  :                   : 1.2V/1.5V/1.8V :           :                 : --           
 VCCPGM                       : AD16      : power  :                   : 1.2V/1.5V/1.8V :           :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD17      :        :                   :         : 2A        :                 : --           
+HSA_OUT_R_LDAC_N             : AD17      : output : 1.8 V             :         : 2A        : Y               : --           
 GND                          : AD18      : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio2[8]           : AD19      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD19      :        :                   :         : 2A        :                 : --           
 NC                           : AD20      :        :                   :         :           :                 : --           
 GND                          : AD21      : gnd    :                   :         :           :                 : --           
 NC                           : AD22      :        :                   :         :           :                 : --           
@@ -238,33 +238,33 @@ GND                          : AD23      : gnd    :                   :         
 hps_memory_mem_dq[30]        : AD24      : bidir  : 1.2-V POD         :         : 2J        : Y               : 219ps        
 hps_memory_mem_dbi_n[3]      : AD25      : bidir  : 1.2-V POD         :         : 2J        : Y               : 243ps        
 GND                          : AD26      : gnd    :                   :         :           :                 : --           
-refclk_1C_p(n)               : AD27      : input  : LVDS              :         : 1C        : Y               : --           
-refclk_1C_p                  : AD28      : input  : LVDS              :         : 1C        : Y               : --           
+GXB_GND*                     : AD27      :        :                   :         : 1C        :                 : --           
+GXB_GND*                     : AD28      :        :                   :         : 1C        :                 : --           
 GND                          : AD29      : gnd    :                   :         :           :                 : --           
 GND                          : AD30      : gnd    :                   :         :           :                 : --           
 GXB_GND*                     : AD31      :        :                   :         : 1C        :                 : --           
 GXB_GND*                     : AD32      :        :                   :         : 1C        :                 : --           
 GND                          : AD33      : gnd    :                   :         :           :                 : --           
 GND                          : AD34      : gnd    :                   :         :           :                 : --           
-fmc2_inout_pio7[5]           : AE1       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio6[8]           : AE2       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio6[9]           : AE3       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio7[2]           : AE4       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[13]                   : AE1       : input  : 1.8 V             :         : 3B        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE2       :        :                   :         : 3B        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 3B        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 3B        :                 : --           
 GND                          : AE5       : gnd    :                   :         :           :                 : --           
-pmod1_inout_pio8[5]          : AE6       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod1_inout_pio8[7]          : AE7       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc1_inout_pio2[3]           : AE8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio1[9]           : AE9       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AA_12V0_EN[3]                : AE6       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_LVDS_EN_N[6]              : AE7       : output : 1.8 V             :         : 3B        : Y               : --           
+PGA2505_CS_N                 : AE8       : output : 1.8 V             :         : 3A        : Y               : --           
+AD1939_SPI_MOSI              : AE9       : output : 1.8 V             :         : 3A        : Y               : --           
 VCCIO3A                      : AE10      : power  :                   : 1.8V    : 3A        :                 : --           
-fmc1_inout_pio5[15]          : AE11      : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio5[14]          : AE12      : bidir  : 1.8 V             :         : 3A        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE11      :        :                   :         : 3A        :                 : --           
+TEMP_ALERT_N                 : AE12      : input  : 1.8 V             :         : 3A        : Y               : --           
 GND                          : AE13      :        :                   :         : CSS       :                 : --           
 nIO_PULLUP                   : AE14      : input  :                   :         : CSS       :                 : --           
 GND                          : AE15      : gnd    :                   :         :           :                 : --           
-pcie_npor_pin_perst          : AE16      : input  : 1.8 V             :         : 2A        : Y               : --           
-fmc1_inout_pio2[11]          : AE17      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-fmc1_inout_pio2[9]           : AE18      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE19      :        :                   :         : 2A        :                 : --           
+DB25_GPIO[17]                : AE16      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+DB25_GPIO[16]                : AE17      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+DB25_PWR_EN                  : AE18      : output : 1.8 V             :         : 2A        : Y               : --           
+HSA_OUT_R_CLR_N              : AE19      : output : 1.8 V             :         : 2A        : Y               : --           
 VCCIO2I                      : AE20      : power  :                   : 1.8V    : 2I        :                 : --           
 VREFB2IN0                    : AE21      : power  :                   :         : 2I        :                 : --           
 NC                           : AE22      :        :                   :         :           :                 : --           
@@ -274,31 +274,31 @@ VCCIO2J                      : AE25      : power  :                   : 1.2V    
 GND                          : AE26      : gnd    :                   :         :           :                 : --           
 VCCR_GXBL1C                  : AE27      : power  :                   : 0.95V   :           :                 : --           
 VCCR_GXBL1C                  : AE28      : power  :                   : 0.95V   :           :                 : --           
-pcie_rx_i(n)                 : AE29      : input  : High Speed Differential I/O :         : 1C        : Y               : --           
-pcie_rx_i                    : AE30      : input  : High Speed Differential I/O :         : 1C        : Y               : --           
+GXB_GND*                     : AE29      :        :                   :         : 1C        :                 : --           
+GXB_GND*                     : AE30      :        :                   :         : 1C        :                 : --           
 GND                          : AE31      : gnd    :                   :         :           :                 : --           
 GND                          : AE32      : gnd    :                   :         :           :                 : --           
-fmc_1D_tx_ch2(n)             : AE33      : output : High Speed Differential I/O :         : 1D        : Y               : --           
-fmc_1D_tx_ch2                : AE34      : output : High Speed Differential I/O :         : 1D        : Y               : --           
-fmc2_inout_pio7[4]           : AF1       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+GXB_NC                       : AE33      :        :                   :         : 1D        :                 : --           
+GXB_NC                       : AE34      :        :                   :         : 1D        :                 : --           
+AA_SDO[13]                   : AF1       : output : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AF2       : gnd    :                   :         :           :                 : --           
-fmc2_inout_pio7[1]           : AF3       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio7[0]           : AF4       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod2_inout_pio9[0]          : AF5       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod1_inout_pio8[6]          : AF6       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+HDPHN_I2C_SCL                : AF3       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+I2C_SCL                      : AF4       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[15]                   : AF5       : input  : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[7]                    : AF6       : output : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AF7       : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio2[2]           : AF8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio1[8]           : AF9       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-usb_inout_pio11[0]           : AF10      : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio2[14]          : AF11      : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AD1939_CS_N                  : AF8       : output : 1.8 V             :         : 3A        : Y               : --           
+AD1939_SPI_MISO              : AF9       : input  : 1.8 V             :         : 3A        : Y               : --           
+P3_GPIO[1]                   : AF10      : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AD1939_PWR_EN                : AF11      : output : 1.8 V             :         : 3A        : Y               : --           
 VCCIO3A                      : AF12      : power  :                   : 1.8V    : 3A        :                 : --           
 nCONFIG                      : AF13      : input  :                   :         : CSS       :                 : --           
 nCE                          : AF14      :        :                   :         : CSS       :                 : --           
 AS_DATA3                     : AF15      :        :                   :         : CSS       :                 : --           
-fmc1_inout_pio2[19]          : AF16      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+DB25_GPIO[15]                : AF16      : bidir  : 1.8 V             :         : 2A        : Y               : --           
 VCCIO2A                      : AF17      : power  :                   : 1.8V    : 2A        :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF18      :        :                   :         : 2A        :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF19      :        :                   :         : 2A        :                 : --           
+HSA_IN_L_SDI                 : AF18      : output : 1.8 V             :         : 2A        : Y               : --           
+HSA_OUT_R_RESET_N            : AF19      : output : 1.8 V             :         : 2A        : Y               : --           
 NC                           : AF20      :        :                   :         :           :                 : --           
 NC                           : AF21      :        :                   :         :           :                 : --           
 VCCIO2I                      : AF22      : power  :                   : 1.8V    : 2I        :                 : --           
@@ -306,32 +306,32 @@ hps_memory_mem_dq[6]         : AF23      : bidir  : 1.2-V POD         :         
 hps_memory_mem_dq[0]         : AF24      : bidir  : 1.2-V POD         :         : 2J        : Y               : 182ps        
 hps_memory_mem_dqs_n[3]      : AF25      : bidir  : Differential 1.2-V POD :         : 2J        : Y               : 213ps        
 GND                          : AF26      : gnd    :                   :         :           :                 : --           
-pcie_refclk_clk(n)           : AF27      : input  : HCSL              :         : 1C        : Y               : --           
-pcie_refclk_clk              : AF28      : input  : HCSL              :         : 1C        : Y               : --           
+GXB_GND*                     : AF27      :        :                   :         : 1C        :                 : --           
+GXB_GND*                     : AF28      :        :                   :         : 1C        :                 : --           
 GND                          : AF29      : gnd    :                   :         :           :                 : --           
 GND                          : AF30      : gnd    :                   :         :           :                 : --           
-fmc_1C_rx_ch3(n)             : AF31      : input  : High Speed Differential I/O :         : 1C        : Y               : --           
-fmc_1C_rx_ch3                : AF32      : input  : High Speed Differential I/O :         : 1C        : Y               : --           
+GXB_GND*                     : AF31      :        :                   :         : 1C        :                 : --           
+GXB_GND*                     : AF32      :        :                   :         : 1C        :                 : --           
 GND                          : AF33      : gnd    :                   :         :           :                 : --           
 GND                          : AF34      : gnd    :                   :         :           :                 : --           
-fmc2_inout_pio6[10]          : AG1       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio6[11]          : AG2       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio7[11]          : AG3       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+AA_LVDS_EN_N[5]              : AG1       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[5]                    : AG2       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[5]                    : AG3       : input  : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AG4       : gnd    :                   :         :           :                 : --           
-pmod2_inout_pio9[2]          : AG5       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod1_inout_pio8[4]          : AG6       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio7[19]          : AG7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc2_inout_pio7[9]           : AG8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AA_SDO[15]                   : AG5       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_LVDS_EN_N[7]              : AG6       : output : 1.8 V             :         : 3B        : Y               : --           
+DB25_GPIO[7]                 : AG7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+DB25_GPIO[9]                 : AG8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
 VCCIO3A                      : AG9       : power  :                   : 1.8V    : 3A        :                 : --           
-usb_inout_pio11[1]           : AG10      : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio2[15]          : AG11      : bidir  : 1.8 V             :         : 3A        : Y               : --           
+P3_GPIO[0]                   : AG10      : bidir  : 1.8 V             :         : 3A        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG11      :        :                   :         : 3A        :                 : --           
 MSEL2                        : AG12      : input  :                   :         : CSS       :                 : --           
 MSEL1                        : AG13      : input  :                   :         : CSS       :                 : --           
 GND                          : AG14      : gnd    :                   :         :           :                 : --           
 MSEL0                        : AG15      : input  :                   :         : CSS       :                 : --           
-fmc1_inout_pio2[18]          : AG16      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG17      :        :                   :         : 2A        :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG18      :        :                   :         : 2A        :                 : --           
+DB25_GPIO[14]                : AG16      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+AD7768_MCLK                  : AG17      : output : 1.8 V             :         : 2A        : Y               : --           
+HSA_IN_L_SDO                 : AG18      : input  : 1.8 V             :         : 2A        : Y               : --           
 GND                          : AG19      : gnd    :                   :         :           :                 : --           
 NC                           : AG20      :        :                   :         :           :                 : --           
 NC                           : AG21      :        :                   :         :           :                 : --           
@@ -342,31 +342,31 @@ hps_memory_mem_dqs[3]        : AG25      : bidir  : Differential 1.2-V POD :    
 GND                          : AG26      : gnd    :                   :         :           :                 : --           
 GND                          : AG27      : gnd    :                   :         :           :                 : --           
 GND                          : AG28      : gnd    :                   :         :           :                 : --           
-fmc_1C_rx_ch2(n)             : AG29      : input  : High Speed Differential I/O :         : 1C        : Y               : --           
-fmc_1C_rx_ch2                : AG30      : input  : High Speed Differential I/O :         : 1C        : Y               : --           
+GXB_GND*                     : AG29      :        :                   :         : 1C        :                 : --           
+GXB_GND*                     : AG30      :        :                   :         : 1C        :                 : --           
 GND                          : AG31      : gnd    :                   :         :           :                 : --           
 GND                          : AG32      : gnd    :                   :         :           :                 : --           
-fmc_1D_tx_ch1(n)             : AG33      : output : High Speed Differential I/O :         : 1D        : Y               : --           
-fmc_1D_tx_ch1                : AG34      : output : High Speed Differential I/O :         : 1D        : Y               : --           
+GXB_NC                       : AG33      :        :                   :         : 1D        :                 : --           
+GXB_NC                       : AG34      :        :                   :         : 1D        :                 : --           
 GND                          : AH1       : gnd    :                   :         :           :                 : --           
-fmc2_inout_pio6[13]          : AH2       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio7[10]          : AH3       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH4       :        :                   :         : 3B        :                 : --           
-fmc2_inout_pio6[17]          : AH5       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AA_LVDS_EN_N[12]             : AH2       : output : 1.8 V             :         : 3B        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH3       :        :                   :         : 3B        :                 : --           
+AA_SDI[4]                    : AH4       : input  : 1.8 V             :         : 3B        : Y               : --           
+AD1939_DLRCLK                : AH5       : output : 1.8 V             :         : 3A        : Y               : --           
 GND                          : AH6       : gnd    :                   :         :           :                 : --           
-fmc2_inout_pio7[18]          : AH7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc2_inout_pio7[8]           : AH8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH9       :        :                   :         : 3A        :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH10      :        :                   :         : 3A        :                 : --           
+DB25_GPIO[6]                 : AH7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+DB25_GPIO[8]                 : AH8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AD1939_HDPHN_OUT_DSDATA      : AH9       : output : 1.8 V             :         : 3A        : Y               : --           
+AD1939_LINE_OUT_DSDATA       : AH10      : output : 1.8 V             :         : 3A        : Y               : --           
 GND                          : AH11      : gnd    :                   :         :           :                 : --           
-TCK                          : AH12      : input  :                   :         : CSS       :                 : --           
-TDI                          : AH13      : input  :                   :         : CSS       :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH14      :        :                   :         : 2A        :                 : --           
-fmc1_inout_pio2[7]           : AH15      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+altera_reserved_tck          : AH12      : input  : 1.8 V             :         : CSS       : N               : --           
+altera_reserved_tdi          : AH13      : input  : 1.8 V             :         : CSS       : N               : --           
+HSA_OUT_R_SDI                : AH14      : output : 1.8 V             :         : 2A        : Y               : --           
+DB25_GPIO[12]                : AH15      : bidir  : 1.8 V             :         : 2A        : Y               : --           
 VCCIO2A                      : AH16      : power  :                   : 1.8V    : 2A        :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH17      :        :                   :         : 2A        :                 : --           
-fmc1_inout_pio2[12]          : AH18      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-fmc1_inout_pio2[13]          : AH19      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+AD7768_SPI_SCK               : AH17      : output : 1.8 V             :         : 2A        : Y               : --           
+AD7768_DCLK                  : AH18      : output : 1.8 V             :         : 2A        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH19      :        :                   :         : 2A        :                 : --           
 NC                           : AH20      :        :                   :         :           :                 : --           
 GND                          : AH21      : gnd    :                   :         :           :                 : --           
 NC                           : AH22      :        :                   :         :           :                 : --           
@@ -378,30 +378,30 @@ hps_memory_mem_dq[29]        : AH27      : bidir  : 1.2-V POD         :         
 GND                          : AH28      : gnd    :                   :         :           :                 : --           
 GND                          : AH29      : gnd    :                   :         :           :                 : --           
 GND                          : AH30      : gnd    :                   :         :           :                 : --           
-fmc_1C_tx_ch3(n)             : AH31      : output : High Speed Differential I/O :         : 1C        : Y               : --           
-fmc_1C_tx_ch3                : AH32      : output : High Speed Differential I/O :         : 1C        : Y               : --           
+GXB_NC                       : AH31      :        :                   :         : 1C        :                 : --           
+GXB_NC                       : AH32      :        :                   :         : 1C        :                 : --           
 GND                          : AH33      : gnd    :                   :         :           :                 : --           
 GND                          : AH34      : gnd    :                   :         :           :                 : --           
-fmc2_inout_pio6[12]          : AJ1       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio6[3]           : AJ2       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[12]                   : AJ1       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_SDI[12]                   : AJ2       : input  : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AJ3       : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AJ4       :        :                   :         : 3B        :                 : --           
-fmc2_inout_pio6[16]          : AJ5       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio3[16]          : AJ6       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio3[15]          : AJ7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AD1939_DBCLK                 : AJ5       : output : 1.8 V             :         : 3A        : Y               : --           
+DB25_GPIO[4]                 : AJ6       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+DB25_GPIO[5]                 : AJ7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
 GND                          : AJ8       : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio1[6]           : AJ9       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AD1939_ALRCLK                : AJ9       : input  : 1.8 V             :         : 3A        : Y               : --           
 DCLK                         : AJ10      : bidir  :                   :         : CSS       :                 : --           
 AS_DATA0, ASDO               : AJ11      :        :                   :         : CSS       :                 : --           
-TDO                          : AJ12      : output :                   :         : CSS       :                 : --           
+altera_reserved_tdo          : AJ12      : output : 1.8 V             :         : CSS       : N               : --           
 GND                          : AJ13      : gnd    :                   :         :           :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AJ14      :        :                   :         : 2A        :                 : --           
-fmc1_inout_pio2[6]           : AJ15      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AJ16      :        :                   :         : 2A        :                 : --           
-fmc1_inout_pio5[18]          : AJ17      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+HSA_OUT_R_SYNC_N             : AJ14      : output : 1.8 V             :         : 2A        : Y               : --           
+DB25_GPIO[13]                : AJ15      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+AD7768_SDO                   : AJ16      : input  : 1.8 V             :         : 2A        : Y               : --           
+AD5791_EN                    : AJ17      : output : 1.8 V             :         : 2A        : Y               : --           
 GND                          : AJ18      : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AJ19      :        :                   :         : 2I        :                 : --           
-AD1939_MCLK                  : AJ20      : input  : 1.8 V             :         : 2I        : N               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ20      :        :                   :         : 2I        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AJ21      :        :                   :         : 2I        :                 : --           
 hps_memory_mem_alert_n       : AJ22      : input  : 1.2 V             :         : 2J        : Y               : 171ps        
 VCCIO2J                      : AJ23      : power  :                   : 1.2V    : 2J        :                 : --           
@@ -410,30 +410,30 @@ hps_memory_mem_dq[28]        : AJ25      : bidir  : 1.2-V POD         :         
 hps_memory_mem_dq[26]        : AJ26      : bidir  : 1.2-V POD         :         : 2J        : Y               : 181ps        
 hps_memory_mem_dq[31]        : AJ27      : bidir  : 1.2-V POD         :         : 2J        : Y               : 183ps        
 GND                          : AJ28      : gnd    :                   :         :           :                 : --           
-fmc_1C_rx_ch1(n)             : AJ29      : input  : High Speed Differential I/O :         : 1C        : Y               : --           
-fmc_1C_rx_ch1                : AJ30      : input  : High Speed Differential I/O :         : 1C        : Y               : --           
+GXB_GND*                     : AJ29      :        :                   :         : 1C        :                 : --           
+GXB_GND*                     : AJ30      :        :                   :         : 1C        :                 : --           
 GND                          : AJ31      : gnd    :                   :         :           :                 : --           
 GND                          : AJ32      : gnd    :                   :         :           :                 : --           
-fmc_1D_tx_ch0(n)             : AJ33      : output : High Speed Differential I/O :         : 1D        : Y               : --           
-fmc_1D_tx_ch0                : AJ34      : output : High Speed Differential I/O :         : 1D        : Y               : --           
-fmc2_inout_pio6[1]           : AK1       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-fmc2_inout_pio6[2]           : AK2       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod2_inout_pio9[5]          : AK3       : bidir  : 1.8 V             :         : 3B        : Y               : --           
-pmod2_inout_pio9[7]          : AK4       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+GXB_NC                       : AJ33      :        :                   :         : 1D        :                 : --           
+GXB_NC                       : AJ34      :        :                   :         : 1D        :                 : --           
+AA_LVDS_EN_N[4]              : AK1       : output : 1.8 V             :         : 3B        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK2       :        :                   :         : 3B        :                 : --           
+AA_12V0_EN[2]                : AK3       : output : 1.8 V             :         : 3B        : Y               : --           
+AA_LVDS_EN_N[15]             : AK4       : output : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AK5       : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio3[18]          : AK6       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio4[17]          : AK7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio4[18]          : AK8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio1[7]           : AK9       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+DB25_GPIO[1]                 : AK6       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+DB25_GPIO[2]                 : AK7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+DB25_GPIO[3]                 : AK8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AD1939_ABCLK                 : AK9       : input  : 1.8 V             :         : 3A        : Y               : --           
 GND                          : AK10      : gnd    :                   :         :           :                 : --           
 AS_DATA2                     : AK11      :        :                   :         : CSS       :                 : --           
 AS_DATA1                     : AK12      :        :                   :         : CSS       :                 : --           
-~ALTERA_DATA0~ / RESERVED_INPUT : AK13      : input  : 1.8 V             :         : 2A        : N               : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AK14      :        :                   :         : 2A        :                 : --           
+AD7768_DOUT[2]               : AK13      : input  : 1.8 V             :         : 2A        : Y               : --           
+AD7768_DOUT[0]               : AK14      : input  : 1.8 V             :         : 2A        : Y               : --           
 VCCIO2A                      : AK15      : power  :                   : 1.8V    : 2A        :                 : --           
 ~ALTERA_CLKUSR~ / RESERVED_INPUT : AK16      : input  : 1.8 V             :         : 2A        : N               : --           
-fmc1_inout_pio5[19]          : AK17      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-fmc1_inout_pio2[16]          : AK18      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+AD7768_EN                    : AK17      : output : 1.8 V             :         : 2A        : Y               : --           
+HSA_OUT_L_LDAC_N             : AK18      : output : 1.8 V             :         : 2A        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AK19      :        :                   :         : 2I        :                 : --           
 VCCIO2I                      : AK20      : power  :                   : 1.8V    : 2I        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AK21      :        :                   :         : 2I        :                 : --           
@@ -446,28 +446,28 @@ hps_memory_mem_dq[17]        : AK27      : bidir  : 1.2-V POD         :         
 GND                          : AK28      : gnd    :                   :         :           :                 : --           
 GND                          : AK29      : gnd    :                   :         :           :                 : --           
 GND                          : AK30      : gnd    :                   :         :           :                 : --           
-fmc_1C_tx_ch2(n)             : AK31      : output : High Speed Differential I/O :         : 1C        : Y               : --           
-fmc_1C_tx_ch2                : AK32      : output : High Speed Differential I/O :         : 1C        : Y               : --           
+GXB_NC                       : AK31      :        :                   :         : 1C        :                 : --           
+GXB_NC                       : AK32      :        :                   :         : 1C        :                 : --           
 GND                          : AK33      : gnd    :                   :         :           :                 : --           
 GND                          : AK34      : gnd    :                   :         :           :                 : --           
-fmc2_inout_pio6[0]           : AL1       : bidir  : 1.8 V             :         : 3B        : Y               : --           
+AA_SDO[4]                    : AL1       : output : 1.8 V             :         : 3B        : Y               : --           
 GND                          : AL2       : gnd    :                   :         :           :                 : --           
-fmc2_inout_pio6[5]           : AL3       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio1[19]          : AL4       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio1[18]          : AL5       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio3[17]          : AL6       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AD1939_SPI_SCK               : AL3       : output : 1.8 V             :         : 3A        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL4       :        :                   :         : 3A        :                 : --           
+AD1939_MCLK                  : AL5       : input  : 1.8 V             :         : 3A        : Y               : --           
+DB25_GPIO[0]                 : AL6       : bidir  : 1.8 V             :         : 3A        : Y               : --           
 GND                          : AL7       : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio5[17]          : AL8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio5[16]          : AL9       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-TMS                          : AL10      : input  :                   :         : CSS       :                 : --           
-TRST                         : AL11      : input  :                   :         : CSS       :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL8       :        :                   :         : 3A        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL9       :        :                   :         : 3A        :                 : --           
+altera_reserved_tms          : AL10      : input  : 1.8 V             :         : CSS       : N               : --           
+altera_reserved_ntrst        : AL11      : input  : 1.8 V             :         : CSS       : N               : --           
 GND                          : AL12      : gnd    :                   :         :           :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AL13      :        :                   :         : 2A        :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AL14      :        :                   :         : 2A        :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AL15      :        :                   :         : 2A        :                 : --           
-fmc2_inout_pio6[14]          : AL16      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+AD7768_DOUT[3]               : AL13      : input  : 1.8 V             :         : 2A        : Y               : --           
+AD7768_RESET_N               : AL14      : output : 1.8 V             :         : 2A        : Y               : --           
+AD7768_DOUT[1]               : AL15      : input  : 1.8 V             :         : 2A        : Y               : --           
+HSA_IN_CLK                   : AL16      : output : 1.8 V             :         : 2A        : Y               : --           
 GND                          : AL17      : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio2[17]          : AL18      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+HSA_OUT_L_CLR_N              : AL18      : output : 1.8 V             :         : 2A        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AL19      :        :                   :         : 2I        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AL20      :        :                   :         : 2I        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AL21      :        :                   :         : 2I        :                 : --           
@@ -478,30 +478,30 @@ hps_memory_mem_dq[13]        : AL25      : bidir  : 1.2-V POD         :         
 hps_memory_mem_dq[20]        : AL26      : bidir  : 1.2-V POD         :         : 2J        : Y               : 230ps        
 RESERVED_INPUT_WITH_WEAK_PULLUP : AL27      :        :                   :         : 2J        :                 : --           
 GND                          : AL28      : gnd    :                   :         :           :                 : --           
-fmc_1C_rx_ch0(n)             : AL29      : input  : High Speed Differential I/O :         : 1C        : Y               : --           
-fmc_1C_rx_ch0                : AL30      : input  : High Speed Differential I/O :         : 1C        : Y               : --           
+GXB_GND*                     : AL29      :        :                   :         : 1C        :                 : --           
+GXB_GND*                     : AL30      :        :                   :         : 1C        :                 : --           
 GND                          : AL31      : gnd    :                   :         :           :                 : --           
 GND                          : AL32      : gnd    :                   :         :           :                 : --           
 GXB_NC                       : AL33      :        :                   :         : 1C        :                 : --           
 GXB_NC                       : AL34      :        :                   :         : 1C        :                 : --           
-fmc1_inout_pio4[1]           : AM1       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio4[2]           : AM2       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc2_inout_pio6[4]           : AM3       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+FAN_FAIL_N                   : AM1       : input  : 1.8 V             :         : 3A        : Y               : --           
+EEPROM_WP                    : AM2       : output : 1.8 V             :         : 3A        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM3       :        :                   :         : 3A        :                 : --           
 GND                          : AM4       : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio5[2]           : AM5       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio5[1]           : AM6       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio3[0]           : AM7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AM8       :        :                   :         : 3A        :                 : --           
+FPGA_RX                      : AM5       : input  : 1.8 V             :         : 3A        : Y               : --           
+FPGA_TX                      : AM6       : output : 1.8 V             :         : 3A        : Y               : --           
+FULL_SPEED_N                 : AM7       : output : 1.8 V             :         : 3A        : Y               : --           
+P3_GPIO[3]                   : AM8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
 GND                          : AM9       : gnd    :                   :         :           :                 : --           
 nCSO1                        : AM10      :        :                   :         : CSS       :                 : --           
 nSTATUS                      : AM11      :        :                   :         : CSS       :                 : --           
 CONF_DONE                    : AM12      : bidir  :                   :         : CSS       :                 : --           
-fmc1_inout_pio5[8]           : AM13      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+AD7768_SDI                   : AM13      : output : 1.8 V             :         : 2A        : Y               : --           
 GND                          : AM14      : gnd    :                   :         :           :                 : --           
 fpga_clk_i                   : AM15      : input  : 1.8 V             :         : 2A        : Y               : --           
-fmc2_inout_pio6[15]          : AM16      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-fmc1_inout_pio2[4]           : AM17      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AM18      :        :                   :         : 2A        :                 : --           
+HSA_OUT_CLK                  : AM16      : output : 1.8 V             :         : 2A        : Y               : --           
+AD4020_EN                    : AM17      : output : 1.8 V             :         : 2A        : Y               : --           
+HSA_IN_R_SDO                 : AM18      : input  : 1.8 V             :         : 2A        : Y               : --           
 GND                          : AM19      : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AM20      :        :                   :         : 2I        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AM21      :        :                   :         : 2I        :                 : --           
@@ -514,28 +514,28 @@ hps_memory_mem_dbi_n[2]      : AM27      : bidir  : 1.2-V POD         :         
 GND                          : AM28      : gnd    :                   :         :           :                 : --           
 GND                          : AM29      : gnd    :                   :         :           :                 : --           
 GND                          : AM30      : gnd    :                   :         :           :                 : --           
-fmc_1C_tx_ch1(n)             : AM31      : output : High Speed Differential I/O :         : 1C        : Y               : --           
-fmc_1C_tx_ch1                : AM32      : output : High Speed Differential I/O :         : 1C        : Y               : --           
+GXB_NC                       : AM31      :        :                   :         : 1C        :                 : --           
+GXB_NC                       : AM32      :        :                   :         : 1C        :                 : --           
 GND                          : AM33      : gnd    :                   :         :           :                 : --           
 GND                          : AM34      : gnd    :                   :         :           :                 : --           
 NC                           : AN1       :        :                   :         :           :                 : --           
 NC                           : AN2       :        :                   :         :           :                 : --           
 NC                           : AN3       :        :                   :         :           :                 : --           
-fmc1_inout_pio5[4]           : AN4       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio5[0]           : AN5       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+FPGA_LED                     : AN4       : output : 1.8 V             :         : 3A        : Y               : --           
+DB25_GPIO[11]                : AN5       : bidir  : 1.8 V             :         : 3A        : Y               : --           
 GND                          : AN6       : gnd    :                   :         :           :                 : --           
 sys_reset_n_i                : AN7       : input  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio2[10]          : AN8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-pciex4_inout_pio10[1]        : AN9       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+P3_GPIO[2]                   : AN8       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AD1939_LINE_IN_DSDATA        : AN9       : input  : 1.8 V             :         : 3A        : Y               : --           
 nCSO0                        : AN10      :        :                   :         : CSS       :                 : --           
 GND                          : AN11      : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio5[11]          : AN12      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-fmc1_inout_pio5[7]           : AN13      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AN14      :        :                   :         : 2A        :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AN15      :        :                   :         : 2A        :                 : --           
+HSA_OUT_L_SDI                : AN12      : output : 1.8 V             :         : 2A        : Y               : --           
+AD7768_CS_N                  : AN13      : output : 1.8 V             :         : 2A        : Y               : --           
+AD7768_SYNC_IN               : AN14      : output : 1.8 V             :         : 2A        : Y               : --           
+HSA_IN_R_SDI                 : AN15      : output : 1.8 V             :         : 2A        : Y               : --           
 GND                          : AN16      : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio2[5]           : AN17      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AN18      :        :                   :         : 2A        :                 : --           
+HSA_IN_L_CNV                 : AN17      : output : 1.8 V             :         : 2A        : Y               : --           
+HSA_IN_R_CNV                 : AN18      : output : 1.8 V             :         : 2A        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AN19      :        :                   :         : 2I        :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AN20      :        :                   :         : 2J        :                 : --           
 GND                          : AN21      : gnd    :                   :         :           :                 : --           
@@ -550,24 +550,24 @@ DNU                          : AN29      :        :                   :         
 GND                          : AN30      : gnd    :                   :         :           :                 : --           
 GND                          : AN31      : gnd    :                   :         :           :                 : --           
 GND                          : AN32      : gnd    :                   :         :           :                 : --           
-pcie_tx_o(n)                 : AN33      : output : High Speed Differential I/O :         : 1C        : Y               : --           
-pcie_tx_o                    : AN34      : output : High Speed Differential I/O :         : 1C        : Y               : --           
+GXB_NC                       : AN33      :        :                   :         : 1C        :                 : --           
+GXB_NC                       : AN34      :        :                   :         : 1C        :                 : --           
 NC                           : AP2       :        :                   :         :           :                 : --           
 NC                           : AP3       :        :                   :         :           :                 : --           
-fmc1_inout_pio5[3]           : AP4       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio4[19]          : AP5       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio4[0]           : AP6       : bidir  : 1.8 V             :         : 3A        : Y               : --           
-fmc1_inout_pio3[19]          : AP7       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+FPGA_RESET                   : AP4       : output : 1.8 V             :         : 3A        : Y               : --           
+DB25_GPIO[10]                : AP5       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AD1939_RST_CODEC_N           : AP6       : output : 1.8 V             :         : 3A        : Y               : --           
+GPIO_LED                     : AP7       : output : 1.8 V             :         : 3A        : Y               : --           
 GND                          : AP8       : gnd    :                   :         :           :                 : --           
-pciex4_inout_pio10[0]        : AP9       : bidir  : 1.8 V             :         : 3A        : Y               : --           
+AD1939_MIC_IN_DSDATA         : AP9       : input  : 1.8 V             :         : 3A        : Y               : --           
 nCSO2                        : AP10      :        :                   :         : CSS       :                 : --           
 GND                          : AP11      :        :                   :         : CSS       :                 : --           
-fmc1_inout_pio5[12]          : AP12      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+HSA_OUT_L_SDO                : AP12      : input  : 1.8 V             :         : 2A        : Y               : --           
 GND                          : AP13      : gnd    :                   :         :           :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AP14      :        :                   :         : 2A        :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : AP15      :        :                   :         : 2A        :                 : --           
-fmc1_inout_pio5[9]           : AP16      : bidir  : 1.8 V             :         : 2A        : Y               : --           
-fmc1_inout_pio5[10]          : AP17      : bidir  : 1.8 V             :         : 2A        : Y               : --           
+AD7768_DRDY_N                : AP14      : input  : 1.8 V             :         : 2A        : Y               : --           
+HSA_IN_EN_N                  : AP15      : output : 1.8 V             :         : 2A        : Y               : --           
+HSA_OUT_L_SYNC_N             : AP16      : output : 1.8 V             :         : 2A        : Y               : --           
+HSA_OUT_L_RESET_N            : AP17      : output : 1.8 V             :         : 2A        : Y               : --           
 GND                          : AP18      : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : AP19      :        :                   :         : 2I        :                 : --           
 hps_memory_mem_dq[14]        : AP20      : bidir  : 1.2-V POD         :         : 2J        : Y               : 214ps        
@@ -581,8 +581,8 @@ hps_memory_mem_dq[21]        : AP27      : bidir  : 1.2-V POD         :         
 GND                          : AP28      : gnd    :                   :         :           :                 : --           
 RREF                         : AP29      :        :                   :         :           :                 : --           
 GND                          : AP30      : gnd    :                   :         :           :                 : --           
-fmc_1C_tx_ch0(n)             : AP31      : output : High Speed Differential I/O :         : 1C        : Y               : --           
-fmc_1C_tx_ch0                : AP32      : output : High Speed Differential I/O :         : 1C        : Y               : --           
+GXB_NC                       : AP31      :        :                   :         : 1C        :                 : --           
+GXB_NC                       : AP32      :        :                   :         : 1C        :                 : --           
 GND                          : AP33      : gnd    :                   :         :           :                 : --           
 NC                           : B1        :        :                   :         :           :                 : --           
 GND                          : B2        : gnd    :                   :         :           :                 : --           
@@ -650,8 +650,8 @@ GXB_GND*                     : C29       :        :                   :         
 GXB_GND*                     : C30       :        :                   :         : 1F        :                 : --           
 GND                          : C31       : gnd    :                   :         :           :                 : --           
 GND                          : C32       : gnd    :                   :         :           :                 : --           
-fmc_1F_tx_ch1(n)             : C33       : output : High Speed Differential I/O :         : 1F        : Y               : --           
-fmc_1F_tx_ch1                : C34       : output : High Speed Differential I/O :         : 1F        : Y               : --           
+GXB_NC                       : C33       :        :                   :         : 1F        :                 : --           
+GXB_NC                       : C34       :        :                   :         : 1F        :                 : --           
 FPGA_memory_mem1_a[7]        : D1        : output : SSTL-12           :         : 3E        : Y               : --           
 FPGA_memory_mem1_a[14]       : D2        : output : SSTL-12           :         : 3E        : Y               : --           
 GND                          : D3        : gnd    :                   :         :           :                 : --           
@@ -682,8 +682,8 @@ hps_memory_mem_a[14]         : D27       : output : SSTL-12           :         
 GND                          : D28       : gnd    :                   :         :           :                 : --           
 GND                          : D29       : gnd    :                   :         :           :                 : --           
 GND                          : D30       : gnd    :                   :         :           :                 : --           
-GXB_NC                       : D31       :        :                   :         : 1F        :                 : --           
-GXB_NC                       : D32       :        :                   :         : 1F        :                 : --           
+MSATA_A(n)                   : D31       : output : High Speed Differential I/O :         : 1F        : Y               : --           
+MSATA_A                      : D32       : output : High Speed Differential I/O :         : 1F        : Y               : --           
 GND                          : D33       : gnd    :                   :         :           :                 : --           
 GND                          : D34       : gnd    :                   :         :           :                 : --           
 FPGA_memory_mem1_a[6]        : E1        : output : SSTL-12           :         : 3E        : Y               : --           
@@ -709,22 +709,22 @@ GND                          : E20       : gnd    :                   :         
 hps_emac1_TXD0               : E21       : output : 1.8 V             :         : 2L        : Y               : --           
 hps_memory_mem_a[15]         : E22       : output : SSTL-12           :         : 2K        : Y               : 201ps        
 ddr_ref_clk_i                : E23       : input  : LVDS              :         : 2K        : Y               : --           
-ddr_ref_clk_i(n)             : E24       : input  : LVDS              :         : 2K        : Y               : --           
+ddr_ref_clk_i(n)             : E24       : input  : LVDS              :         : 2K        : N               : --           
 GND                          : E25       : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : E26       :        :                   :         : 2K        :                 : --           
 hps_memory_mem_a[13]         : E27       : output : SSTL-12           :         : 2K        : Y               : 197ps        
 GND                          : E28       : gnd    :                   :         :           :                 : --           
-GXB_GND*                     : E29       :        :                   :         : 1F        :                 : --           
-GXB_GND*                     : E30       :        :                   :         : 1F        :                 : --           
+MSATA_B(n)                   : E29       : input  : High Speed Differential I/O :         : 1F        : Y               : --           
+MSATA_B                      : E30       : input  : High Speed Differential I/O :         : 1F        : Y               : --           
 GND                          : E31       : gnd    :                   :         :           :                 : --           
 GND                          : E32       : gnd    :                   :         :           :                 : --           
-fmc_1F_tx_ch0(n)             : E33       : output : High Speed Differential I/O :         : 1F        : Y               : --           
-fmc_1F_tx_ch0                : E34       : output : High Speed Differential I/O :         : 1F        : Y               : --           
+GXB_NC                       : E33       :        :                   :         : 1F        :                 : --           
+GXB_NC                       : E34       :        :                   :         : 1F        :                 : --           
 FPGA_memory_mem1_a[1]        : F1        : output : SSTL-12           :         : 3E        : Y               : --           
 GND                          : F2        : gnd    :                   :         :           :                 : --           
 FPGA_memory_oct1_rzqin       : F3        : input  : 1.2 V             :         : 3E        : Y               : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : F4        :        :                   :         : 3E        :                 : --           
-clk_200(n)                   : F5        : input  : LVDS              :         : 3E        : Y               : --           
+clk_200(n)                   : F5        : input  : LVDS              :         : 3E        : N               : --           
 clk_200                      : F6        : input  : LVDS              :         : 3E        : Y               : --           
 GND                          : F7        : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 3E        :                 : --           
@@ -818,8 +818,8 @@ hps_memory_mem_a[0]          : H27       : output : SSTL-12           :         
 GND                          : H28       : gnd    :                   :         :           :                 : --           
 GND                          : H29       : gnd    :                   :         :           :                 : --           
 GND                          : H30       : gnd    :                   :         :           :                 : --           
-sfp_1F_tx_ch0(n)             : H31       : output : High Speed Differential I/O :         : 1F        : Y               : --           
-sfp_1F_tx_ch0                : H32       : output : High Speed Differential I/O :         : 1F        : Y               : --           
+GXB_NC                       : H31       :        :                   :         : 1F        :                 : --           
+GXB_NC                       : H32       :        :                   :         : 1F        :                 : --           
 GND                          : H33       : gnd    :                   :         :           :                 : --           
 GND                          : H34       : gnd    :                   :         :           :                 : --           
 FPGA_memory_mem1_dqs[0]      : J1        : bidir  : Differential 1.2-V POD :         : 3D        : Y               : 174ps        
@@ -842,7 +842,7 @@ hps_usb1_DIR                 : J17       : input  : 1.8 V             :         
 VCCIO2L                      : J18       : power  :                   : 1.8V    : 2L        :                 : --           
 hps_usb1_D6                  : J19       : bidir  : 1.8 V             :         : 2L        : Y               : --           
 hps_usb1_CLK                 : J20       : input  : 1.8 V             :         : 2L        : Y               : --           
-hps_gpio_GPIO7               : J21       : bidir  : 1.8 V             :         : 2L        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : J21       :        :                   :         : 2L        :                 : --           
 hps_memory_mem_a[9]          : J22       : output : SSTL-12           :         : 2K        : Y               : 205ps        
 VCCIO2K                      : J23       : power  :                   : 1.2V    : 2K        :                 : --           
 hps_memory_mem_act_n         : J24       : output : SSTL-12           :         : 2K        : Y               : 232ps        
@@ -850,8 +850,8 @@ som_config_pio[0]            : J25       : input  : 1.2 V             :         
 som_config_pio[1]            : J26       : input  : 1.2 V             :         : 2K        : Y               : --           
 hps_memory_mem_cke           : J27       : output : SSTL-12           :         : 2K        : Y               : 199ps        
 GND                          : J28       : gnd    :                   :         :           :                 : --           
-sfp_1F_rx_ch0(n)             : J29       : input  : High Speed Differential I/O :         : 1F        : Y               : --           
-sfp_1F_rx_ch0                : J30       : input  : High Speed Differential I/O :         : 1F        : Y               : --           
+GXB_GND*                     : J29       :        :                   :         : 1F        :                 : --           
+GXB_GND*                     : J30       :        :                   :         : 1F        :                 : --           
 GND                          : J31       : gnd    :                   :         :           :                 : --           
 GND                          : J32       : gnd    :                   :         :           :                 : --           
 GXB_NC                       : J33       :        :                   :         : 1E        :                 : --           
@@ -873,7 +873,7 @@ HPS_nPOR                     : K14       :        :                   :         
 GND                          : K15       : gnd    :                   :         :           :                 : --           
 VCCIOREF_HPS                 : K16       : power  :                   : 1.8V    :           :                 : --           
 VREFB2LN0                    : K17       : power  :                   :         : 2L        :                 : --           
-hps_gpio_GPIO2               : K18       : bidir  : 1.8 V             :         : 2L        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : K18       :        :                   :         : 2L        :                 : --           
 hps_emac1_MDIO               : K19       : bidir  : 1.8 V             :         : 2L        : Y               : --           
 GND                          : K20       : gnd    :                   :         :           :                 : --           
 hps_gpio_GPIO6               : K21       : bidir  : 1.8 V             :         : 2L        : Y               : --           
@@ -886,8 +886,8 @@ GND                          : K27       : gnd    :                   :         
 GND                          : K28       : gnd    :                   :         :           :                 : --           
 GND                          : K29       : gnd    :                   :         :           :                 : --           
 GND                          : K30       : gnd    :                   :         :           :                 : --           
-fmc_1F_rx_ch1(n)             : K31       : input  : High Speed Differential I/O :         : 1F        : Y               : --           
-fmc_1F_rx_ch1                : K32       : input  : High Speed Differential I/O :         : 1F        : Y               : --           
+GXB_GND*                     : K31       :        :                   :         : 1F        :                 : --           
+GXB_GND*                     : K32       :        :                   :         : 1F        :                 : --           
 GND                          : K33       : gnd    :                   :         :           :                 : --           
 GND                          : K34       : gnd    :                   :         :           :                 : --           
 FPGA_memory_mem1_dq[5]       : L1        : bidir  : 1.2-V POD         :         : 3D        : Y               : 147ps        
@@ -907,9 +907,9 @@ HPS_nRST                     : L14       :        :                   :         
 VCCL_HPS                     : L15       : power  :                   : 0.9V    :           :                 : --           
 VCCL_HPS                     : L16       : power  :                   : 0.9V    :           :                 : --           
 GND                          : L17       : gnd    :                   :         :           :                 : --           
-hps_gpio_GPIO3               : L18       : bidir  : 1.8 V             :         : 2L        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : L18       :        :                   :         : 2L        :                 : --           
 hps_emac1_MDC                : L19       : output : 1.8 V             :         : 2L        : Y               : --           
-hps_gpio_GPIO10              : L20       : bidir  : 1.8 V             :         : 2L        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : L20       :        :                   :         : 2L        :                 : --           
 hps_i2c0_SCL                 : L21       : bidir  : 1.8 V             :         : 2L        : Y               : --           
 GND                          : L22       : gnd    :                   :         :           :                 : --           
 hps_memory_mem_ck            : L23       : output : Differential 1.2-V SSTL :         : 2K        : Y               : 209ps        
@@ -918,12 +918,12 @@ GND                          : L25       : gnd    :                   :         
 VCCH_GXBL                    : L26       : power  :                   : 1.8V    :           :                 : --           
 VCCT_GXBL1F                  : L27       : power  :                   : 0.95V   :           :                 : --           
 VCCT_GXBL1F                  : L28       : power  :                   : 0.95V   :           :                 : --           
-fmc_1F_rx_ch0(n)             : L29       : input  : High Speed Differential I/O :         : 1F        : Y               : --           
-fmc_1F_rx_ch0                : L30       : input  : High Speed Differential I/O :         : 1F        : Y               : --           
+GXB_GND*                     : L29       :        :                   :         : 1F        :                 : --           
+GXB_GND*                     : L30       :        :                   :         : 1F        :                 : --           
 GND                          : L31       : gnd    :                   :         :           :                 : --           
 GND                          : L32       : gnd    :                   :         :           :                 : --           
-fmc_1E_tx_ch3(n)             : L33       : output : High Speed Differential I/O :         : 1E        : Y               : --           
-fmc_1E_tx_ch3                : L34       : output : High Speed Differential I/O :         : 1E        : Y               : --           
+GXB_NC                       : L33       :        :                   :         : 1E        :                 : --           
+GXB_NC                       : L34       :        :                   :         : 1E        :                 : --           
 FPGA_memory_mem1_dq[7]       : M1        : bidir  : 1.2-V POD         :         : 3D        : Y               : 147ps        
 FPGA_memory_mem1_dq[6]       : M2        : bidir  : 1.2-V POD         :         : 3D        : Y               : 132ps        
 FPGA_memory_mem1_dq[4]       : M3        : bidir  : 1.2-V POD         :         : 3D        : Y               : 129ps        
@@ -950,8 +950,8 @@ hps_memory_mem_ck_n          : M23       : output : Differential 1.2-V SSTL :   
 RESERVED_INPUT_WITH_WEAK_PULLUP : M24       :        :                   :         : 2K        :                 : --           
 GND                          : M25       : gnd    :                   :         :           :                 : --           
 GND                          : M26       : gnd    :                   :         :           :                 : --           
-refclk_1F_p(n)               : M27       : input  : LVDS              :         : 1F        : Y               : --           
-refclk_1F_p                  : M28       : input  : LVDS              :         : 1F        : Y               : --           
+GXB_GND*                     : M27       :        :                   :         : 1F        :                 : --           
+GXB_GND*                     : M28       :        :                   :         : 1F        :                 : --           
 GND                          : M29       : gnd    :                   :         :           :                 : --           
 GND                          : M30       : gnd    :                   :         :           :                 : --           
 GXB_GND*                     : M31       :        :                   :         : 1E        :                 : --           
@@ -990,13 +990,13 @@ GXB_GND*                     : N29       :        :                   :         
 GXB_GND*                     : N30       :        :                   :         : 1E        :                 : --           
 GND                          : N31       : gnd    :                   :         :           :                 : --           
 GND                          : N32       : gnd    :                   :         :           :                 : --           
-fmc_1E_tx_ch2(n)             : N33       : output : High Speed Differential I/O :         : 1E        : Y               : --           
-fmc_1E_tx_ch2                : N34       : output : High Speed Differential I/O :         : 1E        : Y               : --           
-fmc1_inout_pio1[15]          : P1        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio4[9]           : P2        : bidir  : 1.8 V             :         : 3C        : Y               : --           
+GXB_NC                       : N33       :        :                   :         : 1E        :                 : --           
+GXB_NC                       : N34       :        :                   :         : 1E        :                 : --           
+AA_LVDS_EN_N[8]              : P1        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[8]                    : P2        : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : P3        : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio3[9]           : P4        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio3[10]          : P5        : bidir  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[9]                    : P4        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_LVDS_EN_N[9]              : P5        : output : 1.8 V             :         : 3C        : Y               : --           
 FPGA_memory_mem1_dbi_n[2]    : P6        : bidir  : 1.2-V POD         :         : 3D        : Y               : 114ps        
 FPGA_memory_mem1_dq[21]      : P7        : bidir  : 1.2-V POD         :         : 3D        : Y               : 104ps        
 VCCIO3D                      : P8        : power  :                   : 1.2V    : 3D        :                 : --           
@@ -1022,14 +1022,14 @@ GXB_GND*                     : P27       :        :                   :         
 GXB_GND*                     : P28       :        :                   :         : 1F        :                 : --           
 GND                          : P29       : gnd    :                   :         :           :                 : --           
 GND                          : P30       : gnd    :                   :         :           :                 : --           
-fmc_1E_rx_ch3(n)             : P31       : input  : High Speed Differential I/O :         : 1E        : Y               : --           
-fmc_1E_rx_ch3                : P32       : input  : High Speed Differential I/O :         : 1E        : Y               : --           
+GXB_GND*                     : P31       :        :                   :         : 1E        :                 : --           
+GXB_GND*                     : P32       :        :                   :         : 1E        :                 : --           
 GND                          : P33       : gnd    :                   :         :           :                 : --           
 GND                          : P34       : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio1[14]          : R1        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio4[10]          : R2        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio2[1]           : R3        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio1[17]          : R4        : bidir  : 1.8 V             :         : 3C        : Y               : --           
+AA_12V0_EN[0]                : R1        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[8]                    : R2        : input  : 1.8 V             :         : 3C        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : R3        :        :                   :         : 3C        :                 : --           
+AA_BANK_EN[0]                : R4        : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : R5        : gnd    :                   :         :           :                 : --           
 RESERVED_INPUT_WITH_WEAK_PULLUP : R6        :        :                   :         : 3D        :                 : --           
 FPGA_memory_mem1_dq[19]      : R7        : bidir  : 1.2-V POD         :         : 3D        : Y               : 111ps        
@@ -1054,18 +1054,18 @@ GND                          : R25       : gnd    :                   :         
 VCCH_GXBL                    : R26       : power  :                   : 1.8V    :           :                 : --           
 VCCT_GXBL1E                  : R27       : power  :                   : 0.95V   :           :                 : --           
 VCCT_GXBL1E                  : R28       : power  :                   : 0.95V   :           :                 : --           
-fmc_1E_rx_ch2(n)             : R29       : input  : High Speed Differential I/O :         : 1E        : Y               : --           
-fmc_1E_rx_ch2                : R30       : input  : High Speed Differential I/O :         : 1E        : Y               : --           
+GXB_GND*                     : R29       :        :                   :         : 1E        :                 : --           
+GXB_GND*                     : R30       :        :                   :         : 1E        :                 : --           
 GND                          : R31       : gnd    :                   :         :           :                 : --           
 GND                          : R32       : gnd    :                   :         :           :                 : --           
-fmc_1E_tx_ch1(n)             : R33       : output : High Speed Differential I/O :         : 1E        : Y               : --           
-fmc_1E_tx_ch1                : R34       : output : High Speed Differential I/O :         : 1E        : Y               : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : T1        :        :                   :         : 3C        :                 : --           
+GXB_NC                       : R33       :        :                   :         : 1E        :                 : --           
+GXB_NC                       : R34       :        :                   :         : 1E        :                 : --           
+AA_MCLK[0]                   : T1        : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : T2        : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio2[0]           : T3        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio1[16]          : T4        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio3[13]          : T5        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio3[14]          : T6        : bidir  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[9]                    : T3        : input  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[0]                    : T4        : input  : 1.8 V             :         : 3C        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : T5        :        :                   :         : 3C        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : T6        :        :                   :         : 3C        :                 : --           
 VCCIO3D                      : T7        : power  :                   : 1.2V    : 3D        :                 : --           
 FPGA_memory_mem1_dq[26]      : T8        : bidir  : 1.2-V POD         :         : 3D        : Y               : 102ps        
 FPGA_memory_mem1_dq[28]      : T9        : bidir  : 1.2-V POD         :         : 3D        : Y               : 101ps        
@@ -1086,20 +1086,20 @@ VCC                          : T23       : power  :                   : 0.9V    
 VCC                          : T24       : power  :                   : 0.9V    :           :                 : --           
 VCC                          : T25       : power  :                   : 0.9V    :           :                 : --           
 GND                          : T26       : gnd    :                   :         :           :                 : --           
-refclk_1E_p(n)               : T27       : input  : LVDS              :         : 1E        : Y               : --           
-refclk_1E_p                  : T28       : input  : LVDS              :         : 1E        : Y               : --           
+GXB_GND*                     : T27       :        :                   :         : 1E        :                 : --           
+GXB_GND*                     : T28       :        :                   :         : 1E        :                 : --           
 GND                          : T29       : gnd    :                   :         :           :                 : --           
 GND                          : T30       : gnd    :                   :         :           :                 : --           
-fmc_1E_rx_ch1(n)             : T31       : input  : High Speed Differential I/O :         : 1E        : Y               : --           
-fmc_1E_rx_ch1                : T32       : input  : High Speed Differential I/O :         : 1E        : Y               : --           
+GXB_GND*                     : T31       :        :                   :         : 1E        :                 : --           
+GXB_GND*                     : T32       :        :                   :         : 1E        :                 : --           
 GND                          : T33       : gnd    :                   :         :           :                 : --           
 GND                          : T34       : gnd    :                   :         :           :                 : --           
-RESERVED_INPUT_WITH_WEAK_PULLUP : U1        :        :                   :         : 3C        :                 : --           
-fmc1_inout_pio1[3]           : U2        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio1[12]          : U3        : bidir  : 1.8 V             :         : 3C        : Y               : --           
+AA_MCLK[1]                   : U1        : output : 1.8 V             :         : 3C        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : U2        :        :                   :         : 3C        :                 : --           
+AA_SDO[11]                   : U3        : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : U4        : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio4[8]           : U5        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio4[7]           : U6        : bidir  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[0]                    : U5        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_LVDS_EN_N[0]              : U6        : output : 1.8 V             :         : 3C        : Y               : --           
 FPGA_memory_mem1_dq[25]      : U7        : bidir  : 1.2-V POD         :         : 3D        : Y               : 104ps        
 RESERVED_INPUT_WITH_WEAK_PULLUP : U8        :        :                   :         : 3D        :                 : --           
 VCCIO3D                      : U9        : power  :                   : 1.2V    : 3D        :                 : --           
@@ -1122,17 +1122,17 @@ VCC                          : U25       : power  :                   : 0.9V    
 GND                          : U26       : gnd    :                   :         :           :                 : --           
 VCCR_GXBL1E                  : U27       : power  :                   : 0.95V   :           :                 : --           
 VCCR_GXBL1E                  : U28       : power  :                   : 0.95V   :           :                 : --           
-fmc_1E_rx_ch0(n)             : U29       : input  : High Speed Differential I/O :         : 1E        : Y               : --           
-fmc_1E_rx_ch0                : U30       : input  : High Speed Differential I/O :         : 1E        : Y               : --           
+GXB_GND*                     : U29       :        :                   :         : 1E        :                 : --           
+GXB_GND*                     : U30       :        :                   :         : 1E        :                 : --           
 GND                          : U31       : gnd    :                   :         :           :                 : --           
 GND                          : U32       : gnd    :                   :         :           :                 : --           
-fmc_1E_tx_ch0(n)             : U33       : output : High Speed Differential I/O :         : 1E        : Y               : --           
-fmc_1E_tx_ch0                : U34       : output : High Speed Differential I/O :         : 1E        : Y               : --           
+GXB_NC                       : U33       :        :                   :         : 1E        :                 : --           
+GXB_NC                       : U34       :        :                   :         : 1E        :                 : --           
 GND                          : V1        : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio1[2]           : V2        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio1[13]          : V3        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio3[8]           : V4        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio3[7]           : V5        : bidir  : 1.8 V             :         : 3C        : Y               : --           
+AA_LVDS_EN_N[11]             : V2        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDI[11]                   : V3        : input  : 1.8 V             :         : 3C        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : V4        :        :                   :         : 3C        :                 : --           
+AA_LVDS_EN_N[10]             : V5        : output : 1.8 V             :         : 3C        : Y               : --           
 GND                          : V6        : gnd    :                   :         :           :                 : --           
 FPGA_memory_mem1_dq[31]      : V7        : bidir  : 1.2-V POD         :         : 3D        : Y               : 102ps        
 FPGA_memory_mem1_dq[29]      : V8        : bidir  : 1.2-V POD         :         : 3D        : Y               : 99ps         
@@ -1154,21 +1154,21 @@ VCC                          : V23       : power  :                   : 0.9V    
 VCC                          : V24       : power  :                   : 0.9V    :           :                 : --           
 GND                          : V25       : gnd    :                   :         :           :                 : --           
 GND                          : V26       : gnd    :                   :         :           :                 : --           
-sfp_refclk_1F_p(n)           : V27       : input  : LVDS              :         : 1E        : Y               : --           
-sfp_refclk_1F_p              : V28       : input  : LVDS              :         : 1E        : Y               : --           
+GXB_GND*                     : V27       :        :                   :         : 1E        :                 : --           
+GXB_GND*                     : V28       :        :                   :         : 1E        :                 : --           
 GND                          : V29       : gnd    :                   :         :           :                 : --           
 GND                          : V30       : gnd    :                   :         :           :                 : --           
 GXB_GND*                     : V31       :        :                   :         : 1D        :                 : --           
 GXB_GND*                     : V32       :        :                   :         : 1D        :                 : --           
 GND                          : V33       : gnd    :                   :         :           :                 : --           
 GND                          : V34       : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio3[1]           : W1        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio3[2]           : W2        : bidir  : 1.8 V             :         : 3C        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : W1        :        :                   :         : 3C        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : W2        :        :                   :         : 3C        :                 : --           
 GND                          : W3        : gnd    :                   :         :           :                 : --           
-fmc1_inout_pio5[5]           : W4        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio5[6]           : W5        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio4[13]          : W6        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio4[14]          : W7        : bidir  : 1.8 V             :         : 3C        : Y               : --           
+AA_MCLK[3]                   : W4        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_MCLK[2]                   : W5        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_LVDS_EN_N[1]              : W6        : output : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[1]                    : W7        : output : 1.8 V             :         : 3C        : Y               : --           
 VCCIO3C                      : W8        : power  :                   : 1.8V    : 3C        :                 : --           
 FPGA_memory_mem1_dbi_n[3]    : W9        : bidir  : 1.2-V POD         :         : 3D        : Y               : 103ps        
 FPGA_memory_mem1_dq[30]      : W10       : bidir  : 1.2-V POD         :         : 3D        : Y               : 107ps        
@@ -1196,15 +1196,15 @@ GND                          : W31       : gnd    :                   :         
 GND                          : W32       : gnd    :                   :         :           :                 : --           
 GXB_NC                       : W33       :        :                   :         : 1D        :                 : --           
 GXB_NC                       : W34       :        :                   :         : 1D        :                 : --           
-fmc1_inout_pio1[0]           : Y1        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio1[1]           : Y2        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio3[11]          : Y3        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio3[12]          : Y4        : bidir  : 1.8 V             :         : 3C        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y1        :        :                   :         : 3C        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y2        :        :                   :         : 3C        :                 : --           
+AA_SDI[10]                   : Y3        : input  : 1.8 V             :         : 3C        : Y               : --           
+AA_SDO[10]                   : Y4        : output : 1.8 V             :         : 3C        : Y               : --           
 VCCIO3C                      : Y5        : power  :                   : 1.8V    : 3C        :                 : --           
-fmc1_inout_pio1[10]          : Y6        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio1[11]          : Y7        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio1[4]           : Y8        : bidir  : 1.8 V             :         : 3C        : Y               : --           
-fmc1_inout_pio1[5]           : Y9        : bidir  : 1.8 V             :         : 3C        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   :         : 3C        :                 : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y7        :        :                   :         : 3C        :                 : --           
+AA_SDI[1]                    : Y8        : input  : 1.8 V             :         : 3C        : Y               : --           
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y9        :        :                   :         : 3C        :                 : --           
 GND                          : Y10       : gnd    :                   :         :           :                 : --           
 VCC                          : Y11       : power  :                   : 0.9V    :           :                 : --           
 VCC                          : Y12       : power  :                   : 0.9V    :           :                 : --           
@@ -1222,11 +1222,11 @@ VCC                          : Y23       : power  :                   : 0.9V    
 VCC                          : Y24       : power  :                   : 0.9V    :           :                 : --           
 GND                          : Y25       : gnd    :                   :         :           :                 : --           
 GND                          : Y26       : gnd    :                   :         :           :                 : --           
-refclk_1D_p(n)               : Y27       : input  : LVDS              :         : 1D        : Y               : --           
-refclk_1D_p                  : Y28       : input  : LVDS              :         : 1D        : Y               : --           
+GXB_GND*                     : Y27       :        :                   :         : 1D        :                 : --           
+GXB_GND*                     : Y28       :        :                   :         : 1D        :                 : --           
 GND                          : Y29       : gnd    :                   :         :           :                 : --           
 GND                          : Y30       : gnd    :                   :         :           :                 : --           
-fmc_1D_rx_ch3(n)             : Y31       : input  : High Speed Differential I/O :         : 1D        : Y               : --           
-fmc_1D_rx_ch3                : Y32       : input  : High Speed Differential I/O :         : 1D        : Y               : --           
+GXB_GND*                     : Y31       :        :                   :         : 1D        :                 : --           
+GXB_GND*                     : Y32       :        :                   :         : 1D        :                 : --           
 GND                          : Y33       : gnd    :                   :         :           :                 : --           
 GND                          : Y34       : gnd    :                   :         :           :                 : --           

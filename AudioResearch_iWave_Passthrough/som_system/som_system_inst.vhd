@@ -5,12 +5,33 @@
 			ad1939_mclk_clk                                : in    std_logic                     := 'X';             -- clk
 			ad1939_physical_ad1939_adc_asdata1             : in    std_logic                     := 'X';             -- ad1939_adc_asdata1
 			ad1939_physical_ad1939_adc_asdata2             : in    std_logic                     := 'X';             -- ad1939_adc_asdata2
-			ad1939_physical_ad1939_dac_dbclk               : out   std_logic;                                        -- ad1939_dac_dbclk
-			ad1939_physical_ad1939_dac_dlrclk              : out   std_logic;                                        -- ad1939_dac_dlrclk
 			ad1939_physical_ad1939_dac_dsdata1             : out   std_logic;                                        -- ad1939_dac_dsdata1
 			ad1939_physical_ad1939_dac_dsdata2             : out   std_logic;                                        -- ad1939_dac_dsdata2
-			ad1939_physical_ad1939_dac_dsdata3             : out   std_logic;                                        -- ad1939_dac_dsdata3
-			ad1939_physical_ad1939_dac_dsdata4             : out   std_logic;                                        -- ad1939_dac_dsdata4
+			ad1939_physical_ad1939_dac_dbclk               : out   std_logic;                                        -- ad1939_dac_dbclk
+			ad1939_physical_ad1939_dac_dlrclk              : out   std_logic;                                        -- ad1939_dac_dlrclk
+			ad4020_left_physical_cnv                       : out   std_logic;                                        -- cnv
+			ad4020_left_physical_miso                      : in    std_logic                     := 'X';             -- miso
+			ad4020_left_physical_mosi                      : out   std_logic;                                        -- mosi
+			ad4020_left_physical_sclk                      : out   std_logic;                                        -- sclk
+			ad4020_right_physical_cnv                      : out   std_logic;                                        -- cnv
+			ad4020_right_physical_miso                     : in    std_logic                     := 'X';             -- miso
+			ad4020_right_physical_mosi                     : out   std_logic;                                        -- mosi
+			ad4020_right_physical_sclk                     : out   std_logic;                                        -- sclk
+			ad5791_left_physical_ad5791_clr_n_out          : out   std_logic;                                        -- ad5791_clr_n_out
+			ad5791_left_physical_ad5791_ldac_n_out         : out   std_logic;                                        -- ad5791_ldac_n_out
+			ad5791_left_physical_ad5791_miso_out           : in    std_logic                     := 'X';             -- ad5791_miso_out
+			ad5791_left_physical_ad5791_mosi_in            : out   std_logic;                                        -- ad5791_mosi_in
+			ad5791_left_physical_ad5791_sclk_out           : out   std_logic;                                        -- ad5791_sclk_out
+			ad5791_left_physical_ad5791_sync_n_out         : out   std_logic;                                        -- ad5791_sync_n_out
+			ad5791_right_physical_ad5791_clr_n_out         : out   std_logic;                                        -- ad5791_clr_n_out
+			ad5791_right_physical_ad5791_ldac_n_out        : out   std_logic;                                        -- ad5791_ldac_n_out
+			ad5791_right_physical_ad5791_miso_out          : in    std_logic                     := 'X';             -- ad5791_miso_out
+			ad5791_right_physical_ad5791_mosi_in           : out   std_logic;                                        -- ad5791_mosi_in
+			ad5791_right_physical_ad5791_sclk_out          : out   std_logic;                                        -- ad5791_sclk_out
+			ad5791_right_physical_ad5791_sync_n_out        : out   std_logic;                                        -- ad5791_sync_n_out
+			ad7768_physical_ad7768_dout_in                 : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- ad7768_dout_in
+			ad7768_physical_ad7768_drdy_in                 : in    std_logic                     := 'X';             -- ad7768_drdy_in
+			ad7768_physical_ad7768_dclk_in                 : in    std_logic                     := 'X';             -- ad7768_dclk_in
 			addr_sel_in_add_sel                            : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- add_sel
 			axi_clk_bridge_in_clk_clk                      : in    std_logic                     := 'X';             -- clk
 			clk_100_clk                                    : in    std_logic                     := 'X';             -- clk
@@ -40,6 +61,24 @@
 			emif_0_status_local_cal_fail                   : out   std_logic;                                        -- local_cal_fail
 			emif_a10_hps_0_global_reset_reset_sink_reset_n : in    std_logic                     := 'X';             -- reset_n
 			hps_0_h2f_reset_reset_n                        : out   std_logic;                                        -- reset_n
+			hps_i2c1_sda_i                                 : in    std_logic                     := 'X';             -- sda_i
+			hps_i2c1_sda_oe                                : out   std_logic;                                        -- sda_oe
+			hps_i2c1_clk_clk                               : out   std_logic;                                        -- clk
+			hps_i2c1_scl_in_clk                            : in    std_logic                     := 'X';             -- clk
+			hps_io_hps_io_phery_emac1_TX_CLK               : out   std_logic;                                        -- hps_io_phery_emac1_TX_CLK
+			hps_io_hps_io_phery_emac1_TXD0                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD0
+			hps_io_hps_io_phery_emac1_TXD1                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD1
+			hps_io_hps_io_phery_emac1_TXD2                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD2
+			hps_io_hps_io_phery_emac1_TXD3                 : out   std_logic;                                        -- hps_io_phery_emac1_TXD3
+			hps_io_hps_io_phery_emac1_RX_CTL               : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RX_CTL
+			hps_io_hps_io_phery_emac1_TX_CTL               : out   std_logic;                                        -- hps_io_phery_emac1_TX_CTL
+			hps_io_hps_io_phery_emac1_RX_CLK               : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RX_CLK
+			hps_io_hps_io_phery_emac1_RXD0                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD0
+			hps_io_hps_io_phery_emac1_RXD1                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD1
+			hps_io_hps_io_phery_emac1_RXD2                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD2
+			hps_io_hps_io_phery_emac1_RXD3                 : in    std_logic                     := 'X';             -- hps_io_phery_emac1_RXD3
+			hps_io_hps_io_phery_emac1_MDIO                 : inout std_logic                     := 'X';             -- hps_io_phery_emac1_MDIO
+			hps_io_hps_io_phery_emac1_MDC                  : out   std_logic;                                        -- hps_io_phery_emac1_MDC
 			hps_io_hps_io_phery_sdmmc_CMD                  : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_CMD
 			hps_io_hps_io_phery_sdmmc_D0                   : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D0
 			hps_io_hps_io_phery_sdmmc_D1                   : inout std_logic                     := 'X';             -- hps_io_phery_sdmmc_D1
@@ -66,11 +105,7 @@
 			hps_io_hps_io_gpio_gpio2_io8                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio2_io8
 			hps_io_hps_io_gpio_gpio0_io0                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io0
 			hps_io_hps_io_gpio_gpio0_io1                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io1
-			hps_io_hps_io_gpio_gpio0_io2                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io2
-			hps_io_hps_io_gpio_gpio0_io3                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io3
 			hps_io_hps_io_gpio_gpio0_io6                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io6
-			hps_io_hps_io_gpio_gpio0_io7                   : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io7
-			hps_io_hps_io_gpio_gpio0_io10                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io10
 			hps_io_hps_io_gpio_gpio0_io11                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio0_io11
 			hps_io_hps_io_gpio_gpio1_io12                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io12
 			hps_io_hps_io_gpio_gpio1_io13                  : inout std_logic                     := 'X';             -- hps_io_gpio_gpio1_io13
@@ -110,9 +145,73 @@
 			mem_mem_dqs_n                                  : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- mem_dqs_n
 			mem_mem_dq                                     : inout std_logic_vector(39 downto 0) := (others => 'X'); -- mem_dq
 			mem_mem_dbi_n                                  : inout std_logic_vector(4 downto 0)  := (others => 'X'); -- mem_dbi_n
+			mic_array0_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array0_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array0_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array0_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array10_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array10_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array10_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array10_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array11_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array11_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array11_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array11_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array12_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array12_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array12_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array12_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array13_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array13_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array13_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array13_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array14_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array14_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array14_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array14_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array15_control_busy_out                   : out   std_logic;                                        -- busy_out
+			mic_array15_physical_serial_data_in            : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array15_physical_serial_data_out           : out   std_logic;                                        -- serial_data_out
+			mic_array15_physical_serial_clk_out            : out   std_logic;                                        -- serial_clk_out
+			mic_array1_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array1_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array1_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array1_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array2_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array2_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array2_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array2_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array3_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array3_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array3_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array3_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array4_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array4_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array4_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array4_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array5_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array5_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array5_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array5_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array6_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array6_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array6_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array6_physical_1_busy_out                 : out   std_logic;                                        -- busy_out
+			mic_array7_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array7_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array7_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array7_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array8_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array8_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array8_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array8_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
+			mic_array9_control_busy_out                    : out   std_logic;                                        -- busy_out
+			mic_array9_physical_serial_data_in             : in    std_logic                     := 'X';             -- serial_data_in
+			mic_array9_physical_serial_data_out            : out   std_logic;                                        -- serial_data_out
+			mic_array9_physical_serial_clk_out             : out   std_logic;                                        -- serial_clk_out
 			oct_oct_rzqin                                  : in    std_logic                     := 'X';             -- oct_rzqin
 			reset_reset_n                                  : in    std_logic                     := 'X';             -- reset_n
-			som_config_pio_export                          : inout std_logic_vector(1 downto 0)  := (others => 'X')  -- export
+			som_config_pio_export                          : in    std_logic_vector(4 downto 0)  := (others => 'X')  -- export
 		);
 	end component som_system;
 
@@ -123,12 +222,33 @@
 			ad1939_mclk_clk                                => CONNECTED_TO_ad1939_mclk_clk,                                --                            ad1939_mclk.clk
 			ad1939_physical_ad1939_adc_asdata1             => CONNECTED_TO_ad1939_physical_ad1939_adc_asdata1,             --                        ad1939_physical.ad1939_adc_asdata1
 			ad1939_physical_ad1939_adc_asdata2             => CONNECTED_TO_ad1939_physical_ad1939_adc_asdata2,             --                                       .ad1939_adc_asdata2
-			ad1939_physical_ad1939_dac_dbclk               => CONNECTED_TO_ad1939_physical_ad1939_dac_dbclk,               --                                       .ad1939_dac_dbclk
-			ad1939_physical_ad1939_dac_dlrclk              => CONNECTED_TO_ad1939_physical_ad1939_dac_dlrclk,              --                                       .ad1939_dac_dlrclk
 			ad1939_physical_ad1939_dac_dsdata1             => CONNECTED_TO_ad1939_physical_ad1939_dac_dsdata1,             --                                       .ad1939_dac_dsdata1
 			ad1939_physical_ad1939_dac_dsdata2             => CONNECTED_TO_ad1939_physical_ad1939_dac_dsdata2,             --                                       .ad1939_dac_dsdata2
-			ad1939_physical_ad1939_dac_dsdata3             => CONNECTED_TO_ad1939_physical_ad1939_dac_dsdata3,             --                                       .ad1939_dac_dsdata3
-			ad1939_physical_ad1939_dac_dsdata4             => CONNECTED_TO_ad1939_physical_ad1939_dac_dsdata4,             --                                       .ad1939_dac_dsdata4
+			ad1939_physical_ad1939_dac_dbclk               => CONNECTED_TO_ad1939_physical_ad1939_dac_dbclk,               --                                       .ad1939_dac_dbclk
+			ad1939_physical_ad1939_dac_dlrclk              => CONNECTED_TO_ad1939_physical_ad1939_dac_dlrclk,              --                                       .ad1939_dac_dlrclk
+			ad4020_left_physical_cnv                       => CONNECTED_TO_ad4020_left_physical_cnv,                       --                   ad4020_left_physical.cnv
+			ad4020_left_physical_miso                      => CONNECTED_TO_ad4020_left_physical_miso,                      --                                       .miso
+			ad4020_left_physical_mosi                      => CONNECTED_TO_ad4020_left_physical_mosi,                      --                                       .mosi
+			ad4020_left_physical_sclk                      => CONNECTED_TO_ad4020_left_physical_sclk,                      --                                       .sclk
+			ad4020_right_physical_cnv                      => CONNECTED_TO_ad4020_right_physical_cnv,                      --                  ad4020_right_physical.cnv
+			ad4020_right_physical_miso                     => CONNECTED_TO_ad4020_right_physical_miso,                     --                                       .miso
+			ad4020_right_physical_mosi                     => CONNECTED_TO_ad4020_right_physical_mosi,                     --                                       .mosi
+			ad4020_right_physical_sclk                     => CONNECTED_TO_ad4020_right_physical_sclk,                     --                                       .sclk
+			ad5791_left_physical_ad5791_clr_n_out          => CONNECTED_TO_ad5791_left_physical_ad5791_clr_n_out,          --                   ad5791_left_physical.ad5791_clr_n_out
+			ad5791_left_physical_ad5791_ldac_n_out         => CONNECTED_TO_ad5791_left_physical_ad5791_ldac_n_out,         --                                       .ad5791_ldac_n_out
+			ad5791_left_physical_ad5791_miso_out           => CONNECTED_TO_ad5791_left_physical_ad5791_miso_out,           --                                       .ad5791_miso_out
+			ad5791_left_physical_ad5791_mosi_in            => CONNECTED_TO_ad5791_left_physical_ad5791_mosi_in,            --                                       .ad5791_mosi_in
+			ad5791_left_physical_ad5791_sclk_out           => CONNECTED_TO_ad5791_left_physical_ad5791_sclk_out,           --                                       .ad5791_sclk_out
+			ad5791_left_physical_ad5791_sync_n_out         => CONNECTED_TO_ad5791_left_physical_ad5791_sync_n_out,         --                                       .ad5791_sync_n_out
+			ad5791_right_physical_ad5791_clr_n_out         => CONNECTED_TO_ad5791_right_physical_ad5791_clr_n_out,         --                  ad5791_right_physical.ad5791_clr_n_out
+			ad5791_right_physical_ad5791_ldac_n_out        => CONNECTED_TO_ad5791_right_physical_ad5791_ldac_n_out,        --                                       .ad5791_ldac_n_out
+			ad5791_right_physical_ad5791_miso_out          => CONNECTED_TO_ad5791_right_physical_ad5791_miso_out,          --                                       .ad5791_miso_out
+			ad5791_right_physical_ad5791_mosi_in           => CONNECTED_TO_ad5791_right_physical_ad5791_mosi_in,           --                                       .ad5791_mosi_in
+			ad5791_right_physical_ad5791_sclk_out          => CONNECTED_TO_ad5791_right_physical_ad5791_sclk_out,          --                                       .ad5791_sclk_out
+			ad5791_right_physical_ad5791_sync_n_out        => CONNECTED_TO_ad5791_right_physical_ad5791_sync_n_out,        --                                       .ad5791_sync_n_out
+			ad7768_physical_ad7768_dout_in                 => CONNECTED_TO_ad7768_physical_ad7768_dout_in,                 --                        ad7768_physical.ad7768_dout_in
+			ad7768_physical_ad7768_drdy_in                 => CONNECTED_TO_ad7768_physical_ad7768_drdy_in,                 --                                       .ad7768_drdy_in
+			ad7768_physical_ad7768_dclk_in                 => CONNECTED_TO_ad7768_physical_ad7768_dclk_in,                 --                                       .ad7768_dclk_in
 			addr_sel_in_add_sel                            => CONNECTED_TO_addr_sel_in_add_sel,                            --                            addr_sel_in.add_sel
 			axi_clk_bridge_in_clk_clk                      => CONNECTED_TO_axi_clk_bridge_in_clk_clk,                      --                  axi_clk_bridge_in_clk.clk
 			clk_100_clk                                    => CONNECTED_TO_clk_100_clk,                                    --                                clk_100.clk
@@ -158,7 +278,25 @@
 			emif_0_status_local_cal_fail                   => CONNECTED_TO_emif_0_status_local_cal_fail,                   --                                       .local_cal_fail
 			emif_a10_hps_0_global_reset_reset_sink_reset_n => CONNECTED_TO_emif_a10_hps_0_global_reset_reset_sink_reset_n, -- emif_a10_hps_0_global_reset_reset_sink.reset_n
 			hps_0_h2f_reset_reset_n                        => CONNECTED_TO_hps_0_h2f_reset_reset_n,                        --                        hps_0_h2f_reset.reset_n
-			hps_io_hps_io_phery_sdmmc_CMD                  => CONNECTED_TO_hps_io_hps_io_phery_sdmmc_CMD,                  --                                 hps_io.hps_io_phery_sdmmc_CMD
+			hps_i2c1_sda_i                                 => CONNECTED_TO_hps_i2c1_sda_i,                                 --                               hps_i2c1.sda_i
+			hps_i2c1_sda_oe                                => CONNECTED_TO_hps_i2c1_sda_oe,                                --                                       .sda_oe
+			hps_i2c1_clk_clk                               => CONNECTED_TO_hps_i2c1_clk_clk,                               --                           hps_i2c1_clk.clk
+			hps_i2c1_scl_in_clk                            => CONNECTED_TO_hps_i2c1_scl_in_clk,                            --                        hps_i2c1_scl_in.clk
+			hps_io_hps_io_phery_emac1_TX_CLK               => CONNECTED_TO_hps_io_hps_io_phery_emac1_TX_CLK,               --                                 hps_io.hps_io_phery_emac1_TX_CLK
+			hps_io_hps_io_phery_emac1_TXD0                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_TXD0,                 --                                       .hps_io_phery_emac1_TXD0
+			hps_io_hps_io_phery_emac1_TXD1                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_TXD1,                 --                                       .hps_io_phery_emac1_TXD1
+			hps_io_hps_io_phery_emac1_TXD2                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_TXD2,                 --                                       .hps_io_phery_emac1_TXD2
+			hps_io_hps_io_phery_emac1_TXD3                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_TXD3,                 --                                       .hps_io_phery_emac1_TXD3
+			hps_io_hps_io_phery_emac1_RX_CTL               => CONNECTED_TO_hps_io_hps_io_phery_emac1_RX_CTL,               --                                       .hps_io_phery_emac1_RX_CTL
+			hps_io_hps_io_phery_emac1_TX_CTL               => CONNECTED_TO_hps_io_hps_io_phery_emac1_TX_CTL,               --                                       .hps_io_phery_emac1_TX_CTL
+			hps_io_hps_io_phery_emac1_RX_CLK               => CONNECTED_TO_hps_io_hps_io_phery_emac1_RX_CLK,               --                                       .hps_io_phery_emac1_RX_CLK
+			hps_io_hps_io_phery_emac1_RXD0                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_RXD0,                 --                                       .hps_io_phery_emac1_RXD0
+			hps_io_hps_io_phery_emac1_RXD1                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_RXD1,                 --                                       .hps_io_phery_emac1_RXD1
+			hps_io_hps_io_phery_emac1_RXD2                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_RXD2,                 --                                       .hps_io_phery_emac1_RXD2
+			hps_io_hps_io_phery_emac1_RXD3                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_RXD3,                 --                                       .hps_io_phery_emac1_RXD3
+			hps_io_hps_io_phery_emac1_MDIO                 => CONNECTED_TO_hps_io_hps_io_phery_emac1_MDIO,                 --                                       .hps_io_phery_emac1_MDIO
+			hps_io_hps_io_phery_emac1_MDC                  => CONNECTED_TO_hps_io_hps_io_phery_emac1_MDC,                  --                                       .hps_io_phery_emac1_MDC
+			hps_io_hps_io_phery_sdmmc_CMD                  => CONNECTED_TO_hps_io_hps_io_phery_sdmmc_CMD,                  --                                       .hps_io_phery_sdmmc_CMD
 			hps_io_hps_io_phery_sdmmc_D0                   => CONNECTED_TO_hps_io_hps_io_phery_sdmmc_D0,                   --                                       .hps_io_phery_sdmmc_D0
 			hps_io_hps_io_phery_sdmmc_D1                   => CONNECTED_TO_hps_io_hps_io_phery_sdmmc_D1,                   --                                       .hps_io_phery_sdmmc_D1
 			hps_io_hps_io_phery_sdmmc_D2                   => CONNECTED_TO_hps_io_hps_io_phery_sdmmc_D2,                   --                                       .hps_io_phery_sdmmc_D2
@@ -184,11 +322,7 @@
 			hps_io_hps_io_gpio_gpio2_io8                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio2_io8,                   --                                       .hps_io_gpio_gpio2_io8
 			hps_io_hps_io_gpio_gpio0_io0                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io0,                   --                                       .hps_io_gpio_gpio0_io0
 			hps_io_hps_io_gpio_gpio0_io1                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io1,                   --                                       .hps_io_gpio_gpio0_io1
-			hps_io_hps_io_gpio_gpio0_io2                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io2,                   --                                       .hps_io_gpio_gpio0_io2
-			hps_io_hps_io_gpio_gpio0_io3                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io3,                   --                                       .hps_io_gpio_gpio0_io3
 			hps_io_hps_io_gpio_gpio0_io6                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io6,                   --                                       .hps_io_gpio_gpio0_io6
-			hps_io_hps_io_gpio_gpio0_io7                   => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io7,                   --                                       .hps_io_gpio_gpio0_io7
-			hps_io_hps_io_gpio_gpio0_io10                  => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io10,                  --                                       .hps_io_gpio_gpio0_io10
 			hps_io_hps_io_gpio_gpio0_io11                  => CONNECTED_TO_hps_io_hps_io_gpio_gpio0_io11,                  --                                       .hps_io_gpio_gpio0_io11
 			hps_io_hps_io_gpio_gpio1_io12                  => CONNECTED_TO_hps_io_hps_io_gpio_gpio1_io12,                  --                                       .hps_io_gpio_gpio1_io12
 			hps_io_hps_io_gpio_gpio1_io13                  => CONNECTED_TO_hps_io_hps_io_gpio_gpio1_io13,                  --                                       .hps_io_gpio_gpio1_io13
@@ -228,6 +362,70 @@
 			mem_mem_dqs_n                                  => CONNECTED_TO_mem_mem_dqs_n,                                  --                                       .mem_dqs_n
 			mem_mem_dq                                     => CONNECTED_TO_mem_mem_dq,                                     --                                       .mem_dq
 			mem_mem_dbi_n                                  => CONNECTED_TO_mem_mem_dbi_n,                                  --                                       .mem_dbi_n
+			mic_array0_control_busy_out                    => CONNECTED_TO_mic_array0_control_busy_out,                    --                     mic_array0_control.busy_out
+			mic_array0_physical_serial_data_in             => CONNECTED_TO_mic_array0_physical_serial_data_in,             --                    mic_array0_physical.serial_data_in
+			mic_array0_physical_serial_data_out            => CONNECTED_TO_mic_array0_physical_serial_data_out,            --                                       .serial_data_out
+			mic_array0_physical_serial_clk_out             => CONNECTED_TO_mic_array0_physical_serial_clk_out,             --                                       .serial_clk_out
+			mic_array10_control_busy_out                   => CONNECTED_TO_mic_array10_control_busy_out,                   --                    mic_array10_control.busy_out
+			mic_array10_physical_serial_data_in            => CONNECTED_TO_mic_array10_physical_serial_data_in,            --                   mic_array10_physical.serial_data_in
+			mic_array10_physical_serial_data_out           => CONNECTED_TO_mic_array10_physical_serial_data_out,           --                                       .serial_data_out
+			mic_array10_physical_serial_clk_out            => CONNECTED_TO_mic_array10_physical_serial_clk_out,            --                                       .serial_clk_out
+			mic_array11_control_busy_out                   => CONNECTED_TO_mic_array11_control_busy_out,                   --                    mic_array11_control.busy_out
+			mic_array11_physical_serial_data_in            => CONNECTED_TO_mic_array11_physical_serial_data_in,            --                   mic_array11_physical.serial_data_in
+			mic_array11_physical_serial_data_out           => CONNECTED_TO_mic_array11_physical_serial_data_out,           --                                       .serial_data_out
+			mic_array11_physical_serial_clk_out            => CONNECTED_TO_mic_array11_physical_serial_clk_out,            --                                       .serial_clk_out
+			mic_array12_control_busy_out                   => CONNECTED_TO_mic_array12_control_busy_out,                   --                    mic_array12_control.busy_out
+			mic_array12_physical_serial_data_in            => CONNECTED_TO_mic_array12_physical_serial_data_in,            --                   mic_array12_physical.serial_data_in
+			mic_array12_physical_serial_data_out           => CONNECTED_TO_mic_array12_physical_serial_data_out,           --                                       .serial_data_out
+			mic_array12_physical_serial_clk_out            => CONNECTED_TO_mic_array12_physical_serial_clk_out,            --                                       .serial_clk_out
+			mic_array13_control_busy_out                   => CONNECTED_TO_mic_array13_control_busy_out,                   --                    mic_array13_control.busy_out
+			mic_array13_physical_serial_data_in            => CONNECTED_TO_mic_array13_physical_serial_data_in,            --                   mic_array13_physical.serial_data_in
+			mic_array13_physical_serial_data_out           => CONNECTED_TO_mic_array13_physical_serial_data_out,           --                                       .serial_data_out
+			mic_array13_physical_serial_clk_out            => CONNECTED_TO_mic_array13_physical_serial_clk_out,            --                                       .serial_clk_out
+			mic_array14_control_busy_out                   => CONNECTED_TO_mic_array14_control_busy_out,                   --                    mic_array14_control.busy_out
+			mic_array14_physical_serial_data_in            => CONNECTED_TO_mic_array14_physical_serial_data_in,            --                   mic_array14_physical.serial_data_in
+			mic_array14_physical_serial_data_out           => CONNECTED_TO_mic_array14_physical_serial_data_out,           --                                       .serial_data_out
+			mic_array14_physical_serial_clk_out            => CONNECTED_TO_mic_array14_physical_serial_clk_out,            --                                       .serial_clk_out
+			mic_array15_control_busy_out                   => CONNECTED_TO_mic_array15_control_busy_out,                   --                    mic_array15_control.busy_out
+			mic_array15_physical_serial_data_in            => CONNECTED_TO_mic_array15_physical_serial_data_in,            --                   mic_array15_physical.serial_data_in
+			mic_array15_physical_serial_data_out           => CONNECTED_TO_mic_array15_physical_serial_data_out,           --                                       .serial_data_out
+			mic_array15_physical_serial_clk_out            => CONNECTED_TO_mic_array15_physical_serial_clk_out,            --                                       .serial_clk_out
+			mic_array1_control_busy_out                    => CONNECTED_TO_mic_array1_control_busy_out,                    --                     mic_array1_control.busy_out
+			mic_array1_physical_serial_data_in             => CONNECTED_TO_mic_array1_physical_serial_data_in,             --                    mic_array1_physical.serial_data_in
+			mic_array1_physical_serial_data_out            => CONNECTED_TO_mic_array1_physical_serial_data_out,            --                                       .serial_data_out
+			mic_array1_physical_serial_clk_out             => CONNECTED_TO_mic_array1_physical_serial_clk_out,             --                                       .serial_clk_out
+			mic_array2_control_busy_out                    => CONNECTED_TO_mic_array2_control_busy_out,                    --                     mic_array2_control.busy_out
+			mic_array2_physical_serial_data_in             => CONNECTED_TO_mic_array2_physical_serial_data_in,             --                    mic_array2_physical.serial_data_in
+			mic_array2_physical_serial_data_out            => CONNECTED_TO_mic_array2_physical_serial_data_out,            --                                       .serial_data_out
+			mic_array2_physical_serial_clk_out             => CONNECTED_TO_mic_array2_physical_serial_clk_out,             --                                       .serial_clk_out
+			mic_array3_control_busy_out                    => CONNECTED_TO_mic_array3_control_busy_out,                    --                     mic_array3_control.busy_out
+			mic_array3_physical_serial_data_in             => CONNECTED_TO_mic_array3_physical_serial_data_in,             --                    mic_array3_physical.serial_data_in
+			mic_array3_physical_serial_data_out            => CONNECTED_TO_mic_array3_physical_serial_data_out,            --                                       .serial_data_out
+			mic_array3_physical_serial_clk_out             => CONNECTED_TO_mic_array3_physical_serial_clk_out,             --                                       .serial_clk_out
+			mic_array4_control_busy_out                    => CONNECTED_TO_mic_array4_control_busy_out,                    --                     mic_array4_control.busy_out
+			mic_array4_physical_serial_data_in             => CONNECTED_TO_mic_array4_physical_serial_data_in,             --                    mic_array4_physical.serial_data_in
+			mic_array4_physical_serial_data_out            => CONNECTED_TO_mic_array4_physical_serial_data_out,            --                                       .serial_data_out
+			mic_array4_physical_serial_clk_out             => CONNECTED_TO_mic_array4_physical_serial_clk_out,             --                                       .serial_clk_out
+			mic_array5_control_busy_out                    => CONNECTED_TO_mic_array5_control_busy_out,                    --                     mic_array5_control.busy_out
+			mic_array5_physical_serial_data_in             => CONNECTED_TO_mic_array5_physical_serial_data_in,             --                    mic_array5_physical.serial_data_in
+			mic_array5_physical_serial_data_out            => CONNECTED_TO_mic_array5_physical_serial_data_out,            --                                       .serial_data_out
+			mic_array5_physical_serial_clk_out             => CONNECTED_TO_mic_array5_physical_serial_clk_out,             --                                       .serial_clk_out
+			mic_array6_physical_serial_data_in             => CONNECTED_TO_mic_array6_physical_serial_data_in,             --                    mic_array6_physical.serial_data_in
+			mic_array6_physical_serial_data_out            => CONNECTED_TO_mic_array6_physical_serial_data_out,            --                                       .serial_data_out
+			mic_array6_physical_serial_clk_out             => CONNECTED_TO_mic_array6_physical_serial_clk_out,             --                                       .serial_clk_out
+			mic_array6_physical_1_busy_out                 => CONNECTED_TO_mic_array6_physical_1_busy_out,                 --                  mic_array6_physical_1.busy_out
+			mic_array7_control_busy_out                    => CONNECTED_TO_mic_array7_control_busy_out,                    --                     mic_array7_control.busy_out
+			mic_array7_physical_serial_data_in             => CONNECTED_TO_mic_array7_physical_serial_data_in,             --                    mic_array7_physical.serial_data_in
+			mic_array7_physical_serial_data_out            => CONNECTED_TO_mic_array7_physical_serial_data_out,            --                                       .serial_data_out
+			mic_array7_physical_serial_clk_out             => CONNECTED_TO_mic_array7_physical_serial_clk_out,             --                                       .serial_clk_out
+			mic_array8_control_busy_out                    => CONNECTED_TO_mic_array8_control_busy_out,                    --                     mic_array8_control.busy_out
+			mic_array8_physical_serial_data_in             => CONNECTED_TO_mic_array8_physical_serial_data_in,             --                    mic_array8_physical.serial_data_in
+			mic_array8_physical_serial_data_out            => CONNECTED_TO_mic_array8_physical_serial_data_out,            --                                       .serial_data_out
+			mic_array8_physical_serial_clk_out             => CONNECTED_TO_mic_array8_physical_serial_clk_out,             --                                       .serial_clk_out
+			mic_array9_control_busy_out                    => CONNECTED_TO_mic_array9_control_busy_out,                    --                     mic_array9_control.busy_out
+			mic_array9_physical_serial_data_in             => CONNECTED_TO_mic_array9_physical_serial_data_in,             --                    mic_array9_physical.serial_data_in
+			mic_array9_physical_serial_data_out            => CONNECTED_TO_mic_array9_physical_serial_data_out,            --                                       .serial_data_out
+			mic_array9_physical_serial_clk_out             => CONNECTED_TO_mic_array9_physical_serial_clk_out,             --                                       .serial_clk_out
 			oct_oct_rzqin                                  => CONNECTED_TO_oct_oct_rzqin,                                  --                                    oct.oct_rzqin
 			reset_reset_n                                  => CONNECTED_TO_reset_reset_n,                                  --                                  reset.reset_n
 			som_config_pio_export                          => CONNECTED_TO_som_config_pio_export                           --                         som_config_pio.export
